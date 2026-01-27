@@ -2,9 +2,15 @@ const questionIdEl = document.getElementById('question-id');
 const loadBtn = document.getElementById('load-question');
 const saveQuestionBtn = document.getElementById('save-question');
 const saveAnswersBtn = document.getElementById('save-answers');
+const questionFormatBtn = document.getElementById('question-format-json');
+const questionValidateBtn = document.getElementById('question-validate-json');
+const answersFormatBtn = document.getElementById('answers-format-json');
+const answersValidateBtn = document.getElementById('answers-validate-json');
 const questionJson = document.getElementById('question-json');
 const answersJson = document.getElementById('answers-json');
 const editorStatus = document.getElementById('editor-status');
+const editorStatusErrors = document.getElementById('editor-status-errors');
+const editorStatusDiffs = document.getElementById('editor-status-diffs');
 const previewEl = document.getElementById('preview');
 const previewJaBtn = document.getElementById('preview-ja');
 const previewZhBtn = document.getElementById('preview-zh');
@@ -22,6 +28,12 @@ let currentGroups = [];
 let groupEditorRows = [];
 let extraEditorRows = [];
 let isSyncingAnswers = false;
+let initialQuestionJson = '';
+let initialAnswersJson = '';
+
+const schemaCache = {};
+const validatorCache = {};
+let ajvInstance = null;
 
 const questionId = window.location.pathname.split('/')[3];
 questionIdEl.textContent = questionId || 'Unknown';
@@ -38,6 +50,24 @@ function getHeaders() {
 function setStatus(message, isError) {
   editorStatus.textContent = message;
   editorStatus.style.color = isError ? '#c7332c' : '#3b3b3b';
+}
+
+function setStatusList(listEl, items, isError) {
+  if (!listEl) {
+    return;
+  }
+  listEl.innerHTML = '';
+  listEl.classList.toggle('error', Boolean(isError));
+  items.forEach((item) => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    listEl.appendChild(li);
+  });
+}
+
+function clearStatusLists() {
+  setStatusList(editorStatusErrors, [], false);
+  setStatusList(editorStatusDiffs, [], false);
 }
 
 function renderMarkdown(input) {
@@ -162,6 +192,194 @@ function getAnswersPayload() {
   }
 }
 
+function getAjv() {
+  if (!window.Ajv) {
+    return null;
+  }
+  if (!ajvInstance) {
+    ajvInstance = new window.Ajv({ allErrors: true, strict: false, allowUnionTypes: true });
+  }
+  return ajvInstance;
+}
+
+async function loadSchema(url) {
+  if (!schemaCache[url]) {
+    schemaCache[url] = fetch(url).then((response) => response.json());
+  }
+  return schemaCache[url];
+}
+
+async function getValidator(url) {
+  if (validatorCache[url]) {
+    return validatorCache[url];
+  }
+  const ajv = getAjv();
+  if (!ajv) {
+    return null;
+  }
+  const schema = await loadSchema(url);
+  const validator = ajv.compile(schema);
+  validatorCache[url] = validator;
+  return validator;
+}
+
+function formatJsonInTextarea(textarea, label) {
+  try {
+    const parsed = JSON.parse(textarea.value);
+    textarea.value = JSON.stringify(parsed, null, 2);
+    setStatus(`${label} formatted.`, false);
+    updateDiffSummary();
+  } catch (error) {
+    setStatus(`${label} JSON invalid.`, true);
+  }
+}
+
+function collectDiffs(current, original, path, diffs) {
+  if (diffs.length >= 30) {
+    return;
+  }
+  if (current === original) {
+    return;
+  }
+  const currentIsObj = current !== null && typeof current === 'object';
+  const originalIsObj = original !== null && typeof original === 'object';
+  if (Array.isArray(current) && Array.isArray(original)) {
+    if (current.length !== original.length) {
+      diffs.push(`${path}: length ${original.length} → ${current.length}`);
+    }
+    const limit = Math.min(current.length, original.length);
+    for (let i = 0; i < limit; i += 1) {
+      collectDiffs(current[i], original[i], `${path}[${i}]`, diffs);
+    }
+    if (current.length > original.length) {
+      for (let i = original.length; i < current.length && diffs.length < 30; i += 1) {
+        diffs.push(`${path}[${i}]: added`);
+      }
+    }
+    if (original.length > current.length) {
+      for (let i = current.length; i < original.length && diffs.length < 30; i += 1) {
+        diffs.push(`${path}[${i}]: removed`);
+      }
+    }
+    return;
+  }
+  if (currentIsObj && originalIsObj && !Array.isArray(current) && !Array.isArray(original)) {
+    const currentKeys = Object.keys(current);
+    const originalKeys = Object.keys(original);
+    const keySet = new Set([...currentKeys, ...originalKeys]);
+    keySet.forEach((key) => {
+      if (diffs.length >= 30) {
+        return;
+      }
+      const nextPath = path ? `${path}.${key}` : key;
+      if (!(key in original)) {
+        diffs.push(`${nextPath}: added`);
+        return;
+      }
+      if (!(key in current)) {
+        diffs.push(`${nextPath}: removed`);
+        return;
+      }
+      collectDiffs(current[key], original[key], nextPath, diffs);
+    });
+    return;
+  }
+  diffs.push(`${path || 'root'}: changed`);
+}
+
+function buildDiffSummary(originalText, currentText, label) {
+  if (!originalText) {
+    return { summary: `${label}: not loaded yet.`, changes: [] };
+  }
+  let originalParsed;
+  let currentParsed;
+  try {
+    originalParsed = JSON.parse(originalText);
+  } catch (error) {
+    return { summary: `${label}: original JSON invalid.`, changes: [] };
+  }
+  try {
+    currentParsed = JSON.parse(currentText);
+  } catch (error) {
+    return { summary: `${label}: current JSON invalid.`, changes: [] };
+  }
+  const diffs = [];
+  collectDiffs(currentParsed, originalParsed, '', diffs);
+  if (diffs.length === 0) {
+    return { summary: `${label}: no changes.`, changes: [] };
+  }
+  return { summary: `${label}: ${diffs.length} change(s).`, changes: diffs.slice(0, 10) };
+}
+
+function updateDiffSummary() {
+  const questionSummary = buildDiffSummary(initialQuestionJson, questionJson.value, 'Question JSON');
+  const answersSummary = buildDiffSummary(initialAnswersJson, answersJson.value, 'Answers JSON');
+  const items = [questionSummary.summary, answersSummary.summary];
+  questionSummary.changes.forEach((change) => items.push(`Question: ${change}`));
+  answersSummary.changes.forEach((change) => items.push(`Answers: ${change}`));
+  setStatusList(editorStatusDiffs, items, false);
+}
+
+async function validateQuestionJson() {
+  const payload = getQuestionPayload();
+  if (!payload) {
+    setStatus('Invalid question JSON.', true);
+    setStatusList(editorStatusErrors, ['Question JSON parse error.'], true);
+    return;
+  }
+  const validator = await getValidator('/schemas/content/question.schema.json');
+  if (!validator) {
+    setStatus('Schema validator unavailable.', true);
+    return;
+  }
+  const valid = validator(payload);
+  if (valid) {
+    setStatus('Question JSON valid.', false);
+    setStatusList(editorStatusErrors, [], false);
+    return;
+  }
+  const errors = (validator.errors || []).map((error) => {
+    const path = error.instancePath || '(root)';
+    return `Question ${path} ${error.message || 'invalid'}`;
+  });
+  setStatus('Question JSON validation failed.', true);
+  setStatusList(editorStatusErrors, errors, true);
+}
+
+async function validateAnswersJson() {
+  let parsed;
+  try {
+    parsed = JSON.parse(answersJson.value);
+  } catch (error) {
+    setStatus('Invalid answers JSON.', true);
+    setStatusList(editorStatusErrors, ['Answers JSON parse error.'], true);
+    return;
+  }
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+    setStatus('Invalid answers JSON.', true);
+    setStatusList(editorStatusErrors, ['Answers JSON must be an object.'], true);
+    return;
+  }
+  const validator = await getValidator('/schemas/content/answer.schema.json');
+  if (!validator) {
+    setStatus('Schema validator unavailable.', true);
+    return;
+  }
+  const wrapper = { answers: { [questionId || 'unknown']: parsed } };
+  const valid = validator(wrapper);
+  if (valid) {
+    setStatus('Answers JSON valid.', false);
+    setStatusList(editorStatusErrors, [], false);
+    return;
+  }
+  const errors = (validator.errors || []).map((error) => {
+    const path = error.instancePath || '(root)';
+    return `Answers ${path} ${error.message || 'invalid'}`;
+  });
+  setStatus('Answers JSON validation failed.', true);
+  setStatusList(editorStatusErrors, errors, true);
+}
+
 function deriveGroups(question) {
   if (!question || typeof question !== 'object') {
     return [];
@@ -266,13 +484,13 @@ function updateAnswerStatus(payloadOverride) {
   const extras = Object.keys(payload).filter((key) => !groupIds.has(key));
   const notes = [];
   if (missing.length > 0) {
-    notes.push(`Missing: ${missing.join(', ')}`);
+    notes.push(`Missing (${missing.length}): ${missing.join(', ')}`);
   }
   if (mismatch.length > 0) {
-    notes.push(`Length mismatch: ${mismatch.join(', ')}`);
+    notes.push(`Mismatch (${mismatch.length}): ${mismatch.join(', ')}`);
   }
   if (extras.length > 0) {
-    notes.push(`Extra groups: ${extras.join(', ')}`);
+    notes.push(`Extra (${extras.length}): ${extras.join(', ')}`);
   }
   answerEditorStatus.textContent = notes.join(' | ');
   answerEditorStatus.className = notes.length > 0 ? 'status error' : 'status';
@@ -488,10 +706,15 @@ async function loadQuestion() {
   questionJson.value = JSON.stringify(data.question, null, 2);
   answersJson.value = JSON.stringify(normalizedAnswers, null, 2);
   buildAnswerEditor(data.question, normalizedAnswers);
+  initialQuestionJson = questionJson.value;
+  initialAnswersJson = answersJson.value;
+  updateDiffSummary();
+  clearStatusLists();
   setStatus('Loaded.', false);
 }
 
 async function saveQuestion() {
+  updateDiffSummary();
   const payload = getQuestionPayload();
   if (!payload) {
     setStatus('Invalid question JSON.', true);
@@ -511,6 +734,7 @@ async function saveQuestion() {
 }
 
 async function saveAnswers() {
+  updateDiffSummary();
   let payload;
   try {
     payload = JSON.parse(answersJson.value);
@@ -581,6 +805,18 @@ async function uploadImage() {
 loadBtn.addEventListener('click', loadQuestion);
 saveQuestionBtn.addEventListener('click', saveQuestion);
 saveAnswersBtn.addEventListener('click', saveAnswers);
+if (questionFormatBtn) {
+  questionFormatBtn.addEventListener('click', () => formatJsonInTextarea(questionJson, 'Question JSON'));
+}
+if (questionValidateBtn) {
+  questionValidateBtn.addEventListener('click', () => validateQuestionJson());
+}
+if (answersFormatBtn) {
+  answersFormatBtn.addEventListener('click', () => formatJsonInTextarea(answersJson, 'Answers JSON'));
+}
+if (answersValidateBtn) {
+  answersValidateBtn.addEventListener('click', () => validateAnswersJson());
+}
 previewJaBtn.addEventListener('click', () => preview('ja'));
 previewZhBtn.addEventListener('click', () => preview('zh'));
 uploadImageBtn.addEventListener('click', uploadImage);
@@ -590,5 +826,12 @@ if (answerEditorRefreshBtn) {
 if (answerSyncFromJsonBtn) {
   answerSyncFromJsonBtn.addEventListener('click', rebuildAnswerEditorFromAnswersJson);
 }
+
+questionJson.addEventListener('input', () => {
+  updateDiffSummary();
+});
+answersJson.addEventListener('input', () => {
+  updateDiffSummary();
+});
 
 loadQuestion();
