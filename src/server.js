@@ -76,6 +76,7 @@ function main() {
   app.use(express.json({ limit: '1mb' }));
   app.use('/static', express.static(path.join(process.cwd(), 'public')));
   app.use('/assets', express.static(path.join(process.cwd(), 'content', 'assets')));
+  app.use('/schemas', express.static(path.join(process.cwd(), 'schemas')));
 
   app.get('/health', (req, res) => {
     res.json({ ok: true });
