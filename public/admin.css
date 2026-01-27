@@ -3,10 +3,12 @@
   --ink-soft: #3b3b3b;
   --accent: #335c67;
   --accent-dark: #24424a;
-  --paper: #f7f1e9;
-  --paper-strong: #efe4d7;
-  --line: #d7c9b6;
-  --shadow: 0 18px 35px rgba(34, 24, 12, 0.14);
+  --paper: #f6f7f9;
+  --paper-strong: #eceff3;
+  --line: #dde2e8;
+  --card-bg: #ffffff;
+  --radius-card: 16px;
+  --shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
 * {
@@ -15,16 +17,17 @@
 
 body {
   margin: 0;
-  font-family: "Charter", "Palatino Linotype", "Book Antiqua", serif;
+  font-family: "Inter", "Segoe UI", "PingFang SC", "Noto Sans SC",
+    "Helvetica Neue", Arial, sans-serif;
   color: var(--ink);
-  background: linear-gradient(140deg, #f7efe6 0%, #eadfce 55%, #e0cdbc 100%);
+  background: linear-gradient(180deg, #f7f8fa 0%, #eef1f5 100%);
   min-height: 100vh;
 }
 
 .page {
-  max-width: 960px;
+  width: min(100%, 1440px);
   margin: 0 auto;
-  padding: 28px 24px 64px;
+  padding: 32px 32px 72px;
 }
 
 .top-bar {
@@ -58,8 +61,8 @@ body {
 }
 
 .panel {
-  background: var(--paper);
-  border-radius: 18px;
+  background: var(--card-bg);
+  border-radius: var(--radius-card);
   padding: 24px;
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
@@ -88,7 +91,7 @@ input {
   padding: 12px;
   border-radius: 10px;
   border: 1px solid var(--line);
-  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-family: inherit;
 }
 
 .btn {
@@ -97,7 +100,7 @@ input {
   border-radius: 12px;
   cursor: pointer;
   font-weight: 600;
-  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-family: inherit;
   background: var(--paper-strong);
 }
 
@@ -111,10 +114,10 @@ input {
 }
 
 .code-block {
-  background: #fffdf8;
+  background: var(--card-bg);
   border: 1px solid var(--line);
   padding: 16px;
-  border-radius: 12px;
+  border-radius: var(--radius-card);
   font-size: 12px;
   white-space: pre-wrap;
   max-height: 320px;
@@ -160,13 +163,15 @@ textarea {
 
 .exam-card {
   border: 1px solid var(--line);
-  border-radius: 12px;
-  background: #fffdf8;
-  padding: 10px 12px;
+  border-radius: var(--radius-card);
+  background: var(--card-bg);
+  padding: 12px 14px;
   font-weight: 600;
   color: var(--ink);
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  box-shadow: var(--shadow);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .exam-card:hover {
@@ -183,13 +188,14 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
-  border-radius: 12px;
+  padding: 18px;
+  border-radius: var(--radius-card);
   border: 1px solid var(--line);
   text-decoration: none;
   color: var(--ink);
   font-weight: 600;
-  background: #fffdf8;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
 }
 
 .split {
@@ -206,9 +212,10 @@ textarea {
 
 .result-card {
   border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 12px 16px;
-  background: #fffdf8;
+  border-radius: var(--radius-card);
+  padding: 14px 16px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
 }
 
 .result-title {
@@ -239,9 +246,10 @@ textarea {
 
 .answer-row {
   border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 12px;
-  background: #fffdf8;
+  border-radius: var(--radius-card);
+  padding: 14px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
 }
 
 .answer-row.is-missing {
