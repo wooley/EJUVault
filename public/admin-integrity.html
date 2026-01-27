@@ -16,7 +16,13 @@
             <div class="brand-sub">Integrity Report</div>
           </div>
         </div>
-        <a class="link" href="/admin">Dashboard</a>
+        <nav class="admin-nav" aria-label="Admin">
+          <a class="admin-nav-link" href="/admin">Dashboard</a>
+          <a class="admin-nav-link" href="/admin/exams">Exam</a>
+          <a class="admin-nav-link" href="/admin/integrity">Integrity</a>
+          <a class="admin-nav-link" href="/admin/calibration">Calibration</a>
+          <a class="admin-nav-link" href="/stats">统计</a>
+        </nav>
       </header>
 
       <section class="panel">
@@ -25,6 +31,7 @@
       </section>
     </div>
 
+    <script src="/static/admin-nav.js"></script>
     <script src="/static/admin-integrity.js"></script>
   </body>
 </html>

@@ -32,6 +32,11 @@ body {
 
 .top-bar {
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .brand {
@@ -58,6 +63,35 @@ body {
 .brand-sub {
   color: var(--ink-soft);
   font-size: 14px;
+}
+
+.admin-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-nav-link {
+  text-decoration: none;
+  color: var(--ink-soft);
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.7);
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.admin-nav-link:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.admin-nav-link.is-active {
+  background: var(--accent);
+  color: #fff8ef;
+  border-color: var(--accent-dark);
 }
 
 .panel {
@@ -327,5 +361,15 @@ textarea {
   .auth-row,
   .search-row {
     flex-direction: column;
+  }
+
+  .admin-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .admin-nav-link {
+    flex: 1 1 140px;
+    text-align: center;
   }
 }
