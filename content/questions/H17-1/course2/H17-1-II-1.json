@@ -13,7 +13,9 @@
   "order": 1,
   "type": "fill_in",
   "source": {
-    "images": ["data/images_raw/H17-1_course2/page_05.png"],
+    "images": [
+      "data/images_raw/H17-1_course2/page_05.png"
+    ],
     "page_print": "数学-17",
     "page_in_exam": 141
   },
@@ -33,16 +35,52 @@
     ]
   },
   "blanks": [
-    { "id": "AB", "length": 2 },
-    { "id": "C", "length": 1 },
-    { "id": "D", "length": 1 },
-    { "id": "EF", "length": 2 },
-    { "id": "G", "length": 1 },
-    { "id": "H", "length": 1 },
-    { "id": "I", "length": 1 }
+    {
+      "id": "AB",
+      "length": 2
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "EF",
+      "length": 2
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    }
   ],
   "blank_rules": {
-    "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+    "allowed_chars": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "+",
+      "-",
+      "×",
+      "÷"
+    ],
     "no_whitespace": true,
     "notes": [
       "本题含分数形式，分子/分母分别对应框位字符。"
@@ -54,9 +92,18 @@
       "prompt_ja": "x と y を a を用いて表す。",
       "prompt_zh": "把 x、y 用 a 表示。",
       "blanks": [
-        { "id": "AB", "length": 2 },
-        { "id": "C", "length": 1 },
-        { "id": "D", "length": 1 }
+        {
+          "id": "AB",
+          "length": 2
+        },
+        {
+          "id": "C",
+          "length": 1
+        },
+        {
+          "id": "D",
+          "length": 1
+        }
       ]
     },
     {
@@ -64,16 +111,32 @@
       "prompt_ja": "点(x,y)が常に乗る直線を求める。",
       "prompt_zh": "求 (x,y) 恒成立的直线方程。",
       "blanks": [
-        { "id": "EF", "length": 2 },
-        { "id": "G", "length": 1 },
-        { "id": "H", "length": 1 },
-        { "id": "I", "length": 1 }
+        {
+          "id": "EF",
+          "length": 2
+        },
+        {
+          "id": "G",
+          "length": 1
+        },
+        {
+          "id": "H",
+          "length": 1
+        },
+        {
+          "id": "I",
+          "length": 1
+        }
       ]
     }
   ],
   "tags": {
-    "domain": ["数と式"],
-    "skill": ["根号を含む式の計算"],
+    "domain": [
+      "数と式"
+    ],
+    "skill": [
+      "根号を含む式の計算"
+    ],
     "course_specific": []
   },
   "difficulty": {

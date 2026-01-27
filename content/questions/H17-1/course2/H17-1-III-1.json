@@ -17,8 +17,14 @@
       "data/images_raw/H17-1_course2/page_08.png",
       "data/images_raw/H17-1_course2/page_09.png"
     ],
-    "page_print": ["数学-20", "数学-21"],
-    "page_in_exam": [144, 145]
+    "page_print": [
+      "数学-20",
+      "数学-21"
+    ],
+    "page_in_exam": [
+      144,
+      145
+    ]
   },
   "original_ja": {
     "text": "問1　三角形ABCにおいて，3辺の長さを AB=5，BC=8，CA=7 とする。(1) ∠B=[A]/[B]π であり，三角形ABCの面積は [CD]√[E] である。(2) 三角形ABCの重心をGとし，\\overrightarrow{GA}=\\vec a，\\overrightarrow{GB}=\\vec b とすると，\\overrightarrow{GC}=[FG](\\vec a+\\vec b)である。また，辺BC上にBM=3となるように点Mをとれば，\\overrightarrow{GM}=\\frac1{[H]}([IJ]\\vec a+[K]\\vec b)である。さらに，辺AC上にAN=2となるように点Nをとり，同様に\\overrightarrow{GN}を\\vec a,\\vec bで表せば，\\overrightarrow{GM}+\\frac{[L]}{[M]}\\overrightarrow{GN}=\\vec 0 であり，3点G,M,Nは同一直線上にあることがわかる。",
@@ -37,19 +43,64 @@
     "formulas": []
   },
   "blanks": [
-    { "id": "A", "length": 1 },
-    { "id": "B", "length": 1 },
-    { "id": "CD", "length": 2 },
-    { "id": "E", "length": 1 },
-    { "id": "FG", "length": 2 },
-    { "id": "H", "length": 1 },
-    { "id": "IJ", "length": 2 },
-    { "id": "K", "length": 1 },
-    { "id": "L", "length": 1 },
-    { "id": "M", "length": 1 }
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "CD",
+      "length": 2
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "FG",
+      "length": 2
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "IJ",
+      "length": 2
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
   ],
   "blank_rules": {
-    "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+    "allowed_chars": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "+",
+      "-",
+      "×",
+      "÷"
+    ],
     "no_whitespace": true,
     "notes": [
       "向量系数可能为负数，负号用 '-' 计入框位。"
@@ -60,28 +111,66 @@
       "sub_id": "(1)",
       "prompt_zh": "由三边求角B与面积。",
       "blanks": [
-        { "id": "A", "length": 1 },
-        { "id": "B", "length": 1 },
-        { "id": "CD", "length": 2 },
-        { "id": "E", "length": 1 }
+        {
+          "id": "A",
+          "length": 1
+        },
+        {
+          "id": "B",
+          "length": 1
+        },
+        {
+          "id": "CD",
+          "length": 2
+        },
+        {
+          "id": "E",
+          "length": 1
+        }
       ]
     },
     {
       "sub_id": "(2)",
       "prompt_zh": "重心向量表示、内分点向量、证明共线。",
       "blanks": [
-        { "id": "FG", "length": 2 },
-        { "id": "H", "length": 1 },
-        { "id": "IJ", "length": 2 },
-        { "id": "K", "length": 1 },
-        { "id": "L", "length": 1 },
-        { "id": "M", "length": 1 }
+        {
+          "id": "FG",
+          "length": 2
+        },
+        {
+          "id": "H",
+          "length": 1
+        },
+        {
+          "id": "IJ",
+          "length": 2
+        },
+        {
+          "id": "K",
+          "length": 1
+        },
+        {
+          "id": "L",
+          "length": 1
+        },
+        {
+          "id": "M",
+          "length": 1
+        }
       ]
     }
   ],
   "tags": {
-    "domain": ["図形と計量", "ベクトル"],
-    "skill": ["正弦定理・余弦定理", "重心ベクトル", "内分点ベクトル", "共線条件"],
+    "domain": [
+      "図形と計量",
+      "ベクトル"
+    ],
+    "skill": [
+      "正弦定理・余弦定理",
+      "重心ベクトル",
+      "内分点ベクトル",
+      "共線条件"
+    ],
     "course_specific": []
   },
   "difficulty": {

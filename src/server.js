@@ -109,6 +109,9 @@ function main() {
   app.get('/admin/calibration', (req, res) => {
     res.sendFile(path.join(process.cwd(), 'public', 'admin-calibration.html'));
   });
+  app.get('/admin/stats', (req, res) => {
+    res.sendFile(path.join(process.cwd(), 'public', 'admin-stats.html'));
+  });
   app.get('/admin/question/:id/edit', (req, res) => {
     res.sendFile(path.join(process.cwd(), 'public', 'admin-question.html'));
   });
@@ -577,6 +580,32 @@ function main() {
     const attempts = store.listAttemptsAll();
     const calibration = computeCalibration(attempts, content);
     return res.status(200).json(calibration);
+  });
+
+  app.get('/admin/api/stats', adminMiddleware, (req, res) => {
+    const attempts = store.listAttemptsAll();
+    const totalAttempts = attempts.length;
+    const correctAttempts = attempts.filter((attempt) => attempt.is_correct).length;
+    const overtimeAttempts = attempts.filter((attempt) => attempt.overtime).length;
+    const activeUsers = new Set(attempts.map((attempt) => attempt.user_id)).size;
+    const accuracy = totalAttempts > 0 ? Number((correctAttempts / totalAttempts).toFixed(4)) : 0;
+    const overtimeRate = totalAttempts > 0 ? Number((overtimeAttempts / totalAttempts).toFixed(4)) : 0;
+
+    const patternStats = computeStats(attempts, 'pattern', content);
+    const tagStats = computeStats(attempts, 'tag', content);
+    const difficultyStats = computeStats(attempts, 'difficulty', content);
+
+    return res.status(200).json({
+      totals: {
+        attempts: totalAttempts,
+        accuracy,
+        overtime_rate: overtimeRate,
+        active_users: activeUsers
+      },
+      patterns: patternStats,
+      tags: tagStats,
+      difficulty: difficultyStats
+    });
   });
 
   const listenHost = HOST ? HOST.trim() : '';

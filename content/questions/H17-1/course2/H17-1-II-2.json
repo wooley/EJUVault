@@ -17,8 +17,14 @@
       "data/images_raw/H17-1_course2/page_06.png",
       "data/images_raw/H17-1_course2/page_07.png"
     ],
-    "page_print": ["数学-18", "数学-19"],
-    "page_in_exam": [142, 143]
+    "page_print": [
+      "数学-18",
+      "数学-19"
+    ],
+    "page_in_exam": [
+      142,
+      143
+    ]
   },
   "original_ja": {
     "text": "問2　a, b は定数とする。放物線 y=x^2+ax+4…①，直線 y=4x+b…② について考える。(1) ①と②が共有点をもつための必要十分条件は，a,b の間に b≧([JK]/[L])a^2+[M]a…③ が成り立つことである。(2) ab座標平面上で直線 a+b=k 上の点(a,b)がすべて③で表される領域に含まれるような k の最小値を k0 とするとき，k0=[N] である。(3) a+b=k0 のとき，①と②の共有点のうち，その x 座標が a に無関係な一定値となる点の座標は ([OP],[Q]-a) である。",
@@ -35,15 +41,48 @@
     "formulas": []
   },
   "blanks": [
-    { "id": "JK", "length": 2 },
-    { "id": "L", "length": 1 },
-    { "id": "M", "length": 1 },
-    { "id": "N", "length": 1 },
-    { "id": "OP", "length": 2 },
-    { "id": "Q", "length": 1 }
+    {
+      "id": "JK",
+      "length": 2
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "OP",
+      "length": 2
+    },
+    {
+      "id": "Q",
+      "length": 1
+    }
   ],
   "blank_rules": {
-    "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+    "allowed_chars": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "+",
+      "-",
+      "×",
+      "÷"
+    ],
     "no_whitespace": true,
     "notes": [
       "本题含不等式与参数，负号用 '-' 表示。"
@@ -54,28 +93,53 @@
       "sub_id": "(1)",
       "prompt_zh": "求两图形有交点的充要条件（判别式≥0）。",
       "blanks": [
-        { "id": "JK", "length": 2 },
-        { "id": "L", "length": 1 },
-        { "id": "M", "length": 1 }
+        {
+          "id": "JK",
+          "length": 2
+        },
+        {
+          "id": "L",
+          "length": 1
+        },
+        {
+          "id": "M",
+          "length": 1
+        }
       ]
     },
     {
       "sub_id": "(2)",
       "prompt_zh": "求使直线 a+b=k 全部落在区域内的最小 k0。",
-      "blanks": [{ "id": "N", "length": 1 }]
+      "blanks": [
+        {
+          "id": "N",
+          "length": 1
+        }
+      ]
     },
     {
       "sub_id": "(3)",
       "prompt_zh": "在 a+b=k0 时，求交点中 x 与 a 无关的点坐标。",
       "blanks": [
-        { "id": "OP", "length": 2 },
-        { "id": "Q", "length": 1 }
+        {
+          "id": "OP",
+          "length": 2
+        },
+        {
+          "id": "Q",
+          "length": 1
+        }
       ]
     }
   ],
   "tags": {
-    "domain": ["二次関数"],
-    "skill": ["二次関数のグラフ", "二次関数の最大最小"],
+    "domain": [
+      "二次関数"
+    ],
+    "skill": [
+      "二次関数のグラフ",
+      "二次関数の最大最小"
+    ],
     "course_specific": []
   },
   "difficulty": {
