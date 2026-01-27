@@ -1,0 +1,158 @@
+:root {
+  --ink: #1c1c1c;
+  --ink-soft: #3b3b3b;
+  --accent: #2f5d62;
+  --accent-dark: #24474b;
+  --paper: #f7f1e9;
+  --paper-strong: #efe4d7;
+  --line: #d7c9b6;
+  --shadow: 0 18px 35px rgba(34, 24, 12, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Charter", "Palatino Linotype", "Book Antiqua", serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 10% 10%, #fff5e6 0%, #efe0cc 55%, #dcc7b1 100%);
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px 24px 64px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-mark {
+  background: var(--ink);
+  color: #fff8ef;
+  padding: 12px 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.brand-title {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+.brand-sub {
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.user-slot {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-email {
+  max-width: 260px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--paper-strong);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.panel {
+  background: var(--paper);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+
+.panel-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.panel-desc {
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: var(--ink-soft);
+  gap: 6px;
+}
+
+select,
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  background: var(--paper-strong);
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff8ef;
+}
+
+.btn.primary:hover {
+  background: var(--accent-dark);
+}
+
+.status {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}

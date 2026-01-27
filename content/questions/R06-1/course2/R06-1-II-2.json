@@ -1,0 +1,46 @@
+{
+  "exam": { "exam_id": "R06-1", "year": 2024, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R06-1-II-2",
+  "section": "II",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "ALG_TRANSFORM_SOLVE_PARAM",
+  "original_ja": {
+    "text": "aを実数，iを虚数単位とする。Oを原点とする複素数平面上に2点 A(ai)，B((a+2)i) をとる。点Bを，点Aを中心として -π/3 だけ回転させた点を C(γ) とし，点Aを，点Cを中心として π/2 だけ回転させた点を D(δ) とする。このとき，複素数 γ-δ の絶対値と偏角，および直線ADとOCが直交するような実数aの値を求めよう。\n\n(1) γ,δは a を用いて\nγ=√【N】+(a+【O】)i,\nδ=1+√【P】+(a+【Q】-√【R】)i\nと表される。このとき\n|γ-δ|=【S】,\narg(γ-δ)=【T】/【U】 π\nとなる（ただし 0≦arg(γ-δ)<2π）。\n\n(2) ADとOCが直交するとき，w=(δ-ai)/γ は純虚数である。したがって w+\\bar w=【V】 であり\na=【W】+【X】√【Y】\nである。",
+    "formulas": [],
+    "placeholders": {
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 },
+      "V": { "digits": 1 },
+      "W": { "digits": 1 },
+      "X": { "digits": 1 },
+      "Y": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q2",
+    "sub": "all",
+    "group": "NO/PQR/S/TU/V/WXY"
+  },
+  "solution_ref": "solutions/R06-1/course2/R06-1-II-2.zh.md",
+  "tagging_status": "ok"
+}

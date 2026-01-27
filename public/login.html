@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EJU Math Vault | Login</title>
+    <link rel="stylesheet" href="/static/login.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-mark">EJU</div>
+          <div>
+            <div class="brand-title">Math Vault</div>
+            <div class="brand-sub">Student Login</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panel-title">Email Login</div>
+        <p class="panel-desc">Request a 6-digit code to sign in with your email.</p>
+        <div class="grid">
+          <label>
+            Email
+            <input id="email" type="email" placeholder="Email" autocomplete="email" />
+          </label>
+          <label>
+            Verification Code
+            <input
+              id="code"
+              type="text"
+              placeholder="6-digit code"
+              inputmode="numeric"
+              autocomplete="one-time-code"
+              maxlength="6"
+            />
+          </label>
+        </div>
+        <div class="row">
+          <button id="request-code" class="btn">Send Code</button>
+          <button id="verify-code" class="btn primary">Verify & Login</button>
+        </div>
+        <div id="auth-status" class="status"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">New Here?</div>
+        <p class="panel-desc">Register once with your email, then use it to log in.</p>
+        <a class="btn primary" href="/register">Register</a>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">Next Step</div>
+        <p class="panel-desc">After login, go to the session builder.</p>
+        <a class="btn primary" href="/session/new">Go to Session Builder</a>
+      </section>
+    </div>
+
+    <script src="/static/login.js"></script>
+  </body>
+</html>

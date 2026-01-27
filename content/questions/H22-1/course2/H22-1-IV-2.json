@@ -1,0 +1,56 @@
+{
+  "exam": {
+    "exam_id": "H22-1",
+    "year": 2010,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H22-1-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　曲線 y=2cos2x と曲線 y=4cosx+k は，x=a (0<a≦π/2) で共通の接線をもつとする。\n\n(1) f(x)=2cos2x, g(x)=4cosx+k とおくと，共通の接線をもつから\nf'(a)=g'(a),  f(a)=g(a)\nである。\nf'(a)=g'(a) と 0<a≦π/2 から a=π/[O] であり，f(a)=g(a) から k=-[P] を得る。\nしたがって接点の座標は (π/[O], -[Q]) であり，共通の接線の方程式は\n y= -[R]√[S] ( x- π/[T] ) -[U]\nである。\n\n(2) -π/2≦x≦π/2 の範囲において，この2つの曲線で囲まれた部分の面積Sを求めよう。\n2つの曲線はともにy軸に関して対称であるから，b=[V], c=π/[O] として\nS=[W] ∫_b^c (2cos2x-4cosx-k) dx\nであり，これを計算して\nS=[X]π - [Y]√[Z]\nを得る。",
+    "placeholders": {
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 },
+      "V": { "digits": 1 },
+      "W": { "digits": 1 },
+      "X": { "digits": 1 },
+      "Y": { "digits": 1 },
+      "Z": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q2",
+    "sub": "mixed",
+    "group": "O/P/Q/R/S/T/U/V/W/X/Y/Z"
+  },
+  "solution_ref": "solutions/H22-1/course2/H22-1-IV-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "CALC_CONSTRAINT_INTERSECTION",
+  "tags": ["三角関数", "接線", "条件消去", "面積"]
+}

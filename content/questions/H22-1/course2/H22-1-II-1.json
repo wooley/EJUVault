@@ -1,0 +1,56 @@
+{
+  "exam": {
+    "exam_id": "H22-1",
+    "year": 2010,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H22-1-II-1",
+  "section": "II",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "xy平面上に2直線 y=1, y=-1 および点A(0,3)が与えられている。\nいま，直線y=1上に点Pを，直線y=-1上に点Qをとり，∠PAQ=90°であるとする。\n2点P,Qがこれらの条件を満たして動くとき，線分PQの長さの最小値を求めよう。\n\nまず，Pの座標を(α,1)，Qの座標を(β,-1)とする。このとき∠PAQ=90°を満たすことは，α≠0,β≠0で αβ=[AB] となることである。\nよってα,βは異符号であるから，α＜0＜βとしよう。\nこのとき\nPQ^2=(β-α)^2+[C]\n=α^2+β^2+[DE]\n≥2|αβ|+[DE]=[FG]\nが成り立つ。したがって PQ≥[H] である。\nよってPQは α=[IJ]√[K]，β=[L]√[M] のとき，最小値[H]をとる。",
+    "formulas": [
+      "PQ^2=(\\beta-\\alpha)^2+[C]"
+    ],
+    "placeholders": {
+      "AB": { "digits": 2 },
+      "C": { "digits": 1 },
+      "DE": { "digits": 2 },
+      "FG": { "digits": 2 },
+      "H": { "digits": 1 },
+      "IJ": { "digits": 2 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 },
+      "M": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q1",
+    "sub": "mixed",
+    "group": "AB/C/DE/FG/H/IJ/K/L/M"
+  },
+  "solution_ref": "solutions/H22-1/course2/H22-1-II-1.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "GEO_TRANSFORM_MINMAX",
+  "tags": ["座標幾何", "垂直条件", "最小值", "不等式"]
+}

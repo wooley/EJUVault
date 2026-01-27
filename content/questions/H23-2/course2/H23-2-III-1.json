@@ -1,0 +1,38 @@
+{
+  "exam": { "exam_id": "H23-2", "year": 2011, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H23-2-III-1",
+  "section": "III",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "右図のように AB=9, BC=12, ∠ABC=90° を満たす三角形 ABC と，半径2rの円 O1 と半径 r の円 O2 がある。円 O1, O2 は互いに外接し，円 O1 は2辺 AB, AC と接し，円 O2 は2辺 CA, CB と接している。このとき r を求めよう。\n\n円 O1, O2 と辺 AC の接点をそれぞれ D, E とし，∠O1AC=α とする。\nこのとき tan2α=[A]/[B] となるから，2倍角の公式より tanα=[C]/[D]。\nよって AD=[E]r。\n\n次に ∠O2CA=β とすると，α+β=[FG]° であるから，加法定理より tanβ=[H]/[I]。\nよって CE=[J]r。\n\nさらに AC=[KL]，DE=[M]√[N] r である。以上より\nr= [OP]([Q]−[R]√[S]) / 41\nを得る。",
+    "placeholders": {
+      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
+      "E": { "digits": 1 }, "FG": { "digits": 2 },
+      "H": { "digits": 1 }, "I": { "digits": 1 }, "J": { "digits": 1 },
+      "KL": { "digits": 2 }, "M": { "digits": 1 }, "N": { "digits": 1 },
+      "OP": { "digits": 2 }, "Q": { "digits": 1 }, "R": { "digits": 1 }, "S": { "digits": 1 }
+    }
+  },
+  "solution": {
+    "outline": ["角の二等分と半角公式で tanα,tanβ を求める", "AD,CE を r の式で表す", "外接条件から DE=2√2 r を得て AC=AD+DE+CE を解く"],
+    "steps": [
+      { "idx": 1, "description": "∠A の tan は 12/9=4/3。円O1中心は角A二等分線上なので α=∠A/2。", "math": "\\tan 2\\alpha=\\tan \\angle A=\\frac{4}{3}" },
+      { "idx": 2, "description": "sinA=4/5, cosA=3/5 より tanα=tan(A/2)=sinA/(1+cosA)=1/2。", "math": "\\tan\\alpha=\\frac12" },
+      { "idx": 3, "description": "O1 の半径は 2r、AC への距離が 2r。直角三角形 A O1 D で AD=2r/ tanα=4r。", "math": "AD=4r" },
+      { "idx": 4, "description": "∠C の tan は 9/12=3/4、β=∠C/2。A+C=90° なので α+β=45°。", "math": "\\alpha+\\beta=45^\\circ" },
+      { "idx": 5, "description": "sinC=3/5, cosC=4/5 より tanβ=tan(C/2)=sinC/(1+cosC)=1/3。", "math": "\\tan\\beta=\\frac13" },
+      { "idx": 6, "description": "O2 の半径 r、同様に CE=r/ tanβ=3r。", "math": "CE=3r" },
+      { "idx": 7, "description": "外接で O1O2=2r+r=3r。AC への垂直距離差は 2r−r=r。よって DE=\\sqrt{(3r)^2-r^2}=2\\sqrt2\\,r。", "math": "DE=2\\sqrt2\\,r" },
+      { "idx": 8, "description": "AC=15 より 15=AD+DE+CE=4r+2\\sqrt2 r+3r=r(7+2\\sqrt2)。", "math": "r=\\frac{15}{7+2\\sqrt2}=\\frac{15(7-2\\sqrt2)}{41}" }
+    ]
+  },
+  "answer_ref": { "course": 2, "section": "III", "q": "Q1", "sub": null, "group": "A/B/C/D/E/FG/H/I/J/KL/M/N/OP/Q/R/S" },
+  "solution_ref": "data/solutions/H23-2/course2/H23-2-III-1.zh.md",
+  "tags": ["図形", "円の接線", "半角公式", "外接"],
+  "pattern_id": "GEO_TANGENT_CIRCLES",
+  "tagging_status": "ok"
+}

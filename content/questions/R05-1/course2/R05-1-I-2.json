@@ -1,0 +1,48 @@
+{
+  "exam": { "exam_id": "R05-1", "year": 2023, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R05-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "PROB_CLASSICAL_COUNT",
+  "original_ja": {
+    "text": "問2　次の文中の[O]，[P]には，適する数を入れ，その他の□には右のページの選択肢0〜9の中から適するものを選びなさい。\n\nA，B，Cの3つの箱に，それぞれ9枚のカードが入っている。9枚のカードには，1から9の数字が1つずつ書かれている。\n\n(1) A，B，Cの箱から順に1枚ずつカードを取り出し，それらのカードに書かれた数字をそれぞれa，b，cとする。\n\n(i) a=b≠cである確率は [M] である。\n(ii) a，b，cの中に同じものがない確率は [N] である。\n(iii) a>2b>3cとなる確率pを求めよう。\n　条件を満たすa，b，cの組が存在するようなbの範囲は\n　[O]≦b≦[P]\n　である。このことに注目して\n　p=[Q]\n　を得る。\n\n(2) Aから3枚，Bから2枚，合わせて5枚のカードを取り出す。\n(i) 取り出した5枚のカードの中に奇数が4枚，偶数が1枚ある確率は [R] である。\n(ii) 取り出した5枚のカードの中に奇数が少なくとも1枚ある確率は [S] である。\n\n（選択肢は次ページ）",
+    "formulas": [],
+    "placeholders": {
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [
+      "（1）は全事象9^3に対し場合の数を数える。",
+      "（2）はA箱(3枚)とB箱(2枚)の組合せを別々に数えて積をとる。"
+    ],
+    "steps": [
+      { "idx": 1, "description": "(1)(i) a=b≠c を数える。", "math": "9\\cdot 8/9^3" },
+      { "idx": 2, "description": "(1)(ii) a,b,c 全て異なる場合を数える。", "math": "9\\cdot 8\\cdot 7/9^3" },
+      { "idx": 3, "description": "(1)(iii) bの範囲を絞ってから (a,c) を数える。", "math": "2\\le b\\le 4" },
+      { "idx": 4, "description": "(2)(i) 4奇1偶になる(A,B内の奇数枚数分配)を数える。", "math": "\\frac{600}{\\binom93\\binom92}=\\frac{25}{126}" },
+      { "idx": 5, "description": "(2)(ii) 補集合(全て偶数)を用いる。", "math": "1-\\frac{\\binom43\\binom42}{\\binom93\\binom92}=1-\\frac{1}{126}" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": null, "group": "M/N/OP/Q/R/S" },
+  "solution_ref": "solutions/R05-1/course2/R05-1-I-2.zh.md",
+  "tagging_status": "ok"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "v1.4",
+  "exam": {
+    "exam_id": "H18-2",
+    "year": 2006,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": "course2",
+  "question_id": "H18-2-IV-2",
+  "section": "IV",
+  "problem_no": 2,
+  "page_range": [
+    "数学-20"
+  ],
+  "original_ja": {
+    "text": "問2　f(a)=∫_0^{2π} |sin(x+a)−sin x| dx（0<a<π）とする。\n(1) [H] には次の 0〜5 のうちから当てはまるものを一つ選びなさい。\n　f(a) は，f(a)=[H]∫_0^{2π} |cos(x+a/2)| dx と変形できる。\n　0: sin(a/2)　1: cos(a/2)　2: 2sin(a/2)　3: 2cos(a/2)　4: (1/2)sin(a/2)　5: (1/2)cos(a/2)\n(2) [I] には次の 0〜3 のうちから当てはまるものを一つ選びなさい。\n　関数 y=|cos(x+a/2)| の周期は [I] である。\n　0: π　1: 2π　2: π/2　3: π/4\n　この関数のグラフを考えて，∫_0^{2π} |cos(x+a/2)| dx = [J] である。\n(3) lim_{a→+0} f(a)/a = [K]",
+    "placeholders": [
+      {
+        "key": "H",
+        "expected_len": 1,
+        "format": "single_choice_digit"
+      },
+      {
+        "key": "I",
+        "expected_len": 1,
+        "format": "single_choice_digit"
+      },
+      {
+        "key": "J",
+        "expected_len": 1,
+        "format": "integer"
+      },
+      {
+        "key": "K",
+        "expected_len": 1,
+        "format": "integer"
+      }
+    ]
+  },
+  "answer_ref": {
+    "destination": "official/course2.json",
+    "keys": [
+      "H",
+      "I",
+      "J",
+      "K"
+    ]
+  },
+  "tags": [
+    "calculus",
+    "trigonometry",
+    "definite_integral",
+    "absolute_value",
+    "periodic_function",
+    "limit"
+  ],
+  "pattern_id": "CALC_TRANSFORM_SOLVE_X",
+  "difficulty": {
+    "level": 3,
+    "rationale": "三角恒等变形→绝对值周期积分→极限的链式处理"
+  }
+}

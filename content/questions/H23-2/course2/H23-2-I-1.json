@@ -1,0 +1,41 @@
+{
+  "exam": { "exam_id": "H23-2", "year": 2011, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H23-2-I-1",
+  "section": "I",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問1　2つの実数 a, b が a^3=1/(√5−2), b^3=2−√5 を満たすとき，a+b の値を求めよう。\n\na+b=x とおくと\nx^3=(a+b)^3=a^3+b^3+[A]ab(a+b)\nとなる。また，ab=[BC] であるから，この x は\nx^3+[D]x−[E]=0\nを満たす。\nこの方程式の左辺は\nx^3+[D]x−[E]=(x^3−[F])+[D](x−[F])=(x−[F])(x^2+x+[G])\nと因数分解できる。ここで\nx^2+x+[G]=(x+[H]/[I])^2+[JK]/[L]>0\nであるから，x=a+b=[M] を得る。",
+    "placeholders": {
+      "A": { "digits": 1 },
+      "BC": { "digits": 2 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 },
+      "JK": { "digits": 2 },
+      "L": { "digits": 1 },
+      "M": { "digits": 1 }
+    }
+  },
+  "solution": {
+    "outline": ["与式を整形して a^3,b^3 の和積を計算", "x=a+b として三次式を作る", "実根を特定して x を決定"],
+    "steps": [
+      { "idx": 1, "description": "a^3=1/(√5−2) を有理化する。", "math": "a^3=\\frac{1}{\\sqrt5-2}=\\sqrt5+2" },
+      { "idx": 2, "description": "和と積を計算。", "math": "a^3+b^3=(2+\\sqrt5)+(2-\\sqrt5)=4,\n(a^3b^3)=(2+\\sqrt5)(2-\\sqrt5)=-1" },
+      { "idx": 3, "description": "実数として (ab)^3=-1 より ab=-1。x=a+b とおく。", "math": "ab=-1" },
+      { "idx": 4, "description": "x^3=(a+b)^3=a^3+b^3+3ab(a+b)=4-3x。", "math": "x^3+3x-4=0" },
+      { "idx": 5, "description": "x=1 が解なので (x-1)(x^2+x+4)=0。後者は常に正。", "math": "x=1" }
+    ]
+  },
+  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": null, "group": "A/BC/D/E/F/G/H/I/JK/L/M" },
+  "solution_ref": "data/solutions/H23-2/course2/H23-2-I-1.zh.md",
+  "tags": ["式の計算", "因数分解", "三次方程式"],
+  "pattern_id": "ALG_TRANSFORM_SOLVE_X",
+  "tagging_status": "ok"
+}

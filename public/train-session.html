@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EJU Math Vault | Training Session</title>
+    <link rel="stylesheet" href="/static/train-session.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-mark">EJU</div>
+          <div>
+            <div class="brand-title">Math Vault</div>
+            <div class="brand-sub">Training Session</div>
+          </div>
+        </div>
+        <div class="status">
+          <span id="timer" class="timer">00:00</span>
+          <span id="overtime" class="overtime hidden">Overtime</span>
+          <span id="user-email" class="user-email hidden"></span>
+        </div>
+      </header>
+
+      <section class="panel auth-panel" id="auth-panel">
+        <div class="panel-title">Access Token</div>
+        <p class="panel-desc">Paste your JWT token to load this session.</p>
+        <div class="auth-row">
+          <input id="token-input" type="text" placeholder="Bearer token" />
+          <button id="token-save" class="btn">Save</button>
+        </div>
+        <p class="panel-hint">Token is stored locally in your browser.</p>
+      </section>
+
+      <section class="panel session-panel" id="session-panel">
+        <div class="session-header">
+          <div>
+            <div class="panel-title">Session</div>
+            <div id="session-meta" class="panel-desc">Loading...</div>
+          </div>
+          <div class="lang-toggle">
+            <button class="toggle active" data-lang="ja">JA</button>
+            <button class="toggle" data-lang="zh">ZH</button>
+          </div>
+        </div>
+
+        <div class="progress" id="progress"></div>
+
+        <div id="question-stage">
+          <div class="question">
+            <div class="question-text" id="question-text"></div>
+            <div class="input-grid" id="input-grid"></div>
+          </div>
+
+          <div class="actions">
+            <div class="actions-left">
+              <button id="submit" class="btn primary" disabled>Submit</button>
+            </div>
+            <div class="actions-right">
+              <button id="prev" class="btn ghost" disabled>Prev</button>
+              <button id="next" class="btn ghost" disabled>Next</button>
+            </div>
+          </div>
+
+          <div class="feedback" id="feedback"></div>
+          <div class="solution hidden" id="solution"></div>
+        </div>
+
+        <div class="session-summary hidden" id="session-summary">
+          <div class="summary-header">
+            <div>
+              <div class="panel-title">Session Summary</div>
+              <div class="panel-desc">Click a question to view its solution.</div>
+            </div>
+            <div class="summary-stats">
+              <div class="summary-stat">
+                <div class="summary-label">Total time</div>
+                <div class="summary-value" id="summary-time">00:00</div>
+              </div>
+              <div class="summary-stat">
+                <div class="summary-label">Accuracy</div>
+                <div class="summary-value" id="summary-accuracy">0%</div>
+              </div>
+              <div class="summary-stat">
+                <div class="summary-label">Correct</div>
+                <div class="summary-value" id="summary-correct">0 / 0</div>
+              </div>
+            </div>
+          </div>
+          <div class="summary-list" id="summary-list"></div>
+        </div>
+      </section>
+    </div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+    <script defer src="/static/train-session.js"></script>
+  </body>
+</html>

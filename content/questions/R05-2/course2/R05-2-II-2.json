@@ -1,0 +1,17 @@
+{
+  "exam": { "exam_id": "R05-2", "year": 2023, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R05-2-II-2",
+  "section": "II",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "GEO_TRANSFORM_SOLVE_PARAM",
+  "original_ja": {
+    "text": "問2　円Cと直線ℓ，mを\nC: x^2+y^2-4x-2y+5-r^2=0\nℓ: y=2x-1\nm: y=(3/4)x-1\nとし，直線ℓに関して円Cと対称な円をC'とする。\n\n(1) 円Cの中心は([N],[O])，半径は r である。\n\n(2) 円C'の中心(a,b)を求めよう。円Cと円C'は直線ℓに関して対称であるから\na=[P]/[Q]， b=[R]/[S]\nである。\n\n(3) 円C'が直線mに接するように r を求めよう。\n\na,b を用いると\nr=|[T]a-[U]b-[V]|/[W]\nであるから\nr=[X]\nである。"
+  },
+  "solution_ref": { "path": "solutions/R05-2/course2/R05-2-II-2.zh.md" },
+  "answer_ref": { "path": "answers/ai_ans.json", "key": "R05-2-II-2" },
+  "tagging_status": "generated"
+}

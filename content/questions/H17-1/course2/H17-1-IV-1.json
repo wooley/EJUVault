@@ -1,0 +1,79 @@
+{
+  "exam": {
+    "exam_id": "H17-1",
+    "year": 2005,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H17-1-IV-1",
+  "section": "IV",
+  "order": 1,
+  "type": "fill_in",
+  "source": {
+    "images": ["data/images_raw/H17-1_course2/page_11.png"],
+    "page_print": "数学-23",
+    "page_in_exam": 147
+  },
+  "original_ja": {
+    "text": "問1　a,bを定数とする。関数 f(x)=(ax+b)e^{x/2} がすべての実数xに対して f(x)=e^{x/2}-1 + (1/2)∫_0^x f(t)dt を満たすとき，f(0)=[A] であり，a=[B]/[C]，b=[D] である。また，曲線 y=f(x) とx軸および直線 x=2 で囲まれる部分の面積Sは S=[E] である。",
+    "formulas": [
+      "f(x)=(ax+b)e^{x/2}",
+      "f(x)=e^{x/2}-1+\\frac12\\int_0^x f(t)\\,dt",
+      "f(0)=[A],\\ a=\\frac{[B]}{[C]},\\ b=[D],\\ S=[E]"
+    ]
+  },
+  "translation_zh": {
+    "text": "题1 设 a、b 为常数，函数 f(x)=(ax+b)e^{x/2} 对任意实数 x 满足 f(x)=e^{x/2}-1 + 1/2∫_0^x f(t)dt。求 f(0)、a、b，并求由曲线 y=f(x)、x轴与直线 x=2 围成的面积 S。",
+    "formulas": []
+  },
+  "blanks": [
+    { "id": "A", "length": 1 },
+    { "id": "B", "length": 1 },
+    { "id": "C", "length": 1 },
+    { "id": "D", "length": 1 },
+    { "id": "E", "length": 1 }
+  ],
+  "blank_rules": {
+    "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+    "no_whitespace": true,
+    "notes": []
+  },
+  "tags": {
+    "domain": ["微分方程・積分"],
+    "skill": ["積分方程→微分方程", "指数関数の積分"],
+    "course_specific": []
+  },
+  "difficulty": {
+    "level": 4,
+    "method": "heuristic_v1",
+    "rationale": [
+      "把积分方程微分化成一阶线性微分方程",
+      "求解后再计算面积积分"
+    ],
+    "features": {
+      "steps_min": 9,
+      "concept_count": 3,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution_outline": [
+    "代入 x=0 得 f(0)",
+    "两边对 x 求导得到一阶线性 ODE",
+    "解 ODE 得 f(x) 并匹配 a,b",
+    "积分求面积 S"
+  ],
+  "answer_ref": {
+    "exam_id": "H17-1",
+    "course": 2,
+    "section": "IV",
+    "question_number": 1
+  },
+  "solution_ref": "data/solutions/H17-1/course2/H17-1-IV-1.zh.md",
+  "tagging_status": "ok"
+}

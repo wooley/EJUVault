@@ -1,0 +1,87 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H19-1",
+    "year": 2007,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H19-1-II-2",
+  "section": "II",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2 数列{a_n}は a_n>0, 4\\sqrt{S_n}=a_n+4 (n=1,2,3,...) を満たす。ただし S_n=\\sum_{k=1}^n a_k。\n(1) a_1=[K]\n(2) [LM]a_{n+1}=(a_{n+1}+[N])^2-(a_n+[O])^2 より a_{n+1}-a_n=[P]\n(3) a_n=68 ならば n=[Q]",
+    "formulas": [],
+    "placeholders": {
+      "K": {
+        "digits": 1
+      },
+      "LM": {
+        "digits": 2
+      },
+      "N": {
+        "digits": 1
+      },
+      "O": {
+        "digits": 1
+      },
+      "P": {
+        "digits": 2
+      },
+      "Q": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [
+      "n=1 代入求 a1",
+      "把 Sn 写成 (a_n+4)^2/16 建立递推并求通项"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "n=1 代入",
+        "math": "4\\sqrt{a_1}=a_1+4"
+      },
+      {
+        "idx": 2,
+        "description": "设 b_n=a_n+4，利用 S_{n+1}=S_n+a_{n+1}",
+        "math": "b_{n+1}^2=b_n^2+16b_{n+1}-64"
+      },
+      {
+        "idx": 3,
+        "description": "化为 (b_{n+1}-8)^2=b_n^2 得线性递推",
+        "math": "b_{n+1}=b_n+8"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q2",
+    "sub": "(1)(2)(3)",
+    "group": "K/LMNOP/Q"
+  },
+  "solution_ref": "solutions/H19-1/course2/H19-1-II-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "sequence_sqrt_sum_linearization",
+  "tags": [
+    "数列",
+    "递推",
+    "配方",
+    "求通项"
+  ]
+}

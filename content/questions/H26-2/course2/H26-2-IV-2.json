@@ -1,0 +1,27 @@
+{
+  "exam": { "exam_id": "H26-2", "year": 2014, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H26-2-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "LIMIT_TRIG_POWER_INTEGRAL",
+  "original_ja": {
+    "text": "問2 f_n(x)=sin^n x (n=1,2,3,…)。(1) lim_{x→0} (a-x^2-(b-x^2)^2)/f_n(x)=c が成り立つ場合を考える。(i) a=b^[O]。(ii) n=2のときc=6ならb=[P]/[Q]。(iii) n=4のときb=[R]/[S], c=-[T]。(2) I_n=∫_0^{π/2} f_n(x) sin2x dx (n=1,2,…) とすると，I_n=[U]/(n+[V])。したがって lim_{n→∞}(I_{n-1}+I_n+…+I_{2n-2})=∫_0^{√[W]} [X]/([Y]+x) dx = log[Z]。",
+    "placeholders": {
+      "O": { "digits": 1 },
+      "P": { "digits": 1 }, "Q": { "digits": 1 },
+      "R": { "digits": 1 }, "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 }, "V": { "digits": 1 },
+      "W": { "digits": 1 },
+      "X": { "digits": 1 }, "Y": { "digits": 1 },
+      "Z": { "digits": 1 }
+    }
+  },
+  "answer_ref": { "course": 2, "section": "IV", "q": "Q2", "sub": null, "group": "O,P,Q,R,S,T,U,V,W,X,Y,Z" },
+  "solution_ref": "solutions/H26-2/course2/H26-2-IV-2.zh.md",
+  "tagging_status": "ok"
+}

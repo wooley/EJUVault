@@ -1,0 +1,77 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H21-2",
+    "year": 2009,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H21-2-III-1",
+  "section": "III",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "c は実数とする。不等式\nx^2+y^2+4x−8y+c<0 ……①\nと連立不等式\n{x−y+8>0,\n 4x+3y−24<0,\n y>0} ……②\nを考える。①が解をもつとき，①，②が表す領域を参考にして次に答えなさい。\n(1) 不等式①が表す領域の境界は中心が([AB], [C])であり，半径が √([DE]−c) の円である。\n(2) 条件 p：xとyは不等式①を満たす，q：xとyは連立不等式②を満たす。\nこのとき，p が q の十分条件となるような c の値の範囲は [FG] ≤ c < [HI]。\nまた，p が q の必要条件となるような c の値の範囲は c ≤ [JKL]。",
+    "formulas": [],
+    "placeholders": {
+      "AB": { "digits": 2 },
+      "C": { "digits": 1 },
+      "DE": { "digits": 2 },
+      "FG": { "digits": 2 },
+      "HI": { "digits": 2 },
+      "JKL": { "digits": 3 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 4
+    }
+  },
+  "solution": {
+    "outline": [
+      "①を平方完成して円の中心・半径を読む",
+      "②の領域（三角形）を把握する",
+      "p⇒q：円盤が三角形内に入る（最短距離で判定）",
+      "q⇒p：三角形が円盤内に入る（頂点までの最大距離で判定）"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "①を平方完成： (x+2)^2+(y-4)^2 < 20-c。中心(-2,4)，半径^2=20-c。",
+        "math": "(x+2)^2+(y-4)^2<20-c"
+      },
+      {
+        "idx": 2,
+        "description": "②は y>0 かつ y<x+8 と y<8-(4/3)x の下側で囲まれる三角形。中心(-2,4)はこの三角形内にある。",
+        "math": "q:\\ y>0,\\ y<x+8,\\ 4x+3y<24"
+      },
+      {
+        "idx": 3,
+        "description": "p⇒q（円盤⊂三角形）：半径 ≤ 中心から三辺への最短距离最小值。三边距分别为 4, √2, 4，故半径 ≤ √2 ⇒ 20-c ≤2 ⇒ c ≥18，同时需 20-c>0 ⇒ c<20。",
+        "math": "18\\le c<20"
+      },
+      {
+        "idx": 4,
+        "description": "q⇒p（三角形⊂圆盘）：半径^2 ≥ 中心到三顶点距离平方最大值。三顶点(-8,0),(6,0),(0,8)中最大为 80，故 20-c ≥80 ⇒ c≤-60。",
+        "math": "c\\le -60"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "III",
+    "q": "Q1",
+    "sub": "(1)(2)",
+    "group": "AB/C/DE/FG/HI/JKL"
+  },
+  "solution_ref": "data/solutions/H21-2/course2/H21-2-III-1.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "ALG_INTERVAL_INEQUALITY_REGION",
+  "tags": ["二元不等式", "平方完成", "圆与距离", "充分必要条件"]
+}

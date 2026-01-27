@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EJU Math Vault | Exam Browser</title>
+    <link rel="stylesheet" href="/static/admin.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-mark">EJU</div>
+          <div>
+            <div class="brand-title">Math Vault</div>
+            <div class="brand-sub">Exam Browser</div>
+          </div>
+        </div>
+        <a class="link" href="/admin">Dashboard</a>
+      </header>
+
+      <section class="panel">
+        <div class="panel-title">Select Exam</div>
+        <div id="exam-list" class="exam-grid"></div>
+        <div id="exam-summary" class="panel-desc"></div>
+        <div id="exam-questions" class="results"></div>
+      </section>
+    </div>
+
+    <script src="/static/admin-exams.js"></script>
+  </body>
+</html>

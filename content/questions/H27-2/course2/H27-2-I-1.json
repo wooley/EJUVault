@@ -1,0 +1,38 @@
+{
+  "exam_id": "H27-2",
+  "year": 2015,
+  "session": 2,
+  "course": 2,
+  "subject": "math",
+  "section": "I",
+  "question_no": 1,
+  "question_id": "H27-2-I-1",
+  "format": "fill_in",
+  "title": "二次関数の最大値・最小値",
+  "tags": ["quadratic", "max_min", "interval"],
+  "pattern_id": "ALG-QUAD-EXT-INTERVAL-01",
+  "prompt_ja": "a,bは実数であり，0<b<7とする。二次関数 f(x)=x^2-6x+a の b≦x≦7 の範囲における最大値Mと最小値mを考える。",
+  "blanks": [
+    { "key": "A", "type": "int", "note": "平方完成の中心" },
+    { "key": "B", "type": "int", "note": "平方完成の定数" },
+    { "key": "C", "type": "choice_0_9", "note": "場合分け境界（0〜9から選択）" },
+    { "key": "D", "type": "choice_0_9", "note": "M（0〜9から選択）" },
+    { "key": "E", "type": "choice_0_9", "note": "m（0〜9から選択）" },
+    { "key": "F", "type": "choice_0_9", "note": "M（0〜9から選択）" },
+    { "key": "G", "type": "choice_0_9", "note": "m（0〜9から選択）" },
+    { "key": "H", "type": "int", "note": "aの値" },
+    { "key": "I", "type": "int", "note": "bの値" }
+  ],
+  "choices_ja": {
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "a-6",
+    "5": "a+7",
+    "6": "a+8",
+    "7": "a-9",
+    "8": "b^2-6b+a",
+    "9": "b^2+6b+a"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "exam": { "exam_id": "H28-2", "year": 2016, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H28-2-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2 箱の中に0から9までの数字が書かれたカードが、それぞれ1枚ずつ、計10枚入っている。この箱の中から3枚のカードを次の2通りの方法で取り出す。このとき、次の確率について考える。\n(1) 3枚のカードを同時に取り出す。このとき\n(i) 3枚のカードに書かれた数が、すべて2以上6以下である確率は [K]/[LM] である。\n(ii) 最も小さい数が2以下で、最も大きい数が8以上である確率は [NO]/[PQ] である。\n(2) 1枚のカードを取り出し、数字を見てから元の箱に戻す試行を3回続ける。このとき、最も小さい数が2以上で、最も大きい数が6以下である確率は [R]/[S] である。",
+    "placeholders": {
+      "K": { "digits": 1 },
+      "LM": { "digits": 2 },
+      "NO": { "digits": 2 },
+      "PQ": { "digits": 2 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 }
+    }
+  },
+  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": "main", "group": "K/LM/NO/PQ/R/S" },
+  "solution_ref": "solutions/H28-2/course2/H28-2-I-2.zh.md",
+  "pattern_id": "PROB_COMBINATION"
+}

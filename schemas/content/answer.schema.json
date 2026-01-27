@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/content/answer.schema.json",
+  "title": "Answer",
+  "type": "object",
+  "description": "Answer sources may be in multiple legacy formats. The indexer normalizes them by question_id and answer keys.",
+  "additionalProperties": true,
+  "oneOf": [
+    {
+      "description": "Flat question_id -> answer group map.",
+      "patternProperties": {
+        "^[A-Z]\\d{2}-\\d-[IVX]+-\\d+$": {
+          "type": "object",
+          "additionalProperties": {
+            "type": ["number", "string"]
+          }
+        }
+      }
+    },
+    {
+      "description": "Wrapped answers object.",
+      "properties": {
+        "answers": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "type": ["number", "string"]
+            }
+          }
+        }
+      },
+      "required": ["answers"]
+    },
+    {
+      "description": "Section/Q format (I/II/III/IV -> Q1/Q2 -> groups or subparts).",
+      "patternProperties": {
+        "^(I|II|III|IV)$": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    },
+    {
+      "description": "Detailed answer_key format with raw/slot_count/chars.",
+      "properties": {
+        "answer_key": { "type": "object", "additionalProperties": true }
+      },
+      "required": ["answer_key"]
+    }
+  ]
+}

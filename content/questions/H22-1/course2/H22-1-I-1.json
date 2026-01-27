@@ -1,0 +1,51 @@
+{
+  "exam": {
+    "exam_id": "H22-1",
+    "year": 2010,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H22-1-I-1",
+  "section": "I",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問1　方程式　(x-1)^2 = |3x-5|　……① を考える。\n\n(1) 方程式①の解のうち x≧5/3 を満たす解は，x=[A],[B]である。ただし，[A]＜[B]とする。\n(2) 方程式①の解は全部で[C]個ある。その解のうちで最小のものをαとすると，m-1＜α≦m を満たす整数mは[DE]である。",
+    "formulas": [
+      "(x-1)^2 = |3x-5|"
+    ],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "DE": { "digits": 2 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": true,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "mixed",
+    "group": "A/B/C/DE"
+  },
+  "solution_ref": "solutions/H22-1/course2/H22-1-I-1.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "ALG_CASE_SOLVE_X",
+  "tags": ["絶対値", "方程式", "場合分け", "二次方程式"]
+}

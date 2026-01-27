@@ -1,0 +1,113 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H19-1",
+    "year": 2007,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H19-1-I-1",
+  "section": "I",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問1 2次関数 f(x)=x^2-ax+a^2 の 0≦x≦1 における最小値 m を求めよう。\n\nf(x)は\nf(x)=(x-a/[A])^2 + [B]/[C] a^[D]\nと変形できる。したがって，f(x)は\n\na≦[E] のとき，x=[F] で最小となり，m=a^[G]\n\n[E]<a<[H] のとき，x=a/[I] で最小となり，m=[J]/[K] a^[L]\n\n[H]≦a のとき，x=[M] で最小となり，m=[N]-a+a^[O]\nとなる。",
+    "placeholders": {
+      "A": {
+        "digits": 1
+      },
+      "B": {
+        "digits": 1
+      },
+      "C": {
+        "digits": 1
+      },
+      "D": {
+        "digits": 1
+      },
+      "E": {
+        "digits": 1
+      },
+      "F": {
+        "digits": 1
+      },
+      "G": {
+        "digits": 1
+      },
+      "H": {
+        "digits": 1
+      },
+      "I": {
+        "digits": 1
+      },
+      "J": {
+        "digits": 1
+      },
+      "K": {
+        "digits": 1
+      },
+      "L": {
+        "digits": 1
+      },
+      "M": {
+        "digits": 1
+      },
+      "N": {
+        "digits": 1
+      },
+      "O": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "has_case_split": true,
+      "has_parameter_elimination": false,
+      "has_integer_constraint": false,
+      "is_divisibility": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [
+      "平方完成求顶点",
+      "比较顶点与区间端点位置，分情况取最小值"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "平方完成",
+        "math": "x^2-ax+a^2=(x-\\frac a2)^2+\\frac34a^2"
+      },
+      {
+        "idx": 2,
+        "description": "顶点在 x=a/2，判断其与区间 [0,1] 的位置",
+        "math": "x_v=\\frac a2"
+      },
+      {
+        "idx": 3,
+        "description": "分别取 x=0, x=a/2, x=1 的函数值并确定最小",
+        "math": "f(0)=a^2,\\ f(\\frac a2)=\\frac34a^2,\\ f(1)=1-a+a^2"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "",
+    "group": "A-O"
+  },
+  "solution_ref": "solutions/H19-1/course2/H19-1-I-1.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "quad_min_on_interval_param_case",
+  "tags": [
+    "二次函数",
+    "平方完成",
+    "区间最值",
+    "参数讨论"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "exam": { "exam_id": "H23-2", "year": 2011, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H23-2-II-1",
+  "section": "II",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "O を原点とする座標平面上に4点 A(1,0), B(0,1), C(3,0), D(0,2) をとり，線分 AB, CD 上にそれぞれ点 P, Q を AP:PB=CQ:QD=k:2 となるようにとる。このとき線分 PQ の長さの最小値を求めよう。\n(1) まず \\overrightarrow{PQ}=(x,y) とおき，x+2y の値を求めよう。\n\\overrightarrow{OP}=([A]\\overrightarrow{OA}+k\\overrightarrow{OB})/(k+[B]),\\ \\overrightarrow{OQ}=([C]\\overrightarrow{OC}+k\\overrightarrow{OD})/(k+[D])\nより (x,y)=1/(k+[E])([F],k) を得る。よって x+2y=[G]。\n(2) PQ^2 を y で表すと PQ^2=[H]y^2-[I]y+[J]。\nよって PQ が最小となるのは y=[K]/[L] のときで，その値は PQ=[M]\\sqrt{[N]}/[O]。\nこのときの k の値は k=[P]。",
+    "placeholders": {
+      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
+      "E": { "digits": 1 }, "F": { "digits": 1 }, "G": { "digits": 1 },
+      "H": { "digits": 1 }, "I": { "digits": 1 }, "J": { "digits": 1 },
+      "K": { "digits": 1 }, "L": { "digits": 1 },
+      "M": { "digits": 1 }, "N": { "digits": 1 }, "O": { "digits": 1 },
+      "P": { "digits": 1 }
+    }
+  },
+  "solution": {
+    "outline": ["内分点公式で P,Q の座標を表す", "PQ ベクトルを k（または y）で表す", "二次式最小化で最短距離を求める"],
+    "steps": [
+      { "idx": 1, "description": "AP:PB=k:2 より P は AB を内分：OP=(2OA+kOB)/(k+2)。", "math": "P\\left(\\frac{2}{k+2},\\frac{k}{k+2}\\right)" },
+      { "idx": 2, "description": "CQ:QD=k:2 より Q は CD を内分：OQ=(2OC+kOD)/(k+2)。", "math": "Q\\left(\\frac{6}{k+2},\\frac{2k}{k+2}\\right)" },
+      { "idx": 3, "description": "PQ=(x,y)=Q-P=(4/(k+2),\\ k/(k+2))。よって x+2y=2。", "math": "x+2y=2" },
+      { "idx": 4, "description": "y=k/(k+2) とおくと x=2(1-y)。よって PQ^2=4(1-y)^2+y^2=5y^2-8y+4。", "math": "PQ^2=5y^2-8y+4" },
+      { "idx": 5, "description": "最小は y=8/(2·5)=4/5。PQ^2=4/5 ⇒ PQ=2/\\sqrt5=2\\sqrt5/5。", "math": "y=\\frac45,\\ PQ=\\frac{2\\sqrt5}{5}" },
+      { "idx": 6, "description": "y=k/(k+2)=4/5 から k=8。", "math": "k=8" }
+    ]
+  },
+  "answer_ref": { "course": 2, "section": "II", "q": "Q1", "sub": null, "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P" },
+  "solution_ref": "data/solutions/H23-2/course2/H23-2-II-1.zh.md",
+  "tags": ["ベクトル", "内分点", "最小値", "二次式"],
+  "pattern_id": "VEC_MIN_DISTANCE",
+  "tagging_status": "ok"
+}

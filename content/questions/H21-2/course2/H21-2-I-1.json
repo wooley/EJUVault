@@ -1,0 +1,76 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H21-2",
+    "year": 2009,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H21-2-I-1",
+  "section": "I",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問1　6−√5 の整数部分を a，小数部分を b とする。このとき\na＝[A]，　b＋4/b＝[B]\nである。\nまた\nb^3＋(4/b)^3＝(b＋4/b)^[C]−[DE](b＋4/b)\nであるから\n4a^3−{b^3＋(4/b)^3}＝[FGH]\nを得る。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "DE": { "digits": 2 },
+      "FGH": { "digits": 3 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": true,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [
+      "整数部分と小数部分を定義どおりに分解する",
+      "b+4/b を有理化で評価する",
+      "和の立方の恒等式で b^3+(4/b)^3 を処理する",
+      "最後に数値代入して式全体を計算する"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "6−√5 を a+b（0≤b<1）に分ける。√5≈2.236 より 6−√5≈3.763 なので a=3，b=(6−√5)−3=3−√5。",
+        "math": "a=3,\\quad b=3-\\sqrt5"
+      },
+      {
+        "idx": 2,
+        "description": "b+4/b を計算する。4/b=4/(3−√5)=4(3+√5)/(9−5)=3+√5 より和は 6。",
+        "math": "b+\\frac4b=(3-\\sqrt5)+(3+\\sqrt5)=6"
+      },
+      {
+        "idx": 3,
+        "description": "x=b, y=4/b とおくと xy=4。恒等式 x^3+y^3=(x+y)^3-3xy(x+y) を用いる。",
+        "math": "b^3+\\left(\\frac4b\\right)^3=(b+\\frac4b)^3-12(b+\\frac4b)"
+      },
+      {
+        "idx": 4,
+        "description": "b+4/b=6 を代入して b^3+(4/b)^3=216-72=144。さらに 4a^3=4·27=108 より差を求める。",
+        "math": "4a^3-\\{b^3+(4/b)^3\\}=108-144=-36"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "(1)",
+    "group": "A/B/C/DE/FGH"
+  },
+  "solution_ref": "data/solutions/H21-2/course2/H21-2-I-1.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "ALG_TRANSFORM_EVAL_EXPR",
+  "tags": ["数と式", "有理化", "恒等式"]
+}

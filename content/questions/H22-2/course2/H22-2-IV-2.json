@@ -1,0 +1,49 @@
+{
+  "exam": {
+    "exam_id": "H22-2",
+    "year": 2010,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H22-2-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　関数 f(x)=(x+2)/√(4x-x^2) を考える。\n(1) f'(x)=[N](x-[O])/(√(4x-x^2))^3 であるから，f(x)は x=[P] で最小値 √[Q] をとる。\n(2) 曲線y=f(x)と2直線x=1,x=3およびx軸で囲まれた部分をx軸の周りに1回転してできる立体の体積Vは\nV=π∫_1^3(-1+[R]/x+[S]/(4-x))dx=π([TU]log[V]-[W]) である。",
+    "formulas": [],
+    "placeholders": {
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "TU": { "digits": 2 },
+      "V": { "digits": 1 },
+      "W": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 4
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "source": "official/course2.json",
+    "path": ["H22-2", "IV", "Q2"]
+  },
+  "solution_ref": "solutions/H22-2/course2/H22-2-IV-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "CALC_VOLUME_REVOLUTION"
+}

@@ -1,0 +1,80 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H21-2",
+    "year": 2009,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H21-2-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　関係式\nf(x)=3x+3∫_0^x f(t)dt+4∫_0^1 f(t)dt ……①\nを満たす微分可能な関数 f(x) を求めよう。\nまず\nf(0)=[J]∫_0^1 f(t)dt ……②\nである。\n次に，①の両辺を x で微分すると\nf'(x)=[K]([L]+f(x))\nを得る。これより\n(( [L]+f(x) )')/( [L]+f(x) )=[K] ……③\nここで，③の両辺を x で積分して変形すると\nf(x)=Ce^[M]x−[N] ……④\nとなる。ただし，C は定数である。\nよって，②より，④の C の値を求めると\nC=[O]/([P]e^[Q]−[R])\nとなり，f(x) が求まる。",
+    "formulas": [],
+    "placeholders": {
+      "J": { "digits": 1 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 },
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 4
+    }
+  },
+  "solution": {
+    "outline": [
+      "令 A=∫0^1 f(t)dt，将其视为常数",
+      "x=0 得到 f(0)=4A",
+      "对原式求导得到一阶线性微分方程",
+      "代回 A 条件解出常数 C"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "令 A=∫0^1 f(t)dt。代入 x=0：f(0)=4A。",
+        "math": "f(0)=4\\int_0^1 f(t)dt"
+      },
+      {
+        "idx": 2,
+        "description": "对①两边对 x 求导：左侧 f'(x)，右侧为 3+3f(x)。",
+        "math": "f'(x)=3+3f(x)=3(1+f(x))"
+      },
+      {
+        "idx": 3,
+        "description": "化为 (1+f)'/(1+f)=3，积分得 1+f(x)=Ce^{3x}，即 f(x)=Ce^{3x}-1。",
+        "math": "f(x)=Ce^{3x}-1"
+      },
+      {
+        "idx": 4,
+        "description": "用 f(0)=4A：C-1=4(∫0^1(Ce^{3t}-1)dt)。计算积分并解出 C=9/(4e^3-7)。",
+        "math": "C=\\frac{9}{4e^3-7}"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q2",
+    "sub": "(1)",
+    "group": "J/K/L/M/N/O/P/Q/R"
+  },
+  "solution_ref": "data/solutions/H21-2/course2/H21-2-IV-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "CALC_DIFFEQ_INTEGRAL_EQUATION",
+  "tags": ["积分方程", "微分", "常微分方程", "定积分常数"]
+}

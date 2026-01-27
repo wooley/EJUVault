@@ -1,0 +1,57 @@
+{
+  "exam": { "exam_id": "R3-2", "year": 2021, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R3-2-IV-1",
+  "section": "IV",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "CALC_TANGENT_AREA",
+  "original_ja": {
+    "text": "2つの関数 y=1/(2x) (x>0), y=4/(2x+1) (x>-1/2) のグラフを順にC1,C2とおく。C1,C2の両方に接する直線ℓを求め，さらにC1とC2とℓで囲まれる部分の面積Sを求めよう。(1) C1の点(s,1/2s)における接線 y=-(1/[A]s^2)x+[B]/s，C2の点(t,4/(2t+1))における接線 y=-[C]/(2t+1)^2 x+([DE]t+[F])/(2t+1)^2。これらが同一直線より 2t+1=[G]s，s=[H]/[I], t=[J]。よって ℓ: y=[KL]x+[M]。(2) 交点のx座標は [N]/[O]。よって S=[P]/[Q]log2-[R]/[S]log3-[T]/[U]。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "DE": { "digits": 2 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 },
+      "J": { "digits": 1 },
+      "KL": { "digits": 2 },
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 4
+    }
+  },
+  "solution": {
+    "outline": ["分别求两曲线任意点切线", "令两切线同一直线解出s,t并得ℓ", "求交点与定积分面积"],
+    "steps": [
+      { "idx": 1, "description": "C1: y=1/(2x)，切线斜率 y'=-1/(2x^2)，在x=s处切线：y=-(1/(2s^2))x+1/s。", "math": "A=2,\\ B=1" },
+      { "idx": 2, "description": "C2: y=4/(2x+1)，切线斜率 y'=-8/(2x+1)^2，在x=t处切线写成题面形式。", "math": "C=8,\\ DE=16,\\ F=4" },
+      { "idx": 3, "description": "同一直线：比较斜率与截距得 2t+1=4s, s=1/4, t=0，故ℓ: y=-8x+4。", "math": "G=4,\\ HI=14,\\ J=0,\\ KLM=-84" },
+      { "idx": 4, "description": "交点：解 1/(2x)=4/(2x+1) 得 x=1/6。", "math": "NO=16" },
+      { "idx": 5, "description": "面积用积分计算，化为给定对数形式。", "math": "S=\\frac72\\log2-\\frac32\\log3-\\frac34" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "IV", "q": "Q1", "sub": "all", "group": "AB/CDEF/G/HI/J/KLM/NO/PQ/RS/TU" },
+  "solution_ref": "solutions/R3-2/course2/R3-2-IV-1.zh.md",
+  "tagging_status": "ok"
+}

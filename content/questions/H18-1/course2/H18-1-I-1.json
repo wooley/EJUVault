@@ -1,0 +1,72 @@
+{
+  "exam": {
+    "exam_id": "H18-1",
+    "year": 2006,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H18-1-I-1",
+  "section": "I",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "QF_TRANSFORM_SOLVE_PARAM",
+  "original_ja": {
+    "text": "問1 2次関数 y=5x^2+2x のグラフを C とする。C は頂点の座標が ( [AB]/[C] , [DE]/[F] ) の放物線である。(1) C を原点に関して対称移動してできる放物線の方程式は y=[GH]x^2+[I]x である。(2) C を y 軸方向に a だけ平行移動して得られる放物線の頂点が直線 y=ax+3 上にあるとき，a=[J]/[K] である。",
+    "formulas": [
+      "y=5x^2+2x",
+      "y=[GH]x^2+[I]x",
+      "y=ax+3"
+    ],
+    "placeholders": {
+      "AB": {
+        "digits": 2
+      },
+      "C": {
+        "digits": 1
+      },
+      "DE": {
+        "digits": 2
+      },
+      "F": {
+        "digits": 1
+      },
+      "GH": {
+        "digits": 2
+      },
+      "I": {
+        "digits": 1
+      },
+      "J": {
+        "digits": 1
+      },
+      "K": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "(all)",
+    "group": "AB/C,DE/F,GH,I,J/K"
+  },
+  "solution_ref": "data/solutions/H18-1/course2/H18-1-I-1.zh.md",
+  "tagging_status": "ok"
+}

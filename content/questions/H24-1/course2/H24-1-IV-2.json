@@ -1,0 +1,60 @@
+{
+  "exam": {
+    "exam_id": "H24-1",
+    "year": 2012,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H24-1-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "IV 問2　正の整数nと実数aに対して，関数 f_n(a)=\\int_0^\\pi (\\cos x+a\\sin 2nx)^2\\,dx を考える。(1) f_n(a)=\\int_0^\\pi\\{(1+\\cos[L]x)/2+a^2(1-\\cos[M]nx)/2+a(\\sin(2n+1)x+\\sin(2n-1)x)\\}\\,dx と変形して計算すると f_n(a)= (\\pi/[N])a^2 + ([O]n)/([P]n^2-[Q])\\,a + \\pi/[R] を得る。(2) f_n(a)を最小にするaの値をa_nとし，S_N=\\sum_{n=1}^N a_n/n とおく。このとき S_N= -[S]/\\pi\\sum_{n=1}^N(1/(2n-[T]) - 1/(2n+[U])) = -[S]/\\pi( [V] - 1/([W]N+[X]) ) である。よって \\sum_{n=1}^\\infty a_n/n = \\lim_{N\\to\\infty} S_N = -[Y]/\\pi を得る。",
+    "formulas": [
+      "f_n(a)=\\int_0^\\pi (\\cos x+a\\sin 2nx)^2\\,dx",
+      "f_n(a)=(\\pi/[N])a^2 + ([O]n)/([P]n^2-[Q])\\,a + \\pi/[R]"
+    ],
+    "placeholders": {
+      "L": { "digits": 1 },
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 },
+      "V": { "digits": 1 },
+      "W": { "digits": 1 },
+      "X": { "digits": 1 },
+      "Y": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q2",
+    "sub": null,
+    "group": "L/M/N/O/P/Q/R/S/T/U/V/W/X/Y"
+  },
+  "solution_ref": "solutions/H24-1/course2/H24-1-IV-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "CALC_INTEGRAL_MINMAX"
+}

@@ -1,0 +1,112 @@
+{
+  "exam": {
+    "exam_id": "H17-1",
+    "year": 2005,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H17-1-III-2",
+  "section": "III",
+  "order": 2,
+  "type": "fill_in",
+  "source": {
+    "images": ["data/images_raw/H17-1_course2/page_10.png"],
+    "page_print": "数学-22",
+    "page_in_exam": 146
+  },
+  "original_ja": {
+    "text": "問2　aは定数とする。xの関数 f(x)=cos3x+a cos2x について考える。(1) cosx=t とすると cos2x=[N]t^2-[O], cos3x=[P]t^3-[Q]t である。(2) f(x) が cosx=1/4 で最小値をとれば a=[R]/[S] であり，f(x)の値域は -[TU]/[VW] ≤ f(x) ≤ [XY]/[Z] である。",
+    "formulas": [
+      "f(x)=\\cos 3x + a\\cos 2x",
+      "\\cos 2x=[N]t^2-[O]",
+      "\\cos 3x=[P]t^3-[Q]t",
+      "a=\\frac{[R]}{[S]}",
+      "-\\frac{[TU]}{[VW]}\\le f(x)\\le \\frac{[XY]}{[Z]}"
+    ]
+  },
+  "translation_zh": {
+    "text": "题2 设 a 为常数，研究函数 f(x)=cos3x + a cos2x。(1) 令 t=cosx，写出 cos2x 与 cos3x 的多项式表达式。(2) 若 f(x) 在 cosx=1/4 处取最小值，求 a，并求 f(x) 的值域。",
+    "formulas": []
+  },
+  "blanks": [
+    { "id": "N", "length": 1 },
+    { "id": "O", "length": 1 },
+    { "id": "P", "length": 1 },
+    { "id": "Q", "length": 1 },
+    { "id": "R", "length": 1 },
+    { "id": "S", "length": 1 },
+    { "id": "TU", "length": 2 },
+    { "id": "VW", "length": 2 },
+    { "id": "XY", "length": 2 },
+    { "id": "Z", "length": 1 }
+  ],
+  "blank_rules": {
+    "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+    "no_whitespace": true,
+    "notes": [
+      "值域下界带负号，负号不占 TU/VW 框位；框位仅填数字。"
+    ]
+  },
+  "subquestions": [
+    {
+      "sub_id": "(1)",
+      "prompt_zh": "把 cos2x, cos3x 用 t=cosx 表示。",
+      "blanks": [
+        { "id": "N", "length": 1 },
+        { "id": "O", "length": 1 },
+        { "id": "P", "length": 1 },
+        { "id": "Q", "length": 1 }
+      ]
+    },
+    {
+      "sub_id": "(2)",
+      "prompt_zh": "由极值条件确定 a，并求值域。",
+      "blanks": [
+        { "id": "R", "length": 1 },
+        { "id": "S", "length": 1 },
+        { "id": "TU", "length": 2 },
+        { "id": "VW", "length": 2 },
+        { "id": "XY", "length": 2 },
+        { "id": "Z", "length": 1 }
+      ]
+    }
+  ],
+  "tags": {
+    "domain": ["三角関数", "微分・最大最小"],
+    "skill": ["三倍角・二倍角", "置換 t=cosx", "最大最小（区間）"],
+    "course_specific": []
+  },
+  "difficulty": {
+    "level": 4,
+    "method": "heuristic_v1",
+    "rationale": [
+      "需要使用二倍角/三倍角公式并进行代换",
+      "极值条件转化为 t 的多项式最值问题，并做区间 [-1,1] 的比较"
+    ],
+    "features": {
+      "steps_min": 10,
+      "concept_count": 3,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution_outline": [
+    "写出 cos2x, cos3x 的 t 多项式",
+    "令 g(t)=f(x)，t∈[-1,1]",
+    "由在 t=1/4 取极小：g'(1/4)=0 解 a",
+    "求 g(t) 在 [-1,1] 的最小与最大"
+  ],
+  "answer_ref": {
+    "exam_id": "H17-1",
+    "course": 2,
+    "section": "III",
+    "question_number": 2
+  },
+  "solution_ref": "data/solutions/H17-1/course2/H17-1-III-2.zh.md",
+  "tagging_status": "ok"
+}

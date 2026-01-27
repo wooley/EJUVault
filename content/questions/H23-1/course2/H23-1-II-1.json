@@ -1,0 +1,66 @@
+{
+  "exam": {
+    "exam_id": "H23-1",
+    "year": 2011,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H23-1-II-1",
+  "section": "II",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "数列 {a_n} が a_1=1, a_{n+1}=2a_n^2 (n=1,2,3,...) を満たすとき，a_n<10^{60} となるような自然数 n の個数を求めよう。ただし log_{10}2=0.301 とする。\n\nlog_{10}a_{n+1}=log_{10}[A]+[B]log_{10}a_n。\nここで b_n=log_{10}a_n+log_{10}[A] とおくと，{b_n} は公比が [C] の等比数列。\nよって log_{10}a_n=([D]^{n-1}-[E])log_{10}[F]。\nさらに a_n<10^{60} より [D]^{n-1} < [GH]/log_{10}[F] + [E]。\nこの不等式の右辺の値より大きい自然数の中で最小のものは [IJK] であるから，a_n<10^{60} を満たす自然数 n は [L] 個ある。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "GH": { "digits": 2 },
+      "IJK": { "digits": 3 },
+      "L": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": true,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [
+      "常用対数で漸化式を一次化する",
+      "補助数列 b_n を作って等比にする",
+      "不等式から 2^{n-1} の上限を求め，n の個数を数える"
+    ],
+    "steps": [
+      { "idx": 1, "description": "a_{n+1}=2a_n^2 より log を取る。", "math": "\\log a_{n+1}=\\log 2+2\\log a_n" },
+      { "idx": 2, "description": "b_n=\\log a_n+\\log 2 とおくと b_{n+1}=2b_n。", "math": "b_{n+1}=2b_n" },
+      { "idx": 3, "description": "b_1=\\log 1+\\log 2=\\log 2 なので b_n=2^{n-1}\\log 2。", "math": "b_n=2^{n-1}\\log 2" },
+      { "idx": 4, "description": "\\log a_n=b_n-\\log 2=(2^{n-1}-1)\\log 2。", "math": "\\log a_n=(2^{n-1}-1)\\log 2" },
+      { "idx": 5, "description": "a_n<10^{60} ⇔ \\log a_n<60。よって (2^{n-1}-1)\\log 2<60。", "math": "2^{n-1}<\\frac{60}{\\log 2}+1" },
+      { "idx": 6, "description": "与えられた \\log 2=0.301 より右辺は 60/0.301+1≈200.335...。右辺より大きい最小の自然数は 201。", "math": "\\left\\lceil \\frac{60}{0.301}+1\\right\\rceil=201" },
+      { "idx": 7, "description": "2^{n-1}<200.335... より 2^{n-1} は最大 128(=2^7)。したがって n-1≤7 ⇒ n≤8。n=1〜8 の 8 個。", "math": "n\\in\\{1,2,3,4,5,6,7,8\\}\\Rightarrow 8\\text{個}" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q1",
+    "sub": null,
+    "group": "A/B/C/D/E/F/GH/IJK/L"
+  },
+  "solution_ref": "data/solutions/H23-1/course2/H23-1-II-1.zh.md",
+  "tagging_status": "ok",
+  "tags": ["数列", "漸化式", "対数", "不等式", "個数"],
+  "pattern_id": "SEQ_CONSTRAINT_FIND_N"
+}

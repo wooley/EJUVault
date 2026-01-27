@@ -1,0 +1,38 @@
+{
+  "exam": { "exam_id": "H27-1", "year": 2015, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "course": 2,
+  "track": "science",
+  "question_id": "H27-1-I-1",
+  "section": "I",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "QF_INTERSECTION_SOLVE_PARAM",
+  "original_ja": {
+    "text": "ℓ: y=ax^2+2bx+c, m: y=(a+1)x^2+2(b+2)x+c+3。点A,B,C,Dが図の位置関係。2つの放物線のうち，一方はA,B,Cを通り，もう一方はB,C,Dを通る。(1)A,B,Cを通る放物線は[Ａ]。(0)ℓ (1)m (2) B,Cのx座標は x^2+[Ｂ]x+[Ｃ]=0 の解。よってBのx座標は[ＤＥ]，Cのx座標は[ＦＧ]。(3)AB=BC, CO=ODのときa,b,cを求める。b=[Ｈ]，軸 x=[ＩＪ]，a=-[Ｋ]/[Ｌ]，c=[Ｍ]/[Ｎ]。",
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "DE": { "digits": 2 },
+      "FG": { "digits": 2 },
+      "H": { "digits": 1 },
+      "IJ": { "digits": 2 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 },
+      "M": { "digits": 2 },
+      "N": { "digits": 1 }
+    }
+  },
+  "solution": {
+    "steps": [
+      { "idx": 1, "description": "交点条件（ℓ=m）からB,Cのx座標を決定", "math": "m-\\ell=x^2+4x+3=0\\Rightarrow x=-3,-1" },
+      { "idx": 2, "description": "図よりB,Cを対応づけ", "math": "x_B=-3,\\ x_C=-1" },
+      { "idx": 3, "description": "CO=ODよりC,Dはy軸対称→BCDを通る放物線の軸がy軸", "math": "x_C=-1\\Rightarrow x_D=1。y軸が軸になるのは\\ell（2bx項が0）→b=0" },
+      { "idx": 4, "description": "AB=BCよりBがACの垂直二等分線上→Aのx座標", "math": "x_B=\\frac{x_A+x_C}{2}\\Rightarrow -3=\\frac{x_A-1}{2}\\Rightarrow x_A=-5" },
+      { "idx": 5, "description": "Aはm上かつx軸上なのでm(-5)=0からa,c決定", "math": "\\ell=ax^2+c,\\ c=-a。m=(a+1)x^2+4x+c+3。m(-5)=0\\Rightarrow 24a+8=0\\Rightarrow a=-\\frac13,\\ c=\\frac13" }
+    ]
+  },
+  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": "all" },
+  "solution_ref": "solutions/H27-1/course2/H27-1-I-1.zh.md",
+  "tagging_status": "ok"
+}

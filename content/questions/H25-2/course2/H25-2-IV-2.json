@@ -1,0 +1,39 @@
+{
+  "exam": { "exam_id": "H25-2", "year": 2013, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "course": 2,
+  "track": "science",
+  "question_id": "H25-2-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "CALC_AREA_MINIMIZE",
+  "original_ja": {
+    "text": "0<a<1とする。曲線 y=xe^{2x} およびx軸と直線x=a-1で囲まれる部分の面積と，曲線y=xe^{2x}およびx軸と直線x=aで囲まれる部分の面積の和をS(a)とする。このときS(a)を最小とするaを求めよう。xe^{2x}の不定積分は [J]/[K]([L]x-1)e^{2x}+C。よって S(a)=[M]/[N]{[O]+([P]a-[Q])e^{2(a-1)}+([R]a-1)e^{2a}}。また S'(a)=(a-[S])e^{2(a-1)}+ae^{2a}。したがって最小とするaは a=[T]/(e^2+[U])。",
+    "placeholders": {
+      "J": { "digits": 1 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 },
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 }
+    }
+  },
+  "solution": {
+    "steps": [
+      { "idx": 1, "description": "不定積分を求める。", "math": "\\int xe^{2x}dx=\\frac14(2x-1)e^{2x}+C" },
+      { "idx": 2, "description": "x<0 で負，x>0 で正を用い，面積は絶対値で加える。", "math": "S(a)=-\\int_{a-1}^0 xe^{2x}dx+\\int_0^a xe^{2x}dx=F(a-1)+F(a)-2F(0)" },
+      { "idx": 3, "description": "F(0)=-1/4 を代入し S(a) を整理。", "math": "S(a)=\\frac14\\{2+(2a-3)e^{2(a-1)}+(2a-1)e^{2a}\\}" },
+      { "idx": 4, "description": "微分して臨界点を求める。", "math": "S'(a)=(a-1)e^{2(a-1)}+ae^{2a}=e^{2(a-1)}\\{(a-1)+ae^2\\}" },
+      { "idx": 5, "description": "S'(a)=0 から a を決定。", "math": "(a-1)+ae^2=0\\Rightarrow a=\\frac{1}{e^2+1}" }
+    ]
+  },
+  "answer_ref": { "course": 2, "section": "IV", "q": "Q2", "sub": "", "group": "J/K/L/M/N/O/P/Q/R/S/T/U" },
+  "solution_ref": "solutions/H25-2/course2/H25-2-IV-2.zh.md",
+  "tagging_status": "ok"
+}

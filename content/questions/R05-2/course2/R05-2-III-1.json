@@ -1,0 +1,17 @@
+{
+  "exam": { "exam_id": "R05-2", "year": 2023, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R05-2-III-1",
+  "section": "III",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "CALC_RATE_INTERSECTION",
+  "original_ja": {
+    "text": "関数 f(x)=x^3-4x^2+1 に対して，曲線 y=f(x) を C とする。a を実数とし，C 上の点 A(1,a) における接線を ℓ とする。このとき，C と ℓ に関する以下の各問に答えなさい。\n\n(1) a=[AB] である。\n    C 上の点 (t,f(t)) における接線について，その傾きは [C]t^2-[D]t であり，y 切片は -[E]t^3+[F]t^2+[G] である。これより，ℓ の方程式は y=[HI]x+[J] である。\n\n(2) C と ℓ との共有点で，A と異なるものが1点存在する。それを B とすると，B の座標は ([K],[LM]) である。\n\n(3) ℓ と平行な C の接線で，ℓ と異なるものが1本存在する。それを m とすると，C と m の接点の x 座標は [N]/[O] であり，m の方程式は y=[HI]x+[PQ]/[RS] である。\n\n(4) C の接線で，その y 切片が ℓ の y 切片と同じであるものが ℓ の他に2本存在する。それら2本と C との接点の x 座標はそれぞれ ([T]-√[U])/[V] と ([T]+√[U])/[V] である。\n\n(5) C と ℓ で囲まれた部分の面積は [W]/[XY] である。"
+  },
+  "solution_ref": { "path": "solutions/R05-2/course2/R05-2-III-1.zh.md" },
+  "answer_ref": { "path": "answers/ai_ans.json", "key": "R05-2-III-1" },
+  "tagging_status": "generated"
+}

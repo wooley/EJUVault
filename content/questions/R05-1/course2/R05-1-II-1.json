@@ -1,0 +1,54 @@
+{
+  "exam": { "exam_id": "R05-1", "year": 2023, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R05-1-II-1",
+  "section": "II",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "VEC_DOT_ORTHO",
+  "original_ja": {
+    "text": "問1　次の文中の[J]，[K]，[L]には，右のページの選択肢0〜9の中から適するものを選びなさい。また，その他の□には，適する数を入れなさい。\n\n四角形OABCにおいて，∠OABと∠OCBは直角であり，辺OA，OCの長さはそれぞれ2，√2であるとする。また，対角線ACの長さは√3であるとする。\n\nこのとき，→OA=→a，→OB=→b，→OC=→cとおいて，内積 →a·→b，→b·→c，→c·→a を求め，→b を →a と →c で表そう。さらに，2本の対角線ACとOBの交点をDとするとき，→OD が →b の何倍であるか調べよう。\n\n(1) →AC=→c-→aであるから，→c·→a=[A]/[B]である。\n(2) →a と →AB は垂直であるから，→a·→b=[C]である。同様に →b·→c=[D]である。\n(3) →b=s→a+t→cとおくと\n　→a·→b=[C]より，[E]s+[F]t=[G] であり\n　→b·→c=[D]より，[H]s+[I]t=4 である。\n　よって s=[J]，t=[K]である。\n(4) 点Dが線分AC上にあることから\n　→OD=[L]→b\n　を得る。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 },
+      "J": { "digits": 1 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [
+      "用 |c-a|^2 展开求 c·a。",
+      "用垂直条件把 a·b、b·c 化为已知长度平方。",
+      "设 b=sa+tc，分别与 a、c 点乘解 s,t。",
+      "用交点在线段AC上建立比例，求 OD 与 b 的倍数。"
+    ],
+    "steps": [
+      { "idx": 1, "description": "由 |c-a|^2=|c|^2+|a|^2-2a·c 求 a·c。", "math": "|c-a|^2=3" },
+      { "idx": 2, "description": "由 a ⟂ (b-a) 得 a·b=|a|^2；由 c ⟂ (b-c) 得 b·c=|c|^2。", "math": "a·(b-a)=0,\\ c·(b-c)=0" },
+      { "idx": 3, "description": "联立点乘方程解出 s,t。", "math": "a·b=4s+\\frac32 t,\\ b·c=\\frac32 s+2t" },
+      { "idx": 4, "description": "设交点 D 满足 u b = a + v(c-a)，比较系数求 u。", "math": "u=\\frac{1}{s+t}" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "II", "q": "Q1", "sub": null, "group": "A/B/C/D/E/F/G/H/I/J/K/L" },
+  "solution_ref": "solutions/R05-1/course2/R05-1-II-1.zh.md",
+  "tagging_status": "ok"
+}

@@ -1,0 +1,83 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H18-2",
+    "year": 2006,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H18-2-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "ALG_INTERVAL_FIND_RANGE",
+  "tags": [
+    "集合",
+    "数直線",
+    "補集合",
+    "必要十分条件"
+  ],
+  "original_ja": {
+    "text": "問2　次の問題文中の [H]〜[L] に対して，それぞれの選択肢の中から当てはまるものを一つ選びなさい。\n\n(1) 数直線上の部分集合を A={x|3<x<6}, B={x|-1<x<1}, C={x|-3<x<5} とするとき\nA∪B=[H], (\\overline{A\\cup B})\\cap C=[I]\nである。ただし，\\overline{(A\\cup B)} は A∪B の補集合を表す。\n\n(2) (i) a>3 かつ b>3 であることは，a+b>5 であるための [J]。\n(ii) a>2 かつ b>2 であることは，a+b>5 であるための [K]。\n(iii) |a+b|>5 であることは，a+b>5 であるための [L]。",
+    "formulas": [],
+    "placeholders": {
+      "H": {
+        "digits": 1
+      },
+      "I": {
+        "digits": 1
+      },
+      "J": {
+        "digits": 1
+      },
+      "K": {
+        "digits": 1
+      },
+      "L": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 1
+    }
+  },
+  "solution": {
+    "outline": [
+      "区間の和集合・補集合を数直線で処理し，必要条件/十分条件の定義で判定する。"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "A∪B を区間として書く。",
+        "math": "A=(3,6),\\;B=(-1,1)\\Rightarrow A\\cup B=(-1,1)\\cup(3,6)"
+      },
+      {
+        "idx": 2,
+        "description": "補集合を取り，C と共通部分を取る。",
+        "math": "\\overline{A\\cup B}=(-\\infty,-1]\\cup[1,3]\\cup[6,\\infty)\nC=(-3,5)\n(\\overline{A\\cup B})\\cap C=(-3,-1]\\cup[1,3]"
+      },
+      {
+        "idx": 3,
+        "description": "必要条件・十分条件をそれぞれ定義から判定する。",
+        "math": "(i) a>3,b>3\\Rightarrow a+b>6>5（十分だが必要でない）\n(ii) a>2,b>2\\Rightarrow a+b>4（十分でも必要でもない）\n(iii) a+b>5\\Rightarrow |a+b|>5（必要だが十分でない）"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": null,
+    "group": "H/I/J/K/L"
+  },
+  "solution_ref": "data/solutions/H18-2/course2/H18-2-I-2.zh.md",
+  "tagging_status": "ok"
+}

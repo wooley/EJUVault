@@ -1,0 +1,32 @@
+{
+  "exam": { "exam_id": "R4-2", "year": 2022, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R4-2-II-2",
+  "section": "II",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "CP_VECTOR_GEOM",
+  "original_ja": {
+    "text": "複素数α,βが |α|=√10，4(1+3i)α-(7+i)β=0 を満たす。複素平面で0,α,βを表す点をO,A,Bとする。(1) |β|=[N]√[O]。(2) β/α の偏角をθとすると sinθ=[P]√[Q]/[R]。(3) 三角形OABの面積は[S]。(4) 直線OBに関してAと対称な点をCとし，CはOを中心としてAを[T]θだけ回転して得られる点である。Cを表す複素数をγとすると γ=-( [U]+[V]i )/[W] · α。(5) ∠OBA=φ(0<φ<π) とおくと sinφ=[X]√[YZ]/[YZ]。",
+    "formulas": [],
+    "placeholders": {
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 },
+      "V": { "digits": 1 },
+      "W": { "digits": 1 },
+      "X": { "digits": 1 },
+      "Y": { "digits": 1 },
+      "Z": { "digits": 1 }
+    }
+  },
+  "answer_ref": "official/course2.json#R4-2-II-2",
+  "solution_ref": "answers/ai_ans.json#R4-2-II-2"
+}

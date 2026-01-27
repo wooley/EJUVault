@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/content/pattern.schema.json",
+  "title": "Pattern",
+  "description": "Pattern metadata defined in appendix A. patterns.current.json should be an array of these objects.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["pattern_id", "trigger_rules", "core_steps", "common_errors", "related_tags", "version"],
+  "properties": {
+    "pattern_id": { "type": "string" },
+    "trigger_rules": { "type": "array", "items": { "type": "string" } },
+    "core_steps": { "type": "array", "items": { "type": "string" } },
+    "common_errors": { "type": "array", "items": { "type": "string" } },
+    "related_tags": { "type": "array", "items": { "type": "string" } },
+    "version": { "type": "string" }
+  }
+}

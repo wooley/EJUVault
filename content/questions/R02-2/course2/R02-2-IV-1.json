@@ -1,0 +1,44 @@
+{
+  "exam": { "exam_id": "R02-2", "year": 2020, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R02-2-IV-1",
+  "section": "IV",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "CALC_MONOTONICITY_AREA",
+  "original_ja": {
+    "text": "区間0≦x≦πで f(x)=sinx+sin2x/2+sin3x/3。(1) f'(x)=(A cos^2x-B)(C cosx+D)。f'(x)=0の解は x=π/E, (F/G)π, (H/I)π。増減：0≦x≦π/J のときK、π/J≦x≦(L/M)π のときN、(L/M)π≦x≦(O/P)π のときQ、(O/P)π≦x≦π のときR。さらに f((L/M)π)=√S/T>0。(2) 面積Sは UV/W。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
+      "E": { "digits": 1 }, "F": { "digits": 1 }, "G": { "digits": 1 }, "H": { "digits": 1 }, "I": { "digits": 1 },
+      "J": { "digits": 1 },
+      "K": { "digits": 1 }, "N": { "digits": 1 }, "Q": { "digits": 1 }, "R": { "digits": 1 },
+      "L": { "digits": 1 }, "M": { "digits": 1 }, "O": { "digits": 1 }, "P": { "digits": 1 },
+      "S": { "digits": 1 }, "T": { "digits": 1 },
+      "U": { "digits": 1 }, "V": { "digits": 1 }, "W": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": ["f'を三角恒等式でcosの多項式にして因数分解", "臨界点で増減と最小値を確認し0<x<πで正を示す", "面積は∫0^π f(x) dx を各項別に積分"],
+    "steps": [
+      { "idx": 1, "description": "微分すると f'(x)=cosx+cos2x+cos3x。cos2x,cos3xをcosx=cで表して因数分解。", "math": "f'(x)=\\cos x+\\cos2x+\\cos3x=(2\\cos x+1)(2\\cos^2 x-1)" },
+      { "idx": 2, "description": "f'(x)=0 より cosx=±1/\\sqrt2, cosx=-1/2。区間[0,π]の解は π/4,2π/3,3π/4。", "math": "x=\\frac\\pi4,\\ \\frac{2\\pi}{3},\\ \\frac{3\\pi}{4}" },
+      { "idx": 3, "description": "符号を調べると 増加→減少→増加→減少。さらに f(0)=f(π)=0 かつ極大値が正なので 0<x<πでf(x)>0。", "math": "f\\left(\\frac{2\\pi}{3}\\right)=\\frac{\\sqrt3}{4}>0" },
+      { "idx": 4, "description": "面積S=∫0^π f(x)dx。各項別に積分すると 2 + 0 + 2/9 = 20/9。", "math": "S=\\int_0^{\\pi}\\sin x\\,dx+\\frac12\\int_0^{\\pi}\\sin2x\\,dx+\\frac13\\int_0^{\\pi}\\sin3x\\,dx=\\frac{20}{9}" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "IV", "q": "Q1", "sub": "all", "group": "ABCD/E/FG/HI/J/K/LM/N/OP/Q/R/ST/UVW" },
+  "solution_ref": "solutions/R02-2/course2/R02-2-IV-1.zh.md",
+  "tagging_status": "ok"
+}

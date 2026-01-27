@@ -1,0 +1,49 @@
+{
+  "exam": { "exam_id": "H19-2", "year": 2007, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H19-2-III-1",
+  "section": "III",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問1　0°\\le \\alpha \\le 120°，0°\\le \\beta \\le 120°とする。座標平面上に，3点 O(0,0), A(2\\sqrt3,-2\\sqrt6), B(2\\sqrt6,2\\sqrt3) があり，点Pは\n \\overrightarrow{OP}=\\overrightarrow{OA}\\cos\\alpha+\\overrightarrow{OB}\\sin\\beta\nを満たしている。\n(1) cos\\alpha, sin\\beta のとり得る値の範囲は [AB]/[C] \\le cos\\alpha \\le [D], [E] \\le sin\\beta \\le [F] である。\n(2) [G]には，下の0〜3のうちから最も適するものを1つ選びなさい。点Pの存在する範囲は[G]の内部および周である。\n 0 正方形  1 長方形  2 ひし形  3 平行四辺形\n また，その図形の面積は[HI]である。\n(3) \\alpha=\\beta とする。|\\overrightarrow{OP}|^2=[JK]であるから，点Pの存在する範囲は半径[L]の円の弧で，その弧の長さは[M]\\piである。",
+    "formulas": [],
+    "placeholders": {
+      "AB": { "digits": 2 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 },
+      "HI": { "digits": 2 },
+      "JK": { "digits": 2 },
+      "L": { "digits": 1 },
+      "M": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": ["求cos与sin区间", "把P视作两向量线性组合得到平行四边形", "用行列式算面积", "令α=β得到圆弧与弧长"],
+    "steps": [
+      { "idx": 1, "description": "角度范围给出cosα区间", "math": "-\\tfrac12\\le \\cos\\alpha\\le 1" },
+      { "idx": 2, "description": "角度范围给出sinβ区间", "math": "0\\le \\sin\\beta\\le 1" },
+      { "idx": 3, "description": "P=OA·t+OB·s，t∈[-1/2,1], s∈[0,1]，区域为平行四边形", "math": "G=3" },
+      { "idx": 4, "description": "面积=区间长度乘以|det(OA,OB)|", "math": "|\\det(OA,OB)|=36,\\ \\text{Area}=\\tfrac32\\cdot 36=54" },
+      { "idx": 5, "description": "α=β时，OA与OB正交且等长，|OP|恒定", "math": "|OA|^2=|OB|^2=36,\\ OA\\cdot OB=0\\Rightarrow |OP|^2=36" },
+      { "idx": 6, "description": "半径6，角度跨度120°=2π/3，弧长=6·2π/3=4π", "math": "L=6,\\ M=4" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "III", "q": "Q1", "sub": "all", "group": "ABCD/EF/G/HI/JK/LM" },
+  "solution_ref": "solutions/H19-2/course2/H19-2-III-1.zh.md",
+  "pattern_id": "VEC_COORD_DIRECT",
+  "tagging_status": "ok"
+}

@@ -1,0 +1,53 @@
+{
+  "exam": {
+    "exam_id": "H26-1",
+    "year": 2014,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H26-1-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "CALC_DIRECT_VOLUME",
+  "original_ja": {
+    "text": "問2 a,t を正の実数とする。y=1/t^2 (x-at^2)^2 のグラフと x軸,y軸で囲まれる部分Dを考える。Dをx軸回転してできる立体の体積をV1，Dをy軸回転してできる立体の体積をV2とする。まずV1を求めると V1=π∫_[K]^[L] 1/t^[M] (x-at^2)^[N] dx = (π/[O]) a^[P] t^[Q]。一方V2を求めると V2=π∫_[K]^[R] ([S]-[T]√y)^[U] dy = (π/[V]) a^[W] t^[X]。よって a=[Y]/[Z] のとき，tの値によらず V1=V2 となる。 (各空欄は下の0〜9から選択)",
+    "formulas": [],
+    "placeholders": {
+      "K": { "digits": 1 }, "L": { "digits": 1 }, "M": { "digits": 1 }, "N": { "digits": 1 },
+      "O": { "digits": 1 }, "P": { "digits": 1 }, "Q": { "digits": 1 },
+      "R": { "digits": 1 }, "S": { "digits": 1 }, "T": { "digits": 1 }, "U": { "digits": 1 },
+      "V": { "digits": 1 }, "W": { "digits": 1 }, "X": { "digits": 1 },
+      "Y": { "digits": 1 }, "Z": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      { "idx": 1, "description": "領域は x∈[0,at^2] で y=(at^2-x)^2/t^2。x軸回転は円板法。", "math": "V_1=\\pi\\int_0^{at^2}\\left(\\frac{(x-at^2)^2}{t^2}\\right)^2dx=\\pi\\int_0^{at^2}\\frac{(x-at^2)^4}{t^4}dx=\\frac{\\pi}{5}a^5t^6" },
+      { "idx": 2, "description": "y軸回転は y で積分。x=at^2-t\\sqrt y, y∈[0,a^2t^2]。", "math": "V_2=\\pi\\int_0^{a^2t^2}(at^2-t\\sqrt y)^2dy=\\frac{\\pi}{6}a^4t^6" },
+      { "idx": 3, "description": "V1=V2 が t に依らないための a を決定。", "math": "\\frac{\\pi}{5}a^5t^6=\\frac{\\pi}{6}a^4t^6\\Rightarrow a=\\frac56" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q2",
+    "sub": null,
+    "group": "K-Z"
+  },
+  "solution_ref": "solutions/H26-1/course2/H26-1-IV-2.zh.md",
+  "tagging_status": "ok"
+}

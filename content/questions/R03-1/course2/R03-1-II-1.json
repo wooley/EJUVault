@@ -1,0 +1,119 @@
+{
+  "exam": {
+    "exam_id": "R3-1",
+    "year": 2021,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R3-1-II-1",
+  "section": "II",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "VEC_DOT_ANGLE",
+  "original_ja": {
+    "text": "1辺1の正四面体OABC。0<x<1。ABをx:(1-x)に内分する点P、BCをx:(1-x)に内分する点Q。OA=a, OB=b, OC=c。a,b,cは a·b=b·c=c·a=[A]/[B]。さらに OP=[C], OQ=[D]。|OP|=|OQ|=√[E], OP·OQ=[F]。よって cos∠POQ = 1/[G] - [H]/[I]。したがって [J]/[K] < cos∠POQ ≤ [L]/[M]。",
+    "placeholders": {
+      "A": {
+        "digits": 1
+      },
+      "B": {
+        "digits": 1
+      },
+      "C": {
+        "digits": 1
+      },
+      "D": {
+        "digits": 1
+      },
+      "E": {
+        "digits": 1
+      },
+      "F": {
+        "digits": 1
+      },
+      "G": {
+        "digits": 1
+      },
+      "H": {
+        "digits": 1
+      },
+      "I": {
+        "digits": 1
+      },
+      "J": {
+        "digits": 1
+      },
+      "K": {
+        "digits": 1
+      },
+      "L": {
+        "digits": 1
+      },
+      "M": {
+        "digits": 1
+      }
+    },
+    "choices": [
+      {
+        "id": 0,
+        "text": "(1-x)a + x b"
+      },
+      {
+        "id": 1,
+        "text": "x a + (1-x)b"
+      },
+      {
+        "id": 2,
+        "text": "(1-x)b + x c"
+      },
+      {
+        "id": 3,
+        "text": "x b + (1-x)c"
+      },
+      {
+        "id": 4,
+        "text": "x^2 + x + 1"
+      },
+      {
+        "id": 5,
+        "text": "x^2 - x + 1"
+      },
+      {
+        "id": 6,
+        "text": "x^2 - x - 1"
+      },
+      {
+        "id": 7,
+        "text": "( 1/2(-x^2 + x + 1))"
+      },
+      {
+        "id": 8,
+        "text": "( 1/2(-x^2 - x + 1))"
+      },
+      {
+        "id": 9,
+        "text": "( 1/2(-x^2 + x - 1))"
+      }
+    ]
+  },
+  "answer_ref": {
+    "A": "1",
+    "B": "2",
+    "C": "0",
+    "D": "2",
+    "E": "5",
+    "F": "7",
+    "G": "5",
+    "H": "1",
+    "I": "2",
+    "J": "1",
+    "K": "2",
+    "L": "5",
+    "M": "6"
+  },
+  "tagging_status": "ok"
+}

@@ -1,0 +1,46 @@
+{
+  "exam": { "exam_id": "H19-2", "year": 2007, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H19-2-III-2",
+  "section": "III",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　x, yが不等式 2log_3(x-y) \\le log_3 x + log_3 y ……① を満たしている。\nこのとき，対数の真数の条件より [N] < y/x < [O] である。\nここで①を変形すると x^2-[P]xy+y^2 \\le [Q] が得られるから，y/x のとり得る値の範囲は ([R]-\\sqrt{[S]})/[T] \\le y/x < [U] である。",
+    "formulas": [],
+    "placeholders": {
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": ["先写出对数真数条件", "对数不等式化为代数不等式", "令t=y/x求范围并与真数条件相交"],
+    "steps": [
+      { "idx": 1, "description": "真数条件：x>0,y>0,x-y>0", "math": "0<y/x<1" },
+      { "idx": 2, "description": "对数单调：取指数化简", "math": "2\\log_3(x-y)\\le \\log_3 x+\\log_3 y\\iff (x-y)^2\\le xy" },
+      { "idx": 3, "description": "展开并移项", "math": "x^2-3xy+y^2\\le 0" },
+      { "idx": 4, "description": "令t=y/x，求二次不等式", "math": "t^2-3t+1\\le 0\\Rightarrow \\frac{3-\\sqrt5}{2}\\le t\\le \\frac{3+\\sqrt5}{2}" },
+      { "idx": 5, "description": "结合0<t<1", "math": "\\frac{3-\\sqrt5}{2}\\le y/x <1" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "III", "q": "Q2", "sub": "all", "group": "NO/PQ/RSTU" },
+  "solution_ref": "solutions/H19-2/course2/H19-2-III-2.zh.md",
+  "pattern_id": "ALG_TRANSFORM_INEQ",
+  "tagging_status": "ok"
+}

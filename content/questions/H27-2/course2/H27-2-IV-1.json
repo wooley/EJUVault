@@ -1,0 +1,29 @@
+{
+  "exam_id": "H27-2",
+  "year": 2015,
+  "session": 2,
+  "course": 2,
+  "subject": "math",
+  "section": "IV",
+  "question_no": 1,
+  "question_id": "H27-2-IV-1",
+  "format": "fill_in",
+  "title": "媒介変数曲線：速さと道のり",
+  "tags": ["calculus", "parametric", "speed", "arc_length"],
+  "pattern_id": "CALC-PARAM-SPEED-ARCLEN-01",
+  "prompt_ja": "動点Pの座標(x,y)が時刻tの関数として x=4t-sin4t, y=4-cos4t で与えられる。",
+  "blanks": [
+    { "key": "A", "type": "int", "note": "dx/dtの係数" },
+    { "key": "B", "type": "int", "note": "dx/dtの括弧内定数" },
+    { "key": "C", "type": "int", "note": "dy/dtの係数" },
+    { "key": "DE", "type": "int", "note": "速さ^2の係数" },
+    { "key": "F", "type": "int", "note": "sin^2(Ft)" },
+    { "key": "G", "type": "int", "note": "最大速さとなる回数" },
+    { "key": "H", "type": "int", "note": "t0=H/I π" },
+    { "key": "I", "type": "int", "note": "t0=H/I π" },
+    { "key": "J", "type": "int", "note": "t1=J/K π" },
+    { "key": "K", "type": "int", "note": "t1=J/K π" },
+    { "key": "L", "type": "int", "note": "最大の速さ" },
+    { "key": "MN", "type": "int", "note": "道のり" }
+  ]
+}

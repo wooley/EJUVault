@@ -1,0 +1,32 @@
+{
+  "exam": {
+    "exam_id": "H20-1",
+    "year": 2008,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H20-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "整式P=a^4−2a^2+1 に対して，整式Qは 3P+2Q=3a^4+6a−9 を満たす。",
+    "structure": {
+      "polynomial_identity": true,
+      "factorization": true,
+      "set_cardinality": true
+    }
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "2"
+  },
+  "solution_ref": "solutions/H20-1/course2/H20-1-I-2.zh.md",
+  "pattern_id": "POLY_IDENTITY_FACTOR_SET",
+  "tags": ["整式", "因式分解", "集合"],
+  "spec_version": "1.4"
+}

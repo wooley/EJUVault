@@ -1,0 +1,35 @@
+{
+  "exam": { "exam_id": "H28-2", "year": 2016, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H28-2-III-1",
+  "section": "III",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "2次方程式 x^2+√3 x+1=0 の2つの解を α,β とする。ただし 0<argα<argβ<2π である。このとき次の3つの条件を満たす複素数zを考える。\n{ arg((α-z)/(β-z))=π/2 ……①,\n  (1+i)z+(1-i)\\bar z + k = 0 ……②,\n  π/2 < arg z < π ……③ }\nただしkは実数とする。また複素数平面上でα,β,zを表す点をそれぞれA,B,Pとおく。\n(1) α,βの偏角は argα=[A]/[B]π, argβ=[C]/[D]π である。\n(2) 次の文中の[E]〜[Q]には、下の0〜9の中から適するものを選びなさい。\n①より、[E]=π/2であるから、点Pは中心 -√[F]/[G], 半径 [H]/[I] の円周上にある。\nまた②より、点Pは傾きが[J]であり、虚軸との交点が [K]/[L] k i であるような直線の上にある。\n以上より、①②③を同時に満たす複素数zの個数をnとすると、nの最大値は[M]であり、そのときのkの値の範囲は [N]+√[O] < k < √[P]+√[Q] である。ただし [P] < [Q] とする。\n(選択肢：0,1,2,3,4,5,6,∠PAB,∠PBA,∠APB)",
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 },
+      "J": { "digits": 1 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 },
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 }
+    }
+  },
+  "answer_ref": { "course": 2, "section": "III", "q": "Q1", "sub": "main", "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q" },
+  "solution_ref": "solutions/H28-2/course2/H28-2-III-1.zh.md",
+  "pattern_id": "CPLX_LOCUS_ARG_LINE"
+}

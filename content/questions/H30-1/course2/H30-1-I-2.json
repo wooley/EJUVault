@@ -1,0 +1,26 @@
+{
+  "exam": { "exam_id": "H30-1", "year": 2018, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H30-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "PROB_CLASSICAL_COUNT",
+  "original_ja": {
+    "text": "大きさの異なる4枚のカードがある。これらのカードに赤，黒，青，黄の色を塗る。ただし，どのカードにも1つの色のみを使い，また同じ色のカードが2枚以上あってもよいものとする。\n(1) 全部で [NOP] 通りの塗り方がある。\n(2) 全部の色を使う塗り方は [QR] 通りある。\n(3) 2枚は赤で，1枚が黒，1枚が青となるような塗り方は [ST] 通りある。\n(4) 3つの色を使う塗り方は [UVW] 通りある。\n(5) 2つの色を使う塗り方は [XY] 通りある。",
+    "formulas": [],
+    "placeholders": {
+      "NOP": { "digits": 3 },
+      "QR": { "digits": 2 },
+      "ST": { "digits": 2 },
+      "UVW": { "digits": 3 },
+      "XY": { "digits": 2 }
+    },
+    "structure": { "has_parameter_elimination": false, "has_case_split": true, "algebraic_complexity": 1 }
+  },
+  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": "mix", "group": "NOP/QR/ST/UVW/XY" },
+  "solution_ref": "solutions/H30-1/course2/H30-1-I-2.zh.md",
+  "tagging_status": "ok"
+}

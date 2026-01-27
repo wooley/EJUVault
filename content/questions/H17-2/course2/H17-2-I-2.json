@@ -1,0 +1,58 @@
+{
+  "exam": {
+    "exam_id": "H17-2",
+    "year": 2005,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "section": "I",
+  "question_number": 2,
+  "question_id": "H17-2-I-2",
+  "original_text_ja": "次の文の S〜W について，最も適するものを下の①〜④のうちから一つずつ選べ。ただし a, b は実数とする。(1) a≧2 かつ b≧2 は a+b≧4 かつ ab≧4 であるための S。(2) a^2=b^2 は a+b=0 であるための T。(3) |a|+|b|=0 は a^2+b^2=0 であるための U。(4) a^2≧1 は a≧0 であるための V。(5) a^3=b^3 は |a|=|b| であるための W。① 必要十分条件である ② 必要条件であるが，十分条件ではない ③ 十分条件であるが，必要条件ではない ④ 必要条件でも十分条件でもない",
+  "translation_zh": "关于下列语句中的 S～W，从①～④中各选出一个最合适的选项。设 a、b 为实数。(1) a≥2 且 b≥2 是 a+b≥4 且 ab≥4 的 S。(2) a²=b² 是 a+b=0 的 T。(3) |a|+|b|=0 是 a²+b²=0 的 U。(4) a²≥1 是 a≥0 的 V。(5) a³=b³ 是 |a|=|b| 的 W。① 充分必要条件 ② 必要但不充分 ③ 充分但不必要 ④ 既非必要也非充分。",
+  "structure": {
+    "type": "multiple_choice",
+    "options": {
+      "0": "必要充分条件",
+      "1": "必要但不充分",
+      "2": "充分但不必要",
+      "3": "既非必要也非充分"
+    },
+    "blanks": [
+      "S",
+      "T",
+      "U",
+      "V",
+      "W"
+    ]
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "(1)-(5)",
+    "group": "S/T/U/V/W"
+  },
+  "solution_ref": "data/solutions/H17-2/course2/H17-2-I-2.zh.md",
+  "solution_outline": [
+    "分别判断前件是否能推出后件（充分性）",
+    "判断后件是否能推出前件（必要性）",
+    "通过反例快速排除不成立方向"
+  ],
+  "tags": [],
+  "tagging_status": "needs_tag_extension",
+  "difficulty": {
+    "level": 2,
+    "method": "heuristic_v1",
+    "rationale": [
+      "考查必要条件与充分条件的基本定义",
+      "每一小问均可用简单反例判断"
+    ],
+    "features": {
+      "steps_min": 5,
+      "concept_count": 1
+    }
+  }
+}

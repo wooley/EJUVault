@@ -1,0 +1,166 @@
+{
+  "exam_id": "H24-1",
+  "course": 2,
+  "official": [
+    {
+      "question_id": "H24-1-I-1",
+      "merged_key": "ABCD",
+      "value": -273
+    },
+    {
+      "question_id": "H24-1-I-1",
+      "merged_key": "EF",
+      "value": 46
+    },
+    {
+      "question_id": "H24-1-I-1",
+      "merged_key": "G",
+      "value": 4
+    },
+    {
+      "question_id": "H24-1-I-1",
+      "merged_key": "HI",
+      "value": 43
+    },
+    {
+      "question_id": "H24-1-I-1",
+      "merged_key": "J",
+      "value": 1
+    },
+    {
+      "question_id": "H24-1-I-2",
+      "merged_key": "K",
+      "value": 0
+    },
+    {
+      "question_id": "H24-1-I-2",
+      "merged_key": "LM",
+      "value": -7
+    },
+    {
+      "question_id": "H24-1-I-2",
+      "merged_key": "NOP",
+      "value": 422
+    },
+    {
+      "question_id": "H24-1-I-2",
+      "merged_key": "Q",
+      "value": 5
+    },
+    {
+      "question_id": "H24-1-I-2",
+      "merged_key": "R",
+      "value": 2
+    },
+    {
+      "question_id": "H24-1-I-2",
+      "merged_key": "ST",
+      "value": 11
+    },
+    {
+      "question_id": "H24-1-II",
+      "merged_key": "AB",
+      "value": 22
+    },
+    {
+      "question_id": "H24-1-II",
+      "merged_key": "C",
+      "value": 5
+    },
+    {
+      "question_id": "H24-1-II",
+      "merged_key": "DE",
+      "value": 50
+    },
+    {
+      "question_id": "H24-1-II",
+      "merged_key": "FGHI",
+      "value": 8174
+    },
+    {
+      "question_id": "H24-1-III",
+      "merged_key": "AB",
+      "value": 30
+    },
+    {
+      "question_id": "H24-1-III",
+      "merged_key": "C",
+      "value": 3
+    },
+    {
+      "question_id": "H24-1-III",
+      "merged_key": "DE",
+      "value": 22
+    },
+    {
+      "question_id": "H24-1-III",
+      "merged_key": "F",
+      "value": 4
+    },
+    {
+      "question_id": "H24-1-III",
+      "merged_key": "GH",
+      "value": 34
+    },
+    {
+      "question_id": "H24-1-III",
+      "merged_key": "IJ",
+      "value": 23
+    },
+    {
+      "question_id": "H24-1-III",
+      "merged_key": "K",
+      "value": 1
+    },
+    {
+      "question_id": "H24-1-IV-1",
+      "merged_key": "ABC",
+      "value": 224
+    },
+    {
+      "question_id": "H24-1-IV-1",
+      "merged_key": "DE",
+      "value": 28
+    },
+    {
+      "question_id": "H24-1-IV-1",
+      "merged_key": "F",
+      "value": 4
+    },
+    {
+      "question_id": "H24-1-IV-1",
+      "merged_key": "G",
+      "value": 8
+    },
+    {
+      "question_id": "H24-1-IV-1",
+      "merged_key": "HIJK",
+      "value": 4648
+    },
+    {
+      "question_id": "H24-1-IV-2",
+      "merged_key": "LM",
+      "value": 24
+    },
+    {
+      "question_id": "H24-1-IV-2",
+      "merged_key": "NOPQR",
+      "value": 28412
+    },
+    {
+      "question_id": "H24-1-IV-2",
+      "merged_key": "STU",
+      "value": 411
+    },
+    {
+      "question_id": "H24-1-IV-2",
+      "merged_key": "VWX",
+      "value": 121
+    },
+    {
+      "question_id": "H24-1-IV-2",
+      "merged_key": "Y",
+      "value": 4
+    }
+  ]
+}

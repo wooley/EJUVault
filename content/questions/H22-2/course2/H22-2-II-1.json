@@ -1,0 +1,50 @@
+{
+  "exam": {
+    "exam_id": "H22-2",
+    "year": 2010,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H22-2-II-1",
+  "section": "II",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "xy平面上の点(0,1)をRとする。点Pはx軸上の正の部分を動き，点Qは直線y=1上を∠RPQ=5π/6となるように動く。このとき，三角形PQRの面積の最小値を求めよ。\n(1) ∠PRQ=θとおく。このとき PR=[A], PQ=[B] である。（A,Bは0〜7から選ぶ）\n(2) 面積をSとおくと S=1/([C](sinθ cosθ-√[D] sin^2θ))。\nさらに [C](sinθ cosθ-√[D] sin^2θ)=[E]sin(2θ+π/[F]) - √[G]。\nよって θ=π/[HI] のときSは最小となり，その最小値は [J]+√[K] である。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 },
+      "HI": { "digits": 2 },
+      "J": { "digits": 1 },
+      "K": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "source": "official/course2.json",
+    "path": ["H22-2", "II", "Q1"]
+  },
+  "solution_ref": "solutions/H22-2/course2/H22-2-II-1.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "GEO_MINMAX"
+}

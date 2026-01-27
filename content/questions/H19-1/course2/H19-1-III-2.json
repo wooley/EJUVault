@@ -1,0 +1,70 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H19-1",
+    "year": 2007,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H19-1-III-2",
+  "section": "III",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2 x, y が x≧1, y≧1 であり log_2 x + log_2 y = (log_2 x)^2 + (log_2 y)^2 ……① を満たしている。このとき log_2 x=X, log_2 y=Y とおくと X≧[M], Y≧[N] であり，等式①は (X-[O]/[P])^2+(Y-[Q]/[R])^2=[S]/[T] と変形される。したがって，xy のとり得る値の範囲は [U]≦xy≦[V] および xy=[W] である。",
+    "placeholders": {
+      "M": {
+        "digits": 1
+      },
+      "N": {
+        "digits": 1
+      },
+      "O": {
+        "digits": 1
+      },
+      "P": {
+        "digits": 1
+      },
+      "Q": {
+        "digits": 1
+      },
+      "R": {
+        "digits": 1
+      },
+      "S": {
+        "digits": 1
+      },
+      "T": {
+        "digits": 1
+      },
+      "U": {
+        "digits": 1
+      },
+      "V": {
+        "digits": 1
+      },
+      "W": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "has_case_split": false,
+      "has_parameter_elimination": false,
+      "has_integer_constraint": false,
+      "is_divisibility": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution_ref": "solutions/H19-1/course2/H19-1-III-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "log_circle_range_xy",
+  "tags": [
+    "对数",
+    "平方完成",
+    "圆与直线",
+    "范围最值"
+  ]
+}

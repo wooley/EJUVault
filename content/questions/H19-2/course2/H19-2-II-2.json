@@ -1,0 +1,51 @@
+{
+  "exam": { "exam_id": "H19-2", "year": 2007, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H19-2-II-2",
+  "section": "II",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　{a_n}(n=1,2,3,…)は，初項a_1=x，公差-1の等差数列とする。このとき，すべての自然数kに対して\n a_{2k-1}-a_{2k+1}=[J]\n a_{2k}^2=(x+1)^2-[K]k(x+1)+[L]k^2\nとなる。\n(1) T_n=\\sum_{k=1}^n (a_{2k-1}-a_{2k+1})a_{2k}^2 とおくと\n \\frac{T_n}{2n}=(x+1)^2-[M](n+[N])(x+1)+\\frac{[O]}{[P]}(n+[Q])([R]n+1)\nである。\n(2) (1)において T_8<352 であれば，[S]<x<[T]であり，特にxが整数であれば，a_8=[U]である。",
+    "formulas": [],
+    "placeholders": {
+      "J": { "digits": 1 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 },
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": true,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": ["写出通项", "化简差分与平方", "求和得到Tn公式", "代n=8解不等式并求a8"],
+    "steps": [
+      { "idx": 1, "description": "等差数列通项", "math": "a_n=x-(n-1)" },
+      { "idx": 2, "description": "计算差分与平方", "math": "a_{2k-1}-a_{2k+1}=2,\\ a_{2k}=x+1-2k" },
+      { "idx": 3, "description": "展开a_{2k}^2", "math": "a_{2k}^2=(x+1)^2-4k(x+1)+4k^2" },
+      { "idx": 4, "description": "T_n=\\sum 2a_{2k}^2，使用\\sum k 与\\sum k^2", "math": "\\frac{T_n}{2n}=(x+1)^2-2(n+1)(x+1)+\\frac23(n+1)(2n+1)" },
+      { "idx": 5, "description": "代n=8并解T_8<352", "math": "T_8=16(x+1)^2-288(x+1)+1632<352\\Rightarrow 7<x<9" },
+      { "idx": 6, "description": "x为整数则x=8，求a_8", "math": "a_8=x-7=1" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "II", "q": "Q2", "sub": "all", "group": "JKL/MNOPQR/ST/U" },
+  "solution_ref": "solutions/H19-2/course2/H19-2-II-2.zh.md",
+  "pattern_id": "SEQ_ARITH_DIRECT",
+  "tagging_status": "ok"
+}

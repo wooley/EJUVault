@@ -1,0 +1,73 @@
+{
+  "exam": {
+    "exam_id": "H22-1",
+    "year": 2010,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H22-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　実数x,yに関する次の3つの条件(a),(b),(c)を考える。\n(a) x+y=5，xy=3 を満たす\n(b) x+y=5，x^2+y^2=19 を満たす\n(c) x^2+y^2=19，xy=3 を満たす\n\n(1) 等式 x^2+y^2=(x+y)^2-[F]xy を用いると\n条件(b)のとき xy=[G]，\n条件(c)のとき x+y=[H] または x+y=[J]\nが得られる。\n\n(2) 次の[K]〜[M]には，下の⓪〜③のうちから適するものを一つずつ選びなさい。\n(i) (a)は(b)であるための[K]。\n(ii) (b)は(c)であるための[L]。\n(iii) (c)は(a)であるための[M]。\n\n⓪ 必要十分条件である\n① 十分条件であるが，必要条件ではない\n② 必要条件であるが，十分条件ではない\n③ 必要条件でも十分条件でもない",
+    "formulas": [
+      "x^2+y^2=(x+y)^2-[F]xy"
+    ],
+    "placeholders": {
+      "F": {
+        "digits": 1
+      },
+      "G": {
+        "digits": 1
+      },
+      "H": {
+        "digits": 1
+      },
+      "IJ": {
+        "digits": 2
+      },
+      "K": {
+        "digits": 1
+      },
+      "L": {
+        "digits": 1
+      },
+      "M": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 1
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "mixed",
+    "group": "F/G/H/IJ/K/L/M"
+  },
+  "solution_ref": "solutions/H22-1/course2/H22-1-I-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "ALG_TRANSFORM_CONSTRAINT",
+  "tags": [
+    "恒等式",
+    "必要条件",
+    "十分条件",
+    "対称式"
+  ]
+}

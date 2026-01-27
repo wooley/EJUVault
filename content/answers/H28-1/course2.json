@@ -1,0 +1,76 @@
+{
+  "exam_id": "H28-1",
+  "year": 2016,
+  "session": 1,
+  "course": 2,
+  "track": "science",
+  "items": [
+    {
+      "question_id": "H28-1-I-1",
+      "answer_groups": {
+        "A": 4,
+        "B": 2,
+        "CDEF": -241,
+        "G": 1,
+        "H": 3,
+        "IJ": 18
+      }
+    },
+    {
+      "question_id": "H28-1-I-2",
+      "answer_groups": {
+        "KLM": 220,
+        "N": 3,
+        "O": 8,
+        "PQ": 12,
+        "R": 8,
+        "STU": 200,
+        "VW": 48
+      }
+    },
+    {
+      "question_id": "H28-1-II-1",
+      "answer_groups": {
+        "AB": -6,
+        "CD": 32,
+        "EFGH": 4639,
+        "IJK": 172
+      }
+    },
+    {
+      "question_id": "H28-1-II-2",
+      "answer_groups": {
+        "LM": 12,
+        "NO": 25,
+        "PQR": 101,
+        "STU": 102,
+        "VWXY": 1212
+      }
+    },
+    {
+      "question_id": "H28-1-III-1",
+      "answer_groups": {
+        "AB": 23,
+        "CD": 66,
+        "E": 0,
+        "FG": 26,
+        "HIJK": 1212,
+        "LMNO": 1236,
+        "PQRS": 3212,
+        "T": 0,
+        "UVW": 243
+      }
+    },
+    {
+      "question_id": "H28-1-IV-1",
+      "answer_groups": {
+        "A": 3,
+        "B": 3,
+        "CDE": 122,
+        "FG": 18,
+        "HIJ": 233,
+        "K": 9
+      }
+    }
+  ]
+}

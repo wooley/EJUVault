@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/content/question.schema.json",
+  "title": "Question",
+  "type": "object",
+  "description": "Question content record. Cross-file integrity rules (answer key coverage, tag/pattern presence) are enforced by the indexer.",
+  "additionalProperties": true,
+  "required": ["exam", "course", "question_id", "section", "type"],
+  "properties": {
+    "spec_version": { "type": "string" },
+    "exam": {
+      "type": "object",
+      "required": ["exam_id", "year", "era", "session", "subject"],
+      "properties": {
+        "exam_id": { "type": "string" },
+        "year": { "type": "integer" },
+        "era": { "type": "string" },
+        "session": { "type": "integer" },
+        "subject": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "course": { "type": "integer" },
+    "track": { "type": "string" },
+    "question_id": { "type": "string" },
+    "section": { "type": "string" },
+    "order": { "type": "integer" },
+    "question_number": { "type": "integer" },
+    "type": { "type": "string" },
+    "pattern_id": { "type": "string" },
+    "tags": {
+      "oneOf": [
+        { "type": "array", "items": { "type": "string" } },
+        {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      ]
+    },
+    "tagging_status": { "type": "string" },
+    "original_ja": {
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "formulas": { "type": "array", "items": { "type": "string" } },
+        "placeholders": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "digits": { "type": "integer" }
+            },
+            "additionalProperties": true
+          }
+        },
+        "structure": { "type": "object", "additionalProperties": true }
+      },
+      "additionalProperties": true
+    },
+    "original_text_ja": { "type": "string" },
+    "translation_zh": {
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "formulas": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "blanks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id"],
+        "properties": {
+          "id": { "type": "string" },
+          "length": { "type": "integer" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "blank_rules": {
+      "type": "object",
+      "properties": {
+        "allowed_chars": { "type": "array", "items": { "type": "string" } },
+        "no_whitespace": { "type": "boolean" },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "subquestions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sub_id": { "type": "string" },
+          "prompt_ja": { "type": "string" },
+          "prompt_zh": { "type": "string" },
+          "blanks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id"],
+              "properties": {
+                "id": { "type": "string" },
+                "length": { "type": "integer" }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "structure": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "blanks": { "type": "array", "items": { "type": "string" } },
+        "subquestions": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "difficulty": {
+      "type": "object",
+      "properties": {
+        "level": { "type": "integer" },
+        "method": { "type": "string" },
+        "rationale": { "type": "array", "items": { "type": "string" } },
+        "features": { "type": "object", "additionalProperties": true }
+      },
+      "additionalProperties": true
+    },
+    "solution": {
+      "type": "object",
+      "properties": {
+        "outline": { "type": "array", "items": { "type": "string" } },
+        "steps": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+        "symbolic_steps": { "type": "array", "items": { "type": "object", "additionalProperties": true } }
+      },
+      "additionalProperties": true
+    },
+    "solution_outline": { "type": "array", "items": { "type": "string" } },
+    "answer_ref": {
+      "type": "object",
+      "required": ["course", "section", "q"],
+      "properties": {
+        "course": { "type": ["integer", "string"] },
+        "section": { "type": "string" },
+        "q": { "type": "string" },
+        "sub": { "type": ["string", "null"] },
+        "group": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "solution_ref": { "type": "string" }
+  }
+}

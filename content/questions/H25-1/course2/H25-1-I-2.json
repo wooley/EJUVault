@@ -1,0 +1,56 @@
+{
+  "exam": {
+    "exam_id": "H25-1",
+    "year": 2013,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H25-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "ALG_INTERVAL_FIND_RANGE",
+  "original_ja": {
+    "text": "a,b,c,dは a<b<c<d を満たす実数とし，実数の部分集合 A={x|a≦x≦c}, B={x|b≦x≦d} が A∩B={x|x^2-4x+3≦0} を満たしているとする。次の(1),(2)の各場合について答えなさい。(1) AとBの和集合を A∪B={x|x^2-5x-24≦0} とする。このとき a,b,c,d の値は a=[NO], b=[P], c=[Q], d=[R] である。(2) AとBの補集合\\bar{B}の共通部分を A∩\\bar{B}={x|x^2+5x-6≦0 かつ x≠1} とし，Aの補集合\\bar{A}とBの共通部分を \\bar{A}∩B={x|x^2-9x+18≦0 かつ x≠3} とする。このとき a,b,c,d の値は a=[ST], b=[U], c=[V], d=[W] である。",
+    "formulas": [],
+    "placeholders": {
+      "NO": { "digits": 2 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "ST": { "digits": 2 },
+      "U": { "digits": 1 },
+      "V": { "digits": 1 },
+      "W": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      { "idx": 1, "description": "共通部分 A∩B は区間の共通部分 [b,c] に等しい。与式を因数分解。", "math": "x^2-4x+3=(x-1)(x-3)\\le0\\Rightarrow A\\cap B=[1,3]\\Rightarrow b=1,c=3" },
+      { "idx": 2, "description": "(1) 和集合 A∪B は重なりがあるので [a,d]。与式を因数分解し端点一致。", "math": "x^2-5x-24=(x-8)(x+3)\\le0\\Rightarrow A\\cup B=[-3,8]\\Rightarrow a=-3,d=8" },
+      { "idx": 3, "description": "(2) A∩\\bar{B} は [a,b)（左側のみ残る）。与式から端点決定。", "math": "x^2+5x-6=(x+6)(x-1)\\le0\\Rightarrow [-6,1],\\ x\\ne1\\Rightarrow [-6,1)\\Rightarrow a=-6,b=1" },
+      { "idx": 4, "description": "(2) \\bar{A}∩B は (c,d]（右側のみ残る）。与式から端点決定。", "math": "x^2-9x+18=(x-3)(x-6)\\le0\\Rightarrow [3,6],\\ x\\ne3\\Rightarrow (3,6]\\Rightarrow c=3,d=6" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "(1)(2)",
+    "group": "NO/P/Q/R/ST/U/V/W"
+  },
+  "solution_ref": "solutions/H25-1/course2/H25-1-I-2.zh.md",
+  "tagging_status": "ok"
+}

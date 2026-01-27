@@ -1,0 +1,17 @@
+{
+  "exam": { "exam_id": "R05-2", "year": 2023, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R05-2-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "PROB_CLASSICAL_COUNT",
+  "original_ja": {
+    "text": "問2　赤，青，黄，緑，橙，紫の6色を使って，正多面体（正四面体，立方体）の各面に，隣り合った面の色が異なるように色を塗る。ただし，正多面体を回転させて一致する塗り方は同じとみなす。\n\n(1) 正四面体の各面を，6色を使って塗る方法について考える。まず，6色のうち使える4色の組み合わせは [KL] 通りある。このうち，赤，青，黄，緑の4色を使って塗る方法は，赤で塗った面を底面に固定して，他の3面を残りの3色で塗る塗り方は [M] 通りある。したがって，正四面体の各面を6色を使って塗る方法は [NO] 通りある。\n\n(2) 次に，正四面体の塗り方を参考にして，立方体の各面を塗る方法を考える。\n(i) 立方体において，6色をすべて使って塗る方法は [PQ] 通りある。\n(ii) 立方体において，紫を除いた5色をすべて使って塗る方法は [RS] 通りある。"
+  },
+  "solution_ref": { "path": "solutions/R05-2/course2/R05-2-I-2.zh.md" },
+  "answer_ref": { "path": "answers/ai_ans.json", "key": "R05-2-I-2" },
+  "tagging_status": "generated"
+}

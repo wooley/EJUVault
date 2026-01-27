@@ -1,0 +1,41 @@
+{
+  "exam": { "exam_id": "R01-1", "year": 2019, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R01-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "PROB_DIRECT_PROBABILITY",
+  "original_ja": {
+    "text": "【問2】サイコロXは1〜5の出る確率が等しく，6の出る確率は他の目の2倍である。\n(1) 1〜5が出る確率をそれぞれ p とすると，6が出る確率は[L]p。全事象の確率は[M]であるから，p=[N]/[O]。\n(2) 2回投げる。A:「2回とも1〜5が出る」, B:「少なくとも1回は6が出る」。\nP(A)=[P][Q]/[R][S], P(B)=[T][U]/[V][W]。したがって[X]（選択肢0〜4）。\n(3) 3回投げる。C:「3回とも1〜5が出る」, D:「少なくとも1回は6が出る」。\nP(C)とP(D)を比べると[Y]（選択肢0〜4）。\n※末尾の解答欄[Z]はマークしない。",
+    "formulas": [],
+    "placeholders": {
+      "L": { "digits": 1 }, "M": { "digits": 1 }, "N": { "digits": 1 }, "O": { "digits": 1 },
+      "P": { "digits": 1 }, "Q": { "digits": 1 }, "R": { "digits": 1 }, "S": { "digits": 1 },
+      "T": { "digits": 1 }, "U": { "digits": 1 }, "V": { "digits": 1 }, "W": { "digits": 1 },
+      "X": { "digits": 1 }, "Y": { "digits": 1 },
+      "Z": { "digits": 0 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 1
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      { "idx": 1, "description": "確率の比から全確率=1の方程式を立てて p を求める。", "math": "" },
+      { "idx": 2, "description": "独立試行より P(A) を計算し，P(B)=1-P(A) で求める。差の大小比較で選択肢を決定する。", "math": "" },
+      { "idx": 3, "description": "3回でも同様に P(C) と P(D)=1-P(C) を比較し，比が2未満かを判定する。", "math": "" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": "(1)(2)(3)", "group": "L-Y" },
+  "solution_ref": "solutions/R01-1/course2/R01-1-I-2.zh.md",
+  "tagging_status": "ok"
+}

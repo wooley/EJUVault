@@ -1,0 +1,53 @@
+{
+  "exam": {
+    "exam_id": "H22-2",
+    "year": 2010,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H22-2-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　aを実数とし (x+2)|x-1|=|x+2|(x-1)+a を満たす実数xの集合をSで表す。\n集合Sの要素の個数を調べるために，関数 f(x)=(x+2)|x-1|-|x+2|(x-1) を考える。\nこの関数は\nx≦[IJ] のとき f(x)=[K]\n[IJ]<x≦[L] のとき f(x)=-[M]x^2-[N]x+[O]\n[L]<x のとき f(x)=[P]\nである。\nよって，Sがただ1個の要素からなるようなaの値は a=[Q]/[R] で，Sがちょうど2個の要素からなるようなaの値の範囲は [S]<a<[T]/[U] である。また，a=[V] のとき，Sの要素は無数にある。その他のaの値に対しては，Sは空集合となる。",
+    "formulas": [],
+    "placeholders": {
+      "IJ": { "digits": 1 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 },
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 },
+      "V": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "source": "official/course2.json",
+    "path": ["H22-2", "I", "Q2"]
+  },
+  "solution_ref": "solutions/H22-2/course2/H22-2-I-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "CASE_SOLVE_PARAM"
+}

@@ -1,0 +1,40 @@
+{
+  "exam": { "exam_id": "R4-1", "year": 2022, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R4-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "PROB_CLASSICAL_COUNT",
+  "original_ja": {
+    "text": "1から9までの数字が1つずつ書かれた9枚のカードが左から小さい順に並んでいる。この中から2枚のカードを選び位置を入れ換える操作を2回行う。2回の操作後の9枚のカードの並びを9桁の整数とみなすとき，この整数が偶数になる確率を求める。\n(1) 1回目，2回目ともカードの入れ換えが9枚のカードの中から2枚を選べるとき\n(i) 1回目に9の書かれたカード以外のカードを入れ換える場合，2回の操作で偶数になる確率は [N]/[OP]。\n(ii) 1回目に9の書かれたカードを他のカードと入れ換える場合，2回の操作で偶数になる確率は [QR]/[STU]。\nしたがって，このとき2回の操作で偶数になる確率は [V]/[WX]。\n(2) 2回目の入れ換えでは，1回目に入れ換えた2枚を除いた残り7枚から2枚を選んで入れ換えるとき，2回の操作で偶数になる確率は [Y]/[Z]。",
+    "formulas": [],
+    "placeholders": {
+      "N": { "digits": 1 }, "OP": { "digits": 2 }, "QR": { "digits": 2 }, "STU": { "digits": 3 },
+      "V": { "digits": 1 }, "WX": { "digits": 2 }, "Y": { "digits": 1 }, "Z": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": true,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 1
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      { "idx": 1, "description": "偶数当且仅当末位是 {2,4,6,8}。末位只有在某次交换涉及第9位时才会改变。", "math": "" },
+      { "idx": 2, "description": "(1)(i) 第1回不动到“9”卡，则第1回选中9的概率为0，但第2回要让末位变偶，必须在第2回选中第9位并与偶数卡交换。", "math": "P=\\frac{\\binom{8}{2}}{\\binom{9}{2}}\\cdot\\frac{4}{\\binom{9}{2}}=\\frac{7}{9}\\cdot\\frac{1}{9}=\\frac{7}{81}" },
+      { "idx": 3, "description": "(1)(ii) 第1回选中“9”卡：先算在此事件下最终为偶的条件概率，再乘以该事件概率。", "math": "P(\\text{第1回含9})=\\frac{8}{\\binom{9}{2}}=\\frac{2}{9},\\quad P(\\text{最终偶}|\\text{第1回含9})=\\frac{35}{72}" },
+      { "idx": 4, "description": "因此(1)(ii)的概率（含“第1回含9”的情形概率）为 2/9×35/72。并求总概率。", "math": "\\frac{2}{9}\\cdot\\frac{35}{72}=\\frac{35}{324},\\quad \\frac{7}{81}+\\frac{35}{324}=\\frac{7}{36}" },
+      { "idx": 5, "description": "(2) 第2回只能在剩余7张中选2张交换。分类看第1回是否涉及末位(9号位)。", "math": "P=\\frac{2}{9}" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": "(1)(2)", "group": "QRSTU/VWX/YZ" },
+  "solution_ref": "solutions/R4-1/course2/R4-1-I-2.zh.md",
+  "tagging_status": "ok"
+}

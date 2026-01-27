@@ -1,0 +1,88 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H21-2",
+    "year": 2009,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H21-2-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　a>0 とし，x の2次関数 y=3ax^2 ……① を考える。\n(1) ①のグラフを x軸方向に2a，y軸方向に12aだけ平行移動すると，そのグラフを表す2次関数は\ny=3a(x−[I]a)^2+[JK]a\nである。さらに，このグラフと直線 y=12a に関して対称なグラフを表す2次関数は\ny=[LM]a(x^2−[N]ax+[O]a^2−[P]) ……②\nとなる。①と②のグラフが異なる2点で交わるとき，a のとりうる値の範囲は\n0<a<√[Q]\nである。\n(2) (1)において a が整数の場合を考える。このとき，①と②のグラフの交点の x座標は [R] と [S]（[R]<[S]）である。さらに，直線 x=k（[R]<k<[S]）と①，②のグラフの交点をそれぞれ P,Q とする。線分PQの長さを k の式で表すと\nPQ=−[T]k^2+[UV]k\nとなるから，k=[W] のとき，PQの値は最大となる。",
+    "formulas": [],
+    "placeholders": {
+      "I": { "digits": 1 },
+      "JK": { "digits": 2 },
+      "LM": { "digits": 2 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "UV": { "digits": 2 },
+      "W": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "has_integer_constraint": true,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [
+      "平移公式写出新抛物线",
+      "关于 y=12a 对称：y→24a−y",
+      "联立求交点个数用判别式条件",
+      "整数 a 的取值确定后计算 PQ 并求最大值"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "平移 (右移2a，上移12a)：y=3a(x-2a)^2+12a。",
+        "math": "y=3a(x-2a)^2+12a"
+      },
+      {
+        "idx": 2,
+        "description": "关于直线 y=12a 对称：y_2=24a - (3a(x-2a)^2+12a)=12a-3a(x-2a)^2，并整理为题设形式。",
+        "math": "y=-3a(x^2-4ax+4a^2-4)"
+      },
+      {
+        "idx": 3,
+        "description": "与①联立：3ax^2=12a-3a(x-2a)^2，化简得 x^2-2ax+2a^2-2=0。两不同交点⇔判别式>0。",
+        "math": "\\Delta=4(2-a^2)>0\\Rightarrow 0<a<\\sqrt2"
+      },
+      {
+        "idx": 4,
+        "description": "a 为整数且 0<a<√2 ⇒ a=1。此时交点方程为 x^2-2x=0，得 R=0,S=2。",
+        "math": "x=0,2"
+      },
+      {
+        "idx": 5,
+        "description": "x=k 时两点纵坐标差：y_2-y_1 =(-3k^2+12k)-(3k^2)=-6k^2+12k。抛物线顶点给最大值点。",
+        "math": "PQ=-6k^2+12k\\Rightarrow k=\\frac{12}{2\\cdot 6}=1"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "(1)(2)",
+    "group": "I/JK/LM/N/O/P/Q/R/S/T/UV/W"
+  },
+  "solution_ref": "data/solutions/H21-2/course2/H21-2-I-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "QF_TRANSFORM_SHIFT",
+  "tags": ["二次函数", "平移", "对称", "判别式", "最值"]
+}

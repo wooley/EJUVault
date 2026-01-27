@@ -1,0 +1,59 @@
+{
+  "exam": {
+    "exam_id": "H26-1",
+    "year": 2014,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H26-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "ALG_TRANSFORM_FACTORIZE",
+  "original_ja": {
+    "text": "問2 2つの整式 P=2x^2-x+2, Q=x^2-2x+1 に対して E=P^2-4Q^2-3P+6Q を考える。(1) Eの右辺を因数分解して E=(P-[L]Q)(P+[M]Q-[N]) を得る。(2) Eをxの式で表すと E=[O]x(x-[P])([Q]x-[R]) となる。(3) x=-(1-\\sqrt5)/(3-\\sqrt5) のとき，Eの値は [S]+[T]\\sqrt[U] である。",
+    "formulas": [],
+    "placeholders": {
+      "L": { "digits": 1 },
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 2 },
+      "U": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      { "idx": 1, "description": "P,Q を用いて平方差型にまとめる。", "math": "E=(P^2-4Q^2)-3(P-2Q)=(P-2Q)(P+2Q-3)" },
+      { "idx": 2, "description": "P,Q を x に戻して因数分解。", "math": "P-2Q=2x,\\quad P+2Q-3=4x^2-5x+1=(x-1)(4x-1)" },
+      { "idx": 3, "description": "与えられた x を簡単化して代入。", "math": "x=-\\dfrac{1-\\sqrt5}{3-\\sqrt5}=-\\dfrac{(1-\\sqrt5)(3+\\sqrt5)}{4}=\\dfrac{1}{2}+\\dfrac{\\sqrt5}{4}" },
+      { "idx": 4, "description": "E=2x(x-1)(4x-1) に代入して計算。", "math": "E=\\dfrac{15}{4}+\\dfrac{5}{2}\\sqrt5" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": null,
+    "group": "L,M,N,O,P,Q,R,S,T,U"
+  },
+  "solution_ref": "solutions/H26-1/course2/H26-1-I-2.zh.md",
+  "tagging_status": "ok"
+}

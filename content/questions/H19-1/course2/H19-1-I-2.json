@@ -1,0 +1,28 @@
+{
+  "exam": "EJU",
+  "year": 2007,
+  "session": 1,
+  "subject": "math",
+  "course": 2,
+  "question_id": "H19-1-I-2",
+  "section": "I",
+  "number": 2,
+  "title": "数直线上的集合与必要条件",
+  "problem_statement": "数直线上的集合 A, B 定义如下：A={x｜|x−1|≧9}, B={x｜a+3≦x≦2a}，且 B≠∅。回答以下问题。",
+  "answer_format": "fill_in_blank",
+  "pattern_id": "SET-INTERVAL-CONDITION",
+  "tags": [
+    "集合",
+    "绝对值不等式",
+    "必要条件",
+    "参数范围"
+  ],
+  "blanks": [
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "exam": {
+    "exam_id": "H17-1",
+    "year": 2005,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H17-1-II-1",
+  "section": "II",
+  "order": 1,
+  "type": "fill_in",
+  "source": {
+    "images": ["data/images_raw/H17-1_course2/page_05.png"],
+    "page_print": "数学-17",
+    "page_in_exam": 141
+  },
+  "original_ja": {
+    "text": "問1　a, x, y は有理数とし，(√3 + √2 a)/(√3 + √2) = x + √6 y とする。(1) x=[AB]a+[C], y=a-[D] である。(2) a がどのような値をとっても，点(x,y)はつねに直線 y=([EF]/[G])x + ([H]/[I]) 上にある。",
+    "formulas": [
+      "\\frac{\\sqrt{3}+\\sqrt{2}a}{\\sqrt{3}+\\sqrt{2}} = x + \\sqrt{6}\\,y",
+      "x=[AB]a+[C]",
+      "y=a-[D]",
+      "y=\\frac{[EF]}{[G]}x+\\frac{[H]}{[I]}"
+    ]
+  },
+  "translation_zh": {
+    "text": "题1 设 a、x、y 为有理数，并且 (√3+√2·a)/(√3+√2)=x+√6·y。(1) 证明并求出 x=[AB]a+[C]，y=a-[D]。(2) 无论 a 取何值，点 (x,y) 总在直线 y=([EF]/[G])x+([H]/[I]) 上。",
+    "formulas": [
+      "\\frac{\\sqrt{3}+\\sqrt{2}a}{\\sqrt{3}+\\sqrt{2}} = x + \\sqrt{6}\\,y"
+    ]
+  },
+  "blanks": [
+    { "id": "AB", "length": 2 },
+    { "id": "C", "length": 1 },
+    { "id": "D", "length": 1 },
+    { "id": "EF", "length": 2 },
+    { "id": "G", "length": 1 },
+    { "id": "H", "length": 1 },
+    { "id": "I", "length": 1 }
+  ],
+  "blank_rules": {
+    "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+    "no_whitespace": true,
+    "notes": [
+      "本题含分数形式，分子/分母分别对应框位字符。"
+    ]
+  },
+  "subquestions": [
+    {
+      "sub_id": "(1)",
+      "prompt_ja": "x と y を a を用いて表す。",
+      "prompt_zh": "把 x、y 用 a 表示。",
+      "blanks": [
+        { "id": "AB", "length": 2 },
+        { "id": "C", "length": 1 },
+        { "id": "D", "length": 1 }
+      ]
+    },
+    {
+      "sub_id": "(2)",
+      "prompt_ja": "点(x,y)が常に乗る直線を求める。",
+      "prompt_zh": "求 (x,y) 恒成立的直线方程。",
+      "blanks": [
+        { "id": "EF", "length": 2 },
+        { "id": "G", "length": 1 },
+        { "id": "H", "length": 1 },
+        { "id": "I", "length": 1 }
+      ]
+    }
+  ],
+  "tags": {
+    "domain": ["数と式"],
+    "skill": ["根号を含む式の計算"],
+    "course_specific": []
+  },
+  "difficulty": {
+    "level": 3,
+    "method": "heuristic_v1",
+    "rationale": [
+      "需要有理化与根式分解，把表达式拆成 1 与 √6 两部分",
+      "进一步消去参数得到直线关系"
+    ],
+    "features": {
+      "steps_min": 6,
+      "concept_count": 2,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution_outline": [
+    "对分式做有理化：乘以 (√3-√2)",
+    "把结果写成 (常数部分) + (√6 部分)",
+    "由系数匹配得到 x、y",
+    "消去 a 得到 y 关于 x 的直线方程"
+  ],
+  "answer_ref": {
+    "exam_id": "H17-1",
+    "course": 2,
+    "section": "II",
+    "question_number": 1
+  },
+  "solution_ref": "data/solutions/H17-1/course2/H17-1-II-1.zh.md",
+  "tagging_status": "ok"
+}

@@ -1,0 +1,48 @@
+{
+  "exam": { "exam_id": "H19-2", "year": 2007, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H19-2-IV-1",
+  "section": "IV",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問1　f(x)=log(1/x)（x>0）とする。ただし，logは自然対数である。\n(1) f'(x)=[AB]/x,\n \\int x f(x) dx = ([C]/[D])x^2 f(x) + ([E]/[F])x^2 +C （Cは積分定数）\n(2) tは0<t<1/2を満たす数とする。xy平面において，曲線 y=xf(x) と直線 x=t，直線 x=2t およびx軸によって囲まれた部分の面積をS(t)とするとき，S(t)をt, f(t), f(2t)を用いて表すと\n S(t)=([G]f(2t)-([H]/[I])f(t)+([J]/[K])) t^[L]\nとなる。",
+    "formulas": [],
+    "placeholders": {
+      "AB": { "digits": 2 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 },
+      "J": { "digits": 1 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": ["f(x)=-ln x 求导", "分部积分求∫x f(x)dx", "用原函数算S(t)=∫_t^{2t} x f(x)dx并整理"],
+    "steps": [
+      { "idx": 1, "description": "化简f(x)", "math": "f(x)=\\ln(1/x)=-\\ln x" },
+      { "idx": 2, "description": "求导", "math": "f'(x)=-1/x" },
+      { "idx": 3, "description": "分部积分", "math": "\\int -x\\ln x\\,dx=-(x^2/2)\\ln x + x^2/4 +C = (1/2)x^2 f(x) + (1/4)x^2 +C" },
+      { "idx": 4, "description": "面积S(t)=∫_t^{2t} x f(x) dx，代入原函数并整理", "math": "S(t)=t^2\\left(2f(2t)-\\tfrac12 f(t)+\\tfrac34\\right)" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "IV", "q": "Q1", "sub": "all", "group": "AB/CDEF/GHIJKL" },
+  "solution_ref": "solutions/H19-2/course2/H19-2-IV-1.zh.md",
+  "pattern_id": "CALC_INTEGRAL_AREA",
+  "tagging_status": "ok"
+}

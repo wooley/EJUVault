@@ -1,0 +1,45 @@
+{
+  "exam": { "exam_id": "H27-1", "year": 2015, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "course": 2,
+  "track": "science",
+  "question_id": "H27-1-II-1",
+  "section": "II",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "VEC_DOT_ANGLE",
+  "original_ja": {
+    "text": "ベクトルa,bのなす角60°, |a|=1, |b|=2。u=xa+b, v=xa-b。x>1でuとvのなす角が30°となるxを求める。(u·v)^2=[A]/[B]|u|^2|v|^2, a·b=[C]。これをxで表すと x^4-[DE]x^2+[FG]=0。変形して (x^2-[H])^2=([I]x)^2。よって x=[J]+√[KL]。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "DE": { "digits": 2 },
+      "FG": { "digits": 2 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 },
+      "J": { "digits": 1 },
+      "KL": { "digits": 2 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      { "idx": 1, "description": "角30°より内積公式（平方）", "math": "(u\\cdot v)^2=\\cos^2 30^\\circ\\,|u|^2|v|^2=\\frac34|u|^2|v|^2" },
+      { "idx": 2, "description": "a·bを計算", "math": "a\\cdot b=|a||b|\\cos60^\\circ=1" },
+      { "idx": 3, "description": "u·v, |u|^2, |v|^2 をxで表し整理", "math": "u\\cdot v=x^2-4,\\ |u|^2=x^2+4+2x,\\ |v|^2=x^2+4-2x" },
+      { "idx": 4, "description": "方程式を解いてx>1を満たす解を選択", "math": "(x^2-4)^2=\\frac34(x^4+4x^2+16)\\Rightarrow x=3+\\sqrt{13}" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "II", "q": "Q1", "sub": "all", "group": "A/B/C/DE/FG/H/I/J/KL" },
+  "solution_ref": "solutions/H27-1/course2/H27-1-II-1.zh.md",
+  "tagging_status": "ok"
+}

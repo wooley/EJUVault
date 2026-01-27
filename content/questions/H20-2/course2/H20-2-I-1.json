@@ -1,0 +1,62 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H20-2",
+    "year": 2008,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H20-2-I-1",
+  "section": "I",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "QF_DIRECT_VERTEX",
+  "original_ja": {
+    "text": "次の2つの条件を満たす2次関数を求めよう。\n(i) x=1 と x=5 で同じ値をとる。\n(ii) -2≦x≦6 における最大値は30であり，最小値は-20である。\n求める2次関数を y=ax^2+bx+c とおくと，条件(i)より b=-[A]a を得る。さらに条件(ii)より\n{ -[B]a+c=-20, [CD]a+c=30 } または { -[B]a+c=30, [CD]a+c=-20 }。\nしたがって，求める2次関数は y=[E]x^2-[FG]x-[H] と y=-[I]x^2+[JK]x+[LM] である。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 2 },
+      "CD": { "digits": 2 },
+      "E": { "digits": 1 },
+      "FG": { "digits": 2 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 },
+      "JK": { "digits": 2 },
+      "LM": { "digits": 2 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [
+      "条件(i)から軸を特定（対称性）して b を a で表す",
+      "区間端点と頂点の値を比較して最大・最小条件を連立",
+      "上に開く/下に開くの2ケースで解く"
+    ],
+    "steps": [
+      { "idx": 1, "description": "f(1)=f(5)より係数条件を得る", "math": "a+b+c=25a+5b+c \\Rightarrow 24a+4b=0 \\Rightarrow b=-6a" },
+      { "idx": 2, "description": "頂点と端点の値を用意する", "math": "f(x)=ax^2-6ax+c=a(x-3)^2+(c-9a),\\ f(-2)=16a+c,\\ f(6)=c" },
+      { "idx": 3, "description": "a>0 のとき最小=頂点，最大=左端で連立して解く", "math": "c-9a=-20,\\ 16a+c=30 \\Rightarrow a=2,\\ c=-2" },
+      { "idx": 4, "description": "a<0 のとき最大=頂点，最小=左端で連立して解く", "math": "c-9a=30,\\ 16a+c=-20 \\Rightarrow a=-2,\\ c=12" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": null,
+    "group": "A/B/CD/E/FG/H/I/JK/LM"
+  },
+  "solution_ref": "solutions/H20-2/course2/H20-2-I-1.zh.md",
+  "tagging_status": "ok"
+}

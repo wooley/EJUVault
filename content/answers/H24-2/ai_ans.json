@@ -1,0 +1,79 @@
+{
+    "exam_id": "H24-2",
+    "year": 2012,
+    "session": 2,
+    "course": 2,
+    "track": "science",
+    "answers": [
+      {
+        "question_id": "H24-2-I-1",
+        "merged": {
+          "AB": 24,
+          "C": 4,
+          "DEF": -28,
+          "GHI": 28,
+          "JK": 10,
+          "LM": -8
+        }
+      },
+      {
+        "question_id": "H24-2-I-2",
+        "merged": {
+          "NO": 41,
+          "PQR": 421,
+          "STUV": 7473,
+          "W": 3,
+          "X": 3
+        }
+      },
+      {
+        "question_id": "H24-2-II",
+        "merged": {
+          "ABCD": 4323,
+          "EFG": -12,
+          "H": 1,
+          "I": 3,
+          "JK": 13,
+          "LM": 82,
+          "NO": 36,
+          "PQRS": -114,
+          "TUV": 362,
+          "WX": 62
+        }
+      },
+      {
+        "question_id": "H24-2-III",
+        "merged": {
+          "ABC": 223,
+          "DEF": 115,
+          "G": 2,
+          "H": 4,
+          "IJ": 16,
+          "K": 4,
+          "L": 2
+        }
+      },
+      {
+        "question_id": "H24-2-IV-1",
+        "merged": {
+          "AB": 34,
+          "CDE": 323,
+          "F": 0,
+          "G": 3,
+          "HIJKL": 5414
+        }
+      },
+      {
+        "question_id": "H24-2-IV-2",
+        "merged": {
+          "MNO": 141,
+          "PQRST": 11214,
+          "U": 1,
+          "V": 4,
+          "W": 0,
+          "XY": 43
+        }
+      }
+    ]
+  }
+  

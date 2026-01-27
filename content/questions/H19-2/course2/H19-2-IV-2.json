@@ -1,0 +1,48 @@
+{
+  "exam": { "exam_id": "H19-2", "year": 2007, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H19-2-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　f(x)=e^{2x}-4e^x-6x+a とする。ただし，eは自然対数の底で，logは自然対数である。\n(1) f'(x)=[M]e^{2x}-[N]e^x-[O]であるから，f(x)は x=log[P]で最小になる。\n(2) f(x)=0を満たすxが区間 0<x<log4 の中に2個存在するための必要十分条件は\n [Q]log[R] < a < [S] + 6log[T] ……①\nである。\n(3) aが不等式①を満たすとする。このとき，f(x)=0を満たす2つの解をα,β(α<β)とおくと，つねに\n α<log[U]<β\nが成り立つ。",
+    "formulas": [],
+    "placeholders": {
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 4
+    }
+  },
+  "solution": {
+    "outline": ["求导并求极小点", "利用凸性：两根条件=两端同号且极小值异号", "根必夹在极小点两侧"],
+    "steps": [
+      { "idx": 1, "description": "求导", "math": "f'(x)=2e^{2x}-4e^x-6" },
+      { "idx": 2, "description": "令f'(x)=0，设u=e^x", "math": "2u^2-4u-6=0\\Rightarrow u^2-2u-3=0\\Rightarrow u=3\\Rightarrow x=\\ln3" },
+      { "idx": 3, "description": "凸性：x>0时f''(x)=4e^{2x}-4e^x>0，故在(0,ln4)上凸", "math": "f\\text{凸}" },
+      { "idx": 4, "description": "两根在(0,ln4)内：需f(0)>0, f(ln4)>0 且 f(ln3)<0", "math": "a>3,\\ a>6\\ln4,\\ a<3+6\\ln3" },
+      { "idx": 5, "description": "合并为区间条件并匹配题目格式", "math": "6\\ln4<a<3+6\\ln3" },
+      { "idx": 6, "description": "两根必分居极小点两侧", "math": "\\alpha<\\ln3<\\beta" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "IV", "q": "Q2", "sub": "all", "group": "MNOP/QRST/U" },
+  "solution_ref": "solutions/H19-2/course2/H19-2-IV-2.zh.md",
+  "pattern_id": "CALC_EXP_MINMAX_ROOTS",
+  "tagging_status": "ok"
+}

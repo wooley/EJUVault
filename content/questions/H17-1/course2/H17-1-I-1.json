@@ -1,0 +1,115 @@
+{
+    "exam": {
+      "exam_id": "H17-1",
+      "year": 2005,
+      "era": "平成",
+      "session": 1,
+      "subject": "EJU数学"
+    },
+    "course": 2,
+    "track": "science",
+    "question_id": "H17-1-I-1",
+    "section": "I",
+    "order": 1,
+    "type": "fill_in",
+    "original_ja": {
+      "text": "問1　a, b を定数とする。x の整式 A = x^3 + ax^2 + 18，B = x^2 - 2x + b について考える。(1) A を B で割ったときの商を Q，余りを R とすると，Q = x + a + [A]，R = ([B]a - b + [C])x - (a + [D])b + [EF] である。(2) A が B で割り切れるとき，a, b の値は a=[G], b=[H] または a=[IJ], b=[KL] である。",
+      "formulas": [
+        "A = x^3 + a x^2 + 18",
+        "B = x^2 - 2x + b",
+        "Q = x + a + [A]",
+        "R = ([B]a - b + [C])x - (a + [D])b + [EF]"
+      ]
+    },
+    "translation_zh": {
+      "text": "题1 设 a、b 为常数。考虑关于 x 的多项式 A=x^3+ax^2+18，B=x^2−2x+b。(1) 用 B 去除 A，商为 Q、余式为 R。已知 Q=x+a+[A]，R=([B]a−b+[C])x−(a+[D])b+[EF]，求各空。(2) 若 A 能被 B 整除，求 a、b 的值：a=[G], b=[H] 或 a=[IJ], b=[KL]。",
+      "formulas": [
+        "A = x^3 + a x^2 + 18",
+        "B = x^2 - 2x + b"
+      ]
+    },
+    "blanks": [
+      { "id": "A", "length": 1 },
+      { "id": "B", "length": 1 },
+      { "id": "C", "length": 1 },
+      { "id": "D", "length": 1 },
+      { "id": "EF", "length": 2 },
+      { "id": "G", "length": 1 },
+      { "id": "H", "length": 1 },
+      { "id": "IJ", "length": 2 },
+      { "id": "KL", "length": 2 }
+    ],
+    "blank_rules": {
+      "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+      "no_whitespace": true,
+      "notes": [
+        "填空为字符级判分：每个框填入一个字符。",
+        "负号使用 '-' 作为标准表示；乘除优先使用 ×、÷。"
+      ]
+    },
+    "subquestions": [
+      {
+        "sub_id": "(1)",
+        "prompt_ja": "A を B で割ったときの商 Q と余り R の形を求める。",
+        "prompt_zh": "求 A 除以 B 的商 Q 与余式 R 的指定形式中的空。",
+        "blanks": [
+          { "id": "A", "length": 1 },
+          { "id": "B", "length": 1 },
+          { "id": "C", "length": 1 },
+          { "id": "D", "length": 1 },
+          { "id": "EF", "length": 2 }
+        ]
+      },
+      {
+        "sub_id": "(2)",
+        "prompt_ja": "A が B で割り切れる条件から a, b を求める。",
+        "prompt_zh": "由整除条件求参数 a、b。",
+        "blanks": [
+          { "id": "G", "length": 1 },
+          { "id": "H", "length": 1 },
+          { "id": "IJ", "length": 2 },
+          { "id": "KL", "length": 2 }
+        ]
+      }
+    ],
+    "tags": {
+      "domain": ["いろいろな式"],
+      "skill": ["多項式の除法"],
+      "course_specific": ["数学2_only"]
+    },
+    "difficulty": {
+      "level": 3,
+      "method": "heuristic_v1",
+      "rationale": [
+        "需要完成一次标准多项式除法并整理余式系数",
+        "含参数 a,b，整除条件转化为联立方程求解"
+      ],
+      "features": {
+        "steps_min": 5,
+        "concept_count": 2,
+        "has_parameter_elimination": true,
+        "has_case_split": true,
+        "has_integer_constraint": false,
+        "algebraic_complexity": 2
+      }
+    },
+    "solution": {
+      "outline": [
+        "对 A ÷ B 做多项式除法得到 Q 与 R",
+        "将余式写成题目指定形式并对照系数确定 A,B,C,D,EF",
+        "整除条件等价于余式恒为 0，联立两条方程解 a,b"
+      ],
+      "steps": [],
+      "symbolic_steps": []
+    },
+    "answer_ref": {
+      "course": 2,
+      "section": "I",
+      "q": "Q1",
+      "sub": "(1)",
+      "group": "A/BCDE/EF; (2) G/H/IJ/KL"
+    },
+    "solution_ref": "data/solutions/H17-1/course2/H17-1-I-1.zh.md",
+    "tagging_status": "ok"
+  }
+  

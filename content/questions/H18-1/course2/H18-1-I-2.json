@@ -1,0 +1,65 @@
+{
+  "exam": {
+    "exam_id": "H18-1",
+    "year": 2006,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H18-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "QF_INTERVAL_COUNT_INT",
+  "original_ja": {
+    "text": "問2 A={x|x^2≦9}, B={x|2x^2-4x-5>0} とする。集合 A∩B に属するすべての整数の個数を求めよう。A={x|-[L]≦x≦[M]}、B={x|x<[N]-√([OP])/[Q] または [N]+√([OP])/[Q]<x} であるから，A∩B に属する整数は [R] 個である。",
+    "formulas": [
+      "x^2\\le 9",
+      "2x^2-4x-5>0"
+    ],
+    "placeholders": {
+      "L": {
+        "digits": 1
+      },
+      "M": {
+        "digits": 1
+      },
+      "N": {
+        "digits": 1
+      },
+      "OP": {
+        "digits": 2
+      },
+      "Q": {
+        "digits": 1
+      },
+      "R": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": true,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "(all)",
+    "group": "L,M,N,OP,Q,R"
+  },
+  "solution_ref": "data/solutions/H18-1/course2/H18-1-I-2.zh.md",
+  "tagging_status": "ok"
+}

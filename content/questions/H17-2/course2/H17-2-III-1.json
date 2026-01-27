@@ -1,0 +1,42 @@
+{
+  "exam": { "exam_id": "H17-2", "year": 2005, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H17-2-III-1",
+  "section": "III",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "CALC_TRANSFORM_MINMAX",
+  "original_ja": {
+    "text": "問1　-\\frac{\\pi}{6} \\le x \\le \\frac{\\pi}{4} のとき\nf(x)=\\log_4(1+\\sin x)+\\log_2\\sqrt{1-\\sin x}\nは x=\\frac{[A]}{[B]}\\pi で最小値 \\frac{[CD]}{[E]} をとり，x=[F] で最大値 [G] をとる。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "CD": { "digits": 2 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      { "idx": 1, "description": "换底并合并对数", "math": "f(x)=\\tfrac12\\log_2(1+\\sin x)+\\tfrac12\\log_2(1-\\sin x)=\\tfrac12\\log_2(1-\\sin^2x)" },
+      { "idx": 2, "description": "化简为 cos", "math": "f(x)=\\tfrac12\\log_2(\\cos^2x)=\\log_2(\\cos x)\\ (\\cos x>0)" },
+      { "idx": 3, "description": "区间内 cos 的最大最小", "math": "\\cos x\\text{最大在 }x=0;\\ \\cos x\\text{最小在 }x=\\pi/4" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "III", "q": "Q1", "sub": null, "group": "A/B/CD/E/F/G" },
+  "solution_ref": "solutions/H17-2/course2/H17-2-III-1.zh.md",
+  "tagging_status": "ok"
+}

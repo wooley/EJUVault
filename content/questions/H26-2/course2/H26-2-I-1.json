@@ -1,0 +1,28 @@
+{
+  "exam": { "exam_id": "H26-2", "year": 2014, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H26-2-I-1",
+  "section": "I",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "QF_PARAM_CONDITION_DISCRIMINANT",
+  "original_ja": {
+    "text": "問1 a,bは実数であり，a>0とする。2つの2次関数 f(x)=2x^2-4x+5，g(x)=x^2+ax+b を考える。g(x)が(i) g(x)の最小値はf(x)の最小値より8だけ小さい，(ii) f(x)=g(x)を満たすxがただ1つ存在する，を満たすときのa,bを求めよ。f(x)の最小値は[A]であるから，条件(i)より b=a^2/[B]-[C] を得る。よって f(x)=g(x)を満たすxの方程式は x^2-(a+[D])x-a^2/[E]+[FG]=0 である。したがって条件(ii)とa>0より a=[H], b=[IJ] を得る。このとき f(x)=g(x)を満たすxは[K]である。",
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "FG": { "digits": 2 },
+      "H": { "digits": 1 },
+      "IJ": { "digits": 2 },
+      "K": { "digits": 1 }
+    }
+  },
+  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": null, "group": "A,B,C,D,E,FG,H,IJ,K" },
+  "solution_ref": "solutions/H26-2/course2/H26-2-I-1.zh.md",
+  "tagging_status": "ok"
+}

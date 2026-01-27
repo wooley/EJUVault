@@ -1,0 +1,57 @@
+{
+  "exam": {
+    "exam_id": "H22-1",
+    "year": 2010,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H22-1-IV-1",
+  "section": "IV",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問1　xの関数 f(x)=log(4x-log x) がある。ここでlogは自然対数とする。f''(x)を求めて f(x)の極値を調べよう。\nただし，[K],[L]には，下の⓪〜⑥のうちから最も適するものを一つずつ選びなさい。\n\nまず，f'(x), f''(x)を求めると\nf'(x)=([A]-[B]/x)/(4x-log x)\n\nf''(x)= ( (1/x^[C])(4x-log x) - ([A]-[B]/x)^[D] ) / (4x-log x)^2\n\nとなる。これより\nf'([E]/[F])=0,\n f''([E]/[F])=[GH]/([I]+log[J])\nとなる。このとき\nf''([E]/[F]) [K] 0\nであるから，f(x)は x=[E]/[F] で [L] となる。また，そのときの値は log([M]+log[N]) である。\n\n⓪＝ ①＞ ②≧ ③＜ ④≦ ⑤極大 ⑥極小",
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "GH": { "digits": 2 },
+      "I": { "digits": 1 },
+      "J": { "digits": 1 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 },
+      "M": { "digits": 1 },
+      "N": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q1",
+    "sub": "mixed",
+    "group": "A/B/C/D/E/F/GH/I/J/K/L/M/N"
+  },
+  "solution_ref": "solutions/H22-1/course2/H22-1-IV-1.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "CALC_RATE_MINMAX",
+  "tags": ["微分", "極値", "対数", "二次導関数"]
+}

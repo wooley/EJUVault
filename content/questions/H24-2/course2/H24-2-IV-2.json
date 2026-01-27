@@ -1,0 +1,23 @@
+{
+  "exam": { "exam_id": "H24-2", "year": 2012, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "course": 2,
+  "track": "science",
+  "question_id": "H24-2-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　数列 {a_n} を a_n=∫_0^{1/4} x^n e^{-x}dx (n=1,2,3,…) で定める。このとき a_1=-( [H]/[I])e^{[JK]/[L]}+1。さらに a_{n+1}=-( [M]/[N])^{n+1} e^{[JK]/[L]}+(n+[O])a_n。これを用いて ∑_{k=1}^n k a_k = a_{n+1}-a_1 + ([P]/[QR])e^{[JK]/[L]}{1-( [S]/[T])^n} を得る。0≤x のとき 0<e^{-x}≤[U] より 0<a_n<∫_0^{1/4} [U]x^n dx = 1/([V]^{n+1}(n+1))。よって lim a_n=[W]，したがって lim ∑_{k=1}^n k a_k = ([X]/[Y])e^{[JK]/[L]}-1。",
+    "placeholders": {
+      "H": { "digits": 1 }, "I": { "digits": 1 }, "JK": { "digits": 2 }, "L": { "digits": 1 },
+      "M": { "digits": 1 }, "N": { "digits": 1 }, "O": { "digits": 1 },
+      "P": { "digits": 1 }, "QR": { "digits": 2 }, "S": { "digits": 1 }, "T": { "digits": 1 },
+      "U": { "digits": 1 }, "V": { "digits": 1 }, "W": { "digits": 1 },
+      "X": { "digits": 1 }, "Y": { "digits": 1 }
+    }
+  },
+  "answer_ref": { "course": 2, "section": "IV", "q": "Q2" },
+  "solution_ref": "solutions/H24-2/course2/H24-2-IV-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "CALC_INTEGRAL_RECURSION_LIMIT"
+}

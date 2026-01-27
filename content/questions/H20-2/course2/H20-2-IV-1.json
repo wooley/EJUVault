@@ -1,0 +1,66 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H20-2",
+    "year": 2008,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H20-2-IV-1",
+  "section": "IV",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "CALC_RATE_INTERSECTION",
+  "original_ja": {
+    "text": "関数 f(x) の導関数は x^2+x-1 である。さらに y=f(x) のグラフが直線 y=x+1 と接しているとき，f(x) を求めよう。\n接線の傾きが [A] であるから x^2+x-[B]=0 を解くと接点の x 座標 [CD],[E]。\n接点は ([CD],[FG]) または ([E],[H])。\nしたがって f(x)=1/[I] x^3 +1/[J] x^2 -x -[K]/[L] ……(1)\nまたは f(x)=1/[I] x^3 +1/[J] x^2 -x +[MN]/[O] ……(2)\nさらに(1)は(2)をy軸方向に平行移動したものなので，(1)(2)と直線 x=[CD], x=[E] によって囲まれる部分の面積は [PQ]/2。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "CD": { "digits": 2 },
+      "E": { "digits": 1 },
+      "FG": { "digits": 2 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 },
+      "J": { "digits": 1 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 },
+      "MN": { "digits": 2 },
+      "O": { "digits": 1 },
+      "PQ": { "digits": 2 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [
+      "接線条件：傾き一致 f'(x0)=1 と点が直線上",
+      "f'(x) を積分して f(x)=原始関数+C",
+      "2つの接点それぞれで C を決め，差（平行移動量）から面積を求める"
+    ],
+    "steps": [
+      { "idx": 1, "description": "傾き一致から接点の x 座標を求める", "math": "f'(x)=x^2+x-1,\\ 1=x^2+x-1\\Rightarrow x^2+x-2=0\\Rightarrow x=-2,1" },
+      { "idx": 2, "description": "導関数を積分して f(x) を得る", "math": "f(x)=\\int(x^2+x-1)dx=\\frac13x^3+\\frac12x^2-x+C" },
+      { "idx": 3, "description": "直線上の点条件で C を決める", "math": "(-2,-1)\\Rightarrow C=-\\frac73,\\ (1,2)\\Rightarrow C=\\frac{13}{6}" },
+      { "idx": 4, "description": "平行移動量×幅で面積", "math": "\\Delta C=\\frac{13}{6}-\\left(-\\frac73\\right)=\\frac92,\\ \\text{幅}=1-(-2)=3,\\ S=\\frac92\\cdot 3=\\frac{27}{2}" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q1",
+    "sub": null,
+    "group": "A/B/CD/E/FG/H/I/J/K/L/MN/O/PQ"
+  },
+  "solution_ref": "solutions/H20-2/course2/H20-2-IV-1.zh.md",
+  "tagging_status": "ok"
+}

@@ -1,0 +1,40 @@
+{
+  "exam": { "exam_id": "R4-1", "year": 2022, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R4-1-II-2",
+  "section": "II",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "GEO_TRANSFORM_LENGTH",
+  "original_ja": {
+    "text": "∠ABC=π/2 となる直角三角形ABCを考える。重心をGとし，AG=1。複素数平面で，Gを原点，Aを表す複素数を1とする。B,Cを表す複素数をそれぞれ β, γ とし，βの虚部が正となるようにする。\n(1) ∠ABC=π/2 だから |(γ-1)/(β-1)| = [N]。したがって (γ-1)/(β-1) = [O]。これより β,γ に関する関係式 [P] を得る。\n(2) 以後 tanθ=t とおく。関係式 [P] より，β,γ は t を用いて β=[Q], γ=[R]。したがって BG=[S], CG=[T]。\n(3) (2)より lim_{θ→0+}BG=[U], lim_{θ→0+}CG=[W], lim_{θ→(π/2)-}BG=[V], lim_{θ→(π/2)-}CG=[X]。また BG=2/3 のとき CG=[Y]。",
+    "formulas": [],
+    "placeholders": {
+      "N": { "digits": 1 }, "O": { "digits": 1 }, "P": { "digits": 1 },
+      "Q": { "digits": 1 }, "R": { "digits": 1 }, "S": { "digits": 1 }, "T": { "digits": 1 },
+      "U": { "digits": 1 }, "V": { "digits": 1 }, "W": { "digits": 1 }, "X": { "digits": 1 }, "Y": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      { "idx": 1, "description": "重心在原点： (1+β+γ)/3=0 ⇒ β+γ=-1。", "math": "β+γ=-1" },
+      { "idx": 2, "description": "直角条件：向量 BA 与 BC 垂直 ⇒ (γ-β)/(1-β) 为纯虚数，等价于 (γ-1)/(β-1)=1+i tanθ。", "math": "\\frac{γ-1}{β-1}=1+it" },
+      { "idx": 3, "description": "由 (1+it)β-γ-it=0 与 β+γ=-1 联立解 β,γ。", "math": "β=\\frac{-1+it}{2+it},\\ γ=-\\frac{1+2it}{2+it}" },
+      { "idx": 4, "description": "BG=|β|, CG=|γ| 并求极限与条件值。", "math": "BG=\\sqrt{\\frac{1+t^2}{4+t^2}},\\ CG=\\sqrt{\\frac{1+4t^2}{4+t^2}}" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "II", "q": "Q2", "sub": "(1)(2)(3)", "group": "N/O/P/Q/R/S/T/U/V/W/X/Y" },
+  "solution_ref": "solutions/R4-1/course2/R4-1-II-2.zh.md",
+  "tagging_status": "ok"
+}

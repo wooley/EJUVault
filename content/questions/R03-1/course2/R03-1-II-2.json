@@ -1,0 +1,43 @@
+{
+  "exam": { "exam_id": "R3-1", "year": 2021, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R3-1-II-2",
+  "section": "II",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "CPLX_ROT_SCALE",
+  "original_ja": {
+    "text": "複素数平面で A(α),B(β),C(γ) を頂点とする三角形ABCにおいて (γ-α)/(β-α)=1-i。偏角θは 0≤θ<2π。(1) (γ-α)/(β-α)=√[N](cos([O]/[P]π)+i sin([O]/[P]π))。よってCはBをA中心に[Q]/[R]π回転し距離を√[S]倍した点。これより w=(γ-β)/(α-β) の |w|=[T], arg w =([U]/[V])π。(2) α+β+γ=0 のとき |α|:|β|:|γ|=√[W]:√[X]:√[Y]。",
+    "placeholders": {
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 },
+      "V": { "digits": 1 },
+      "W": { "digits": 1 },
+      "X": { "digits": 1 },
+      "Y": { "digits": 1 }
+    }
+  },
+  "answer_ref": {
+    "N": "2",
+    "O": "7",
+    "P": "4",
+    "Q": "7",
+    "R": "4",
+    "S": "2",
+    "T": "1",
+    "U": "1",
+    "V": "2",
+    "W": "5",
+    "X": "2",
+    "Y": "5"
+  },
+  "tagging_status": "ok"
+}

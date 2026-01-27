@@ -1,0 +1,392 @@
+{
+  "exam_id": "H17-1",
+  "course": 2,
+  "track": "math2",
+  "version": "1.0",
+  "source": {
+    "type": "answer_sheet_image",
+    "note": "Parsed from provided official answer table screenshot (course2 section)."
+  },
+  "grading_rules": {
+    "default_allowed_chars": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "+",
+      "-",
+      "×",
+      "÷",
+      "*",
+      "/"
+    ],
+    "proposition_question_choice_chars": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "symbol_equivalence": {
+      "*": "×",
+      "/": "÷"
+    }
+  },
+  "answer_key": {
+    "I": {
+      "問1": {
+        "1": {
+          "A": {
+            "raw": "2",
+            "slot_count": 1,
+            "chars": [
+              "2"
+            ]
+          },
+          "BCDEF": {
+            "raw": "24218",
+            "slot_count": 5,
+            "chars": [
+              "2",
+              "4",
+              "2",
+              "1",
+              "8"
+            ]
+          },
+          "G": {
+            "raw": "1",
+            "slot_count": 1,
+            "chars": [
+              "1"
+            ]
+          },
+          "H": {
+            "raw": "6",
+            "slot_count": 1,
+            "chars": [
+              "6"
+            ]
+          }
+        },
+        "2": {
+          "IJ": {
+            "raw": "-5",
+            "slot_count": 2,
+            "chars": [
+              "-",
+              "5"
+            ]
+          },
+          "KL": {
+            "raw": "-6",
+            "slot_count": 2,
+            "chars": [
+              "-",
+              "6"
+            ]
+          }
+        }
+      },
+      "問2": {
+        "1": {
+          "M": {
+            "raw": "1",
+            "slot_count": 1,
+            "chars": [
+              "1"
+            ]
+          }
+        },
+        "2": {
+          "N": {
+            "raw": "0",
+            "slot_count": 1,
+            "chars": [
+              "0"
+            ]
+          }
+        },
+        "3": {
+          "O": {
+            "raw": "1",
+            "slot_count": 1,
+            "chars": [
+              "1"
+            ]
+          }
+        },
+        "4": {
+          "P": {
+            "raw": "2",
+            "slot_count": 1,
+            "chars": [
+              "2"
+            ]
+          }
+        },
+        "5": {
+          "Q": {
+            "raw": "2",
+            "slot_count": 1,
+            "chars": [
+              "2"
+            ]
+          }
+        }
+      }
+    },
+    "II": {
+      "問1": {
+        "1": {
+          "ABC": {
+            "raw": "-23",
+            "slot_count": 3,
+            "chars": [
+              "-",
+              "2",
+              "3"
+            ]
+          }
+        },
+        "2": {
+          "D": {
+            "raw": "1",
+            "slot_count": 1,
+            "chars": [
+              "1"
+            ]
+          }
+        }
+      },
+      "問2": {
+        "1": {
+          "EFGHI": {
+            "raw": "-1212",
+            "slot_count": 5,
+            "chars": [
+              "-",
+              "1",
+              "2",
+              "1",
+              "2"
+            ]
+          }
+        },
+        "2": {
+          "JKLM": {
+            "raw": "-142",
+            "slot_count": 4,
+            "chars": [
+              "-",
+              "1",
+              "4",
+              "2"
+            ]
+          }
+        },
+        "3": {
+          "N": {
+            "raw": "9",
+            "slot_count": 1,
+            "chars": [
+              "9"
+            ]
+          },
+          "OP": {
+            "raw": "-1",
+            "slot_count": 2,
+            "chars": [
+              "-",
+              "1"
+            ]
+          },
+          "Q": {
+            "raw": "5",
+            "slot_count": 1,
+            "chars": [
+              "5"
+            ]
+          }
+        }
+      }
+    },
+    "III": {
+      "問1": {
+        "1": {
+          "AB": {
+            "raw": "13",
+            "slot_count": 2,
+            "chars": [
+              "1",
+              "3"
+            ]
+          },
+          "CDE": {
+            "raw": "103",
+            "slot_count": 3,
+            "chars": [
+              "1",
+              "0",
+              "3"
+            ]
+          },
+          "FG": {
+            "raw": "-1",
+            "slot_count": 2,
+            "chars": [
+              "-",
+              "1"
+            ]
+          }
+        },
+        "2": {
+          "HIJK": {
+            "raw": "8-32",
+            "slot_count": 4,
+            "chars": [
+              "8",
+              "-",
+              "3",
+              "2"
+            ]
+          },
+          "LM": {
+            "raw": "78",
+            "slot_count": 2,
+            "chars": [
+              "7",
+              "8"
+            ]
+          }
+        }
+      },
+      "問2": {
+        "1": {
+          "NO": {
+            "raw": "21",
+            "slot_count": 2,
+            "chars": [
+              "2",
+              "1"
+            ]
+          },
+          "PQ": {
+            "raw": "43",
+            "slot_count": 2,
+            "chars": [
+              "4",
+              "3"
+            ]
+          },
+          "RS": {
+            "raw": "94",
+            "slot_count": 2,
+            "chars": [
+              "9",
+              "4"
+            ]
+          }
+        },
+        "2": {
+          "TUVW": {
+            "raw": "8532",
+            "slot_count": 4,
+            "chars": [
+              "8",
+              "5",
+              "3",
+              "2"
+            ],
+            "note": "Printed as a single cell in the answer table; interpreted as concatenation of four slots T,U,V,W."
+          },
+          "XYZ": {
+            "raw": "134",
+            "slot_count": 3,
+            "chars": [
+              "1",
+              "3",
+              "4"
+            ]
+          }
+        }
+      }
+    },
+    "IV": {
+      "問1": {
+        "": {
+          "A": {
+            "raw": "0",
+            "slot_count": 1,
+            "chars": [
+              "0"
+            ]
+          },
+          "BC": {
+            "raw": "12",
+            "slot_count": 2,
+            "chars": [
+              "1",
+              "2"
+            ]
+          },
+          "D": {
+            "raw": "0",
+            "slot_count": 1,
+            "chars": [
+              "0"
+            ]
+          },
+          "E": {
+            "raw": "2",
+            "slot_count": 1,
+            "chars": [
+              "2"
+            ]
+          }
+        }
+      },
+      "問2": {
+        "1": {
+          "FG": {
+            "raw": "13",
+            "slot_count": 2,
+            "chars": [
+              "1",
+              "3"
+            ]
+          }
+        },
+        "2": {
+          "HIJ": {
+            "raw": "-43",
+            "slot_count": 3,
+            "chars": [
+              "-",
+              "4",
+              "3"
+            ]
+          },
+          "KLM": {
+            "raw": "-83",
+            "slot_count": 3,
+            "chars": [
+              "-",
+              "8",
+              "3"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "notes": [
+    "Some cells in the official table merge multiple blank groups into one cell; these are kept as combined groups (e.g., TUVW).",
+    "If later you provide the exact question page confirming blank group splits, we can refine combined groups back into smaller groups while preserving raw."
+  ]
+}

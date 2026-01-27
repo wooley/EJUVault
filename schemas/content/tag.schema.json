@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/content/tag.schema.json",
+  "title": "Tag",
+  "description": "Tag list can be a flat array or a categorized object of arrays.",
+  "oneOf": [
+    { "type": "array", "items": { "type": "string" } },
+    {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    }
+  ]
+}

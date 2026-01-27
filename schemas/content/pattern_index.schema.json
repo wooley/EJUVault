@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/content/pattern_index.schema.json",
+  "title": "PatternIndex",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "patterns"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "patterns": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["question_count", "difficulty_distribution", "question_ids"],
+        "properties": {
+          "question_count": { "type": "integer" },
+          "difficulty_distribution": { "type": "object", "additionalProperties": { "type": "integer" } },
+          "question_ids": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

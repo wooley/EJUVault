@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EJU Math Vault | Register</title>
+    <link rel="stylesheet" href="/static/login.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-mark">EJU</div>
+          <div>
+            <div class="brand-title">Math Vault</div>
+            <div class="brand-sub">Student Registration</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panel-title">Email Registration</div>
+        <p class="panel-desc">Register with your email and a 6-digit verification code.</p>
+        <div class="grid">
+          <label>
+            Email
+            <input id="email" type="email" placeholder="Email" autocomplete="email" />
+          </label>
+          <label>
+            Verification Code
+            <input
+              id="code"
+              type="text"
+              placeholder="6-digit code"
+              inputmode="numeric"
+              autocomplete="one-time-code"
+              maxlength="6"
+            />
+          </label>
+        </div>
+        <div class="row">
+          <button id="request-code" class="btn">Send Code</button>
+          <button id="verify-code" class="btn primary">Verify & Register</button>
+        </div>
+        <div id="auth-status" class="status"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">Already Registered?</div>
+        <p class="panel-desc">Use your email to log in.</p>
+        <a class="btn primary" href="/login">Go to Login</a>
+      </section>
+    </div>
+
+    <script src="/static/login.js"></script>
+  </body>
+</html>

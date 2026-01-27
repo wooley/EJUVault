@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EJU Math Vault | Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/admin.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-mark">EJU</div>
+          <div>
+            <div class="brand-title">Math Vault</div>
+            <div class="brand-sub">Admin Dashboard</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panel-title">Admin Token</div>
+        <p class="panel-desc">If ADMIN_TOKEN is set, provide it here for API access.</p>
+        <div class="auth-row">
+          <input id="admin-token" type="text" placeholder="x-admin-token" />
+          <button id="admin-save" class="btn">Save</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">Admin Navigation</div>
+        <div class="panel-desc">Choose a tool.</div>
+        <div class="nav-grid">
+          <a class="nav-card" href="/admin/exams">Exam Browser</a>
+          <a class="nav-card" href="/admin/integrity">Integrity Report</a>
+          <a class="nav-card" href="/admin/calibration">Calibration Candidates</a>
+        </div>
+      </section>
+    </div>
+
+    <script src="/static/admin-dashboard.js"></script>
+  </body>
+</html>

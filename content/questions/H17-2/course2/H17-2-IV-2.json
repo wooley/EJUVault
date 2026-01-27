@@ -1,0 +1,75 @@
+{
+  "exam": {
+    "exam_id": "H17-2",
+    "year": 2005,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H17-2-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "CALC_ELIMINATION_SOLVE_X",
+  "original_ja": {
+    "text": "問2　等式\nf(x)=\\sin x+3\\int_0^{\\pi/2} f(t)\\cos t\\,dt\nを満たす関数 f(x) は\nf(x)=\\sin x-\\frac{[K]}{[L]}\nである。よって\n\\int_0^{\\pi/2} f(x)\\,dx=[M]-\\frac{[N]}{[O]}\\pi\nである。",
+    "formulas": [],
+    "placeholders": {
+      "K": {
+        "digits": 1
+      },
+      "L": {
+        "digits": 1
+      },
+      "M": {
+        "digits": 1
+      },
+      "N": {
+        "digits": 1
+      },
+      "O": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "设常数 C=∫ f(t)cos t dt，则 f(x)=sin x+3C",
+        "math": "C=\\int_0^{\\pi/2} f(t)\\cos t\\,dt"
+      },
+      {
+        "idx": 2,
+        "description": "两边乘 cos x 积分求 C",
+        "math": "C=\\int_0^{\\pi/2}\\sin x\\cos x\\,dx+3C\\int_0^{\\pi/2}\\cos x\\,dx"
+      },
+      {
+        "idx": 3,
+        "description": "解得 C=-1/4，代回并求所需积分",
+        "math": "f(x)=\\sin x-\\tfrac34,\\ \\int_0^{\\pi/2}f(x)dx=1-\\tfrac{3\\pi}{8}"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q2",
+    "sub": null,
+    "group": "KL/M/NO"
+  },
+  "solution_ref": "solutions/H17-2/course2/H17-2-IV-2.zh.md",
+  "tagging_status": "ok"
+}

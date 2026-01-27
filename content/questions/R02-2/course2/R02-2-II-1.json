@@ -1,0 +1,42 @@
+{
+  "exam": { "exam_id": "R02-2", "year": 2020, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R02-2-II-1",
+  "section": "II",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "SEQ_SUM_FORMULA_MINMAX",
+  "original_ja": {
+    "text": "初項から第n項までの和 Sn=(n^2-17n)/4 で表される数列{a_n}に対し b_n=a_n a_{n+5} と定める。(1) a_n=A, b_n=B, したがって T_n=C。(A〜Cは選択肢0〜9) (2) T_nの最小値。n≦D または EF≦n のとき b_n>0、また G≦n≦H のとき b_n<0。したがって n=I,J,K で T_n最小、その値はL。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 },
+      "D": { "digits": 1 }, "E": { "digits": 1 }, "F": { "digits": 1 },
+      "G": { "digits": 1 }, "H": { "digits": 1 },
+      "I": { "digits": 1 }, "J": { "digits": 1 }, "K": { "digits": 1 }, "L": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": true,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": ["a_n=Sn-Sn-1", "b_nの符号でT_nの増減を判断", "最小値は符号が負の区間の終端付近も含めて確認"],
+    "steps": [
+      { "idx": 1, "description": "a_n=Sn-S_{n-1} を計算する。", "math": "a_n=\\frac{n^2-17n-( (n-1)^2-17(n-1))}{4}=\\frac{n-9}{2}" },
+      { "idx": 2, "description": "a_{n+5}=(n-4)/2 より b_n=a_n a_{n+5}。", "math": "b_n=\\frac{(n-9)(n-4)}{4}=\\frac{n^2-13n+36}{4}" },
+      { "idx": 3, "description": "T_n=\\sum_{k=1}^n b_k を求める。", "math": "T_n=\\sum_{k=1}^n\\frac{(k-9)(k-4)}{4}=\\frac{n(n^2-18n+89)}{12}" },
+      { "idx": 4, "description": "b_nは根4,9を持つ上に凸2次なので n≦4 または 9≦nで正、5≦n≦8で負。よってT_nは5〜8で減少し、その前後を比較。", "math": "b_n>0:\\ n\\le4\\ \\text{or}\\ n\\ge9;\\quad b_n<0:\\ 5\\le n\\le 8" },
+      { "idx": 5, "description": "実際に T_1,T_8,T_9 を計算するといずれも6で最小。", "math": "T_1=6,\\ T_8=6,\\ T_9=6" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "II", "q": "Q1", "sub": "all", "group": "A/B/C/DEF/GH/I/J/K/L" },
+  "solution_ref": "solutions/R02-2/course2/R02-2-II-1.zh.md",
+  "tagging_status": "ok"
+}

@@ -1,0 +1,59 @@
+{
+  "exam": {
+    "exam_id": "H26-1",
+    "year": 2014,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H26-1-I-1",
+  "section": "I",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "QF_DIRECT_VERTEX",
+  "original_ja": {
+    "text": "問1 2次関数 y=ax^2+bx+3/a は，次の2つの条件(i),(ii)を満たすとする。(i) x=3のとき，yは最大値をとる。(ii) x=1のとき，yの値は2である。このとき，a,bの値を求めよう。条件(i),(ii)を用いて，a,bの関係式 { b=[AB]a, [C]=a+b+[D]/a } を得る。上の2式より，方程式 [E]a^2+[F]a-[G]=0 を得る。よって a=[HI], b=[J] である。このとき，この関数の最大値は [K] である。",
+    "formulas": [],
+    "placeholders": {
+      "AB": { "digits": 2 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 },
+      "HI": { "digits": 2 },
+      "J": { "digits": 1 },
+      "K": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      { "idx": 1, "description": "由“x=3で最大”可知頂点のx座標が3。", "math": "-\\dfrac{b}{2a}=3 \\Rightarrow b=-6a" },
+      { "idx": 2, "description": "代入条件 y(1)=2。", "math": "a+b+\\dfrac{3}{a}=2" },
+      { "idx": 3, "description": "b=-6a を代入して a を解く。", "math": "-5a+\\dfrac{3}{a}=2 \\Rightarrow 5a^2+2a-3=0" },
+      { "idx": 4, "description": "最大値をとるには a<0 を用いて解を選ぶ。", "math": "a=\\dfrac{-2\\pm 8}{10}\\Rightarrow a=\\dfrac35,-1;\\ a<0\\Rightarrow a=-1" },
+      { "idx": 5, "description": "b を求め，最大値 y(3) を計算。", "math": "b=-6a=6,\\ y(3)=9a+3b+\\dfrac{3}{a}=-9+18-3=6" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": null,
+    "group": "AB,C,D,E,F,G,HI,J,K"
+  },
+  "solution_ref": "solutions/H26-1/course2/H26-1-I-1.zh.md",
+  "tagging_status": "ok"
+}

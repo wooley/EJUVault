@@ -1,0 +1,91 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H18-2",
+    "year": 2006,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H18-2-I-1",
+  "section": "I",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "QF_DIRECT_VERTEX",
+  "tags": [
+    "二次関数",
+    "平方完成",
+    "最大最小",
+    "区間"
+  ],
+  "original_ja": {
+    "text": "問1　a>0とする。2次関数 f(x)=ax^2-6ax+b の 1≦x≦4 における最大値が12，最小値が4であるとき，定数a,bの値を求めたい。\n\nf(x)は\n\nf(x)=a(x-[A])^2 + b - [B]a\n\nと変形できる。\nxのとる値の範囲は1≦x≦4であるから，f(x)は x=[C]で最大となり，x=[D]で最小となる。よって\n\na=[E]，b=[FG]\n\nを得る。",
+    "formulas": [],
+    "placeholders": {
+      "A": {
+        "digits": 1
+      },
+      "B": {
+        "digits": 1
+      },
+      "C": {
+        "digits": 1
+      },
+      "D": {
+        "digits": 1
+      },
+      "E": {
+        "digits": 1
+      },
+      "FG": {
+        "digits": 2
+      }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [
+      "平方完成で頂点形にし，区間内の最小・最大を端点と頂点で判定する。"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "平方完成して頂点形にする。",
+        "math": "f(x)=ax^2-6ax+b=a(x^2-6x)+b=a\\{(x-3)^2-9\\}+b=a(x-3)^2+b-9a"
+      },
+      {
+        "idx": 2,
+        "description": "a>0 なので上に開く放物線。区間[1,4]で最小は頂点 x=3、最大は端点のうち頂点から遠い方で生じる。",
+        "math": "頂点はx=3。距離は|1-3|=2, |4-3|=1 より最大はx=1。"
+      },
+      {
+        "idx": 3,
+        "description": "最小値4より b-9a=4、最大値12より f(1)=12 を用いて連立する。",
+        "math": "f(3)=b-9a=4\\Rightarrow b=4+9a\nf(1)=a(1-3)^2+b-9a=4a+b-9a=b-5a=12"
+      },
+      {
+        "idx": 4,
+        "description": "連立を解く。",
+        "math": "b=4+9a を代入して 4+9a-5a=12\\Rightarrow 4a=8\\Rightarrow a=2,\n b=4+18=22"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": null,
+    "group": "A/B/C/D/E/FG"
+  },
+  "solution_ref": "data/solutions/H18-2/course2/H18-2-I-1.zh.md",
+  "tagging_status": "ok"
+}

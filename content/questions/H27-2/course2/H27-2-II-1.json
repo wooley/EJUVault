@@ -1,0 +1,29 @@
+{
+  "exam_id": "H27-2",
+  "year": 2015,
+  "session": 2,
+  "course": 2,
+  "subject": "math",
+  "section": "II",
+  "question_no": 1,
+  "question_id": "H27-2-II-1",
+  "format": "fill_in",
+  "title": "空間ベクトル：最小化と面積",
+  "tags": ["vector", "3d", "minimization", "triangle_area"],
+  "pattern_id": "VEC-3D-MIN-AREA-01",
+  "prompt_ja": "A(1,-1,0),B(-2,1,2) に対し OA=a, OB=b とする。",
+  "blanks": [
+    { "key": "A", "type": "int", "note": "|b|^2 の係数" },
+    { "key": "B", "type": "int", "note": "t の一次係数（符号込みで式に合わせる）" },
+    { "key": "C", "type": "int", "note": "定数項" },
+    { "key": "D", "type": "int", "note": "t の分子" },
+    { "key": "E", "type": "int", "note": "t の分母" },
+    { "key": "F", "type": "int", "note": "最小値 |a+tb|" },
+    { "key": "G", "type": "int", "note": "c=s(G,H,1) のG" },
+    { "key": "H", "type": "int", "note": "c=s(G,H,1) のH" },
+    { "key": "I", "type": "int", "note": "∠CBD=π/I" },
+    { "key": "J", "type": "int", "note": "面積の係数" },
+    { "key": "K", "type": "int", "note": "√K" },
+    { "key": "L", "type": "int", "note": "分母" }
+  ]
+}

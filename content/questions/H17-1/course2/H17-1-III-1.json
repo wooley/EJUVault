@@ -1,0 +1,119 @@
+{
+  "exam": {
+    "exam_id": "H17-1",
+    "year": 2005,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H17-1-III-1",
+  "section": "III",
+  "order": 1,
+  "type": "fill_in",
+  "source": {
+    "images": [
+      "data/images_raw/H17-1_course2/page_08.png",
+      "data/images_raw/H17-1_course2/page_09.png"
+    ],
+    "page_print": ["数学-20", "数学-21"],
+    "page_in_exam": [144, 145]
+  },
+  "original_ja": {
+    "text": "問1　三角形ABCにおいて，3辺の長さを AB=5，BC=8，CA=7 とする。(1) ∠B=[A]/[B]π であり，三角形ABCの面積は [CD]√[E] である。(2) 三角形ABCの重心をGとし，\\overrightarrow{GA}=\\vec a，\\overrightarrow{GB}=\\vec b とすると，\\overrightarrow{GC}=[FG](\\vec a+\\vec b)である。また，辺BC上にBM=3となるように点Mをとれば，\\overrightarrow{GM}=\\frac1{[H]}([IJ]\\vec a+[K]\\vec b)である。さらに，辺AC上にAN=2となるように点Nをとり，同様に\\overrightarrow{GN}を\\vec a,\\vec bで表せば，\\overrightarrow{GM}+\\frac{[L]}{[M]}\\overrightarrow{GN}=\\vec 0 であり，3点G,M,Nは同一直線上にあることがわかる。",
+    "formulas": [
+      "AB=5,\\ BC=8,\\ CA=7",
+      "\\angle B=\\frac{[A]}{[B]}\\pi",
+      "S=[CD]\\sqrt{[E]}",
+      "\\overrightarrow{GA}=\\vec a,\\ \\overrightarrow{GB}=\\vec b",
+      "\\overrightarrow{GC}=[FG](\\vec a+\\vec b)",
+      "\\overrightarrow{GM}=\\frac1{[H]}([IJ]\\vec a+[K]\\vec b)",
+      "\\overrightarrow{GM}+\\frac{[L]}{[M]}\\overrightarrow{GN}=\\vec 0"
+    ]
+  },
+  "translation_zh": {
+    "text": "题1 在三角形ABC中，AB=5，BC=8，CA=7。(1) 角B=[A]/[B]·π，且△ABC面积为[CD]√[E]。(2) 设△ABC的重心为G，令向量GA=a，GB=b。则GC=[FG](a+b)。又在BC上取点M使BM=3，则GM=1/[H]([IJ]a+[K]b)。再在AC上取点N使AN=2，同样把GN表示成a、b后，可得 GM + ([L]/[M])GN = 0，从而G、M、N三点共线。",
+    "formulas": []
+  },
+  "blanks": [
+    { "id": "A", "length": 1 },
+    { "id": "B", "length": 1 },
+    { "id": "CD", "length": 2 },
+    { "id": "E", "length": 1 },
+    { "id": "FG", "length": 2 },
+    { "id": "H", "length": 1 },
+    { "id": "IJ", "length": 2 },
+    { "id": "K", "length": 1 },
+    { "id": "L", "length": 1 },
+    { "id": "M", "length": 1 }
+  ],
+  "blank_rules": {
+    "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+    "no_whitespace": true,
+    "notes": [
+      "向量系数可能为负数，负号用 '-' 计入框位。"
+    ]
+  },
+  "subquestions": [
+    {
+      "sub_id": "(1)",
+      "prompt_zh": "由三边求角B与面积。",
+      "blanks": [
+        { "id": "A", "length": 1 },
+        { "id": "B", "length": 1 },
+        { "id": "CD", "length": 2 },
+        { "id": "E", "length": 1 }
+      ]
+    },
+    {
+      "sub_id": "(2)",
+      "prompt_zh": "重心向量表示、内分点向量、证明共线。",
+      "blanks": [
+        { "id": "FG", "length": 2 },
+        { "id": "H", "length": 1 },
+        { "id": "IJ", "length": 2 },
+        { "id": "K", "length": 1 },
+        { "id": "L", "length": 1 },
+        { "id": "M", "length": 1 }
+      ]
+    }
+  ],
+  "tags": {
+    "domain": ["図形と計量", "ベクトル"],
+    "skill": ["正弦定理・余弦定理", "重心ベクトル", "内分点ベクトル", "共線条件"],
+    "course_specific": []
+  },
+  "difficulty": {
+    "level": 3,
+    "method": "heuristic_v1",
+    "rationale": [
+      "(1) 余弦定理+面積公式",
+      "(2) 重心の性質と内分点の位置ベクトルを用いたベクトル計算"
+    ],
+    "features": {
+      "steps_min": 8,
+      "concept_count": 3,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution_outline": [
+    "余弦定理でcosB→Bを決定",
+    "S=1/2·AB·BC·sinB",
+    "重心より a+b+c=0 を使い c=-(a+b)",
+    "内分点M, Nの位置ベクトルを求め GM, GN を a,b 表示",
+    "GM と GN の比例関係から共線を示す"
+  ],
+  "answer_ref": {
+    "exam_id": "H17-1",
+    "course": 2,
+    "section": "III",
+    "question_number": 1
+  },
+  "solution_ref": "data/solutions/H17-1/course2/H17-1-III-1.zh.md",
+  "tagging_status": "ok",
+  "ingestion_status": "complete"
+}

@@ -1,0 +1,94 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H18-2",
+    "year": 2006,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H18-2-III-2",
+  "section": "III",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "ALG_TRANSFORM_MINMAX",
+  "tags": [
+    "三角関数",
+    "最大最小",
+    "対数",
+    "底の変換"
+  ],
+  "original_ja": {
+    "text": "問2　次の各設問に答えなさい。\n(1) 0°≦x<360°とする。関数 f(x)=2sin x - cos 2x は x=[HI]°のとき最大値[J]をとり，x=[KLM]°およびx=[NOP]°のとき最小値[QR]/[S]をとる。ただし，[KLM]°<[NOP]°とする。\n(2) 10^x=a, 10^y=b, xy≠0 とするとき log_{\\sqrt{a}} b^{12} = ([T]y)/x と表せる。",
+    "formulas": [],
+    "placeholders": {
+      "HI": {
+        "digits": 2
+      },
+      "J": {
+        "digits": 1
+      },
+      "KLM": {
+        "digits": 3
+      },
+      "NOP": {
+        "digits": 3
+      },
+      "QR": {
+        "digits": 2
+      },
+      "S": {
+        "digits": 1
+      },
+      "T": {
+        "digits": 2
+      }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [
+      "cos2x を sinx で表して一変数化し最大最小を求める。対数は定義と底の変換で整理する。"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "cos2x=1-2sin^2x を用いて f を sinx の二次式にする。",
+        "math": "f(x)=2\\sin x-\\cos2x=2s-(1-2s^2)=2s^2+2s-1\\quad(s=\\sin x)"
+      },
+      {
+        "idx": 2,
+        "description": "s∈[-1,1] 上で二次式の最小・最大を求める。",
+        "math": "2s^2+2s-1 は上に凸。\n最小は頂点 s=-\\frac{2}{4}=-\\frac12。\n最大は端点で，s=1 で 3。"
+      },
+      {
+        "idx": 3,
+        "description": "sinx=1 と sinx=-1/2 の角度を 0°≦x<360° で求める。",
+        "math": "sinx=1\\Rightarrow x=90°（最大値3）\nsinx=-\\frac12\\Rightarrow x=210°,330°（最小値 -\\frac32）"
+      },
+      {
+        "idx": 4,
+        "description": "対数を 10 の冪に直して計算する。",
+        "math": "\\sqrt{a}=a^{1/2}=10^{x/2},\\ b^{12}=10^{12y}\n\\log_{\\sqrt{a}} b^{12}=\\log_{10^{x/2}} 10^{12y}=\\frac{12y}{x/2}=\\frac{24y}{x}"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "III",
+    "q": "Q2",
+    "sub": null,
+    "group": "HI/J/KLM/NOP/QR/S/T"
+  },
+  "solution_ref": "data/solutions/H18-2/course2/H18-2-III-2.zh.md",
+  "tagging_status": "ok"
+}

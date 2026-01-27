@@ -1,0 +1,108 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H19-1",
+    "year": 2007,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H19-1-IV-2",
+  "section": "IV",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2 aを実数とする。定積分 \\int_0^1 (e^x-ax)^2 dx を最小にするaと最小値を求めよ。\n不定積分は\n\\int (e^x-ax)^2 dx = 1/[M] e^{2x} - [N]a(x-1)e^x + 1/[O] a^2 x^[P] + C\nよって\n\\int_0^1 (e^x-ax)^2 dx = 1/[Q]a^2 - [R]a + 1/[S]e^2 - 1/[T]\nしたがって a=[U] のとき最小で，最小値は [V]/[W] e^2 - [X]/[Y]",
+    "formulas": [],
+    "placeholders": {
+      "M": {
+        "digits": 1
+      },
+      "N": {
+        "digits": 1
+      },
+      "O": {
+        "digits": 1
+      },
+      "P": {
+        "digits": 1
+      },
+      "Q": {
+        "digits": 1
+      },
+      "R": {
+        "digits": 1
+      },
+      "S": {
+        "digits": 1
+      },
+      "T": {
+        "digits": 1
+      },
+      "U": {
+        "digits": 1
+      },
+      "V": {
+        "digits": 1
+      },
+      "W": {
+        "digits": 1
+      },
+      "X": {
+        "digits": 1
+      },
+      "Y": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [
+      "展开被积函数并积分",
+      "得到关于 a 的二次函数并求最小值"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "展开",
+        "math": "(e^x-ax)^2=e^{2x}-2axe^x+a^2x^2"
+      },
+      {
+        "idx": 2,
+        "description": "积分并代入 0 到 1",
+        "math": "\\int_0^1(e^x-ax)^2dx=\\frac13a^2-2a+\\frac12e^2-\\frac12"
+      },
+      {
+        "idx": 3,
+        "description": "配方/求顶点",
+        "math": "\\frac13a^2-2a=\\frac13(a-3)^2-3"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q2",
+    "sub": "(1)",
+    "group": "M-Y"
+  },
+  "solution_ref": "solutions/H19-1/course2/H19-1-IV-2.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "integral_quadratic_param_min",
+  "tags": [
+    "定积分",
+    "参数最值",
+    "二次函数",
+    "配方"
+  ]
+}

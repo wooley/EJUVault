@@ -1,0 +1,40 @@
+{
+  "exam": { "exam_id": "R01-1", "year": 2019, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R01-1-II-2",
+  "section": "II",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "GEO_AREA_RATIO",
+  "original_ja": {
+    "text": "【II 問2】複素数平面上の点A,B,Cを表す複素数をそれぞれ α,β,γ とする。\n(γ-α)^2+(γ-α)(β-α)+(β-α)^2=0 ...(1)\n|β-2α+γ|=3 ...(2)\nを満たすとき，三角形ABCの面積を求める。\n(1)より (γ-α)/(β-α)=-(M)±√(N)i / O。\n| (γ-α)/(β-α) |=P，arg(...) = ± Q/R π。\nまた β-2α+γ=(β-α)·(S±√(T)i)/U より |β-α|=V。\n面積は W√X /Y。",
+    "formulas": [],
+    "placeholders": {
+      "M": { "digits": 1 }, "N": { "digits": 1 }, "O": { "digits": 1 },
+      "P": { "digits": 1 }, "Q": { "digits": 1 }, "R": { "digits": 1 },
+      "S": { "digits": 1 }, "T": { "digits": 1 }, "U": { "digits": 1 },
+      "V": { "digits": 1 }, "W": { "digits": 1 }, "X": { "digits": 1 }, "Y": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [
+      { "idx": 1, "description": "比 z=(γ-α)/(β-α) とおき，(1)を z^2+z+1=0 に帰着して極形式を読む。", "math": "" },
+      { "idx": 2, "description": "(2)は β-2α+γ=(β-α)+(γ-α)=(β-α)(1+z) を用いて |β-α| を決める。", "math": "" },
+      { "idx": 3, "description": "AB=|β-α|, AC=|γ-α| と夹角 arg z から面積 1/2·AB·AC·sin を計算する。", "math": "" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "II", "q": "Q2", "sub": "(1)(2)", "group": "M-Y" },
+  "solution_ref": "solutions/R01-1/course2/R01-1-II-2.zh.md",
+  "tagging_status": "ok"
+}

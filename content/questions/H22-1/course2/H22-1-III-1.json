@@ -1,0 +1,64 @@
+{
+  "exam": {
+    "exam_id": "H22-1",
+    "year": 2010,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H22-1-III-1",
+  "section": "III",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "三角形OABを考える。辺OAを3:1に内分する点をM，辺OBを1:2に内分する点をNとし，線分ANと線分BMの交点をPとする。\n\n(1) ベクトルOA,OBをそれぞれ a,b とおくとき，ベクトルOPを a,b で表すことを考える。\nAP:PN=s:(1-s) (0<s<1)\nBP:PM=t:(1-t) (0<t<1)\nとおくと\nOP=([A]-s)a + ([B]/[C]) s b\n=([D]/[E]) t a + ([F]-t)b\nが成り立つから\ns=[G]/[H],  t=[I]/[J]\nである。したがって，OPは a,b を用いて\nOP=([K]/[L])a + ([M]/[N])b\nと表される。\n\n(2) OA=6, OB=9 のとき，線分OPの長さと∠AOBの大きさとの関係を調べよう。\nOPの長さをℓとおくとき，ℓ^2を a と b の内積 a·b を用いて表すと\nℓ^2 = ([O]/[PQ]) a·b + [RS]\nを得る。\nしたがって，例えば ℓ=4 のとき\ncos∠AOB = [TU]/[V]\nである。\n一方，∠AOBの大きさを変えるとき，ℓのとり得る値の範囲は\n[W] < ℓ < [X]\nである。",
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 },
+      "J": { "digits": 1 },
+      "K": { "digits": 1 },
+      "L": { "digits": 1 },
+      "M": { "digits": 1 },
+      "N": { "digits": 1 },
+      "O": { "digits": 1 },
+      "PQ": { "digits": 2 },
+      "RS": { "digits": 2 },
+      "TU": { "digits": 2 },
+      "V": { "digits": 1 },
+      "W": { "digits": 1 },
+      "X": { "digits": 1 }
+    },
+    "structure": {
+      "has_case_split": false,
+      "has_parameter_elimination": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "III",
+    "q": "Q1",
+    "sub": "mixed",
+    "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/PQ/RS/TU/V/W/X"
+  },
+  "solution_ref": "solutions/H22-1/course2/H22-1-III-1.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "VEC_RATIO_DOT_LENGTH",
+  "tags": ["ベクトル", "内分", "交点", "内積", "長さ", "範囲"]
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EJU Math Vault | Session Builder</title>
+    <link rel="stylesheet" href="/static/session-new.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-mark">EJU</div>
+          <div>
+            <div class="brand-title">Math Vault</div>
+            <div class="brand-sub">Session Builder</div>
+          </div>
+        </div>
+        <div class="user-slot">
+          <span id="user-email" class="user-email hidden"></span>
+          <a id="login-link" class="link" href="/login">Login</a>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panel-title">Session Settings</div>
+        <p class="panel-desc">Select scope, mode, and difficulty before training.</p>
+        <div class="grid">
+          <label>
+            Mode
+            <select id="mode">
+              <option value="tag">tag</option>
+              <option value="review">review</option>
+              <option value="daily">daily</option>
+            </select>
+          </label>
+          <label>
+            Scope (固定范围)
+            <select id="scope">
+              <option value="">Loading...</option>
+            </select>
+          </label>
+          <label>
+            Difficulty
+            <select id="difficulty">
+              <option value="">auto</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </label>
+          <label>
+            Size
+            <input id="size" type="number" min="1" value="5" />
+          </label>
+        </div>
+        <button id="generate" class="btn primary">Start Session</button>
+        <div id="status" class="status"></div>
+      </section>
+    </div>
+
+    <script src="/static/session-new.js"></script>
+  </body>
+</html>

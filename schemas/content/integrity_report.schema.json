@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/content/integrity_report.schema.json",
+  "title": "IntegrityReport",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "errors", "warnings", "stats"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "errors": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+    "warnings": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+    "stats": {
+      "type": "object",
+      "required": ["question_count", "error_count", "warning_count"],
+      "properties": {
+        "question_count": { "type": "integer" },
+        "error_count": { "type": "integer" },
+        "warning_count": { "type": "integer" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

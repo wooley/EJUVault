@@ -1,0 +1,58 @@
+{
+  "exam": {
+    "exam_id": "H24-1",
+    "year": 2012,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H24-1-IV-1",
+  "section": "IV",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "IV 問1　aを正の実数とするとき，関数 f(x)=x^2-5+4a\\log(2x+a+8)（-a/2-4<x<-2）の極値について調べよう。(1) f(x)をxについて微分して f'(x)= [A]([B]x+a)(x+[C]) / ([D]x+a+[E]) を得る。(2) 条件 a>0 と定義域が -a/2-4<x<-2 であることを考慮すると，f(x)が極大値・極小値の両方をとるのは [F]<a<[G] または [G]<a のときである。そのとき，極大値と極小値の和は a^2/[H] + [I] + [J]a\\log([K]a) である。",
+    "formulas": [
+      "f(x)=x^2-5+4a\\log(2x+a+8)",
+      "-a/2-4<x<-2",
+      "f'(x)=[A]([B]x+a)(x+[C])/([D]x+a+[E])"
+    ],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "D": { "digits": 1 },
+      "E": { "digits": 1 },
+      "F": { "digits": 1 },
+      "G": { "digits": 1 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 },
+      "J": { "digits": 1 },
+      "K": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q1",
+    "sub": null,
+    "group": "A/B/C/D/E/F/G/H/I/J/K"
+  },
+  "solution_ref": "solutions/H24-1/course2/H24-1-IV-1.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "CALC_MINMAX"
+}

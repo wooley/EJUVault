@@ -1,0 +1,31 @@
+{
+  "exam": { "exam_id": "H23-2", "year": 2011, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H23-2-IV-1",
+  "section": "IV",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問1　f(x)=4√3 e^{-x}cosx + 6e^{-x} とする。\n(1) 0≦x<2π の範囲で f(x)=0 となる x の値を a,b (a<b) とすると\na=[A]/[B]π, b=[C]/[D]π。\n(2) d/dx (p e^{-x}cosx + q e^{-x}sinx)=e^{-x}cosx を満たす定数 p,q の値は\np=[EF]/[G], q=[H]/[I]。\n(3) (1)の a,b に対し e^{-a}=A, e^{-b}=B とおいて ∫_a^b f(x)dx を計算すると\n∫_a^b f(x)dx = ([J]+√[K])A − ([L]−√[M])B （※係数部は問題文の指示形に従う）",
+    "placeholders": {
+      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
+      "EF": { "digits": 2 }, "G": { "digits": 1 }, "H": { "digits": 1 }, "I": { "digits": 1 },
+      "J": { "digits": 1 }, "K": { "digits": 1 }, "L": { "digits": 1 }, "M": { "digits": 1 }
+    }
+  },
+  "solution": {
+    "outline": ["e^{-x} をくくって三角方程式化", "補助微分形を連立で決定", "定積分を原始関数で評価"],
+    "steps": [
+      { "idx": 1, "description": "f(x)=2e^{-x}(2√3 cosx+3)。よって cosx=−√3/2。", "math": "x=\\frac{5\\pi}{6},\\ \\frac{7\\pi}{6}" },
+      { "idx": 2, "description": "d/dx[p e^{-x}cosx+q e^{-x}sinx]=e^{-x}cosx から係数比較で p=-1/2,q=1/2。", "math": "p=-\\frac12,\\ q=\\frac12" },
+      { "idx": 3, "description": "∫e^{-x}cosx dx=-(1/2)e^{-x}(cosx+sinx)。よって ∫_a^b f = (3+√3)A-(3-√3)B。", "math": "\\int_a^b f(x)dx=(3+\\sqrt3)A-(3-\\sqrt3)B" }
+    ]
+  },
+  "answer_ref": { "course": 2, "section": "IV", "q": "Q1", "sub": null, "group": "A/B/C/D/EF/G/H/I/J/K/L/M" },
+  "solution_ref": "data/solutions/H23-2/course2/H23-2-IV-1.zh.md",
+  "tags": ["三角方程式", "指数関数", "積分"],
+  "pattern_id": "CALC_INTEGRAL_EVAL",
+  "tagging_status": "ok"
+}

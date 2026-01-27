@@ -1,0 +1,77 @@
+{
+  "exam": {
+    "exam_id": "H18-1",
+    "year": 2006,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "H18-1-IV-1",
+  "section": "IV",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "CALC_CHAIN_RULE_LOG_RATIONAL",
+  "original_ja": {
+    "text": "問1 f(x)=x(x-1)^{3/2}, g(x)=(5+log x)/(1+log x) に対して h(x)=f(g(x)) とする。このとき f'(x)=1/2 (x-1)^{[A]/[B]} ([C]x-[D])，g'(x)=-[E]/{x(1+log x)^{[F]}}，h'(x)=-4([GH]+[I]log x)/{x(1+log x)^{[J]/[K]}} である。ただし対数は自然対数とする。",
+    "formulas": [
+      "f(x)=x(x-1)^{3/2}",
+      "g(x)=\\frac{5+\\log x}{1+\\log x}",
+      "h(x)=f(g(x))"
+    ],
+    "placeholders": {
+      "A": {
+        "digits": 1
+      },
+      "B": {
+        "digits": 1
+      },
+      "C": {
+        "digits": 1
+      },
+      "D": {
+        "digits": 1
+      },
+      "E": {
+        "digits": 1
+      },
+      "F": {
+        "digits": 1
+      },
+      "GH": {
+        "digits": 2
+      },
+      "I": {
+        "digits": 1
+      },
+      "J": {
+        "digits": 1
+      },
+      "K": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "has_case_split": false,
+      "has_parameter_elimination": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q1",
+    "sub": "(all)",
+    "group": "A/B,C,D,E,F,GH,I,J/K"
+  },
+  "solution_ref": "data/solutions/H18-1/course2/H18-1-IV-1.zh.md",
+  "tagging_status": "ok"
+}

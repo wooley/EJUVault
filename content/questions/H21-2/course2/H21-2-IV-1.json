@@ -1,0 +1,72 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H21-2",
+    "year": 2009,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H21-2-IV-1",
+  "section": "IV",
+  "order": 1,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問1　関数 f(x) は\nx≦3 のとき f(x)=x+1，x>3 のとき f(x)=−2x+10\nで与えられている。このとき，x≧0 に対して，関数 g(x) が\ng(x)=∫_0^x f(t)dt\nで定められている。\n(1) 0≦x≦3 のとき g(x)=([A]/[B])x^[C]+x であり，x>3 のとき\ng(x)=−x^2+[DE]x−[FG]/[H]\nである。\n(2) 曲線 y=g(x) を C とする。C 上の点 P(a,g(a))（a>3）における C の接線が点(0,5/2)を通るとき，その傾きは [I] である。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 },
+      "B": { "digits": 1 },
+      "C": { "digits": 1 },
+      "DE": { "digits": 2 },
+      "FG": { "digits": 2 },
+      "H": { "digits": 1 },
+      "I": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": [
+      "分段积分求 g(x)",
+      "用 g'(x)=f(x) 写出切线斜率",
+      "利用切线过定点求 a 与斜率"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "0≤x≤3：g(x)=∫0^x (t+1)dt= x^2/2 + x。",
+        "math": "g(x)=\\frac12x^2+x"
+      },
+      {
+        "idx": 2,
+        "description": "x>3：g(x)=∫0^3(t+1)dt + ∫3^x(-2t+10)dt = 15/2 + [(-t^2+10t)]_3^x = -x^2+10x-27/2。",
+        "math": "g(x)=-x^2+10x-\\frac{27}{2}"
+      },
+      {
+        "idx": 3,
+        "description": "a>3 时 g'(a)=f(a)=-2a+10。切线过(0,5/2)：(5/2)-g(a)=-a\\,g'(a)。代入 g(a) 及 g'(a) 解得 a=4，从而斜率为2。",
+        "math": "m=g'(4)=2"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q1",
+    "sub": "(1)(2)",
+    "group": "A/B/C/DE/FG/H/I"
+  },
+  "solution_ref": "data/solutions/H21-2/course2/H21-2-IV-1.zh.md",
+  "tagging_status": "ok",
+  "pattern_id": "CALC_INTEGRAL_PIECEWISE_TANGENT",
+  "tags": ["定积分", "分段函数", "导数几何意义", "切线"]
+}

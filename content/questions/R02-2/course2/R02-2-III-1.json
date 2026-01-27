@@ -1,0 +1,48 @@
+{
+  "exam": { "exam_id": "R02-2", "year": 2020, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R02-2-III-1",
+  "section": "III",
+  "order": 1,
+  "type": "fill_in",
+  "pattern_id": "CALC_TANGENT_ANGLE",
+  "original_ja": {
+    "text": "関数 f(x)=x^3-4x+4。点A(-1,7)の接線をℓ、点B(0,-12)から引いた接線をm、交点をC。角θ(0<θ<π/2)について tanθ を求める。(1) f'(x)=A x^B -C。傾きDE、ℓ: y=DE x+F。(2) 接点x=aとして m: y=(G a^H -I)x -J a^K +L。Bを通るので a=M、m: y=N x-OP。C=(Q,R)。(3) tanα=ST, tanβ=U より tanθ=V/W。",
+    "formulas": [],
+    "placeholders": {
+      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 },
+      "D": { "digits": 1 }, "E": { "digits": 1 }, "F": { "digits": 1 },
+      "G": { "digits": 1 }, "H": { "digits": 1 }, "I": { "digits": 1 },
+      "J": { "digits": 1 }, "K": { "digits": 1 }, "L": { "digits": 1 },
+      "M": { "digits": 1 }, "N": { "digits": 1 }, "O": { "digits": 1 }, "P": { "digits": 1 },
+      "Q": { "digits": 1 }, "R": { "digits": 1 },
+      "S": { "digits": 1 }, "T": { "digits": 1 },
+      "U": { "digits": 1 },
+      "V": { "digits": 1 }, "W": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 3
+    }
+  },
+  "solution": {
+    "outline": ["導関数で接線傾き", "接点aの接線式を一般化してB通過条件でa決定", "2直線のなす角公式でtanθ"],
+    "steps": [
+      { "idx": 1, "description": "f'(x)=3x^2-4。Aでの傾きは f'(-1)=-1。", "math": "f'(x)=3x^2-4,\\ \\text{slope}(\\ell)=-1" },
+      { "idx": 2, "description": "点A(-1,7)を通るので ℓ: y=-x+6。", "math": "y-7=-1(x+1)\\Rightarrow y=-x+6" },
+      { "idx": 3, "description": "接点x=aでの接線：y=f'(a)(x-a)+f(a)=(3a^2-4)x-2a^3+4。", "math": "m:\\ y=(3a^2-4)x-2a^3+4" },
+      { "idx": 4, "description": "B(0,-12)を通るので -12=-2a^3+4 ⇒ a=2。よって m: y=8x-12。", "math": "a=2,\\ m:y=8x-12" },
+      { "idx": 5, "description": "交点Cは -x+6=8x-12 より (2,4)。", "math": "C=(2,4)" },
+      { "idx": 6, "description": "傾き m1=-1, m2=8。なす角θは tanθ=|(m2-m1)/(1+m1m2)|=9/7。", "math": "\\tan\\theta=\\left|\\frac{8-(-1)}{1+(-1)\\cdot 8}\\right|=\\frac{9}{7}" }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": { "course": 2, "section": "III", "q": "Q1", "sub": "all", "group": "ABC/DE/F/GHI/JKL/M/NOP/QR/ST/U/VW" },
+  "solution_ref": "solutions/R02-2/course2/R02-2-III-1.zh.md",
+  "tagging_status": "ok"
+}

@@ -1,0 +1,46 @@
+{
+  "exam": { "exam_id": "R06-1", "year": 2024, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "spec_version": "1.4",
+  "course": 2,
+  "track": "science",
+  "question_id": "R06-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "PROB_COUNT_PROBABILITY",
+  "original_ja": {
+    "text": "袋の中に，白いカードが2枚，赤いカードが3枚，青いカードが4枚，計9枚のカードが入っている。また，2枚の白いカードには1，2の数字が1つずつ，3枚の赤いカードには3，4，5の数字が1つずつ，4枚の青いカードには6，7，8，9の数字が1つずつ書かれている。その袋から，3枚のカードを同時に取り出す。\n\n(1) 取り出される3枚のカードの色がすべて同じである確率は【O】/【PQ】である。また，3枚のカードの色がすべて異なる確率は【R】/【S】である。\n(2) 取り出される3枚のカードに書かれた数の和が10である確率は【T】/【UV】である。\n(3) 取り出される3枚のカードには，異なる色のカードが少なくとも2枚含まれていて，さらに偶数のカードが少なくとも1枚含まれている確率は【WX】/【YZ】である。",
+    "formulas": [],
+    "placeholders": {
+      "O": { "digits": 1 },
+      "P": { "digits": 1 },
+      "Q": { "digits": 1 },
+      "R": { "digits": 1 },
+      "S": { "digits": 1 },
+      "T": { "digits": 1 },
+      "U": { "digits": 1 },
+      "V": { "digits": 1 },
+      "W": { "digits": 1 },
+      "X": { "digits": 1 },
+      "Y": { "digits": 1 },
+      "Z": { "digits": 1 }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": false,
+      "has_case_split": true,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 1
+    }
+  },
+  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "all",
+    "group": "OPQ/RS/TUV/WXYZ"
+  },
+  "solution_ref": "solutions/R06-1/course2/R06-1-I-2.zh.md",
+  "tagging_status": "ok"
+}

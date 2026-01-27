@@ -1,0 +1,96 @@
+{
+  "spec_version": "1.4",
+  "exam": {
+    "exam_id": "H18-2",
+    "year": 2006,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H18-2-II-2",
+  "section": "II",
+  "order": 2,
+  "type": "fill_in",
+  "pattern_id": "SEQ_CONSTRAINT_FIND_N",
+  "tags": [
+    "等差数列",
+    "公差",
+    "条件反推",
+    "和"
+  ],
+  "original_ja": {
+    "text": "問2　等差数列{a_n}において，a1=2，ap=30，aq=51とする。\n(1) 公差をdとすると (p-1)d=[FG], (q-1)d=[HI] が成り立つ。\n(2) 公差dが1より大きい整数になるのは d=[J] のときで，そのとき初項から第q項までの和は [KLM] である。\n(3) 一般に，pとqの間には [N]q=[O]p-3 が成り立つ。",
+    "formulas": [],
+    "placeholders": {
+      "FG": {
+        "digits": 2
+      },
+      "HI": {
+        "digits": 2
+      },
+      "J": {
+        "digits": 1
+      },
+      "KLM": {
+        "digits": 3
+      },
+      "N": {
+        "digits": 1
+      },
+      "O": {
+        "digits": 1
+      }
+    },
+    "structure": {
+      "is_divisibility": false,
+      "has_parameter_elimination": true,
+      "has_case_split": false,
+      "has_integer_constraint": true,
+      "algebraic_complexity": 2
+    }
+  },
+  "solution": {
+    "outline": [
+      "等差一般項から(p-1)d,(q-1)dを作り，整除条件でdを特定し，和公式とp,qの関係式を出す。"
+    ],
+    "steps": [
+      {
+        "idx": 1,
+        "description": "等差数列の一般項を用いる。",
+        "math": "a_n=a_1+(n-1)d=2+(n-1)d"
+      },
+      {
+        "idx": 2,
+        "description": "ap=30, aq=51 から (p-1)d,(q-1)d を求める。",
+        "math": "2+(p-1)d=30\\Rightarrow (p-1)d=28\n2+(q-1)d=51\\Rightarrow (q-1)d=49"
+      },
+      {
+        "idx": 3,
+        "description": "d>1 の整数条件より d は 28 と 49 の公約数。よって d=7。",
+        "math": "d\\mid 28,\\ d\\mid 49\\Rightarrow d\\in\\{1,7\\}\\Rightarrow d=7"
+      },
+      {
+        "idx": 4,
+        "description": "d=7 のとき p,q と和を求める。",
+        "math": "p-1=28/7=4\\Rightarrow p=5,\nq-1=49/7=7\\Rightarrow q=8\nS_q=\\frac{q}{2}\\{2a_1+(q-1)d\\}=\\frac{8}{2}(4+49)=212"
+      },
+      {
+        "idx": 5,
+        "description": "一般の関係式を導く。",
+        "math": "(p-1)d=28,\\ (q-1)d=49\\Rightarrow 49(p-1)=28(q-1)\n\\Rightarrow 7(p-1)=4(q-1)\\Rightarrow 4q=7p-3"
+      }
+    ],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q2",
+    "sub": null,
+    "group": "FG/HI/J/KLM/N/O"
+  },
+  "solution_ref": "data/solutions/H18-2/course2/H18-2-II-2.zh.md",
+  "tagging_status": "ok"
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EJU Math Vault | Admin</title>
+    <link rel="stylesheet" href="/static/admin.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-mark">EJU</div>
+          <div>
+            <div class="brand-title">Math Vault</div>
+            <div class="brand-sub">Admin Console</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panel-title">Admin Token</div>
+        <p class="panel-desc">If ADMIN_TOKEN is set, provide it here for API access.</p>
+        <div class="auth-row">
+          <input id="admin-token" type="text" placeholder="x-admin-token" />
+          <button id="admin-save" class="btn">Save</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">Integrity Report</div>
+        <div class="panel-desc">Latest content validation results.</div>
+        <pre id="integrity-report" class="code-block">Loading...</pre>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">Content Search</div>
+        <div class="search-row">
+          <input id="search-tag" type="text" placeholder="tag (e.g., 二次関数)" />
+          <input id="search-pattern" type="text" placeholder="pattern (e.g., QF_DIRECT_VERTEX)" />
+          <button id="search-btn" class="btn primary">Search</button>
+        </div>
+        <div id="search-results" class="results"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">Question Editor</div>
+        <div class="panel-desc">Select an exam and question, then edit content and answers.</div>
+        <div class="search-row">
+          <select id="exam-select"></select>
+          <select id="question-select"></select>
+          <button id="load-question" class="btn">Load</button>
+        </div>
+        <label class="field-label">
+          Question JSON
+          <textarea id="question-json" rows="14"></textarea>
+        </label>
+        <label class="field-label">
+          Answers JSON (normalized)
+          <textarea id="answers-json" rows="6"></textarea>
+        </label>
+        <div class="search-row">
+          <button id="save-question" class="btn primary">Save Question</button>
+          <button id="save-answers" class="btn">Save Answers</button>
+        </div>
+        <div class="panel-desc">Upload an image and attach it to the question.</div>
+        <div class="search-row">
+          <input id="image-file" type="file" accept="image/*" />
+          <input id="image-caption" type="text" placeholder="caption (optional)" />
+          <button id="upload-image" class="btn">Upload</button>
+        </div>
+        <div id="editor-status" class="status"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">Calibration Candidates</div>
+        <div class="panel-desc">Generated from attempts data (see Appendix F).</div>
+        <pre id="calibration-report" class="code-block">Loading...</pre>
+      </section>
+    </div>
+
+    <script src="/static/admin.js"></script>
+  </body>
+</html>

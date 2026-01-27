@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schemas/content/solution.schema.json",
+  "title": "Solution",
+  "type": "object",
+  "description": "Inline solution structure embedded in a question record.",
+  "additionalProperties": true,
+  "properties": {
+    "outline": { "type": "array", "items": { "type": "string" } },
+    "steps": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+    "symbolic_steps": { "type": "array", "items": { "type": "object", "additionalProperties": true } }
+  }
+}
