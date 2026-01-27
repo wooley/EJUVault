@@ -471,7 +471,28 @@ function main() {
     const examId = req.query.exam_id ? String(req.query.exam_id) : null;
     const index = content.getAllQuestionIds().map((id) => content.getQuestionIndex(id)).filter(Boolean);
     const filtered = examId ? index.filter((entry) => entry.exam_id === examId) : index;
-    return res.status(200).json({ questions: filtered });
+    const sectionOrder = new Map([['I', 1], ['II', 2], ['III', 3], ['IV', 4]]);
+    const sequence = filtered
+      .slice()
+      .sort((a, b) => {
+        const sectionRankA = sectionOrder.get(a.section) || 99;
+        const sectionRankB = sectionOrder.get(b.section) || 99;
+        if (sectionRankA !== sectionRankB) {
+          return sectionRankA - sectionRankB;
+        }
+        const orderA = a.order ?? 0;
+        const orderB = b.order ?? 0;
+        if (orderA !== orderB) {
+          return orderA - orderB;
+        }
+        return String(a.question_id || '').localeCompare(String(b.question_id || ''));
+      })
+      .map((entry) => ({
+        question_id: entry.question_id,
+        section: entry.section || null,
+        order: entry.order ?? null
+      }));
+    return res.status(200).json({ questions: filtered, sequence });
   });
 
   app.get('/admin/api/question/:id', adminMiddleware, (req, res) => {

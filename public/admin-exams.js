@@ -76,6 +76,12 @@ async function loadQuestions(examId) {
     return;
   }
   const questions = data.questions || [];
+  const sequence = Array.isArray(data.sequence) && data.sequence.length > 0
+    ? data.sequence
+    : buildSequenceFromQuestions(questions);
+  const questionIds = sequence.map((entry) => entry.question_id).filter(Boolean);
+  sessionStorage.setItem('admin_exam_id', examId);
+  sessionStorage.setItem('admin_exam_questions', JSON.stringify(questionIds));
   examSummary.textContent = `Exam ${examId} · Total questions: ${questions.length}`;
   const groups = groupBySection(questions);
   examQuestions.innerHTML = '';
@@ -90,12 +96,36 @@ async function loadQuestions(examId) {
     list.forEach((q) => {
       const row = document.createElement('div');
       row.className = 'result-sub';
-      row.innerHTML = `<a href="/admin/question/${q.question_id}/edit">${q.question_id}</a>`;
+      row.innerHTML = `<a href="/admin/question/${q.question_id}/edit?exam_id=${encodeURIComponent(examId)}">${q.question_id}</a>`;
       sectionCard.appendChild(row);
     });
 
     examQuestions.appendChild(sectionCard);
   }
+}
+
+function buildSequenceFromQuestions(questions) {
+  const sectionOrder = new Map([['I', 1], ['II', 2], ['III', 3], ['IV', 4]]);
+  return questions
+    .slice()
+    .sort((a, b) => {
+      const sectionRankA = sectionOrder.get(a.section) || 99;
+      const sectionRankB = sectionOrder.get(b.section) || 99;
+      if (sectionRankA !== sectionRankB) {
+        return sectionRankA - sectionRankB;
+      }
+      const orderA = a.order ?? 0;
+      const orderB = b.order ?? 0;
+      if (orderA !== orderB) {
+        return orderA - orderB;
+      }
+      return String(a.question_id || '').localeCompare(String(b.question_id || ''));
+    })
+    .map((entry) => ({
+      question_id: entry.question_id,
+      section: entry.section || null,
+      order: entry.order ?? null
+    }));
 }
 
 loadExams();

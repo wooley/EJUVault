@@ -2,6 +2,9 @@ const questionIdEl = document.getElementById('question-id');
 const loadBtn = document.getElementById('load-question');
 const saveQuestionBtn = document.getElementById('save-question');
 const saveAnswersBtn = document.getElementById('save-answers');
+const prevQuestionBtn = document.getElementById('prev-question');
+const nextQuestionBtn = document.getElementById('next-question');
+const saveNextBtn = document.getElementById('save-next-question');
 const questionFormatBtn = document.getElementById('question-format-json');
 const questionValidateBtn = document.getElementById('question-validate-json');
 const answersFormatBtn = document.getElementById('answers-format-json');
@@ -30,6 +33,12 @@ let extraEditorRows = [];
 let isSyncingAnswers = false;
 let initialQuestionJson = '';
 let initialAnswersJson = '';
+let examContext = {
+  examId: null,
+  questionIds: [],
+  currentIndex: -1
+};
+let pendingStatus = null;
 
 const schemaCache = {};
 const validatorCache = {};
@@ -37,6 +46,7 @@ let ajvInstance = null;
 
 const questionId = window.location.pathname.split('/')[3];
 questionIdEl.textContent = questionId || 'Unknown';
+pendingStatus = readPendingStatus();
 
 function getHeaders() {
   const headers = { 'Content-Type': 'application/json' };
@@ -50,6 +60,150 @@ function getHeaders() {
 function setStatus(message, isError) {
   editorStatus.textContent = message;
   editorStatus.style.color = isError ? '#c7332c' : '#3b3b3b';
+}
+
+function readPendingStatus() {
+  const message = sessionStorage.getItem('admin_question_status');
+  const isError = sessionStorage.getItem('admin_question_status_error') === 'true';
+  if (!message) {
+    return null;
+  }
+  sessionStorage.removeItem('admin_question_status');
+  sessionStorage.removeItem('admin_question_status_error');
+  return { message, isError };
+}
+
+function storePendingStatus(message, isError) {
+  sessionStorage.setItem('admin_question_status', message);
+  sessionStorage.setItem('admin_question_status_error', isError ? 'true' : 'false');
+}
+
+function getExamIdFromQuery() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('exam_id');
+}
+
+function updateNavButtons() {
+  if (!prevQuestionBtn || !nextQuestionBtn || !saveNextBtn) {
+    return;
+  }
+  const hasList = examContext.questionIds.length > 0 && examContext.currentIndex >= 0;
+  prevQuestionBtn.disabled = !hasList || examContext.currentIndex <= 0;
+  nextQuestionBtn.disabled = !hasList || examContext.currentIndex >= examContext.questionIds.length - 1;
+  saveNextBtn.disabled = !hasList || examContext.currentIndex >= examContext.questionIds.length - 1;
+}
+
+function navigateToQuestion(targetId) {
+  if (!targetId) {
+    return;
+  }
+  const examId = examContext.examId;
+  const query = examId ? `?exam_id=${encodeURIComponent(examId)}` : '';
+  window.location.href = `/admin/question/${targetId}/edit${query}`;
+}
+
+function buildSequenceFromQuestions(questions) {
+  const sectionOrder = new Map([['I', 1], ['II', 2], ['III', 3], ['IV', 4]]);
+  return questions
+    .slice()
+    .sort((a, b) => {
+      const sectionRankA = sectionOrder.get(a.section) || 99;
+      const sectionRankB = sectionOrder.get(b.section) || 99;
+      if (sectionRankA !== sectionRankB) {
+        return sectionRankA - sectionRankB;
+      }
+      const orderA = a.order ?? 0;
+      const orderB = b.order ?? 0;
+      if (orderA !== orderB) {
+        return orderA - orderB;
+      }
+      return String(a.question_id || '').localeCompare(String(b.question_id || ''));
+    })
+    .map((entry) => entry.question_id)
+    .filter(Boolean);
+}
+
+async function loadExamContext() {
+  const queryExamId = getExamIdFromQuery();
+  const storedExamId = sessionStorage.getItem('admin_exam_id');
+  const examId = queryExamId || storedExamId;
+  if (!examId) {
+    updateNavButtons();
+    return;
+  }
+  if (queryExamId) {
+    sessionStorage.setItem('admin_exam_id', queryExamId);
+  }
+  const storedListRaw = sessionStorage.getItem('admin_exam_questions');
+  if (storedListRaw && !queryExamId) {
+    try {
+      const storedList = JSON.parse(storedListRaw);
+      if (Array.isArray(storedList) && storedList.length > 0) {
+        examContext = {
+          examId,
+          questionIds: storedList,
+          currentIndex: storedList.indexOf(questionId)
+        };
+        updateNavButtons();
+        return;
+      }
+    } catch (error) {
+      // ignore invalid cache
+    }
+  }
+  const response = await fetch(`/admin/api/questions?exam_id=${encodeURIComponent(examId)}`, {
+    headers: getHeaders()
+  });
+  const data = await response.json();
+  if (!response.ok) {
+    setStatus(data.error || 'Unable to load exam list.', true);
+    updateNavButtons();
+    return;
+  }
+  const sequence = Array.isArray(data.sequence) && data.sequence.length > 0
+    ? data.sequence.map((entry) => entry.question_id).filter(Boolean)
+    : buildSequenceFromQuestions(data.questions || []);
+  examContext = {
+    examId,
+    questionIds: sequence,
+    currentIndex: sequence.indexOf(questionId)
+  };
+  sessionStorage.setItem('admin_exam_questions', JSON.stringify(sequence));
+  updateNavButtons();
+}
+
+function goPrevQuestion() {
+  if (examContext.currentIndex <= 0) {
+    return;
+  }
+  const targetId = examContext.questionIds[examContext.currentIndex - 1];
+  navigateToQuestion(targetId);
+}
+
+function goNextQuestion() {
+  if (examContext.currentIndex < 0 || examContext.currentIndex >= examContext.questionIds.length - 1) {
+    return;
+  }
+  const targetId = examContext.questionIds[examContext.currentIndex + 1];
+  navigateToQuestion(targetId);
+}
+
+async function saveAndNextQuestion() {
+  const questionSaved = await saveQuestion();
+  if (!questionSaved) {
+    return;
+  }
+  const answersSaved = await saveAnswers();
+  if (!answersSaved) {
+    return;
+  }
+  if (examContext.currentIndex < 0 || examContext.currentIndex >= examContext.questionIds.length - 1) {
+    setStatus('No next question.', true);
+    return;
+  }
+  storePendingStatus('Saved. Moving to next question...', false);
+  const targetId = examContext.questionIds[examContext.currentIndex + 1];
+  navigateToQuestion(targetId);
 }
 
 function setStatusList(listEl, items, isError) {
@@ -710,7 +864,12 @@ async function loadQuestion() {
   initialAnswersJson = answersJson.value;
   updateDiffSummary();
   clearStatusLists();
-  setStatus('Loaded.', false);
+  if (pendingStatus) {
+    setStatus(pendingStatus.message, pendingStatus.isError);
+    pendingStatus = null;
+  } else {
+    setStatus('Loaded.', false);
+  }
 }
 
 async function saveQuestion() {
@@ -718,7 +877,7 @@ async function saveQuestion() {
   const payload = getQuestionPayload();
   if (!payload) {
     setStatus('Invalid question JSON.', true);
-    return;
+    return false;
   }
   const response = await fetch(`/admin/api/question/${questionId}`, {
     method: 'PUT',
@@ -728,9 +887,10 @@ async function saveQuestion() {
   const data = await response.json();
   if (!response.ok) {
     setStatus(data.error || 'Save failed.', true);
-    return;
+    return false;
   }
   setStatus('Question saved.', false);
+  return true;
 }
 
 async function saveAnswers() {
@@ -740,11 +900,11 @@ async function saveAnswers() {
     payload = JSON.parse(answersJson.value);
   } catch (error) {
     setStatus('Invalid answers JSON.', true);
-    return;
+    return false;
   }
   if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
     setStatus('Invalid answers JSON.', true);
-    return;
+    return false;
   }
   payload = normalizeAnswersMap(payload);
   answersJson.value = JSON.stringify(payload, null, 2);
@@ -756,9 +916,10 @@ async function saveAnswers() {
   const data = await response.json();
   if (!response.ok) {
     setStatus(data.error || 'Save answers failed.', true);
-    return;
+    return false;
   }
   setStatus('Answers saved.', false);
+  return true;
 }
 
 function preview(lang) {
@@ -805,6 +966,15 @@ async function uploadImage() {
 loadBtn.addEventListener('click', loadQuestion);
 saveQuestionBtn.addEventListener('click', saveQuestion);
 saveAnswersBtn.addEventListener('click', saveAnswers);
+if (prevQuestionBtn) {
+  prevQuestionBtn.addEventListener('click', goPrevQuestion);
+}
+if (nextQuestionBtn) {
+  nextQuestionBtn.addEventListener('click', goNextQuestion);
+}
+if (saveNextBtn) {
+  saveNextBtn.addEventListener('click', saveAndNextQuestion);
+}
 if (questionFormatBtn) {
   questionFormatBtn.addEventListener('click', () => formatJsonInTextarea(questionJson, 'Question JSON'));
 }
@@ -834,4 +1004,5 @@ answersJson.addEventListener('input', () => {
   updateDiffSummary();
 });
 
+loadExamContext();
 loadQuestion();
