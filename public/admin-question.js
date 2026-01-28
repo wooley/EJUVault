@@ -25,6 +25,11 @@ const answerExtras = document.getElementById('answer-extras');
 const answerEditorStatus = document.getElementById('answer-editor-status');
 const answerEditorRefreshBtn = document.getElementById('answer-editor-refresh');
 const answerSyncFromJsonBtn = document.getElementById('answer-sync-from-json');
+const patternIdInput = document.getElementById('pattern-id-input');
+const patternOptions = document.getElementById('pattern-options');
+const tagsCatalogEl = document.getElementById('tags-catalog');
+const tagsCustomInput = document.getElementById('tags-custom');
+const metaStatus = document.getElementById('meta-status');
 
 let currentQuestion = null;
 let currentGroups = [];
@@ -33,6 +38,9 @@ let extraEditorRows = [];
 let isSyncingAnswers = false;
 let initialQuestionJson = '';
 let initialAnswersJson = '';
+let isSyncingMeta = false;
+let tagCheckboxes = new Map();
+let tagCatalogCache = {};
 let examContext = {
   examId: null,
   questionIds: [],
@@ -62,6 +70,12 @@ function setStatus(message, isError) {
   editorStatus.style.color = isError ? '#c7332c' : '#3b3b3b';
 }
 
+function setMetaStatus(message, isError) {
+  if (!metaStatus) {
+    return;
+  }
+  metaStatus.textContent = message;
+  metaStatus.classList.toggle('error', Boolean(isError));
 function readPendingStatus() {
   const message = sessionStorage.getItem('admin_question_status');
   const isError = sessionStorage.getItem('admin_question_status_error') === 'true';
@@ -346,6 +360,98 @@ function getAnswersPayload() {
   }
 }
 
+function parseTagList(value) {
+  if (!value) {
+    return [];
+  }
+  return value
+    .split(/[\n,]+/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function updateQuestionJsonField(field, value) {
+  const payload = getQuestionPayload();
+  if (!payload) {
+    setMetaStatus('Invalid question JSON. Fix JSON to update metadata.', true);
+    return;
+  }
+  payload[field] = value;
+  questionJson.value = JSON.stringify(payload, null, 2);
+  currentQuestion = payload;
+  updateDiffSummary();
+  setMetaStatus('Metadata synced to JSON.', false);
+}
+
+function getTagCatalogTags() {
+  const tags = new Set();
+  Object.values(tagCatalogCache).forEach((list) => {
+    if (Array.isArray(list)) {
+      list.forEach((tag) => tags.add(tag));
+    }
+  });
+  return tags;
+}
+
+function syncMetaFromQuestion(payload) {
+  if (!payload) {
+    return;
+  }
+  isSyncingMeta = true;
+  if (patternIdInput) {
+    patternIdInput.value = payload.pattern_id || '';
+  }
+  if (tagsCustomInput && tagsCatalogEl) {
+    const tags = Array.isArray(payload.tags) ? payload.tags : [];
+    const tagSet = new Set(tags);
+    tagCheckboxes.forEach((checkbox, tag) => {
+      checkbox.checked = tagSet.has(tag);
+    });
+    const catalogTags = getTagCatalogTags();
+    const extras = tags.filter((tag) => !catalogTags.has(tag));
+    tagsCustomInput.value = extras.join(', ');
+  }
+  isSyncingMeta = false;
+}
+
+function syncMetaFromQuestionJson() {
+  if (isSyncingMeta) {
+    return;
+  }
+  const payload = getQuestionPayload();
+  if (!payload) {
+    return;
+  }
+  currentQuestion = payload;
+  syncMetaFromQuestion(payload);
+}
+
+function collectTagsFromUi() {
+  const tags = new Set();
+  tagCheckboxes.forEach((checkbox, tag) => {
+    if (checkbox.checked) {
+      tags.add(tag);
+    }
+  });
+  parseTagList(tagsCustomInput ? tagsCustomInput.value : '').forEach((tag) => tags.add(tag));
+  return Array.from(tags);
+}
+
+function handlePatternChange() {
+  if (isSyncingMeta || !patternIdInput) {
+    return;
+  }
+  updateQuestionJsonField('pattern_id', patternIdInput.value.trim());
+}
+
+function handleTagsChange() {
+  if (isSyncingMeta) {
+    return;
+  }
+  const tags = collectTagsFromUi();
+  updateQuestionJsonField('tags', tags);
+}
+
 function getAjv() {
   if (!window.Ajv) {
     return null;
@@ -375,6 +481,88 @@ async function getValidator(url) {
   const validator = ajv.compile(schema);
   validatorCache[url] = validator;
   return validator;
+}
+
+async function loadPatternCatalog() {
+  if (!patternOptions) {
+    return;
+  }
+  try {
+    const response = await fetch('/admin/api/patterns', { headers: getHeaders() });
+    const data = await response.json();
+    if (!response.ok) {
+      return;
+    }
+    const patterns = Array.isArray(data) ? data : data.patterns || [];
+    patternOptions.innerHTML = '';
+    patterns.forEach((pattern) => {
+      const option = document.createElement('option');
+      option.value = pattern.pattern_id || '';
+      patternOptions.appendChild(option);
+    });
+  } catch (error) {
+    setMetaStatus('Failed to load patterns list.', true);
+  }
+}
+
+function renderTagCatalog(tags) {
+  if (!tagsCatalogEl) {
+    return;
+  }
+  tagsCatalogEl.innerHTML = '';
+  tagCheckboxes = new Map();
+
+  Object.entries(tags).forEach(([category, list]) => {
+    const group = document.createElement('div');
+    group.className = 'tag-group';
+
+    const title = document.createElement('div');
+    title.className = 'tag-group-title';
+    title.textContent = category;
+    group.appendChild(title);
+
+    const listWrap = document.createElement('div');
+    listWrap.className = 'tag-group-list';
+
+    (Array.isArray(list) ? list : []).forEach((tag) => {
+      const label = document.createElement('label');
+      label.className = 'tag-pill';
+
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.value = tag;
+      checkbox.addEventListener('change', handleTagsChange);
+
+      const text = document.createElement('span');
+      text.textContent = tag;
+
+      label.appendChild(checkbox);
+      label.appendChild(text);
+      listWrap.appendChild(label);
+      tagCheckboxes.set(tag, checkbox);
+    });
+
+    group.appendChild(listWrap);
+    tagsCatalogEl.appendChild(group);
+  });
+}
+
+async function loadTagCatalog() {
+  if (!tagsCatalogEl) {
+    return;
+  }
+  try {
+    const response = await fetch('/admin/api/tags', { headers: getHeaders() });
+    const data = await response.json();
+    if (!response.ok) {
+      return;
+    }
+    tagCatalogCache = Array.isArray(data) ? {} : data.tags || data || {};
+    renderTagCatalog(tagCatalogCache);
+    syncMetaFromQuestion(getQuestionPayload());
+  } catch (error) {
+    setMetaStatus('Failed to load tags list.', true);
+  }
 }
 
 function formatJsonInTextarea(textarea, label) {
@@ -860,6 +1048,7 @@ async function loadQuestion() {
   questionJson.value = JSON.stringify(data.question, null, 2);
   answersJson.value = JSON.stringify(normalizedAnswers, null, 2);
   buildAnswerEditor(data.question, normalizedAnswers);
+  syncMetaFromQuestion(data.question);
   initialQuestionJson = questionJson.value;
   initialAnswersJson = answersJson.value;
   updateDiffSummary();
@@ -999,10 +1188,19 @@ if (answerSyncFromJsonBtn) {
 
 questionJson.addEventListener('input', () => {
   updateDiffSummary();
+  syncMetaFromQuestionJson();
 });
 answersJson.addEventListener('input', () => {
   updateDiffSummary();
 });
+if (patternIdInput) {
+  patternIdInput.addEventListener('input', handlePatternChange);
+}
+if (tagsCustomInput) {
+  tagsCustomInput.addEventListener('input', handleTagsChange);
+}
 
+loadPatternCatalog();
+loadTagCatalog();
 loadExamContext();
 loadQuestion();

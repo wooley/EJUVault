@@ -109,6 +109,15 @@ function main() {
   app.get('/admin/calibration', (req, res) => {
     res.sendFile(path.join(process.cwd(), 'public', 'admin-calibration.html'));
   });
+  app.get('/admin/stats', (req, res) => {
+    res.sendFile(path.join(process.cwd(), 'public', 'admin-stats.html'));
+  });
+  app.get('/admin/patterns', (req, res) => {
+    res.sendFile(path.join(process.cwd(), 'public', 'admin-patterns.html'));
+  });
+  app.get('/admin/tags', (req, res) => {
+    res.sendFile(path.join(process.cwd(), 'public', 'admin-tags.html'));
+  });
   app.get('/admin/question/:id/edit', (req, res) => {
     res.sendFile(path.join(process.cwd(), 'public', 'admin-question.html'));
   });
@@ -598,6 +607,101 @@ function main() {
     const attempts = store.listAttemptsAll();
     const calibration = computeCalibration(attempts, content);
     return res.status(200).json(calibration);
+  });
+
+  app.get('/admin/api/stats', adminMiddleware, (req, res) => {
+    const windowDays = req.query.window_days ? Number(req.query.window_days) : null;
+    const minAttempts = req.query.min_attempts ? Number(req.query.min_attempts) : 0;
+    if (windowDays !== null && (!Number.isFinite(windowDays) || windowDays <= 0)) {
+      return res.status(400).json({ error: 'INVALID_WINDOW_DAYS' });
+    }
+    if (!Number.isFinite(minAttempts) || minAttempts < 0) {
+      return res.status(400).json({ error: 'INVALID_MIN_ATTEMPTS' });
+    }
+
+    const attempts = store.listAttemptsAll();
+    const filteredAttempts = windowDays
+      ? attempts.filter((attempt) => {
+          const ts = new Date(attempt.created_at).getTime();
+          return Date.now() - ts <= windowDays * 24 * 60 * 60 * 1000;
+        })
+      : attempts;
+
+    const totalAttempts = filteredAttempts.length;
+    const correctAttempts = filteredAttempts.filter((attempt) => attempt.is_correct).length;
+    const overtimeAttempts = filteredAttempts.filter((attempt) => attempt.overtime).length;
+    const activeUsers = new Set(filteredAttempts.map((attempt) => attempt.user_id)).size;
+    const accuracy = totalAttempts > 0 ? Number((correctAttempts / totalAttempts).toFixed(4)) : 0;
+    const overtimeRate = totalAttempts > 0 ? Number((overtimeAttempts / totalAttempts).toFixed(4)) : 0;
+
+    const patternStats = computeStats(filteredAttempts, 'pattern', content, null);
+    const tagStats = computeStats(filteredAttempts, 'tag', content, null);
+    const difficultyStats = computeStats(filteredAttempts, 'difficulty', content, null);
+
+    function applyMinAttempts(stats) {
+      if (!minAttempts) {
+        return stats;
+      }
+      const filtered = {};
+      Object.entries(stats || {}).forEach(([key, value]) => {
+        if (value.attempts >= minAttempts) {
+          filtered[key] = value;
+        }
+      });
+      return filtered;
+    }
+
+    return res.status(200).json({
+      totals: {
+        attempts: totalAttempts,
+        accuracy,
+        overtime_rate: overtimeRate,
+        active_users: activeUsers
+      },
+      patterns: applyMinAttempts(patternStats),
+      tags: applyMinAttempts(tagStats),
+      difficulty: applyMinAttempts(difficultyStats),
+      window_days: windowDays,
+      min_attempts: minAttempts
+    });
+  });
+
+  app.get('/admin/api/patterns', adminMiddleware, (req, res) => {
+    const patternsPath = path.join(process.cwd(), 'content', 'patterns.current.json');
+    if (!fs.existsSync(patternsPath)) {
+      return res.status(200).json({ patterns: [] });
+    }
+    const raw = fs.readFileSync(patternsPath, 'utf8');
+    return res.type('application/json').send(raw);
+  });
+
+  app.put('/admin/api/patterns', adminMiddleware, (req, res) => {
+    const { patterns } = req.body || {};
+    if (!Array.isArray(patterns)) {
+      return res.status(400).json({ error: 'PATTERNS_REQUIRED' });
+    }
+    const patternsPath = path.join(process.cwd(), 'content', 'patterns.current.json');
+    fs.writeFileSync(patternsPath, JSON.stringify(patterns, null, 2));
+    return res.status(200).json({ ok: true });
+  });
+
+  app.get('/admin/api/tags', adminMiddleware, (req, res) => {
+    const tagsPath = path.join(process.cwd(), 'content', 'tags.current.json');
+    if (!fs.existsSync(tagsPath)) {
+      return res.status(200).json({ tags: {} });
+    }
+    const raw = fs.readFileSync(tagsPath, 'utf8');
+    return res.type('application/json').send(raw);
+  });
+
+  app.put('/admin/api/tags', adminMiddleware, (req, res) => {
+    const { tags } = req.body || {};
+    if (!tags || typeof tags !== 'object' || Array.isArray(tags)) {
+      return res.status(400).json({ error: 'TAGS_REQUIRED' });
+    }
+    const tagsPath = path.join(process.cwd(), 'content', 'tags.current.json');
+    fs.writeFileSync(tagsPath, JSON.stringify(tags, null, 2));
+    return res.status(200).json({ ok: true });
   });
 
   const listenHost = HOST ? HOST.trim() : '';

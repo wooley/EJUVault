@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EJU Math Vault | Admin Stats</title>
+    <link rel="stylesheet" href="/static/admin.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-mark">EJU</div>
+          <div>
+            <div class="brand-title">Math Vault</div>
+            <div class="brand-sub">Admin Stats</div>
+          </div>
+        </div>
+        <nav class="admin-nav" aria-label="Admin">
+          <a class="admin-nav-link" href="/admin">Dashboard</a>
+          <a class="admin-nav-link" href="/admin/exams">Exam</a>
+          <a class="admin-nav-link" href="/admin/integrity">Integrity</a>
+          <a class="admin-nav-link" href="/admin/calibration">Calibration</a>
+          <a class="admin-nav-link" href="/admin/stats">Stats</a>
+          <a class="admin-nav-link" href="/admin/patterns">Patterns</a>
+          <a class="admin-nav-link" href="/admin/tags">Tags</a>
+        </nav>
+      </header>
+
+      <section class="panel">
+        <div class="panel-title">Filters</div>
+        <div class="panel-desc">Limit the time window and minimum attempts per group.</div>
+        <div class="stats-filters">
+          <label class="field-label">
+            Time window (days)
+            <input id="window-days" type="number" min="1" placeholder="e.g. 30" />
+          </label>
+          <label class="field-label">
+            Min attempts per group
+            <input id="min-attempts" type="number" min="0" placeholder="e.g. 10" />
+          </label>
+          <div class="stats-filter-actions">
+            <button id="apply-filters" class="btn primary">Apply</button>
+            <button id="reset-filters" class="btn">Reset</button>
+          </div>
+        </div>
+        <div id="stats-status" class="status"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">Overview</div>
+        <div class="panel-desc">Totals from the selected window.</div>
+        <div class="stats-cards" id="stats-cards"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">Focus Tables</div>
+        <div class="panel-desc">Top patterns by volume and tags with the lowest accuracy.</div>
+        <div class="stats-grid">
+          <div class="stats-table">
+            <div class="stats-table-title">Top Patterns</div>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Pattern</th>
+                  <th>Attempts</th>
+                  <th>Accuracy</th>
+                  <th>Overtime</th>
+                </tr>
+              </thead>
+              <tbody id="table-patterns"></tbody>
+            </table>
+          </div>
+          <div class="stats-table">
+            <div class="stats-table-title">Top Wrong Tags</div>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Tag</th>
+                  <th>Attempts</th>
+                  <th>Accuracy</th>
+                  <th>Error Rate</th>
+                </tr>
+              </thead>
+              <tbody id="table-tags"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="/static/admin-nav.js"></script>
+    <script src="/static/admin-stats.js"></script>
+  </body>
+</html>

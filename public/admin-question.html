@@ -22,7 +22,9 @@
           <a class="admin-nav-link" href="/admin/exams">Exam</a>
           <a class="admin-nav-link" href="/admin/integrity">Integrity</a>
           <a class="admin-nav-link" href="/admin/calibration">Calibration</a>
-          <a class="admin-nav-link" href="/stats">统计</a>
+          <a class="admin-nav-link" href="/admin/stats">Stats</a>
+          <a class="admin-nav-link" href="/admin/patterns">Patterns</a>
+          <a class="admin-nav-link" href="/admin/tags">Tags</a>
         </nav>
       </header>
 
@@ -59,6 +61,24 @@
           </div>
           <textarea id="answers-json" rows="18"></textarea>
         </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title">Metadata</div>
+        <div class="panel-desc">Edit pattern_id and tags. Changes sync to the question JSON.</div>
+        <div class="meta-grid">
+          <label class="field-label">
+            Pattern ID
+            <input id="pattern-id-input" type="text" list="pattern-options" placeholder="pattern_id" />
+            <datalist id="pattern-options"></datalist>
+          </label>
+          <div class="field-label">
+            Tags
+            <input id="tags-custom" type="text" placeholder="Other tags (comma separated)" />
+            <div id="tags-catalog" class="tag-catalog"></div>
+          </div>
+        </div>
+        <div id="meta-status" class="status"></div>
       </section>
 
       <section class="panel">
