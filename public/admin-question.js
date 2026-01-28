@@ -27,9 +27,11 @@ const answerEditorRefreshBtn = document.getElementById('answer-editor-refresh');
 const answerSyncFromJsonBtn = document.getElementById('answer-sync-from-json');
 const patternIdInput = document.getElementById('pattern-id-input');
 const patternOptions = document.getElementById('pattern-options');
+const patternDescEl = document.getElementById('pattern-desc');
 const tagsCatalogEl = document.getElementById('tags-catalog');
 const tagsCustomInput = document.getElementById('tags-custom');
 const metaStatus = document.getElementById('meta-status');
+const patternLabels = window.PATTERN_LABELS || {};
 
 let currentQuestion = null;
 let currentGroups = [];
@@ -383,6 +385,13 @@ function updateQuestionJsonField(field, value) {
   setMetaStatus('Metadata synced to JSON.', false);
 }
 
+function updatePatternDescription(patternId) {
+  if (!patternDescEl) {
+    return;
+  }
+  patternDescEl.textContent = patternLabels[patternId] || '未找到说明';
+}
+
 function getTagCatalogTags() {
   const tags = new Set();
   Object.values(tagCatalogCache).forEach((list) => {
@@ -400,6 +409,7 @@ function syncMetaFromQuestion(payload) {
   isSyncingMeta = true;
   if (patternIdInput) {
     patternIdInput.value = payload.pattern_id || '';
+    updatePatternDescription(patternIdInput.value.trim());
   }
   if (tagsCustomInput && tagsCatalogEl) {
     const tags = Array.isArray(payload.tags) ? payload.tags : [];
@@ -441,7 +451,9 @@ function handlePatternChange() {
   if (isSyncingMeta || !patternIdInput) {
     return;
   }
-  updateQuestionJsonField('pattern_id', patternIdInput.value.trim());
+  const value = patternIdInput.value.trim();
+  updatePatternDescription(value);
+  updateQuestionJsonField('pattern_id', value);
 }
 
 function handleTagsChange() {
@@ -497,7 +509,12 @@ async function loadPatternCatalog() {
     patternOptions.innerHTML = '';
     patterns.forEach((pattern) => {
       const option = document.createElement('option');
-      option.value = pattern.pattern_id || '';
+      const patternId = pattern.pattern_id || '';
+      option.value = patternId;
+      const label = patternLabels[patternId];
+      if (label) {
+        option.label = label;
+      }
       patternOptions.appendChild(option);
     });
   } catch (error) {
