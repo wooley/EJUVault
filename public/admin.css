@@ -549,6 +549,27 @@ textarea {
   color: var(--ink-soft);
 }
 
+.pattern-radio {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pattern-radio-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 13px;
+}
+
+.pattern-radio-item input {
+  margin: 0;
+}
+
 @media (max-width: 720px) {
   .auth-row,
   .search-row {

@@ -26,7 +26,7 @@ const answerEditorStatus = document.getElementById('answer-editor-status');
 const answerEditorRefreshBtn = document.getElementById('answer-editor-refresh');
 const answerSyncFromJsonBtn = document.getElementById('answer-sync-from-json');
 const patternIdInput = document.getElementById('pattern-id-input');
-const patternOptions = [];
+const patternRadioGroup = document.getElementById('pattern-radio');
 const patternDescEl = document.getElementById('pattern-desc');
 const tagsCatalogEl = document.getElementById('tags-catalog');
 const tagsCustomInput = document.getElementById('tags-custom');
@@ -400,7 +400,7 @@ function updatePatternDescription(patternId) {
   if (!patternDescEl) {
     return;
   }
-  patternDescEl.textContent = patternLabels[patternId] || '未找到说明';
+  patternDescEl.textContent = patternId ? (patternLabels[patternId] || '未找到说明') : '未设置';
 }
 
 function getTagCatalogTags() {
@@ -421,6 +421,7 @@ function syncMetaFromQuestion(payload) {
   if (patternIdInput) {
     patternIdInput.value = payload.pattern_id || '';
     updatePatternDescription(patternIdInput.value.trim());
+    syncPatternRadioSelection(patternIdInput.value.trim());
   }
   if (tagsCustomInput && tagsCatalogEl) {
     const tags = Array.isArray(payload.tags) ? payload.tags : [];
@@ -459,12 +460,14 @@ function collectTagsFromUi() {
 }
 
 function handlePatternChange() {
-  if (isSyncingMeta || !patternIdInput) {
+  if (isSyncingMeta || !patternIdInput || !patternRadioGroup) {
     return;
   }
-  const value = patternIdInput.value.trim();
+  const selected = patternRadioGroup.querySelector('input[type="radio"][name="pattern-id"]:checked');
+  const value = selected ? selected.value.trim() : '';
+  patternIdInput.value = value;
   updatePatternDescription(value);
-  updateQuestionJsonField('pattern_id', value);
+  updateQuestionJsonField('pattern_id', value || null);
 }
 
 function handleTagsChange() {
@@ -506,8 +509,18 @@ async function getValidator(url) {
   return validator;
 }
 
+function syncPatternRadioSelection(patternId) {
+  if (!patternRadioGroup) {
+    return;
+  }
+  const radios = patternRadioGroup.querySelectorAll('input[type="radio"]');
+  radios.forEach((radio) => {
+    radio.checked = radio.value === patternId;
+  });
+}
+
 async function loadPatternCatalog() {
-  if (!patternOptions) {
+  if (!patternRadioGroup) {
     return;
   }
   try {
@@ -517,23 +530,37 @@ async function loadPatternCatalog() {
       return;
     }
     const patterns = Array.isArray(data) ? data : data.patterns || [];
-    patternOptions.length = 0;
-    if (patternIdInput) {
-      patternIdInput.innerHTML = '';
-      const placeholder = document.createElement('option');
-      placeholder.value = '';
-      placeholder.textContent = '请选择 Pattern';
-      patternIdInput.appendChild(placeholder);
-      patterns.forEach((pattern) => {
-        const option = document.createElement('option');
-        const patternId = pattern.pattern_id || '';
-        const label = patternLabels[patternId] ? ` · ${patternLabels[patternId]}` : '';
-        option.value = patternId;
-        option.textContent = `${patternId}${label}`.trim();
-        patternIdInput.appendChild(option);
-        patternOptions.push(patternId);
-      });
-    }
+    patternRadioGroup.innerHTML = '';
+    const placeholderLabel = document.createElement('label');
+    placeholderLabel.className = 'pattern-radio-item';
+    const placeholderInput = document.createElement('input');
+    placeholderInput.type = 'radio';
+    placeholderInput.name = 'pattern-id';
+    placeholderInput.value = '';
+    placeholderInput.addEventListener('change', handlePatternChange);
+    const placeholderText = document.createElement('span');
+    placeholderText.textContent = '未设置';
+    placeholderLabel.appendChild(placeholderInput);
+    placeholderLabel.appendChild(placeholderText);
+    patternRadioGroup.appendChild(placeholderLabel);
+
+    patterns.forEach((pattern) => {
+      const patternId = pattern.pattern_id || '';
+      const labelText = patternLabels[patternId] || '未定义说明';
+      const label = document.createElement('label');
+      label.className = 'pattern-radio-item';
+      const radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.name = 'pattern-id';
+      radio.value = patternId;
+      radio.addEventListener('change', handlePatternChange);
+      const text = document.createElement('span');
+      text.textContent = labelText;
+      label.appendChild(radio);
+      label.appendChild(text);
+      patternRadioGroup.appendChild(label);
+    });
+    syncPatternRadioSelection(patternIdInput ? patternIdInput.value : '');
   } catch (error) {
     setMetaStatus('Failed to load patterns list.', true);
   }
@@ -1250,9 +1277,6 @@ questionJson.addEventListener('input', () => {
 answersJson.addEventListener('input', () => {
   updateDiffSummary();
 });
-if (patternIdInput) {
-  patternIdInput.addEventListener('change', handlePatternChange);
-}
 if (tagsCustomInput) {
   tagsCustomInput.addEventListener('input', handleTagsChange);
 }
