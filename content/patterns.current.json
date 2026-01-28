@@ -1,1 +1,202 @@
-[]
+[
+  {
+    "pattern_id": "QF_DIRECT_VERTEX",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "QF_DISCRIMINANT_SOLVE_PARAM",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "QF_INTERSECTION_COUNT",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "QF_INTERVAL_INEQUALITY",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "QF_TRANSFORM_SHIFT",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "SEQ_ARITH_DIRECT",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "SEQ_GEOM_DIRECT",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "SEQ_RECURR_LINEAR",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "SEQ_SUM_FORMULA",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "SEQ_CONSTRAINT_FIND_N",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "GEO_TRI_COSINE_SOLVE_SIDE",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "GEO_TRI_SINE_SOLVE_ANGLE",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "GEO_AREA_RATIO",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "GEO_PROJECTION_LENGTH",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "GEO_SIMILAR_RATIO",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "VEC_DOT_ANGLE",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "VEC_DOT_ORTHO",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "VEC_PROJECTION_LENGTH",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "VEC_COORD_DIRECT",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "VEC_RATIO_INTERNAL",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "PROB_CLASSICAL_COUNT",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "PROB_CONDITIONAL_TABLE",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "PROB_BINOMIAL",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "PROB_EXPECTATION",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  },
+  {
+    "pattern_id": "PROB_CASE_SPLIT",
+    "trigger_rules": [],
+    "core_steps": [],
+    "common_errors": [],
+    "related_tags": [],
+    "version": "v1"
+  }
+]

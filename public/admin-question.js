@@ -26,10 +26,12 @@ const answerEditorStatus = document.getElementById('answer-editor-status');
 const answerEditorRefreshBtn = document.getElementById('answer-editor-refresh');
 const answerSyncFromJsonBtn = document.getElementById('answer-sync-from-json');
 const patternIdInput = document.getElementById('pattern-id-input');
-const patternOptions = document.getElementById('pattern-options');
+const patternRadioGroup = document.getElementById('pattern-radio');
+const patternDescEl = document.getElementById('pattern-desc');
 const tagsCatalogEl = document.getElementById('tags-catalog');
 const tagsCustomInput = document.getElementById('tags-custom');
 const metaStatus = document.getElementById('meta-status');
+const patternLabels = window.PATTERN_LABELS || {};
 
 let currentQuestion = null;
 let currentGroups = [];
@@ -52,7 +54,17 @@ const schemaCache = {};
 const validatorCache = {};
 let ajvInstance = null;
 
-const questionId = window.location.pathname.split('/')[3];
+function getQuestionIdFromLocation() {
+  const match = window.location.pathname.match(/\/admin\/question\/([^/]+)/);
+  if (match && match[1]) {
+    return decodeURIComponent(match[1]);
+  }
+  const params = new URLSearchParams(window.location.search);
+  const fromQuery = params.get('question_id');
+  return fromQuery ? fromQuery.trim() : null;
+}
+
+const questionId = getQuestionIdFromLocation();
 questionIdEl.textContent = questionId || 'Unknown';
 pendingStatus = readPendingStatus();
 
@@ -76,6 +88,7 @@ function setMetaStatus(message, isError) {
   }
   metaStatus.textContent = message;
   metaStatus.classList.toggle('error', Boolean(isError));
+}
 function readPendingStatus() {
   const message = sessionStorage.getItem('admin_question_status');
   const isError = sessionStorage.getItem('admin_question_status_error') === 'true';
@@ -383,6 +396,13 @@ function updateQuestionJsonField(field, value) {
   setMetaStatus('Metadata synced to JSON.', false);
 }
 
+function updatePatternDescription(patternId) {
+  if (!patternDescEl) {
+    return;
+  }
+  patternDescEl.textContent = patternId ? (patternLabels[patternId] || '未找到说明') : '未设置';
+}
+
 function getTagCatalogTags() {
   const tags = new Set();
   Object.values(tagCatalogCache).forEach((list) => {
@@ -400,6 +420,8 @@ function syncMetaFromQuestion(payload) {
   isSyncingMeta = true;
   if (patternIdInput) {
     patternIdInput.value = payload.pattern_id || '';
+    updatePatternDescription(patternIdInput.value.trim());
+    syncPatternRadioSelection(patternIdInput.value.trim());
   }
   if (tagsCustomInput && tagsCatalogEl) {
     const tags = Array.isArray(payload.tags) ? payload.tags : [];
@@ -438,10 +460,14 @@ function collectTagsFromUi() {
 }
 
 function handlePatternChange() {
-  if (isSyncingMeta || !patternIdInput) {
+  if (isSyncingMeta || !patternIdInput || !patternRadioGroup) {
     return;
   }
-  updateQuestionJsonField('pattern_id', patternIdInput.value.trim());
+  const selected = patternRadioGroup.querySelector('input[type="radio"][name="pattern-id"]:checked');
+  const value = selected ? selected.value.trim() : '';
+  patternIdInput.value = value;
+  updatePatternDescription(value);
+  updateQuestionJsonField('pattern_id', value || null);
 }
 
 function handleTagsChange() {
@@ -483,8 +509,18 @@ async function getValidator(url) {
   return validator;
 }
 
+function syncPatternRadioSelection(patternId) {
+  if (!patternRadioGroup) {
+    return;
+  }
+  const radios = patternRadioGroup.querySelectorAll('input[type="radio"]');
+  radios.forEach((radio) => {
+    radio.checked = radio.value === patternId;
+  });
+}
+
 async function loadPatternCatalog() {
-  if (!patternOptions) {
+  if (!patternRadioGroup) {
     return;
   }
   try {
@@ -494,12 +530,37 @@ async function loadPatternCatalog() {
       return;
     }
     const patterns = Array.isArray(data) ? data : data.patterns || [];
-    patternOptions.innerHTML = '';
+    patternRadioGroup.innerHTML = '';
+    const placeholderLabel = document.createElement('label');
+    placeholderLabel.className = 'pattern-radio-item';
+    const placeholderInput = document.createElement('input');
+    placeholderInput.type = 'radio';
+    placeholderInput.name = 'pattern-id';
+    placeholderInput.value = '';
+    placeholderInput.addEventListener('change', handlePatternChange);
+    const placeholderText = document.createElement('span');
+    placeholderText.textContent = '未设置';
+    placeholderLabel.appendChild(placeholderInput);
+    placeholderLabel.appendChild(placeholderText);
+    patternRadioGroup.appendChild(placeholderLabel);
+
     patterns.forEach((pattern) => {
-      const option = document.createElement('option');
-      option.value = pattern.pattern_id || '';
-      patternOptions.appendChild(option);
+      const patternId = pattern.pattern_id || '';
+      const labelText = patternLabels[patternId] || '未定义说明';
+      const label = document.createElement('label');
+      label.className = 'pattern-radio-item';
+      const radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.name = 'pattern-id';
+      radio.value = patternId;
+      radio.addEventListener('change', handlePatternChange);
+      const text = document.createElement('span');
+      text.textContent = labelText;
+      label.appendChild(radio);
+      label.appendChild(text);
+      patternRadioGroup.appendChild(label);
     });
+    syncPatternRadioSelection(patternIdInput ? patternIdInput.value : '');
   } catch (error) {
     setMetaStatus('Failed to load patterns list.', true);
   }
@@ -512,7 +573,16 @@ function renderTagCatalog(tags) {
   tagsCatalogEl.innerHTML = '';
   tagCheckboxes = new Map();
 
-  Object.entries(tags).forEach(([category, list]) => {
+  const entries = Object.entries(tags);
+  if (entries.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'panel-desc';
+    empty.textContent = 'No tag catalog found. Add tags in /admin/tags.';
+    tagsCatalogEl.appendChild(empty);
+    return;
+  }
+
+  entries.forEach(([category, list]) => {
     const group = document.createElement('div');
     group.className = 'tag-group';
 
@@ -1038,26 +1108,40 @@ async function loadQuestion() {
     setStatus('Missing question id.', true);
     return;
   }
-  const response = await fetch(`/admin/api/question/${questionId}`, { headers: getHeaders() });
-  const data = await response.json();
-  if (!response.ok) {
-    setStatus(data.error || 'Load failed.', true);
-    return;
-  }
-  const normalizedAnswers = normalizeAnswersMap(data.answers || {});
-  questionJson.value = JSON.stringify(data.question, null, 2);
-  answersJson.value = JSON.stringify(normalizedAnswers, null, 2);
-  buildAnswerEditor(data.question, normalizedAnswers);
-  syncMetaFromQuestion(data.question);
-  initialQuestionJson = questionJson.value;
-  initialAnswersJson = answersJson.value;
-  updateDiffSummary();
-  clearStatusLists();
-  if (pendingStatus) {
-    setStatus(pendingStatus.message, pendingStatus.isError);
-    pendingStatus = null;
-  } else {
-    setStatus('Loaded.', false);
+  try {
+    const response = await fetch(`/admin/api/question/${questionId}`, { headers: getHeaders() });
+    let data = null;
+    try {
+      data = await response.json();
+    } catch (error) {
+      setStatus('Load failed: invalid JSON response.', true);
+      return;
+    }
+    if (!response.ok) {
+      setStatus(data.error || 'Load failed.', true);
+      return;
+    }
+    if (!data || !data.question) {
+      setStatus('Load failed: missing question data.', true);
+      return;
+    }
+    const normalizedAnswers = normalizeAnswersMap(data.answers || {});
+    questionJson.value = JSON.stringify(data.question, null, 2);
+    answersJson.value = JSON.stringify(normalizedAnswers, null, 2);
+    buildAnswerEditor(data.question, normalizedAnswers);
+    syncMetaFromQuestion(data.question);
+    initialQuestionJson = questionJson.value;
+    initialAnswersJson = answersJson.value;
+    updateDiffSummary();
+    clearStatusLists();
+    if (pendingStatus) {
+      setStatus(pendingStatus.message, pendingStatus.isError);
+      pendingStatus = null;
+    } else {
+      setStatus('Loaded.', false);
+    }
+  } catch (error) {
+    setStatus('Load failed: network error.', true);
   }
 }
 
@@ -1193,9 +1277,6 @@ questionJson.addEventListener('input', () => {
 answersJson.addEventListener('input', () => {
   updateDiffSummary();
 });
-if (patternIdInput) {
-  patternIdInput.addEventListener('input', handlePatternChange);
-}
 if (tagsCustomInput) {
   tagsCustomInput.addEventListener('input', handleTagsChange);
 }

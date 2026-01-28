@@ -2,6 +2,7 @@ const tableBody = document.getElementById('pattern-table');
 const addPatternBtn = document.getElementById('add-pattern');
 const savePatternsBtn = document.getElementById('save-patterns');
 const statusEl = document.getElementById('patterns-status');
+const patternLabels = window.PATTERN_LABELS || {};
 
 let rows = [];
 
@@ -39,6 +40,10 @@ function formatList(list) {
 function buildRow(pattern = {}) {
   const row = document.createElement('tr');
 
+  const descCell = document.createElement('td');
+  descCell.className = 'pattern-desc';
+  descCell.textContent = patternLabels[pattern.pattern_id] || '—';
+
   const patternIdInput = document.createElement('input');
   patternIdInput.type = 'text';
   patternIdInput.value = pattern.pattern_id || '';
@@ -69,6 +74,7 @@ function buildRow(pattern = {}) {
   removeBtn.textContent = 'Remove';
 
   const cells = [
+    descCell,
     patternIdInput,
     triggerInput,
     coreInput,
@@ -78,9 +84,13 @@ function buildRow(pattern = {}) {
   ];
 
   cells.forEach((input) => {
-    const td = document.createElement('td');
-    td.appendChild(input);
-    row.appendChild(td);
+    if (input instanceof HTMLElement && input.tagName === 'TD') {
+      row.appendChild(input);
+    } else {
+      const td = document.createElement('td');
+      td.appendChild(input);
+      row.appendChild(td);
+    }
   });
 
   const removeCell = document.createElement('td');
@@ -96,7 +106,8 @@ function buildRow(pattern = {}) {
     coreInput,
     errorInput,
     relatedInput,
-    versionInput
+    versionInput,
+    descCell
   };
 
   rows.push(rowState);
@@ -104,6 +115,11 @@ function buildRow(pattern = {}) {
   removeBtn.addEventListener('click', () => {
     row.remove();
     rows = rows.filter((item) => item !== rowState);
+  });
+
+  patternIdInput.addEventListener('input', () => {
+    const value = patternIdInput.value.trim();
+    descCell.textContent = patternLabels[value] || '—';
   });
 }
 

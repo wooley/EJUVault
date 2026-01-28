@@ -120,7 +120,8 @@ body {
   gap: 12px;
 }
 
-input {
+input,
+select {
   flex: 1;
   padding: 12px;
   border-radius: 10px;
@@ -535,6 +536,38 @@ textarea {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+.meta-hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.pattern-desc {
+  min-width: 160px;
+  color: var(--ink-soft);
+}
+
+.pattern-radio {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pattern-radio-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 13px;
+}
+
+.pattern-radio-item input {
+  margin: 0;
 }
 
 @media (max-width: 720px) {
