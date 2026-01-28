@@ -54,7 +54,17 @@ const schemaCache = {};
 const validatorCache = {};
 let ajvInstance = null;
 
-const questionId = window.location.pathname.split('/')[3];
+function getQuestionIdFromLocation() {
+  const match = window.location.pathname.match(/\/admin\/question\/([^/]+)/);
+  if (match && match[1]) {
+    return decodeURIComponent(match[1]);
+  }
+  const params = new URLSearchParams(window.location.search);
+  const fromQuery = params.get('question_id');
+  return fromQuery ? fromQuery.trim() : null;
+}
+
+const questionId = getQuestionIdFromLocation();
 questionIdEl.textContent = questionId || 'Unknown';
 pendingStatus = readPendingStatus();
 
@@ -78,6 +88,7 @@ function setMetaStatus(message, isError) {
   }
   metaStatus.textContent = message;
   metaStatus.classList.toggle('error', Boolean(isError));
+}
 function readPendingStatus() {
   const message = sessionStorage.getItem('admin_question_status');
   const isError = sessionStorage.getItem('admin_question_status_error') === 'true';
@@ -1070,26 +1081,40 @@ async function loadQuestion() {
     setStatus('Missing question id.', true);
     return;
   }
-  const response = await fetch(`/admin/api/question/${questionId}`, { headers: getHeaders() });
-  const data = await response.json();
-  if (!response.ok) {
-    setStatus(data.error || 'Load failed.', true);
-    return;
-  }
-  const normalizedAnswers = normalizeAnswersMap(data.answers || {});
-  questionJson.value = JSON.stringify(data.question, null, 2);
-  answersJson.value = JSON.stringify(normalizedAnswers, null, 2);
-  buildAnswerEditor(data.question, normalizedAnswers);
-  syncMetaFromQuestion(data.question);
-  initialQuestionJson = questionJson.value;
-  initialAnswersJson = answersJson.value;
-  updateDiffSummary();
-  clearStatusLists();
-  if (pendingStatus) {
-    setStatus(pendingStatus.message, pendingStatus.isError);
-    pendingStatus = null;
-  } else {
-    setStatus('Loaded.', false);
+  try {
+    const response = await fetch(`/admin/api/question/${questionId}`, { headers: getHeaders() });
+    let data = null;
+    try {
+      data = await response.json();
+    } catch (error) {
+      setStatus('Load failed: invalid JSON response.', true);
+      return;
+    }
+    if (!response.ok) {
+      setStatus(data.error || 'Load failed.', true);
+      return;
+    }
+    if (!data || !data.question) {
+      setStatus('Load failed: missing question data.', true);
+      return;
+    }
+    const normalizedAnswers = normalizeAnswersMap(data.answers || {});
+    questionJson.value = JSON.stringify(data.question, null, 2);
+    answersJson.value = JSON.stringify(normalizedAnswers, null, 2);
+    buildAnswerEditor(data.question, normalizedAnswers);
+    syncMetaFromQuestion(data.question);
+    initialQuestionJson = questionJson.value;
+    initialAnswersJson = answersJson.value;
+    updateDiffSummary();
+    clearStatusLists();
+    if (pendingStatus) {
+      setStatus(pendingStatus.message, pendingStatus.isError);
+      pendingStatus = null;
+    } else {
+      setStatus('Loaded.', false);
+    }
+  } catch (error) {
+    setStatus('Load failed: network error.', true);
   }
 }
 
