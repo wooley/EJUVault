@@ -26,7 +26,7 @@ const answerEditorStatus = document.getElementById('answer-editor-status');
 const answerEditorRefreshBtn = document.getElementById('answer-editor-refresh');
 const answerSyncFromJsonBtn = document.getElementById('answer-sync-from-json');
 const patternIdInput = document.getElementById('pattern-id-input');
-const patternOptions = document.getElementById('pattern-options');
+const patternOptions = [];
 const patternDescEl = document.getElementById('pattern-desc');
 const tagsCatalogEl = document.getElementById('tags-catalog');
 const tagsCustomInput = document.getElementById('tags-custom');
@@ -506,17 +506,23 @@ async function loadPatternCatalog() {
       return;
     }
     const patterns = Array.isArray(data) ? data : data.patterns || [];
-    patternOptions.innerHTML = '';
-    patterns.forEach((pattern) => {
-      const option = document.createElement('option');
-      const patternId = pattern.pattern_id || '';
-      option.value = patternId;
-      const label = patternLabels[patternId];
-      if (label) {
-        option.label = label;
-      }
-      patternOptions.appendChild(option);
-    });
+    patternOptions.length = 0;
+    if (patternIdInput) {
+      patternIdInput.innerHTML = '';
+      const placeholder = document.createElement('option');
+      placeholder.value = '';
+      placeholder.textContent = '请选择 Pattern';
+      patternIdInput.appendChild(placeholder);
+      patterns.forEach((pattern) => {
+        const option = document.createElement('option');
+        const patternId = pattern.pattern_id || '';
+        const label = patternLabels[patternId] ? ` · ${patternLabels[patternId]}` : '';
+        option.value = patternId;
+        option.textContent = `${patternId}${label}`.trim();
+        patternIdInput.appendChild(option);
+        patternOptions.push(patternId);
+      });
+    }
   } catch (error) {
     setMetaStatus('Failed to load patterns list.', true);
   }
@@ -529,7 +535,16 @@ function renderTagCatalog(tags) {
   tagsCatalogEl.innerHTML = '';
   tagCheckboxes = new Map();
 
-  Object.entries(tags).forEach(([category, list]) => {
+  const entries = Object.entries(tags);
+  if (entries.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'panel-desc';
+    empty.textContent = 'No tag catalog found. Add tags in /admin/tags.';
+    tagsCatalogEl.appendChild(empty);
+    return;
+  }
+
+  entries.forEach(([category, list]) => {
     const group = document.createElement('div');
     group.className = 'tag-group';
 
@@ -1211,7 +1226,7 @@ answersJson.addEventListener('input', () => {
   updateDiffSummary();
 });
 if (patternIdInput) {
-  patternIdInput.addEventListener('input', handlePatternChange);
+  patternIdInput.addEventListener('change', handlePatternChange);
 }
 if (tagsCustomInput) {
   tagsCustomInput.addEventListener('input', handleTagsChange);
