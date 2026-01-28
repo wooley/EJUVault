@@ -217,10 +217,11 @@ function renderQuestion() {
   questionStage.classList.remove('hidden');
   summaryEl.classList.add('hidden');
   progressEl.classList.remove('hidden');
-  const useHtml = currentLang === 'ja' && question.text_ja_html;
+  const useHtml = (currentLang === 'ja' && question.text_ja_html)
+    || (currentLang === 'zh' && question.text_zh_html);
   const text = currentLang === 'zh' && question.text_zh ? question.text_zh : question.text_ja;
   if (useHtml) {
-    questionText.innerHTML = question.text_ja_html;
+    questionText.innerHTML = currentLang === 'zh' ? question.text_zh_html : question.text_ja_html;
     questionText.classList.add('html');
     questionText.classList.remove('text');
   } else {

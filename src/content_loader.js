@@ -11,6 +11,11 @@ const DEFAULT_EXERCISE_HTML_INDEX_PATH = path.join(
   'index',
   'exercise_html_index.json'
 );
+const DEFAULT_EXERCISE_HTML_CN_INDEX_PATH = path.join(
+  DEFAULT_CONTENT_DIR,
+  'index',
+  'exercise_html_cn_index.json'
+);
 const DEFAULT_SOLUTION_HTML_INDEX_PATH = path.join(
   DEFAULT_CONTENT_DIR,
   'index',
@@ -265,11 +270,16 @@ function createContentLoader() {
   const exerciseHtmlIndex = fs.existsSync(DEFAULT_EXERCISE_HTML_INDEX_PATH)
     ? readJson(DEFAULT_EXERCISE_HTML_INDEX_PATH)
     : null;
+  const exerciseHtmlCnIndex = fs.existsSync(DEFAULT_EXERCISE_HTML_CN_INDEX_PATH)
+    ? readJson(DEFAULT_EXERCISE_HTML_CN_INDEX_PATH)
+    : null;
   const solutionHtmlIndex = fs.existsSync(DEFAULT_SOLUTION_HTML_INDEX_PATH)
     ? readJson(DEFAULT_SOLUTION_HTML_INDEX_PATH)
     : null;
   const exerciseHtmlMap = new Map();
   const exerciseHtmlCache = new Map();
+  const exerciseHtmlCnMap = new Map();
+  const exerciseHtmlCnCache = new Map();
   const solutionHtmlMap = new Map();
   const solutionHtmlCache = new Map();
 
@@ -277,6 +287,13 @@ function createContentLoader() {
     for (const entry of exerciseHtmlIndex.questions) {
       if (entry && entry.question_id && entry.html_path) {
         exerciseHtmlMap.set(entry.question_id, entry.html_path);
+      }
+    }
+  }
+  if (exerciseHtmlCnIndex && Array.isArray(exerciseHtmlCnIndex.questions)) {
+    for (const entry of exerciseHtmlCnIndex.questions) {
+      if (entry && entry.question_id && entry.html_path) {
+        exerciseHtmlCnMap.set(entry.question_id, entry.html_path);
       }
     }
   }
@@ -411,6 +428,28 @@ function createContentLoader() {
     }
   }
 
+  function getExerciseHtmlZh(questionId) {
+    const htmlPath = exerciseHtmlCnMap.get(questionId);
+    if (!htmlPath) {
+      return null;
+    }
+    if (exerciseHtmlCnCache.has(questionId)) {
+      return exerciseHtmlCnCache.get(questionId);
+    }
+    const resolvedPath = path.join(process.cwd(), htmlPath);
+    if (!fs.existsSync(resolvedPath)) {
+      return null;
+    }
+    try {
+      const html = readText(resolvedPath);
+      const body = extractBodyHtml(html);
+      exerciseHtmlCnCache.set(questionId, body);
+      return body;
+    } catch (error) {
+      return null;
+    }
+  }
+
   function getQuestionIndex(questionId) {
     return questionIndexMap.get(questionId) || null;
   }
@@ -437,7 +476,8 @@ function createContentLoader() {
     getPatternIndex,
     getSolutionText,
     getSolutionHtml,
-    getExerciseHtml
+    getExerciseHtml,
+    getExerciseHtmlZh
   };
 }
 

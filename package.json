@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node src/server.js",
     "index:exercise-html": "node scripts/exercise_html_indexer.js",
-    "index:solution-html": "node scripts/solution_html_indexer.js"
+    "index:solution-html": "node scripts/solution_html_indexer.js",
+    "translate:exercise-md-cn": "node scripts/translate_exercise_md_cn.js"
   },
   "dependencies": {
     "@shd101wyy/mume": "^0.7.4",

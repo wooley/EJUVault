@@ -3,8 +3,7 @@ const path = require('path');
 const mume = require('@shd101wyy/mume');
 
 const DEFAULT_CONTENT_DIR = path.join(process.cwd(), 'content');
-const DEFAULT_OUTPUT_DIR = path.join(DEFAULT_CONTENT_DIR, 'index', 'exercise_html');
-const DEFAULT_OUTPUT_DIR_CN = path.join(DEFAULT_CONTENT_DIR, 'index', 'exercise_html_cn');
+const DEFAULT_OUTPUT_DIR = path.join(DEFAULT_CONTENT_DIR, 'index', 'exercise_html_cn');
 let katexConfigured = false;
 
 async function ensureKatexConfig(configPath) {
@@ -28,8 +27,7 @@ function parseArgs() {
   const args = process.argv.slice(2);
   const result = {
     contentDir: DEFAULT_CONTENT_DIR,
-    outputDir: DEFAULT_OUTPUT_DIR,
-    outputDirCn: DEFAULT_OUTPUT_DIR_CN
+    outputDir: DEFAULT_OUTPUT_DIR
   };
   for (let i = 0; i < args.length; i += 1) {
     const arg = args[i];
@@ -38,9 +36,6 @@ function parseArgs() {
       i += 1;
     } else if (arg === '--out' && args[i + 1]) {
       result.outputDir = path.resolve(args[i + 1]);
-      i += 1;
-    } else if (arg === '--out-cn' && args[i + 1]) {
-      result.outputDirCn = path.resolve(args[i + 1]);
       i += 1;
     }
   }
@@ -142,13 +137,10 @@ function normalizeExportHtml(html) {
   return normalized;
 }
 
-async function buildExerciseHtmlIndex({ contentDir, sourceSubdir, outputDir, indexFileName }) {
-  const exerciseDir = path.join(contentDir, sourceSubdir);
-  const indexPath = path.join(contentDir, 'index', indexFileName);
-
-  if (!fs.existsSync(exerciseDir)) {
-    return { questions: [], indexPath, skipped: true };
-  }
+async function main() {
+  const { contentDir, outputDir } = parseArgs();
+  const exerciseDir = path.join(contentDir, 'exercise_cn');
+  const indexPath = path.join(contentDir, 'index', 'exercise_html_cn_index.json');
 
   const files = listFiles(exerciseDir, '.md');
   const questions = [];
@@ -174,33 +166,8 @@ async function buildExerciseHtmlIndex({ contentDir, sourceSubdir, outputDir, ind
   fs.mkdirSync(path.dirname(indexPath), { recursive: true });
   fs.writeFileSync(indexPath, JSON.stringify(payload, null, 2));
 
-  return { questions, indexPath, skipped: false };
-}
-
-async function main() {
-  const { contentDir, outputDir, outputDirCn } = parseArgs();
-
-  const ja = await buildExerciseHtmlIndex({
-    contentDir,
-    sourceSubdir: 'exercise',
-    outputDir,
-    indexFileName: 'exercise_html_index.json'
-  });
-  console.log(`Generated ${ja.questions.length} exercise HTML files in ${outputDir}`);
-  console.log(`Index saved to ${ja.indexPath}`);
-
-  const zh = await buildExerciseHtmlIndex({
-    contentDir,
-    sourceSubdir: 'exercise_cn',
-    outputDir: outputDirCn,
-    indexFileName: 'exercise_html_cn_index.json'
-  });
-  if (zh.skipped) {
-    console.log('Skipped Chinese exercise HTML: content/exercise_cn not found.');
-  } else {
-    console.log(`Generated ${zh.questions.length} Chinese exercise HTML files in ${outputDirCn}`);
-    console.log(`Index saved to ${zh.indexPath}`);
-  }
+  console.log(`Generated ${questions.length} exercise HTML files in ${outputDir}`);
+  console.log(`Index saved to ${indexPath}`);
 }
 
 main().catch((error) => {

@@ -30,6 +30,16 @@ node scripts/exercise_html_indexer.js
 This builds:
 - `content/index/exercise_html_index.json`
 - `content/index/exercise_html/**.html`
+- If `content/exercise_cn/` exists, it also builds:
+  - `content/index/exercise_html_cn_index.json`
+  - `content/index/exercise_html_cn/**.html`
+
+Optional: translate exercise Markdown to Simplified Chinese (preserves frontmatter/code/math/links/images as-is):
+```bash
+OPENAI_API_KEY=... npm run translate:exercise-md-cn
+```
+This writes to:
+- `content/exercise_cn/**.md`
 
 Generate solution HTML from `content/solutions` (Markdown Preview Enhanced engine):
 ```bash
