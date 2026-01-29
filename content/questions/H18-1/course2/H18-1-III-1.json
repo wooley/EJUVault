@@ -20,14 +20,6 @@
       "\\vec{AB}\\cdot\\vec{AC}",
       "S_{\\triangle ABC}"
     ],
-    "placeholders": {
-      "A": {
-        "digits": 1
-      },
-      "B": {
-        "digits": 1
-      }
-    },
     "structure": {
       "has_case_split": false,
       "has_parameter_elimination": false,
@@ -48,5 +40,15 @@
     "group": "A,B"
   },
   "solution_ref": "data/solutions/H18-1/course2/H18-1-III-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    }
+  ]
 }

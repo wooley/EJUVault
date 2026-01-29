@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H28-1", "year": 2016, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H28-1",
+    "year": 2016,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -10,15 +16,6 @@
   "original_ja": {
     "text": "問2 座標平面上に右図のように12個の点が並んでいる。これらの点から3個の点を選び、それらを頂点とする三角形を作る。このとき、三角形が全部で何個できるかを調べよう。\nまず、12個の点から3個の点を選び出す場合の数は [KLM] 通りである。\n次に、12個の点のうち、3個以上が一直線上に並ぶ場合の数を考えよう。このような直線のうち (i)4点を通る直線は[N]本ある。(ii)3点を通る直線は[O]本ある。\nしたがって、同一直線上にあり、三角形の頂点とならない3点の組合せは、(i)の場合は[PQ]通りあり、(ii)の場合は[R]通りある。\n以上より、求める三角形は[STU]個である。\n特に、点(1,1)をA、点(4,1)をBとするとき、線分AB上に2つの頂点をもつ三角形は[VW]個である。",
     "formulas": [],
-    "placeholders": {
-      "KLM": { "digits": 3 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "PQ": { "digits": 2 },
-      "R": { "digits": 1 },
-      "STU": { "digits": 3 },
-      "VW": { "digits": 2 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -27,7 +24,11 @@
       "algebraic_complexity": 1
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
   "answer_ref": {
     "course": 2,
     "section": "I",
@@ -37,5 +38,35 @@
   },
   "solution_ref": "solutions/H28-1/course2/H28-1-I-2.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "PROB_CLASSICAL_COUNT"
+  "pattern_id": "PROB_CLASSICAL_COUNT",
+  "blanks": [
+    {
+      "id": "KLM",
+      "length": 3
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "PQ",
+      "length": 2
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "STU",
+      "length": 3
+    },
+    {
+      "id": "VW",
+      "length": 2
+    }
+  ]
 }

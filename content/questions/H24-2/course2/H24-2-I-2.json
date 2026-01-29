@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H24-2", "year": 2012, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H24-2",
+    "year": 2012,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "course": 2,
   "track": "science",
   "question_id": "H24-2-I-2",
@@ -7,15 +13,56 @@
   "order": 2,
   "type": "fill_in",
   "original_ja": {
-    "text": "問2　aを定数とし，xの方程式 |ax-11|=4x-10 ……① を考える。(1) ax≥11 のとき (a-[N])x=[O]，ax<11 のとき (a+[P])x=[QR]。(2) a=√7 のとき解は x=[S]([T]-√[U])/[V]。(3) aを正の整数とする。①が正の整数解をもつとき a=[W]，そのときの正の整数解は x=[X]。",
-    "placeholders": {
-      "N": { "digits": 1 }, "O": { "digits": 1 }, "P": { "digits": 1 }, "QR": { "digits": 2 },
-      "S": { "digits": 1 }, "T": { "digits": 1 }, "U": { "digits": 1 }, "V": { "digits": 1 },
-      "W": { "digits": 1 }, "X": { "digits": 1 }
-    }
+    "text": "問2　aを定数とし，xの方程式 |ax-11|=4x-10 ……① を考える。(1) ax≥11 のとき (a-[N])x=[O]，ax<11 のとき (a+[P])x=[QR]。(2) a=√7 のとき解は x=[S]([T]-√[U])/[V]。(3) aを正の整数とする。①が正の整数解をもつとき a=[W]，そのときの正の整数解は x=[X]。"
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q2" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2"
+  },
   "solution_ref": "solutions/H24-2/course2/H24-2-I-2.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "ABS_CASE_SPLIT"
+  "pattern_id": "ABS_CASE_SPLIT",
+  "blanks": [
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "QR",
+      "length": 2
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    }
+  ]
 }

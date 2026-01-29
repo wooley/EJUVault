@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R3-2", "year": 2021, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R3-2",
+    "year": 2021,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,21 +17,6 @@
   "original_ja": {
     "text": "問2 円 x^2+y^2-2y-1=0 と直線 ax-y+3a=0 が異なる2点P,Qで交わるためのaの値の範囲を求めよう。また，PQの長さが2となるようなa（a≠0）を求めよう。円の中心は([N],[O])で半径は√[P]である。直線ax-y+3a=0はaの値にかかわらず点(-[Q],[R])を通る。また中心([N],[O])と直線ax-y+3a=0の距離dは d=|[S]a-[T]|/√(a^2+[U])。したがって異なる2点で交わるためには -1/[V]<a<[W]。PQ=2のとき距離は[X]となるので a=[Y]/[Z]。",
     "formulas": [],
-    "placeholders": {
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 },
-      "X": { "digits": 1 },
-      "Y": { "digits": 1 },
-      "Z": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -35,16 +26,96 @@
     }
   },
   "solution": {
-    "outline": ["配方求圆心半径", "点到直线距离判别相交", "弦长=2反求距离=1，从而求a"],
+    "outline": [
+      "配方求圆心半径",
+      "点到直线距离判别相交",
+      "弦长=2反求距离=1，从而求a"
+    ],
     "steps": [
-      { "idx": 1, "description": "圆配方得到圆心与半径。", "math": "x^2+(y-1)^2=2\\Rightarrow C(0,1),\\ r=\\sqrt2" },
-      { "idx": 2, "description": "直线恒过定点：令y=0可见x=-3。", "math": "ax-y+3a=0\\Rightarrow a(x+3)=y\\Rightarrow (-3,0)" },
-      { "idx": 3, "description": "用距离条件 d<r 求a范围。", "math": "d=\\frac{|3a-1|}{\\sqrt{a^2+1}}<\\sqrt2\\Rightarrow -\\frac17<a<1" },
-      { "idx": 4, "description": "弦长PQ=2：用弦长公式反求d=1，再解a。", "math": "2=2\\sqrt{2-d^2}\\Rightarrow d=1\\Rightarrow a=\\frac34\\ (a\\ne0)" }
+      {
+        "idx": 1,
+        "description": "圆配方得到圆心与半径。",
+        "math": "x^2+(y-1)^2=2\\Rightarrow C(0,1),\\ r=\\sqrt2"
+      },
+      {
+        "idx": 2,
+        "description": "直线恒过定点：令y=0可见x=-3。",
+        "math": "ax-y+3a=0\\Rightarrow a(x+3)=y\\Rightarrow (-3,0)"
+      },
+      {
+        "idx": 3,
+        "description": "用距离条件 d<r 求a范围。",
+        "math": "d=\\frac{|3a-1|}{\\sqrt{a^2+1}}<\\sqrt2\\Rightarrow -\\frac17<a<1"
+      },
+      {
+        "idx": 4,
+        "description": "弦长PQ=2：用弦长公式反求d=1，再解a。",
+        "math": "2=2\\sqrt{2-d^2}\\Rightarrow d=1\\Rightarrow a=\\frac34\\ (a\\ne0)"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q2", "sub": "all", "group": "NO/P/QR/STU/V/W/X/YZ" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q2",
+    "sub": "all",
+    "group": "NO/P/QR/STU/V/W/X/YZ"
+  },
   "solution_ref": "solutions/R3-2/course2/R3-2-II-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    },
+    {
+      "id": "Z",
+      "length": 1
+    }
+  ]
 }

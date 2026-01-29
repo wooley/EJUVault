@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R3-2", "year": 2021, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R3-2",
+    "year": 2021,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,31 +17,6 @@
   "original_ja": {
     "text": "実数αに対して，方程式 log_x(3x^2-x)=α を満たす実数xの個数を調べよう。はじめに関数 y=log_x(3x^2-x) について調べる。(1) 関数の定義域は [A]/[B]<x<[C], [D]<x である。(2) y'=[E]/{x(3x-1)(log x)^2}。右辺分子[E]をzとおくと z'=[F]。よって x<[G]/[H] のとき z'[I]0， [G]/[H]<x のとき z'[J]0， x=[G]/[H] のとき z'[K]0 で，そのとき z=-log[L]。したがって定義域において y'[M]0。(3) lim_{x→[A]/[B]+0}y=[N], lim_{x→[C]-0}y=[O], lim_{x→[D]+0}y=[P]。また y=[Q]+log([R]-[S]/x)/log x と変形できるので lim_{x→∞}y=[T]。以上より，方程式を満たす実数xの個数は，[U]<αのとき[V]個，α≦[U]のとき[W]個。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -52,16 +33,140 @@
       "据图像/单调性统计方程解的个数"
     ],
     "steps": [
-      { "idx": 1, "description": "定义域：底数x>0且x≠1；真数x(3x-1)>0。", "math": "x>\\frac13,\\ x\\ne1\\Rightarrow (\\frac13,1)\\cup(1,\\infty)" },
-      { "idx": 2, "description": "用换底公式求导并化简为 y' = z / {x(3x-1)(log x)^2}。", "math": "z=3x\\log x-(3x-1)\\log(3x-1)" },
-      { "idx": 3, "description": "令 z' = 3(\\log x-\\log(3x-1))，比较得到临界点 x=1/2。", "math": "z'=3\\{\\log x-\\log(3x-1)\\},\\ z'=0\\Leftrightarrow x=\\frac12" },
-      { "idx": 4, "description": "可证z恒为负，故在定义域上 y'<0，函数分段单调递减。", "math": "y'<0" },
-      { "idx": 5, "description": "求三处极限与无穷远处极限，得到两支图像：一支覆盖全体实数，另一支(1,∞)上取值(2,∞)。", "math": "\\lim_{x\\to 1/3+}y=+\\infty,\\ \\lim_{x\\to1-}y=-\\infty,\\ \\lim_{x\\to1+}y=+\\infty,\\ \\lim_{x\\to\\infty}y=2" },
-      { "idx": 6, "description": "因此：α>2 时两支各交一次→2解；α≤2 时仅左支交一次→1解。", "math": "α>2\\Rightarrow2\\text{解},\\ α\\le2\\Rightarrow1\\text{解}" }
+      {
+        "idx": 1,
+        "description": "定义域：底数x>0且x≠1；真数x(3x-1)>0。",
+        "math": "x>\\frac13,\\ x\\ne1\\Rightarrow (\\frac13,1)\\cup(1,\\infty)"
+      },
+      {
+        "idx": 2,
+        "description": "用换底公式求导并化简为 y' = z / {x(3x-1)(log x)^2}。",
+        "math": "z=3x\\log x-(3x-1)\\log(3x-1)"
+      },
+      {
+        "idx": 3,
+        "description": "令 z' = 3(\\log x-\\log(3x-1))，比较得到临界点 x=1/2。",
+        "math": "z'=3\\{\\log x-\\log(3x-1)\\},\\ z'=0\\Leftrightarrow x=\\frac12"
+      },
+      {
+        "idx": 4,
+        "description": "可证z恒为负，故在定义域上 y'<0，函数分段单调递减。",
+        "math": "y'<0"
+      },
+      {
+        "idx": 5,
+        "description": "求三处极限与无穷远处极限，得到两支图像：一支覆盖全体实数，另一支(1,∞)上取值(2,∞)。",
+        "math": "\\lim_{x\\to 1/3+}y=+\\infty,\\ \\lim_{x\\to1-}y=-\\infty,\\ \\lim_{x\\to1+}y=+\\infty,\\ \\lim_{x\\to\\infty}y=2"
+      },
+      {
+        "idx": 6,
+        "description": "因此：α>2 时两支各交一次→2解；α≤2 时仅左支交一次→1解。",
+        "math": "α>2\\Rightarrow2\\text{解},\\ α\\le2\\Rightarrow1\\text{解}"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "III", "q": "Q1", "sub": "all", "group": "ABCD/E/F/GH/I/J/K/L/M/N/O/P/QRS/T/U/V/W" },
+  "answer_ref": {
+    "course": 2,
+    "section": "III",
+    "q": "Q1",
+    "sub": "all",
+    "group": "ABCD/E/F/GH/I/J/K/L/M/N/O/P/QRS/T/U/V/W"
+  },
   "solution_ref": "solutions/R3-2/course2/R3-2-III-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    }
+  ]
 }

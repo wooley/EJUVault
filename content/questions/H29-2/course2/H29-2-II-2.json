@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H29-2", "year": 2017, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H29-2",
+    "year": 2017,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -8,13 +14,61 @@
   "order": 2,
   "type": "fill_in",
   "original_ja": {
-    "text": "右図のように，原点を O とする xy 平面上で，AB=AC の二等辺三角形 ABC を考える。ただし，辺 AB は点 P(−1,5) を通り，辺 AC は点 Q(3,3) を通るものとする。2 点 A,B を通る直線を ℓ1，2 点 A,C を通る直線を ℓ2 とし，ℓ1 の傾きを a とすると，ℓ1,ℓ2 の方程式は ℓ1: y=ax+a+[M], ℓ2: y=−ax+[N]a+[O] である。内接円の中心を I，半径を r とすると I の座標は ([P],−[Q]/a,r) であり，r は a を用いて r=([R]a+[S])/([T]+√(a^2+[U])) と表される。特に r=5/2 のとき，頂点 A の座標は ([V]/[W],[XY]/[Z]) である。",
-    "placeholders": {
-      "M": {}, "N": {}, "O": {},
-      "P": {}, "Q": {},
-      "R": {}, "S": {}, "T": {}, "U": {},
-      "V": {}, "W": {}, "XY": {}, "Z": {}
-    }
+    "text": "右図のように，原点を O とする xy 平面上で，AB=AC の二等辺三角形 ABC を考える。ただし，辺 AB は点 P(−1,5) を通り，辺 AC は点 Q(3,3) を通るものとする。2 点 A,B を通る直線を ℓ1，2 点 A,C を通る直線を ℓ2 とし，ℓ1 の傾きを a とすると，ℓ1,ℓ2 の方程式は ℓ1: y=ax+a+[M], ℓ2: y=−ax+[N]a+[O] である。内接円の中心を I，半径を r とすると I の座標は ([P],−[Q]/a,r) であり，r は a を用いて r=([R]a+[S])/([T]+√(a^2+[U])) と表される。特に r=5/2 のとき，頂点 A の座標は ([V]/[W],[XY]/[Z]) である。"
   },
-  "pattern_id": "GEO_INSCIRCLE_COORD"
+  "pattern_id": "GEO_INSCIRCLE_COORD",
+  "blanks": [
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "XY",
+      "length": 2
+    },
+    {
+      "id": "Z",
+      "length": 1
+    }
+  ]
 }

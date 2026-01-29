@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R06-1", "year": 2024, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R06-1",
+    "year": 2024,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,26 +17,6 @@
   "original_ja": {
     "text": "aを正の定数とし，0≦x<π/2 において2つの関数 f(x)=\\sin2x，g(x)=a\\tan x を考える。曲線 y=f(x) を C1，曲線 y=g(x) を C2 とする。\n\n(1) C1 と C2 は常に原点(0,0)を共有点にもつ。C1 と C2 が原点以外の共有点をもつような a の値の範囲を調べよう。そのための条件は方程式 f(x)=g(x) ……① が x=0 以外の解をもつことである。0<x<π/2 において①を変形すると\ncos x=\\frac{\\sqrt{【A】a}}{【B】}\nを得るから，0<x<π/2 の範囲で①を満たす解が存在する正の定数 a の値の範囲は\n【C】<a<【D】 ……②\nである。\n\n(2) a が②を満たすとし，C1 と C2 の原点以外の共有点を P とする。P の x 座標を t とする。さらに，P における C1 の接線を ℓ1，C2 の接線を ℓ2 とすると，ℓ1 と ℓ2 が直交するときの a の値，および ℓ1，ℓ2 の傾きを求めよう。\n直交条件は f'(t)g'(t)=【EF】 であるから，これより\n a=\\frac{【G】}{【H】}\nを得る。\nさらに ℓ1 の傾き f'(t) と ℓ2 の傾き g'(t) は\n f'(t)=\\frac{【IJ】}{【K】},\\quad g'(t)=【L】\nとなる。\n\n(3) a=\\frac{【G】}{【H】} のとき，C1 と C2 で囲まれる図形の面積を S とおくと\nS=\\frac{【M】}{【N】}\\left(【O】+【P】\\log\\frac{【Q】}{【R】}\\right)\nである。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -39,7 +25,11 @@
       "algebraic_complexity": 4
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
   "answer_ref": {
     "course": 2,
     "section": "IV",
@@ -48,5 +38,79 @@
     "group": "AB/CD/EF/GH/IJK/L/MNOPQR"
   },
   "solution_ref": "solutions/R06-1/course2/R06-1-IV-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    }
+  ]
 }

@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H30-1", "year": 2018, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H30-1",
+    "year": 2018,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,15 +17,69 @@
   "original_ja": {
     "text": "x>0, y>0 を満たすx,yに対して y/x, x, 8/y の中で最も小さい値をmとおく。m=y/x となる点(x,y)の集合をA，m=8/y となる点(x,y)の集合をBとする。\n(1) A,Bを求めると\nA={(x,y) | [M]≦[N], [O]≦8[P]}\nB={(x,y) | 8[Q]≦[R], 8≦[S]}\n（選択肢0〜7）\n(2) xy平面上にA,Bを図示すると，Aは[T]，Bは[U]の灰色部分（選択肢0〜8）。\n(3) 点P(x,y)がA∪Bを動くとき，mの最大値を求める。以上より mは(x,y)=([V],[W])のとき最大値[X]をとる。",
     "formulas": [],
-    "placeholders": {
-      "M": { "digits": 1 }, "N": { "digits": 1 }, "O": { "digits": 1 }, "P": { "digits": 1 },
-      "Q": { "digits": 1 }, "R": { "digits": 1 }, "S": { "digits": 1 },
-      "T": { "digits": 1 }, "U": { "digits": 1 },
-      "V": { "digits": 1 }, "W": { "digits": 1 }, "X": { "digits": 1 }
-    },
-    "structure": { "has_parameter_elimination": true, "has_case_split": true, "algebraic_complexity": 3 }
+    "structure": {
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "algebraic_complexity": 3
+    }
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q2", "sub": "mix", "group": "M~S/TU/VWX" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q2",
+    "sub": "mix",
+    "group": "M~S/TU/VWX"
+  },
   "solution_ref": "solutions/H30-1/course2/H30-1-II-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    }
+  ]
 }

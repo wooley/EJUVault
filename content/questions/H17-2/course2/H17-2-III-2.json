@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H17-2", "year": 2005, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H17-2",
+    "year": 2005,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,16 +17,6 @@
   "original_ja": {
     "text": "問2　一辺の長さが1の立方体ABCD-EFGHの辺CD，EF上にそれぞれ点M,Nを\nCM:MD=1:1，EN:NF=3:1\nとなるようにとる。また，線分MN上に点Pをとり\nMP=tMN\nとおく。さらに \\overrightarrow{AB}=\\vec a,\\ \\overrightarrow{AD}=\\vec b,\\ \\overrightarrow{AE}=\\vec c とする。\n\n(1) \\overrightarrow{AM},\\overrightarrow{AN},\\overrightarrow{AP} を \\vec a,\\vec b,\\vec c を用いて表すと\n\\overrightarrow{AM}=\\frac{[H]}{[I]}\\vec a+\\vec b,\n\\overrightarrow{AN}=\\frac{[J]}{[K]}\\vec a+\\vec c,\n\\overrightarrow{AP}=\\frac{t+[L]}{[M]}\\vec a+(1-t)\\vec b+t\\vec c\nである。\n\n(2) AP\\perp MN となるのは\nt=\\frac{[NO]}{[PQ]}\nのときである。",
     "formulas": [],
-    "placeholders": {
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "NO": { "digits": 2 },
-      "PQ": { "digits": 2 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -32,14 +28,70 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "用立方体边向量表示各点坐标", "math": "A=\\vec0,\\ C=\\vec a+\\vec b,\\ D=\\vec b,\\ E=\\vec c,\\ F=\\vec a+\\vec c" },
-      { "idx": 2, "description": "内分求 M,N，再得 AM, AN", "math": "M=\\tfrac12(C+D)=\\tfrac12\\vec a+\\vec b;\\ N=E+\\tfrac34\\vec a=\\tfrac34\\vec a+\\vec c" },
-      { "idx": 3, "description": "P=M+t(N-M) 得 AP", "math": "\\overrightarrow{AP}=\\left(\\tfrac12+\\tfrac t4\\right)\\vec a+(1-t)\\vec b+t\\vec c=\\tfrac{t+2}{4}\\vec a+(1-t)\\vec b+t\\vec c" },
-      { "idx": 4, "description": "垂直条件：AP·MN=0（a,b,c互相垂直且单位）", "math": "MN=N-M=\\tfrac14\\vec a-\\vec b+\\vec c;\\ \\overrightarrow{AP}\\cdot\\overrightarrow{MN}=0\\Rightarrow t=\\tfrac{14}{33}" }
+      {
+        "idx": 1,
+        "description": "用立方体边向量表示各点坐标",
+        "math": "A=\\vec0,\\ C=\\vec a+\\vec b,\\ D=\\vec b,\\ E=\\vec c,\\ F=\\vec a+\\vec c"
+      },
+      {
+        "idx": 2,
+        "description": "内分求 M,N，再得 AM, AN",
+        "math": "M=\\tfrac12(C+D)=\\tfrac12\\vec a+\\vec b;\\ N=E+\\tfrac34\\vec a=\\tfrac34\\vec a+\\vec c"
+      },
+      {
+        "idx": 3,
+        "description": "P=M+t(N-M) 得 AP",
+        "math": "\\overrightarrow{AP}=\\left(\\tfrac12+\\tfrac t4\\right)\\vec a+(1-t)\\vec b+t\\vec c=\\tfrac{t+2}{4}\\vec a+(1-t)\\vec b+t\\vec c"
+      },
+      {
+        "idx": 4,
+        "description": "垂直条件：AP·MN=0（a,b,c互相垂直且单位）",
+        "math": "MN=N-M=\\tfrac14\\vec a-\\vec b+\\vec c;\\ \\overrightarrow{AP}\\cdot\\overrightarrow{MN}=0\\Rightarrow t=\\tfrac{14}{33}"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "III", "q": "Q2", "sub": "(1)(2)", "group": "H/I/J/K/L/M/NO/PQ" },
+  "answer_ref": {
+    "course": 2,
+    "section": "III",
+    "q": "Q2",
+    "sub": "(1)(2)",
+    "group": "H/I/J/K/L/M/NO/PQ"
+  },
   "solution_ref": "solutions/H17-2/course2/H17-2-III-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "NO",
+      "length": 2
+    },
+    {
+      "id": "PQ",
+      "length": 2
+    }
+  ]
 }

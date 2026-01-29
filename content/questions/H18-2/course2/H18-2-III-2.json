@@ -23,29 +23,6 @@
   "original_ja": {
     "text": "問2　次の各設問に答えなさい。\n(1) 0°≦x<360°とする。関数 f(x)=2sin x - cos 2x は x=[HI]°のとき最大値[J]をとり，x=[KLM]°およびx=[NOP]°のとき最小値[QR]/[S]をとる。ただし，[KLM]°<[NOP]°とする。\n(2) 10^x=a, 10^y=b, xy≠0 とするとき log_{\\sqrt{a}} b^{12} = ([T]y)/x と表せる。",
     "formulas": [],
-    "placeholders": {
-      "HI": {
-        "digits": 2
-      },
-      "J": {
-        "digits": 1
-      },
-      "KLM": {
-        "digits": 3
-      },
-      "NOP": {
-        "digits": 3
-      },
-      "QR": {
-        "digits": 2
-      },
-      "S": {
-        "digits": 1
-      },
-      "T": {
-        "digits": 2
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -90,5 +67,35 @@
     "group": "HI/J/KLM/NOP/QR/S/T"
   },
   "solution_ref": "data/solutions/H18-2/course2/H18-2-III-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "KLM",
+      "length": 3
+    },
+    {
+      "id": "NOP",
+      "length": 3
+    },
+    {
+      "id": "QR",
+      "length": 2
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 2
+    }
+  ]
 }

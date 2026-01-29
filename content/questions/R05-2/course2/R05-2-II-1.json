@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R05-2", "year": 2023, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R05-2",
+    "year": 2023,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,7 +17,15 @@
   "original_ja": {
     "text": "問1　次の文中の [C]，[G]，[H] には，この問の下の選択肢 ⓪〜⑨ の中から適するものを選びなさい。また，その他の□には，適する数を入れなさい。\n\n長方形 ABCD の辺 AB を 1:5 に内分する点を E とし，辺 CD を 1:2 に内分する点を F とする。また，対角線 AC と線分 EF との交点を G とする。このとき，AB の長さと cos∠CGF の値を求める。\nBC=√3 で，線分 BG と AC が直交しているとする。\n以下，AB=\\vec a，AD=\\vec b，∠CGF=θ とおく。\n\n線分 AG と線分 GC の比をもっとも簡単な整数比で表すと AG:GC=[A]:[B] であるから，BG は \\vec a,\\vec b を用いて \\overrightarrow{BG}=[C] と表せる。\nしたがって，\\overrightarrow{BG}\\cdot\\overrightarrow{AC}=[D] より，AB=\\sqrt{[E]/[F]} である。\n\nまた，\\overrightarrow{GC} と \\overrightarrow{GF} は \\vec a,\\vec b を用いて \\overrightarrow{GC}=[G]，\\overrightarrow{GF}=[H] と表されるので\n\\overrightarrow{GC}\\cdot\\overrightarrow{GF}=[I]/[J]\nとなる。\nしたがって，cosθ=([K]√[L])/[M] が得られる。\n\n（選択肢 ⓪〜⑨）\n⓪ 1/3(\\vec a+2\\vec b)\n① 1/3(-2\\vec a+\\vec b)\n② 1/3(2\\vec a-\\vec b)\n③ 1/3(\\vec a-2\\vec b)\n④ 1/6(\\vec a+2\\vec b)\n⑤ 1/6(-2\\vec a+\\vec b)\n⑥ 1/6(2\\vec a-\\vec b)\n⑦ 1/6(\\vec a-2\\vec b)\n⑧ 1/3(\\vec a+\\vec b)\n⑨ 2/3(\\vec a+\\vec b)"
   },
-  "solution_ref": { "path": "solutions/R05-2/course2/R05-2-II-1.zh.md" },
-  "answer_ref": { "path": "answers/ai_ans.json", "key": "R05-2-II-1" },
+  "solution_ref": {
+    "path": "solutions/R05-2/course2/R05-2-II-1.zh.md"
+  },
+  "answer_ref": {
+    "path": "answers/ai_ans.json",
+    "key": "R05-2-II-1",
+    "course": 2,
+    "section": "II",
+    "q": "Q1"
+  },
   "tagging_status": "generated"
 }

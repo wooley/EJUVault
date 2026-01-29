@@ -21,38 +21,6 @@
       "g(x)=\\frac{5+\\log x}{1+\\log x}",
       "h(x)=f(g(x))"
     ],
-    "placeholders": {
-      "A": {
-        "digits": 1
-      },
-      "B": {
-        "digits": 1
-      },
-      "C": {
-        "digits": 1
-      },
-      "D": {
-        "digits": 1
-      },
-      "E": {
-        "digits": 1
-      },
-      "F": {
-        "digits": 1
-      },
-      "GH": {
-        "digits": 2
-      },
-      "I": {
-        "digits": 1
-      },
-      "J": {
-        "digits": 1
-      },
-      "K": {
-        "digits": 1
-      }
-    },
     "structure": {
       "has_case_split": false,
       "has_parameter_elimination": false,
@@ -73,5 +41,47 @@
     "group": "A/B,C,D,E,F,GH,I,J/K"
   },
   "solution_ref": "data/solutions/H18-1/course2/H18-1-IV-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "GH",
+      "length": 2
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    }
+  ]
 }

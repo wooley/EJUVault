@@ -16,20 +16,6 @@
   "original_ja": {
     "text": "問2　a>0 とし，x の2次関数 y=3ax^2 ……① を考える。\n(1) ①のグラフを x軸方向に2a，y軸方向に12aだけ平行移動すると，そのグラフを表す2次関数は\ny=3a(x−[I]a)^2+[JK]a\nである。さらに，このグラフと直線 y=12a に関して対称なグラフを表す2次関数は\ny=[LM]a(x^2−[N]ax+[O]a^2−[P]) ……②\nとなる。①と②のグラフが異なる2点で交わるとき，a のとりうる値の範囲は\n0<a<√[Q]\nである。\n(2) (1)において a が整数の場合を考える。このとき，①と②のグラフの交点の x座標は [R] と [S]（[R]<[S]）である。さらに，直線 x=k（[R]<k<[S]）と①，②のグラフの交点をそれぞれ P,Q とする。線分PQの長さを k の式で表すと\nPQ=−[T]k^2+[UV]k\nとなるから，k=[W] のとき，PQの値は最大となる。",
     "formulas": [],
-    "placeholders": {
-      "I": { "digits": 1 },
-      "JK": { "digits": 2 },
-      "LM": { "digits": 2 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "UV": { "digits": 2 },
-      "W": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -84,5 +70,61 @@
   "solution_ref": "data/solutions/H21-2/course2/H21-2-I-2.zh.md",
   "tagging_status": "ok",
   "pattern_id": "QF_TRANSFORM_SHIFT",
-  "tags": ["二次函数", "平移", "对称", "判别式", "最值"]
+  "tags": [
+    "二次函数",
+    "平移",
+    "对称",
+    "判别式",
+    "最值"
+  ],
+  "blanks": [
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "JK",
+      "length": 2
+    },
+    {
+      "id": "LM",
+      "length": 2
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "UV",
+      "length": 2
+    },
+    {
+      "id": "W",
+      "length": 1
+    }
+  ]
 }

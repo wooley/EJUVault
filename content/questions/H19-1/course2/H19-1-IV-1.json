@@ -16,38 +16,6 @@
   "original_ja": {
     "text": "問1 f(x)=sin x cos^3 x, g(x)=\\sqrt{4-x} とする。\n(1) f'(x)=cos^4 x-[A] sin^[B] x cos^2 x, g'(x)=[CD]/([E]\\sqrt{4-x})\n(2) 曲線y=g(x)の接線のうち，曲線y=f(x)の点(\\pi/4,f(\\pi/4))の接線と同じ傾きをもつものをℓとする。このとき接点は([F],[G])，ℓは y=[HI]/[J] x + [K]/[L]",
     "formulas": [],
-    "placeholders": {
-      "A": {
-        "digits": 1
-      },
-      "B": {
-        "digits": 1
-      },
-      "CD": {
-        "digits": 2
-      },
-      "E": {
-        "digits": 1
-      },
-      "F": {
-        "digits": 1
-      },
-      "G": {
-        "digits": 1
-      },
-      "HI": {
-        "digits": 2
-      },
-      "J": {
-        "digits": 1
-      },
-      "K": {
-        "digits": 1
-      },
-      "L": {
-        "digits": 1
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -94,5 +62,47 @@
     "导数",
     "切线",
     "斜率匹配"
+  ],
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "CD",
+      "length": 2
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    }
   ]
 }

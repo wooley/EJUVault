@@ -81,11 +81,13 @@ function toWorkspacePath(filePath) {
 }
 
 function extractBlankIds(question) {
+  if (Array.isArray(question.blanks)) {
+    return question.blanks
+      .map((blank) => (typeof blank === 'string' ? blank : blank.id))
+      .filter(Boolean);
+  }
   if (question.original_ja && question.original_ja.placeholders) {
     return Object.keys(question.original_ja.placeholders);
-  }
-  if (Array.isArray(question.blanks)) {
-    return question.blanks.map((blank) => blank.id).filter(Boolean);
   }
   if (question.structure && Array.isArray(question.structure.blanks)) {
     return question.structure.blanks.slice();

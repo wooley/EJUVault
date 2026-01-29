@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R4-1", "year": 2022, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R4-1",
+    "year": 2022,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,15 +17,6 @@
   "original_ja": {
     "text": "a を正の整数とする。区間 0≤x≤2π/3 で定義された 2つの関数 f(x)=3cosx-a sin^3x, g(x)=a cos^3x-3 sinx を考える。\n(1) f(x)-g(x) は (sinx+cosx)([A]-a+(a/[B])sin2x) と変形できる。このとき方程式 [A]-a+(a/[B])sin2x=0 が 0≤x≤2π/3 で解をもつならば [C]≤a≤[C]+3 である。\n(2) 以下 a=4 とする。f'(x)=-[D]sinx([E]+[F]sin2x) より f(x) は x=[G]π/[HI] で極小値をもつ。また g'(x)=-[J]cosx([K]+[L]sin2x) より g(x) は x=π/[M] で極小値，x=[N]π/[OP] で極大値をもつ。\nさらに共有点の x 座標が [Q]/[R]π と [S]/[TU]π であるから，囲まれた部分の面積 S は ∫(f-g)dx で求まり S=[V]√[W]/[X] である。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 },
-      "D": { "digits": 1 }, "E": { "digits": 1 }, "F": { "digits": 1 },
-      "G": { "digits": 1 }, "HI": { "digits": 2 },
-      "J": { "digits": 1 }, "K": { "digits": 1 }, "L": { "digits": 1 },
-      "M": { "digits": 1 }, "N": { "digits": 1 }, "OP": { "digits": 2 },
-      "Q": { "digits": 1 }, "R": { "digits": 2 }, "S": { "digits": 1 }, "TU": { "digits": 2 },
-      "V": { "digits": 1 }, "W": { "digits": 1 }, "X": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -31,15 +28,127 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "先化简差：用 sin^3+cos^3=(sin+cos)(1-sin cos)。", "math": "f-g=3(\\sin x+\\cos x)-a(\\sin^3x+\\cos^3x)=(\\sin x+\\cos x)\\left(3-a+\\frac{a}{2}\\sin2x\\right)" },
-      { "idx": 2, "description": "(1) 令括号为0：sin2x=2(a-3)/a，并用 2x∈[0,4π/3] 的取值范围判断 a。", "math": "\\sin2x\\in\\left[-\\frac{\\sqrt3}{2},1\\right]\\Rightarrow 3\\le a\\le 6" },
-      { "idx": 3, "description": "(2) 取 a=4，求导并找临界点。", "math": "f'(x)=-3\\sin x(1+2\\sin2x),\\ g'(x)=-3\\cos x(1+2\\sin2x)" },
-      { "idx": 4, "description": "求交点：f-g=0 ⇒ -1+2 sin2x=0 ⇒ x=π/12,5π/12。", "math": "" },
-      { "idx": 5, "description": "面积：S=∫_{π/12}^{5π/12}(f-g)dx，并化为三倍角余弦积分。", "math": "f-g=(\\sin x+\\cos x)(-1+2\\sin2x)=-\\sqrt2\\cos(3x+\\pi/4)\\Rightarrow S=\\frac{2\\sqrt2}{3}" }
+      {
+        "idx": 1,
+        "description": "先化简差：用 sin^3+cos^3=(sin+cos)(1-sin cos)。",
+        "math": "f-g=3(\\sin x+\\cos x)-a(\\sin^3x+\\cos^3x)=(\\sin x+\\cos x)\\left(3-a+\\frac{a}{2}\\sin2x\\right)"
+      },
+      {
+        "idx": 2,
+        "description": "(1) 令括号为0：sin2x=2(a-3)/a，并用 2x∈[0,4π/3] 的取值范围判断 a。",
+        "math": "\\sin2x\\in\\left[-\\frac{\\sqrt3}{2},1\\right]\\Rightarrow 3\\le a\\le 6"
+      },
+      {
+        "idx": 3,
+        "description": "(2) 取 a=4，求导并找临界点。",
+        "math": "f'(x)=-3\\sin x(1+2\\sin2x),\\ g'(x)=-3\\cos x(1+2\\sin2x)"
+      },
+      {
+        "idx": 4,
+        "description": "求交点：f-g=0 ⇒ -1+2 sin2x=0 ⇒ x=π/12,5π/12。",
+        "math": ""
+      },
+      {
+        "idx": 5,
+        "description": "面积：S=∫_{π/12}^{5π/12}(f-g)dx，并化为三倍角余弦积分。",
+        "math": "f-g=(\\sin x+\\cos x)(-1+2\\sin2x)=-\\sqrt2\\cos(3x+\\pi/4)\\Rightarrow S=\\frac{2\\sqrt2}{3}"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "IV", "q": "Q1", "sub": "(1)(2)", "group": "AB/C/DEF/GHI/JKL/M/NOP/QR/STU/VWX" },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q1",
+    "sub": "(1)(2)",
+    "group": "AB/C/DEF/GHI/JKL/M/NOP/QR/STU/VWX"
+  },
   "solution_ref": "solutions/R4-1/course2/R4-1-IV-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "OP",
+      "length": 2
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 2
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "TU",
+      "length": 2
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    }
+  ]
 }

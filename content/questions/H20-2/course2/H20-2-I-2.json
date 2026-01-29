@@ -17,19 +17,6 @@
   "original_ja": {
     "text": "P=6ab+9a-4b-6 とする。\n(1) Pは P=([N]a-[O])([P]b+[Q]) と因数分解できる。\n(2) a=\\sqrt6/3, P=\\sqrt3-\\sqrt2 のとき，b=\\frac{\\sqrt{[R]}-[S]}{[T]} である。\n(3) P=17 を満たす整数 a,b の組は (a,b)=([U],[V]), (a,b)=([WX],[YZ]) の2組である。",
     "formulas": [],
-    "placeholders": {
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "WX": { "digits": 2 },
-      "YZ": { "digits": 2 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -45,9 +32,21 @@
       "P=17 は因数分解形から整数解を列挙"
     ],
     "steps": [
-      { "idx": 1, "description": "グループ分けして因数分解", "math": "6ab+9a-4b-6=3a(2b+3)-2(2b+3)=(3a-2)(2b+3)" },
-      { "idx": 2, "description": "a, P を代入して b を解く", "math": "(3a-2)(2b+3)=\\sqrt3-\\sqrt2,\\ 3a=\\sqrt6 \\Rightarrow 2b+3=\\frac{\\sqrt3-\\sqrt2}{\\sqrt6-2}=\\frac{\\sqrt2}{2}" },
-      { "idx": 3, "description": "P=17 を満たす整数解を因数で場合分け", "math": "(3a-2)(2b+3)=17" }
+      {
+        "idx": 1,
+        "description": "グループ分けして因数分解",
+        "math": "6ab+9a-4b-6=3a(2b+3)-2(2b+3)=(3a-2)(2b+3)"
+      },
+      {
+        "idx": 2,
+        "description": "a, P を代入して b を解く",
+        "math": "(3a-2)(2b+3)=\\sqrt3-\\sqrt2,\\ 3a=\\sqrt6 \\Rightarrow 2b+3=\\frac{\\sqrt3-\\sqrt2}{\\sqrt6-2}=\\frac{\\sqrt2}{2}"
+      },
+      {
+        "idx": 3,
+        "description": "P=17 を満たす整数解を因数で場合分け",
+        "math": "(3a-2)(2b+3)=17"
+      }
     ],
     "symbolic_steps": []
   },
@@ -59,5 +58,51 @@
     "group": "N/O/P/Q/R/S/T/U/V/WX/YZ"
   },
   "solution_ref": "solutions/H20-2/course2/H20-2-I-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "WX",
+      "length": 2
+    },
+    {
+      "id": "YZ",
+      "length": 2
+    }
+  ]
 }

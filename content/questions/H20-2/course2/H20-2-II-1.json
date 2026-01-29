@@ -17,13 +17,6 @@
   "original_ja": {
     "text": "等比数列 {a_n}(n=1,2,3,...) は，初項から第10項までの和が93であり\n a1-a2+a3-a4+...+a9-a10=31 を満たす。\n(1) {a_n} の公比は [A]/[B]，初項は [CDE]/[FG] である。\n(2) また 1-a1/a2+a1/a3-...+a1/a10= -[HIJ] である。（IIの解答欄K〜Zは空欄のまま）",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "CDE": { "digits": 3 },
-      "FG": { "digits": 2 },
-      "HIJ": { "digits": 3 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -39,10 +32,26 @@
       "比の形から a1/ak を等比で処理して交代和を計算"
     ],
     "steps": [
-      { "idx": 1, "description": "S10 と交代和を等比和で表す", "math": "S10=a\\frac{1-r^{10}}{1-r}=93,\\ T=a\\frac{1-r^{10}}{1+r}=31" },
-      { "idx": 2, "description": "比を取って r を解く", "math": "\\frac{93}{31}=\\frac{1+r}{1-r}\\Rightarrow r=\\frac12" },
-      { "idx": 3, "description": "r を代入して a を求める", "math": "31=a\\frac{1-(1/2)^{10}}{1+1/2}=a\\frac{1023}{1536}\\Rightarrow a=\\frac{512}{11}" },
-      { "idx": 4, "description": "a1/ak=1/r^{k-1} を用いて交代和を計算", "math": "1-2+4-\\cdots-512=\\frac{1-(-2)^{10}}{1+2}=-341" }
+      {
+        "idx": 1,
+        "description": "S10 と交代和を等比和で表す",
+        "math": "S10=a\\frac{1-r^{10}}{1-r}=93,\\ T=a\\frac{1-r^{10}}{1+r}=31"
+      },
+      {
+        "idx": 2,
+        "description": "比を取って r を解く",
+        "math": "\\frac{93}{31}=\\frac{1+r}{1-r}\\Rightarrow r=\\frac12"
+      },
+      {
+        "idx": 3,
+        "description": "r を代入して a を求める",
+        "math": "31=a\\frac{1-(1/2)^{10}}{1+1/2}=a\\frac{1023}{1536}\\Rightarrow a=\\frac{512}{11}"
+      },
+      {
+        "idx": 4,
+        "description": "a1/ak=1/r^{k-1} を用いて交代和を計算",
+        "math": "1-2+4-\\cdots-512=\\frac{1-(-2)^{10}}{1+2}=-341"
+      }
     ],
     "symbolic_steps": []
   },
@@ -54,5 +63,27 @@
     "group": "A/B/CDE/FG/HIJ"
   },
   "solution_ref": "solutions/H20-2/course2/H20-2-II-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "CDE",
+      "length": 3
+    },
+    {
+      "id": "FG",
+      "length": 2
+    },
+    {
+      "id": "HIJ",
+      "length": 3
+    }
+  ]
 }

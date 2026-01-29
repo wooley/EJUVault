@@ -21,35 +21,6 @@
       "S_n = n a_n - 2n^3 + 2n",
       "lim_{n\\to\\infty} \\frac{S_n}{n a_n}"
     ],
-    "placeholders": {
-      "G": {
-        "digits": 1
-      },
-      "H": {
-        "digits": 1
-      },
-      "I": {
-        "digits": 1
-      },
-      "J": {
-        "digits": 1
-      },
-      "K": {
-        "digits": 1
-      },
-      "L": {
-        "digits": 1
-      },
-      "M": {
-        "digits": 1
-      },
-      "N": {
-        "digits": 1
-      },
-      "O": {
-        "digits": 1
-      }
-    },
     "structure": {
       "has_case_split": false,
       "has_parameter_elimination": false,
@@ -70,5 +41,43 @@
     "group": "G,H,I,J,K,L,M,N/O"
   },
   "solution_ref": "data/solutions/H18-1/course2/H18-1-II-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    }
+  ]
 }

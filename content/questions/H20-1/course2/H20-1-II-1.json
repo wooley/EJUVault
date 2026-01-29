@@ -14,30 +14,6 @@
   "type": "fill_in",
   "original_ja": {
     "text": "等差数列{a_n}(n=1,2,3,...)において a_5=-27, a_16=28 とする。(1) 公差をdとすると，a_1+[A]d=[BCD], a_1+[EF]d=[GH] を得る。これより a_1=[IJK], d=[L] である。(2) 初項から第n項までの和 S_n を n の式で表すと S_n=(n/2)([M]n-[NO]) となる。(3) T_n=2^{a_1}+2^{a_2}+...+2^{a_n} を n の式で表すと T_n=(1/2^{[PQ]})·(([RS]^n-[T])/[UV]) となる。",
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 }
-    },
     "structure": {
       "arithmetic_progression": true,
       "sum_formula": true,
@@ -51,6 +27,60 @@
   },
   "solution_ref": "solutions/H20-1/course2/H20-1-II-1.zh.md",
   "pattern_id": "SEQ_AP_SOLVE_SUM_GEOM",
-  "tags": ["等差数列", "和の公式", "等比数列"],
-  "spec_version": "1.4"
+  "tags": [
+    "等差数列",
+    "和の公式",
+    "等比数列"
+  ],
+  "spec_version": "1.4",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "BCD",
+      "length": 3
+    },
+    {
+      "id": "EF",
+      "length": 2
+    },
+    {
+      "id": "GH",
+      "length": 2
+    },
+    {
+      "id": "IJK",
+      "length": 3
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "NO",
+      "length": 2
+    },
+    {
+      "id": "PQ",
+      "length": 2
+    },
+    {
+      "id": "RS",
+      "length": 2
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "UV",
+      "length": 2
+    }
+  ]
 }

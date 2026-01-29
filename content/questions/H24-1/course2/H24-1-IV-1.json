@@ -19,19 +19,6 @@
       "-a/2-4<x<-2",
       "f'(x)=[A]([B]x+a)(x+[C])/([D]x+a+[E])"
     ],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -54,5 +41,51 @@
   },
   "solution_ref": "solutions/H24-1/course2/H24-1-IV-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "CALC_MINMAX"
+  "pattern_id": "CALC_MINMAX",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    }
+  ]
 }

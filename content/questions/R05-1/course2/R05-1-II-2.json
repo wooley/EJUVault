@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R05-1", "year": 2023, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R05-1",
+    "year": 2023,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,20 +17,6 @@
   "original_ja": {
     "text": "問2　a,bは実数とし，複素数平面上の異なる3点A(z1)，B(z2)，C(z3)に対して\n\n(z3-z2)/(z2-z1)=a+bi\n\nとおく。\n\n(1) 次の文中の[M]と[N]には，この問の下の選択肢0〜3の中から適するものを選びなさい。\n　a=0ならば，[M]となり，b=0ならば，[N]となる。\n　0: 直線ABと直線BCは垂直\n　1: 直線BCと直線CAは垂直\n　2: 直線CAと直線ABは垂直\n　3: 直線ABと直線BCは同一直線\n\n(2) 次の文中の[P]と[Q]には，この問の下の選択肢0〜8の中から適するものを選びなさい。また，その他の□には，適する数または符号を入れなさい。\n　三角形ABCの∠A,∠B,∠Cの大きさをそれぞれA,B,Cで表す。\n\na = ((i cosA + sinA)(i cosB - sinB))/(cosC - i sinC),\n b=√3\n\nを満たす三角形ABCについて考える。このaの右辺は\n\n((i cosA + sinA)(i cosB - sinB))/(cosC - i sinC)\n = [O](cos[P] + i sin[P])\n\nと変形できる。aが実数であるから，三角形ABCは [Q]=π/2 の直角三角形であり，a=[RS]である。\n\nまた，a=[RS]，b=√3であるから\n\nθ = arg((z3-z2)/(z2-z1)) = [T]/[U] π,\n |(z3-z2)/(z2-z1)| = [V]\n\nとなる。ただし，偏角θの範囲は0≦θ<2πとする。したがって，三角形ABCは\n\nA=π/[W],\n B=π/[X],\n C=π/[Y]\n\nの直角三角形である。",
     "formulas": [],
-    "placeholders": {
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 2 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "RS": { "digits": 2 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 },
-      "X": { "digits": 1 },
-      "Y": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -40,13 +32,81 @@
       "给定 b=√3 与得到的 a，可确定模与辐角，从而确定三角形角度。"
     ],
     "steps": [
-      { "idx": 1, "description": "a=0 时比为纯虚数 ⇒ AB ⟂ BC；b=0 时比为实数 ⇒ AB 与 BC 共线。", "math": "arg=\\pm\\pi/2\\ or\\ 0,\\pi" },
-      { "idx": 2, "description": "由给定 a,b 求比的模与辐角。", "math": "|a+bi|,\\ \\arg(a+bi)" },
-      { "idx": 3, "description": "用方向转角与三角形内角关系确定 A,B,C。", "math": "B=\\pi-\\theta,\\ A+B+C=\\pi" }
+      {
+        "idx": 1,
+        "description": "a=0 时比为纯虚数 ⇒ AB ⟂ BC；b=0 时比为实数 ⇒ AB 与 BC 共线。",
+        "math": "arg=\\pm\\pi/2\\ or\\ 0,\\pi"
+      },
+      {
+        "idx": 2,
+        "description": "由给定 a,b 求比的模与辐角。",
+        "math": "|a+bi|,\\ \\arg(a+bi)"
+      },
+      {
+        "idx": 3,
+        "description": "用方向转角与三角形内角关系确定 A,B,C。",
+        "math": "B=\\pi-\\theta,\\ A+B+C=\\pi"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q2", "sub": null, "group": "M/N/O/P/Q/RS/TU/V/W/X/Y" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q2",
+    "sub": null,
+    "group": "M/N/O/P/Q/RS/TU/V/W/X/Y"
+  },
   "solution_ref": "solutions/R05-1/course2/R05-1-II-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 2
+    },
+    {
+      "id": "RS",
+      "length": 2
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    }
+  ]
 }

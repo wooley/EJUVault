@@ -16,18 +16,6 @@
   "original_ja": {
     "text": "問2　a は正の実数とする。2つの曲線 C1: y=3/x, C2: y=a/x^2 の交点を P とし，C2 の点Pにおける接線を ℓ とする。C1 と ℓ で囲まれた部分の面積 S を求めよう。\n\nP の座標は (a/[N], [O]/a)。\nよって ℓ の方程式は y=−[PQ]/(a^2) x + [RS]/a。\nしたがって p=a/[T], q=a/[U] (p<q) とおくとき\nS=[ [V] ]_p^q を計算することで求まる（V は 0〜5 から選ぶ）。\nよって S=[W]/[X] − 3 log [Y]。",
     "formulas": [],
-    "placeholders": {
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "PQ": { "digits": 2 },
-      "RS": { "digits": 2 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 },
-      "X": { "digits": 1 },
-      "Y": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -43,12 +31,36 @@
       "C1 と接線の交点2つを求めて積分で面積を出す"
     ],
     "steps": [
-      { "idx": 1, "description": "交点：3/x=a/x^2 ⇒ 3x=a ⇒ x=a/3。y=3/(a/3)=9/a。", "math": "P\\left(\\frac{a}{3},\\frac{9}{a}\\right)" },
-      { "idx": 2, "description": "C2: y=a x^{-2} の導関数は y'=-2a/x^3。x=a/3 で傾き -54/a^2。", "math": "m=-\\frac{54}{a^2}" },
-      { "idx": 3, "description": "接線：y-9/a=-(54/a^2)(x-a/3) ⇒ y=-(54/a^2)x+27/a。", "math": "y=-\\frac{54}{a^2}x+\\frac{27}{a}" },
-      { "idx": 4, "description": "C1 と直線の交点：3/x=-(54/a^2)x+27/a。解くと x=a/6, a/3。よって p=a/6, q=a/3。", "math": "p=\\frac{a}{6},\\ q=\\frac{a}{3}" },
-      { "idx": 5, "description": "面積：S=∫_p^q\\{(直線)-(3/x)\\}dx=∫[(-54/a^2)x+27/a-3/x]dx。", "math": "S=\\left[-\\frac{27}{a^2}x^2+\\frac{27}{a}x-3\\log|x|\\right]_{a/6}^{a/3}" },
-      { "idx": 6, "description": "代入して差をとると S=9/4-3\\log 2。", "math": "S=\\frac{9}{4}-3\\log 2" }
+      {
+        "idx": 1,
+        "description": "交点：3/x=a/x^2 ⇒ 3x=a ⇒ x=a/3。y=3/(a/3)=9/a。",
+        "math": "P\\left(\\frac{a}{3},\\frac{9}{a}\\right)"
+      },
+      {
+        "idx": 2,
+        "description": "C2: y=a x^{-2} の導関数は y'=-2a/x^3。x=a/3 で傾き -54/a^2。",
+        "math": "m=-\\frac{54}{a^2}"
+      },
+      {
+        "idx": 3,
+        "description": "接線：y-9/a=-(54/a^2)(x-a/3) ⇒ y=-(54/a^2)x+27/a。",
+        "math": "y=-\\frac{54}{a^2}x+\\frac{27}{a}"
+      },
+      {
+        "idx": 4,
+        "description": "C1 と直線の交点：3/x=-(54/a^2)x+27/a。解くと x=a/6, a/3。よって p=a/6, q=a/3。",
+        "math": "p=\\frac{a}{6},\\ q=\\frac{a}{3}"
+      },
+      {
+        "idx": 5,
+        "description": "面積：S=∫_p^q\\{(直線)-(3/x)\\}dx=∫[(-54/a^2)x+27/a-3/x]dx。",
+        "math": "S=\\left[-\\frac{27}{a^2}x^2+\\frac{27}{a}x-3\\log|x|\\right]_{a/6}^{a/3}"
+      },
+      {
+        "idx": 6,
+        "description": "代入して差をとると S=9/4-3\\log 2。",
+        "math": "S=\\frac{9}{4}-3\\log 2"
+      }
     ],
     "symbolic_steps": []
   },
@@ -61,6 +73,53 @@
   },
   "solution_ref": "data/solutions/H23-1/course2/H23-1-IV-2.zh.md",
   "tagging_status": "ok",
-  "tags": ["面積", "接線", "積分", "関数"],
-  "pattern_id": "CALC_AREA_INTERSECTION"
+  "tags": [
+    "面積",
+    "接線",
+    "積分",
+    "関数"
+  ],
+  "pattern_id": "CALC_AREA_INTERSECTION",
+  "blanks": [
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "PQ",
+      "length": 2
+    },
+    {
+      "id": "RS",
+      "length": 2
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    }
+  ]
 }

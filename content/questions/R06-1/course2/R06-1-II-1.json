@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R06-1", "year": 2024, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R06-1",
+    "year": 2024,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,21 +17,6 @@
   "original_ja": {
     "text": "四面体 OABC は OA=3，OB=OC=2，∠AOB=∠AOC=π/2，∠BOC=π/3 を満たしている。次の条件を満たすような，辺AB上の点Dと辺OC上の点Eを考える。\n[条件] DE⊥AB かつ DE⊥OC\n\n(1) 0<s<1, 0<t<1 として AD:DB=s:(1-s), OE:EC=t:(1-t) とおく。次の文中の【□】には選択肢0〜9から適するものを選び，【□】には適する数を入れよ。\nベクトルOA,OB,OCをそれぞれ a,b,c とおくと，ベクトルDEは a,b,c を用いて DE=【A】 と表される。\nD,Eは条件を満たすので，s,tは次の2つの関係式を満たす。\n【B】=0， s=【C】t。\nしたがって s=【D】/【E】， t=【F】/【G】 である。\n\n(2) 線分DEの長さ，および cos∠DOE の値を求めよ。\nDE=【H】/【I】，また OD=【J】/【K】√【L】 であるから\ncos∠DOE=√【M】/【M】 である。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -34,7 +25,11 @@
       "algebraic_complexity": 3
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
   "answer_ref": {
     "course": 2,
     "section": "II",
@@ -43,5 +38,59 @@
     "group": "A/BC/DE/FG/HI/JKL/M"
   },
   "solution_ref": "solutions/R06-1/course2/R06-1-II-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
+  ]
 }

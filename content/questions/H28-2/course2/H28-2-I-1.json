@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H28-2", "year": 2016, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H28-2",
+    "year": 2016,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,18 +15,47 @@
   "type": "fill_in",
   "original_ja": {
     "text": "問1 xの2次関数 y=ax^2+bx+c ……① を考える。関数①はx=1のとき最大値16をとり、そのグラフはx軸と2点で交わり、その2点を結ぶ線分の長さを8とする。このとき、a,b,cの値を求めよう。\n条件より、①は y=a(x-[A])^2+[BC] と表すことができる。また、①のグラフとx軸が交わる2点の座標は(-[D],0),([E],0)である。したがって、a=[FG]である。よって b=[H], c=[IJ] である。",
-    "formulas": ["y=ax^2+bx+c"],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "BC": { "digits": 2 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "FG": { "digits": 2 },
-      "H": { "digits": 1 },
-      "IJ": { "digits": 2 }
-    }
+    "formulas": [
+      "y=ax^2+bx+c"
+    ]
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": "main", "group": "A/BC/D/E/FG/H/IJ" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "main",
+    "group": "A/BC/D/E/FG/H/IJ"
+  },
   "solution_ref": "solutions/H28-2/course2/H28-2-I-1.zh.md",
-  "pattern_id": "QF_COMPLETE_SQUARE"
+  "pattern_id": "QF_COMPLETE_SQUARE",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "BC",
+      "length": 2
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "FG",
+      "length": 2
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "IJ",
+      "length": 2
+    }
+  ]
 }

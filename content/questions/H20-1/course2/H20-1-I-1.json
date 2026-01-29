@@ -14,35 +14,6 @@
   "type": "fill_in",
   "original_ja": {
     "text": "放物線 y=2x^2+4x+5 を x軸方向に4，y軸方向にbだけ平行移動して得られる放物線をCとする。xの値の範囲が a≦x≦2 のとき，Cをグラフとする2次関数の最小値が1，最大値が49となるような定数a,bを求めよ。",
-    "placeholders": {
-      "A": {
-        "digits": 1
-      },
-      "B": {
-        "digits": 1
-      },
-      "C": {
-        "digits": 1
-      },
-      "D": {
-        "digits": 2
-      },
-      "E": {
-        "digits": 1
-      },
-      "F": {
-        "digits": 1
-      },
-      "G": {
-        "digits": 1
-      },
-      "H": {
-        "digits": 2
-      },
-      "I": {
-        "digits": 1
-      }
-    },
     "structure": {
       "vertex_form": true,
       "interval_extreme": true,
@@ -61,5 +32,43 @@
     "平方完成",
     "区間最大最小"
   ],
-  "spec_version": "1.4"
+  "spec_version": "1.4",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 2
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 2
+    },
+    {
+      "id": "I",
+      "length": 1
+    }
+  ]
 }

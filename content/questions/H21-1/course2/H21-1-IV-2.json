@@ -14,21 +14,16 @@
   "order": 2,
   "type": "fill_in",
   "pattern_id": "CALC_RATE_MINMAX",
-  "tags": ["对数函数", "极值", "图像交点个数", "参数讨论"],
+  "tags": [
+    "对数函数",
+    "极值",
+    "图像交点个数",
+    "参数讨论"
+  ],
   "difficulty": 4,
   "original_ja": {
     "text": "IV 問2：f(x)=\\frac{\\log 3x}{x}（logは自然対数）。\n(1) f(x) は x=\\frac{e}{[L]} で極大値 \\frac{[M]}{e}。\n(2) a>0 とし (3x)^a=(3a)^x を満たす正の数xの個数をNとする。y=f(x)のグラフで求める。\n0<a\\le \\frac{1}{[N]} ならば N=[O]\n\\frac{1}{[N]}<a<\\frac{e}{[P]} ならば N=[Q]\na=\\frac{e}{[P]} ならば N=[R]\n\\frac{e}{[P]}<a ならば N=[S]",
     "formulas": [],
-    "placeholders": {
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -38,13 +33,37 @@
     }
   },
   "solution": {
-    "outline": ["求导找极大点与极大值", "把(3x)^a=(3a)^x转为f(x)=f(a)", "用f的单峰形状判断水平线交点个数"],
+    "outline": [
+      "求导找极大点与极大值",
+      "把(3x)^a=(3a)^x转为f(x)=f(a)",
+      "用f的单峰形状判断水平线交点个数"
+    ],
     "steps": [
-      { "idx": 1, "description": "求导：f(x)=ln(3x)/x。", "math": "f'(x)=\\frac{1-\\ln(3x)}{x^2}" },
-      { "idx": 2, "description": "令f'(x)=0 得极大点。", "math": "\\ln(3x)=1\\Rightarrow x=e/3" },
-      { "idx": 3, "description": "极大值：代入x=e/3。", "math": "f(e/3)=\\frac{\\ln(e)}{e/3}=\\frac{3}{e}" },
-      { "idx": 4, "description": "对方程取ln并变形为 f(x)=f(a)。", "math": "(3x)^a=(3a)^x\\Rightarrow a\\ln(3x)=x\\ln(3a)\\Rightarrow \\frac{\\ln(3x)}{x}=\\frac{\\ln(3a)}{a}" },
-      { "idx": 5, "description": "f在(0,∞)先增后减，最大值3/e；且f(x)≤0当且仅当x≤1/3。由水平线y=f(a)与图像交点数判定N。", "math": "0<a\\le 1/3\\Rightarrow f(a)\\le0\\Rightarrow N=1;\\ a=e/3\\Rightarrow N=1;\\ 其余 a>1/3,a\\ne e/3\\Rightarrow 0<f(a)<3/e\\Rightarrow N=2" }
+      {
+        "idx": 1,
+        "description": "求导：f(x)=ln(3x)/x。",
+        "math": "f'(x)=\\frac{1-\\ln(3x)}{x^2}"
+      },
+      {
+        "idx": 2,
+        "description": "令f'(x)=0 得极大点。",
+        "math": "\\ln(3x)=1\\Rightarrow x=e/3"
+      },
+      {
+        "idx": 3,
+        "description": "极大值：代入x=e/3。",
+        "math": "f(e/3)=\\frac{\\ln(e)}{e/3}=\\frac{3}{e}"
+      },
+      {
+        "idx": 4,
+        "description": "对方程取ln并变形为 f(x)=f(a)。",
+        "math": "(3x)^a=(3a)^x\\Rightarrow a\\ln(3x)=x\\ln(3a)\\Rightarrow \\frac{\\ln(3x)}{x}=\\frac{\\ln(3a)}{a}"
+      },
+      {
+        "idx": 5,
+        "description": "f在(0,∞)先增后减，最大值3/e；且f(x)≤0当且仅当x≤1/3。由水平线y=f(a)与图像交点数判定N。",
+        "math": "0<a\\le 1/3\\Rightarrow f(a)\\le0\\Rightarrow N=1;\\ a=e/3\\Rightarrow N=1;\\ 其余 a>1/3,a\\ne e/3\\Rightarrow 0<f(a)<3/e\\Rightarrow N=2"
+      }
     ],
     "symbolic_steps": []
   },
@@ -56,5 +75,39 @@
     "group": "L/M/N/O/P/Q/R/S"
   },
   "solution_ref": "solutions/H21-1/course2/H21-1-IV-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    }
+  ]
 }

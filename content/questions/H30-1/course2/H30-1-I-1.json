@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H30-1", "year": 2018, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H30-1",
+    "year": 2018,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -13,14 +19,65 @@
     "formulas": [
       "f(x)=\\frac14 x^2-(2a-1)x+a"
     ],
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 }, "E": { "digits": 1 },
-      "F": { "digits": 1 }, "G": { "digits": 1 }, "H": { "digits": 1 },
-      "I": { "digits": 1 }, "JK": { "digits": 2 }, "LM": { "digits": 2 }
-    },
-    "structure": { "has_parameter_elimination": true, "has_case_split": true, "algebraic_complexity": 2 }
+    "structure": {
+      "has_parameter_elimination": true,
+      "has_case_split": true,
+      "algebraic_complexity": 2
+    }
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": "mix", "group": "A/BCDE/FGH/I/JKLM" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "mix",
+    "group": "A/BCDE/FGH/I/JKLM"
+  },
   "solution_ref": "solutions/H30-1/course2/H30-1-I-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "JK",
+      "length": 2
+    },
+    {
+      "id": "LM",
+      "length": 2
+    }
+  ]
 }

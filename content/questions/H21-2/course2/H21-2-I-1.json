@@ -16,13 +16,6 @@
   "original_ja": {
     "text": "問1　6−√5 の整数部分を a，小数部分を b とする。このとき\na＝[A]，　b＋4/b＝[B]\nである。\nまた\nb^3＋(4/b)^3＝(b＋4/b)^[C]−[DE](b＋4/b)\nであるから\n4a^3−{b^3＋(4/b)^3}＝[FGH]\nを得る。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "DE": { "digits": 2 },
-      "FGH": { "digits": 3 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -72,5 +65,31 @@
   "solution_ref": "data/solutions/H21-2/course2/H21-2-I-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "ALG_TRANSFORM_EVAL_EXPR",
-  "tags": ["数と式", "有理化", "恒等式"]
+  "tags": [
+    "数と式",
+    "有理化",
+    "恒等式"
+  ],
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "DE",
+      "length": 2
+    },
+    {
+      "id": "FGH",
+      "length": 3
+    }
+  ]
 }

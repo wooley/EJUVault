@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R3-1", "year": 2021, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R3-1",
+    "year": 2021,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,29 +15,50 @@
   "type": "fill_in",
   "pattern_id": "PROB_CLASSICAL_COUNT",
   "original_ja": {
-    "text": "A,Bはそれぞれ1,2,3のカードが1枚ずつ入った袋を持つ。同時に1枚取り出し大きい数が勝ち。同数は引き分け。(1)1回の勝負で引き分けとなる確率は [L]/[M]。(2)4回行い毎回戻す。(i)Aが3勝以上する確率 [N]/[O]。(ii)Aが1勝1敗2引き分けとなる確率 [P]/[QR]。(iii)Aの勝ち回数とBの勝ち回数が同じ確率 [ST]/[UV]。したがってAの勝ち回数がBより多い確率 [WX]/[UV]。",
-    "placeholders": {
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "QR": { "digits": 2 },
-      "ST": { "digits": 2 },
-      "UV": { "digits": 2 },
-      "WX": { "digits": 2 }
-    }
+    "text": "A,Bはそれぞれ1,2,3のカードが1枚ずつ入った袋を持つ。同時に1枚取り出し大きい数が勝ち。同数は引き分け。(1)1回の勝負で引き分けとなる確率は [L]/[M]。(2)4回行い毎回戻す。(i)Aが3勝以上する確率 [N]/[O]。(ii)Aが1勝1敗2引き分けとなる確率 [P]/[QR]。(iii)Aの勝ち回数とBの勝ち回数が同じ確率 [ST]/[UV]。したがってAの勝ち回数がBより多い確率 [WX]/[UV]。"
   },
   "answer_ref": {
-    "L": "1",
-    "M": "3",
-    "N": "1",
-    "O": "9",
-    "P": "4",
-    "QR": "27",
-    "ST": "19",
-    "UV": "81",
-    "WX": "31"
+    "course": 2,
+    "section": "I",
+    "q": "Q2"
   },
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "QR",
+      "length": 2
+    },
+    {
+      "id": "ST",
+      "length": 2
+    },
+    {
+      "id": "UV",
+      "length": 2
+    },
+    {
+      "id": "WX",
+      "length": 2
+    }
+  ]
 }

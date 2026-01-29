@@ -15,21 +15,6 @@
   "original_ja": {
     "text": "問1　xの関数 f(x)=x^{3x}/√(e^x)（x>0）を考える。\n y=f(x) とおくと，log y=[A]x log x-[B]/[C] x。\n ①の両辺をxで微分すると [D]=[E]log x+[F]/[G]。\n よって x=e^{-([H]/[I])} で y=f(x) は [J] となる。\n 次に①の両辺を1からeまでxについて積分すると ∫_1^e log y dx = e^[K]/[L]+[M]。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -45,9 +30,70 @@
   },
   "answer_ref": {
     "source": "official/course2.json",
-    "path": ["H22-2", "IV", "Q1"]
+    "path": [
+      "H22-2",
+      "IV",
+      "Q1"
+    ],
+    "course": 2,
+    "section": "IV",
+    "q": "Q1"
   },
   "solution_ref": "solutions/H22-2/course2/H22-2-IV-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "CALC_LOG_DIFF"
+  "pattern_id": "CALC_LOG_DIFF",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
+  ]
 }

@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R05-1", "year": 2023, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R05-1",
+    "year": 2023,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,19 +17,6 @@
   "original_ja": {
     "text": "問1　2つの2次関数\n\nf(x)=1/3 x^2 + ax - b， g(x)=-x^2 + cx + b\n\nが，次の2つの条件(A)，(B)を満たすようなa,b,cを求めよう。\n\n(A) グラフy=f(x)とグラフy=g(x)は2つの直線x=-1，x=3上で交わっている。\n(B) g(x)の最大値とf(x)の最小値の差は16/3である。\n\n条件(A)より2つの2次関数のグラフは直線x=-1上で交わっているから\n\n3a + [A]b - [B]c = [C] ……①\n\nであり，また，直線x=3上で交わっているから\n\n[D]a -2b - [E]c = -12 ……②\n\nを得る。①と②よりb=[F]である。\n\n次に，条件(B)とb=[F]より\n\n[G]a^2 + 3c^2 = [HI]\n\nを得る。これらから\n\na = -[J]/[K]， c=[L]\n\nとなる。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "HI": { "digits": 2 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -38,13 +31,77 @@
       "用极值差条件把a,c联系起来，求出a,c并回代求b。"
     ],
     "steps": [
-      { "idx": 1, "description": "代入x=-1与x=3的交点条件，建立两条线性方程。", "math": "f(-1)=g(-1),\\ f(3)=g(3)" },
-      { "idx": 2, "description": "联立解出b，并整理得到关于a,c的二次关系。", "math": "b=\\cdots,\\ \\alpha a^2+\\beta c^2=\\gamma" },
-      { "idx": 3, "description": "解出a,c，回代得到b。", "math": "a=-J/K,\\ c=L,\\ b=F" }
+      {
+        "idx": 1,
+        "description": "代入x=-1与x=3的交点条件，建立两条线性方程。",
+        "math": "f(-1)=g(-1),\\ f(3)=g(3)"
+      },
+      {
+        "idx": 2,
+        "description": "联立解出b，并整理得到关于a,c的二次关系。",
+        "math": "b=\\cdots,\\ \\alpha a^2+\\beta c^2=\\gamma"
+      },
+      {
+        "idx": 3,
+        "description": "解出a,c，回代得到b。",
+        "math": "a=-J/K,\\ c=L,\\ b=F"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": null, "group": "A/BCDE/DF/E/F/G/HI/J/K/L" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": null,
+    "group": "A/BCDE/DF/E/F/G/HI/J/K/L"
+  },
   "solution_ref": "solutions/R05-1/course2/R05-1-I-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    }
+  ]
 }

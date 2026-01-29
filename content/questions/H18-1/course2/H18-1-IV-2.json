@@ -20,44 +20,6 @@
       "\\int (x-a)\\sin x\\,dx",
       "f(a)=\\int_0^{\\pi/2} |x-a|\\sin x\\,dx"
     ],
-    "placeholders": {
-      "L": {
-        "digits": 1
-      },
-      "M": {
-        "digits": 1
-      },
-      "NO": {
-        "digits": 2
-      },
-      "P": {
-        "digits": 1
-      },
-      "Q": {
-        "digits": 1
-      },
-      "R": {
-        "digits": 1
-      },
-      "S": {
-        "digits": 1
-      },
-      "T": {
-        "digits": 1
-      },
-      "U": {
-        "digits": 1
-      },
-      "V": {
-        "digits": 1
-      },
-      "W": {
-        "digits": 1
-      },
-      "X": {
-        "digits": 1
-      }
-    },
     "structure": {
       "has_case_split": true,
       "has_parameter_elimination": true,
@@ -78,5 +40,55 @@
     "group": "L,M,NO,P,Q,R,S,T,U,V,W,X"
   },
   "solution_ref": "data/solutions/H18-1/course2/H18-1-IV-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "NO",
+      "length": 2
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    }
+  ]
 }

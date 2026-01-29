@@ -23,26 +23,6 @@
   "original_ja": {
     "text": "問1　a>0とする。2次関数 f(x)=ax^2-6ax+b の 1≦x≦4 における最大値が12，最小値が4であるとき，定数a,bの値を求めたい。\n\nf(x)は\n\nf(x)=a(x-[A])^2 + b - [B]a\n\nと変形できる。\nxのとる値の範囲は1≦x≦4であるから，f(x)は x=[C]で最大となり，x=[D]で最小となる。よって\n\na=[E]，b=[FG]\n\nを得る。",
     "formulas": [],
-    "placeholders": {
-      "A": {
-        "digits": 1
-      },
-      "B": {
-        "digits": 1
-      },
-      "C": {
-        "digits": 1
-      },
-      "D": {
-        "digits": 1
-      },
-      "E": {
-        "digits": 1
-      },
-      "FG": {
-        "digits": 2
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -87,5 +67,31 @@
     "group": "A/B/C/D/E/FG"
   },
   "solution_ref": "data/solutions/H18-2/course2/H18-2-I-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "FG",
+      "length": 2
+    }
+  ]
 }

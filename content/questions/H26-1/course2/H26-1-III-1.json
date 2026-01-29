@@ -17,14 +17,6 @@
   "original_ja": {
     "text": "a>0 とする。-π/2<x<π/2 の範囲で次の2つの方程式を考える。① sin2x + a cosx =0，② cos2x + a sinx = -2。例えば a=√2 のとき，①を満たす x は x=[AB]/[C] π である。この x に対して②の左辺の値は [DE] となり②は成り立たない。したがって a=√2 のとき①②は共通解をもたない。そこで①②が共通解をもつような a とその共通解 x を求めよう。まず①より sinx=[FG]/[H] a, cos2x=[I]-a^2/[J] となる。これらを②に代入して a^2=[K] を得る。したがって a=√[K] であり，共通解は x=[LM]/[N] π である。",
     "formulas": [],
-    "placeholders": {
-      "AB": { "digits": 2 }, "C": { "digits": 1 },
-      "DE": { "digits": 2 },
-      "FG": { "digits": 2 }, "H": { "digits": 1 },
-      "I": { "digits": 1 }, "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "LM": { "digits": 2 }, "N": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -36,11 +28,31 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "①: sin2x=2sinx cosx を用いて因数分解。範囲より cosx≠0。", "math": "2\\sin x\\cos x+a\\cos x=\\cos x(2\\sin x+a)=0\\Rightarrow \\sin x=-\\frac{a}{2}" },
-      { "idx": 2, "description": "cos2x を sinx で表す。", "math": "\\cos2x=1-2\\sin^2x=1-\\frac{a^2}{2}" },
-      { "idx": 3, "description": "②へ代入して a を決定。", "math": "1-\\frac{a^2}{2}+a\\left(-\\frac{a}{2}\\right)=1-a^2=-2\\Rightarrow a^2=3\\Rightarrow a=\\sqrt3" },
-      { "idx": 4, "description": "sinx=-\\sqrt3/2 から範囲内の解を取る。", "math": "x=-\\frac{\\pi}{3}" },
-      { "idx": 5, "description": "例(a=\\sqrt2)の確認。", "math": "a=\\sqrt2\\Rightarrow \\sin x=-\\frac{\\sqrt2}{2}\\Rightarrow x=-\\frac{\\pi}{4},\\ ②左辺=\\cos(-\\frac{\\pi}{2})+\\sqrt2\\sin(-\\frac{\\pi}{4})=-1" }
+      {
+        "idx": 1,
+        "description": "①: sin2x=2sinx cosx を用いて因数分解。範囲より cosx≠0。",
+        "math": "2\\sin x\\cos x+a\\cos x=\\cos x(2\\sin x+a)=0\\Rightarrow \\sin x=-\\frac{a}{2}"
+      },
+      {
+        "idx": 2,
+        "description": "cos2x を sinx で表す。",
+        "math": "\\cos2x=1-2\\sin^2x=1-\\frac{a^2}{2}"
+      },
+      {
+        "idx": 3,
+        "description": "②へ代入して a を決定。",
+        "math": "1-\\frac{a^2}{2}+a\\left(-\\frac{a}{2}\\right)=1-a^2=-2\\Rightarrow a^2=3\\Rightarrow a=\\sqrt3"
+      },
+      {
+        "idx": 4,
+        "description": "sinx=-\\sqrt3/2 から範囲内の解を取る。",
+        "math": "x=-\\frac{\\pi}{3}"
+      },
+      {
+        "idx": 5,
+        "description": "例(a=\\sqrt2)の確認。",
+        "math": "a=\\sqrt2\\Rightarrow \\sin x=-\\frac{\\sqrt2}{2}\\Rightarrow x=-\\frac{\\pi}{4},\\ ②左辺=\\cos(-\\frac{\\pi}{2})+\\sqrt2\\sin(-\\frac{\\pi}{4})=-1"
+      }
     ],
     "symbolic_steps": []
   },
@@ -52,5 +64,47 @@
     "group": "AB,C,DE,FG,H,I,J,K,LM,N"
   },
   "solution_ref": "solutions/H26-1/course2/H26-1-III-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "AB",
+      "length": 2
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "DE",
+      "length": 2
+    },
+    {
+      "id": "FG",
+      "length": 2
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "LM",
+      "length": 2
+    },
+    {
+      "id": "N",
+      "length": 1
+    }
+  ]
 }

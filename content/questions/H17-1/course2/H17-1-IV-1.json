@@ -13,7 +13,9 @@
   "order": 1,
   "type": "fill_in",
   "source": {
-    "images": ["data/images_raw/H17-1_course2/page_11.png"],
+    "images": [
+      "data/images_raw/H17-1_course2/page_11.png"
+    ],
     "page_print": "数学-23",
     "page_in_exam": 147
   },
@@ -30,20 +32,55 @@
     "formulas": []
   },
   "blanks": [
-    { "id": "A", "length": 1 },
-    { "id": "B", "length": 1 },
-    { "id": "C", "length": 1 },
-    { "id": "D", "length": 1 },
-    { "id": "E", "length": 1 }
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    }
   ],
   "blank_rules": {
-    "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+    "allowed_chars": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "+",
+      "-",
+      "×",
+      "÷"
+    ],
     "no_whitespace": true,
     "notes": []
   },
   "tags": {
-    "domain": ["微分方程・積分"],
-    "skill": ["積分方程→微分方程", "指数関数の積分"],
+    "domain": [
+      "微分方程・積分"
+    ],
+    "skill": [
+      "積分方程→微分方程",
+      "指数関数の積分"
+    ],
     "course_specific": []
   },
   "difficulty": {
@@ -72,7 +109,8 @@
     "exam_id": "H17-1",
     "course": 2,
     "section": "IV",
-    "question_number": 1
+    "question_number": 1,
+    "q": "Q1"
   },
   "solution_ref": "data/solutions/H17-1/course2/H17-1-IV-1.zh.md",
   "tagging_status": "ok"

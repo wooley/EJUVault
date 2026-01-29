@@ -15,32 +15,6 @@
   "type": "fill_in",
   "original_ja": {
     "text": "問1 x軸に接する放物線Cのグラフは y=a(x-p)^2 と表される。\n(1) Cが点(1,2)を通るとき [A]=a([B]-p)^2 ……①\n(2) Cをx軸方向に右へ3だけ平行移動すると点(2,8)を通る。このとき [C]=a([D]+p)^2 ……②\n(3) ①②より ( [D]+p )^2=[E]([B]-p)^2。p>1 を満たす p=[F], a=[G]/[H]",
-    "placeholders": {
-      "A": {
-        "digits": 1
-      },
-      "B": {
-        "digits": 1
-      },
-      "C": {
-        "digits": 1
-      },
-      "D": {
-        "digits": 1
-      },
-      "E": {
-        "digits": 1
-      },
-      "F": {
-        "digits": 1
-      },
-      "G": {
-        "digits": 1
-      },
-      "H": {
-        "digits": 1
-      }
-    },
     "structure": {
       "has_case_split": false,
       "algebraic_complexity": 2
@@ -52,5 +26,39 @@
     "放物線",
     "平行移動",
     "パラメータ"
+  ],
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    }
   ]
 }

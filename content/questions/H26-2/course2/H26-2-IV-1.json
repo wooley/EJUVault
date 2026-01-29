@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H26-2", "year": 2014, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H26-2",
+    "year": 2014,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,17 +15,65 @@
   "type": "fill_in",
   "pattern_id": "CALC_TANGENT_AREA_RATIO",
   "original_ja": {
-    "text": "問1 a,tは共に正の実数とする。関数y=ax^3のグラフCの点P(t,at^3)における接線ℓがCと再び交わる点をQとする。さらに，点Pを通ってx軸に平行な直線pと点Qを通ってy軸に平行な直線qが交わる点をRとする。曲線Cと直線p,直線qで囲まれる部分の面積をS1，曲線Cと接線ℓで囲まれる部分の面積をS2とするとき，S1/S2を求めよ。接線ℓは y=[A]at^[B]x-[C]at^[D] であり，点Qのx座標は-[E]t。したがって S1=[FG]/[H]at^[I]，また S2=[JK]/[L]at^[M]。よって S1/S2=[N]。",
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 },
-      "C": { "digits": 1 }, "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "FG": { "digits": 2 }, "H": { "digits": 1 }, "I": { "digits": 1 },
-      "JK": { "digits": 2 }, "L": { "digits": 1 }, "M": { "digits": 1 },
-      "N": { "digits": 1 }
-    }
+    "text": "問1 a,tは共に正の実数とする。関数y=ax^3のグラフCの点P(t,at^3)における接線ℓがCと再び交わる点をQとする。さらに，点Pを通ってx軸に平行な直線pと点Qを通ってy軸に平行な直線qが交わる点をRとする。曲線Cと直線p,直線qで囲まれる部分の面積をS1，曲線Cと接線ℓで囲まれる部分の面積をS2とするとき，S1/S2を求めよ。接線ℓは y=[A]at^[B]x-[C]at^[D] であり，点Qのx座標は-[E]t。したがって S1=[FG]/[H]at^[I]，また S2=[JK]/[L]at^[M]。よって S1/S2=[N]。"
   },
-  "answer_ref": { "course": 2, "section": "IV", "q": "Q1", "sub": null, "group": "A,B,C,D,E,FG,H,I,JK,L,M,N" },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q1",
+    "sub": null,
+    "group": "A,B,C,D,E,FG,H,I,JK,L,M,N"
+  },
   "solution_ref": "solutions/H26-2/course2/H26-2-IV-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "FG",
+      "length": 2
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "JK",
+      "length": 2
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    }
+  ]
 }

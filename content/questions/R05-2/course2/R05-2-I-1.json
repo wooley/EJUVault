@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R05-2", "year": 2023, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R05-2",
+    "year": 2023,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,7 +17,15 @@
   "original_ja": {
     "text": "問1　2次関数 f(x)=-x^2+4x+5 を考える。\n\n(1) 放物線 y=f(x) の頂点の座標は ([A],[B]) である。\n\n(2) 放物線 y=f(x) を x軸方向に k，y軸方向に -4 だけ平行移動して得られる放物線を y=g(x) とすると\n    g(x)=-(x-[C]-k)^2+[D]\nである。\n\n(3) 次の文中の [E] には，この問の下の選択肢 ⓪〜④ の中から，また，[F] には，この問の下の選択肢 ⑤〜⑨ の中から適するものを選びなさい。また，その他の□には，適する数を入れなさい。\n\n関数 g(x) の -1≦x≦4 における最大値が 3 となるような k の値を求めよう。\n関数 g(x) の最大値は [D] であるから，k は条件 [E] または [F] を満たす。\nしたがって\n    k=-[G]-√[H]，　k=[I]+√[J]\nである。\n\n（選択肢）\n⓪ k<-5 かつ k^2+6k+7=0\n① k<-5 かつ k^2-4k+2=0\n② k<-3 かつ k^2+7k+6=0\n③ k<-3 かつ k^2+6k+7=0\n④ k<-3 かつ k^2-4k+2=0\n⑤ k>2 かつ k^2-6k+4=0\n⑥ k>2 かつ k^2+6k+7=0\n⑦ k>2 かつ k^2-4k+2=0\n⑧ k>4 かつ k^2-4k+2=0\n⑨ k>4 かつ k^2+6k+7=0"
   },
-  "solution_ref": { "path": "solutions/R05-2/course2/R05-2-I-1.zh.md" },
-  "answer_ref": { "path": "answers/ai_ans.json", "key": "R05-2-I-1" },
+  "solution_ref": {
+    "path": "solutions/R05-2/course2/R05-2-I-1.zh.md"
+  },
+  "answer_ref": {
+    "path": "answers/ai_ans.json",
+    "key": "R05-2-I-1",
+    "course": 2,
+    "section": "I",
+    "q": "Q1"
+  },
   "tagging_status": "generated"
 }

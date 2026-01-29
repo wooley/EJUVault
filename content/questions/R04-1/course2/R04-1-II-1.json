@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R4-1", "year": 2022, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R4-1",
+    "year": 2022,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,11 +17,6 @@
   "original_ja": {
     "text": "平面上の三角形ABCに対して，点Pと実数kは 9\\overrightarrow{PA}+4\\overrightarrow{PB}+2\\overrightarrow{PC}=k\\overrightarrow{BC} を満たしているとする。\n(1) 点Pの存在範囲を求める。\\overrightarrow{AP} を \\overrightarrow{AB},\\overrightarrow{AC} を用いて表すと\n\\overrightarrow{AP}=([A]/[BC]+k)\\overrightarrow{AB}+([D]/[EF]-k)\\overrightarrow{AC}\nとなる。これを変形すると\n\\overrightarrow{AP}=([G]/[H])\\{(( [A]+k)/6)\\overrightarrow{AB}+(( [D]-k)/6)\\overrightarrow{AC}\\}\nと表せる。また ( [A]+k)/6 + ( [D]-k)/6 = [I] であるから，点Pの存在範囲は，辺ABを [J]:[K] に内分する点Q，辺ACを [J]:[K] に内分する点Rを通る直線である。\n(2) 点Pが三角形ABCの内部にあるためのkの範囲は -[L] < k < [M] である。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 }, "BC": { "digits": 2 }, "D": { "digits": 1 }, "EF": { "digits": 2 },
-      "G": { "digits": 1 }, "H": { "digits": 1 }, "I": { "digits": 1 },
-      "J": { "digits": 1 }, "K": { "digits": 1 }, "L": { "digits": 1 }, "M": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -27,15 +28,87 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "以A为原点，用位置向量表示。设 \\vec{AB}=\\mathbf b,\\ \\vec{AC}=\\mathbf c,\\ \\vec{AP}=\\mathbf p。", "math": "" },
-      { "idx": 2, "description": "把 \\vec{PA},\\vec{PB},\\vec{PC},\\vec{BC} 用 \\mathbf b,\\mathbf c,\\mathbf p 表示并解出 \\mathbf p。", "math": "9(-\\mathbf p)+4(\\mathbf b-\\mathbf p)+2(\\mathbf c-\\mathbf p)=k(\\mathbf c-\\mathbf b)\\Rightarrow \\mathbf p=\\frac{k+4}{15}\\mathbf b+\\frac{2-k}{15}\\mathbf c" },
-      { "idx": 3, "description": "整理成题干给定形式并得到比例内分点。", "math": "\\vec{AP}=(\\frac{4}{15}+\\frac{k}{15})\\vec{AB}+(\\frac{2}{15}-\\frac{k}{15})\\vec{AC}=(\\frac{2}{5})\\{\\frac{4+k}{6}\\vec{AB}+\\frac{2-k}{6}\\vec{AC}\\}" },
-      { "idx": 4, "description": "因 \\frac{4+k}{6}+\\frac{2-k}{6}=1，括号内点在BC上；整体乘以2/5为以A为中心的相似缩放，故P在过Q、R的直线上。", "math": "Q: AQ:QB=2:3,\\ R: AR:RC=2:3" },
-      { "idx": 5, "description": "P在三角形内部要求 \\frac{4+k}{6},\\frac{2-k}{6} 都在 (0,1) 内。", "math": "0<\\frac{4+k}{6}<1\\Rightarrow -4<k<2" }
+      {
+        "idx": 1,
+        "description": "以A为原点，用位置向量表示。设 \\vec{AB}=\\mathbf b,\\ \\vec{AC}=\\mathbf c,\\ \\vec{AP}=\\mathbf p。",
+        "math": ""
+      },
+      {
+        "idx": 2,
+        "description": "把 \\vec{PA},\\vec{PB},\\vec{PC},\\vec{BC} 用 \\mathbf b,\\mathbf c,\\mathbf p 表示并解出 \\mathbf p。",
+        "math": "9(-\\mathbf p)+4(\\mathbf b-\\mathbf p)+2(\\mathbf c-\\mathbf p)=k(\\mathbf c-\\mathbf b)\\Rightarrow \\mathbf p=\\frac{k+4}{15}\\mathbf b+\\frac{2-k}{15}\\mathbf c"
+      },
+      {
+        "idx": 3,
+        "description": "整理成题干给定形式并得到比例内分点。",
+        "math": "\\vec{AP}=(\\frac{4}{15}+\\frac{k}{15})\\vec{AB}+(\\frac{2}{15}-\\frac{k}{15})\\vec{AC}=(\\frac{2}{5})\\{\\frac{4+k}{6}\\vec{AB}+\\frac{2-k}{6}\\vec{AC}\\}"
+      },
+      {
+        "idx": 4,
+        "description": "因 \\frac{4+k}{6}+\\frac{2-k}{6}=1，括号内点在BC上；整体乘以2/5为以A为中心的相似缩放，故P在过Q、R的直线上。",
+        "math": "Q: AQ:QB=2:3,\\ R: AR:RC=2:3"
+      },
+      {
+        "idx": 5,
+        "description": "P在三角形内部要求 \\frac{4+k}{6},\\frac{2-k}{6} 都在 (0,1) 内。",
+        "math": "0<\\frac{4+k}{6}<1\\Rightarrow -4<k<2"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q1", "sub": "(1)(2)", "group": "ABC/DEF/GH/I/JK/LM" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q1",
+    "sub": "(1)(2)",
+    "group": "ABC/DEF/GH/I/JK/LM"
+  },
   "solution_ref": "solutions/R4-1/course2/R4-1-II-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "BC",
+      "length": 2
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "EF",
+      "length": 2
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
+  ]
 }

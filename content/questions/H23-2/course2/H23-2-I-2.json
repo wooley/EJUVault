@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H23-2", "year": 2011, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H23-2",
+    "year": 2011,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -8,35 +14,106 @@
   "order": 2,
   "type": "fill_in",
   "original_ja": {
-    "text": "問2　2つの関数 y=x^2+ax+a と y=x+1 を考える。\n(1) 2つの関数のグラフの共有点の個数は，下記のように a と数 [Q],[R] との関係によって定まる。文中の [N]〜[P] には，下の 0〜2 から適するものを選びなさい。\n(i) 異なる2点で交わる条件は [N]。\n(ii) 1点で接する条件は [O]。\n(iii) y=x^2+ax+a がつねに y=x+1 の上方にある条件は [P]。\n0: [Q]<a<[R]\n1: a=[Q] または a=[R]\n2: a<[Q] または [R]<a\n(2) a が条件 [P] を満たすとき，差 g(x)=x^2+ax+a-(x+1) の最小値 m を考える。このとき\nm= -[S]/[T] (a^2-[U]a+[V])\nと表される。この m が最大となるのは a=[W] のときで，その値は m=[X]。",
-    "placeholders": {
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 },
-      "X": { "digits": 1 }
-    }
+    "text": "問2　2つの関数 y=x^2+ax+a と y=x+1 を考える。\n(1) 2つの関数のグラフの共有点の個数は，下記のように a と数 [Q],[R] との関係によって定まる。文中の [N]〜[P] には，下の 0〜2 から適するものを選びなさい。\n(i) 異なる2点で交わる条件は [N]。\n(ii) 1点で接する条件は [O]。\n(iii) y=x^2+ax+a がつねに y=x+1 の上方にある条件は [P]。\n0: [Q]<a<[R]\n1: a=[Q] または a=[R]\n2: a<[Q] または [R]<a\n(2) a が条件 [P] を満たすとき，差 g(x)=x^2+ax+a-(x+1) の最小値 m を考える。このとき\nm= -[S]/[T] (a^2-[U]a+[V])\nと表される。この m が最大となるのは a=[W] のときで，その値は m=[X]。"
   },
   "solution": {
-    "outline": ["共有点は二次方程式の判別式で分類", "『常に上方』は差が常に正（判別式<0）", "最小値 m を a の二次式として最大化"],
+    "outline": [
+      "共有点は二次方程式の判別式で分類",
+      "『常に上方』は差が常に正（判別式<0）",
+      "最小値 m を a の二次式として最大化"
+    ],
     "steps": [
-      { "idx": 1, "description": "交点条件：x^2+ax+a=x+1 ⇒ x^2+(a-1)x+(a-1)=0。", "math": "x^2+(a-1)x+(a-1)=0" },
-      { "idx": 2, "description": "判別式 Δ=(a-1)(a-5)。", "math": "\\Delta=(a-1)^2-4(a-1)=(a-1)(a-5)" },
-      { "idx": 3, "description": "2点で交わる：Δ>0 ⇔ a<1 または a>5。接する：Δ=0 ⇔ a=1 または 5。", "math": "Q=1,\\ R=5" },
-      { "idx": 4, "description": "常に上方（交わらず上）：Δ<0 ⇔ 1<a<5。よって P は選択肢0。", "math": "1<a<5" },
-      { "idx": 5, "description": "g(x)=x^2+(a-1)x+(a-1)。最小値 m=a-1-(a-1)^2/4=-(1/4)(a-1)(a-5)=-(1/4)(a^2-6a+5)。", "math": "m=-\\frac14(a^2-6a+5)" },
-      { "idx": 6, "description": "m は a の下に凸二次式なので最大は頂点 a=3、m=1。", "math": "a=3,\\ m=1" }
+      {
+        "idx": 1,
+        "description": "交点条件：x^2+ax+a=x+1 ⇒ x^2+(a-1)x+(a-1)=0。",
+        "math": "x^2+(a-1)x+(a-1)=0"
+      },
+      {
+        "idx": 2,
+        "description": "判別式 Δ=(a-1)(a-5)。",
+        "math": "\\Delta=(a-1)^2-4(a-1)=(a-1)(a-5)"
+      },
+      {
+        "idx": 3,
+        "description": "2点で交わる：Δ>0 ⇔ a<1 または a>5。接する：Δ=0 ⇔ a=1 または 5。",
+        "math": "Q=1,\\ R=5"
+      },
+      {
+        "idx": 4,
+        "description": "常に上方（交わらず上）：Δ<0 ⇔ 1<a<5。よって P は選択肢0。",
+        "math": "1<a<5"
+      },
+      {
+        "idx": 5,
+        "description": "g(x)=x^2+(a-1)x+(a-1)。最小値 m=a-1-(a-1)^2/4=-(1/4)(a-1)(a-5)=-(1/4)(a^2-6a+5)。",
+        "math": "m=-\\frac14(a^2-6a+5)"
+      },
+      {
+        "idx": 6,
+        "description": "m は a の下に凸二次式なので最大は頂点 a=3、m=1。",
+        "math": "a=3,\\ m=1"
+      }
     ]
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": null, "group": "N/O/P/Q/R/S/T/U/V/W/X" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": null,
+    "group": "N/O/P/Q/R/S/T/U/V/W/X"
+  },
   "solution_ref": "data/solutions/H23-2/course2/H23-2-I-2.zh.md",
-  "tags": ["二次関数", "判別式", "最小値最大化"],
+  "tags": [
+    "二次関数",
+    "判別式",
+    "最小値最大化"
+  ],
   "pattern_id": "QF_PARAM_DISCRIMINANT",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    }
+  ]
 }

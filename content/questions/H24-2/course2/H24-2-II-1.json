@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H24-2", "year": 2012, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H24-2",
+    "year": 2012,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "course": 2,
   "track": "science",
   "question_id": "H24-2-II",
@@ -7,19 +13,96 @@
   "order": 1,
   "type": "fill_in",
   "original_ja": {
-    "text": "半径が2の円Oに内接する三角形ABCが 3OA+4OB+2OC=0 を満たす。直線AOと線分BCの交点をDとするとき，ADとBDの長さを求める。(1) OD=kOA とおくと OD=-( [A]/[B])k OB -( [C]/[D])k OC。さらにB,C,Dが一直線上より k=[EF]/[G]。したがって OD=[H]，AD=[I]。(2) (1)より BD=([J]/[K])BC。BC^2=[L]-[M](OB·OC)。また |4OB+2OC|^2=[NO] より OB·OC=[PQR]/[S]。したがって BC=[T]√[U]/[V]，BD=√[W]/[X]。",
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
-      "EF": { "digits": 2 }, "G": { "digits": 1 }, "H": { "digits": 1 }, "I": { "digits": 1 },
-      "J": { "digits": 1 }, "K": { "digits": 1 },
-      "L": { "digits": 1 }, "M": { "digits": 1 },
-      "NO": { "digits": 2 }, "PQR": { "digits": 3 }, "S": { "digits": 1 },
-      "T": { "digits": 1 }, "U": { "digits": 1 }, "V": { "digits": 1 },
-      "W": { "digits": 1 }, "X": { "digits": 1 }
-    }
+    "text": "半径が2の円Oに内接する三角形ABCが 3OA+4OB+2OC=0 を満たす。直線AOと線分BCの交点をDとするとき，ADとBDの長さを求める。(1) OD=kOA とおくと OD=-( [A]/[B])k OB -( [C]/[D])k OC。さらにB,C,Dが一直線上より k=[EF]/[G]。したがって OD=[H]，AD=[I]。(2) (1)より BD=([J]/[K])BC。BC^2=[L]-[M](OB·OC)。また |4OB+2OC|^2=[NO] より OB·OC=[PQR]/[S]。したがって BC=[T]√[U]/[V]，BD=√[W]/[X]。"
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q1" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q1"
+  },
   "solution_ref": "solutions/H24-2/course2/H24-2-II.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "VEC_RATIO_IN_CIRCLE"
+  "pattern_id": "VEC_RATIO_IN_CIRCLE",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "EF",
+      "length": 2
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "NO",
+      "length": 2
+    },
+    {
+      "id": "PQR",
+      "length": 3
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    }
+  ]
 }

@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R4-2", "year": 2022, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R4-2",
+    "year": 2022,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -10,17 +16,43 @@
   "pattern_id": "PROB_MARKOV_STOPPING",
   "original_ja": {
     "text": "2つの整数m,nが「つながっている」とは nがm-1,m,m+1のどれかであることと定義する。サイコロを投げ続け，2回目以降は直前の目とつながっていれば続行，つながっていなければ終了。(1) 2回目の操作を終えた時点で試行が終了していない確率は [N]/[O]。(2) 2回目の操作で試行が終了する確率は [P]/[Q]。 (3) 3回目の操作を終えた時点で試行が終了していない確率は [R]。(4) 3回以下の操作で試行が終了する確率は [S]。(5) 3回目の操作で試行が終了する確率は [T]。ただし[R],[S],[T]は下の選択肢0〜9から選ぶ。",
-    "formulas": [],
-    "placeholders": {
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1, "is_choice": true, "choice_range": "0-9" },
-      "S": { "digits": 1, "is_choice": true, "choice_range": "0-9" },
-      "T": { "digits": 1, "is_choice": true, "choice_range": "0-9" }
-    }
+    "formulas": []
   },
-  "answer_ref": "official/course2.json#R4-2-I-2",
-  "solution_ref": "answers/ai_ans.json#R4-2-I-2"
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "ref": "official/course2.json#R4-2-I-2"
+  },
+  "solution_ref": "answers/ai_ans.json#R4-2-I-2",
+  "blanks": [
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    }
+  ]
 }

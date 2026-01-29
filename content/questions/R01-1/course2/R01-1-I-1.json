@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R01-1", "year": 2019, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R01-1",
+    "year": 2019,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -15,11 +21,6 @@
       "a^2-8b-8c",
       "b^2-4ac"
     ],
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
-      "E": { "digits": 1 }, "F": { "digits": 1 }, "G": { "digits": 1 }, "H": { "digits": 1 },
-      "I": { "digits": 1 }, "J": { "digits": 1 }, "K": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -31,13 +32,77 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "グラフから開き・切片・根の位置を読み取り，符号と等号条件を判定する。", "math": "" },
-      { "idx": 2, "description": "(2)は制約 a+b+c=0 を用いて c=-(a+b) とおき，目的関数を b+c の1変数にまとめて最小化する。", "math": "" },
-      { "idx": 3, "description": "最小条件から a と定数項を決め，さらに b>0, c>0 より b の範囲を確定する。", "math": "" }
+      {
+        "idx": 1,
+        "description": "グラフから開き・切片・根の位置を読み取り，符号と等号条件を判定する。",
+        "math": ""
+      },
+      {
+        "idx": 2,
+        "description": "(2)は制約 a+b+c=0 を用いて c=-(a+b) とおき，目的関数を b+c の1変数にまとめて最小化する。",
+        "math": ""
+      },
+      {
+        "idx": 3,
+        "description": "最小条件から a と定数項を決め，さらに b>0, c>0 より b の範囲を確定する。",
+        "math": ""
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": "(1)(2)", "group": "A-K" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "(1)(2)",
+    "group": "A-K"
+  },
   "solution_ref": "solutions/R01-1/course2/R01-1-I-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    }
+  ]
 }

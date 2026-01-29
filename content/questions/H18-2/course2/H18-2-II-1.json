@@ -22,17 +22,6 @@
   "original_ja": {
     "text": "問1　(y+z)/8=(z+x)/5=(x+y)/(-1)≠0 とするとき\nx:y:z=[AB]:1:[C]\nであり\n(x^2+y^2+z^2)/(yz+zx+xy)=[DE]\nである。",
     "formulas": [],
-    "placeholders": {
-      "AB": {
-        "digits": 2
-      },
-      "C": {
-        "digits": 1
-      },
-      "DE": {
-        "digits": 2
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -72,5 +61,19 @@
     "group": "AB/C/DE"
   },
   "solution_ref": "data/solutions/H18-2/course2/H18-2-II-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "AB",
+      "length": 2
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "DE",
+      "length": 2
+    }
+  ]
 }

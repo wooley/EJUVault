@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H25-2", "year": 2013, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H25-2",
+    "year": 2013,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "course": 2,
   "track": "science",
   "question_id": "H25-2-I-2",
@@ -8,31 +14,90 @@
   "type": "fill_in",
   "pattern_id": "LOGIC_NEC_SUFF",
   "original_ja": {
-    "text": "実数x,yについて次の条件p,q,rを考える。p: (x+y)^2=a(x^2+y^2)+bxy を満たしている（a,bは定数）。q: x=0かつy=0。r: x=0またはy=0。(1) pにおいてa=b=1。このとき，pはqであるための[H]。また，pはrであるための[I]。(2) pにおいてa=b=2。このとき，pはqであるための[J]。また，pはrであるための[K]。(3) pにおいてa=2とすると，pの式は (x+(b-[L])/[M] y)^2 + ([N]-(b-[O])^2/[P])y^2=0 と変形できる。したがって，pがqであるための必要十分条件となるのは，bが [Q] < b < [R] を満たすときに限る。選択肢：0必要十分，1必要のみ，2十分のみ，3どちらでもない。",
-    "placeholders": {
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 }
-    }
+    "text": "実数x,yについて次の条件p,q,rを考える。p: (x+y)^2=a(x^2+y^2)+bxy を満たしている（a,bは定数）。q: x=0かつy=0。r: x=0またはy=0。(1) pにおいてa=b=1。このとき，pはqであるための[H]。また，pはrであるための[I]。(2) pにおいてa=b=2。このとき，pはqであるための[J]。また，pはrであるための[K]。(3) pにおいてa=2とすると，pの式は (x+(b-[L])/[M] y)^2 + ([N]-(b-[O])^2/[P])y^2=0 と変形できる。したがって，pがqであるための必要十分条件となるのは，bが [Q] < b < [R] を満たすときに限る。選択肢：0必要十分，1必要のみ，2十分のみ，3どちらでもない。"
   },
   "solution": {
     "steps": [
-      { "idx": 1, "description": "a=b=1 のとき p を簡約。", "math": "x^2+2xy+y^2=x^2+y^2+xy\\Rightarrow xy=0\\Leftrightarrow r" },
-      { "idx": 2, "description": "q との関係（必要/十分）。", "math": "q\\Rightarrow xy=0(p) だが，p\\not\\Rightarrow q" },
-      { "idx": 3, "description": "a=b=2 のとき p を簡約。", "math": "x^2+2xy+y^2=2x^2+2y^2+2xy\\Rightarrow x^2+y^2=0\\Leftrightarrow q" },
-      { "idx": 4, "description": "a=2 の一般 b で平方完成。", "math": "x^2+(b-2)xy+y^2=0\\Rightarrow \\left(x+\\frac{b-2}{2}y\\right)^2+\\left(1-\\frac{(b-2)^2}{4}\\right)y^2=0" },
-      { "idx": 5, "description": "q と同値になる条件（正定値）。", "math": "1-\\frac{(b-2)^2}{4}>0\\Rightarrow (b-2)^2<4\\Rightarrow 0<b<4" }
+      {
+        "idx": 1,
+        "description": "a=b=1 のとき p を簡約。",
+        "math": "x^2+2xy+y^2=x^2+y^2+xy\\Rightarrow xy=0\\Leftrightarrow r"
+      },
+      {
+        "idx": 2,
+        "description": "q との関係（必要/十分）。",
+        "math": "q\\Rightarrow xy=0(p) だが，p\\not\\Rightarrow q"
+      },
+      {
+        "idx": 3,
+        "description": "a=b=2 のとき p を簡約。",
+        "math": "x^2+2xy+y^2=2x^2+2y^2+2xy\\Rightarrow x^2+y^2=0\\Leftrightarrow q"
+      },
+      {
+        "idx": 4,
+        "description": "a=2 の一般 b で平方完成。",
+        "math": "x^2+(b-2)xy+y^2=0\\Rightarrow \\left(x+\\frac{b-2}{2}y\\right)^2+\\left(1-\\frac{(b-2)^2}{4}\\right)y^2=0"
+      },
+      {
+        "idx": 5,
+        "description": "q と同値になる条件（正定値）。",
+        "math": "1-\\frac{(b-2)^2}{4}>0\\Rightarrow (b-2)^2<4\\Rightarrow 0<b<4"
+      }
     ]
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": "(1)(2)(3)", "group": "H/I/J/K/L/M/N/O/P/Q/R" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "(1)(2)(3)",
+    "group": "H/I/J/K/L/M/N/O/P/Q/R"
+  },
   "solution_ref": "solutions/H25-2/course2/H25-2-I-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    }
+  ]
 }

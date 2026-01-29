@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H28-1", "year": 2016, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H28-1",
+    "year": 2016,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,18 +15,11 @@
   "type": "fill_in",
   "original_ja": {
     "text": "問1 三角形ABCは AB=2, BC=3, CA=4 を満たしている。\n(1) ∠ABC=θとおくと、ベクトルABとベクトルBCの内積 AB・BC は AB・BC=[AB]cosθ である。また、余弦定理よりcosθの値を求めて AB・BC=[C]/[D] ……① を得る。\n(2) 辺BCをn等分する点をBから近い順にP1,P2,…,P_{n-1}とおき、B=P0,C=Pnとおく。このとき lim_{n→∞} (1/n) Σ_{k=1..n} (→AP_{k-1}・→AP_k) を求めよ。\nまず、→AP_{k-1}と→AP_kの内積を①を用いて計算すると →AP_{k-1}・→AP_k=[E]+([F]k-[G])/(2n)+[H](k^2-k)/n^2 である。したがって lim_{n→∞} (1/n) Σ_{k=1..n} (→AP_{k-1}・→AP_k)=[IJ]/[K] となる。",
-    "formulas": ["AB=2", "BC=3", "CA=4"],
-    "placeholders": {
-      "AB": { "digits": 2 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "IJ": { "digits": 2 },
-      "K": { "digits": 1 }
-    },
+    "formulas": [
+      "AB=2",
+      "BC=3",
+      "CA=4"
+    ],
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -29,7 +28,11 @@
       "algebraic_complexity": 3
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
   "answer_ref": {
     "course": 2,
     "section": "II",
@@ -39,5 +42,43 @@
   },
   "solution_ref": "solutions/H28-1/course2/H28-1-II-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "VEC_DOT_ANGLE"
+  "pattern_id": "VEC_DOT_ANGLE",
+  "blanks": [
+    {
+      "id": "AB",
+      "length": 2
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "IJ",
+      "length": 2
+    },
+    {
+      "id": "K",
+      "length": 1
+    }
+  ]
 }

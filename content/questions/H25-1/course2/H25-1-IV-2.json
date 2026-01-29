@@ -16,17 +16,6 @@
   "original_ja": {
     "text": "微分可能な関数f(x)が \\int_0^x f(t)dt=(1+e^{-x})f(x)+2x-4\\log2 ……① を満たす。このとき f(x)を定め，極限値 lim_{x\\to\\infty}f(x) を求めよう。①の両辺をxで微分すると (1+e^{-x})[Q]=[R] ……② を得る。次に f(x)=e^x g(x) とおくと ②より g'(x)=[S]/(1+e^{-x}) となる。よって g(x)=[T]\\log(1+e^{-x})+C を得る。ここでCは積分定数。さらに g(0)=f(0)より C=[U]。したがって g(x)が求まり f(x)=[V]\\log(1+e^{-x}) と定まる。最後に e^{-x}=t とおくと f(x)=[W]\\log(1+t)^{1/t} となる。よって lim_{x\\to\\infty}f(x)=lim_{t\\to[X]} [W]\\log(1+t)^{1/t}=[Y] と求まる。選択肢(0〜7): 0 f'(x)-f(x), 1 f(x)-f'(x), 2 f'(x)-2f(x), 3 f(x)-2f'(x), 4 2e^x, 5 -2e^x, 6 2e^{-x}, 7 -2e^{-x}.",
     "formulas": [],
-    "placeholders": {
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 },
-      "X": { "digits": 1 },
-      "Y": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -38,12 +27,36 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "①を微分して f, f' の関係式を得る。", "math": "f(x)=(1+e^{-x})f'(x)-e^{-x}f(x)+2" },
-      { "idx": 2, "description": "整理して (1+e^{-x})(f-f')=2。", "math": "(1+e^{-x})\\{f(x)-f'(x)\\}=2" },
-      { "idx": 3, "description": "f=e^x g とおくと f-f'=-e^x g'。", "math": "f'=e^x(g+g')\\Rightarrow f-f'=-e^x g'" },
-      { "idx": 4, "description": "g' を解き，積分して g を求める。", "math": "(1+e^{-x})(-e^x g')=2\\Rightarrow g'=-\\frac{2}{e^x+1}=-\\frac{2e^{-x}}{1+e^{-x}}\\Rightarrow g=2\\log(1+e^{-x})+C" },
-      { "idx": 5, "description": "x=0 を①に代入して f(0) を求め，Cを決定。", "math": "0=2f(0)-4\\log2\\Rightarrow f(0)=2\\log2.\\ g(0)=f(0)=2\\log2=2\\log2+C\\Rightarrow C=0" },
-      { "idx": 6, "description": "f を確定し，t=e^{-x} で極限へ。", "math": "f(x)=2e^x\\log(1+e^{-x}).\\ t=e^{-x}\\Rightarrow f(x)=\\frac{2}{t}\\log(1+t)=2\\log(1+t)^{1/t}\\to 2" }
+      {
+        "idx": 1,
+        "description": "①を微分して f, f' の関係式を得る。",
+        "math": "f(x)=(1+e^{-x})f'(x)-e^{-x}f(x)+2"
+      },
+      {
+        "idx": 2,
+        "description": "整理して (1+e^{-x})(f-f')=2。",
+        "math": "(1+e^{-x})\\{f(x)-f'(x)\\}=2"
+      },
+      {
+        "idx": 3,
+        "description": "f=e^x g とおくと f-f'=-e^x g'。",
+        "math": "f'=e^x(g+g')\\Rightarrow f-f'=-e^x g'"
+      },
+      {
+        "idx": 4,
+        "description": "g' を解き，積分して g を求める。",
+        "math": "(1+e^{-x})(-e^x g')=2\\Rightarrow g'=-\\frac{2}{e^x+1}=-\\frac{2e^{-x}}{1+e^{-x}}\\Rightarrow g=2\\log(1+e^{-x})+C"
+      },
+      {
+        "idx": 5,
+        "description": "x=0 を①に代入して f(0) を求め，Cを決定。",
+        "math": "0=2f(0)-4\\log2\\Rightarrow f(0)=2\\log2.\\ g(0)=f(0)=2\\log2=2\\log2+C\\Rightarrow C=0"
+      },
+      {
+        "idx": 6,
+        "description": "f を確定し，t=e^{-x} で極限へ。",
+        "math": "f(x)=2e^x\\log(1+e^{-x}).\\ t=e^{-x}\\Rightarrow f(x)=\\frac{2}{t}\\log(1+t)=2\\log(1+t)^{1/t}\\to 2"
+      }
     ],
     "symbolic_steps": []
   },
@@ -55,5 +68,43 @@
     "group": "Q/R/S/T/U/V/W/X/Y"
   },
   "solution_ref": "solutions/H25-1/course2/H25-1-IV-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    }
+  ]
 }

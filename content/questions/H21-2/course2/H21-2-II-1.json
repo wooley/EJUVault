@@ -16,20 +16,6 @@
   "original_ja": {
     "text": "等差数列{a_n}と等比数列{b_n}は，どちらも初項が c（a_1=c, b_1=c）で，{a_n}の公差と{b_n}の公比は同じ正の数 d とする。\n(1) a_5=b_3 かつ a_7=b_5 が成り立つとき，c と d の値を求めよう。\n上の条件式を順に c,d を用いて表すと\nc+[A]d=cd^[B],　c+[C]d=cd^[D]\nとなる。この2式から c を消去すると，d=√[E]/[F] が得られ，これより\nc=[GH]√[I]\nも得られる。\n(2) c と d が(1)で求めた値のとき，{b_n}の初項から第2m項までのうち，有理数となる項の和は\n[J]{(( [K]/[L] )^m−[M])}\nである。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "GH": { "digits": 2 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -78,5 +64,61 @@
   "solution_ref": "data/solutions/H21-2/course2/H21-2-II-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "SEQ_ARITH_GEOM_ELIMINATION",
-  "tags": ["数列", "等差", "等比", "消元", "求和"]
+  "tags": [
+    "数列",
+    "等差",
+    "等比",
+    "消元",
+    "求和"
+  ],
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "GH",
+      "length": 2
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
+  ]
 }

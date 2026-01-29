@@ -16,14 +16,6 @@
   "original_ja": {
     "text": "問2　正の実数 a, b は a^2=3+\\sqrt5, b^2=3-\\sqrt5 を満たすとする。a+b の小数部分を c とするとき，1/c − c の値を求めよう。\n\n(1) (ab)^2=[N], (a+b)^2=[OP] である。\n(2) [Q] < a+b < [Q]+1 であるから，c の値は \\sqrt[RS] − [T] である。\nよって，1/c − c = [U] となる。",
     "formulas": [],
-    "placeholders": {
-      "N": { "digits": 1 },
-      "OP": { "digits": 2 },
-      "Q": { "digits": 1 },
-      "RS": { "digits": 2 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -39,11 +31,31 @@
       "用有理化计算 1/c 并求 1/c − c"
     ],
     "steps": [
-      { "idx": 1, "description": "(ab)^2=a^2b^2=(3+\\sqrt5)(3-\\sqrt5)=9-5。", "math": "(ab)^2=4" },
-      { "idx": 2, "description": "ab>0 より ab=2。よって (a+b)^2=a^2+b^2+2ab。", "math": "(a+b)^2=(3+\\sqrt5)+(3-\\sqrt5)+4=10" },
-      { "idx": 3, "description": "a+b=\\sqrt{10}。9<10<16 より 3<\\sqrt{10}<4 なので小数部分 c=\\sqrt{10}-3。", "math": "c=\\sqrt{10}-3" },
-      { "idx": 4, "description": "1/c を有理化：1/(\\sqrt{10}-3)=(\\sqrt{10}+3)/(10-9)=\\sqrt{10}+3。", "math": "\\frac1c=\\sqrt{10}+3" },
-      { "idx": 5, "description": "よって 1/c − c=(\\sqrt{10}+3)-(\\sqrt{10}-3)=6。", "math": "\\frac1c-c=6" }
+      {
+        "idx": 1,
+        "description": "(ab)^2=a^2b^2=(3+\\sqrt5)(3-\\sqrt5)=9-5。",
+        "math": "(ab)^2=4"
+      },
+      {
+        "idx": 2,
+        "description": "ab>0 より ab=2。よって (a+b)^2=a^2+b^2+2ab。",
+        "math": "(a+b)^2=(3+\\sqrt5)+(3-\\sqrt5)+4=10"
+      },
+      {
+        "idx": 3,
+        "description": "a+b=\\sqrt{10}。9<10<16 より 3<\\sqrt{10}<4 なので小数部分 c=\\sqrt{10}-3。",
+        "math": "c=\\sqrt{10}-3"
+      },
+      {
+        "idx": 4,
+        "description": "1/c を有理化：1/(\\sqrt{10}-3)=(\\sqrt{10}+3)/(10-9)=\\sqrt{10}+3。",
+        "math": "\\frac1c=\\sqrt{10}+3"
+      },
+      {
+        "idx": 5,
+        "description": "よって 1/c − c=(\\sqrt{10}+3)-(\\sqrt{10}-3)=6。",
+        "math": "\\frac1c-c=6"
+      }
     ],
     "symbolic_steps": []
   },
@@ -56,6 +68,36 @@
   },
   "solution_ref": "data/solutions/H23-1/course2/H23-1-I-2.zh.md",
   "tagging_status": "ok",
-  "tags": ["平方根", "式の計算", "小数部分"],
-  "pattern_id": "ALG_TRANSFORM_SOLVE_X"
+  "tags": [
+    "平方根",
+    "式の計算",
+    "小数部分"
+  ],
+  "pattern_id": "ALG_TRANSFORM_SOLVE_X",
+  "blanks": [
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "OP",
+      "length": 2
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "RS",
+      "length": 2
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    }
+  ]
 }

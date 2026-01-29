@@ -14,27 +14,6 @@
   "type": "fill_in",
   "original_ja": {
     "text": "原点をOとするxy平面上に3点A(-2,1), B(2,-2), C(1,4)をとり△ABCを考える。x軸上に点P，第1象限内に点Qをとり，△OPQが△ABCと合同になるようにしたい。ベクトルを用いて，点P,Qの座標を求めよう。ベクトルAB, ACの成分はそれぞれ([A],-3), ([B],3)であるから，AB・AC=[C]。また |AB|=[D], |AC|=[E]√[F]。∠BAC=θとおくと cosθ=√[G]/[HI], sinθ=[J]√[K]/[LM]。したがって点P,Qの座標はそれぞれ([N],0), ([O]/[P], [QR]/[S])である。",
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 }
-    },
     "structure": {
       "vector_inner_product": true,
       "angle_cos_sin": true,
@@ -48,6 +27,77 @@
   },
   "solution_ref": "solutions/H20-1/course2/H20-1-III-1.zh.md",
   "pattern_id": "VEC_DOT_NORM_CONGRUENCE_COORD",
-  "tags": ["ベクトル", "内積", "三角形合同", "座標"],
-  "spec_version": "1.4"
+  "tags": [
+    "ベクトル",
+    "内積",
+    "三角形合同",
+    "座標"
+  ],
+  "spec_version": "1.4",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "LM",
+      "length": 2
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "QR",
+      "length": 2
+    },
+    {
+      "id": "S",
+      "length": 1
+    }
+  ]
 }

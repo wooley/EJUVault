@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H28-1", "year": 2016, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H28-1",
+    "year": 2016,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,28 +15,12 @@
   "type": "fill_in",
   "original_ja": {
     "text": "次の4つの条件を満たす実数x,y,t,uを考える。 y≧|x| ……①, x+y=t ……②, x^2+y^2=12 ……③, x^3+y^3=u ……④。このとき、tおよびuがとる値の範囲を求めよう。\n(1) ①,③より点(x,y)は原点を中心とする半径[A]√[B]の四分円の弧の上にあり、弧の両端の点の座標は(√[C],√[D]),(-√[G],√[D])である。このことと②より、tがとる値の範囲は [E]≦t≦[F]√[G] ……⑤である。\n(2) 次に②,③より xy=[H]/[I](t^2-[JK]) を得る。さらに④を用いて u=[L]/[M]([NO]t-t^3) を得る。したがって du/dt=[P]/[Q]([RS]-t^2) であるから、⑤の範囲においてuがとる値の範囲は [T]≦u≦[UV]√[W] である。",
-    "formulas": ["y\\ge |x|", "x+y=t", "x^2+y^2=12", "x^3+y^3=u"],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "G": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "JK": { "digits": 2 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "NO": { "digits": 2 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "RS": { "digits": 2 },
-      "T": { "digits": 1 },
-      "UV": { "digits": 2 },
-      "W": { "digits": 1 }
-    },
+    "formulas": [
+      "y\\ge |x|",
+      "x+y=t",
+      "x^2+y^2=12",
+      "x^3+y^3=u"
+    ],
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -39,7 +29,11 @@
       "algebraic_complexity": 3
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
   "answer_ref": {
     "course": 2,
     "section": "III",
@@ -49,5 +43,83 @@
   },
   "solution_ref": "solutions/H28-1/course2/H28-1-III-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "ALG_CONSTRAINT_FIND_RANGE"
+  "pattern_id": "ALG_CONSTRAINT_FIND_RANGE",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "JK",
+      "length": 2
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "NO",
+      "length": 2
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "RS",
+      "length": 2
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "UV",
+      "length": 2
+    },
+    {
+      "id": "W",
+      "length": 1
+    }
+  ]
 }

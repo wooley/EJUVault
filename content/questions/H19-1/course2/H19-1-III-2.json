@@ -15,41 +15,6 @@
   "type": "fill_in",
   "original_ja": {
     "text": "問2 x, y が x≧1, y≧1 であり log_2 x + log_2 y = (log_2 x)^2 + (log_2 y)^2 ……① を満たしている。このとき log_2 x=X, log_2 y=Y とおくと X≧[M], Y≧[N] であり，等式①は (X-[O]/[P])^2+(Y-[Q]/[R])^2=[S]/[T] と変形される。したがって，xy のとり得る値の範囲は [U]≦xy≦[V] および xy=[W] である。",
-    "placeholders": {
-      "M": {
-        "digits": 1
-      },
-      "N": {
-        "digits": 1
-      },
-      "O": {
-        "digits": 1
-      },
-      "P": {
-        "digits": 1
-      },
-      "Q": {
-        "digits": 1
-      },
-      "R": {
-        "digits": 1
-      },
-      "S": {
-        "digits": 1
-      },
-      "T": {
-        "digits": 1
-      },
-      "U": {
-        "digits": 1
-      },
-      "V": {
-        "digits": 1
-      },
-      "W": {
-        "digits": 1
-      }
-    },
     "structure": {
       "has_case_split": false,
       "has_parameter_elimination": false,
@@ -66,5 +31,51 @@
     "平方完成",
     "圆与直线",
     "范围最值"
+  ],
+  "blanks": [
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    }
   ]
 }

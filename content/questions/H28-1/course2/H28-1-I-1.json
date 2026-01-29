@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H28-1", "year": 2016, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H28-1",
+    "year": 2016,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,18 +15,10 @@
   "type": "fill_in",
   "original_ja": {
     "text": "問1 xの2次関数 y=-(1/8)x^2+ax+b ……① を考える。関数①のグラフの頂点の座標を(p,q)とすると p=[A]a, q=[B]a^2+b である。\n(1) 点(p,q)が直線x+y=1の上を動くとき、a,bは b=[CD]a^2-[E]a+[F] を満たす。このとき、8a+bは a=[G]で最大値[H]をとる。\n(2) 関数①のグラフがx軸に接するとき、a+bの値の範囲は a+b≦[I]/[J] である。",
-    "formulas": ["y=-(1/8)x^2+ax+b", "x+y=1"],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "CD": { "digits": 2 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 }
-    },
+    "formulas": [
+      "y=-(1/8)x^2+ax+b",
+      "x+y=1"
+    ],
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -29,7 +27,11 @@
       "algebraic_complexity": 2
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
   "answer_ref": {
     "course": 2,
     "section": "I",
@@ -39,5 +41,43 @@
   },
   "solution_ref": "solutions/H28-1/course2/H28-1-I-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "QF_DIRECT_VERTEX"
+  "pattern_id": "QF_DIRECT_VERTEX",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "CD",
+      "length": 2
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    }
+  ]
 }

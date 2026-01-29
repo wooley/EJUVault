@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H29-1", "year": 2017, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H29-1",
+    "year": 2017,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -10,20 +16,6 @@
   "original_ja": {
     "text": "区間0≤x≤πで f(x)=x sin^2 x。曲線 y=f(x) の接線で原点を通るものℓ（ℓはx軸ではない）。(1) [A]〜[D] を選択肢0〜9から。接点(t,f(t))とすると原点通過より等式[A]。さらに f'(t)=[B]+2t[C] だから接点のx座標 t=[D]。(2) ∫ f(x)dx = [E](2x^2-2x[F]-[G])+C。（選択肢0〜9）(3) 面積 S = [H]/[IJ] π^[K] - [L]/[M]。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "IJ": { "digits": 2 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -32,9 +24,69 @@
       "algebraic_complexity": 3
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
-  "answer_ref": { "course": 2, "section": "IV", "q": "Q1", "sub": "(1)(2)(3)", "group": "A/B/C/D/E/F/G/H/IJ/K/L/M" },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q1",
+    "sub": "(1)(2)(3)",
+    "group": "A/B/C/D/E/F/G/H/IJ/K/L/M"
+  },
   "solution_ref": "solutions/H29-1/course2/H29-1-IV-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "CALC_AREA"
+  "pattern_id": "CALC_AREA",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "IJ",
+      "length": 2
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
+  ]
 }
