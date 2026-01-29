@@ -17,21 +17,6 @@
   "original_ja": {
     "text": "正の実数 a に対して，x の方程式 2^{x^2+6}=a^{2x-5} の解の個数を調べよう。\n(1) は x^2-[A](log2 a)x+[B]log2 a+[C]=0 と変形できる。\n判別式を D とおくと D/4=(log2 a+[D])(log2 a-[E])。\nしたがって [F]/[G] < a < [HI] のとき解は [J] 個，a=[F]/[G], [HI] のとき解は [K] 個，a<[F]/[G], [HI]<a のとき解は [L] 個。\nまた a=[F]/[G] のとき(1)の解は [MN]，a=[HI] のとき(1)の解は [O]。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "HI": { "digits": 2 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "MN": { "digits": 2 },
-      "O": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -47,9 +32,21 @@
       "判別式の符号で解の個数を分類し，等号時の重解を求める"
     ],
     "steps": [
-      { "idx": 1, "description": "log2 を取って二次式に整理", "math": "x^2+6=(2x-5)\\log_2 a \\Rightarrow x^2-2(\\log_2 a)x+5\\log_2 a+6=0" },
-      { "idx": 2, "description": "判別式を因数分解", "math": "\\frac{D}{4}=(\\log_2 a)^2-5\\log_2 a-6=(\\log_2 a+1)(\\log_2 a-6)" },
-      { "idx": 3, "description": "D の符号で解の個数を決める", "math": "D>0\\Leftrightarrow a<\\frac12\\text{ または }a>64" }
+      {
+        "idx": 1,
+        "description": "log2 を取って二次式に整理",
+        "math": "x^2+6=(2x-5)\\log_2 a \\Rightarrow x^2-2(\\log_2 a)x+5\\log_2 a+6=0"
+      },
+      {
+        "idx": 2,
+        "description": "判別式を因数分解",
+        "math": "\\frac{D}{4}=(\\log_2 a)^2-5\\log_2 a-6=(\\log_2 a+1)(\\log_2 a-6)"
+      },
+      {
+        "idx": 3,
+        "description": "D の符号で解の個数を決める",
+        "math": "D>0\\Leftrightarrow a<\\frac12\\text{ または }a>64"
+      }
     ],
     "symbolic_steps": []
   },
@@ -61,5 +58,59 @@
     "group": "A/B/C/D/E/F/G/HI/J/K/L/MN/O"
   },
   "solution_ref": "solutions/H20-2/course2/H20-2-III-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "MN",
+      "length": 2
+    },
+    {
+      "id": "O",
+      "length": 1
+    }
+  ]
 }

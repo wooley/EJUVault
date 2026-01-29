@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R3-2", "year": 2021, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R3-2",
+    "year": 2021,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,18 +17,6 @@
   "original_ja": {
     "text": "問1 aを実数とし，2次関数 f(x)=-2x^2+4(a+1)x-a^2-5a を考える。このとき，1≦x≦4における最大値が2であるものを求めよう。y=f(x)のグラフの頂点の座標は (a+[A], a^2-a+[B]) である。y=f(x)のグラフの軸の位置で場合分けして考える。(i) a≦[C] のとき，求める関数は f(x)=-2x^2+[D]x，f(x)=-2x^2+[E] である。(ii) [C]<a≦[F] のとき，求める関数は f(x)=-2x^2+[G]x-[H] である。(iii) a>[F] のとき，求める関数は f(x)=-2x^2+[IJ]x-[KLM] である。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "IJ": { "digits": 2 },
-      "KLM": { "digits": 3 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -38,15 +32,83 @@
       "分别令最大值=2，反求参数a，并写出对应函数"
     ],
     "steps": [
-      { "idx": 1, "description": "求顶点：x_v=-b/(2a) 与 y_v=f(x_v)。", "math": "f(x)=-2x^2+4(a+1)x-a^2-5a\\Rightarrow x_v=a+1,\\ y_v=a^2-a+2" },
-      { "idx": 2, "description": "按 x_v 与区间[1,4]关系分类。", "math": "a+1\\le1\\Leftrightarrow a\\le0;\\ 1<a+1\\le4\\Leftrightarrow 0<a\\le3;\\ a+1>4\\Leftrightarrow a>3" },
-      { "idx": 3, "description": "a\\le0：最大值在x=1，令f(1)=2求a，并代回。", "math": "f(1)=2-a^2-a=2\\Rightarrow a(a+1)=0\\Rightarrow a=0,-1" },
-      { "idx": 4, "description": "0<a\\le3：最大值在顶点，令y_v=2求a，并代回。", "math": "a^2-a+2=2\\Rightarrow a(a-1)=0\\Rightarrow a=1" },
-      { "idx": 5, "description": "a>3：最大值在x=4，令f(4)=2求a，并代回。", "math": "f(4)=-a^2+11a-16=2\\Rightarrow a^2-11a+18=0\\Rightarrow a=9" }
+      {
+        "idx": 1,
+        "description": "求顶点：x_v=-b/(2a) 与 y_v=f(x_v)。",
+        "math": "f(x)=-2x^2+4(a+1)x-a^2-5a\\Rightarrow x_v=a+1,\\ y_v=a^2-a+2"
+      },
+      {
+        "idx": 2,
+        "description": "按 x_v 与区间[1,4]关系分类。",
+        "math": "a+1\\le1\\Leftrightarrow a\\le0;\\ 1<a+1\\le4\\Leftrightarrow 0<a\\le3;\\ a+1>4\\Leftrightarrow a>3"
+      },
+      {
+        "idx": 3,
+        "description": "a\\le0：最大值在x=1，令f(1)=2求a，并代回。",
+        "math": "f(1)=2-a^2-a=2\\Rightarrow a(a+1)=0\\Rightarrow a=0,-1"
+      },
+      {
+        "idx": 4,
+        "description": "0<a\\le3：最大值在顶点，令y_v=2求a，并代回。",
+        "math": "a^2-a+2=2\\Rightarrow a(a-1)=0\\Rightarrow a=1"
+      },
+      {
+        "idx": 5,
+        "description": "a>3：最大值在x=4，令f(4)=2求a，并代回。",
+        "math": "f(4)=-a^2+11a-16=2\\Rightarrow a^2-11a+18=0\\Rightarrow a=9"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": "all", "group": "A/B/C/D/E/F/GH/IJ/KLM" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "all",
+    "group": "A/B/C/D/E/F/GH/IJ/KLM"
+  },
   "solution_ref": "solutions/R3-2/course2/R3-2-I-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "IJ",
+      "length": 2
+    },
+    {
+      "id": "KLM",
+      "length": 3
+    }
+  ]
 }

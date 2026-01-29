@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H17-2", "year": 2005, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H17-2",
+    "year": 2005,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,19 +17,6 @@
   "original_ja": {
     "text": "問2　a,k は実数とする。x,y に関する方程式が\nx^2 + ky^2 + ax + 2aky + 3ak = 4\nである曲線をCとする。\n\n(1) k=[L] のとき，Cは中心が ( [MN]/[O] a , [PQ] a )，半径が \\sqrt{ ([R]/[S])a^2 - [T]a + 4 } の円である。また，この中心は a の値が変わると，直線 y=[U]x 上を動く。\n\n(2) a=0 とする。\nCが楕円で，その焦点の一つが (1,0) であれば，k=[V]/[W] である。\nCが双曲線で，その焦点の一つが (\\sqrt6,0) であれば，k=[XY] である。",
     "formulas": [],
-    "placeholders": {
-      "L": { "digits": 1 },
-      "MN": { "digits": 2 },
-      "O": { "digits": 1 },
-      "PQ": { "digits": 2 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 },
-      "XY": { "digits": 2 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -35,14 +28,82 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "(1) 为圆需 x^2 与 y^2 系数相等", "math": "k=1" },
-      { "idx": 2, "description": "(1) 配方求圆心与半径", "math": "(x+\\frac a2)^2+(y+a)^2=4+\\frac54a^2-3a" },
-      { "idx": 3, "description": "(1) 圆心轨迹", "math": "中心=(-\\frac a2,-a)\\Rightarrow y=2x" },
-      { "idx": 4, "description": "(2) a=0 时为 x^2+ky^2=4；按椭圆/双曲线焦点条件求 k", "math": "椭圆(k>0):\\ c^2=a^2-b^2;\\ 双曲线(k<0):\\ c^2=a^2+b^2" }
+      {
+        "idx": 1,
+        "description": "(1) 为圆需 x^2 与 y^2 系数相等",
+        "math": "k=1"
+      },
+      {
+        "idx": 2,
+        "description": "(1) 配方求圆心与半径",
+        "math": "(x+\\frac a2)^2+(y+a)^2=4+\\frac54a^2-3a"
+      },
+      {
+        "idx": 3,
+        "description": "(1) 圆心轨迹",
+        "math": "中心=(-\\frac a2,-a)\\Rightarrow y=2x"
+      },
+      {
+        "idx": 4,
+        "description": "(2) a=0 时为 x^2+ky^2=4；按椭圆/双曲线焦点条件求 k",
+        "math": "椭圆(k>0):\\ c^2=a^2-b^2;\\ 双曲线(k<0):\\ c^2=a^2+b^2"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q2", "sub": "(1)(2)", "group": "L/MN/O/PQ/R/S/T/U/V/W/XY" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q2",
+    "sub": "(1)(2)",
+    "group": "L/MN/O/PQ/R/S/T/U/V/W/XY"
+  },
   "solution_ref": "solutions/H17-2/course2/H17-2-II-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "MN",
+      "length": 2
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "PQ",
+      "length": 2
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "XY",
+      "length": 2
+    }
+  ]
 }

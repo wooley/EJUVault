@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R05-1", "year": 2023, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R05-1",
+    "year": 2023,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,30 +17,6 @@
   "original_ja": {
     "text": "aを実数とし，定積分で定義された関数\n\nf(x)=∫_0^x t(a sin^2 t - 1) dt （0<x<π/2）\n\nを考える。\n\nf(x)は x=π/12 で極値をもつと仮定する。\n\n(1) f(x)はx=π/12で極値をもつので a=[A]である。また，f(x)はx=π/12以外に，x=[B]/[CD] πで極値をもつ。\n\n(2) f(x)を求めよう。f(x)は\n\nf(x)=∫_0^x t( [E] - [F] cos [G] t ) dt\n\nと変形できるので\n\nf(x)= [H]/[I] x^2 - [J]/[K] x sin [L] x - [M]/[N] cos [O] x + [P]/[Q]\n\nである。\n\n(3) 次の文中の[R]，[S]，[T]には，この問の下の選択肢0〜9の中から適するものを選びなさい。\n\nf(x)の最大値は [R]π^2 + [S]π + [T] である。\n\n(4) 次の文中の[U]，[V]，[W]には，この問の下の選択肢0〜9の中から適するものを選びなさい。\n\n曲線y=f(x)の点(π/4, f(π/4))における接線の方程式は\n\ny=[U]πx - [V]/[N] π^2 + [W]\n\nである。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "CD": { "digits": 2 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -50,14 +32,126 @@
       "用临界点比较求最大值，并在 x=π/4 求切线。"
     ],
     "steps": [
-      { "idx": 1, "description": "由 f'(π/12)=0 求 a，并列出其他临界点。", "math": "f'(x)=x(a\\sin^2x-1)" },
-      { "idx": 2, "description": "用 sin^2 t 公式化为常数项与 cos 项的积分。", "math": "\\sin^2t=\\frac{1-\\cos2t}{2}" },
-      { "idx": 3, "description": "分部积分计算 ∫ t cos(kt) dt，得到 f(x) 显式。", "math": "\\int t\\cos(kt)dt" },
-      { "idx": 4, "description": "比较端点与临界点得到最大值；计算 f'(π/4) 得切线。", "math": "y=f(\\pi/4)+f'(\\pi/4)(x-\\pi/4)" }
+      {
+        "idx": 1,
+        "description": "由 f'(π/12)=0 求 a，并列出其他临界点。",
+        "math": "f'(x)=x(a\\sin^2x-1)"
+      },
+      {
+        "idx": 2,
+        "description": "用 sin^2 t 公式化为常数项与 cos 项的积分。",
+        "math": "\\sin^2t=\\frac{1-\\cos2t}{2}"
+      },
+      {
+        "idx": 3,
+        "description": "分部积分计算 ∫ t cos(kt) dt，得到 f(x) 显式。",
+        "math": "\\int t\\cos(kt)dt"
+      },
+      {
+        "idx": 4,
+        "description": "比较端点与临界点得到最大值；计算 f'(π/4) 得切线。",
+        "math": "y=f(\\pi/4)+f'(\\pi/4)(x-\\pi/4)"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "IV", "q": "Q1", "sub": null, "group": "A/BCD/EFG/HI/JKL/MNO/PQ/RST/UVW" },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q1",
+    "sub": null,
+    "group": "A/BCD/EFG/HI/JKL/MNO/PQ/RST/UVW"
+  },
   "solution_ref": "solutions/R05-1/course2/R05-1-IV-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "CD",
+      "length": 2
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    }
+  ]
 }

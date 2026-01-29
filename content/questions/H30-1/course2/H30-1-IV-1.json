@@ -19,68 +19,6 @@
     "formulas": [
       "a_n=\\int_0^1 x^{2n}\\sqrt{1-x^2}\\,dx"
     ],
-    "placeholders": {
-      "A": {
-        "digits": 1
-      },
-      "B": {
-        "digits": 1
-      },
-      "C": {
-        "digits": 1
-      },
-      "D": {
-        "digits": 1
-      },
-      "E": {
-        "digits": 1
-      },
-      "F": {
-        "digits": 1
-      },
-      "G": {
-        "digits": 1
-      },
-      "H": {
-        "digits": 1
-      },
-      "I": {
-        "digits": 1
-      },
-      "J": {
-        "digits": 1
-      },
-      "K": {
-        "digits": 1
-      },
-      "L": {
-        "digits": 1
-      },
-      "MN": {
-        "digits": 2
-      },
-      "O": {
-        "digits": 1
-      },
-      "P": {
-        "digits": 1
-      },
-      "Q": {
-        "digits": 1
-      },
-      "R": {
-        "digits": 1
-      },
-      "S": {
-        "digits": 1
-      },
-      "T": {
-        "digits": 1
-      },
-      "U": {
-        "digits": 1
-      }
-    },
     "structure": {
       "has_parameter_elimination": true,
       "has_case_split": false,
@@ -95,5 +33,87 @@
     "group": "A/BC/DE/FG/HI/JK/L/MN/OP/QR/ST/U"
   },
   "solution_ref": "solutions/H30-1/course2/H30-1-IV-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "MN",
+      "length": 2
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    }
+  ]
 }

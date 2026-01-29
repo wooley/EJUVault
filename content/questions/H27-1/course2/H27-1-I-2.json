@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H27-1", "year": 2015, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H27-1",
+    "year": 2015,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "course": 2,
   "track": "science",
   "question_id": "H27-1-I-2",
@@ -10,16 +16,6 @@
   "original_ja": {
     "text": "袋A:白4赤1，袋B:白2赤3。Aから同時に2個，続いてBから同時に2個取り出す。(1)Aから白2個，Bから白赤各1個の確率は [O]/[PQ]。(2)白3赤1の確率は [R]/[S]。(3)4個がすべて同色の確率は [T]/[UV]。(4)白球が2個以下の確率は [WX]/[YZ]。",
     "formulas": [],
-    "placeholders": {
-      "O": { "digits": 1 },
-      "PQ": { "digits": 2 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "UV": { "digits": 2 },
-      "WX": { "digits": 2 },
-      "YZ": { "digits": 2 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -31,15 +27,75 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "A,Bそれぞれ2個同時取り出しは組合せで計算", "math": "P=\\frac{\\binom{\\cdot}{\\cdot}}{\\binom{5}{2}}" },
-      { "idx": 2, "description": "(1) AでWW，BでWRを掛け算", "math": "\\frac{\\binom{4}{2}}{\\binom{5}{2}}\\cdot\\frac{\\binom{2}{1}\\binom{3}{1}}{\\binom{5}{2}}" },
-      { "idx": 3, "description": "(2) 総白3は(A:2,B:1)または(A:1,B:2)の和", "math": "P(2,1)+P(1,2)" },
-      { "idx": 4, "description": "(3) 同色は全白のみ（全赤はAで不可能）", "math": "P(A:2W)P(B:2W)" },
-      { "idx": 5, "description": "(4) 白が2以下を場合分けで合算", "math": "P(A:2W,B:0W)+P(A:1W,B:0/1W)" }
+      {
+        "idx": 1,
+        "description": "A,Bそれぞれ2個同時取り出しは組合せで計算",
+        "math": "P=\\frac{\\binom{\\cdot}{\\cdot}}{\\binom{5}{2}}"
+      },
+      {
+        "idx": 2,
+        "description": "(1) AでWW，BでWRを掛け算",
+        "math": "\\frac{\\binom{4}{2}}{\\binom{5}{2}}\\cdot\\frac{\\binom{2}{1}\\binom{3}{1}}{\\binom{5}{2}}"
+      },
+      {
+        "idx": 3,
+        "description": "(2) 総白3は(A:2,B:1)または(A:1,B:2)の和",
+        "math": "P(2,1)+P(1,2)"
+      },
+      {
+        "idx": 4,
+        "description": "(3) 同色は全白のみ（全赤はAで不可能）",
+        "math": "P(A:2W)P(B:2W)"
+      },
+      {
+        "idx": 5,
+        "description": "(4) 白が2以下を場合分けで合算",
+        "math": "P(A:2W,B:0W)+P(A:1W,B:0/1W)"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": "all", "group": "O/PQ/R/S/T/UV/WX/YZ" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "all",
+    "group": "O/PQ/R/S/T/UV/WX/YZ"
+  },
   "solution_ref": "solutions/H27-1/course2/H27-1-I-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "PQ",
+      "length": 2
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "UV",
+      "length": 2
+    },
+    {
+      "id": "WX",
+      "length": 2
+    },
+    {
+      "id": "YZ",
+      "length": 2
+    }
+  ]
 }

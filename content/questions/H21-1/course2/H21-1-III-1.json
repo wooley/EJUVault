@@ -14,32 +14,16 @@
   "order": 1,
   "type": "fill_in",
   "pattern_id": "GEO_ELIMINATION_SOLVE_PARAM",
-  "tags": ["圆的方程", "点积", "圆弧长度", "倍角公式"],
+  "tags": [
+    "圆的方程",
+    "点积",
+    "圆弧长度",
+    "倍角公式"
+  ],
   "difficulty": 3,
   "original_ja": {
     "text": "III：xy平面上の3点 O(0,0), A(6,0), B(4,-2) を通る円の中心をCとする。\n(1) 円の方程式 x^2+y^2-[A]x-[B]y=[C]。半径は\\sqrt[DE]，中心Cは([F],[G])。\n(2) \\overrightarrow{CA}と\\overrightarrow{CB}の内積は[H]。∠ACB=θ とおくと cosθ=[I]/[J]。\n(3) 中心Cを通りx軸に平行な直線と円の交点でx座標が正のものをP。弧PQの長さが弧ABの長さの2倍となるように円周上に点Qをとるとき，点Qのx座標は [K] - [L]√[MN]/[OP]。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "DE": { "digits": 2 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "MN": { "digits": 2 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "OP": { "digits": 2 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -49,14 +33,42 @@
     }
   },
   "solution": {
-    "outline": ["设一般圆方程代入三点解系数", "改写成标准式求圆心半径", "用点积求cosθ，再用倍角求Q的x坐标"],
+    "outline": [
+      "设一般圆方程代入三点解系数",
+      "改写成标准式求圆心半径",
+      "用点积求cosθ，再用倍角求Q的x坐标"
+    ],
     "steps": [
-      { "idx": 1, "description": "设圆为 x^2+y^2-Ax-By=C，代入O点先定C。", "math": "O(0,0)\\Rightarrow C=0" },
-      { "idx": 2, "description": "代入A(6,0),B(4,-2) 解A,B。", "math": "A点:36-6A=0\\Rightarrow A=6;\\ B点:20-4A+2B=0\\Rightarrow B=2" },
-      { "idx": 3, "description": "配方得圆心与半径。", "math": "x^2+y^2-6x-2y=0\\Rightarrow (x-3)^2+(y-1)^2=10" },
-      { "idx": 4, "description": "算向量点积与cosθ。", "math": "CA=(3,-1),\\ CB=(1,-3),\\ CA\\cdot CB=6,\\ |CA|=|CB|=\\sqrt{10}\\Rightarrow \\cos\\theta=6/10=3/5" },
-      { "idx": 5, "description": "弧长比等于圆心角比：∠PCQ=2θ。P在圆心右侧水平线上，对应角0。", "math": "\\cos(2\\theta)=2\\cos^2\\theta-1=2\\cdot(3/5)^2-1=-7/25" },
-      { "idx": 6, "description": "由Q的x坐标=3+\\sqrt{10}\\cos(2\\theta) 得结果。", "math": "x_Q=3+\\sqrt{10}(-7/25)=3-\\frac{7\\sqrt{10}}{25}" }
+      {
+        "idx": 1,
+        "description": "设圆为 x^2+y^2-Ax-By=C，代入O点先定C。",
+        "math": "O(0,0)\\Rightarrow C=0"
+      },
+      {
+        "idx": 2,
+        "description": "代入A(6,0),B(4,-2) 解A,B。",
+        "math": "A点:36-6A=0\\Rightarrow A=6;\\ B点:20-4A+2B=0\\Rightarrow B=2"
+      },
+      {
+        "idx": 3,
+        "description": "配方得圆心与半径。",
+        "math": "x^2+y^2-6x-2y=0\\Rightarrow (x-3)^2+(y-1)^2=10"
+      },
+      {
+        "idx": 4,
+        "description": "算向量点积与cosθ。",
+        "math": "CA=(3,-1),\\ CB=(1,-3),\\ CA\\cdot CB=6,\\ |CA|=|CB|=\\sqrt{10}\\Rightarrow \\cos\\theta=6/10=3/5"
+      },
+      {
+        "idx": 5,
+        "description": "弧长比等于圆心角比：∠PCQ=2θ。P在圆心右侧水平线上，对应角0。",
+        "math": "\\cos(2\\theta)=2\\cos^2\\theta-1=2\\cdot(3/5)^2-1=-7/25"
+      },
+      {
+        "idx": 6,
+        "description": "由Q的x坐标=3+\\sqrt{10}\\cos(2\\theta) 得结果。",
+        "math": "x_Q=3+\\sqrt{10}(-7/25)=3-\\frac{7\\sqrt{10}}{25}"
+      }
     ],
     "symbolic_steps": []
   },
@@ -68,5 +80,59 @@
     "group": "A/B/C/DE/F/G/H/I/J/K/L/MN/OP"
   },
   "solution_ref": "solutions/H21-1/course2/H21-1-III-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "DE",
+      "length": 2
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "MN",
+      "length": 2
+    },
+    {
+      "id": "OP",
+      "length": 2
+    }
+  ]
 }

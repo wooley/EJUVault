@@ -18,22 +18,6 @@
       "f_n(a)=\\int_0^\\pi (\\cos x+a\\sin 2nx)^2\\,dx",
       "f_n(a)=(\\pi/[N])a^2 + ([O]n)/([P]n^2-[Q])\\,a + \\pi/[R]"
     ],
-    "placeholders": {
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 },
-      "X": { "digits": 1 },
-      "Y": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -56,5 +40,63 @@
   },
   "solution_ref": "solutions/H24-1/course2/H24-1-IV-2.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "CALC_INTEGRAL_MINMAX"
+  "pattern_id": "CALC_INTEGRAL_MINMAX",
+  "blanks": [
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    }
+  ]
 }

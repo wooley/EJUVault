@@ -23,26 +23,6 @@
   "original_ja": {
     "text": "問2　等差数列{a_n}において，a1=2，ap=30，aq=51とする。\n(1) 公差をdとすると (p-1)d=[FG], (q-1)d=[HI] が成り立つ。\n(2) 公差dが1より大きい整数になるのは d=[J] のときで，そのとき初項から第q項までの和は [KLM] である。\n(3) 一般に，pとqの間には [N]q=[O]p-3 が成り立つ。",
     "formulas": [],
-    "placeholders": {
-      "FG": {
-        "digits": 2
-      },
-      "HI": {
-        "digits": 2
-      },
-      "J": {
-        "digits": 1
-      },
-      "KLM": {
-        "digits": 3
-      },
-      "N": {
-        "digits": 1
-      },
-      "O": {
-        "digits": 1
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -92,5 +72,31 @@
     "group": "FG/HI/J/KLM/N/O"
   },
   "solution_ref": "data/solutions/H18-2/course2/H18-2-II-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "FG",
+      "length": 2
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "KLM",
+      "length": 3
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    }
+  ]
 }

@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H29-1", "year": 2017, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H29-1",
+    "year": 2017,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -10,24 +16,6 @@
   "original_ja": {
     "text": "y = 2^{x^2} / 5^{3x} (x≥0)。(1) dy/dx = (2^{x^2}/5^{3x})(2x log_e [A] - [B] log_e [C])。最小となるxは x= [D](1-log10[E]) / ([F] log10[G])。(2) y>1000 となる最小の正の整数x。不等式より x^[H] log10[I] - [J]x log10[K] - [L] >0…①。log10 2≈0.3を用いると x > ([M]+√[NO])/[P]。したがって最小整数は[Q]。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "NO": { "digits": 2 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -36,9 +24,85 @@
       "algebraic_complexity": 3
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
-  "answer_ref": { "course": 2, "section": "III", "q": "Q1", "sub": "(1)(2)", "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/NO/P/Q" },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "III",
+    "q": "Q1",
+    "sub": "(1)(2)",
+    "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/NO/P/Q"
+  },
   "solution_ref": "solutions/H29-1/course2/H29-1-III-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "CALC_RATE_MINMAX"
+  "pattern_id": "CALC_RATE_MINMAX",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "NO",
+      "length": 2
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    }
+  ]
 }

@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R06-1", "year": 2024, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R06-1",
+    "year": 2024,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,22 +17,6 @@
   "original_ja": {
     "text": "2次関数 y=ax^2-6ax+2b の 1≦x≦4 における最大値が6，最小値が-2となるような a,b を求めよう。\n\n(1) この2次関数のグラフの頂点の座標は (【A】, -【B】a+【C】b) である。\n(2) a>0 の場合 この2次関数は 1≦x≦4 において，x=【D】 のとき最大値をとり，x=【E】 のとき最小値をとるので，a=【F】, b=【G】 である。\n(3) a<0 の場合 この2次関数は 1≦x≦4 において，x=【H】 のとき最大値をとり，x=【I】 のとき最小値をとるので，a=【JK】, b=【LM】 である。\n(4) (2)で求めた2次関数を f(x)，(3)で求めた2次関数を g(x) とすると，g(x) のグラフは f(x) のグラフを x軸に関して対称移動し，y軸方向に【N】だけ平行移動したものである。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -48,5 +38,63 @@
     "group": "A/BC/DE/FG/HI/JK/LM/N"
   },
   "solution_ref": "solutions/R06-1/course2/R06-1-I-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    }
+  ]
 }

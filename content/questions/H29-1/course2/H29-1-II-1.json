@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H29-1", "year": 2017, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H29-1",
+    "year": 2017,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -10,19 +16,6 @@
   "original_ja": {
     "text": "三角形OABとOACがOAを共有。(i) OC = x OA + 1/2 OB。(ii) 三角形OACの重心Gは線分AB上。DをOCとABの交点とすると OD = (x/[A])OA + ([B]/[C])OB。DがAB上より x=[D]/[E]。したがって OG = ([F]/[G])OA + ([H]/[I])OB。特に OA=1, OB=2, ∠AOB=60°のとき OG=√[JK]/[L]。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "JK": { "digits": 2 },
-      "L": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -31,9 +24,65 @@
       "algebraic_complexity": 2
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q1", "sub": "(i)(ii)", "group": "A/B/C/D/E/F/G/H/I/JK/L" },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q1",
+    "sub": "(i)(ii)",
+    "group": "A/B/C/D/E/F/G/H/I/JK/L"
+  },
   "solution_ref": "solutions/H29-1/course2/H29-1-II-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "VEC_RATIO_INTERNAL"
+  "pattern_id": "VEC_RATIO_INTERNAL",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "JK",
+      "length": 2
+    },
+    {
+      "id": "L",
+      "length": 1
+    }
+  ]
 }

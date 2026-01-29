@@ -14,35 +14,16 @@
   "order": 1,
   "type": "fill_in",
   "pattern_id": "INT_CONSTRAINT_SOLVE_X",
-  "tags": ["同余", "等差数列", "求和", "恒等变形"],
+  "tags": [
+    "同余",
+    "等差数列",
+    "求和",
+    "恒等变形"
+  ],
   "difficulty": 3,
   "original_ja": {
     "text": "II：3で割った余りが2，かつ4で割った余りが3となる自然数を小さい順に並べた数列 {a_n}。\n(1) 一般項 a_n=[AB]n-[C]。\n(2) 和 a_1+...+a_n=n([D]n+[E])，平方和 a_1^2+...+a_n^2=n([FG]n^2+[HI]n+[JK])。\n(3) 異なる2項の積の総和をSとすると (a_1+...+a_n)^2=a_1^2+...+a_n^2+[L]S。整理して S=\\frac{n}{2}(36n^3+[MN]n^2-35n-[OP])。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "AB": { "digits": 2 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "FG": { "digits": 2 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "HI": { "digits": 2 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "JK": { "digits": 2 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "MN": { "digits": 2 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "OP": { "digits": 2 }
-    },
     "structure": {
       "is_divisibility": true,
       "has_parameter_elimination": false,
@@ -52,14 +33,42 @@
     }
   },
   "solution": {
-    "outline": ["解同余得到等差数列", "用等差数列求和与平方和", "用恒等式把S表示出来并整理"],
+    "outline": [
+      "解同余得到等差数列",
+      "用等差数列求和与平方和",
+      "用恒等式把S表示出来并整理"
+    ],
     "steps": [
-      { "idx": 1, "description": "由条件 a≡2(mod3), a≡3(mod4) 列出最小解并找公差。", "math": "最小解11，之后每次加12：11,23,35,..." },
-      { "idx": 2, "description": "写出一般项。", "math": "a_n=11+12(n-1)=12n-1" },
-      { "idx": 3, "description": "用等差数列求和。", "math": "\\sum_{k=1}^n a_k=\\frac{n}{2}(a_1+a_n)=\\frac{n}{2}(11+(12n-1))=n(6n+5)" },
-      { "idx": 4, "description": "平方和：直接展开并套用\\(\\sum k\\),\\(\\sum k^2\\)。", "math": "\\sum_{k=1}^n(12k-1)^2=48n^3+60n^2+13n=n(48n^2+60n+13)" },
-      { "idx": 5, "description": "用恒等式 (\\sum a_i)^2=\\sum a_i^2+2\\sum_{i<j}a_ia_j。题设S=\\sum_{i<j}a_ia_j。", "math": "(\\sum a_i)^2=\\sum a_i^2+2S" },
-      { "idx": 6, "description": "代入并整理成题目给定形式。", "math": "S=\\frac{1}{2}\\left(n^2(6n+5)^2-n(48n^2+60n+13)\\right)=\\frac{n}{2}(36n^3+12n^2-35n-13)" }
+      {
+        "idx": 1,
+        "description": "由条件 a≡2(mod3), a≡3(mod4) 列出最小解并找公差。",
+        "math": "最小解11，之后每次加12：11,23,35,..."
+      },
+      {
+        "idx": 2,
+        "description": "写出一般项。",
+        "math": "a_n=11+12(n-1)=12n-1"
+      },
+      {
+        "idx": 3,
+        "description": "用等差数列求和。",
+        "math": "\\sum_{k=1}^n a_k=\\frac{n}{2}(a_1+a_n)=\\frac{n}{2}(11+(12n-1))=n(6n+5)"
+      },
+      {
+        "idx": 4,
+        "description": "平方和：直接展开并套用\\(\\sum k\\),\\(\\sum k^2\\)。",
+        "math": "\\sum_{k=1}^n(12k-1)^2=48n^3+60n^2+13n=n(48n^2+60n+13)"
+      },
+      {
+        "idx": 5,
+        "description": "用恒等式 (\\sum a_i)^2=\\sum a_i^2+2\\sum_{i<j}a_ia_j。题设S=\\sum_{i<j}a_ia_j。",
+        "math": "(\\sum a_i)^2=\\sum a_i^2+2S"
+      },
+      {
+        "idx": 6,
+        "description": "代入并整理成题目给定形式。",
+        "math": "S=\\frac{1}{2}\\left(n^2(6n+5)^2-n(48n^2+60n+13)\\right)=\\frac{n}{2}(36n^3+12n^2-35n-13)"
+      }
     ],
     "symbolic_steps": []
   },
@@ -71,5 +80,47 @@
     "group": "AB/C/D/E/FG/HI/JK/L/MN/OP"
   },
   "solution_ref": "solutions/H21-1/course2/H21-1-II-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "AB",
+      "length": 2
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "FG",
+      "length": 2
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "JK",
+      "length": 2
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "MN",
+      "length": 2
+    },
+    {
+      "id": "OP",
+      "length": 2
+    }
+  ]
 }

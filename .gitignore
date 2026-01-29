@@ -6,3 +6,4 @@ node_modules/
 .DS_Store
 content/index/
 content/answers/normalized.json
+data/.cache/

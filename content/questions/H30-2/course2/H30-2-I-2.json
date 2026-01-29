@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H30-2", "year": 2018, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H30-2",
+    "year": 2018,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,14 +15,49 @@
   "type": "fill_in",
   "pattern_id": "PROB_DICE_QUADRATIC",
   "original_ja": {
-    "text": "さいころを3回投げ，出目を a,b,c とする。2次関数 f(x)=ax^2+bx+c を考える。\n(1) b=4 かつ f(x)=0 が異なる2つの実数解をもつ確率は [N]/[OPQ]。\n(2) f(10)>453 となる確率。場合の数：a=4,b=5 のとき [R]，a=4,b=6 のとき [S]，a=5 のとき [TU]，a=6 のとき [VW]。\nよって確率は [X]/[Y]。",
-    "placeholders": {
-      "N": { "digits": 1 }, "OPQ": { "digits": 3 },
-      "R": { "digits": 1 }, "S": { "digits": 1 }, "TU": { "digits": 2 }, "VW": { "digits": 2 },
-      "X": { "digits": 1 }, "Y": { "digits": 1 }
-    }
+    "text": "さいころを3回投げ，出目を a,b,c とする。2次関数 f(x)=ax^2+bx+c を考える。\n(1) b=4 かつ f(x)=0 が異なる2つの実数解をもつ確率は [N]/[OPQ]。\n(2) f(10)>453 となる確率。場合の数：a=4,b=5 のとき [R]，a=4,b=6 のとき [S]，a=5 のとき [TU]，a=6 のとき [VW]。\nよって確率は [X]/[Y]。"
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": "mix", "group": "NOPQ/R/S/TU/VW/XY" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "mix",
+    "group": "NOPQ/R/S/TU/VW/XY"
+  },
   "solution_ref": "solutions/H30-2/course2/H30-2-I-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "OPQ",
+      "length": 3
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "TU",
+      "length": 2
+    },
+    {
+      "id": "VW",
+      "length": 2
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    }
+  ]
 }

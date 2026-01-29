@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H24-2", "year": 2012, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H24-2",
+    "year": 2012,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "course": 2,
   "track": "science",
   "question_id": "H24-2-I-1",
@@ -7,15 +13,52 @@
   "order": 1,
   "type": "fill_in",
   "original_ja": {
-    "text": "問1　a≠0とする。xの2次関数 y=ax^2-4x-4a ……① のグラフと原点(0,0)に関して対称な曲線をGとする。(1) ①の頂点は ( [A]/a , -[B]/a -4a ) である。(2) Gを表す2次関数は選択肢の中の [C] である。(3) Gは①と2点 ( [DE], [F] ), ( [G], [HI] ) で交わる。(4) a=2のとき，Gの区間 [DE]≤x≤[G] における最大値は[JK]，最小値は[LM]である。",
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 },
-      "DE": { "digits": 2 }, "F": { "digits": 1 }, "G": { "digits": 1 }, "HI": { "digits": 2 },
-      "JK": { "digits": 2 }, "LM": { "digits": 2 }
-    }
+    "text": "問1　a≠0とする。xの2次関数 y=ax^2-4x-4a ……① のグラフと原点(0,0)に関して対称な曲線をGとする。(1) ①の頂点は ( [A]/a , -[B]/a -4a ) である。(2) Gを表す2次関数は選択肢の中の [C] である。(3) Gは①と2点 ( [DE], [F] ), ( [G], [HI] ) で交わる。(4) a=2のとき，Gの区間 [DE]≤x≤[G] における最大値は[JK]，最小値は[LM]である。"
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q1" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1"
+  },
   "solution_ref": "solutions/H24-2/course2/H24-2-I-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "QF_SYMMETRY_VERTEX"
+  "pattern_id": "QF_SYMMETRY_VERTEX",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "DE",
+      "length": 2
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "JK",
+      "length": 2
+    },
+    {
+      "id": "LM",
+      "length": 2
+    }
+  ]
 }

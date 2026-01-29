@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H28-2", "year": 2016, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H28-2",
+    "year": 2016,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,24 +15,71 @@
   "type": "fill_in",
   "original_ja": {
     "text": "問2 a>0とする。曲線 y=√x e^{-x} とx軸およびx軸上の点A(a,0)を通る直線x=aで囲まれた部分を、x軸の周りに1回転してできる立体の体積をVとする。\n(1) Vはaの関数として V=-(π/4){([N]a+[O])e^{-[P]a}-[Q]} と表される。\n(2) 点Aは原点を出発してx軸上を正の方向に移動し、そのt秒後の速度を4tとする。このときt秒後のVの変化率を求めると dV/dt=[R]π t^{[S]} e^{-[T]t^{[U]}} である。またこの変化率が最も大きくなるのは t=√[V]/4 のときで、そのときのVの値は V=-(π/8)([W]e^{-[X]/[Y]}-[Z]) である。",
-    "formulas": ["y=\\sqrt{x}e^{-x}"],
-    "placeholders": {
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 },
-      "X": { "digits": 1 },
-      "Y": { "digits": 1 },
-      "Z": { "digits": 1 }
-    }
+    "formulas": [
+      "y=\\sqrt{x}e^{-x}"
+    ]
   },
-  "answer_ref": { "course": 2, "section": "IV", "q": "Q2", "sub": "main", "group": "N/O/P/Q/R/S/T/U/V/W/X/Y/Z" },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q2",
+    "sub": "main",
+    "group": "N/O/P/Q/R/S/T/U/V/W/X/Y/Z"
+  },
   "solution_ref": "solutions/H28-2/course2/H28-2-IV-2.zh.md",
-  "pattern_id": "CALC_VOLUME_RATE_OPT"
+  "pattern_id": "CALC_VOLUME_RATE_OPT",
+  "blanks": [
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    },
+    {
+      "id": "Z",
+      "length": 1
+    }
+  ]
 }

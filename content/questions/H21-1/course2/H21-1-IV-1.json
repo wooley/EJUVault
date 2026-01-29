@@ -14,27 +14,16 @@
   "order": 1,
   "type": "fill_in",
   "pattern_id": "CALC_AREA_AREA",
-  "tags": ["导数", "切线", "交点", "定积分面积"],
+  "tags": [
+    "导数",
+    "切线",
+    "交点",
+    "定积分面积"
+  ],
   "difficulty": 4,
   "original_ja": {
     "text": "IV 問1：① y=-x^2+x+2，② y=x^2-x-2。点(-1,0)における曲線①の接線をℓとする。\n(1) ℓの方程式 y=[A]x+[B]。\n(2) 曲線②とℓの交点のx座標は[CD]と[E]。\n(3) 曲線②とℓで囲まれた面積は[FG]，曲線①とx軸で囲まれた面積は[H]/[I]。したがって求める面積Sは[JK]。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "CD": { "digits": 2 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "FG": { "digits": 2 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "JK": { "digits": 2 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -44,12 +33,32 @@
     }
   },
   "solution": {
-    "outline": ["用导数求切线", "联立求交点", "用定积分求面积并利用两抛物线互为相反数的对称关系"],
+    "outline": [
+      "用导数求切线",
+      "联立求交点",
+      "用定积分求面积并利用两抛物线互为相反数的对称关系"
+    ],
     "steps": [
-      { "idx": 1, "description": "对①求导并在x=-1处取斜率，写切线方程。", "math": "y_1=-x^2+x+2\\Rightarrow y_1'=-2x+1,\\ y_1'(-1)=3\\Rightarrow \\ell: y=3(x+1)=3x+3" },
-      { "idx": 2, "description": "联立②与切线求交点x坐标。", "math": "x^2-x-2=3x+3\\Rightarrow x^2-4x-5=0\\Rightarrow x=-1,5" },
-      { "idx": 3, "description": "面积(②与ℓ)为定积分。", "math": "\\int_{-1}^{5}[(3x+3)-(x^2-x-2)]\\,dx=36" },
-      { "idx": 4, "description": "面积(①与x轴)为\\int_{-1}^{2}(-x^2+x+2)dx=9/2。且②=-①，所以两抛物线间在[-1,2]的面积=2\\cdot(9/2)=9。", "math": "S=36-9=27" }
+      {
+        "idx": 1,
+        "description": "对①求导并在x=-1处取斜率，写切线方程。",
+        "math": "y_1=-x^2+x+2\\Rightarrow y_1'=-2x+1,\\ y_1'(-1)=3\\Rightarrow \\ell: y=3(x+1)=3x+3"
+      },
+      {
+        "idx": 2,
+        "description": "联立②与切线求交点x坐标。",
+        "math": "x^2-x-2=3x+3\\Rightarrow x^2-4x-5=0\\Rightarrow x=-1,5"
+      },
+      {
+        "idx": 3,
+        "description": "面积(②与ℓ)为定积分。",
+        "math": "\\int_{-1}^{5}[(3x+3)-(x^2-x-2)]\\,dx=36"
+      },
+      {
+        "idx": 4,
+        "description": "面积(①与x轴)为\\int_{-1}^{2}(-x^2+x+2)dx=9/2。且②=-①，所以两抛物线间在[-1,2]的面积=2\\cdot(9/2)=9。",
+        "math": "S=36-9=27"
+      }
     ],
     "symbolic_steps": []
   },
@@ -61,5 +70,39 @@
     "group": "A/B/CD/E/FG/H/I/JK"
   },
   "solution_ref": "solutions/H21-1/course2/H21-1-IV-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "CD",
+      "length": 2
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "FG",
+      "length": 2
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "JK",
+      "length": 2
+    }
+  ]
 }

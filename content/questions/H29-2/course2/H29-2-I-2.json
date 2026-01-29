@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H29-2", "year": 2017, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H29-2",
+    "year": 2017,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,15 +15,40 @@
   "type": "fill_in",
   "original_ja": {
     "text": "平面上に三角形 ABC があり，1 個の球が頂点 A に置かれている。1 個のサイコロを投げ，次の規則で球を動かす。(i) 球が A にあるとき，出た目が 1 であれば B に動かし，その他の場合は A から動かさない。(ii) 球が B にあるとき，出た目が 4 以下であれば C に動かし，その他の場合は B から動かさない。ただし，球が C に到達すれば試行を止める。(1) サイコロを投げて 2 回目に球が C に到達する確率は 1/[N] である。(2) 3 回目に到達する確率は [O]/[PQ]。(3) 4 回目に到達する確率は [RS]/[TUV]。以上より，4 回以内に球が C に到達する確率は [WX]/[YZ] である。",
-    "placeholders": {
-      "N": {}, "O": {}, "PQ": {},
-      "RS": {}, "TUV": {},
-      "WX": {}, "YZ": {}
-    },
     "structure": {
       "has_case_split": true,
       "probability_process": "absorbing_state"
     }
   },
-  "pattern_id": "PROB_MARKOV_STOP"
+  "pattern_id": "PROB_MARKOV_STOP",
+  "blanks": [
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "PQ",
+      "length": 2
+    },
+    {
+      "id": "RS",
+      "length": 2
+    },
+    {
+      "id": "TUV",
+      "length": 3
+    },
+    {
+      "id": "WX",
+      "length": 2
+    },
+    {
+      "id": "YZ",
+      "length": 2
+    }
+  ]
 }

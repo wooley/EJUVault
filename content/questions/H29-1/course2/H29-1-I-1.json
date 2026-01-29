@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H29-1", "year": 2017, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H29-1",
+    "year": 2017,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -10,19 +16,6 @@
   "original_ja": {
     "text": "y=3x^2-6 を考える。(1) y=3x^2-6 のグラフを平行移動して 2点(1,5),(4,14) を通るようにする。このとき二次関数は y=[A]x^2-[BC]x+[DE]…①。このグラフは y=3x^2-6 を x軸方向に[F], y軸方向に[G] 平行移動したもの。(2) 直線 y=c に関して y=3x^2-6 と対称なグラフは y=-[H]x^2+[I]c+[J]…②。①と②が共有点を1つだけもつとき c=[K]，共有点の座標は([L],[M])。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "BC": { "digits": 2 },
-      "DE": { "digits": 2 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -31,9 +24,65 @@
       "algebraic_complexity": 2
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": "(1)(2)", "group": "A/BC/DE/F/G/H/I/J/K/L/M" },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "(1)(2)",
+    "group": "A/BC/DE/F/G/H/I/J/K/L/M"
+  },
   "solution_ref": "solutions/H29-1/course2/H29-1-I-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "QF_TRANSFORM_SHIFT"
+  "pattern_id": "QF_TRANSFORM_SHIFT",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "BC",
+      "length": 2
+    },
+    {
+      "id": "DE",
+      "length": 2
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
+  ]
 }

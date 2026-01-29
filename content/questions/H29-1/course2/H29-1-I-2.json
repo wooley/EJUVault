@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H29-1", "year": 2017, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H29-1",
+    "year": 2017,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -10,15 +16,6 @@
   "original_ja": {
     "text": "白4枚・赤3枚・黒3枚の計10枚（数字は全て異なる）。(1) 10枚から2枚選び箱A,Bに1枚ずつ入れる入れ方は[NO]通り。(2) 2枚同色の選び方は[PQ]通り，異色は[RS]通り。次に箱から1枚ずつ2度取り出し（戻さない）。(3) 2枚同色となる確率は[T]/[UV]。(4) 1回目が白or赤，2回目が赤or黒となる確率は[WX]/[YZ]。",
     "formulas": [],
-    "placeholders": {
-      "NO": { "digits": 2 },
-      "PQ": { "digits": 2 },
-      "RS": { "digits": 2 },
-      "T": { "digits": 1 },
-      "UV": { "digits": 2 },
-      "WX": { "digits": 2 },
-      "YZ": { "digits": 2 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -27,9 +24,49 @@
       "algebraic_complexity": 1
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": "(1)(2)(3)(4)", "group": "NO/PQ/RS/T/UV/WX/YZ" },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "(1)(2)(3)(4)",
+    "group": "NO/PQ/RS/T/UV/WX/YZ"
+  },
   "solution_ref": "solutions/H29-1/course2/H29-1-I-2.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "PROB_CLASSICAL_COUNT"
+  "pattern_id": "PROB_CLASSICAL_COUNT",
+  "blanks": [
+    {
+      "id": "NO",
+      "length": 2
+    },
+    {
+      "id": "PQ",
+      "length": 2
+    },
+    {
+      "id": "RS",
+      "length": 2
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "UV",
+      "length": 2
+    },
+    {
+      "id": "WX",
+      "length": 2
+    },
+    {
+      "id": "YZ",
+      "length": 2
+    }
+  ]
 }

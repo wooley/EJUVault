@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H17-2", "year": 2005, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H17-2",
+    "year": 2005,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,18 +17,6 @@
   "original_ja": {
     "text": "問1\n(1) \\left(\\frac{x}{2}+1\\right)\\left(\\frac{x}{2}+2\\right)\\left(\\frac{x}{2}+3\\right)\\left(\\frac{x}{2}+4\\right) を展開すると\n\\frac{1}{16}x^4 + \\frac{[A]}{[B]}x^3 + \\frac{[CD]}{[E]}x^2 + 25x + 24\nである。\n\n(2) x=\\sqrt2+\\sqrt3+\\sqrt5,\\ y=\\sqrt2+\\sqrt3-\\sqrt5 とすると，xy=[F]\\sqrt{[G]} である。\nまた，\\frac{x}{y} の値は\n\\frac{x}{y}=1+\\frac{[H]}{[I]}\\sqrt6+\\frac{\\sqrt{10}}{[J]}+\\frac{\\sqrt{15}}{[K]}\nである。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "CD": { "digits": 2 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -34,14 +28,78 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "(1) 令 y=x/2，化为 (y+1)(y+2)(y+3)(y+4) 并展开", "math": "(y+1)(y+4)=y^2+5y+4,(y+2)(y+3)=y^2+5y+6" },
-      { "idx": 2, "description": "(1) 乘开并回代 y=x/2", "math": "(y^2+5y+4)(y^2+5y+6)=y^4+10y^3+35y^2+50y+24" },
-      { "idx": 3, "description": "(2) 设 a=\\sqrt2+\\sqrt3，则 xy=(a+\\sqrt5)(a-\\sqrt5)=a^2-5", "math": "a^2=5+2\\sqrt6\\Rightarrow xy=2\\sqrt6" },
-      { "idx": 4, "description": "(2) 计算 x/y=(a+\\sqrt5)/(a-\\sqrt5)，化简为目标形式", "math": "\\frac{x}{y}=1+\\frac{5}{6}\\sqrt6+\\frac{\\sqrt{10}}{2}+\\frac{\\sqrt{15}}{3}" }
+      {
+        "idx": 1,
+        "description": "(1) 令 y=x/2，化为 (y+1)(y+2)(y+3)(y+4) 并展开",
+        "math": "(y+1)(y+4)=y^2+5y+4,(y+2)(y+3)=y^2+5y+6"
+      },
+      {
+        "idx": 2,
+        "description": "(1) 乘开并回代 y=x/2",
+        "math": "(y^2+5y+4)(y^2+5y+6)=y^4+10y^3+35y^2+50y+24"
+      },
+      {
+        "idx": 3,
+        "description": "(2) 设 a=\\sqrt2+\\sqrt3，则 xy=(a+\\sqrt5)(a-\\sqrt5)=a^2-5",
+        "math": "a^2=5+2\\sqrt6\\Rightarrow xy=2\\sqrt6"
+      },
+      {
+        "idx": 4,
+        "description": "(2) 计算 x/y=(a+\\sqrt5)/(a-\\sqrt5)，化简为目标形式",
+        "math": "\\frac{x}{y}=1+\\frac{5}{6}\\sqrt6+\\frac{\\sqrt{10}}{2}+\\frac{\\sqrt{15}}{3}"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q1", "sub": "(1)(2)", "group": "A/B/CD/E/F/G/H/I/J/K" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q1",
+    "sub": "(1)(2)",
+    "group": "A/B/CD/E/F/G/H/I/J/K"
+  },
   "solution_ref": "solutions/H17-2/course2/H17-2-II-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "CD",
+      "length": 2
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    }
+  ]
 }

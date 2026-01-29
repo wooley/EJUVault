@@ -170,6 +170,30 @@
       "requested_at": "2026-01-27T05:34:22.345Z",
       "expires_at": "2026-01-27T05:44:22.345Z",
       "consumed_at": "2026-01-27T05:34:23.195Z"
+    },
+    {
+      "id": 19,
+      "email": "wooley.gu@gmail.com",
+      "code": "010192",
+      "requested_at": "2026-01-28T03:07:15.919Z",
+      "expires_at": "2026-01-28T03:17:15.919Z",
+      "consumed_at": "2026-01-28T03:07:16.478Z"
+    },
+    {
+      "id": 20,
+      "email": "wooley.gu@gmail.com",
+      "code": "595134",
+      "requested_at": "2026-01-28T22:54:29.278Z",
+      "expires_at": "2026-01-28T23:04:29.278Z",
+      "consumed_at": "2026-01-28T22:54:29.828Z"
+    },
+    {
+      "id": 21,
+      "email": "wooley.gu@gmail.com",
+      "code": "626636",
+      "requested_at": "2026-01-28T22:56:22.257Z",
+      "expires_at": "2026-01-28T23:06:22.257Z",
+      "consumed_at": "2026-01-28T22:56:22.778Z"
     }
   ],
   "attempts": [
@@ -9264,6 +9288,63 @@
       "recommended_difficulty": 3,
       "time_budget": 600,
       "created_at": "2026-01-27T05:38:50.619Z"
+    },
+    {
+      "id": 66,
+      "session_id": "0a7534ad-48dc-48c9-9442-28d56e22380c",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "daily",
+      "tags": [],
+      "target_difficulty": null,
+      "size": 5,
+      "question_ids": [
+        "H24-1-II",
+        "H29-2-I-1",
+        "H20-1-I-2",
+        "H27-2-I-2",
+        "H21-2-IV-2"
+      ],
+      "recommended_difficulty": 3,
+      "time_budget": 600,
+      "created_at": "2026-01-28T22:54:32.680Z"
+    },
+    {
+      "id": 67,
+      "session_id": "862f1d1c-6534-4a0d-ae49-4e6042b18ead",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "review",
+      "tags": [],
+      "target_difficulty": null,
+      "size": 5,
+      "question_ids": [
+        "H28-1-IV-1",
+        "H18-1-I-2",
+        "H25-1-IV-2",
+        "H19-2-IV-1",
+        "H22-2-IV-1"
+      ],
+      "recommended_difficulty": 3,
+      "time_budget": 600,
+      "created_at": "2026-01-28T22:56:26.184Z"
+    },
+    {
+      "id": 68,
+      "session_id": "75e40049-c792-421a-ae4c-57340800832d",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "daily",
+      "tags": [],
+      "target_difficulty": 5,
+      "size": 5,
+      "question_ids": [
+        "R02-2-IV-1",
+        "H28-1-II-2",
+        "R4-2-II-2",
+        "H17-1-IV-1",
+        "H20-1-I-2"
+      ],
+      "recommended_difficulty": 5,
+      "time_budget": 1140,
+      "created_at": "2026-01-28T23:00:34.679Z"
     }
   ],
   "mastery": [

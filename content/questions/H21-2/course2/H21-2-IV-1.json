@@ -16,15 +16,6 @@
   "original_ja": {
     "text": "問1　関数 f(x) は\nx≦3 のとき f(x)=x+1，x>3 のとき f(x)=−2x+10\nで与えられている。このとき，x≧0 に対して，関数 g(x) が\ng(x)=∫_0^x f(t)dt\nで定められている。\n(1) 0≦x≦3 のとき g(x)=([A]/[B])x^[C]+x であり，x>3 のとき\ng(x)=−x^2+[DE]x−[FG]/[H]\nである。\n(2) 曲線 y=g(x) を C とする。C 上の点 P(a,g(a))（a>3）における C の接線が点(0,5/2)を通るとき，その傾きは [I] である。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "DE": { "digits": 2 },
-      "FG": { "digits": 2 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -68,5 +59,40 @@
   "solution_ref": "data/solutions/H21-2/course2/H21-2-IV-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "CALC_INTEGRAL_PIECEWISE_TANGENT",
-  "tags": ["定积分", "分段函数", "导数几何意义", "切线"]
+  "tags": [
+    "定积分",
+    "分段函数",
+    "导数几何意义",
+    "切线"
+  ],
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "DE",
+      "length": 2
+    },
+    {
+      "id": "FG",
+      "length": 2
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    }
+  ]
 }

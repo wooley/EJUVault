@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R02-2", "year": 2020, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R02-2",
+    "year": 2020,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,13 +17,6 @@
   "original_ja": {
     "text": "aは正の定数とする。2次関数 y=1/4 x^2 のグラフを平行移動する。移動後の放物線とx軸との交点が(-2a,0),(4a,0)であるとき、この放物線の方程式 y=f(x) について考える。(1) f(x)=A/B (x-Ca)(x+Da)。(2) y=f(x) において y≦10a^2 となるxの範囲を、不等式 x^2-Eax-FG a^2≦0 を解いて -Ha≦x≦Ia。(3) 直線 y=10a が y=f(x) によって切り取られる線分の長さを10とする。J√(Ka^2+LM a)=10 より a=N/O。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
-      "E": { "digits": 1 }, "F": { "digits": 1 }, "G": { "digits": 1 },
-      "H": { "digits": 1 }, "I": { "digits": 1 },
-      "J": { "digits": 1 }, "K": { "digits": 1 }, "L": { "digits": 1 }, "M": { "digits": 1 },
-      "N": { "digits": 1 }, "O": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -27,19 +26,119 @@
     }
   },
   "solution": {
-    "outline": ["根(交点)から因数分解形を作る", "不等式は移項して2次不等式として解く", "交点間距離＝根の差＝√D を用いる"],
+    "outline": [
+      "根(交点)から因数分解形を作る",
+      "不等式は移項して2次不等式として解く",
+      "交点間距離＝根の差＝√D を用いる"
+    ],
     "steps": [
-      { "idx": 1, "description": "x軸との交点が -2a, 4a なので f(x)=k(x+2a)(x-4a) とおける。平行移動なので係数kは元の1/4のまま。", "math": "f(x)=\\frac14(x+2a)(x-4a)" },
-      { "idx": 2, "description": "y≦10a^2 を解く。", "math": "\\frac14(x+2a)(x-4a)\\le 10a^2\\iff (x+2a)(x-4a)\\le 40a^2" },
-      { "idx": 3, "description": "展開して2次不等式にする。", "math": "x^2-2ax-8a^2\\le 40a^2\\iff x^2-2ax-48a^2\\le 0" },
-      { "idx": 4, "description": "方程式の解は x=\\frac{2a\\pm\\sqrt{4a^2+192a^2}}2=\\frac{2a\\pm 14a}2 より -6a,8a。上に凸なのでその間。", "math": "-6a\\le x\\le 8a" },
-      { "idx": 5, "description": "直線 y=10a との交点は f(x)=10a を解けばよい。", "math": "\\frac14(x+2a)(x-4a)=10a\\iff x^2-2ax-(8a^2+40a)=0" },
-      { "idx": 6, "description": "水平線で切り取られる線分の長さは |x2-x1|=\\sqrt{D}。判別式 D=36a^2+160a=4(9a^2+40a)。", "math": "|x_2-x_1|=\\sqrt{D}=2\\sqrt{9a^2+40a}" },
-      { "idx": 7, "description": "長さが10なので 2√(9a^2+40a)=10 ⇒ 9a^2+40a=25。正の解を取る。", "math": "9a^2+40a-25=0\\Rightarrow a=\\frac{-40+50}{18}=\\frac59" }
+      {
+        "idx": 1,
+        "description": "x軸との交点が -2a, 4a なので f(x)=k(x+2a)(x-4a) とおける。平行移動なので係数kは元の1/4のまま。",
+        "math": "f(x)=\\frac14(x+2a)(x-4a)"
+      },
+      {
+        "idx": 2,
+        "description": "y≦10a^2 を解く。",
+        "math": "\\frac14(x+2a)(x-4a)\\le 10a^2\\iff (x+2a)(x-4a)\\le 40a^2"
+      },
+      {
+        "idx": 3,
+        "description": "展開して2次不等式にする。",
+        "math": "x^2-2ax-8a^2\\le 40a^2\\iff x^2-2ax-48a^2\\le 0"
+      },
+      {
+        "idx": 4,
+        "description": "方程式の解は x=\\frac{2a\\pm\\sqrt{4a^2+192a^2}}2=\\frac{2a\\pm 14a}2 より -6a,8a。上に凸なのでその間。",
+        "math": "-6a\\le x\\le 8a"
+      },
+      {
+        "idx": 5,
+        "description": "直線 y=10a との交点は f(x)=10a を解けばよい。",
+        "math": "\\frac14(x+2a)(x-4a)=10a\\iff x^2-2ax-(8a^2+40a)=0"
+      },
+      {
+        "idx": 6,
+        "description": "水平線で切り取られる線分の長さは |x2-x1|=\\sqrt{D}。判別式 D=36a^2+160a=4(9a^2+40a)。",
+        "math": "|x_2-x_1|=\\sqrt{D}=2\\sqrt{9a^2+40a}"
+      },
+      {
+        "idx": 7,
+        "description": "長さが10なので 2√(9a^2+40a)=10 ⇒ 9a^2+40a=25。正の解を取る。",
+        "math": "9a^2+40a-25=0\\Rightarrow a=\\frac{-40+50}{18}=\\frac59"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": "all", "group": "ABCD/EFG/HI/JKLM/NO" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "all",
+    "group": "ABCD/EFG/HI/JKLM/NO"
+  },
   "solution_ref": "solutions/R02-2/course2/R02-2-I-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    }
+  ]
 }

@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R05-2", "year": 2023, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R05-2",
+    "year": 2023,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,7 +17,15 @@
   "original_ja": {
     "text": "関数 f(a)=\\int_a^{a+1}|e^x-2|\\,dx の値を最小にする a の値を求めよう。\n\n|e^x-2|={ e^x-2 (x≧log[A]),\n          2-e^x (x≦log[A]) }\nである。\n\na を場合分けして f(a) を考える。\n次の文中の [G],[P],[Q],[U] には，下の選択肢 ⓪ または ① から適するものを選びなさい。また，その他の□には，適する数を入れなさい。\n（⓪ 増加，① 減少）\n\n(i) a<log[B]-[C] のとき\n    f(a)=[D]+e^a([E]-e)，\n    f'(a)=e^a([F]-e)\nであるから，f(a) は [G] である。\n\n(ii) log[B]-[C]≦a<log[B] のとき\n    f(a)=[H]log2-[I]-[J]a+e^a(e+[K])，\n    f'(a)=-[L]+e^a(e+[M])\nである。\nよって，a=log([N]/(e+[O])) のとき f'(a)=0 となり\nlog[B]-[C]≦a<log([N]/(e+[O])) において f(a) は [P]，\nlog([N]/(e+[O]))<a<log[B] において f(a) は [Q] である。\n\n(iii) a≧log[B] のとき\n    f(a)=e^a(e-[R])-[S]，\n    f'(a)=e^a(e-[T])\nであるから，f(a) は [U] である。\n\nしたがって，(i),(ii),(iii)より，f(a) は a=log([V]/(e+[W])) のとき最小となる。"
   },
-  "solution_ref": { "path": "solutions/R05-2/course2/R05-2-IV-1.zh.md" },
-  "answer_ref": { "path": "answers/ai_ans.json", "key": "R05-2-IV-1" },
+  "solution_ref": {
+    "path": "solutions/R05-2/course2/R05-2-IV-1.zh.md"
+  },
+  "answer_ref": {
+    "path": "answers/ai_ans.json",
+    "key": "R05-2-IV-1",
+    "course": 2,
+    "section": "IV",
+    "q": "Q1"
+  },
   "tagging_status": "generated"
 }

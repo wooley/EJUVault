@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R01-1", "year": 2019, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R01-1",
+    "year": 2019,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,15 +17,6 @@
   "original_ja": {
     "text": "【IV】logは自然対数。\n(1) f(x)=x-1-log x。f'(x)=[A]-[B]/x。増減より x=[C] で最小値 [D]。\n(2) k>0, nは正整数。直線 y=x/k-1, x=n, x=n+1 と曲線 y=log(x/k) で囲まれる面積を S とする。\nS=[ x^[E]/([F]k) - x - [G] + x log k ]_{n}^{n+1}\n= [H]n+1/([I]k) + log k - (n+[J])log(n+[K]) + n log n\n(3) n固定で k を動かし S の最小値を a_n とする。\ndS/dk=([L]k-([M]n+1))/([N]k^2)。よって k=n+[O]/[P] で最小。\na_n=[Q]-log{(( [R]+[S]/n )^n)·( [T]n+[U] )/([V]n+1)}。\nlim a_n=[W]。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
-      "E": { "digits": 1 }, "F": { "digits": 1 }, "G": { "digits": 1 },
-      "H": { "digits": 1 }, "I": { "digits": 1 }, "J": { "digits": 1 }, "K": { "digits": 1 },
-      "L": { "digits": 1 }, "M": { "digits": 1 }, "N": { "digits": 1 },
-      "O": { "digits": 1 }, "P": { "digits": 1 },
-      "Q": { "digits": 1 }, "R": { "digits": 1 }, "S": { "digits": 1 },
-      "T": { "digits": 1 }, "U": { "digits": 1 }, "V": { "digits": 1 }, "W": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -31,13 +28,125 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "微分して f'(x)=1-1/x、臨界点 x=1 で最小0を得て不等式の基礎を作る。", "math": "" },
-      { "idx": 2, "description": "面積 S=∫(直線−曲線) を計算し、S(k)=A/(k)+log k+定数 の形に整理する。", "math": "" },
-      { "idx": 3, "description": "kで微分して最小化し、k=n+1/2 を代入して a_n を指数形に変形、極限を求める。", "math": "" }
+      {
+        "idx": 1,
+        "description": "微分して f'(x)=1-1/x、臨界点 x=1 で最小0を得て不等式の基礎を作る。",
+        "math": ""
+      },
+      {
+        "idx": 2,
+        "description": "面積 S=∫(直線−曲線) を計算し、S(k)=A/(k)+log k+定数 の形に整理する。",
+        "math": ""
+      },
+      {
+        "idx": 3,
+        "description": "kで微分して最小化し、k=n+1/2 を代入して a_n を指数形に変形、極限を求める。",
+        "math": ""
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "IV", "q": "Q1", "sub": "(1)(2)(3)", "group": "A-W" },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q1",
+    "sub": "(1)(2)(3)",
+    "group": "A-W"
+  },
   "solution_ref": "solutions/R01-1/course2/R01-1-IV-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    }
+  ]
 }

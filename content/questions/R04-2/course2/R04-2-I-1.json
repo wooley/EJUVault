@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R4-2", "year": 2022, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R4-2",
+    "year": 2022,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -10,23 +16,67 @@
   "pattern_id": "QF_DIRECT_VERTEX",
   "original_ja": {
     "text": "a≠0とし，2次関数 y=ax^2+bx+c…① を考える。この関数のグラフCは直線y=1と2点で交わり，その2点間の距離は4，さらに直線y=3と2点で交わり，その2点間の距離は6であるとする。(1) Cの頂点を(p,q)とおく。Cと直線y=1との交点のひとつを(α,1)とすると |α-p|=[A]。また①をa,p,qで表した式に(α,1)を代入すると [B]a+q=[C]。同様にy=3について [D]a+q=[E]。よって a=[F]/[G]，q=-[H]/[I]。(2) さらにCが点(2,-1/5)を通り，頂点のx座標pが2より小さいとすると b=-[J]/[K]，c=-[L]/[M]。",
-    "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 }
-    }
+    "formulas": []
   },
-  "answer_ref": "official/course2.json#R4-2-I-1",
-  "solution_ref": "answers/ai_ans.json#R4-2-I-1"
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "ref": "official/course2.json#R4-2-I-1"
+  },
+  "solution_ref": "answers/ai_ans.json#R4-2-I-1",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
+  ]
 }

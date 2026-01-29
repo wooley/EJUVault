@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H19-2", "year": 2007, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H19-2",
+    "year": 2007,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -10,15 +16,6 @@
   "original_ja": {
     "text": "問1　nは整数で，1<nとする。n^3を42で割ったときの余りがnであるような，nの最大値，および最小値を求めよう。\n n^3を42で割ったときの商をqとすると\n n^3=[AB]q+n （1<n<[AB]） ……①\n 等式①は\n (n-[C])n(n+[D])=[AB]q （1<n<[AB]） ……②\nと変形できる。\n n-[C], n, n+[D]の中には，つねに，2の倍数と[E]の倍数が含まれており，等式②の形から，さらにn-[C], n, n+[D]の中には，[F]の倍数が含まれている。\n このようなnを調べると，nの最大値は[GH]であり，最小値は[I]である。",
     "formulas": [],
-    "placeholders": {
-      "AB": { "digits": 2 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "GH": { "digits": 2 },
-      "I": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": true,
       "has_parameter_elimination": false,
@@ -28,18 +25,79 @@
     }
   },
   "solution": {
-    "outline": ["余数条件改写为同余", "分解为三连积", "用42=2·3·7判定需含7倍数", "在1<n<42内取最大最小"],
+    "outline": [
+      "余数条件改写为同余",
+      "分解为三连积",
+      "用42=2·3·7判定需含7倍数",
+      "在1<n<42内取最大最小"
+    ],
     "steps": [
-      { "idx": 1, "description": "余数为n：写成等式", "math": "n^3=42q+n\\ (1<n<42)" },
-      { "idx": 2, "description": "移项因式分解", "math": "n^3-n=n(n-1)(n+1)=42q" },
-      { "idx": 3, "description": "三连数必含2的倍数与3的倍数", "math": "n-1,n,n+1\\text{中必有偶数与3的倍数}" },
-      { "idx": 4, "description": "要被42整除还需含7的倍数", "math": "42=2\\cdot3\\cdot7\\Rightarrow\\{n-1,n,n+1\\}\\text{中需有7的倍数}" },
-      { "idx": 5, "description": "在2..41中找n≡0,1,6 (mod7)，取最小最大", "math": "n_{\\min}=6,\\ n_{\\max}=41" }
+      {
+        "idx": 1,
+        "description": "余数为n：写成等式",
+        "math": "n^3=42q+n\\ (1<n<42)"
+      },
+      {
+        "idx": 2,
+        "description": "移项因式分解",
+        "math": "n^3-n=n(n-1)(n+1)=42q"
+      },
+      {
+        "idx": 3,
+        "description": "三连数必含2的倍数与3的倍数",
+        "math": "n-1,n,n+1\\text{中必有偶数与3的倍数}"
+      },
+      {
+        "idx": 4,
+        "description": "要被42整除还需含7的倍数",
+        "math": "42=2\\cdot3\\cdot7\\Rightarrow\\{n-1,n,n+1\\}\\text{中需有7的倍数}"
+      },
+      {
+        "idx": 5,
+        "description": "在2..41中找n≡0,1,6 (mod7)，取最小最大",
+        "math": "n_{\\min}=6,\\ n_{\\max}=41"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q1", "sub": "all", "group": "AB/CDEF/GH/I" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q1",
+    "sub": "all",
+    "group": "AB/CDEF/GH/I"
+  },
   "solution_ref": "solutions/H19-2/course2/H19-2-II-1.zh.md",
   "pattern_id": "INT_CONSTRAINT_COUNT_INT",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "AB",
+      "length": 2
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "GH",
+      "length": 2
+    },
+    {
+      "id": "I",
+      "length": 1
+    }
+  ]
 }

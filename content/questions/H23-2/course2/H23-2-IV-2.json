@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H23-2", "year": 2011, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H23-2",
+    "year": 2011,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -8,26 +14,97 @@
   "order": 2,
   "type": "fill_in",
   "original_ja": {
-    "text": "問2　定積分 S=\\int_0^a x\\sqrt{(1/3)x+2}\\,dx を考える。次の問いに答えなさい。\nただし [S],[T] には下の 0〜9 の中から適する式を選びなさい。\n(1) t=\\sqrt{(1/3)x+2} とおくと\n\\int x\\sqrt{(1/3)x+2}\\,dx=[NO]\\int (t^[P]-[Q]t^[R])dt=[S]+C。\n(2) (1)の結果を用いて S=[T] を得る。したがって\n\\lim_{a\\to\\infty} \\frac{S}{a^{[U]/[V]}}= [W]\\sqrt{[X]}/[YZ]。",
-    "placeholders": {
-      "S": { "digits": 1 }, "T": { "digits": 1 },
-      "NO": { "digits": 2 }, "P": { "digits": 1 }, "Q": { "digits": 1 }, "R": { "digits": 1 },
-      "U": { "digits": 1 }, "V": { "digits": 1 },
-      "W": { "digits": 1 }, "X": { "digits": 1 }, "YZ": { "digits": 2 }
-    }
+    "text": "問2　定積分 S=\\int_0^a x\\sqrt{(1/3)x+2}\\,dx を考える。次の問いに答えなさい。\nただし [S],[T] には下の 0〜9 の中から適する式を選びなさい。\n(1) t=\\sqrt{(1/3)x+2} とおくと\n\\int x\\sqrt{(1/3)x+2}\\,dx=[NO]\\int (t^[P]-[Q]t^[R])dt=[S]+C。\n(2) (1)の結果を用いて S=[T] を得る。したがって\n\\lim_{a\\to\\infty} \\frac{S}{a^{[U]/[V]}}= [W]\\sqrt{[X]}/[YZ]。"
   },
   "solution": {
-    "outline": ["置換 t=√(x/3+2) で多項式積分に変形", "不定積分から定積分 S を式選択で表す", "漸近で a^{5/2} 係数を求め極限"],
+    "outline": [
+      "置換 t=√(x/3+2) で多項式積分に変形",
+      "不定積分から定積分 S を式選択で表す",
+      "漸近で a^{5/2} 係数を求め極限"
+    ],
     "steps": [
-      { "idx": 1, "description": "t^2=x/3+2 ⇒ x=3(t^2-2), dx=6t dt。", "math": "x\\,t\\,dx=3(t^2-2)\\,t\\cdot 6t\\,dt=18(t^4-2t^2)dt" },
-      { "idx": 2, "description": "∫18(t^4-2t^2)dt=(6/5)t^3(3t^2-10)+C。よって選択肢 S は ①。", "math": "\\int x\\sqrt{\\frac{x}{3}+2}dx=\\frac{6}{5}t^3(3t^2-10)+C" },
-      { "idx": 3, "description": "定積分：t(0)=√2, t(a)=√(a/3+2)。整理すると S=⑧。", "math": "S=\\frac{6}{5}\\Bigl((\\sqrt{\\frac{a}{3}+2})^3(a-4)+8\\sqrt2\\Bigr)" },
-      { "idx": 4, "description": "大域：√(a/3+2)^3(a-4) ~ (a^{3/2}/(3\\sqrt3))\\cdot a=a^{5/2}/(3\\sqrt3)。よって S~(2/(5\\sqrt3))a^{5/2}。", "math": "\\lim_{a\\to\\infty}\\frac{S}{a^{5/2}}=\\frac{2}{5\\sqrt3}=\\frac{2\\sqrt3}{15}" }
+      {
+        "idx": 1,
+        "description": "t^2=x/3+2 ⇒ x=3(t^2-2), dx=6t dt。",
+        "math": "x\\,t\\,dx=3(t^2-2)\\,t\\cdot 6t\\,dt=18(t^4-2t^2)dt"
+      },
+      {
+        "idx": 2,
+        "description": "∫18(t^4-2t^2)dt=(6/5)t^3(3t^2-10)+C。よって選択肢 S は ①。",
+        "math": "\\int x\\sqrt{\\frac{x}{3}+2}dx=\\frac{6}{5}t^3(3t^2-10)+C"
+      },
+      {
+        "idx": 3,
+        "description": "定積分：t(0)=√2, t(a)=√(a/3+2)。整理すると S=⑧。",
+        "math": "S=\\frac{6}{5}\\Bigl((\\sqrt{\\frac{a}{3}+2})^3(a-4)+8\\sqrt2\\Bigr)"
+      },
+      {
+        "idx": 4,
+        "description": "大域：√(a/3+2)^3(a-4) ~ (a^{3/2}/(3\\sqrt3))\\cdot a=a^{5/2}/(3\\sqrt3)。よって S~(2/(5\\sqrt3))a^{5/2}。",
+        "math": "\\lim_{a\\to\\infty}\\frac{S}{a^{5/2}}=\\frac{2}{5\\sqrt3}=\\frac{2\\sqrt3}{15}"
+      }
     ]
   },
-  "answer_ref": { "course": 2, "section": "IV", "q": "Q2", "sub": null, "group": "S/T/NO/P/Q/R/U/V/W/X/YZ" },
+  "answer_ref": {
+    "course": 2,
+    "section": "IV",
+    "q": "Q2",
+    "sub": null,
+    "group": "S/T/NO/P/Q/R/U/V/W/X/YZ"
+  },
   "solution_ref": "data/solutions/H23-2/course2/H23-2-IV-2.zh.md",
-  "tags": ["置換積分", "定積分", "極限", "漸近"],
+  "tags": [
+    "置換積分",
+    "定積分",
+    "極限",
+    "漸近"
+  ],
   "pattern_id": "CALC_INTEGRAL_ASYMPTOTIC",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "NO",
+      "length": 2
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "YZ",
+      "length": 2
+    }
+  ]
 }

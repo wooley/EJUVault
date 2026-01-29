@@ -396,39 +396,46 @@ function main() {
       const textJa = question.original_ja?.text || question.original_text_ja || '';
       const textJaHtml = content.getExerciseHtml(questionId);
       const textZh = question.translation_zh?.text || '';
-      const placeholders = [];
-      const placeholderSource = textJa || textZh;
-      const placeholderRegex = /\[([A-Z]+)\]/g;
-      const seen = new Set();
-      let match;
-      while ((match = placeholderRegex.exec(placeholderSource))) {
-        const groupId = match[1];
-        if (seen.has(groupId)) {
-          continue;
-        }
-        seen.add(groupId);
-        placeholders.push(groupId);
-      }
-
+      const textZhHtml = content.getExerciseHtmlZh ? content.getExerciseHtmlZh(questionId) : null;
       const groups = [];
-      if (placeholders.length > 0) {
-        const placeholderMeta = question.original_ja?.placeholders || {};
-        for (const groupId of placeholders) {
-          const digits = placeholderMeta[groupId]?.digits;
-          const blanks = groupId.split('').slice(0, digits || groupId.length);
-          groups.push({ group_id: groupId, blanks });
-        }
-      } else if (Array.isArray(question.blanks)) {
+      if (Array.isArray(question.blanks)) {
         for (const blank of question.blanks) {
+          if (typeof blank === 'string') {
+            const blanks = blank.split('');
+            groups.push({ group_id: blank, blanks });
+            continue;
+          }
           if (!blank.id) {
             continue;
           }
           const blanks = blank.id.split('').slice(0, blank.length || blank.id.length);
           groups.push({ group_id: blank.id, blanks });
         }
-      } else if (question.structure && Array.isArray(question.structure.blanks)) {
-        for (const blankId of question.structure.blanks) {
-          groups.push({ group_id: blankId, blanks: [blankId] });
+      } else {
+        const placeholders = [];
+        const placeholderSource = textJa || textZh;
+        const placeholderRegex = /\[([A-Z]+)\]/g;
+        const seen = new Set();
+        let match;
+        while ((match = placeholderRegex.exec(placeholderSource))) {
+          const groupId = match[1];
+          if (seen.has(groupId)) {
+            continue;
+          }
+          seen.add(groupId);
+          placeholders.push(groupId);
+        }
+        if (placeholders.length > 0) {
+          const placeholderMeta = question.original_ja?.placeholders || {};
+          for (const groupId of placeholders) {
+            const digits = placeholderMeta[groupId]?.digits;
+            const blanks = groupId.split('').slice(0, digits || groupId.length);
+            groups.push({ group_id: groupId, blanks });
+          }
+        } else if (question.structure && Array.isArray(question.structure.blanks)) {
+          for (const blankId of question.structure.blanks) {
+            groups.push({ group_id: blankId, blanks: [blankId] });
+          }
         }
       }
 
@@ -441,6 +448,7 @@ function main() {
         text_ja: textJa,
         text_ja_html: textJaHtml,
         text_zh: textZh,
+        text_zh_html: textZhHtml,
         groups,
         allowed_chars: allowed,
         pattern_id: question.pattern_id || null,
@@ -509,6 +517,7 @@ function main() {
     if (!question) {
       return res.status(404).json({ error: 'QUESTION_NOT_FOUND' });
     }
+    const exerciseHtml = content.getExerciseHtml(question.question_id);
     const normalizedPath = path.join(process.cwd(), 'content', 'answers', 'normalized.json');
     let answers = null;
     if (fs.existsSync(normalizedPath)) {
@@ -518,7 +527,7 @@ function main() {
     if (!answers) {
       answers = content.getAnswerGroups(question);
     }
-    return res.status(200).json({ question, answers });
+    return res.status(200).json({ question, answers, exercise_html: exerciseHtml });
   });
 
   app.put('/admin/api/question/:id', adminMiddleware, (req, res) => {

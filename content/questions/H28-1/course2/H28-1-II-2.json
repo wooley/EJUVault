@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H28-1", "year": 2016, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H28-1",
+    "year": 2016,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,21 +15,10 @@
   "type": "fill_in",
   "original_ja": {
     "text": "問2 複素数zが条件 z\\bar z-(1-2i)z-(1+2i)\\bar z≦15 ……① を満たすとする。\n(1) 複素数平面上で不等式①が表す図形は、中心[L]+[M]i、半径[N]√[O] の円の内部および円周である。\n(2) 直線(1-i)z-(1+i)\\bar z=2i上にあり、不等式①を満たすすべての複素数zの中で、|z|が最大であるものをz1、|z|が最小であるものをz2と表すと\nz1=√[PQ]+[R]+(√[ST]+[U])i,\n z2=-[V]/[W]+[X]/[Y] i\nである。",
-    "formulas": ["z\\bar z-(1-2i)z-(1+2i)\\bar z\\le 15", "(1-i)z-(1+i)\\bar z=2i"],
-    "placeholders": {
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "PQ": { "digits": 2 },
-      "R": { "digits": 1 },
-      "ST": { "digits": 2 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 },
-      "X": { "digits": 1 },
-      "Y": { "digits": 1 }
-    },
+    "formulas": [
+      "z\\bar z-(1-2i)z-(1+2i)\\bar z\\le 15",
+      "(1-i)z-(1+i)\\bar z=2i"
+    ],
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -32,7 +27,11 @@
       "algebraic_complexity": 2
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
   "answer_ref": {
     "course": 2,
     "section": "II",
@@ -42,5 +41,55 @@
   },
   "solution_ref": "solutions/H28-1/course2/H28-1-II-2.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "ALG_TRANSFORM_FIND_RANGE"
+  "pattern_id": "ALG_TRANSFORM_FIND_RANGE",
+  "blanks": [
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "PQ",
+      "length": 2
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "ST",
+      "length": 2
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    }
+  ]
 }

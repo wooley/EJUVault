@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H30-2", "year": 2018, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H30-2",
+    "year": 2018,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,14 +15,53 @@
   "type": "fill_in",
   "pattern_id": "GEO_CIRCLE_TANGENT_POWER",
   "original_ja": {
-    "text": "中心(5,0), 半径4の円C。\n(1) P(p,q)が円周上：p^2-[PQ]p+q^2+[R]=0。接線：(p-[S])x+qy=[T]p-[U]。\n(2) A(0,a)(a≧0)から接線、接点P。AP最小：a=[V], 長さ[W]。\nまた2本の接線が直交するのは AP=[X] のときで、このとき a=√[Y]。",
-    "placeholders": {
-      "PQ": { "digits": 2 }, "R": { "digits": 1 },
-      "S": { "digits": 1 }, "T": { "digits": 1 }, "U": { "digits": 1 },
-      "V": { "digits": 1 }, "W": { "digits": 1 }, "X": { "digits": 1 }, "Y": { "digits": 1 }
-    }
+    "text": "中心(5,0), 半径4の円C。\n(1) P(p,q)が円周上：p^2-[PQ]p+q^2+[R]=0。接線：(p-[S])x+qy=[T]p-[U]。\n(2) A(0,a)(a≧0)から接線、接点P。AP最小：a=[V], 長さ[W]。\nまた2本の接線が直交するのは AP=[X] のときで、このとき a=√[Y]。"
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q2", "sub": "mix", "group": "PQRSTU/VWXY" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q2",
+    "sub": "mix",
+    "group": "PQRSTU/VWXY"
+  },
   "solution_ref": "solutions/H30-2/course2/H30-2-II-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "PQ",
+      "length": 2
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    }
+  ]
 }

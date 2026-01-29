@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R02-2", "year": 2020, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R02-2",
+    "year": 2020,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,12 +17,6 @@
   "original_ja": {
     "text": "10段の階段がある。1段のぼり又は2段のぼりでのぼる。両方必ず1回はある。(1) 2段のぼりが連続してもよい場合 (i) 2段が3回なら1段はP回、のぼり方はQR通り。(ii) 全部でST通り。(2) 2段が連続しない場合 (i) 2段が2回なら1段はU回、のぼり方はVW通り。(ii) 全部でXY通り。",
     "formulas": [],
-    "placeholders": {
-      "P": { "digits": 1 }, "Q": { "digits": 1 }, "R": { "digits": 1 },
-      "S": { "digits": 1 }, "T": { "digits": 1 },
-      "U": { "digits": 1 }, "V": { "digits": 1 }, "W": { "digits": 1 },
-      "X": { "digits": 1 }, "Y": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -26,16 +26,84 @@
     }
   },
   "solution": {
-    "outline": ["(1)は1と2の並べ方＝組合せ", "(2)は2が隣接しない配置の数を数える", "総数はk(2段回数)で場合分けして加算"],
+    "outline": [
+      "(1)は1と2の並べ方＝組合せ",
+      "(2)は2が隣接しない配置の数を数える",
+      "総数はk(2段回数)で場合分けして加算"
+    ],
     "steps": [
-      { "idx": 1, "description": "(1)(i) 2段3回なら上る段数6、残りは1段で4回。並べ方は7回の動作中に2段を3個置く。", "math": "P=4,\\ \\binom{7}{3}=35" },
-      { "idx": 2, "description": "(1)(ii) 1・2段で10段の総数はフィボナッチで89。両方1回以上なので全1段(1通り)と全2段(1通り)を除く。", "math": "89-2=87" },
-      { "idx": 3, "description": "(2)(i) 2段2回なら残り1段は6回。計8個の動作列で2段が隣り合わないように2個配置：C(7,2)=21。", "math": "U=6,\\ VW=21" },
-      { "idx": 4, "description": "(2)(ii) 2段回数をk(=1,2,3)で加算。動作数は10-k、隣接なし配置数は C(11-2k,k)。", "math": "\\binom{9}{1}+\\binom{7}{2}+\\binom{5}{3}=9+21+10=40" }
+      {
+        "idx": 1,
+        "description": "(1)(i) 2段3回なら上る段数6、残りは1段で4回。並べ方は7回の動作中に2段を3個置く。",
+        "math": "P=4,\\ \\binom{7}{3}=35"
+      },
+      {
+        "idx": 2,
+        "description": "(1)(ii) 1・2段で10段の総数はフィボナッチで89。両方1回以上なので全1段(1通り)と全2段(1通り)を除く。",
+        "math": "89-2=87"
+      },
+      {
+        "idx": 3,
+        "description": "(2)(i) 2段2回なら残り1段は6回。計8個の動作列で2段が隣り合わないように2個配置：C(7,2)=21。",
+        "math": "U=6,\\ VW=21"
+      },
+      {
+        "idx": 4,
+        "description": "(2)(ii) 2段回数をk(=1,2,3)で加算。動作数は10-k、隣接なし配置数は C(11-2k,k)。",
+        "math": "\\binom{9}{1}+\\binom{7}{2}+\\binom{5}{3}=9+21+10=40"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": "all", "group": "P/QR/ST/U/VW/XY" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "all",
+    "group": "P/QR/ST/U/VW/XY"
+  },
   "solution_ref": "solutions/R02-2/course2/R02-2-I-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    }
+  ]
 }

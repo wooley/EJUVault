@@ -16,38 +16,6 @@
   "original_ja": {
     "text": "問1 A〜Jには，下の⓪〜⑨のうちから最も適するものを一つずつ選びなさい。\n(1) a,b,cが実数のとき (a-b)^2+(b-c)^2+(c-a)^2 [A] 0 であるから ab+bc+ca [B] a^2+b^2+c^2\n(2) a,b,cが実数で c>0，さらに a+b>c, b+c>a, c+a>b のとき，P=a^2+b^2+c^2-2(ab+bc+ca) とおくと\nP=(a-b)^2-c^2+[C](c^2-bc-ca)\nQ=(a-b)^2-c^2, R=c^2-bc-ca とおくと\nQ=([D]+c)([E]-c), R=-c([F]-c)\nここで①を用いれば Q [G] 0, R [H] 0 であるから P [I] 0 よって a^2+b^2+c^2 [J] 2(ab+bc+ca) を得る。",
     "formulas": [],
-    "placeholders": {
-      "A": {
-        "digits": 1
-      },
-      "B": {
-        "digits": 1
-      },
-      "C": {
-        "digits": 1
-      },
-      "D": {
-        "digits": 1
-      },
-      "E": {
-        "digits": 1
-      },
-      "F": {
-        "digits": 1
-      },
-      "G": {
-        "digits": 1
-      },
-      "H": {
-        "digits": 1
-      },
-      "I": {
-        "digits": 1
-      },
-      "J": {
-        "digits": 1
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -95,5 +63,47 @@
     "平方和非负",
     "三角不等式",
     "符号判断"
+  ],
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    }
   ]
 }

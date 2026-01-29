@@ -13,7 +13,9 @@
   "order": 2,
   "type": "fill_in",
   "source": {
-    "images": ["data/images_raw/H17-1_course2/page_10.png"],
+    "images": [
+      "data/images_raw/H17-1_course2/page_10.png"
+    ],
     "page_print": "数学-22",
     "page_in_exam": 146
   },
@@ -32,19 +34,64 @@
     "formulas": []
   },
   "blanks": [
-    { "id": "N", "length": 1 },
-    { "id": "O", "length": 1 },
-    { "id": "P", "length": 1 },
-    { "id": "Q", "length": 1 },
-    { "id": "R", "length": 1 },
-    { "id": "S", "length": 1 },
-    { "id": "TU", "length": 2 },
-    { "id": "VW", "length": 2 },
-    { "id": "XY", "length": 2 },
-    { "id": "Z", "length": 1 }
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "TU",
+      "length": 2
+    },
+    {
+      "id": "VW",
+      "length": 2
+    },
+    {
+      "id": "XY",
+      "length": 2
+    },
+    {
+      "id": "Z",
+      "length": 1
+    }
   ],
   "blank_rules": {
-    "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+    "allowed_chars": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "+",
+      "-",
+      "×",
+      "÷"
+    ],
     "no_whitespace": true,
     "notes": [
       "值域下界带负号，负号不占 TU/VW 框位；框位仅填数字。"
@@ -55,28 +102,65 @@
       "sub_id": "(1)",
       "prompt_zh": "把 cos2x, cos3x 用 t=cosx 表示。",
       "blanks": [
-        { "id": "N", "length": 1 },
-        { "id": "O", "length": 1 },
-        { "id": "P", "length": 1 },
-        { "id": "Q", "length": 1 }
+        {
+          "id": "N",
+          "length": 1
+        },
+        {
+          "id": "O",
+          "length": 1
+        },
+        {
+          "id": "P",
+          "length": 1
+        },
+        {
+          "id": "Q",
+          "length": 1
+        }
       ]
     },
     {
       "sub_id": "(2)",
       "prompt_zh": "由极值条件确定 a，并求值域。",
       "blanks": [
-        { "id": "R", "length": 1 },
-        { "id": "S", "length": 1 },
-        { "id": "TU", "length": 2 },
-        { "id": "VW", "length": 2 },
-        { "id": "XY", "length": 2 },
-        { "id": "Z", "length": 1 }
+        {
+          "id": "R",
+          "length": 1
+        },
+        {
+          "id": "S",
+          "length": 1
+        },
+        {
+          "id": "TU",
+          "length": 2
+        },
+        {
+          "id": "VW",
+          "length": 2
+        },
+        {
+          "id": "XY",
+          "length": 2
+        },
+        {
+          "id": "Z",
+          "length": 1
+        }
       ]
     }
   ],
   "tags": {
-    "domain": ["三角関数", "微分・最大最小"],
-    "skill": ["三倍角・二倍角", "置換 t=cosx", "最大最小（区間）"],
+    "domain": [
+      "三角関数",
+      "微分・最大最小"
+    ],
+    "skill": [
+      "三倍角・二倍角",
+      "置換 t=cosx",
+      "最大最小（区間）"
+    ],
     "course_specific": []
   },
   "difficulty": {
@@ -105,7 +189,8 @@
     "exam_id": "H17-1",
     "course": 2,
     "section": "III",
-    "question_number": 2
+    "question_number": 2,
+    "q": "Q2"
   },
   "solution_ref": "data/solutions/H17-1/course2/H17-1-III-2.zh.md",
   "tagging_status": "ok"

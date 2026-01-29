@@ -30,15 +30,27 @@ function readJson(filePath) {
   return JSON.parse(raw);
 }
 
-function formatPlaceholders(placeholders) {
+function formatBlanks(question) {
+  if (Array.isArray(question.blanks) && question.blanks.length > 0) {
+    return question.blanks
+      .map((blank) => {
+        if (typeof blank === 'string') {
+          return `- ${blank} (length: ${blank.length})`;
+        }
+        if (!blank || !blank.id) {
+          return null;
+        }
+        const length = Number.isFinite(blank.length) ? blank.length : null;
+        return `- ${blank.id}${length ? ` (length: ${length})` : ''}`;
+      })
+      .filter(Boolean)
+      .join('\n');
+  }
+  const placeholders = question.original_ja && question.original_ja.placeholders;
   if (!placeholders || typeof placeholders !== 'object') {
     return '';
   }
-  const entries = Object.entries(placeholders);
-  if (entries.length === 0) {
-    return '';
-  }
-  return entries
+  return Object.entries(placeholders)
     .map(([key, value]) => {
       const digits = value && typeof value === 'object' && value.digits ? value.digits : null;
       return `- ${key}${digits ? ` (digits: ${digits})` : ''}`;
@@ -76,11 +88,11 @@ function writeMarkdown(question, outputPath) {
   lines.push(textZh || '');
   lines.push('');
 
-  const placeholderText = formatPlaceholders(question.original_ja && question.original_ja.placeholders);
-  if (placeholderText) {
-    lines.push('## Placeholders');
+  const blanksText = formatBlanks(question);
+  if (blanksText) {
+    lines.push('## Blanks');
     lines.push('');
-    lines.push(placeholderText);
+    lines.push(blanksText);
     lines.push('');
   }
 

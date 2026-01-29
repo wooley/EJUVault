@@ -16,17 +16,6 @@
   "original_ja": {
     "text": "問2　関係式\nf(x)=3x+3∫_0^x f(t)dt+4∫_0^1 f(t)dt ……①\nを満たす微分可能な関数 f(x) を求めよう。\nまず\nf(0)=[J]∫_0^1 f(t)dt ……②\nである。\n次に，①の両辺を x で微分すると\nf'(x)=[K]([L]+f(x))\nを得る。これより\n(( [L]+f(x) )')/( [L]+f(x) )=[K] ……③\nここで，③の両辺を x で積分して変形すると\nf(x)=Ce^[M]x−[N] ……④\nとなる。ただし，C は定数である。\nよって，②より，④の C の値を求めると\nC=[O]/([P]e^[Q]−[R])\nとなり，f(x) が求まる。",
     "formulas": [],
-    "placeholders": {
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -76,5 +65,48 @@
   "solution_ref": "data/solutions/H21-2/course2/H21-2-IV-2.zh.md",
   "tagging_status": "ok",
   "pattern_id": "CALC_DIFFEQ_INTEGRAL_EQUATION",
-  "tags": ["积分方程", "微分", "常微分方程", "定积分常数"]
+  "tags": [
+    "积分方程",
+    "微分",
+    "常微分方程",
+    "定积分常数"
+  ],
+  "blanks": [
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    }
+  ]
 }

@@ -23,23 +23,6 @@
   "original_ja": {
     "text": "問2　次の問題文中の [H]〜[L] に対して，それぞれの選択肢の中から当てはまるものを一つ選びなさい。\n\n(1) 数直線上の部分集合を A={x|3<x<6}, B={x|-1<x<1}, C={x|-3<x<5} とするとき\nA∪B=[H], (\\overline{A\\cup B})\\cap C=[I]\nである。ただし，\\overline{(A\\cup B)} は A∪B の補集合を表す。\n\n(2) (i) a>3 かつ b>3 であることは，a+b>5 であるための [J]。\n(ii) a>2 かつ b>2 であることは，a+b>5 であるための [K]。\n(iii) |a+b|>5 であることは，a+b>5 であるための [L]。",
     "formulas": [],
-    "placeholders": {
-      "H": {
-        "digits": 1
-      },
-      "I": {
-        "digits": 1
-      },
-      "J": {
-        "digits": 1
-      },
-      "K": {
-        "digits": 1
-      },
-      "L": {
-        "digits": 1
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -79,5 +62,27 @@
     "group": "H/I/J/K/L"
   },
   "solution_ref": "data/solutions/H18-2/course2/H18-2-I-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    }
+  ]
 }

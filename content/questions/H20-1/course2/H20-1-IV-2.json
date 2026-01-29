@@ -14,14 +14,6 @@
   "type": "fill_in",
   "original_ja": {
     "text": "xの関数 f(x)=x e^{-x^2} とする。ただし e は自然対数の底である。(1) f(x)を最大にするxの値をx=aとすると，a=√[O]/[P]であり，その最大値は ... である。(2) 関数y=f(x)のグラフとx軸，および直線x=aによって囲まれる部分の面積をSとすると S=1/[R]-1/([S]√e)である。(3) t>0 とする。直線x=tで囲まれる部分の面積をS(t)とすると lim_{t→∞}S(t)=1/[T]である。",
-    "placeholders": {
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 }
-    },
     "structure": {
       "optimization_by_derivative": true,
       "area_by_integral": true,
@@ -35,6 +27,33 @@
   },
   "solution_ref": "solutions/H20-1/course2/H20-1-IV-2.zh.md",
   "pattern_id": "CALC_OPTIMIZE_EXP_INTEGRAL_LIMIT",
-  "tags": ["微分", "最大値", "積分", "極限"],
-  "spec_version": "1.4"
+  "tags": [
+    "微分",
+    "最大値",
+    "積分",
+    "極限"
+  ],
+  "spec_version": "1.4",
+  "blanks": [
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    }
+  ]
 }

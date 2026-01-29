@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H26-2", "year": 2014, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H26-2",
+    "year": 2014,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,17 +15,41 @@
   "type": "fill_in",
   "pattern_id": "SET_NEC_SUFF_COUNTING",
   "original_ja": {
-    "text": "問2 集合A={4m|mは自然数}, B={6m|mは自然数}を考える。(1) 次の[L]〜[O]には，下の0〜3の中から適するものを選びなさい。nは自然数とする。(i) n∈Aであることは，nが2で割り切れるための[L]。(ii) n∈Bであることは，nが24で割り切れるための[M]。(iii) n∈A∪Bであることは，nが3で割り切れるための[N]。(iv) n∈A∩Bであることは，nが12で割り切れるための[O]。0:必要十分，1:必要だが十分でない，2:十分だが必要でない，3:どちらでもない。(2) C={m|mは1≤m≤100を満たす自然数}とする。(Ā∪B̄)∩C の要素数は[PQ]，Ā∩B̄∩C の要素数は[RS]。ただしĀ,B̄は自然数全体に対する補集合。",
-    "placeholders": {
-      "L": { "digits": 1 },
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "PQ": { "digits": 2 },
-      "RS": { "digits": 2 }
-    }
+    "text": "問2 集合A={4m|mは自然数}, B={6m|mは自然数}を考える。(1) 次の[L]〜[O]には，下の0〜3の中から適するものを選びなさい。nは自然数とする。(i) n∈Aであることは，nが2で割り切れるための[L]。(ii) n∈Bであることは，nが24で割り切れるための[M]。(iii) n∈A∪Bであることは，nが3で割り切れるための[N]。(iv) n∈A∩Bであることは，nが12で割り切れるための[O]。0:必要十分，1:必要だが十分でない，2:十分だが必要でない，3:どちらでもない。(2) C={m|mは1≤m≤100を満たす自然数}とする。(Ā∪B̄)∩C の要素数は[PQ]，Ā∩B̄∩C の要素数は[RS]。ただしĀ,B̄は自然数全体に対する補集合。"
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": null, "group": "L,M,N,O,PQ,RS" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": null,
+    "group": "L,M,N,O,PQ,RS"
+  },
   "solution_ref": "solutions/H26-2/course2/H26-2-I-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "PQ",
+      "length": 2
+    },
+    {
+      "id": "RS",
+      "length": 2
+    }
+  ]
 }

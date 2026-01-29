@@ -17,23 +17,6 @@
   "original_ja": {
     "text": "問2　等式\nf(x)=\\sin x+3\\int_0^{\\pi/2} f(t)\\cos t\\,dt\nを満たす関数 f(x) は\nf(x)=\\sin x-\\frac{[K]}{[L]}\nである。よって\n\\int_0^{\\pi/2} f(x)\\,dx=[M]-\\frac{[N]}{[O]}\\pi\nである。",
     "formulas": [],
-    "placeholders": {
-      "K": {
-        "digits": 1
-      },
-      "L": {
-        "digits": 1
-      },
-      "M": {
-        "digits": 1
-      },
-      "N": {
-        "digits": 1
-      },
-      "O": {
-        "digits": 1
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -71,5 +54,27 @@
     "group": "KL/M/NO"
   },
   "solution_ref": "solutions/H17-2/course2/H17-2-IV-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    }
+  ]
 }

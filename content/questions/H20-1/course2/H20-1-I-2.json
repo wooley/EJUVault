@@ -27,6 +27,20 @@
   },
   "solution_ref": "solutions/H20-1/course2/H20-1-I-2.zh.md",
   "pattern_id": "POLY_IDENTITY_FACTOR_SET",
-  "tags": ["整式", "因式分解", "集合"],
-  "spec_version": "1.4"
+  "tags": [
+    "整式",
+    "因式分解",
+    "集合"
+  ],
+  "spec_version": "1.4",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "BCD",
+      "length": 3
+    }
+  ]
 }

@@ -15,53 +15,6 @@
   "type": "fill_in",
   "original_ja": {
     "text": "問1 2次関数 f(x)=x^2-ax+a^2 の 0≦x≦1 における最小値 m を求めよう。\n\nf(x)は\nf(x)=(x-a/[A])^2 + [B]/[C] a^[D]\nと変形できる。したがって，f(x)は\n\na≦[E] のとき，x=[F] で最小となり，m=a^[G]\n\n[E]<a<[H] のとき，x=a/[I] で最小となり，m=[J]/[K] a^[L]\n\n[H]≦a のとき，x=[M] で最小となり，m=[N]-a+a^[O]\nとなる。",
-    "placeholders": {
-      "A": {
-        "digits": 1
-      },
-      "B": {
-        "digits": 1
-      },
-      "C": {
-        "digits": 1
-      },
-      "D": {
-        "digits": 1
-      },
-      "E": {
-        "digits": 1
-      },
-      "F": {
-        "digits": 1
-      },
-      "G": {
-        "digits": 1
-      },
-      "H": {
-        "digits": 1
-      },
-      "I": {
-        "digits": 1
-      },
-      "J": {
-        "digits": 1
-      },
-      "K": {
-        "digits": 1
-      },
-      "L": {
-        "digits": 1
-      },
-      "M": {
-        "digits": 1
-      },
-      "N": {
-        "digits": 1
-      },
-      "O": {
-        "digits": 1
-      }
-    },
     "structure": {
       "has_case_split": true,
       "has_parameter_elimination": false,
@@ -109,5 +62,67 @@
     "平方完成",
     "区间最值",
     "参数讨论"
+  ],
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    }
   ]
 }

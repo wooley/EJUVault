@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H29-1", "year": 2017, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H29-1",
+    "year": 2017,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -10,17 +16,6 @@
   "original_ja": {
     "text": "|z|=2。複素数平面で 1+z, 1-1/2 z を表す点をA,B。(1) zが実数でないとき三角形OABの面積Sは選択肢0〜8から[N]。したがって θ=±([O]/[P])π のとき最大。(2) OABがOA=OBの二等辺のとき |1+z|=|1-1/2 z|=√[Q]。また arg(1+z)=±([R]/[S])π, arg(1-1/2 z)=∓([T]/[U])π（複号同順）。",
     "formulas": [],
-    "placeholders": {
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -29,9 +24,53 @@
       "algebraic_complexity": 2
     }
   },
-  "solution": { "outline": [], "steps": [], "symbolic_steps": [] },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q2", "sub": "(1)(2)", "group": "M/N/O/P/Q/R/S/T/U" },
+  "solution": {
+    "outline": [],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q2",
+    "sub": "(1)(2)",
+    "group": "M/N/O/P/Q/R/S/T/U"
+  },
   "solution_ref": "solutions/H29-1/course2/H29-1-II-2.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "ALG_TRANSFORM_MINMAX"
+  "pattern_id": "ALG_TRANSFORM_MINMAX",
+  "blanks": [
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    }
+  ]
 }

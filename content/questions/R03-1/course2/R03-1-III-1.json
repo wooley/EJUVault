@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R3-1", "year": 2021, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R3-1",
+    "year": 2021,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,47 +15,86 @@
   "type": "fill_in",
   "pattern_id": "EXP_SYM_SUBST_MINMAX",
   "original_ja": {
-    "text": "関数 f(x)=8^x+8^{-x}-3(4^{1+x}+4^{1-x}-2^{4+x}-2^{4-x})-24 の最小値とそのときのxを求める。t=2^x+2^{-x}とおくと 4^x+4^{-x}=t^2-[A], 8^x+8^{-x}=t^3-[B]t。よって f(x)=t^3-[CD]t^2+[EF]t。g(t)=右辺とすると g'(t)=[G](t-[H])(t-[I]) (H<I)。また t≥[J]。t=[J]のとき g([J])=[KL]。t>[J]で極大 t=[M], 値[NO]、極小 t=[P], 値[QR]。したがって最小値は[ST]で、そのとき x=[U], または x=log_2([V]±√[WX])-[Y]。",
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "CD": { "digits": 2 },
-      "EF": { "digits": 2 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "KL": { "digits": 2 },
-      "M": { "digits": 1 },
-      "NO": { "digits": 2 },
-      "P": { "digits": 1 },
-      "QR": { "digits": 2 },
-      "ST": { "digits": 2 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "WX": { "digits": 2 },
-      "Y": { "digits": 1 }
-    }
+    "text": "関数 f(x)=8^x+8^{-x}-3(4^{1+x}+4^{1-x}-2^{4+x}-2^{4-x})-24 の最小値とそのときのxを求める。t=2^x+2^{-x}とおくと 4^x+4^{-x}=t^2-[A], 8^x+8^{-x}=t^3-[B]t。よって f(x)=t^3-[CD]t^2+[EF]t。g(t)=右辺とすると g'(t)=[G](t-[H])(t-[I]) (H<I)。また t≥[J]。t=[J]のとき g([J])=[KL]。t>[J]で極大 t=[M], 値[NO]、極小 t=[P], 値[QR]。したがって最小値は[ST]で、そのとき x=[U], または x=log_2([V]±√[WX])-[Y]。"
   },
   "answer_ref": {
-    "A": "2",
-    "B": "3",
-    "CD": "12",
-    "EF": "45",
-    "G": "3",
-    "H": "3",
-    "I": "5",
-    "J": "2",
-    "KL": "50",
-    "M": "3",
-    "NO": "54",
-    "P": "5",
-    "QR": "50",
-    "ST": "50",
-    "U": "0",
-    "V": "5",
-    "WX": "21",
-    "Y": "1"
+    "course": 2,
+    "section": "III",
+    "q": "Q1"
   },
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "CD",
+      "length": 2
+    },
+    {
+      "id": "EF",
+      "length": 2
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "KL",
+      "length": 2
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "NO",
+      "length": 2
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "QR",
+      "length": 2
+    },
+    {
+      "id": "ST",
+      "length": 2
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "WX",
+      "length": 2
+    },
+    {
+      "id": "Y",
+      "length": 1
+    }
+  ]
 }

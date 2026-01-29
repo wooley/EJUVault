@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H29-2", "year": 2017, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H29-2",
+    "year": 2017,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -8,12 +14,53 @@
   "order": 1,
   "type": "fill_in",
   "original_ja": {
-    "text": "次の 2 つの曲線 x^2+y^2=1 ……①，4xy=1 ……② を考える。ただし x>0, y>0 とする。(1) 曲線①と②の交点 P,Q の x 座標を p<q とする。x=cosθ, y=sinθ (0<θ<π/2) とおくと sin([A]θ)=[B]/[C] となる。これより θ=[D]/[EF]π,[G]/[HI]π と求まり，p=cos([J]/[KL]π), q=cos([M]/[NO]π) である。(2) 曲線①と②で囲まれる部分の面積 S を求めよ。",
-    "placeholders": {
-      "A": {}, "B": {}, "C": {},
-      "D": {}, "EF": {}, "G": {}, "HI": {},
-      "J": {}, "KL": {}, "M": {}, "NO": {}
-    }
+    "text": "次の 2 つの曲線 x^2+y^2=1 ……①，4xy=1 ……② を考える。ただし x>0, y>0 とする。(1) 曲線①と②の交点 P,Q の x 座標を p<q とする。x=cosθ, y=sinθ (0<θ<π/2) とおくと sin([A]θ)=[B]/[C] となる。これより θ=[D]/[EF]π,[G]/[HI]π と求まり，p=cos([J]/[KL]π), q=cos([M]/[NO]π) である。(2) 曲線①と②で囲まれる部分の面積 S を求めよ。"
   },
-  "pattern_id": "CALC_AREA_TRIG"
+  "pattern_id": "CALC_AREA_TRIG",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "EF",
+      "length": 2
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "KL",
+      "length": 2
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "NO",
+      "length": 2
+    }
+  ]
 }

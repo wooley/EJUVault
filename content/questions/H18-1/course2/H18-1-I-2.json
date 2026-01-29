@@ -20,26 +20,6 @@
       "x^2\\le 9",
       "2x^2-4x-5>0"
     ],
-    "placeholders": {
-      "L": {
-        "digits": 1
-      },
-      "M": {
-        "digits": 1
-      },
-      "N": {
-        "digits": 1
-      },
-      "OP": {
-        "digits": 2
-      },
-      "Q": {
-        "digits": 1
-      },
-      "R": {
-        "digits": 1
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -61,5 +41,31 @@
     "group": "L,M,N,OP,Q,R"
   },
   "solution_ref": "data/solutions/H18-1/course2/H18-1-I-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "OP",
+      "length": 2
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    }
+  ]
 }

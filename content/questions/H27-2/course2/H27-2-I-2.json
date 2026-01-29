@@ -1,25 +1,75 @@
 {
-  "exam_id": "H27-2",
-  "year": 2015,
-  "session": 2,
   "course": 2,
-  "subject": "math",
   "section": "I",
   "question_no": 2,
   "question_id": "H27-2-I-2",
-  "format": "fill_in",
   "title": "3個のさいころ：包除原理",
-  "tags": ["probability", "dice", "inclusion_exclusion"],
+  "tags": [
+    "probability",
+    "dice",
+    "inclusion_exclusion"
+  ],
   "pattern_id": "PROB-DISCRETE-INEX-01",
   "prompt_ja": "大小3個のさいころを同時に投げて出た目をそれぞれx,y,zとし，A:x=y=z，B:x+y+z=6，C:x+y=z とする。",
   "blanks": [
-    { "key": "J", "type": "int", "note": "|A|" },
-    { "key": "KL", "type": "int", "note": "|B|" },
-    { "key": "MN", "type": "int", "note": "|C|" },
-    { "key": "O", "type": "int", "note": "|A∩B|" },
-    { "key": "P", "type": "int", "note": "|B∩C|" },
-    { "key": "Q", "type": "int", "note": "|C∩A|" },
-    { "key": "RS", "type": "int", "note": "分子" },
-    { "key": "TUV", "type": "int", "note": "分母" }
-  ]
+    {
+      "type": "int",
+      "note": "|A|",
+      "id": "J",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "|B|",
+      "id": "KL",
+      "length": 2
+    },
+    {
+      "type": "int",
+      "note": "|C|",
+      "id": "MN",
+      "length": 2
+    },
+    {
+      "type": "int",
+      "note": "|A∩B|",
+      "id": "O",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "|B∩C|",
+      "id": "P",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "|C∩A|",
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "分子",
+      "id": "RS",
+      "length": 2
+    },
+    {
+      "type": "int",
+      "note": "分母",
+      "id": "TUV",
+      "length": 3
+    }
+  ],
+  "exam": {
+    "exam_id": "H27-2",
+    "year": 2015,
+    "era": "平成",
+    "session": 2,
+    "subject": "math"
+  },
+  "type": "fill_in",
+  "original_ja": {
+    "text": "大小3個のさいころを同時に投げて出た目をそれぞれx,y,zとし，A:x=y=z，B:x+y+z=6，C:x+y=z とする。"
+  }
 }

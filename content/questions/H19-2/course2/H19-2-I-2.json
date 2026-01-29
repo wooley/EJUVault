@@ -14,21 +14,7 @@
   "order": 2,
   "type": "fill_in",
   "original_ja": {
-    "text": "問2 a,b,kを実数とする。不等式 a^2+b^2≦21k-3k^2 ……①。\n(1) a=b=0 のとき ① が成り立つ k の範囲 [I]≦k≦[J]\n(2) k>0 とする。a=b=0 が①成立の必要十分条件となるのは k=[K]\n(3) a=b=0 が十分条件だが必要条件ではない整数kの最大値は [L]",
-    "placeholders": {
-      "I": {
-        "digits": 1
-      },
-      "J": {
-        "digits": 1
-      },
-      "K": {
-        "digits": 1
-      },
-      "L": {
-        "digits": 1
-      }
-    }
+    "text": "問2 a,b,kを実数とする。不等式 a^2+b^2≦21k-3k^2 ……①。\n(1) a=b=0 のとき ① が成り立つ k の範囲 [I]≦k≦[J]\n(2) k>0 とする。a=b=0 が①成立の必要十分条件となるのは k=[K]\n(3) a=b=0 が十分条件だが必要条件ではない整数kの最大値は [L]"
   },
   "solution_ref": "solutions/H19-2/course2/H19-2-I-2.zh.md",
   "pattern_id": "ineq_rhs_nonneg_equivalence",
@@ -36,5 +22,23 @@
     "不等式",
     "必要十分条件",
     "パラメータ"
+  ],
+  "blanks": [
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    }
   ]
 }

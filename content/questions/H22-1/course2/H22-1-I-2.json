@@ -18,29 +18,6 @@
     "formulas": [
       "x^2+y^2=(x+y)^2-[F]xy"
     ],
-    "placeholders": {
-      "F": {
-        "digits": 1
-      },
-      "G": {
-        "digits": 1
-      },
-      "H": {
-        "digits": 1
-      },
-      "IJ": {
-        "digits": 2
-      },
-      "K": {
-        "digits": 1
-      },
-      "L": {
-        "digits": 1
-      },
-      "M": {
-        "digits": 1
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -69,5 +46,35 @@
     "必要条件",
     "十分条件",
     "対称式"
+  ],
+  "blanks": [
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    }
   ]
 }

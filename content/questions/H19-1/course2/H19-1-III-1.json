@@ -16,44 +16,6 @@
   "original_ja": {
     "text": "問1 平面上に三角形OABがあり ∠AOB=90°, OA=8, OB=6。点Pに対し \\vec{OP}=x\\vec{OA}+2y\\vec{OB} とする。\n(1) Pが重心なら x=[A]/[B], y=[C]/[D]\n(2) ∠AOBの二等分線とABの交点をCとすると \\vec{OC}=[E]/[F]\\vec{OA}+[G]/[H]\\vec{OB}。Pが二等分線上なら y=[I]/[J] x\n(3) PがOを通りABに垂直な直線上なら y=[K]/[L] x",
     "formulas": [],
-    "placeholders": {
-      "A": {
-        "digits": 1
-      },
-      "B": {
-        "digits": 1
-      },
-      "C": {
-        "digits": 1
-      },
-      "D": {
-        "digits": 1
-      },
-      "E": {
-        "digits": 1
-      },
-      "F": {
-        "digits": 1
-      },
-      "G": {
-        "digits": 1
-      },
-      "H": {
-        "digits": 1
-      },
-      "I": {
-        "digits": 1
-      },
-      "J": {
-        "digits": 1
-      },
-      "K": {
-        "digits": 1
-      },
-      "L": {
-        "digits": 1
-      }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -102,5 +64,55 @@
     "重心",
     "角平分线",
     "垂线"
+  ],
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    }
   ]
 }

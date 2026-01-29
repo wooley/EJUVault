@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H29-2", "year": 2017, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H29-2",
+    "year": 2017,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,17 +15,49 @@
   "type": "fill_in",
   "original_ja": {
     "text": "x の二次関数 f(x)=2x^2+ax−1 は f(−1)≥−3, f(2)≥3 ……① を満たしている。このとき f(x) の最小値 m を考える。(1) m は a を用いて m=−[A]/[B] a^2−[C] と表される。(2) 条件①を満たす a の範囲は [DE]≤a≤[F] である。(3) m の値が最も大きくなるのは y=f(x) のグラフの軸が直線 x=[G] のときであり、そのときの m の値は [HI] である。(4) m の値が最も小さくなるのは y=f(x) のグラフの軸が直線 x=[JK] のときであり、そのときの m の値は [LM] である。",
-    "placeholders": {
-      "A": {}, "B": {}, "C": {},
-      "DE": {}, "F": {},
-      "G": {}, "HI": {},
-      "JK": {}, "LM": {}
-    },
     "structure": {
       "has_parameter_elimination": true,
       "has_case_split": true,
       "algebraic_complexity": 2
     }
   },
-  "pattern_id": "QF_QUAD_OPT_CONSTRAINT"
+  "pattern_id": "QF_QUAD_OPT_CONSTRAINT",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "DE",
+      "length": 2
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "JK",
+      "length": 2
+    },
+    {
+      "id": "LM",
+      "length": 2
+    }
+  ]
 }

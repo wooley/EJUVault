@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H30-2", "year": 2018, "era": "平成", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H30-2",
+    "year": 2018,
+    "era": "平成",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -9,21 +15,101 @@
   "type": "fill_in",
   "pattern_id": "CALC_CUBIC_PARAM_MONO_EXTREMA",
   "original_ja": {
-    "text": "f(x)=x^3-3ax^2-3(2a+1)x+a+2。\n(1) f'(x)=[A](x-[B]a-[C])(x+[D])。a>[EF] のとき x=-[D]で[G], x=[B]a+[C]で[H]。a=[EF] のとき常に[I]。a<[EF] のとき x=-[D]で[J], x=[B]a+[C]で[K]。\n(2) -1≦x≦1 における最小値m：\n(i) a≧[L] のとき m=[MN]a。\n(ii) [OP]≦a<[L] のとき m=[QR](a^3+[S]a^2+[T]a)。\n(iii) a<[OP] のとき m=[U]a+[V]。\n(3) mが最大となるのは a=(-[W]+√[X])/[Y]。",
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
-      "EF": { "digits": 2, "signed": true },
-      "G": { "digits": 1 }, "H": { "digits": 1 }, "I": { "digits": 1 }, "J": { "digits": 1 }, "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "MN": { "digits": 2, "signed": true },
-      "OP": { "digits": 2, "signed": true },
-      "QR": { "digits": 2, "signed": true },
-      "S": { "digits": 1 }, "T": { "digits": 1 },
-      "U": { "digits": 1 }, "V": { "digits": 1 },
-      "W": { "digits": 1 }, "X": { "digits": 1 }, "Y": { "digits": 1 }
-    }
+    "text": "f(x)=x^3-3ax^2-3(2a+1)x+a+2。\n(1) f'(x)=[A](x-[B]a-[C])(x+[D])。a>[EF] のとき x=-[D]で[G], x=[B]a+[C]で[H]。a=[EF] のとき常に[I]。a<[EF] のとき x=-[D]で[J], x=[B]a+[C]で[K]。\n(2) -1≦x≦1 における最小値m：\n(i) a≧[L] のとき m=[MN]a。\n(ii) [OP]≦a<[L] のとき m=[QR](a^3+[S]a^2+[T]a)。\n(iii) a<[OP] のとき m=[U]a+[V]。\n(3) mが最大となるのは a=(-[W]+√[X])/[Y]。"
   },
-  "answer_ref": { "course": 2, "section": "III", "q": "Q1", "sub": "mix", "group": "ABCD/EF/GHIJK/L/MN/OP/QRST/UV/WXY" },
+  "answer_ref": {
+    "course": 2,
+    "section": "III",
+    "q": "Q1",
+    "sub": "mix",
+    "group": "ABCD/EF/GHIJK/L/MN/OP/QRST/UV/WXY"
+  },
   "solution_ref": "solutions/H30-2/course2/H30-2-III-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "EF",
+      "length": 2
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "MN",
+      "length": 2
+    },
+    {
+      "id": "OP",
+      "length": 2
+    },
+    {
+      "id": "QR",
+      "length": 2
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    }
+  ]
 }

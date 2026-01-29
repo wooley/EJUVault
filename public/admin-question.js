@@ -35,6 +35,7 @@ const patternLabels = window.PATTERN_LABELS || {};
 
 let currentQuestion = null;
 let currentGroups = [];
+let currentExerciseHtml = null;
 let groupEditorRows = [];
 let extraEditorRows = [];
 let isSyncingAnswers = false;
@@ -801,29 +802,7 @@ function deriveGroups(question) {
   const placeholderSource = textJa || textZh || '';
   const placeholderRegex = /[\[［]([A-Z]+)[\]］]/g;
   const seen = new Set();
-  const placeholders = [];
-  let match;
-  while ((match = placeholderRegex.exec(placeholderSource))) {
-    const groupId = match[1];
-    if (!groupId || seen.has(groupId)) {
-      continue;
-    }
-    seen.add(groupId);
-    placeholders.push(groupId);
-  }
-
   const groups = [];
-  if (placeholders.length > 0) {
-    const placeholderMeta = question.original_ja && question.original_ja.placeholders ? question.original_ja.placeholders : {};
-    placeholders.forEach((groupId) => {
-      const meta = placeholderMeta[groupId] || {};
-      const digits = Number.isFinite(meta.digits) ? meta.digits : null;
-      const blanks = groupId.split('').slice(0, digits || groupId.length);
-      groups.push({ group_id: groupId, blanks });
-    });
-    return groups;
-  }
-
   if (Array.isArray(question.blanks)) {
     question.blanks.forEach((blank) => {
       if (typeof blank === 'string') {
@@ -837,6 +816,28 @@ function deriveGroups(question) {
       const length = Number.isFinite(blank.length) ? blank.length : blank.id.length;
       const blanks = blank.id.split('').slice(0, length || blank.id.length);
       groups.push({ group_id: blank.id, blanks });
+    });
+    return groups;
+  }
+
+  const placeholders = [];
+  let match;
+  while ((match = placeholderRegex.exec(placeholderSource))) {
+    const groupId = match[1];
+    if (!groupId || seen.has(groupId)) {
+      continue;
+    }
+    seen.add(groupId);
+    placeholders.push(groupId);
+  }
+
+  if (placeholders.length > 0) {
+    const placeholderMeta = question.original_ja && question.original_ja.placeholders ? question.original_ja.placeholders : {};
+    placeholders.forEach((groupId) => {
+      const meta = placeholderMeta[groupId] || {};
+      const digits = Number.isFinite(meta.digits) ? meta.digits : null;
+      const blanks = groupId.split('').slice(0, digits || groupId.length);
+      groups.push({ group_id: groupId, blanks });
     });
     return groups;
   }
@@ -1130,6 +1131,7 @@ async function loadQuestion() {
     answersJson.value = JSON.stringify(normalizedAnswers, null, 2);
     buildAnswerEditor(data.question, normalizedAnswers);
     syncMetaFromQuestion(data.question);
+    currentExerciseHtml = typeof data.exercise_html === 'string' ? data.exercise_html : null;
     initialQuestionJson = questionJson.value;
     initialAnswersJson = answersJson.value;
     updateDiffSummary();
@@ -1201,10 +1203,15 @@ function preview(lang) {
     setStatus('Invalid question JSON.', true);
     return;
   }
-  const text = lang === 'zh'
-    ? (payload.translation_zh && payload.translation_zh.text)
-    : (payload.original_ja && payload.original_ja.text) || payload.original_text_ja;
-  previewEl.innerHTML = renderMarkdown(text || '');
+  const useExerciseHtml = lang === 'ja' && currentExerciseHtml;
+  if (useExerciseHtml) {
+    previewEl.innerHTML = currentExerciseHtml;
+  } else {
+    const text = lang === 'zh'
+      ? (payload.translation_zh && payload.translation_zh.text)
+      : (payload.original_ja && payload.original_ja.text) || payload.original_text_ja;
+    previewEl.innerHTML = renderMarkdown(text || '');
+  }
   renderMath();
 }
 

@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R01-1", "year": 2019, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R01-1",
+    "year": 2019,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,11 +17,6 @@
   "original_ja": {
     "text": "【II 問1】半径2の球面上の四面体ABCD。AB=BC=CA=2、BDは直径。\n\na=\\overrightarrow{OA}, b=\\overrightarrow{OB}, c=\\overrightarrow{OC}。\n(1) DA=[A]，MN=[B]/[C]+[D]\n(2) OP=[E]/[F]，OG=[G]/[H]，|PG|=\\sqrt{[I]}/[J]\nまた AG=[K]/[L] AP。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
-      "E": { "digits": 1 }, "F": { "digits": 1 }, "G": { "digits": 1 }, "H": { "digits": 1 },
-      "I": { "digits": 1 }, "J": { "digits": 1 }, "K": { "digits": 1 }, "L": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -27,14 +28,86 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "BDが直径より \\(\\vec{OD}=-\\vec{OB}=-\\vec b\\) を用いてベクトルを表す。", "math": "" },
-      { "idx": 2, "description": "中点ベクトルで \\(\\vec{OM},\\vec{ON}\\) を作り，\\(\\vec{MN}=\\vec{ON}-\\vec{OM}\\) を整理する。", "math": "" },
-      { "idx": 3, "description": "内積は |a|=|b|=|c|=2 と AB=BC=CA=2 から a·b=b·c=c·a=2 を得て |PG| を計算する。", "math": "" },
-      { "idx": 4, "description": "\\(\\vec{AG}\\) と \\(\\vec{AP}\\) を同方向係数で比較し一直線性を結論する。", "math": "" }
+      {
+        "idx": 1,
+        "description": "BDが直径より \\(\\vec{OD}=-\\vec{OB}=-\\vec b\\) を用いてベクトルを表す。",
+        "math": ""
+      },
+      {
+        "idx": 2,
+        "description": "中点ベクトルで \\(\\vec{OM},\\vec{ON}\\) を作り，\\(\\vec{MN}=\\vec{ON}-\\vec{OM}\\) を整理する。",
+        "math": ""
+      },
+      {
+        "idx": 3,
+        "description": "内積は |a|=|b|=|c|=2 と AB=BC=CA=2 から a·b=b·c=c·a=2 を得て |PG| を計算する。",
+        "math": ""
+      },
+      {
+        "idx": 4,
+        "description": "\\(\\vec{AG}\\) と \\(\\vec{AP}\\) を同方向係数で比較し一直線性を結論する。",
+        "math": ""
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q1", "sub": "(1)(2)", "group": "A-L" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q1",
+    "sub": "(1)(2)",
+    "group": "A-L"
+  },
   "solution_ref": "solutions/R01-1/course2/R01-1-II-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    }
+  ]
 }

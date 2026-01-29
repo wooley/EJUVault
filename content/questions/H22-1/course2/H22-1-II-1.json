@@ -18,17 +18,6 @@
     "formulas": [
       "PQ^2=(\\beta-\\alpha)^2+[C]"
     ],
-    "placeholders": {
-      "AB": { "digits": 2 },
-      "C": { "digits": 1 },
-      "DE": { "digits": 2 },
-      "FG": { "digits": 2 },
-      "H": { "digits": 1 },
-      "IJ": { "digits": 2 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -52,5 +41,48 @@
   "solution_ref": "solutions/H22-1/course2/H22-1-II-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "GEO_TRANSFORM_MINMAX",
-  "tags": ["座標幾何", "垂直条件", "最小值", "不等式"]
+  "tags": [
+    "座標幾何",
+    "垂直条件",
+    "最小值",
+    "不等式"
+  ],
+  "blanks": [
+    {
+      "id": "AB",
+      "length": 2
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "DE",
+      "length": 2
+    },
+    {
+      "id": "FG",
+      "length": 2
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "IJ",
+      "length": 2
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
+  ]
 }

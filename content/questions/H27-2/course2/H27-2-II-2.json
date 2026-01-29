@@ -1,29 +1,99 @@
 {
-  "exam_id": "H27-2",
-  "year": 2015,
-  "session": 2,
   "course": 2,
-  "subject": "math",
   "section": "II",
   "question_no": 2,
   "question_id": "H27-2-II-2",
-  "format": "fill_in",
   "title": "複素数：4乗根と距離",
-  "tags": ["complex", "roots", "distance"],
+  "tags": [
+    "complex",
+    "roots",
+    "distance"
+  ],
   "pattern_id": "CPLX-ROOTS-DIST-01",
   "prompt_ja": "z^4=-324 の解と，t>0 に対する z^4=t^4 の解を考える。",
   "blanks": [
-    { "key": "M", "type": "int", "note": "r^M" },
-    { "key": "N", "type": "int", "note": "cos(Nθ), sin(Nθ)" },
-    { "key": "O", "type": "int", "note": "r=O√P" },
-    { "key": "P", "type": "int", "note": "r=O√P" },
-    { "key": "Q", "type": "int", "note": "θ=Q/R π" },
-    { "key": "R", "type": "int", "note": "θ=Q/R π の分母" },
-    { "key": "S", "type": "int", "note": "θ=S/R π" },
-    { "key": "T", "type": "int", "note": "θ=T/R π" },
-    { "key": "U", "type": "int", "note": "θ=U/R π" },
-    { "key": "V", "type": "int", "note": "(2) の解の個数" },
-    { "key": "W", "type": "int", "note": "dの最小値" },
-    { "key": "XY", "type": "int", "note": "dの最大値=√XY" }
-  ]
+    {
+      "type": "int",
+      "note": "r^M",
+      "id": "M",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "cos(Nθ), sin(Nθ)",
+      "id": "N",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "r=O√P",
+      "id": "O",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "r=O√P",
+      "id": "P",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "θ=Q/R π",
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "θ=Q/R π の分母",
+      "id": "R",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "θ=S/R π",
+      "id": "S",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "θ=T/R π",
+      "id": "T",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "θ=U/R π",
+      "id": "U",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "(2) の解の個数",
+      "id": "V",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "dの最小値",
+      "id": "W",
+      "length": 1
+    },
+    {
+      "type": "int",
+      "note": "dの最大値=√XY",
+      "id": "XY",
+      "length": 2
+    }
+  ],
+  "exam": {
+    "exam_id": "H27-2",
+    "year": 2015,
+    "era": "平成",
+    "session": 2,
+    "subject": "math"
+  },
+  "type": "fill_in",
+  "original_ja": {
+    "text": "z^4=-324 の解と，t>0 に対する z^4=t^4 の解を考える。"
+  }
 }

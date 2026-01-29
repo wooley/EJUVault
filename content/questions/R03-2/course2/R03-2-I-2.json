@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R3-2", "year": 2021, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R3-2",
+    "year": 2021,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,13 +17,6 @@
   "original_ja": {
     "text": "問2 赤色，黄色，緑色，青色の4個の球と，1から7までの番号が1ずつついた7個の箱がある。(1) 4個の球を7個の箱のうちの4個の箱に1つずつ入れる入れ方は [NOP] 通りである。(2) 4個のうち3個の球を同じ1つの箱に入れ，残りの1個の球を他の箱に入れる入れ方は [QRS] 通りである。(3) 赤色と黄色の球は奇数番号の箱に入れ，緑色と青色の球は偶数番号の箱に入れる場合を考える。このとき，赤色と黄色の球の入れ方は [TU] 通りあり，緑色と青色の球の入れ方は [V] 通りあるので，この場合の入れ方は [WXY] 通りである。",
     "formulas": [],
-    "placeholders": {
-      "NOP": { "digits": 3 },
-      "QRS": { "digits": 3 },
-      "TU": { "digits": 2 },
-      "V": { "digits": 1 },
-      "WXY": { "digits": 3 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -27,15 +26,57 @@
     }
   },
   "solution": {
-    "outline": ["分别计数三种放球方式"],
+    "outline": [
+      "分别计数三种放球方式"
+    ],
     "steps": [
-      { "idx": 1, "description": "(1) 4球入4个不同箱：从7箱选4并排列。", "math": "7P4=7\\cdot6\\cdot5\\cdot4=840" },
-      { "idx": 2, "description": "(2) 3球同箱、1球异箱：先选三球同箱的箱，再选单独的球与箱。", "math": "7\\times4\\times6=168" },
-      { "idx": 3, "description": "(3) 红黄进奇数箱(4个)，绿蓝进偶数箱(3个)，各自独立放入。", "math": "4^2\\times3^2=16\\times9=144" }
+      {
+        "idx": 1,
+        "description": "(1) 4球入4个不同箱：从7箱选4并排列。",
+        "math": "7P4=7\\cdot6\\cdot5\\cdot4=840"
+      },
+      {
+        "idx": 2,
+        "description": "(2) 3球同箱、1球异箱：先选三球同箱的箱，再选单独的球与箱。",
+        "math": "7\\times4\\times6=168"
+      },
+      {
+        "idx": 3,
+        "description": "(3) 红黄进奇数箱(4个)，绿蓝进偶数箱(3个)，各自独立放入。",
+        "math": "4^2\\times3^2=16\\times9=144"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q2", "sub": "all", "group": "NOP/QRS/TU/V/WXY" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q2",
+    "sub": "all",
+    "group": "NOP/QRS/TU/V/WXY"
+  },
   "solution_ref": "solutions/R3-2/course2/R3-2-I-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "NOP",
+      "length": 3
+    },
+    {
+      "id": "QRS",
+      "length": 3
+    },
+    {
+      "id": "TU",
+      "length": 2
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "WXY",
+      "length": 3
+    }
+  ]
 }

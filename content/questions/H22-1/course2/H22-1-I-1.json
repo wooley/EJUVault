@@ -18,12 +18,6 @@
     "formulas": [
       "(x-1)^2 = |3x-5|"
     ],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "DE": { "digits": 2 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -47,5 +41,28 @@
   "solution_ref": "solutions/H22-1/course2/H22-1-I-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "ALG_CASE_SOLVE_X",
-  "tags": ["絶対値", "方程式", "場合分け", "二次方程式"]
+  "tags": [
+    "絶対値",
+    "方程式",
+    "場合分け",
+    "二次方程式"
+  ],
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "DE",
+      "length": 2
+    }
+  ]
 }

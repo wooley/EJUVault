@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R4-1", "year": 2022, "era": "令和", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R4-1",
+    "year": 2022,
+    "era": "令和",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,11 +17,6 @@
   "original_ja": {
     "text": "a, b を定数とし，2次関数 f(x)=x^2+ax+b と1次関数 h(x)=-2x を考える。y=h(x) のグラフと直線 x=3 との交点をA，y=h(x) のグラフと直線 x=-2 との交点をBとする。y=f(x) のグラフの頂点Pが線分AB上にあるとき，L={f(3)-h(3)}+{f(-2)-h(-2)} の値の範囲を求める。\n点Pの座標は ( -a/[A] , -a^2/[B] + b ) である。点Pが線分AB上にあるから，aの値の範囲は -[C] ≤ a ≤ [D] である。また a,b は b=a^2/[E]+a を満たす。よって L は a を用いて L=1/2 a^2 + [F]a + [GH] と表される。したがって L の値の範囲は [IJ]/[K] ≤ L ≤ [LM] である。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 }, "B": { "digits": 1 }, "C": { "digits": 1 }, "D": { "digits": 1 },
-      "E": { "digits": 1 }, "F": { "digits": 1 }, "G": { "digits": 1 }, "H": { "digits": 1 },
-      "I": { "digits": 1 }, "J": { "digits": 1 }, "K": { "digits": 1 }, "L": { "digits": 1 }, "M": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -27,15 +28,83 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "求顶点坐标并写出线段AB所在直线。", "math": "h(x)=-2x,\\ A(3,-6),\\ B(-2,4)\\Rightarrow AB: y=-2x" },
-      { "idx": 2, "description": "顶点P在AB上给出a的范围与b的约束。", "math": "P\\left(-\\frac a2,\\,-\\frac{a^2}{4}+b\\right),\\ y_P=-2x_P=a\\Rightarrow b=a+\\frac{a^2}{4}" },
-      { "idx": 3, "description": "由x坐标落在线段区间得到a范围。", "math": "-2\\le -\\frac a2\\le 3\\Rightarrow -6\\le a\\le 4" },
-      { "idx": 4, "description": "把b代入L并在区间上求最值。", "math": "L=(f(3)-h(3))+(f(-2)-h(-2))=15+a+2b=\\frac12 a^2+3a+15" },
-      { "idx": 5, "description": "二次函数开口向上，最小值取在顶点a=-3，最大值取在端点。", "math": "L_{\\min}=\\frac12\\cdot 9-9+15=\\frac{21}{2},\\ L(-6)=15,\\ L(4)=35" }
+      {
+        "idx": 1,
+        "description": "求顶点坐标并写出线段AB所在直线。",
+        "math": "h(x)=-2x,\\ A(3,-6),\\ B(-2,4)\\Rightarrow AB: y=-2x"
+      },
+      {
+        "idx": 2,
+        "description": "顶点P在AB上给出a的范围与b的约束。",
+        "math": "P\\left(-\\frac a2,\\,-\\frac{a^2}{4}+b\\right),\\ y_P=-2x_P=a\\Rightarrow b=a+\\frac{a^2}{4}"
+      },
+      {
+        "idx": 3,
+        "description": "由x坐标落在线段区间得到a范围。",
+        "math": "-2\\le -\\frac a2\\le 3\\Rightarrow -6\\le a\\le 4"
+      },
+      {
+        "idx": 4,
+        "description": "把b代入L并在区间上求最值。",
+        "math": "L=(f(3)-h(3))+(f(-2)-h(-2))=15+a+2b=\\frac12 a^2+3a+15"
+      },
+      {
+        "idx": 5,
+        "description": "二次函数开口向上，最小值取在顶点a=-3，最大值取在端点。",
+        "math": "L_{\\min}=\\frac12\\cdot 9-9+15=\\frac{21}{2},\\ L(-6)=15,\\ L(4)=35"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "I", "q": "Q1", "sub": "(1)", "group": "AB/CD/E/FGH/IJK/LM/NOP" },
+  "answer_ref": {
+    "course": 2,
+    "section": "I",
+    "q": "Q1",
+    "sub": "(1)",
+    "group": "AB/CD/E/FGH/IJK/LM/NOP"
+  },
   "solution_ref": "solutions/R4-1/course2/R4-1-I-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "GH",
+      "length": 2
+    },
+    {
+      "id": "IJ",
+      "length": 2
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "LM",
+      "length": 2
+    }
+  ]
 }

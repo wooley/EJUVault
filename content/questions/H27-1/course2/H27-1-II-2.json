@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "H27-1", "year": 2015, "era": "平成", "session": 1, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "H27-1",
+    "year": 2015,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
   "course": 2,
   "track": "science",
   "question_id": "H27-1-II-2",
@@ -10,19 +16,6 @@
   "original_ja": {
     "text": "複素数平面上で z^3 が実数となる複素数zを考える。(1) 条件を満たすz=x+iyが描く図形C。arg z = (π/[M])k (k整数)。よってCは y=[N], y=√[O]x, y=-√[P]x の3直線。(2) C上に |z-1-i|=r を満たす複素数zがただ1個だけ存在するとき r=(√[Q]-[R])/[S]，また z=([T]+√[U])/[V] (1+√[W] i)。",
     "formulas": [],
-    "placeholders": {
-      "M": { "digits": 1 },
-      "N": { "digits": 1 },
-      "O": { "digits": 1 },
-      "P": { "digits": 1 },
-      "Q": { "digits": 1 },
-      "R": { "digits": 1 },
-      "S": { "digits": 1 },
-      "T": { "digits": 1 },
-      "U": { "digits": 1 },
-      "V": { "digits": 1 },
-      "W": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -34,14 +27,82 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "z^3が実数 ⇔ 3arg z=kπ", "math": "arg z=\\frac{k\\pi}{3}" },
-      { "idx": 2, "description": "Cは3本の直線（角0, ±π/3）", "math": "y=0,\\ y=\\sqrt3 x,\\ y=-\\sqrt3 x" },
-      { "idx": 3, "description": "円|z-(1+i)|=rがCと1点で交わるには，中心から最短距離の直線に接し，他の直線とは交わらない", "math": "r=\\min\\{d_1,d_2,d_3\\}=d(y=\\sqrt3 x)=\\frac{\\sqrt3-1}{2}" },
-      { "idx": 4, "description": "接点は(1,1)からy=\\sqrt3 xへの垂足", "math": "z=\\frac{1+\\sqrt3}{4}(1+\\sqrt3 i)" }
+      {
+        "idx": 1,
+        "description": "z^3が実数 ⇔ 3arg z=kπ",
+        "math": "arg z=\\frac{k\\pi}{3}"
+      },
+      {
+        "idx": 2,
+        "description": "Cは3本の直線（角0, ±π/3）",
+        "math": "y=0,\\ y=\\sqrt3 x,\\ y=-\\sqrt3 x"
+      },
+      {
+        "idx": 3,
+        "description": "円|z-(1+i)|=rがCと1点で交わるには，中心から最短距離の直線に接し，他の直線とは交わらない",
+        "math": "r=\\min\\{d_1,d_2,d_3\\}=d(y=\\sqrt3 x)=\\frac{\\sqrt3-1}{2}"
+      },
+      {
+        "idx": 4,
+        "description": "接点は(1,1)からy=\\sqrt3 xへの垂足",
+        "math": "z=\\frac{1+\\sqrt3}{4}(1+\\sqrt3 i)"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q2", "sub": "all", "group": "M/N/O/P/Q/R/S/T/U/V/W" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q2",
+    "sub": "all",
+    "group": "M/N/O/P/Q/R/S/T/U/V/W"
+  },
   "solution_ref": "solutions/H27-1/course2/H27-1-II-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    }
+  ]
 }

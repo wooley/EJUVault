@@ -1,5 +1,11 @@
 {
-  "exam": { "exam_id": "R3-2", "year": 2021, "era": "令和", "session": 2, "subject": "EJU数学" },
+  "exam": {
+    "exam_id": "R3-2",
+    "year": 2021,
+    "era": "令和",
+    "session": 2,
+    "subject": "EJU数学"
+  },
   "spec_version": "1.4",
   "course": 2,
   "track": "science",
@@ -11,21 +17,6 @@
   "original_ja": {
     "text": "問1 1辺の長さが1の立方体ABCD−EFGHと，頂点Aを通り，辺BF, DHとそれぞれ点P,Qで交わる平面πがある。線分BP,DQの長さをBP=m,DQ=nとする。また，平面πと直線EF,EHの交点をそれぞれR,Sとする。以下，ベクトルAB=a，AD=b，AE=cとおく。(1) ベクトルAR,ASについて cosθ を求める。AR=[A]a+c，AS=[B]b+c，AR・AS=[C]，cosθ=[D]/√[E]。(2) 線分CEと平面πの交点をTとするとき |CT| を求める。r=[F]/[G], s=[H]/[G], t=[I]/[G]，|CT|=√[J]×[I]/[G]。さらに点Gが線分RS上にあるとするならば m+n=[K], AG=[L]AR+[M]AS。",
     "formulas": [],
-    "placeholders": {
-      "A": { "digits": 1 },
-      "B": { "digits": 1 },
-      "C": { "digits": 1 },
-      "D": { "digits": 1 },
-      "E": { "digits": 1 },
-      "F": { "digits": 1 },
-      "G": { "digits": 1 },
-      "H": { "digits": 1 },
-      "I": { "digits": 1 },
-      "J": { "digits": 1 },
-      "K": { "digits": 1 },
-      "L": { "digits": 1 },
-      "M": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": false,
@@ -43,17 +34,105 @@
       "G∈RS给出m+n与线性表示"
     ],
     "steps": [
-      { "idx": 1, "description": "由P,Q确定平面：AP=a+mc，AQ=b+nc。", "math": "P=B+mc,\\ Q=D+nc" },
-      { "idx": 2, "description": "R∈EF：R=E+ua=c+ua，同时R在平面上。比较系数得 u=1/m。", "math": "R=c+\\frac1m a\\Rightarrow \\overrightarrow{AR}=\\frac1m a+c" },
-      { "idx": 3, "description": "S∈EH：S=E+vb=c+vb，同理 v=1/n。", "math": "\\overrightarrow{AS}=\\frac1n b+c" },
-      { "idx": 4, "description": "点积与长度：a,b,c两两垂直且|a|=|b|=|c|=1。", "math": "AR\\cdot AS=1,\\ |AR|^2=1+\\frac1{m^2},\\ |AS|^2=1+\\frac1{n^2}" },
-      { "idx": 5, "description": "得到cosθ。", "math": "\\cos\\theta=\\frac{mn}{\\sqrt{(m^2+1)(n^2+1)}}" },
-      { "idx": 6, "description": "T在CE上：T=C+t(E-C)；又T在平面上：AT=rAR+sAS，联立得 t=(m+n)/(m+n+1)。", "math": "|CE|=\\sqrt3\\Rightarrow |CT|=t\\sqrt3=\\sqrt3\\cdot\\frac{m+n}{m+n+1}" },
-      { "idx": 7, "description": "G在RS上推出m+n=1，并可表示AG=mAR+nAS。", "math": "m+n=1,\\ \\overrightarrow{AG}=m\\overrightarrow{AR}+n\\overrightarrow{AS}" }
+      {
+        "idx": 1,
+        "description": "由P,Q确定平面：AP=a+mc，AQ=b+nc。",
+        "math": "P=B+mc,\\ Q=D+nc"
+      },
+      {
+        "idx": 2,
+        "description": "R∈EF：R=E+ua=c+ua，同时R在平面上。比较系数得 u=1/m。",
+        "math": "R=c+\\frac1m a\\Rightarrow \\overrightarrow{AR}=\\frac1m a+c"
+      },
+      {
+        "idx": 3,
+        "description": "S∈EH：S=E+vb=c+vb，同理 v=1/n。",
+        "math": "\\overrightarrow{AS}=\\frac1n b+c"
+      },
+      {
+        "idx": 4,
+        "description": "点积与长度：a,b,c两两垂直且|a|=|b|=|c|=1。",
+        "math": "AR\\cdot AS=1,\\ |AR|^2=1+\\frac1{m^2},\\ |AS|^2=1+\\frac1{n^2}"
+      },
+      {
+        "idx": 5,
+        "description": "得到cosθ。",
+        "math": "\\cos\\theta=\\frac{mn}{\\sqrt{(m^2+1)(n^2+1)}}"
+      },
+      {
+        "idx": 6,
+        "description": "T在CE上：T=C+t(E-C)；又T在平面上：AT=rAR+sAS，联立得 t=(m+n)/(m+n+1)。",
+        "math": "|CE|=\\sqrt3\\Rightarrow |CT|=t\\sqrt3=\\sqrt3\\cdot\\frac{m+n}{m+n+1}"
+      },
+      {
+        "idx": 7,
+        "description": "G在RS上推出m+n=1，并可表示AG=mAR+nAS。",
+        "math": "m+n=1,\\ \\overrightarrow{AG}=m\\overrightarrow{AR}+n\\overrightarrow{AS}"
+      }
     ],
     "symbolic_steps": []
   },
-  "answer_ref": { "course": 2, "section": "II", "q": "Q1", "sub": "all", "group": "A/B/C/DE/FG/H/I/J/K/LM" },
+  "answer_ref": {
+    "course": 2,
+    "section": "II",
+    "q": "Q1",
+    "sub": "all",
+    "group": "A/B/C/DE/FG/H/I/J/K/LM"
+  },
   "solution_ref": "solutions/R3-2/course2/R3-2-II-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "A",
+      "length": 1
+    },
+    {
+      "id": "B",
+      "length": 1
+    },
+    {
+      "id": "C",
+      "length": 1
+    },
+    {
+      "id": "D",
+      "length": 1
+    },
+    {
+      "id": "E",
+      "length": 1
+    },
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "H",
+      "length": 1
+    },
+    {
+      "id": "I",
+      "length": 1
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
+  ]
 }

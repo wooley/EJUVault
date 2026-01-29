@@ -17,13 +17,6 @@
   "original_ja": {
     "text": "問2 a,t を正の実数とする。y=1/t^2 (x-at^2)^2 のグラフと x軸,y軸で囲まれる部分Dを考える。Dをx軸回転してできる立体の体積をV1，Dをy軸回転してできる立体の体積をV2とする。まずV1を求めると V1=π∫_[K]^[L] 1/t^[M] (x-at^2)^[N] dx = (π/[O]) a^[P] t^[Q]。一方V2を求めると V2=π∫_[K]^[R] ([S]-[T]√y)^[U] dy = (π/[V]) a^[W] t^[X]。よって a=[Y]/[Z] のとき，tの値によらず V1=V2 となる。 (各空欄は下の0〜9から選択)",
     "formulas": [],
-    "placeholders": {
-      "K": { "digits": 1 }, "L": { "digits": 1 }, "M": { "digits": 1 }, "N": { "digits": 1 },
-      "O": { "digits": 1 }, "P": { "digits": 1 }, "Q": { "digits": 1 },
-      "R": { "digits": 1 }, "S": { "digits": 1 }, "T": { "digits": 1 }, "U": { "digits": 1 },
-      "V": { "digits": 1 }, "W": { "digits": 1 }, "X": { "digits": 1 },
-      "Y": { "digits": 1 }, "Z": { "digits": 1 }
-    },
     "structure": {
       "is_divisibility": false,
       "has_parameter_elimination": true,
@@ -35,9 +28,21 @@
   "solution": {
     "outline": [],
     "steps": [
-      { "idx": 1, "description": "領域は x∈[0,at^2] で y=(at^2-x)^2/t^2。x軸回転は円板法。", "math": "V_1=\\pi\\int_0^{at^2}\\left(\\frac{(x-at^2)^2}{t^2}\\right)^2dx=\\pi\\int_0^{at^2}\\frac{(x-at^2)^4}{t^4}dx=\\frac{\\pi}{5}a^5t^6" },
-      { "idx": 2, "description": "y軸回転は y で積分。x=at^2-t\\sqrt y, y∈[0,a^2t^2]。", "math": "V_2=\\pi\\int_0^{a^2t^2}(at^2-t\\sqrt y)^2dy=\\frac{\\pi}{6}a^4t^6" },
-      { "idx": 3, "description": "V1=V2 が t に依らないための a を決定。", "math": "\\frac{\\pi}{5}a^5t^6=\\frac{\\pi}{6}a^4t^6\\Rightarrow a=\\frac56" }
+      {
+        "idx": 1,
+        "description": "領域は x∈[0,at^2] で y=(at^2-x)^2/t^2。x軸回転は円板法。",
+        "math": "V_1=\\pi\\int_0^{at^2}\\left(\\frac{(x-at^2)^2}{t^2}\\right)^2dx=\\pi\\int_0^{at^2}\\frac{(x-at^2)^4}{t^4}dx=\\frac{\\pi}{5}a^5t^6"
+      },
+      {
+        "idx": 2,
+        "description": "y軸回転は y で積分。x=at^2-t\\sqrt y, y∈[0,a^2t^2]。",
+        "math": "V_2=\\pi\\int_0^{a^2t^2}(at^2-t\\sqrt y)^2dy=\\frac{\\pi}{6}a^4t^6"
+      },
+      {
+        "idx": 3,
+        "description": "V1=V2 が t に依らないための a を決定。",
+        "math": "\\frac{\\pi}{5}a^5t^6=\\frac{\\pi}{6}a^4t^6\\Rightarrow a=\\frac56"
+      }
     ],
     "symbolic_steps": []
   },
@@ -49,5 +54,71 @@
     "group": "K-Z"
   },
   "solution_ref": "solutions/H26-1/course2/H26-1-IV-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "blanks": [
+    {
+      "id": "K",
+      "length": 1
+    },
+    {
+      "id": "L",
+      "length": 1
+    },
+    {
+      "id": "M",
+      "length": 1
+    },
+    {
+      "id": "N",
+      "length": 1
+    },
+    {
+      "id": "O",
+      "length": 1
+    },
+    {
+      "id": "P",
+      "length": 1
+    },
+    {
+      "id": "Q",
+      "length": 1
+    },
+    {
+      "id": "R",
+      "length": 1
+    },
+    {
+      "id": "S",
+      "length": 1
+    },
+    {
+      "id": "T",
+      "length": 1
+    },
+    {
+      "id": "U",
+      "length": 1
+    },
+    {
+      "id": "V",
+      "length": 1
+    },
+    {
+      "id": "W",
+      "length": 1
+    },
+    {
+      "id": "X",
+      "length": 1
+    },
+    {
+      "id": "Y",
+      "length": 1
+    },
+    {
+      "id": "Z",
+      "length": 1
+    }
+  ]
 }

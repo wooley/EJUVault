@@ -17,8 +17,14 @@
       "data/images_raw/H17-1_course2/page_12.png",
       "data/images_raw/H17-1_course2/page_13.png"
     ],
-    "page_print": ["数学-24", "数学-25"],
-    "page_in_exam": [148, 149]
+    "page_print": [
+      "数学-24",
+      "数学-25"
+    ],
+    "page_in_exam": [
+      148,
+      149
+    ]
   },
   "original_ja": {
     "text": "問2　区間0≦x≦1において，2つの曲線 C1:y=x^2，C2:y=√x について考える。(1) 2曲線C1,C2で囲まれる部分の面積をSとすると S=[F]/[G] である。(2) 0<t<1 を満たす実数tに対して，直線x=t と2曲線C1,C2との交点をそれぞれP,Qとする。線分PQの長さは t=2^{[HI]/[J]} のとき最大になり，そのときのPQの長さは 3・2^{[KL]/[M]} である。",
@@ -35,15 +41,48 @@
     "formulas": []
   },
   "blanks": [
-    { "id": "F", "length": 1 },
-    { "id": "G", "length": 1 },
-    { "id": "HI", "length": 2 },
-    { "id": "J", "length": 1 },
-    { "id": "KL", "length": 2 },
-    { "id": "M", "length": 1 }
+    {
+      "id": "F",
+      "length": 1
+    },
+    {
+      "id": "G",
+      "length": 1
+    },
+    {
+      "id": "HI",
+      "length": 2
+    },
+    {
+      "id": "J",
+      "length": 1
+    },
+    {
+      "id": "KL",
+      "length": 2
+    },
+    {
+      "id": "M",
+      "length": 1
+    }
   ],
   "blank_rules": {
-    "allowed_chars": ["0","1","2","3","4","5","6","7","8","9","+","-","×","÷"],
+    "allowed_chars": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "+",
+      "-",
+      "×",
+      "÷"
+    ],
     "no_whitespace": true,
     "notes": [
       "指数分数的分子 HI / KL 可能为负数，负号计入两格，例如 '-4'。"
@@ -54,24 +93,48 @@
       "sub_id": "(1)",
       "prompt_zh": "面积：∫(上-下)dx。",
       "blanks": [
-        { "id": "F", "length": 1 },
-        { "id": "G", "length": 1 }
+        {
+          "id": "F",
+          "length": 1
+        },
+        {
+          "id": "G",
+          "length": 1
+        }
       ]
     },
     {
       "sub_id": "(2)",
       "prompt_zh": "PQ为竖直距离：√t - t^2，求最大值。",
       "blanks": [
-        { "id": "HI", "length": 2 },
-        { "id": "J", "length": 1 },
-        { "id": "KL", "length": 2 },
-        { "id": "M", "length": 1 }
+        {
+          "id": "HI",
+          "length": 2
+        },
+        {
+          "id": "J",
+          "length": 1
+        },
+        {
+          "id": "KL",
+          "length": 2
+        },
+        {
+          "id": "M",
+          "length": 1
+        }
       ]
     }
   ],
   "tags": {
-    "domain": ["積分（面積）", "微分・最大最小"],
-    "skill": ["面積計算", "関数の最大最小"],
+    "domain": [
+      "積分（面積）",
+      "微分・最大最小"
+    ],
+    "skill": [
+      "面積計算",
+      "関数の最大最小"
+    ],
     "course_specific": []
   },
   "difficulty": {
@@ -100,7 +163,8 @@
     "exam_id": "H17-1",
     "course": 2,
     "section": "IV",
-    "question_number": 2
+    "question_number": 2,
+    "q": "Q2"
   },
   "solution_ref": "data/solutions/H17-1/course2/H17-1-IV-2.zh.md",
   "tagging_status": "ok"

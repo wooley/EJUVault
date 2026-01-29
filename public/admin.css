@@ -553,6 +553,7 @@ textarea {
   display: grid;
   gap: 8px;
   margin-top: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .pattern-radio-item {
