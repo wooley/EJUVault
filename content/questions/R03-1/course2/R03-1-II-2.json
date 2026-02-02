@@ -23,54 +23,43 @@
     "q": "Q2"
   },
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    },
-    {
-      "id": "Y",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "OP",
+        "length": 2,
+        "answer": "74"
+      },
+      {
+        "id": "QR",
+        "length": 2,
+        "answer": "74"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "UV",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "WXY",
+        "length": 3,
+        "answer": "525"
+      }
+    ]
+  }
 }

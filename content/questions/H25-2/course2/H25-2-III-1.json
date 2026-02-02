@@ -54,42 +54,28 @@
   },
   "solution_ref": "solutions/H25-2/course2/H25-2-III-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "132"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "EFG",
+        "length": 3,
+        "answer": "132"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "14"
+      }
+    ]
+  }
 }

@@ -62,18 +62,18 @@
   },
   "solution_ref": "data/solutions/H18-2/course2/H18-2-II-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "DE",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "-27"
+      },
+      {
+        "id": "DE",
+        "length": 2,
+        "answer": "-6"
+      }
+    ]
+  }
 }

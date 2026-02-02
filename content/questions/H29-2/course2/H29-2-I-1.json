@@ -22,42 +22,43 @@
     }
   },
   "pattern_id": "QF_QUAD_OPT_CONSTRAINT",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "DE",
-      "length": 2
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "HI",
-      "length": 2
-    },
-    {
-      "id": "JK",
-      "length": 2
-    },
-    {
-      "id": "LM",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "181"
+      },
+      {
+        "id": "DE",
+        "length": 2,
+        "answer": "-2"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "JK",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "-3"
+      }
+    ]
+  }
 }

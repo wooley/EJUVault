@@ -26,38 +26,38 @@
   },
   "solution_ref": "solutions/H30-2/course2/H30-2-I-2.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "OPQ",
-      "length": 3
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "TU",
-      "length": 2
-    },
-    {
-      "id": "VW",
-      "length": 2
-    },
-    {
-      "id": "X",
-      "length": 1
-    },
-    {
-      "id": "Y",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "NOPQ",
+        "length": 4,
+        "answer": "5216"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "TU",
+        "length": 2,
+        "answer": "36"
+      },
+      {
+        "id": "VW",
+        "length": 2,
+        "answer": "36"
+      },
+      {
+        "id": "XY",
+        "length": 2,
+        "answer": "38"
+      }
+    ]
+  }
 }

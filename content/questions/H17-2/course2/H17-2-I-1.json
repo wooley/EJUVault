@@ -10,17 +10,54 @@
   "section": "I",
   "question_number": 1,
   "question_id": "H17-2-I-1",
-
   "original_text_ja": "mを正の整数とする。放物線 y = x^2 + 48 と直線 y = m^2 の交点の x 座標が整数となる場合を考える。そのうち、x 座標が正の整数となる交点を P とする。交点 P の x 座標は、方程式 x^2 + 48 = m^2 を満たすから m^2 − x^2 = 48 が成り立つ。まず、m^2 − x^2 = 48 を満たす m + x と m − x の組合せを、m + x の値の大きい順に並べると (m + x, m − x) = (AB, C), (DE, F), (GH, I), (JK, L), (M, N) となる。したがって、m が整数となるものは、m を大きい値から順に並べると m = OP, Q, R である。",
-
   "translation_zh": "设 m 为正整数。考虑抛物线 y = x^2 + 48 与直线 y = m^2 的交点中，x 坐标为整数的情形。其中，将 x 坐标为正整数的交点记为 P。由于交点 P 的 x 坐标满足方程 x^2 + 48 = m^2，因此有 m^2 − x^2 = 48。首先，将满足 m^2 − x^2 = 48 的 m + x 与 m − x 的组合按 m + x 的值从大到小排列为 (m + x, m − x) = (AB, C), (DE, F), (GH, I), (JK, L), (M, N)。因此，使 m 为整数的情况按从大到小排列为 m = OP, Q, R。",
-
   "structure": {
     "type": "fill_in_blank",
-    "blanks": ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R"],
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "481"
+      },
+      {
+        "id": "DEF",
+        "length": 3,
+        "answer": "242"
+      },
+      {
+        "id": "GHI",
+        "length": 3,
+        "answer": "163"
+      },
+      {
+        "id": "JKL",
+        "length": 3,
+        "answer": "124"
+      },
+      {
+        "id": "MN",
+        "length": 2,
+        "answer": "86"
+      },
+      {
+        "id": "OP",
+        "length": 2,
+        "answer": "13"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "7"
+      }
+    ],
     "subquestions": []
   },
-
   "answer_ref": {
     "course": 2,
     "section": "I",
@@ -28,19 +65,15 @@
     "sub": "",
     "group": "A-R"
   },
-
   "solution_ref": "data/solutions/H17-2/course2/H17-2-I-1.zh.md",
-
   "solution_outline": [
     "将交点条件化为平方差：m^2 - x^2 = 48",
     "分解为 (m+x)(m-x)=48 并枚举正因数对",
     "由因数对反推 m，筛选 m 为整数",
     "按题目要求排序并回填空格"
   ],
-
   "tags": [],
   "tagging_status": "needs_tag_extension",
-
   "difficulty": {
     "level": 2,
     "method": "heuristic_v1",

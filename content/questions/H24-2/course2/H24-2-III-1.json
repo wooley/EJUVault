@@ -23,50 +23,43 @@
   "solution_ref": "solutions/H24-2/course2/H24-2-III.zh.md",
   "tagging_status": "ok",
   "pattern_id": "LOG_CIRCLE_TANGENCY_MAX",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "IJ",
-      "length": 2
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "223"
+      },
+      {
+        "id": "DEF",
+        "length": 3,
+        "answer": "115"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "16"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "2"
+      }
+    ]
+  }
 }

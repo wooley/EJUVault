@@ -43,46 +43,43 @@
   "solution_ref": "solutions/H24-1/course2/H24-1-III.zh.md",
   "tagging_status": "ok",
   "pattern_id": "GEO_TRI_ANGLE",
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "30"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "DE",
+        "length": 2,
+        "answer": "22"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "GH",
+        "length": 2,
+        "answer": "34"
+      },
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "23"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }

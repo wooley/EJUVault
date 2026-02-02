@@ -27,5 +27,34 @@
     "section": "I",
     "q": "Q2"
   },
-  "tagging_status": "generated"
+  "tagging_status": "generated",
+  "structure": {
+    "blanks": [
+      {
+        "id": "KL",
+        "length": 2,
+        "answer": "15"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "30"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "30"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "15"
+      }
+    ]
+  }
 }

@@ -69,46 +69,48 @@
   },
   "solution_ref": "solutions/R3-2/course2/R3-2-I-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "IJ",
-      "length": 2
-    },
-    {
-      "id": "KLM",
-      "length": 3
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "GH",
+        "length": 2,
+        "answer": "86"
+      },
+      {
+        "id": "IJKL",
+        "length": 4,
+        "answer": "40126"
+      }
+    ]
+  }
 }

@@ -23,70 +23,38 @@
   "solution_ref": "solutions/H24-2/course2/H24-2-IV-2.zh.md",
   "tagging_status": "ok",
   "pattern_id": "CALC_INTEGRAL_RECURSION_LIMIT",
-  "blanks": [
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "JK",
-      "length": 2
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "QR",
-      "length": 2
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    },
-    {
-      "id": "Y",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "MNO",
+        "length": 3,
+        "answer": "141"
+      },
+      {
+        "id": "PQRST",
+        "length": 5,
+        "answer": "11214"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "W",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "XY",
+        "length": 2,
+        "answer": "43"
+      }
+    ]
+  }
 }

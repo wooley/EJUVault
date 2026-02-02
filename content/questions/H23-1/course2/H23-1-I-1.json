@@ -74,42 +74,38 @@
     "条件付き最適化"
   ],
   "pattern_id": "QF_DIRECT_VERTEX",
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "DE",
-      "length": 2
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "IJ",
-      "length": 2
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "LM",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABCDE",
+        "length": 5,
+        "answer": "-3327"
+      },
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "14"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "27"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "15"
+      }
+    ]
+  }
 }

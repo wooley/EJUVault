@@ -64,30 +64,38 @@
     "配方",
     "求通项"
   ],
-  "blanks": [
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "LM",
-      "length": 2
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 2
-    },
-    {
-      "id": "Q",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "16"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "9"
+      }
+    ]
+  }
 }

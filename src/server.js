@@ -433,8 +433,17 @@ function main() {
             groups.push({ group_id: groupId, blanks });
           }
         } else if (question.structure && Array.isArray(question.structure.blanks)) {
-          for (const blankId of question.structure.blanks) {
-            groups.push({ group_id: blankId, blanks: [blankId] });
+          for (const blank of question.structure.blanks) {
+            if (typeof blank === 'string') {
+              groups.push({ group_id: blank, blanks: [blank] });
+              continue;
+            }
+            if (!blank || typeof blank !== 'object' || !blank.id) {
+              continue;
+            }
+            const length = Number.isFinite(blank.length) ? blank.length : blank.id.length;
+            const blanks = blank.id.split('').slice(0, length || blank.id.length);
+            groups.push({ group_id: blank.id, blanks });
           }
         }
       }
@@ -518,6 +527,7 @@ function main() {
       return res.status(404).json({ error: 'QUESTION_NOT_FOUND' });
     }
     const exerciseHtml = content.getExerciseHtml(question.question_id);
+    const exerciseHtmlZh = content.getExerciseHtmlZh ? content.getExerciseHtmlZh(question.question_id) : null;
     const normalizedPath = path.join(process.cwd(), 'content', 'answers', 'normalized.json');
     let answers = null;
     if (fs.existsSync(normalizedPath)) {
@@ -527,7 +537,12 @@ function main() {
     if (!answers) {
       answers = content.getAnswerGroups(question);
     }
-    return res.status(200).json({ question, answers, exercise_html: exerciseHtml });
+    return res.status(200).json({
+      question,
+      answers,
+      exercise_html: exerciseHtml,
+      exercise_html_zh: exerciseHtmlZh
+    });
   });
 
   app.put('/admin/api/question/:id', adminMiddleware, (req, res) => {
@@ -542,6 +557,7 @@ function main() {
     }
     const filePath = path.join(process.cwd(), entry.question_path);
     require('fs').writeFileSync(filePath, JSON.stringify(question, null, 2));
+    content.clearQuestionCache(questionId);
     return res.status(200).json({ ok: true });
   });
 

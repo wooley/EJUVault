@@ -65,50 +65,38 @@
   },
   "solution_ref": "solutions/R4-1/course2/R4-1-II-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "BC",
-      "length": 2
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "EF",
-      "length": 2
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "415"
+      },
+      {
+        "id": "DEF",
+        "length": 3,
+        "answer": "215"
+      },
+      {
+        "id": "GH",
+        "length": 2,
+        "answer": "25"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "JK",
+        "length": 2,
+        "answer": "23"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "42"
+      }
+    ]
+  }
 }

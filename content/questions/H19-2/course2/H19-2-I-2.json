@@ -23,22 +23,28 @@
     "必要十分条件",
     "パラメータ"
   ],
-  "blanks": [
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "6"
+      }
+    ]
+  }
 }

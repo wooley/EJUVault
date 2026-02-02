@@ -65,102 +65,58 @@
   },
   "solution_ref": "solutions/R4-1/course2/R4-1-III-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "23"
+      },
+      {
+        "id": "CDEF",
+        "length": 4,
+        "answer": "1322"
+      },
+      {
+        "id": "GHIJK",
+        "length": 5,
+        "answer": "22287"
+      },
+      {
+        "id": "LMN",
+        "length": 3,
+        "answer": "422"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "QR",
+        "length": 2,
+        "answer": "32"
+      },
+      {
+        "id": "ST",
+        "length": 2,
+        "answer": "14"
+      },
+      {
+        "id": "UV",
+        "length": 2,
+        "answer": "23"
+      },
+      {
+        "id": "WX",
+        "length": 2,
+        "answer": "34"
+      }
+    ]
+  }
 }

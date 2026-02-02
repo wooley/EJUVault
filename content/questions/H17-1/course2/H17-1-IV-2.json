@@ -40,32 +40,6 @@
     "text": "题2 在区间 0≤x≤1 内，考虑两曲线 C1:y=x^2 与 C2:y=√x。(1) 求两曲线围成的面积 S=[F]/[G]。(2) 对 0<t<1，直线 x=t 与两曲线交于 P、Q。线段 PQ 的长度在 t=2^{[HI]/[J]} 时最大，此时 PQ 的长度为 3·2^{[KL]/[M]}。",
     "formulas": []
   },
-  "blanks": [
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "HI",
-      "length": 2
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "KL",
-      "length": 2
-    },
-    {
-      "id": "M",
-      "length": 1
-    }
-  ],
   "blank_rules": {
     "allowed_chars": [
       "0",
@@ -94,12 +68,19 @@
       "prompt_zh": "面积：∫(上-下)dx。",
       "blanks": [
         {
-          "id": "F",
-          "length": 1
+          "id": "FG",
+          "length": 2,
+          "answer": "13"
         },
         {
-          "id": "G",
-          "length": 1
+          "id": "HIJ",
+          "length": 3,
+          "answer": "-43"
+        },
+        {
+          "id": "KLM",
+          "length": 3,
+          "answer": "-83"
         }
       ]
     },
@@ -108,20 +89,19 @@
       "prompt_zh": "PQ为竖直距离：√t - t^2，求最大值。",
       "blanks": [
         {
-          "id": "HI",
-          "length": 2
+          "id": "FG",
+          "length": 2,
+          "answer": "13"
         },
         {
-          "id": "J",
-          "length": 1
+          "id": "HIJ",
+          "length": 3,
+          "answer": "-43"
         },
         {
-          "id": "KL",
-          "length": 2
-        },
-        {
-          "id": "M",
-          "length": 1
+          "id": "KLM",
+          "length": 3,
+          "answer": "-83"
         }
       ]
     }
@@ -167,5 +147,24 @@
     "q": "Q2"
   },
   "solution_ref": "data/solutions/H17-1/course2/H17-1-IV-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "structure": {
+    "blanks": [
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "13"
+      },
+      {
+        "id": "HIJ",
+        "length": 3,
+        "answer": "-43"
+      },
+      {
+        "id": "KLM",
+        "length": 3,
+        "answer": "-83"
+      }
+    ]
+  }
 }

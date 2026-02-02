@@ -42,42 +42,38 @@
   "solution_ref": "solutions/H28-1/course2/H28-1-I-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "QF_DIRECT_VERTEX",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "CD",
-      "length": 2
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "CDEF",
+        "length": 4,
+        "answer": "-241"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "18"
+      }
+    ]
+  }
 }

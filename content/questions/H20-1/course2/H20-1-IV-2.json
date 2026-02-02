@@ -34,26 +34,38 @@
     "極限"
   ],
   "spec_version": "1.4",
-  "blanks": [
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "2"
+      }
+    ]
+  }
 }

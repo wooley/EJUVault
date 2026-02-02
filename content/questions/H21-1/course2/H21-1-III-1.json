@@ -81,58 +81,38 @@
   },
   "solution_ref": "solutions/H21-1/course2/H21-1-III-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "DE",
-      "length": 2
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "MN",
-      "length": 2
-    },
-    {
-      "id": "OP",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "620"
+      },
+      {
+        "id": "DE",
+        "length": 2,
+        "answer": "10"
+      },
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "31"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "35"
+      },
+      {
+        "id": "KLMNOP",
+        "length": 6,
+        "answer": "371025"
+      }
+    ]
+  }
 }

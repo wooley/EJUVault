@@ -35,50 +35,78 @@
     "極値"
   ],
   "spec_version": "1.4",
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "IJ",
-      "length": 2
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "MN",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "-"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "6"
+      }
+    ]
+  }
 }

@@ -23,42 +23,38 @@
   "solution_ref": "solutions/H24-2/course2/H24-2-I-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "QF_SYMMETRY_VERTEX",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "DE",
-      "length": 2
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "HI",
-      "length": 2
-    },
-    {
-      "id": "JK",
-      "length": 2
-    },
-    {
-      "id": "LM",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "24"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "DEF",
+        "length": 3,
+        "answer": "-28"
+      },
+      {
+        "id": "GHI",
+        "length": 3,
+        "answer": "28"
+      },
+      {
+        "id": "JK",
+        "length": 2,
+        "answer": "10"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "-8"
+      }
+    ]
+  }
 }

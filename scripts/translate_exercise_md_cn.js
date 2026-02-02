@@ -8,6 +8,8 @@ const DEFAULT_CACHE_DIR = path.join(process.cwd(), 'data', '.cache');
 const DEFAULT_CACHE_PATH = path.join(DEFAULT_CACHE_DIR, 'exercise_md_zh_cache.json');
 const DEFAULT_MANIFEST_PATH = path.join(DEFAULT_CACHE_DIR, 'exercise_md_zh_manifest.json');
 const DEFAULT_OLLAMA_HOST = process.env.OLLAMA_HOST || 'http://localhost:11434';
+const OLLAMA_RETRY_MAX = Number(process.env.OLLAMA_RETRY_MAX || 4);
+const OLLAMA_RETRY_DELAY_MS = Number(process.env.OLLAMA_RETRY_DELAY_MS || 1500);
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -104,6 +106,14 @@ Env:
 
 function sha256(text) {
   return crypto.createHash('sha256').update(text).digest('hex');
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function isRetryableStatus(status) {
+  return status === 408 || status === 429 || (status >= 500 && status <= 599);
 }
 
 function ensureDirForFile(filePath) {
@@ -303,22 +313,44 @@ async function ollamaTranslate({ ollamaHost, model, input }) {
     ]
   };
 
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body)
-  });
+  let lastErr;
+  for (let attempt = 1; attempt <= OLLAMA_RETRY_MAX; attempt += 1) {
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
 
-  if (!res.ok) {
-    const errText = await res.text().catch(() => '');
-    throw new Error(`Ollama request failed: ${res.status} ${res.statusText}${errText ? ` - ${errText}` : ''}`);
+      if (!res.ok) {
+        const errText = await res.text().catch(() => '');
+        const err = new Error(
+          `Ollama request failed: ${res.status} ${res.statusText}${errText ? ` - ${errText}` : ''}`
+        );
+        if (attempt < OLLAMA_RETRY_MAX && isRetryableStatus(res.status)) {
+          lastErr = err;
+          await sleep(OLLAMA_RETRY_DELAY_MS * attempt);
+          continue;
+        }
+        throw err;
+      }
+
+      const json = await res.json();
+      const content = json && json.message && json.message.content;
+      if (!content || typeof content !== 'string') {
+        throw new Error('Ollama response missing message content');
+      }
+      return content;
+    } catch (err) {
+      if (attempt < OLLAMA_RETRY_MAX) {
+        lastErr = err;
+        await sleep(OLLAMA_RETRY_DELAY_MS * attempt);
+        continue;
+      }
+      throw err;
+    }
   }
-  const json = await res.json();
-  const content = json && json.message && json.message.content;
-  if (!content || typeof content !== 'string') {
-    throw new Error('Ollama response missing message content');
-  }
-  return content;
+  throw lastErr;
 }
 
 function normalizeNewlines(text) {

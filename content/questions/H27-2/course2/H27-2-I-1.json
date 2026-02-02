@@ -11,62 +11,6 @@
   ],
   "pattern_id": "ALG-QUAD-EXT-INTERVAL-01",
   "prompt_ja": "a,bは実数であり，0<b<7とする。二次関数 f(x)=x^2-6x+a の b≦x≦7 の範囲における最大値Mと最小値mを考える。",
-  "blanks": [
-    {
-      "type": "int",
-      "note": "平方完成の中心",
-      "id": "A",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "平方完成の定数",
-      "id": "B",
-      "length": 1
-    },
-    {
-      "type": "choice_0_9",
-      "note": "場合分け境界（0〜9から選択）",
-      "id": "C",
-      "length": 1
-    },
-    {
-      "type": "choice_0_9",
-      "note": "M（0〜9から選択）",
-      "id": "D",
-      "length": 1
-    },
-    {
-      "type": "choice_0_9",
-      "note": "m（0〜9から選択）",
-      "id": "E",
-      "length": 1
-    },
-    {
-      "type": "choice_0_9",
-      "note": "M（0〜9から選択）",
-      "id": "F",
-      "length": 1
-    },
-    {
-      "type": "choice_0_9",
-      "note": "m（0〜9から選択）",
-      "id": "G",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "aの値",
-      "id": "H",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "bの値",
-      "id": "I",
-      "length": 1
-    }
-  ],
   "choices_ja": {
     "0": "0",
     "1": "1",
@@ -89,5 +33,49 @@
   "type": "fill_in",
   "original_ja": {
     "text": "a,bは実数であり，0<b<7とする。二次関数 f(x)=x^2-6x+a の b≦x≦7 の範囲における最大値Mと最小値mを考える。"
+  },
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "39"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "5"
+      }
+    ]
   }
 }

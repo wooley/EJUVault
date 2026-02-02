@@ -25,94 +25,63 @@
     "ref": "official/course2.json#R4-2-III-1"
   },
   "solution_ref": "answers/ai_ans.json#R4-2-III-1",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "RS",
-      "length": 2
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "74"
+      },
+      {
+        "id": "CDE",
+        "length": 3,
+        "answer": "363"
+      },
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "32"
+      },
+      {
+        "id": "JKL",
+        "length": 3,
+        "answer": "145"
+      },
+      {
+        "id": "MNO",
+        "length": 3,
+        "answer": "947"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "UV",
+        "length": 2,
+        "answer": "14"
+      },
+      {
+        "id": "W",
+        "length": 1,
+        "answer": "4"
+      }
+    ]
+  }
 }

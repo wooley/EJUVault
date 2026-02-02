@@ -31,11 +31,14 @@ const patternDescEl = document.getElementById('pattern-desc');
 const tagsCatalogEl = document.getElementById('tags-catalog');
 const tagsCustomInput = document.getElementById('tags-custom');
 const metaStatus = document.getElementById('meta-status');
+const tabButtons = Array.from(document.querySelectorAll('.tab-btn'));
+const tabSections = Array.from(document.querySelectorAll('.tab-section'));
 const patternLabels = window.PATTERN_LABELS || {};
 
 let currentQuestion = null;
 let currentGroups = [];
 let currentExerciseHtml = null;
+let currentExerciseHtmlZh = null;
 let groupEditorRows = [];
 let extraEditorRows = [];
 let isSyncingAnswers = false;
@@ -104,6 +107,37 @@ function readPendingStatus() {
 function storePendingStatus(message, isError) {
   sessionStorage.setItem('admin_question_status', message);
   sessionStorage.setItem('admin_question_status_error', isError ? 'true' : 'false');
+}
+
+function setActiveTab(targetId) {
+  const targetSection = document.getElementById(targetId);
+  if (!targetSection) {
+    return;
+  }
+  tabButtons.forEach((btn) => {
+    const isActive = btn.dataset.tabTarget === targetId;
+    btn.classList.toggle('is-active', isActive);
+    btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+  });
+  tabSections.forEach((section) => {
+    const isActive = section.id === targetId;
+    section.classList.toggle('is-active', isActive);
+    section.hidden = !isActive;
+  });
+  sessionStorage.setItem('admin_question_tab', targetId);
+}
+
+function initTabs() {
+  if (!tabButtons.length || !tabSections.length) {
+    return;
+  }
+  const stored = sessionStorage.getItem('admin_question_tab');
+  const defaultTarget = tabButtons[0].dataset.tabTarget;
+  const initialTarget = stored && document.getElementById(stored) ? stored : defaultTarget;
+  setActiveTab(initialTarget);
+  tabButtons.forEach((btn) => {
+    btn.addEventListener('click', () => setActiveTab(btn.dataset.tabTarget));
+  });
 }
 
 function getExamIdFromQuery() {
@@ -797,62 +831,21 @@ function deriveGroups(question) {
   if (!question || typeof question !== 'object') {
     return [];
   }
-  const textJa = (question.original_ja && question.original_ja.text) || question.original_text_ja || '';
-  const textZh = question.translation_zh && question.translation_zh.text ? question.translation_zh.text : '';
-  const placeholderSource = textJa || textZh || '';
-  const placeholderRegex = /[\[［]([A-Z]+)[\]］]/g;
-  const seen = new Set();
   const groups = [];
-  if (Array.isArray(question.blanks)) {
-    question.blanks.forEach((blank) => {
-      if (typeof blank === 'string') {
-        const blanks = blank.split('');
-        groups.push({ group_id: blank, blanks });
-        return;
-      }
-      if (!blank || typeof blank !== 'object' || !blank.id) {
-        return;
-      }
+  if (!question.structure || !Array.isArray(question.structure.blanks)) {
+    return groups;
+  }
+  question.structure.blanks.forEach((blank) => {
+    if (typeof blank === 'string') {
+      groups.push({ group_id: blank, blanks: [blank] });
+      return;
+    }
+    if (blank && typeof blank === 'object' && blank.id) {
       const length = Number.isFinite(blank.length) ? blank.length : blank.id.length;
       const blanks = blank.id.split('').slice(0, length || blank.id.length);
       groups.push({ group_id: blank.id, blanks });
-    });
-    return groups;
-  }
-
-  const placeholders = [];
-  let match;
-  while ((match = placeholderRegex.exec(placeholderSource))) {
-    const groupId = match[1];
-    if (!groupId || seen.has(groupId)) {
-      continue;
     }
-    seen.add(groupId);
-    placeholders.push(groupId);
-  }
-
-  if (placeholders.length > 0) {
-    const placeholderMeta = question.original_ja && question.original_ja.placeholders ? question.original_ja.placeholders : {};
-    placeholders.forEach((groupId) => {
-      const meta = placeholderMeta[groupId] || {};
-      const digits = Number.isFinite(meta.digits) ? meta.digits : null;
-      const blanks = groupId.split('').slice(0, digits || groupId.length);
-      groups.push({ group_id: groupId, blanks });
-    });
-    return groups;
-  }
-
-  if (question.structure && Array.isArray(question.structure.blanks)) {
-    question.structure.blanks.forEach((blank) => {
-      if (typeof blank === 'string') {
-        groups.push({ group_id: blank, blanks: [blank] });
-        return;
-      }
-      if (blank && typeof blank === 'object' && blank.id) {
-        groups.push({ group_id: blank.id, blanks: [blank.id] });
-      }
-    });
-  }
+  });
   return groups;
 }
 
@@ -907,6 +900,40 @@ function updateAnswerStatus(payloadOverride) {
   }
   answerEditorStatus.textContent = notes.join(' | ');
   answerEditorStatus.className = notes.length > 0 ? 'status error' : 'status';
+}
+
+function syncQuestionBlanksFromAnswers(question, answers) {
+  if (!question || typeof question !== 'object') {
+    return false;
+  }
+  if (!question.structure || typeof question.structure !== 'object') {
+    question.structure = {};
+  }
+  if (!Array.isArray(question.structure.blanks) || question.structure.blanks.length === 0) {
+    const blanks = Object.keys(answers).map((key) => ({
+      id: key,
+      length: key.length,
+      answer: answers[key]
+    }));
+    question.structure.blanks = blanks;
+    return blanks.length > 0;
+  }
+  let changed = false;
+  question.structure.blanks = question.structure.blanks.map((blank) => {
+    if (!blank || typeof blank !== 'object' || !blank.id) {
+      return blank;
+    }
+    if (!Object.prototype.hasOwnProperty.call(answers, blank.id)) {
+      return blank;
+    }
+    const nextAnswer = answers[blank.id];
+    if (blank.answer !== nextAnswer) {
+      blank.answer = nextAnswer;
+      changed = true;
+    }
+    return blank;
+  });
+  return changed;
 }
 
 function syncAnswersJsonFromEditor() {
@@ -1100,8 +1127,19 @@ function rebuildAnswerEditorFromAnswersJson() {
     setStatus('Invalid answers JSON.', true);
     return;
   }
-  buildAnswerEditor(currentQuestion || getQuestionPayload(), answers);
-  setStatus('Answer editor synced.', false);
+  const question = getQuestionPayload();
+  if (!question) {
+    setStatus('Invalid question JSON.', true);
+    return;
+  }
+  const updated = syncQuestionBlanksFromAnswers(question, answers);
+  if (updated) {
+    questionJson.value = JSON.stringify(question, null, 2);
+    currentQuestion = question;
+    updateDiffSummary();
+  }
+  buildAnswerEditor(question, answers);
+  setStatus(updated ? 'Answer editor synced. Question JSON updated.' : 'Answer editor synced.', false);
 }
 
 async function loadQuestion() {
@@ -1132,6 +1170,7 @@ async function loadQuestion() {
     buildAnswerEditor(data.question, normalizedAnswers);
     syncMetaFromQuestion(data.question);
     currentExerciseHtml = typeof data.exercise_html === 'string' ? data.exercise_html : null;
+    currentExerciseHtmlZh = typeof data.exercise_html_zh === 'string' ? data.exercise_html_zh : null;
     initialQuestionJson = questionJson.value;
     initialAnswersJson = answersJson.value;
     updateDiffSummary();
@@ -1203,9 +1242,10 @@ function preview(lang) {
     setStatus('Invalid question JSON.', true);
     return;
   }
-  const useExerciseHtml = lang === 'ja' && currentExerciseHtml;
+  const useExerciseHtml = (lang === 'ja' && currentExerciseHtml)
+    || (lang === 'zh' && currentExerciseHtmlZh);
   if (useExerciseHtml) {
-    previewEl.innerHTML = currentExerciseHtml;
+    previewEl.innerHTML = lang === 'zh' ? currentExerciseHtmlZh : currentExerciseHtml;
   } else {
     const text = lang === 'zh'
       ? (payload.translation_zh && payload.translation_zh.text)
@@ -1288,6 +1328,7 @@ if (tagsCustomInput) {
   tagsCustomInput.addEventListener('input', handleTagsChange);
 }
 
+initTabs();
 loadPatternCatalog();
 loadTagCatalog();
 loadExamContext();

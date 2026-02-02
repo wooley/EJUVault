@@ -70,34 +70,38 @@
   "solution_ref": "solutions/H19-2/course2/H19-2-II-1.zh.md",
   "pattern_id": "INT_CONSTRAINT_COUNT_INT",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "GH",
-      "length": 2
-    },
-    {
-      "id": "I",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "42"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "11"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "GH",
+        "length": 2,
+        "answer": "41"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "6"
+      }
+    ]
+  }
 }

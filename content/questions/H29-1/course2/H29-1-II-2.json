@@ -39,38 +39,38 @@
   "solution_ref": "solutions/H29-1/course2/H29-1-II-2.zh.md",
   "tagging_status": "ok",
   "pattern_id": "ALG_TRANSFORM_MINMAX",
-  "blanks": [
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "OP",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "TU",
+        "length": 2,
+        "answer": "16"
+      }
+    ]
+  }
 }

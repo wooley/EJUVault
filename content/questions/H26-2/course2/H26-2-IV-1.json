@@ -26,54 +26,33 @@
   },
   "solution_ref": "solutions/H26-2/course2/H26-2-IV-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "FG",
-      "length": 2
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "JK",
-      "length": 2
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABCD",
+        "length": 4,
+        "answer": "3223"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "FGHI",
+        "length": 4,
+        "answer": "2744"
+      },
+      {
+        "id": "JKLM",
+        "length": 4,
+        "answer": "2744"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }

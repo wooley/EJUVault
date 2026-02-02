@@ -27,5 +27,34 @@
     "section": "II",
     "q": "Q2"
   },
-  "tagging_status": "generated"
+  "tagging_status": "generated",
+  "structure": {
+    "blanks": [
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "21"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "25"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "95"
+      },
+      {
+        "id": "TUVW",
+        "length": 4,
+        "answer": "3445"
+      },
+      {
+        "id": "X",
+        "length": 1,
+        "answer": "2"
+      }
+    ]
+  }
 }

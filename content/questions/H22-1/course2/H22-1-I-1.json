@@ -47,22 +47,28 @@
     "場合分け",
     "二次方程式"
   ],
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "DE",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "DE",
+        "length": 2,
+        "answer": "-2"
+      }
+    ]
+  }
 }

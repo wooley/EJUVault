@@ -23,42 +23,33 @@
     "q": "Q2"
   },
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "QR",
-      "length": 2
-    },
-    {
-      "id": "ST",
-      "length": 2
-    },
-    {
-      "id": "UV",
-      "length": 2
-    },
-    {
-      "id": "WX",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "13"
+      },
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "19"
+      },
+      {
+        "id": "PQR",
+        "length": 3,
+        "answer": "427"
+      },
+      {
+        "id": "STUV",
+        "length": 4,
+        "answer": "1981"
+      },
+      {
+        "id": "WX",
+        "length": 2,
+        "answer": "31"
+      }
+    ]
+  }
 }

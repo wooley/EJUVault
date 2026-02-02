@@ -42,42 +42,58 @@
   "solution_ref": "solutions/H22-2/course2/H22-2-IV-2.zh.md",
   "tagging_status": "ok",
   "pattern_id": "CALC_VOLUME_REVOLUTION",
-  "blanks": [
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "TU",
-      "length": 2
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "9"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "W",
+        "length": 1,
+        "answer": "2"
+      }
+    ]
+  }
 }

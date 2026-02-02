@@ -27,5 +27,79 @@
     "section": "IV",
     "q": "Q1"
   },
-  "tagging_status": "generated"
+  "tagging_status": "generated",
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "BC",
+        "length": 2,
+        "answer": "21"
+      },
+      {
+        "id": "DE",
+        "length": 2,
+        "answer": "21"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "HIJK",
+        "length": 4,
+        "answer": "4641"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "41"
+      },
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "41"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "VW",
+        "length": 2,
+        "answer": "41"
+      }
+    ]
+  }
 }

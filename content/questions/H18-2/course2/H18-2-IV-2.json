@@ -42,5 +42,29 @@
     "level": 3,
     "rationale": "三角恒等变形→绝对值周期积分→极限的链式处理"
   },
-  "type": "fill_in"
+  "type": "fill_in",
+  "structure": {
+    "blanks": [
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "4"
+      }
+    ]
+  }
 }

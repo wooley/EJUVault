@@ -41,54 +41,48 @@
   },
   "solution_ref": "data/solutions/H18-1/course2/H18-1-IV-2.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "NO",
-      "length": 2
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "NOP",
+        "length": 3,
+        "answer": "-11"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "VWX",
+        "length": 3,
+        "answer": "331"
+      }
+    ]
+  }
 }

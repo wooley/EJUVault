@@ -33,48 +33,6 @@
     "text": "题2 设 a 为常数，研究函数 f(x)=cos3x + a cos2x。(1) 令 t=cosx，写出 cos2x 与 cos3x 的多项式表达式。(2) 若 f(x) 在 cosx=1/4 处取最小值，求 a，并求 f(x) 的值域。",
     "formulas": []
   },
-  "blanks": [
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "TU",
-      "length": 2
-    },
-    {
-      "id": "VW",
-      "length": 2
-    },
-    {
-      "id": "XY",
-      "length": 2
-    },
-    {
-      "id": "Z",
-      "length": 1
-    }
-  ],
   "blank_rules": {
     "allowed_chars": [
       "0",
@@ -103,20 +61,29 @@
       "prompt_zh": "把 cos2x, cos3x 用 t=cosx 表示。",
       "blanks": [
         {
-          "id": "N",
-          "length": 1
+          "id": "NO",
+          "length": 2,
+          "answer": "21"
         },
         {
-          "id": "O",
-          "length": 1
+          "id": "PQ",
+          "length": 2,
+          "answer": "43"
         },
         {
-          "id": "P",
-          "length": 1
+          "id": "RS",
+          "length": 2,
+          "answer": "94"
         },
         {
-          "id": "Q",
-          "length": 1
+          "id": "TUVW",
+          "length": 4,
+          "answer": "8532"
+        },
+        {
+          "id": "XYZ",
+          "length": 3,
+          "answer": "134"
         }
       ]
     },
@@ -125,28 +92,29 @@
       "prompt_zh": "由极值条件确定 a，并求值域。",
       "blanks": [
         {
-          "id": "R",
-          "length": 1
+          "id": "NO",
+          "length": 2,
+          "answer": "21"
         },
         {
-          "id": "S",
-          "length": 1
+          "id": "PQ",
+          "length": 2,
+          "answer": "43"
         },
         {
-          "id": "TU",
-          "length": 2
+          "id": "RS",
+          "length": 2,
+          "answer": "94"
         },
         {
-          "id": "VW",
-          "length": 2
+          "id": "TUVW",
+          "length": 4,
+          "answer": "8532"
         },
         {
-          "id": "XY",
-          "length": 2
-        },
-        {
-          "id": "Z",
-          "length": 1
+          "id": "XYZ",
+          "length": 3,
+          "answer": "134"
         }
       ]
     }
@@ -193,5 +161,34 @@
     "q": "Q2"
   },
   "solution_ref": "data/solutions/H17-1/course2/H17-1-III-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "structure": {
+    "blanks": [
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "21"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "43"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "94"
+      },
+      {
+        "id": "TUVW",
+        "length": 4,
+        "answer": "8532"
+      },
+      {
+        "id": "XYZ",
+        "length": 3,
+        "answer": "134"
+      }
+    ]
+  }
 }

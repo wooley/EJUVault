@@ -47,34 +47,43 @@
     "十分条件",
     "対称式"
   ],
-  "blanks": [
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "-5"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "2"
+      }
+    ]
+  }
 }

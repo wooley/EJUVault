@@ -75,46 +75,43 @@
   "solution_ref": "solutions/H19-2/course2/H19-2-III-1.zh.md",
   "pattern_id": "VEC_COORD_DIRECT",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "HI",
-      "length": 2
-    },
-    {
-      "id": "JK",
-      "length": 2
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABCD",
+        "length": 4,
+        "answer": "-121"
+      },
+      {
+        "id": "EF",
+        "length": 2,
+        "answer": "01"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "54"
+      },
+      {
+        "id": "JK",
+        "length": 2,
+        "answer": "36"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "4"
+      }
+    ]
+  }
 }

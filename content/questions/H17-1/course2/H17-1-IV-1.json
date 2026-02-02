@@ -31,28 +31,6 @@
     "text": "题1 设 a、b 为常数，函数 f(x)=(ax+b)e^{x/2} 对任意实数 x 满足 f(x)=e^{x/2}-1 + 1/2∫_0^x f(t)dt。求 f(0)、a、b，并求由曲线 y=f(x)、x轴与直线 x=2 围成的面积 S。",
     "formulas": []
   },
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    }
-  ],
   "blank_rules": {
     "allowed_chars": [
       "0",
@@ -113,5 +91,29 @@
     "q": "Q1"
   },
   "solution_ref": "data/solutions/H17-1/course2/H17-1-IV-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "BC",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "2"
+      }
+    ]
+  }
 }

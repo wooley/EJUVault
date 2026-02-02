@@ -17,54 +17,43 @@
     "text": "漸化式 a1=18, an+1−12an+3^{n+2}=0 (n=1,2,3,…) で定まる数列 {an} の一般項を求めよう。数列 {bn} を bn=an/[A]^n と定めると，b1=[B], bn+1−[C]bn+[D]=0 を満たす。この漸化式は bn+1−[E]=[F](bn−[E]) と変形できる。ここで cn=bn−[E] とおくと，{cn} は初項 [G]，公比 [H] の等比数列である。したがって an=[I]^n([J]·[K]^{n−1}+[L]) である。"
   },
   "pattern_id": "REC_LINEAR_SHIFT",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "43"
+      },
+      {
+        "id": "EF",
+        "length": 2,
+        "answer": "14"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "IJKL",
+        "length": 4,
+        "answer": "3541"
+      }
+    ]
+  }
 }

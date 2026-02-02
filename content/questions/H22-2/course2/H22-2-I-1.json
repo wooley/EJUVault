@@ -42,38 +42,48 @@
   "solution_ref": "solutions/H22-2/course2/H22-2-I-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "QF_DISCRIMINANT_SOLVE_PARAM",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "9"
+      }
+    ]
+  }
 }

@@ -75,54 +75,38 @@
   "solution_ref": "solutions/H19-2/course2/H19-2-II-2.zh.md",
   "pattern_id": "SEQ_ARITH_DIRECT",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "KL",
+        "length": 2,
+        "answer": "44"
+      },
+      {
+        "id": "MN",
+        "length": 2,
+        "answer": "21"
+      },
+      {
+        "id": "OPQR",
+        "length": 4,
+        "answer": "2312"
+      },
+      {
+        "id": "ST",
+        "length": 2,
+        "answer": "79"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }

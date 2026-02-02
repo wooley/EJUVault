@@ -19,35 +19,33 @@
     "必要条件",
     "参数范围"
   ],
-  "blanks": [
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    }
-  ],
   "exam_label": "EJU",
   "type": "fill_in",
   "translation_zh": {
     "text": "数直线上的集合 A, B 定义如下：A={x｜|x−1|≧9}, B={x｜a+3≦x≦2a}，且 B≠∅。回答以下问题。"
+  },
+  "structure": {
+    "blanks": [
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "-8"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "10"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "7"
+      }
+    ]
   }
 }

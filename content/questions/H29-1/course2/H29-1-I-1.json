@@ -39,50 +39,38 @@
   "solution_ref": "solutions/H29-1/course2/H29-1-I-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "QF_TRANSFORM_SHIFT",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "BC",
-      "length": 2
-    },
-    {
-      "id": "DE",
-      "length": 2
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABCDE",
+        "length": 5,
+        "answer": "31214"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "HIJ",
+        "length": 3,
+        "answer": "326"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "15"
+      }
+    ]
+  }
 }

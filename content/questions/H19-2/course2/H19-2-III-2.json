@@ -69,38 +69,33 @@
   "solution_ref": "solutions/H19-2/course2/H19-2-III-2.zh.md",
   "pattern_id": "ALG_TRANSFORM_INEQ",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "30"
+      },
+      {
+        "id": "RST",
+        "length": 3,
+        "answer": "352"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }

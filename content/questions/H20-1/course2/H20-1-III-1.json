@@ -34,70 +34,103 @@
     "座標"
   ],
   "spec_version": "1.4",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "HI",
-      "length": 2
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "LM",
-      "length": 2
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "QR",
-      "length": 2
-    },
-    {
-      "id": "S",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "5"
+      }
+    ]
+  }
 }

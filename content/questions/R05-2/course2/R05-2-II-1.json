@@ -27,5 +27,49 @@
     "section": "II",
     "q": "Q1"
   },
-  "tagging_status": "generated"
+  "tagging_status": "generated",
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "EF",
+        "length": 2,
+        "answer": "62"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "9"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "53"
+      },
+      {
+        "id": "KLM",
+        "length": 3,
+        "answer": "539"
+      }
+    ]
+  }
 }

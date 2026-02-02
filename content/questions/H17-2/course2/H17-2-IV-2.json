@@ -55,26 +55,23 @@
   },
   "solution_ref": "solutions/H17-2/course2/H17-2-IV-2.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "KL",
+        "length": 2,
+        "answer": "34"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "38"
+      }
+    ]
+  }
 }

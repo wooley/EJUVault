@@ -28,44 +28,6 @@
       "B = x^2 - 2x + b"
     ]
   },
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "EF",
-      "length": 2
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "IJ",
-      "length": 2
-    },
-    {
-      "id": "KL",
-      "length": 2
-    }
-  ],
   "blank_rules": {
     "allowed_chars": [
       "0",
@@ -97,23 +59,33 @@
       "blanks": [
         {
           "id": "A",
-          "length": 1
+          "length": 1,
+          "answer": "2"
         },
         {
-          "id": "B",
-          "length": 1
+          "id": "BCDEF",
+          "length": 5,
+          "answer": "24218"
         },
         {
-          "id": "C",
-          "length": 1
+          "id": "G",
+          "length": 1,
+          "answer": "1"
         },
         {
-          "id": "D",
-          "length": 1
+          "id": "H",
+          "length": 1,
+          "answer": "6"
         },
         {
-          "id": "EF",
-          "length": 2
+          "id": "IJ",
+          "length": 2,
+          "answer": "-5"
+        },
+        {
+          "id": "KL",
+          "length": 2,
+          "answer": "-6"
         }
       ]
     },
@@ -123,20 +95,34 @@
       "prompt_zh": "由整除条件求参数 a、b。",
       "blanks": [
         {
+          "id": "A",
+          "length": 1,
+          "answer": "2"
+        },
+        {
+          "id": "BCDEF",
+          "length": 5,
+          "answer": "24218"
+        },
+        {
           "id": "G",
-          "length": 1
+          "length": 1,
+          "answer": "1"
         },
         {
           "id": "H",
-          "length": 1
+          "length": 1,
+          "answer": "6"
         },
         {
           "id": "IJ",
-          "length": 2
+          "length": 2,
+          "answer": "-5"
         },
         {
           "id": "KL",
-          "length": 2
+          "length": 2,
+          "answer": "-6"
         }
       ]
     }
@@ -182,9 +168,43 @@
     "section": "I",
     "q": "Q1",
     "sub": "(1)",
-    "group": "A/BCDE/EF; (2) G/H/IJ/KL"
+    "group": "A/BCDEF; (2) G/H/IJ/KL"
   },
   "solution_ref": "data/solutions/H17-1/course2/H17-1-I-1.zh.md",
   "tagging_status": "ok",
-  "pattern_id": "QF_DIRECT_VERTEX"
+  "pattern_id": "QF_DIRECT_VERTEX",
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "BCDEF",
+        "length": 5,
+        "answer": "24218"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "-5"
+      },
+      {
+        "id": "KL",
+        "length": 2,
+        "answer": "-6"
+      }
+    ]
+  }
 }

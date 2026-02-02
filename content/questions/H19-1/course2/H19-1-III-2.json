@@ -32,50 +32,63 @@
     "圆与直线",
     "范围最值"
   ],
-  "blanks": [
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "W",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }

@@ -24,14 +24,26 @@
   "structure": {
     "type": "fill_in_blank",
     "blanks": [
-      "O",
-      "P",
-      "Q",
-      "R",
-      "S",
-      "T",
-      "U",
-      "V"
+      {
+        "id": "OP",
+        "length": 2,
+        "answer": "34"
+      },
+      {
+        "id": "QR",
+        "length": 2,
+        "answer": "25"
+      },
+      {
+        "id": "STU",
+        "length": 3,
+        "answer": "158"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "0"
+      }
     ],
     "subquestions": []
   },

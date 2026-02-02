@@ -114,6 +114,51 @@ body {
   margin: 0 0 16px;
 }
 
+.tab-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 6px;
+  border-radius: 999px;
+  background: var(--paper-strong);
+  border: 1px solid var(--line);
+}
+
+.tab-btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+  background: transparent;
+  color: var(--ink-soft);
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tab-btn.is-active {
+  background: var(--accent);
+  color: #fff8ef;
+  box-shadow: 0 6px 14px rgba(51, 92, 103, 0.22);
+}
+
+.tab-section {
+  display: none;
+}
+
+.tab-section.split {
+  display: none;
+}
+
+.tab-section.is-active {
+  display: block;
+}
+
+.tab-section.split.is-active {
+  display: grid;
+}
+
 .auth-row,
 .search-row {
   display: flex;

@@ -64,94 +64,53 @@
   },
   "solution_ref": "solutions/R05-1/course2/R05-1-IV-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "CD",
-      "length": 2
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "BCD",
+        "length": 3,
+        "answer": "512"
+      },
+      {
+        "id": "EFG",
+        "length": 3,
+        "answer": "124"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "JKL",
+        "length": 3,
+        "answer": "124"
+      },
+      {
+        "id": "MNO",
+        "length": 3,
+        "answer": "184"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "18"
+      },
+      {
+        "id": "RST",
+        "length": 3,
+        "answer": "972"
+      },
+      {
+        "id": "UVW",
+        "length": 3,
+        "answer": "382"
+      }
+    ]
+  }
 }

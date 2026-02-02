@@ -28,34 +28,38 @@
   },
   "solution_ref": "solutions/H28-2/course2/H28-2-I-1.zh.md",
   "pattern_id": "QF_COMPLETE_SQUARE",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "BC",
-      "length": 2
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "FG",
-      "length": 2
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "IJ",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "116"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "15"
+      }
+    ]
+  }
 }

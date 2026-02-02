@@ -33,54 +33,118 @@
     "等比数列"
   ],
   "spec_version": "1.4",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "BCD",
-      "length": 3
-    },
-    {
-      "id": "EF",
-      "length": 2
-    },
-    {
-      "id": "GH",
-      "length": 2
-    },
-    {
-      "id": "IJK",
-      "length": 3
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "NO",
-      "length": 2
-    },
-    {
-      "id": "PQ",
-      "length": 2
-    },
-    {
-      "id": "RS",
-      "length": 2
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "UV",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "-"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "-"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "9"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "9"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }
