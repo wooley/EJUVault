@@ -40,32 +40,6 @@
     "text": "题2 设 a、b 为常数。考虑抛物线 y=x^2+ax+4（①）与直线 y=4x+b（②）。(1) ①与②有公共点的充要条件是 a、b 满足不等式 b≥([JK]/[L])a^2+[M]a（③）。(2) 在 ab 平面上，直线 a+b=k 上的所有点 (a,b) 都落在由（③）表示的区域内，使之成立的 k 的最小值记为 k0，求 k0=[N]。(3) 当 a+b=k0 时，在 ①与② 的交点中，x 坐标与 a 无关的那个点为 ([OP],[Q]-a)。",
     "formulas": []
   },
-  "blanks": [
-    {
-      "id": "JK",
-      "length": 2
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "OP",
-      "length": 2
-    },
-    {
-      "id": "Q",
-      "length": 1
-    }
-  ],
   "blank_rules": {
     "allowed_chars": [
       "0",
@@ -94,16 +68,29 @@
       "prompt_zh": "求两图形有交点的充要条件（判别式≥0）。",
       "blanks": [
         {
-          "id": "JK",
-          "length": 2
+          "id": "EFGHI",
+          "length": 5,
+          "answer": "-1212"
         },
         {
-          "id": "L",
-          "length": 1
+          "id": "JKLM",
+          "length": 4,
+          "answer": "-142"
         },
         {
-          "id": "M",
-          "length": 1
+          "id": "N",
+          "length": 1,
+          "answer": "9"
+        },
+        {
+          "id": "OP",
+          "length": 2,
+          "answer": "-1"
+        },
+        {
+          "id": "Q",
+          "length": 1,
+          "answer": "5"
         }
       ]
     },
@@ -112,8 +99,29 @@
       "prompt_zh": "求使直线 a+b=k 全部落在区域内的最小 k0。",
       "blanks": [
         {
+          "id": "EFGHI",
+          "length": 5,
+          "answer": "-1212"
+        },
+        {
+          "id": "JKLM",
+          "length": 4,
+          "answer": "-142"
+        },
+        {
           "id": "N",
-          "length": 1
+          "length": 1,
+          "answer": "9"
+        },
+        {
+          "id": "OP",
+          "length": 2,
+          "answer": "-1"
+        },
+        {
+          "id": "Q",
+          "length": 1,
+          "answer": "5"
         }
       ]
     },
@@ -122,12 +130,29 @@
       "prompt_zh": "在 a+b=k0 时，求交点中 x 与 a 无关的点坐标。",
       "blanks": [
         {
+          "id": "EFGHI",
+          "length": 5,
+          "answer": "-1212"
+        },
+        {
+          "id": "JKLM",
+          "length": 4,
+          "answer": "-142"
+        },
+        {
+          "id": "N",
+          "length": 1,
+          "answer": "9"
+        },
+        {
           "id": "OP",
-          "length": 2
+          "length": 2,
+          "answer": "-1"
         },
         {
           "id": "Q",
-          "length": 1
+          "length": 1,
+          "answer": "5"
         }
       ]
     }
@@ -174,5 +199,34 @@
     "q": "Q2"
   },
   "solution_ref": "data/solutions/H17-1/course2/H17-1-II-2.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "structure": {
+    "blanks": [
+      {
+        "id": "EFGHI",
+        "length": 5,
+        "answer": "-1212"
+      },
+      {
+        "id": "JKLM",
+        "length": 4,
+        "answer": "-142"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "9"
+      },
+      {
+        "id": "OP",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "5"
+      }
+    ]
+  }
 }

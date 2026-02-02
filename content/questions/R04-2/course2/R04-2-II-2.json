@@ -25,54 +25,38 @@
     "ref": "official/course2.json#R4-2-II-2"
   },
   "solution_ref": "answers/ai_ans.json#R4-2-II-2",
-  "blanks": [
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    },
-    {
-      "id": "YZ",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "42"
+      },
+      {
+        "id": "PQR",
+        "length": 3,
+        "answer": "255"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "UVW",
+        "length": 3,
+        "answer": "345"
+      },
+      {
+        "id": "XYZ",
+        "length": 3,
+        "answer": "213"
+      }
+    ]
+  }
 }

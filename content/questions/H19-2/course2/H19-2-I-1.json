@@ -27,38 +27,33 @@
     "平行移動",
     "パラメータ"
   ],
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "21"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "81"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "GH",
+        "length": 2,
+        "answer": "12"
+      }
+    ]
+  }
 }

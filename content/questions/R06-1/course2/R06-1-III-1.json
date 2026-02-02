@@ -39,106 +39,53 @@
   },
   "solution_ref": "solutions/R06-1/course2/R06-1-III-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    },
-    {
-      "id": "Y",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABCDEF",
+        "length": 6,
+        "answer": "246641"
+      },
+      {
+        "id": "GH",
+        "length": 2,
+        "answer": "62"
+      },
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "-2"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "LMN",
+        "length": 3,
+        "answer": "232"
+      },
+      {
+        "id": "OPQRS",
+        "length": 5,
+        "answer": "61219"
+      },
+      {
+        "id": "TUVW",
+        "length": 4,
+        "answer": "1719"
+      },
+      {
+        "id": "X",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "Y",
+        "length": 1,
+        "answer": "3"
+      }
+    ]
+  }
 }

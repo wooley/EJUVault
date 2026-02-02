@@ -17,50 +17,48 @@
     "text": "次の 2 つの曲線 x^2+y^2=1 ……①，4xy=1 ……② を考える。ただし x>0, y>0 とする。(1) 曲線①と②の交点 P,Q の x 座標を p<q とする。x=cosθ, y=sinθ (0<θ<π/2) とおくと sin([A]θ)=[B]/[C] となる。これより θ=[D]/[EF]π,[G]/[HI]π と求まり，p=cos([J]/[KL]π), q=cos([M]/[NO]π) である。(2) 曲線①と②で囲まれる部分の面積 S を求めよ。"
   },
   "pattern_id": "CALC_AREA_TRIG",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "EF",
-      "length": 2
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "HI",
-      "length": 2
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "KL",
-      "length": 2
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "NO",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "212"
+      },
+      {
+        "id": "DEF",
+        "length": 3,
+        "answer": "112"
+      },
+      {
+        "id": "GHI",
+        "length": 3,
+        "answer": "512"
+      },
+      {
+        "id": "JKL",
+        "length": 3,
+        "answer": "512"
+      },
+      {
+        "id": "MNO",
+        "length": 3,
+        "answer": "112"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "16"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "23"
+      },
+      {
+        "id": "TU",
+        "length": 2,
+        "answer": "14"
+      }
+    ]
+  }
 }

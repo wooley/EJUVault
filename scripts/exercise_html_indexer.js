@@ -53,6 +53,8 @@ function listFiles(dir, ext) {
   }
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   const files = [];
+  const extList = Array.isArray(ext) ? ext : ext ? [ext] : [];
+  const loweredExts = extList.map((item) => item.toLowerCase());
   for (const entry of entries) {
     if (entry.name.startsWith('.')) {
       continue;
@@ -60,8 +62,13 @@ function listFiles(dir, ext) {
     const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       files.push(...listFiles(fullPath, ext));
-    } else if (!ext || entry.name.endsWith(ext)) {
+    } else if (!ext) {
       files.push(fullPath);
+    } else {
+      const lowerName = entry.name.toLowerCase();
+      if (loweredExts.some((item) => lowerName.endsWith(item))) {
+        files.push(fullPath);
+      }
     }
   }
   return files;
@@ -142,6 +149,17 @@ function normalizeExportHtml(html) {
   return normalized;
 }
 
+function copyAssetFiles({ sourceDir, outputDir, exts }) {
+  const assets = listFiles(sourceDir, exts);
+  for (const file of assets) {
+    const relative = path.relative(sourceDir, file);
+    const outputPath = path.join(outputDir, relative);
+    fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+    fs.copyFileSync(file, outputPath);
+  }
+  return assets.length;
+}
+
 async function buildExerciseHtmlIndex({ contentDir, sourceSubdir, outputDir, indexFileName }) {
   const exerciseDir = path.join(contentDir, sourceSubdir);
   const indexPath = path.join(contentDir, 'index', indexFileName);
@@ -166,6 +184,12 @@ async function buildExerciseHtmlIndex({ contentDir, sourceSubdir, outputDir, ind
     });
   }
 
+  const copiedPngs = copyAssetFiles({
+    sourceDir: exerciseDir,
+    outputDir,
+    exts: ['.png']
+  });
+
   const payload = {
     schema_version: 'v1',
     generated_at: new Date().toISOString(),
@@ -174,7 +198,7 @@ async function buildExerciseHtmlIndex({ contentDir, sourceSubdir, outputDir, ind
   fs.mkdirSync(path.dirname(indexPath), { recursive: true });
   fs.writeFileSync(indexPath, JSON.stringify(payload, null, 2));
 
-  return { questions, indexPath, skipped: false };
+  return { questions, indexPath, skipped: false, copiedPngs };
 }
 
 async function main() {
@@ -186,7 +210,9 @@ async function main() {
     outputDir,
     indexFileName: 'exercise_html_index.json'
   });
-  console.log(`Generated ${ja.questions.length} exercise HTML files in ${outputDir}`);
+  console.log(
+    `Generated ${ja.questions.length} exercise HTML files in ${outputDir} (copied ${ja.copiedPngs} PNGs)`
+  );
   console.log(`Index saved to ${ja.indexPath}`);
 
   const zh = await buildExerciseHtmlIndex({
@@ -198,7 +224,9 @@ async function main() {
   if (zh.skipped) {
     console.log('Skipped Chinese exercise HTML: content/exercise_cn not found.');
   } else {
-    console.log(`Generated ${zh.questions.length} Chinese exercise HTML files in ${outputDirCn}`);
+    console.log(
+      `Generated ${zh.questions.length} Chinese exercise HTML files in ${outputDirCn} (copied ${zh.copiedPngs} PNGs)`
+    );
     console.log(`Index saved to ${zh.indexPath}`);
   }
 }

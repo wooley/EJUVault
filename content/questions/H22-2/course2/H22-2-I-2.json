@@ -42,58 +42,73 @@
   "solution_ref": "solutions/H22-2/course2/H22-2-I-2.zh.md",
   "tagging_status": "ok",
   "pattern_id": "CASE_SOLVE_PARAM",
-  "blanks": [
-    {
-      "id": "IJ",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "IJ",
+        "length": 2,
+        "answer": "-2"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "9"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "9"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "0"
+      }
+    ]
+  }
 }

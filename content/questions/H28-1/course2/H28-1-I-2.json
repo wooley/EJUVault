@@ -39,34 +39,43 @@
   "solution_ref": "solutions/H28-1/course2/H28-1-I-2.zh.md",
   "tagging_status": "ok",
   "pattern_id": "PROB_CLASSICAL_COUNT",
-  "blanks": [
-    {
-      "id": "KLM",
-      "length": 3
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "PQ",
-      "length": 2
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "STU",
-      "length": 3
-    },
-    {
-      "id": "VW",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "KLM",
+        "length": 3,
+        "answer": "220"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "STU",
+        "length": 3,
+        "answer": "200"
+      },
+      {
+        "id": "VW",
+        "length": 2,
+        "answer": "48"
+      }
+    ]
+  }
 }

@@ -42,48 +42,6 @@
     "text": "题1 在三角形ABC中，AB=5，BC=8，CA=7。(1) 角B=[A]/[B]·π，且△ABC面积为[CD]√[E]。(2) 设△ABC的重心为G，令向量GA=a，GB=b。则GC=[FG](a+b)。又在BC上取点M使BM=3，则GM=1/[H]([IJ]a+[K]b)。再在AC上取点N使AN=2，同样把GN表示成a、b后，可得 GM + ([L]/[M])GN = 0，从而G、M、N三点共线。",
     "formulas": []
   },
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "CD",
-      "length": 2
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "FG",
-      "length": 2
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "IJ",
-      "length": 2
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    }
-  ],
   "blank_rules": {
     "allowed_chars": [
       "0",
@@ -112,20 +70,29 @@
       "prompt_zh": "由三边求角B与面积。",
       "blanks": [
         {
-          "id": "A",
-          "length": 1
+          "id": "AB",
+          "length": 2,
+          "answer": "13"
         },
         {
-          "id": "B",
-          "length": 1
+          "id": "CDE",
+          "length": 3,
+          "answer": "103"
         },
         {
-          "id": "CD",
-          "length": 2
+          "id": "FG",
+          "length": 2,
+          "answer": "-1"
         },
         {
-          "id": "E",
-          "length": 1
+          "id": "HIJK",
+          "length": 4,
+          "answer": "8-32"
+        },
+        {
+          "id": "LM",
+          "length": 2,
+          "answer": "78"
         }
       ]
     },
@@ -134,28 +101,29 @@
       "prompt_zh": "重心向量表示、内分点向量、证明共线。",
       "blanks": [
         {
+          "id": "AB",
+          "length": 2,
+          "answer": "13"
+        },
+        {
+          "id": "CDE",
+          "length": 3,
+          "answer": "103"
+        },
+        {
           "id": "FG",
-          "length": 2
+          "length": 2,
+          "answer": "-1"
         },
         {
-          "id": "H",
-          "length": 1
+          "id": "HIJK",
+          "length": 4,
+          "answer": "8-32"
         },
         {
-          "id": "IJ",
-          "length": 2
-        },
-        {
-          "id": "K",
-          "length": 1
-        },
-        {
-          "id": "L",
-          "length": 1
-        },
-        {
-          "id": "M",
-          "length": 1
+          "id": "LM",
+          "length": 2,
+          "answer": "78"
         }
       ]
     }
@@ -205,5 +173,34 @@
   },
   "solution_ref": "data/solutions/H17-1/course2/H17-1-III-1.zh.md",
   "tagging_status": "ok",
-  "ingestion_status": "complete"
+  "ingestion_status": "complete",
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "13"
+      },
+      {
+        "id": "CDE",
+        "length": 3,
+        "answer": "103"
+      },
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "HIJK",
+        "length": 4,
+        "answer": "8-32"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "78"
+      }
+    ]
+  }
 }

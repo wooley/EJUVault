@@ -71,30 +71,33 @@
     "圆与距离",
     "充分必要条件"
   ],
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "DE",
-      "length": 2
-    },
-    {
-      "id": "FG",
-      "length": 2
-    },
-    {
-      "id": "HI",
-      "length": 2
-    },
-    {
-      "id": "JKL",
-      "length": 3
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "-24"
+      },
+      {
+        "id": "DE",
+        "length": 2,
+        "answer": "20"
+      },
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "18"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "20"
+      },
+      {
+        "id": "JKL",
+        "length": 3,
+        "answer": "-60"
+      }
+    ]
+  }
 }

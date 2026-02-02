@@ -74,30 +74,33 @@
     "小数部分"
   ],
   "pattern_id": "ALG_TRANSFORM_SOLVE_X",
-  "blanks": [
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "OP",
-      "length": 2
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "RS",
-      "length": 2
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "OP",
+        "length": 2,
+        "answer": "10"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "RST",
+        "length": 3,
+        "answer": "103"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "6"
+      }
+    ]
+  }
 }

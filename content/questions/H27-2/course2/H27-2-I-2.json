@@ -11,56 +11,6 @@
   ],
   "pattern_id": "PROB-DISCRETE-INEX-01",
   "prompt_ja": "大小3個のさいころを同時に投げて出た目をそれぞれx,y,zとし，A:x=y=z，B:x+y+z=6，C:x+y=z とする。",
-  "blanks": [
-    {
-      "type": "int",
-      "note": "|A|",
-      "id": "J",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "|B|",
-      "id": "KL",
-      "length": 2
-    },
-    {
-      "type": "int",
-      "note": "|C|",
-      "id": "MN",
-      "length": 2
-    },
-    {
-      "type": "int",
-      "note": "|A∩B|",
-      "id": "O",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "|B∩C|",
-      "id": "P",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "|C∩A|",
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "分子",
-      "id": "RS",
-      "length": 2
-    },
-    {
-      "type": "int",
-      "note": "分母",
-      "id": "TUV",
-      "length": 3
-    }
-  ],
   "exam": {
     "exam_id": "H27-2",
     "year": 2015,
@@ -71,5 +21,44 @@
   "type": "fill_in",
   "original_ja": {
     "text": "大小3個のさいころを同時に投げて出た目をそれぞれx,y,zとし，A:x=y=z，B:x+y+z=6，C:x+y=z とする。"
+  },
+  "structure": {
+    "blanks": [
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "KL",
+        "length": 2,
+        "answer": "10"
+      },
+      {
+        "id": "MN",
+        "length": 2,
+        "answer": "15"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "RSTUV",
+        "length": 5,
+        "answer": "23216"
+      }
+    ]
   }
 }

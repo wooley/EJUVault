@@ -27,5 +27,54 @@
     "section": "III",
     "q": "Q1"
   },
-  "tagging_status": "generated"
+  "tagging_status": "generated",
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "-2"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "38"
+      },
+      {
+        "id": "EFG",
+        "length": 3,
+        "answer": "241"
+      },
+      {
+        "id": "HIJ",
+        "length": 3,
+        "answer": "-53"
+      },
+      {
+        "id": "KLM",
+        "length": 3,
+        "answer": "-27"
+      },
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "53"
+      },
+      {
+        "id": "PQRS",
+        "length": 4,
+        "answer": "7727"
+      },
+      {
+        "id": "TUV",
+        "length": 3,
+        "answer": "152"
+      },
+      {
+        "id": "WXY",
+        "length": 3,
+        "answer": "112"
+      }
+    ]
+  }
 }

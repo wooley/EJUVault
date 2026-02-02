@@ -81,70 +81,53 @@
   ],
   "pattern_id": "GEO_TANGENT_CIRCLES",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "FG",
-      "length": 2
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "KL",
-      "length": 2
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "OP",
-      "length": 2
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "43"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "45"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "13"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "KL",
+        "length": 2,
+        "answer": "15"
+      },
+      {
+        "id": "MN",
+        "length": 2,
+        "answer": "22"
+      },
+      {
+        "id": "OPQRS",
+        "length": 5,
+        "answer": "15722"
+      }
+    ]
+  }
 }

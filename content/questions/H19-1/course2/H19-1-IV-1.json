@@ -63,46 +63,58 @@
     "切线",
     "斜率匹配"
   ],
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "CD",
-      "length": 2
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "HI",
-      "length": 2
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "2"
+      }
+    ]
+  }
 }

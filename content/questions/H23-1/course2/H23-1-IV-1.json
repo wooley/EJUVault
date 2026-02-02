@@ -75,58 +75,28 @@
     "微分積分"
   ],
   "pattern_id": "CALC_RATE_SOLVE_X",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "BC",
+        "length": 2,
+        "answer": "86"
+      },
+      {
+        "id": "DEFGHI",
+        "length": 6,
+        "answer": "236136"
+      },
+      {
+        "id": "JKLM",
+        "length": 4,
+        "answer": "6196"
+      }
+    ]
+  }
 }

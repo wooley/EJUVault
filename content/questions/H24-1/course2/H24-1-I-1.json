@@ -43,42 +43,33 @@
   "solution_ref": "solutions/H24-1/course2/H24-1-I-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "QF_TRANSFORM_SHIFT",
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABCD",
+        "length": 4,
+        "answer": "-273"
+      },
+      {
+        "id": "EF",
+        "length": 2,
+        "answer": "46"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "43"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }

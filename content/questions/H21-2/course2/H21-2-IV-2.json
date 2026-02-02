@@ -71,42 +71,28 @@
     "常微分方程",
     "定积分常数"
   ],
-  "blanks": [
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "KL",
+        "length": 2,
+        "answer": "31"
+      },
+      {
+        "id": "MN",
+        "length": 2,
+        "answer": "31"
+      },
+      {
+        "id": "OPQR",
+        "length": 4,
+        "answer": "9437"
+      }
+    ]
+  }
 }

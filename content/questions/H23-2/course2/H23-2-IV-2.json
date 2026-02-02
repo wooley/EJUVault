@@ -61,50 +61,33 @@
   ],
   "pattern_id": "CALC_INTEGRAL_ASYMPTOTIC",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "NO",
-      "length": 2
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    },
-    {
-      "id": "YZ",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "NOPQR",
+        "length": 5,
+        "answer": "18422"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "UV",
+        "length": 2,
+        "answer": "52"
+      },
+      {
+        "id": "WXYZ",
+        "length": 4,
+        "answer": "2315"
+      }
+    ]
+  }
 }

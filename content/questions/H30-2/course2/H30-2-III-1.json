@@ -26,90 +26,73 @@
   },
   "solution_ref": "solutions/H30-2/course2/H30-2-III-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "EF",
-      "length": 2
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "MN",
-      "length": 2
-    },
-    {
-      "id": "OP",
-      "length": 2
-    },
-    {
-      "id": "QR",
-      "length": 2
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    },
-    {
-      "id": "Y",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABCD",
+        "length": 4,
+        "answer": "3211"
+      },
+      {
+        "id": "EF",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "MN",
+        "length": 2,
+        "answer": "-8"
+      },
+      {
+        "id": "OP",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "QRST",
+        "length": 4,
+        "answer": "-432"
+      },
+      {
+        "id": "UV",
+        "length": 2,
+        "answer": "44"
+      },
+      {
+        "id": "WXY",
+        "length": 3,
+        "answer": "333"
+      }
+    ]
+  }
 }

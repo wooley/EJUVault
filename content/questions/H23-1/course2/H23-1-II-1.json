@@ -86,42 +86,38 @@
     "個数"
   ],
   "pattern_id": "SEQ_CONSTRAINT_FIND_N",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "GH",
-      "length": 2
-    },
-    {
-      "id": "IJK",
-      "length": 3
-    },
-    {
-      "id": "L",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "22"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "DEF",
+        "length": 3,
+        "answer": "212"
+      },
+      {
+        "id": "GH",
+        "length": 2,
+        "answer": "60"
+      },
+      {
+        "id": "IJK",
+        "length": 3,
+        "answer": "201"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "8"
+      }
+    ]
+  }
 }

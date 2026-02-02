@@ -44,58 +44,43 @@
     "対数",
     "二次導関数"
   ],
-  "blanks": [
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "GH",
-      "length": 2
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "41"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "22"
+      },
+      {
+        "id": "EF",
+        "length": 2,
+        "answer": "14"
+      },
+      {
+        "id": "GHIJ",
+        "length": 4,
+        "answer": "1614"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "MN",
+        "length": 2,
+        "answer": "14"
+      }
+    ]
+  }
 }

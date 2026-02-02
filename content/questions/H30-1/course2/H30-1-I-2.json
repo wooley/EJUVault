@@ -32,26 +32,33 @@
   },
   "solution_ref": "solutions/H30-1/course2/H30-1-I-2.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "NOP",
-      "length": 3
-    },
-    {
-      "id": "QR",
-      "length": 2
-    },
-    {
-      "id": "ST",
-      "length": 2
-    },
-    {
-      "id": "UVW",
-      "length": 3
-    },
-    {
-      "id": "XY",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "NOP",
+        "length": 3,
+        "answer": "256"
+      },
+      {
+        "id": "QR",
+        "length": 2,
+        "answer": "24"
+      },
+      {
+        "id": "ST",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "UVW",
+        "length": 3,
+        "answer": "144"
+      },
+      {
+        "id": "XY",
+        "length": 2,
+        "answer": "84"
+      }
+    ]
+  }
 }

@@ -77,54 +77,38 @@
     "判别式",
     "最值"
   ],
-  "blanks": [
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "JK",
-      "length": 2
-    },
-    {
-      "id": "LM",
-      "length": 2
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "UV",
-      "length": 2
-    },
-    {
-      "id": "W",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "IJK",
+        "length": 3,
+        "answer": "212"
+      },
+      {
+        "id": "LMNOP",
+        "length": 5,
+        "answer": "-3444"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "02"
+      },
+      {
+        "id": "TUV",
+        "length": 3,
+        "answer": "612"
+      },
+      {
+        "id": "W",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }

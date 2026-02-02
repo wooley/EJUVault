@@ -42,38 +42,28 @@
   "solution_ref": "solutions/H24-1/course2/H24-1-II.zh.md",
   "tagging_status": "ok",
   "pattern_id": "SEQ_SUM_FORMULA",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "DE",
-      "length": 2
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "22"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "DE",
+        "length": 2,
+        "answer": "50"
+      },
+      {
+        "id": "FGHI",
+        "length": 4,
+        "answer": "8174"
+      }
+    ]
+  }
 }

@@ -25,34 +25,33 @@
     "ref": "official/course2.json#R4-2-I-2"
   },
   "solution_ref": "answers/ai_ans.json#R4-2-I-2",
-  "blanks": [
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "49"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "59"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "3"
+      }
+    ]
+  }
 }

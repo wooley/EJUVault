@@ -39,54 +39,33 @@
   "solution_ref": "solutions/H29-1/course2/H29-1-IV-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "CALC_AREA",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "IJ",
-      "length": 2
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "BC",
+        "length": 2,
+        "answer": "35"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "EFG",
+        "length": 3,
+        "answer": "089"
+      },
+      {
+        "id": "HIJKLM",
+        "length": 6,
+        "answer": "116214"
+      }
+    ]
+  }
 }

@@ -17,42 +17,33 @@
     "text": "すべての正の実数 x に対して，不等式 (log 3x)/(4x+1) ≤ log(2kx/(4x+1)) ……① が成り立つような正の実数 k の値の範囲を求めよう。ただし log は自然対数とする。(1) 不等式①を変形して log k ≥ [A] ……② を得る。ここで②の右辺を g(x) とおき，g(x) を x で微分すると g′(x)=[B] である。(2) g(x) は区間 0<x<[C]/[D] で [E] し，[C]/[D]<x で [F] する。よって g(x) は x=[C]/[D] で [G] となる。したがって k≥[H]/[I] である。"
   },
   "pattern_id": "LOG_INEQ_GLOBAL",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "13"
+      },
+      {
+        "id": "EFG",
+        "length": 3,
+        "answer": "012"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "72"
+      }
+    ]
+  }
 }

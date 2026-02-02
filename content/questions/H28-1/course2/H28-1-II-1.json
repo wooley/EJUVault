@@ -43,42 +43,28 @@
   "solution_ref": "solutions/H28-1/course2/H28-1-II-1.zh.md",
   "tagging_status": "ok",
   "pattern_id": "VEC_DOT_ANGLE",
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "IJ",
-      "length": 2
-    },
-    {
-      "id": "K",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "-6"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "32"
+      },
+      {
+        "id": "EFGH",
+        "length": 4,
+        "answer": "4639"
+      },
+      {
+        "id": "IJK",
+        "length": 3,
+        "answer": "172"
+      }
+    ]
+  }
 }

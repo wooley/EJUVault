@@ -33,42 +33,53 @@
     "区間最大最小"
   ],
   "spec_version": "1.4",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 2
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 2
-    },
-    {
-      "id": "I",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "-"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "-"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "2"
+      }
+    ]
+  }
 }

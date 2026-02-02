@@ -12,116 +12,6 @@
   ],
   "pattern_id": "CALC-TANGENT-MULTI-01",
   "prompt_ja": "f(x)=x^4+2x^3-12x^2+4 とし，y軸上の点P(0,p)から曲線y=f(x)に3本の接線が引けるようなpを求める。",
-  "blanks": [
-    {
-      "type": "int",
-      "note": "接線の係数（t^3）",
-      "id": "A",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "接線の係数（t^2）",
-      "id": "B",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "接線の係数（t）",
-      "id": "CD",
-      "length": 2
-    },
-    {
-      "type": "int",
-      "note": "切片 t^4係数",
-      "id": "E",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "切片 t^3係数",
-      "id": "F",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "切片 t^2係数",
-      "id": "GH",
-      "length": 2
-    },
-    {
-      "type": "int",
-      "note": "切片 定数",
-      "id": "I",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "p式 t^4係数",
-      "id": "J",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "p式 t^3係数",
-      "id": "K",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "p式 t^2係数",
-      "id": "LM",
-      "length": 2
-    },
-    {
-      "type": "int",
-      "note": "p式 定数",
-      "id": "N",
-      "length": 1
-    },
-    {
-      "type": "choice_0_1",
-      "note": "0:極小値 1:極大値",
-      "id": "O",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "極大値のt（2桁/符号可）",
-      "id": "PQ",
-      "length": 2
-    },
-    {
-      "type": "int",
-      "note": "極大値のt",
-      "id": "R",
-      "length": 1
-    },
-    {
-      "type": "choice_0_1",
-      "note": "0:極小値 1:極大値",
-      "id": "S",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "極小値のt",
-      "id": "T",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "求めるp（小）",
-      "id": "U",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "求めるp（大）",
-      "id": "V",
-      "length": 1
-    }
-  ],
   "choices_ja": {
     "0": "極小値",
     "1": "極大値"
@@ -136,5 +26,59 @@
   "type": "fill_in",
   "original_ja": {
     "text": "f(x)=x^4+2x^3-12x^2+4 とし，y軸上の点P(0,p)から曲線y=f(x)に3本の接線が引けるようなpを求める。"
+  },
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABCD",
+        "length": 4,
+        "answer": "4624"
+      },
+      {
+        "id": "EFGHI",
+        "length": 5,
+        "answer": "34124"
+      },
+      {
+        "id": "JKLMN",
+        "length": 5,
+        "answer": "34124"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "-2"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "9"
+      }
+    ]
   }
 }

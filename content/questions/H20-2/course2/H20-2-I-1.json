@@ -64,42 +64,53 @@
   },
   "solution_ref": "solutions/H20-2/course2/H20-2-I-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 2
-    },
-    {
-      "id": "CD",
-      "length": 2
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "FG",
-      "length": 2
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "JK",
-      "length": 2
-    },
-    {
-      "id": "LM",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "9"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "16"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "JK",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "12"
+      }
+    ]
+  }
 }

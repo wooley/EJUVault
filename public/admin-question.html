@@ -42,9 +42,66 @@
         <div id="editor-status" class="status"></div>
         <ul id="editor-status-errors" class="status-list error" aria-live="polite"></ul>
         <ul id="editor-status-diffs" class="status-list" aria-live="polite"></ul>
+        <div class="tab-bar" role="tablist" aria-label="Question editor sections">
+          <button
+            id="tab-btn-question"
+            class="tab-btn is-active"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="tab-question"
+            data-tab-target="tab-question"
+          >
+            Question
+          </button>
+          <button
+            id="tab-btn-metadata"
+            class="tab-btn"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tab-metadata"
+            data-tab-target="tab-metadata"
+          >
+            Metadata
+          </button>
+          <button
+            id="tab-btn-answers"
+            class="tab-btn"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tab-answers"
+            data-tab-target="tab-answers"
+          >
+            Answer Mapping
+          </button>
+          <button
+            id="tab-btn-preview"
+            class="tab-btn"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tab-preview"
+            data-tab-target="tab-preview"
+          >
+            Preview
+          </button>
+          <button
+            id="tab-btn-images"
+            class="tab-btn"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tab-images"
+            data-tab-target="tab-images"
+          >
+            Images
+          </button>
+        </div>
       </section>
 
-      <section class="panel split">
+      <section id="tab-question" class="panel split tab-section is-active" role="tabpanel" aria-labelledby="tab-btn-question">
         <div class="split-panel">
           <div class="panel-title">Question JSON</div>
           <div class="editor-actions">
@@ -63,7 +120,7 @@
         </div>
       </section>
 
-      <section class="panel">
+      <section id="tab-metadata" class="panel tab-section" role="tabpanel" aria-labelledby="tab-btn-metadata" hidden>
         <div class="panel-title">Metadata</div>
         <div class="panel-desc">Edit pattern_id and tags. Changes sync to the question JSON.</div>
         <div class="meta-grid">
@@ -82,7 +139,7 @@
         <div id="meta-status" class="status"></div>
       </section>
 
-      <section class="panel">
+      <section id="tab-answers" class="panel tab-section" role="tabpanel" aria-labelledby="tab-btn-answers" hidden>
         <div class="panel-title">Answer Mapping</div>
         <div class="panel-desc">Edit group answers and per-blank values. Changes sync to the answers JSON.</div>
         <div class="search-row">
@@ -94,7 +151,7 @@
         <div id="answer-editor-status" class="status"></div>
       </section>
 
-      <section class="panel">
+      <section id="tab-preview" class="panel tab-section" role="tabpanel" aria-labelledby="tab-btn-preview" hidden>
         <div class="panel-title">Preview (JA / ZH)</div>
         <div class="search-row">
           <button id="preview-ja" class="btn">Preview JA</button>
@@ -103,7 +160,7 @@
         <div id="preview" class="solution"></div>
       </section>
 
-      <section class="panel">
+      <section id="tab-images" class="panel tab-section" role="tabpanel" aria-labelledby="tab-btn-images" hidden>
         <div class="panel-title">Images</div>
         <div class="panel-desc">Upload an image and attach it to this question.</div>
         <div class="search-row">

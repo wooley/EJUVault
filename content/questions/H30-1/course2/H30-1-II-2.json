@@ -32,54 +32,68 @@
   },
   "solution_ref": "solutions/H30-1/course2/H30-1-II-2.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "W",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "X",
+        "length": 1,
+        "answer": "2"
+      }
+    ]
+  }
 }

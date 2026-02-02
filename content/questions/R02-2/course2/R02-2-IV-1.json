@@ -64,98 +64,123 @@
   },
   "solution_ref": "solutions/R02-2/course2/R02-2-IV-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "W",
+        "length": 1,
+        "answer": "9"
+      }
+    ]
+  }
 }

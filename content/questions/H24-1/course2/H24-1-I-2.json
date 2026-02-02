@@ -42,38 +42,38 @@
   "solution_ref": "solutions/H24-1/course2/H24-1-I-2.zh.md",
   "tagging_status": "ok",
   "pattern_id": "ALG_TRANSFORM_SOLVE_PARAM",
-  "blanks": [
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "LM",
-      "length": 2
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "ST",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "-7"
+      },
+      {
+        "id": "NOP",
+        "length": 3,
+        "answer": "422"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "ST",
+        "length": 2,
+        "answer": "11"
+      }
+    ]
+  }
 }

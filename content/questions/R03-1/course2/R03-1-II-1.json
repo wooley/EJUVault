@@ -65,58 +65,53 @@
     "q": "Q1"
   },
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "E",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "5"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "JK",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "56"
+      }
+    ]
+  }
 }

@@ -42,30 +42,28 @@
   },
   "solution_ref": "data/solutions/H18-1/course2/H18-1-II-1.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "B",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "CD",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "EF",
+        "length": 2,
+        "answer": "12"
+      }
+    ]
+  }
 }

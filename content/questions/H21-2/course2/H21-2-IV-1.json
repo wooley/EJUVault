@@ -65,34 +65,23 @@
     "导数几何意义",
     "切线"
   ],
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "DE",
-      "length": 2
-    },
-    {
-      "id": "FG",
-      "length": 2
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "122"
+      },
+      {
+        "id": "DEFGH",
+        "length": 5,
+        "answer": "10272"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "2"
+      }
+    ]
+  }
 }

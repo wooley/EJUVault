@@ -39,34 +39,33 @@
   "solution_ref": "solutions/H29-1/course2/H29-1-I-2.zh.md",
   "tagging_status": "ok",
   "pattern_id": "PROB_CLASSICAL_COUNT",
-  "blanks": [
-    {
-      "id": "NO",
-      "length": 2
-    },
-    {
-      "id": "PQ",
-      "length": 2
-    },
-    {
-      "id": "RS",
-      "length": 2
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "UV",
-      "length": 2
-    },
-    {
-      "id": "WX",
-      "length": 2
-    },
-    {
-      "id": "YZ",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "90"
+      },
+      {
+        "id": "PQ",
+        "length": 2,
+        "answer": "12"
+      },
+      {
+        "id": "RS",
+        "length": 2,
+        "answer": "33"
+      },
+      {
+        "id": "TUV",
+        "length": 3,
+        "answer": "415"
+      },
+      {
+        "id": "WXYZ",
+        "length": 4,
+        "answer": "1330"
+      }
+    ]
+  }
 }

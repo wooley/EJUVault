@@ -47,42 +47,43 @@
     "最小值",
     "不等式"
   ],
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "DE",
-      "length": 2
-    },
-    {
-      "id": "FG",
-      "length": 2
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "IJ",
-      "length": 2
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "-8"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "DE",
+        "length": 2,
+        "answer": "20"
+      },
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "36"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "IJK",
+        "length": 3,
+        "answer": "-22"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "22"
+      }
+    ]
+  }
 }

@@ -34,36 +34,6 @@
       "\\frac{\\sqrt{3}+\\sqrt{2}a}{\\sqrt{3}+\\sqrt{2}} = x + \\sqrt{6}\\,y"
     ]
   },
-  "blanks": [
-    {
-      "id": "AB",
-      "length": 2
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "EF",
-      "length": 2
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    }
-  ],
   "blank_rules": {
     "allowed_chars": [
       "0",
@@ -93,16 +63,14 @@
       "prompt_zh": "把 x、y 用 a 表示。",
       "blanks": [
         {
-          "id": "AB",
-          "length": 2
-        },
-        {
-          "id": "C",
-          "length": 1
+          "id": "ABC",
+          "length": 3,
+          "answer": "-23"
         },
         {
           "id": "D",
-          "length": 1
+          "length": 1,
+          "answer": "1"
         }
       ]
     },
@@ -112,20 +80,14 @@
       "prompt_zh": "求 (x,y) 恒成立的直线方程。",
       "blanks": [
         {
-          "id": "EF",
-          "length": 2
+          "id": "ABC",
+          "length": 3,
+          "answer": "-23"
         },
         {
-          "id": "G",
-          "length": 1
-        },
-        {
-          "id": "H",
-          "length": 1
-        },
-        {
-          "id": "I",
-          "length": 1
+          "id": "D",
+          "length": 1,
+          "answer": "1"
         }
       ]
     }
@@ -169,5 +131,19 @@
     "q": "Q1"
   },
   "solution_ref": "data/solutions/H17-1/course2/H17-1-II-1.zh.md",
-  "tagging_status": "ok"
+  "tagging_status": "ok",
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABC",
+        "length": 3,
+        "answer": "-23"
+      },
+      {
+        "id": "D",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }

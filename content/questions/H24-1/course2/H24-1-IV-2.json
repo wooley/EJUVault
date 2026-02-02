@@ -41,62 +41,33 @@
   "solution_ref": "solutions/H24-1/course2/H24-1-IV-2.zh.md",
   "tagging_status": "ok",
   "pattern_id": "CALC_INTEGRAL_MINMAX",
-  "blanks": [
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    },
-    {
-      "id": "Y",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "24"
+      },
+      {
+        "id": "NOPQR",
+        "length": 5,
+        "answer": "28412"
+      },
+      {
+        "id": "STU",
+        "length": 3,
+        "answer": "411"
+      },
+      {
+        "id": "VWX",
+        "length": 3,
+        "answer": "121"
+      },
+      {
+        "id": "Y",
+        "length": 1,
+        "answer": "4"
+      }
+    ]
+  }
 }

@@ -21,34 +21,28 @@
     }
   },
   "pattern_id": "PROB_MARKOV_STOP",
-  "blanks": [
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "PQ",
-      "length": 2
-    },
-    {
-      "id": "RS",
-      "length": 2
-    },
-    {
-      "id": "TUV",
-      "length": 3
-    },
-    {
-      "id": "WX",
-      "length": 2
-    },
-    {
-      "id": "YZ",
-      "length": 2
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "9"
+      },
+      {
+        "id": "OPQ",
+        "length": 3,
+        "answer": "754"
+      },
+      {
+        "id": "RSTUV",
+        "length": 5,
+        "answer": "13108"
+      },
+      {
+        "id": "WXYZ",
+        "length": 4,
+        "answer": "1336"
+      }
+    ]
+  }
 }

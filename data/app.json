@@ -194,6 +194,70 @@
       "requested_at": "2026-01-28T22:56:22.257Z",
       "expires_at": "2026-01-28T23:06:22.257Z",
       "consumed_at": "2026-01-28T22:56:22.778Z"
+    },
+    {
+      "id": 22,
+      "email": "wooley.gu@gmail.com",
+      "code": "187053",
+      "requested_at": "2026-01-29T15:29:54.264Z",
+      "expires_at": "2026-01-29T15:39:54.264Z",
+      "consumed_at": "2026-01-29T15:29:54.687Z"
+    },
+    {
+      "id": 23,
+      "email": "wooley.gu@gmail.com",
+      "code": "961898",
+      "requested_at": "2026-01-29T15:37:58.848Z",
+      "expires_at": "2026-01-29T15:47:58.848Z",
+      "consumed_at": "2026-01-29T15:37:59.297Z"
+    },
+    {
+      "id": 24,
+      "email": "wooley.gu@gmail.com",
+      "code": "533290",
+      "requested_at": "2026-01-30T04:32:08.088Z",
+      "expires_at": "2026-01-30T04:42:08.088Z",
+      "consumed_at": "2026-01-30T04:32:08.617Z"
+    },
+    {
+      "id": 25,
+      "email": "wooley.gu@gmail.com",
+      "code": "494642",
+      "requested_at": "2026-01-30T11:28:12.939Z",
+      "expires_at": "2026-01-30T11:38:12.939Z",
+      "consumed_at": "2026-01-30T11:28:13.288Z"
+    },
+    {
+      "id": 26,
+      "email": "wooley.gu@gmail.com",
+      "code": "732815",
+      "requested_at": "2026-01-30T12:35:46.057Z",
+      "expires_at": "2026-01-30T12:45:46.057Z",
+      "consumed_at": "2026-01-30T12:35:46.523Z"
+    },
+    {
+      "id": 27,
+      "email": "wooley.gu@gmail.com",
+      "code": "948916",
+      "requested_at": "2026-01-30T12:36:46.756Z",
+      "expires_at": "2026-01-30T12:46:46.756Z",
+      "consumed_at": "2026-01-30T12:36:47.642Z"
+    },
+    {
+      "id": 28,
+      "email": "wooley.gu@gmail.com",
+      "code": "174636",
+      "requested_at": "2026-01-30T14:20:40.621Z",
+      "expires_at": "2026-01-30T14:30:40.621Z",
+      "consumed_at": "2026-01-30T14:20:41.074Z"
+    },
+    {
+      "id": 29,
+      "email": "wooley.gu@gmail.com",
+      "code": "020223",
+      "requested_at": "2026-01-30T14:27:32.914Z",
+      "expires_at": "2026-01-30T14:37:32.914Z",
+      "consumed_at": "2026-01-30T14:27:33.325Z"
     }
   ],
   "attempts": [
@@ -8066,6 +8130,1927 @@
       "pattern_id": "VEC_DOT_ORTHO_LENGTH",
       "overtime": false,
       "created_at": "2026-01-27T05:39:17.370Z"
+    },
+    {
+      "id": 106,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H30-1-II-1",
+      "answers_user": {
+        "A": "2",
+        "B": "2",
+        "C": "2",
+        "D": "2",
+        "E": "2",
+        "F": "2",
+        "G": "2",
+        "HI": "22",
+        "JK": "22",
+        "L": "2"
+      },
+      "answers_correct": {
+        "A": "3",
+        "B": "3",
+        "C": "2",
+        "D": "0",
+        "E": "2",
+        "F": "1",
+        "G": "9",
+        "HI": "21",
+        "JK": "17",
+        "L": "4"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "A": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "B": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "C": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "D": {
+          "expected": "0",
+          "actual": "2",
+          "is_correct": false
+        },
+        "E": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "F": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "G": {
+          "expected": "9",
+          "actual": "2",
+          "is_correct": false
+        },
+        "H": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "I": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "J": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "K": {
+          "expected": "7",
+          "actual": "2",
+          "is_correct": false
+        },
+        "L": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 4549,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "VEC_DOT_LENGTH",
+      "overtime": false,
+      "created_at": "2026-01-30T11:28:20.956Z"
+    },
+    {
+      "id": 107,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H28-1-III-1",
+      "answers_user": {
+        "A": "2",
+        "B": "2",
+        "C": "2",
+        "D": "2",
+        "G": "2",
+        "E": "2",
+        "F": "2",
+        "H": "2",
+        "I": "2",
+        "JK": "22",
+        "L": "2",
+        "M": "2",
+        "NO": "22",
+        "P": "2",
+        "Q": "2",
+        "RS": "22",
+        "T": "2",
+        "UV": "22",
+        "W": "2"
+      },
+      "answers_correct": {
+        "AB": "23",
+        "CD": "66",
+        "E": "0",
+        "FG": "26",
+        "HIJK": "1212",
+        "LMNO": "1236",
+        "PQRS": "3212",
+        "T": "0",
+        "UVW": "243"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "A": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "B": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "C": {
+          "expected": "6",
+          "actual": "2",
+          "is_correct": false
+        },
+        "D": {
+          "expected": "6",
+          "actual": "2",
+          "is_correct": false
+        },
+        "G": {
+          "expected": "6",
+          "actual": "2",
+          "is_correct": false
+        },
+        "E": {
+          "expected": "0",
+          "actual": "2",
+          "is_correct": false
+        },
+        "F": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "H": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "I": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "J": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "K": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "L": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "M": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "N": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "O": {
+          "expected": "6",
+          "actual": "2",
+          "is_correct": false
+        },
+        "P": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Q": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "R": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "S": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "T": {
+          "expected": "0",
+          "actual": "2",
+          "is_correct": false
+        },
+        "U": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "V": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "W": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 4198,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "ALG_CONSTRAINT_FIND_RANGE",
+      "overtime": false,
+      "created_at": "2026-01-30T11:28:26.339Z"
+    },
+    {
+      "id": 108,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H22-1-I-2",
+      "answers_user": {
+        "F": "2",
+        "G": "2",
+        "H": "2",
+        "J": "2",
+        "K": "2",
+        "M": "2",
+        "L": "2"
+      },
+      "answers_correct": {
+        "F": "2",
+        "G": "3",
+        "H": "5",
+        "IJ": "-5",
+        "K": "0",
+        "L": "1",
+        "M": "2"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "F": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "G": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "H": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        },
+        "J": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        },
+        "K": {
+          "expected": "0",
+          "actual": "2",
+          "is_correct": false
+        },
+        "M": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "L": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "I": {
+          "expected": "-",
+          "actual": null,
+          "is_correct": false
+        }
+      },
+      "duration_ms": 2615,
+      "difficulty": null,
+      "tags": [
+        "恒等式",
+        "必要条件",
+        "十分条件",
+        "対称式"
+      ],
+      "pattern_id": "ALG_TRANSFORM_CONSTRAINT",
+      "overtime": false,
+      "created_at": "2026-01-30T11:28:30.909Z"
+    },
+    {
+      "id": 109,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H23-2-IV-2",
+      "answers_user": {
+        "S": "2",
+        "T": "2",
+        "NO": "22",
+        "P": "2",
+        "Q": "2",
+        "R": "2",
+        "U": "2",
+        "V": "2",
+        "W": "2",
+        "X": "2",
+        "YZ": "22"
+      },
+      "answers_correct": {
+        "NOPQR": "18422",
+        "S": "1",
+        "T": "8",
+        "UV": "52",
+        "WXYZ": "2315"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "S": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "T": {
+          "expected": "8",
+          "actual": "2",
+          "is_correct": false
+        },
+        "N": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "O": {
+          "expected": "8",
+          "actual": "2",
+          "is_correct": false
+        },
+        "P": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Q": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "R": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "U": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        },
+        "V": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "W": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "X": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Y": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Z": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 4167,
+      "difficulty": null,
+      "tags": [
+        "置換積分",
+        "定積分",
+        "極限",
+        "漸近"
+      ],
+      "pattern_id": "CALC_INTEGRAL_ASYMPTOTIC",
+      "overtime": false,
+      "created_at": "2026-01-30T11:28:36.162Z"
+    },
+    {
+      "id": 110,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "R3-1-II-2",
+      "answers_user": {
+        "N": "2",
+        "O": "2",
+        "P": "2",
+        "Q": "2",
+        "R": "2",
+        "S": "2",
+        "T": "2",
+        "U": "2",
+        "V": "2",
+        "W": "2",
+        "X": "2",
+        "Y": "2"
+      },
+      "answers_correct": {
+        "N": "2",
+        "OP": "74",
+        "QR": "74",
+        "S": "2",
+        "T": "1",
+        "UV": "12",
+        "WXY": "525"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "N": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "O": {
+          "expected": "7",
+          "actual": "2",
+          "is_correct": false
+        },
+        "P": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Q": {
+          "expected": "7",
+          "actual": "2",
+          "is_correct": false
+        },
+        "R": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "S": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "T": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "U": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "V": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "W": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        },
+        "X": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "Y": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 3482,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "CPLX_ROT_SCALE",
+      "overtime": false,
+      "created_at": "2026-01-30T11:28:40.793Z"
+    },
+    {
+      "id": 111,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H30-1-II-1",
+      "answers_user": {
+        "A": "2",
+        "B": "2",
+        "C": "2",
+        "D": "2",
+        "E": "2",
+        "F": "2",
+        "G": "2",
+        "HI": "22",
+        "JK": "22",
+        "L": "2"
+      },
+      "answers_correct": {
+        "A": "3",
+        "B": "3",
+        "C": "2",
+        "D": "0",
+        "E": "2",
+        "F": "1",
+        "G": "9",
+        "HI": "21",
+        "JK": "17",
+        "L": "4"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "A": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "B": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "C": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "D": {
+          "expected": "0",
+          "actual": "2",
+          "is_correct": false
+        },
+        "E": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "F": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "G": {
+          "expected": "9",
+          "actual": "2",
+          "is_correct": false
+        },
+        "H": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "I": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "J": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "K": {
+          "expected": "7",
+          "actual": "2",
+          "is_correct": false
+        },
+        "L": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 6580,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "VEC_DOT_LENGTH",
+      "overtime": false,
+      "created_at": "2026-01-30T12:34:17.494Z"
+    },
+    {
+      "id": 112,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H28-1-III-1",
+      "answers_user": {
+        "A": "2",
+        "B": "2",
+        "C": "2",
+        "D": "2",
+        "G": "2",
+        "E": "2",
+        "F": "2",
+        "H": "2",
+        "I": "2",
+        "JK": "22",
+        "L": "2",
+        "M": "2",
+        "NO": "22",
+        "P": "2",
+        "Q": "2",
+        "RS": "22",
+        "T": "2",
+        "UV": "22",
+        "W": "2"
+      },
+      "answers_correct": {
+        "AB": "23",
+        "CD": "66",
+        "E": "0",
+        "FG": "26",
+        "HIJK": "1212",
+        "LMNO": "1236",
+        "PQRS": "3212",
+        "T": "0",
+        "UVW": "243"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "A": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "B": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "C": {
+          "expected": "6",
+          "actual": "2",
+          "is_correct": false
+        },
+        "D": {
+          "expected": "6",
+          "actual": "2",
+          "is_correct": false
+        },
+        "G": {
+          "expected": "6",
+          "actual": "2",
+          "is_correct": false
+        },
+        "E": {
+          "expected": "0",
+          "actual": "2",
+          "is_correct": false
+        },
+        "F": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "H": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "I": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "J": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "K": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "L": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "M": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "N": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "O": {
+          "expected": "6",
+          "actual": "2",
+          "is_correct": false
+        },
+        "P": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Q": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "R": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "S": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "T": {
+          "expected": "0",
+          "actual": "2",
+          "is_correct": false
+        },
+        "U": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "V": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "W": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 5360,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "ALG_CONSTRAINT_FIND_RANGE",
+      "overtime": false,
+      "created_at": "2026-01-30T12:34:24.450Z"
+    },
+    {
+      "id": 113,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H22-1-I-2",
+      "answers_user": {
+        "F": "2",
+        "G": "2",
+        "H": "2",
+        "J": "2",
+        "K": "2",
+        "M": "2",
+        "L": "2"
+      },
+      "answers_correct": {
+        "F": "2",
+        "G": "3",
+        "H": "5",
+        "IJ": "-5",
+        "K": "0",
+        "L": "1",
+        "M": "2"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "F": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "G": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "H": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        },
+        "J": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        },
+        "K": {
+          "expected": "0",
+          "actual": "2",
+          "is_correct": false
+        },
+        "M": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "L": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "I": {
+          "expected": "-",
+          "actual": null,
+          "is_correct": false
+        }
+      },
+      "duration_ms": 2416,
+      "difficulty": null,
+      "tags": [
+        "恒等式",
+        "必要条件",
+        "十分条件",
+        "対称式"
+      ],
+      "pattern_id": "ALG_TRANSFORM_CONSTRAINT",
+      "overtime": false,
+      "created_at": "2026-01-30T12:34:28.045Z"
+    },
+    {
+      "id": 114,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H23-2-IV-2",
+      "answers_user": {
+        "S": "2",
+        "T": "2",
+        "NO": "22",
+        "P": "2",
+        "Q": "2",
+        "R": "2",
+        "U": "2",
+        "V": "2",
+        "W": "2",
+        "X": "2",
+        "YZ": "22"
+      },
+      "answers_correct": {
+        "NOPQR": "18422",
+        "S": "1",
+        "T": "8",
+        "UV": "52",
+        "WXYZ": "2315"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "S": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "T": {
+          "expected": "8",
+          "actual": "2",
+          "is_correct": false
+        },
+        "N": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "O": {
+          "expected": "8",
+          "actual": "2",
+          "is_correct": false
+        },
+        "P": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Q": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "R": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "U": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        },
+        "V": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "W": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "X": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Y": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Z": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 4549,
+      "difficulty": null,
+      "tags": [
+        "置換積分",
+        "定積分",
+        "極限",
+        "漸近"
+      ],
+      "pattern_id": "CALC_INTEGRAL_ASYMPTOTIC",
+      "overtime": false,
+      "created_at": "2026-01-30T12:34:33.643Z"
+    },
+    {
+      "id": 115,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "R3-1-II-2",
+      "answers_user": {
+        "N": "2",
+        "O": "2",
+        "P": "2",
+        "Q": "2",
+        "R": "2",
+        "S": "2",
+        "T": "2",
+        "U": "2",
+        "V": "2",
+        "W": "2",
+        "X": "2",
+        "Y": "2"
+      },
+      "answers_correct": {
+        "N": "2",
+        "OP": "74",
+        "QR": "74",
+        "S": "2",
+        "T": "1",
+        "UV": "12",
+        "WXY": "525"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "N": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "O": {
+          "expected": "7",
+          "actual": "2",
+          "is_correct": false
+        },
+        "P": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Q": {
+          "expected": "7",
+          "actual": "2",
+          "is_correct": false
+        },
+        "R": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "S": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "T": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "U": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "V": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "W": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        },
+        "X": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "Y": {
+          "expected": "5",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 3729,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "CPLX_ROT_SCALE",
+      "overtime": false,
+      "created_at": "2026-01-30T12:34:38.576Z"
+    },
+    {
+      "id": 116,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H18-1-I-2",
+      "answers_user": {
+        "L": "2",
+        "M": "2",
+        "N": "2",
+        "OP": "22",
+        "Q": "2",
+        "R": "2"
+      },
+      "answers_correct": {
+        "LM": "33",
+        "NOPQ": "1142",
+        "R": "4"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "L": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "M": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "N": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "O": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "P": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Q": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "R": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 2700,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "QF_INTERVAL_COUNT_INT",
+      "overtime": false,
+      "created_at": "2026-01-30T12:36:04.772Z"
+    },
+    {
+      "id": 117,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H25-1-IV-2",
+      "answers_user": {
+        "Q": "2",
+        "R": "2",
+        "S": "2",
+        "T": "2",
+        "U": "2",
+        "V": "2",
+        "W": "2",
+        "X": "2",
+        "Y": "2"
+      },
+      "answers_correct": {
+        "Q": "1",
+        "R": "2",
+        "S": "7",
+        "T": "2",
+        "U": "0",
+        "V": "4",
+        "W": "2",
+        "X": "0",
+        "Y": "2"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "Q": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "R": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "S": {
+          "expected": "7",
+          "actual": "2",
+          "is_correct": false
+        },
+        "T": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "U": {
+          "expected": "0",
+          "actual": "2",
+          "is_correct": false
+        },
+        "V": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "W": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "X": {
+          "expected": "0",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Y": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        }
+      },
+      "duration_ms": 4343,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "CALC_TRANSFORM_SOLVE_X",
+      "overtime": false,
+      "created_at": "2026-01-30T12:36:10.563Z"
+    },
+    {
+      "id": 118,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H21-2-II-1",
+      "answers_user": {
+        "A": "2",
+        "B": "2",
+        "C": "2",
+        "D": "2",
+        "E": "2",
+        "F": "2",
+        "GH": "22",
+        "I": "2",
+        "J": "2",
+        "K": "2",
+        "L": "2",
+        "M": "2"
+      },
+      "answers_correct": {
+        "AB": "42",
+        "CD": "64",
+        "EF": "22",
+        "GHI": "-42",
+        "JKLM": "8121"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "A": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "B": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "C": {
+          "expected": "6",
+          "actual": "2",
+          "is_correct": false
+        },
+        "D": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "E": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "F": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "G": {
+          "expected": "-",
+          "actual": "2",
+          "is_correct": false
+        },
+        "H": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "I": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "J": {
+          "expected": "8",
+          "actual": "2",
+          "is_correct": false
+        },
+        "K": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "L": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "M": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 3743,
+      "difficulty": null,
+      "tags": [
+        "数列",
+        "等差",
+        "等比",
+        "消元",
+        "求和"
+      ],
+      "pattern_id": "SEQ_ARITH_GEOM_ELIMINATION",
+      "overtime": false,
+      "created_at": "2026-01-30T12:36:15.962Z"
+    },
+    {
+      "id": 119,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "R3-1-IV-1",
+      "answers_user": {
+        "A": "2",
+        "B": "2",
+        "C": "2",
+        "D": "2",
+        "E": "2",
+        "F": "2",
+        "G": "2",
+        "H": "2",
+        "I": "2",
+        "J": "2",
+        "K": "2",
+        "L": "2",
+        "M": "2",
+        "N": "2",
+        "O": "2",
+        "P": "2",
+        "Q": "2",
+        "R": "2"
+      },
+      "answers_correct": {
+        "AB": "21",
+        "CDE": "121",
+        "FG": "12",
+        "HIJ": "212",
+        "KLM": "121",
+        "NOP": "121",
+        "Q": "4",
+        "R": "4"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "A": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "B": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "C": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "D": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "E": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "F": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "G": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "H": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "I": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "J": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "K": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "L": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "M": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "N": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "O": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "P": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "Q": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        },
+        "R": {
+          "expected": "4",
+          "actual": "2",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 4861,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "TRIG_AREA_PARAM_INVARIANT",
+      "overtime": false,
+      "created_at": "2026-01-30T12:36:22.144Z"
+    },
+    {
+      "id": 120,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H23-1-IV-1",
+      "answers_user": {
+        "A": "3",
+        "B": "2",
+        "C": "3",
+        "D": "3",
+        "E": "4",
+        "F": "2",
+        "G": "3",
+        "H": "4",
+        "I": "3",
+        "J": "4",
+        "K": "2",
+        "L": "3",
+        "M": "4"
+      },
+      "answers_correct": {
+        "A": "5",
+        "BC": "86",
+        "DEFGHI": "236136",
+        "JKLM": "6196"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "A": {
+          "expected": "5",
+          "actual": "3",
+          "is_correct": false
+        },
+        "B": {
+          "expected": "8",
+          "actual": "2",
+          "is_correct": false
+        },
+        "C": {
+          "expected": "6",
+          "actual": "3",
+          "is_correct": false
+        },
+        "D": {
+          "expected": "2",
+          "actual": "3",
+          "is_correct": false
+        },
+        "E": {
+          "expected": "3",
+          "actual": "4",
+          "is_correct": false
+        },
+        "F": {
+          "expected": "6",
+          "actual": "2",
+          "is_correct": false
+        },
+        "G": {
+          "expected": "1",
+          "actual": "3",
+          "is_correct": false
+        },
+        "H": {
+          "expected": "3",
+          "actual": "4",
+          "is_correct": false
+        },
+        "I": {
+          "expected": "6",
+          "actual": "3",
+          "is_correct": false
+        },
+        "J": {
+          "expected": "6",
+          "actual": "4",
+          "is_correct": false
+        },
+        "K": {
+          "expected": "1",
+          "actual": "2",
+          "is_correct": false
+        },
+        "L": {
+          "expected": "9",
+          "actual": "3",
+          "is_correct": false
+        },
+        "M": {
+          "expected": "6",
+          "actual": "4",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 4549,
+      "difficulty": null,
+      "tags": [
+        "微分",
+        "定積分",
+        "合成関数",
+        "微分積分"
+      ],
+      "pattern_id": "CALC_RATE_SOLVE_X",
+      "overtime": false,
+      "created_at": "2026-01-30T12:36:58.541Z"
+    },
+    {
+      "id": 121,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H19-1-I-1",
+      "answers_user": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "2",
+        "E": "3",
+        "F": "4",
+        "G": "2",
+        "H": "3",
+        "I": "4",
+        "J": "2",
+        "K": "3",
+        "L": "5",
+        "M": "4",
+        "N": "3",
+        "O": "2"
+      },
+      "answers_correct": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "2",
+        "E": "0",
+        "F": "0",
+        "G": "2",
+        "H": "2",
+        "I": "2",
+        "J": "3",
+        "K": "4",
+        "L": "2",
+        "M": "1",
+        "N": "1",
+        "O": "2"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "A": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "B": {
+          "expected": "3",
+          "actual": "3",
+          "is_correct": true
+        },
+        "C": {
+          "expected": "4",
+          "actual": "4",
+          "is_correct": true
+        },
+        "D": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "E": {
+          "expected": "0",
+          "actual": "3",
+          "is_correct": false
+        },
+        "F": {
+          "expected": "0",
+          "actual": "4",
+          "is_correct": false
+        },
+        "G": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        },
+        "H": {
+          "expected": "2",
+          "actual": "3",
+          "is_correct": false
+        },
+        "I": {
+          "expected": "2",
+          "actual": "4",
+          "is_correct": false
+        },
+        "J": {
+          "expected": "3",
+          "actual": "2",
+          "is_correct": false
+        },
+        "K": {
+          "expected": "4",
+          "actual": "3",
+          "is_correct": false
+        },
+        "L": {
+          "expected": "2",
+          "actual": "5",
+          "is_correct": false
+        },
+        "M": {
+          "expected": "1",
+          "actual": "4",
+          "is_correct": false
+        },
+        "N": {
+          "expected": "1",
+          "actual": "3",
+          "is_correct": false
+        },
+        "O": {
+          "expected": "2",
+          "actual": "2",
+          "is_correct": true
+        }
+      },
+      "duration_ms": 3127,
+      "difficulty": null,
+      "tags": [
+        "二次函数",
+        "平方完成",
+        "区间最值",
+        "参数讨论"
+      ],
+      "pattern_id": "quad_min_on_interval_param_case",
+      "overtime": false,
+      "created_at": "2026-01-30T12:37:03.370Z"
+    },
+    {
+      "id": 122,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H21-1-I-1",
+      "answers_user": {
+        "A": "3",
+        "B": "4",
+        "CD": "53",
+        "E": "4",
+        "F": "5",
+        "G": "4",
+        "H": "5",
+        "I": "3",
+        "J": "4"
+      },
+      "answers_correct": {
+        "A": "2",
+        "B": "1",
+        "CD": "18",
+        "EF": "82",
+        "GH": "44",
+        "IJ": "22"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "A": {
+          "expected": "2",
+          "actual": "3",
+          "is_correct": false
+        },
+        "B": {
+          "expected": "1",
+          "actual": "4",
+          "is_correct": false
+        },
+        "C": {
+          "expected": "1",
+          "actual": "5",
+          "is_correct": false
+        },
+        "D": {
+          "expected": "8",
+          "actual": "3",
+          "is_correct": false
+        },
+        "E": {
+          "expected": "8",
+          "actual": "4",
+          "is_correct": false
+        },
+        "F": {
+          "expected": "2",
+          "actual": "5",
+          "is_correct": false
+        },
+        "G": {
+          "expected": "4",
+          "actual": "4",
+          "is_correct": true
+        },
+        "H": {
+          "expected": "4",
+          "actual": "5",
+          "is_correct": false
+        },
+        "I": {
+          "expected": "2",
+          "actual": "3",
+          "is_correct": false
+        },
+        "J": {
+          "expected": "2",
+          "actual": "4",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 2262,
+      "tags": [
+        "二次函数",
+        "对称轴",
+        "最小值",
+        "参数"
+      ],
+      "pattern_id": "QF_DIRECT_SOLVE_PARAM",
+      "overtime": false,
+      "created_at": "2026-01-30T12:37:07.106Z"
+    },
+    {
+      "id": 123,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H25-2-I-1",
+      "answers_user": {
+        "A": "3",
+        "BC": "45",
+        "DE": "34",
+        "F": "5",
+        "G": "3"
+      },
+      "answers_correct": {
+        "A": "4",
+        "BC": "-2",
+        "DEF": "-27",
+        "G": "4"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "A": {
+          "expected": "4",
+          "actual": "3",
+          "is_correct": false
+        },
+        "B": {
+          "expected": "-",
+          "actual": "4",
+          "is_correct": false
+        },
+        "C": {
+          "expected": "2",
+          "actual": "5",
+          "is_correct": false
+        },
+        "D": {
+          "expected": "-",
+          "actual": "3",
+          "is_correct": false
+        },
+        "E": {
+          "expected": "2",
+          "actual": "4",
+          "is_correct": false
+        },
+        "F": {
+          "expected": "7",
+          "actual": "5",
+          "is_correct": false
+        },
+        "G": {
+          "expected": "4",
+          "actual": "3",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 2447,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "QF_VERTEX_MAX",
+      "overtime": false,
+      "created_at": "2026-01-30T12:37:10.573Z"
+    },
+    {
+      "id": 124,
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "question_id": "H24-1-I-2",
+      "answers_user": {
+        "K": "3",
+        "LM": "45",
+        "N": "3",
+        "O": "4",
+        "P": "5",
+        "Q": "4",
+        "R": "3",
+        "ST": "53"
+      },
+      "answers_correct": {
+        "K": "0",
+        "LM": "-7",
+        "NOP": "422",
+        "Q": "5",
+        "R": "2",
+        "ST": "11"
+      },
+      "is_correct": false,
+      "per_blank": {
+        "K": {
+          "expected": "0",
+          "actual": "3",
+          "is_correct": false
+        },
+        "L": {
+          "expected": "-",
+          "actual": "4",
+          "is_correct": false
+        },
+        "M": {
+          "expected": "7",
+          "actual": "5",
+          "is_correct": false
+        },
+        "N": {
+          "expected": "4",
+          "actual": "3",
+          "is_correct": false
+        },
+        "O": {
+          "expected": "2",
+          "actual": "4",
+          "is_correct": false
+        },
+        "P": {
+          "expected": "2",
+          "actual": "5",
+          "is_correct": false
+        },
+        "Q": {
+          "expected": "5",
+          "actual": "4",
+          "is_correct": false
+        },
+        "R": {
+          "expected": "2",
+          "actual": "3",
+          "is_correct": false
+        },
+        "S": {
+          "expected": "1",
+          "actual": "5",
+          "is_correct": false
+        },
+        "T": {
+          "expected": "1",
+          "actual": "3",
+          "is_correct": false
+        }
+      },
+      "duration_ms": 2879,
+      "difficulty": null,
+      "tags": [],
+      "pattern_id": "ALG_TRANSFORM_SOLVE_PARAM",
+      "overtime": false,
+      "created_at": "2026-01-30T12:37:14.537Z"
     }
   ],
   "sessions": [
@@ -9345,6 +11330,388 @@
       "recommended_difficulty": 5,
       "time_budget": 1140,
       "created_at": "2026-01-28T23:00:34.679Z"
+    },
+    {
+      "id": 69,
+      "session_id": "c2f2ed9b-d5fd-42a6-9be5-9ad7efc8139b",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "daily",
+      "tags": [],
+      "target_difficulty": null,
+      "size": 20,
+      "question_ids": [
+        "H24-2-III",
+        "H19-2-I-2",
+        "H23-1-III-1",
+        "H25-2-III-1",
+        "H19-1-IV-1",
+        "H28-2-II-1",
+        "H30-2-III-1",
+        "H25-2-IV-2",
+        "R3-1-IV-1",
+        "H21-1-I-1",
+        "R4-1-IV-1",
+        "R3-1-III-1",
+        "H23-2-II-1",
+        "H25-1-IV-1",
+        "R4-2-IV-1",
+        "R06-1-I-2",
+        "H28-1-III-1",
+        "H20-1-I-1",
+        "H18-2-II-1",
+        "H28-2-IV-1"
+      ],
+      "recommended_difficulty": 3,
+      "time_budget": 2400,
+      "created_at": "2026-01-29T15:30:06.413Z"
+    },
+    {
+      "id": 70,
+      "session_id": "8a47dd48-4245-4bc2-9350-425825acb629",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "daily",
+      "tags": [],
+      "target_difficulty": null,
+      "size": 10,
+      "question_ids": [
+        "H25-2-I-2",
+        "R4-1-III-1",
+        "H24-2-IV-1",
+        "H27-2-II-2",
+        "H29-2-II-1",
+        "H29-2-IV-1",
+        "R3-2-II-1",
+        "H19-1-II-2",
+        "R01-1-III-1",
+        "H26-1-III-1"
+      ],
+      "recommended_difficulty": 3,
+      "time_budget": 1200,
+      "created_at": "2026-01-29T15:38:04.505Z"
+    },
+    {
+      "id": 71,
+      "session_id": "246c2e09-0f2e-4052-9d65-3ade283e0e00",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "daily",
+      "tags": [],
+      "target_difficulty": null,
+      "size": 5,
+      "question_ids": [
+        "H30-1-II-1",
+        "H28-1-III-1",
+        "H22-1-I-2",
+        "H23-2-IV-2",
+        "R3-1-II-2"
+      ],
+      "recommended_difficulty": 3,
+      "time_budget": 600,
+      "created_at": "2026-01-30T04:32:23.247Z"
+    },
+    {
+      "id": 72,
+      "session_id": "609b6b0c-5fac-4260-9111-168186be2855",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "daily",
+      "tags": [],
+      "target_difficulty": null,
+      "size": 5,
+      "question_ids": [
+        "H30-1-II-1",
+        "H28-1-III-1",
+        "H22-1-I-2",
+        "H23-2-IV-2",
+        "R3-1-II-2"
+      ],
+      "recommended_difficulty": 3,
+      "time_budget": 600,
+      "created_at": "2026-01-30T11:28:16.290Z"
+    },
+    {
+      "id": 73,
+      "session_id": "050123bd-6300-4af7-9f24-2b70f121b8bf",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "review",
+      "tags": [],
+      "target_difficulty": null,
+      "size": 5,
+      "question_ids": [
+        "H17-2-I-2",
+        "H18-1-I-2",
+        "H25-1-IV-2",
+        "H21-2-II-1",
+        "R3-1-IV-1"
+      ],
+      "recommended_difficulty": 3,
+      "time_budget": 570,
+      "created_at": "2026-01-30T12:35:49.723Z"
+    },
+    {
+      "id": 74,
+      "session_id": "fc9c7f54-acef-455f-bb6f-204c54c6746c",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "daily",
+      "tags": [],
+      "target_difficulty": 2,
+      "size": 5,
+      "question_ids": [
+        "H23-1-IV-1",
+        "H19-1-I-1",
+        "H21-1-I-1",
+        "H25-2-I-1",
+        "H24-1-I-2"
+      ],
+      "recommended_difficulty": 2,
+      "time_budget": 450,
+      "created_at": "2026-01-30T12:36:53.887Z"
+    },
+    {
+      "id": 75,
+      "session_id": "e4bd0e32-482f-4614-98f6-379902df7816",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "daily",
+      "tags": [],
+      "target_difficulty": null,
+      "size": 20,
+      "question_ids": [
+        "H24-1-IV-2",
+        "H20-1-IV-1",
+        "H30-2-IV-1",
+        "H26-1-III-1",
+        "H26-2-IV-1",
+        "R02-2-III-1",
+        "H23-2-I-2",
+        "H22-2-IV-2",
+        "H28-2-II-1",
+        "H29-1-II-1",
+        "H27-2-II-1",
+        "H21-2-I-1",
+        "H21-2-II-1",
+        "R05-1-III-1",
+        "H19-2-II-2",
+        "H26-1-II-1",
+        "H20-1-II-1",
+        "H25-2-IV-1",
+        "H24-2-III",
+        "H22-1-I-1"
+      ],
+      "recommended_difficulty": 3,
+      "time_budget": 2400,
+      "created_at": "2026-01-30T14:20:46.820Z"
+    },
+    {
+      "id": 76,
+      "session_id": "e829b35e-52e0-459a-81dc-c66331d2803e",
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "mode": "daily",
+      "tags": [],
+      "target_difficulty": null,
+      "size": 200,
+      "question_ids": [
+        "H19-1-III-1",
+        "R05-1-II-2",
+        "R4-2-I-2",
+        "H20-1-IV-1",
+        "H19-2-I-1",
+        "R01-1-III-1",
+        "H21-2-II-1",
+        "H23-2-III-1",
+        "H22-2-IV-2",
+        "H27-1-IV-1",
+        "R06-1-II-2",
+        "H24-2-IV-1",
+        "H27-1-III-1",
+        "R4-2-III-1",
+        "H28-1-II-2",
+        "H27-2-II-1",
+        "R3-1-III-1",
+        "H22-1-IV-2",
+        "H17-2-IV-1",
+        "H26-2-IV-1",
+        "H30-2-II-2",
+        "H28-1-III-1",
+        "H28-2-IV-1",
+        "R3-2-II-1",
+        "H24-1-IV-2",
+        "H27-2-IV-1",
+        "H24-2-III",
+        "R06-1-I-1",
+        "H29-2-II-1",
+        "H24-1-II",
+        "H24-2-I-1",
+        "H18-2-I-2",
+        "R02-2-I-1",
+        "H19-1-II-2",
+        "H26-2-III-1",
+        "H23-1-IV-1",
+        "H26-1-IV-2",
+        "H20-1-III-1",
+        "H17-2-II-1",
+        "H21-1-IV-1",
+        "H26-2-I-1",
+        "H29-2-I-2",
+        "R06-1-II-1",
+        "H19-2-III-2",
+        "H18-1-I-2",
+        "R3-2-I-2",
+        "H20-1-I-2",
+        "R02-2-III-1",
+        "H27-2-I-2",
+        "R01-1-II-2",
+        "H21-2-III-1",
+        "H28-2-IV-2",
+        "H23-1-I-2",
+        "H22-1-I-1",
+        "H18-1-IV-2",
+        "H19-1-II-1",
+        "H20-2-IV-1",
+        "H25-1-I-1",
+        "R05-2-II-2",
+        "R4-1-II-1",
+        "R01-1-I-2",
+        "R02-2-II-2",
+        "H29-2-I-1",
+        "H30-2-I-2",
+        "R4-1-III-1",
+        "H18-1-II-1",
+        "H20-1-II-1",
+        "H21-1-III-1",
+        "H26-1-III-1",
+        "H25-1-II-1",
+        "R02-2-IV-1",
+        "H30-2-II-1",
+        "H30-2-IV-1",
+        "H26-1-I-2",
+        "H25-1-III-1",
+        "H19-2-IV-1",
+        "H25-2-I-1",
+        "R06-1-I-2",
+        "H24-2-II",
+        "R4-1-IV-1",
+        "H24-1-III",
+        "H25-2-I-2",
+        "R02-2-I-2",
+        "H18-1-I-1",
+        "H27-1-I-2",
+        "H30-2-III-1",
+        "H23-1-II-1",
+        "H26-2-IV-2",
+        "H27-2-I-1",
+        "R05-2-IV-1",
+        "H27-1-II-1",
+        "R4-2-II-2",
+        "H19-2-IV-2",
+        "H19-1-IV-2",
+        "H19-2-III-1",
+        "R4-1-I-1",
+        "H22-2-II-1",
+        "H19-2-II-1",
+        "H22-1-IV-1",
+        "H29-1-IV-1",
+        "H17-2-III-2",
+        "H20-2-IV-2",
+        "R4-1-II-2",
+        "H28-2-II-1",
+        "H27-2-II-2",
+        "H18-2-II-1",
+        "H26-1-II-1",
+        "R4-2-IV-1",
+        "H17-1-II-2",
+        "H23-2-IV-2",
+        "H21-1-II-1",
+        "H17-2-IV-2",
+        "H30-1-III-1",
+        "H29-2-III-1",
+        "H30-1-IV-1",
+        "H18-1-III-2",
+        "R05-2-I-1",
+        "H19-1-III-2",
+        "H18-2-IV-1",
+        "H25-1-IV-1",
+        "H21-2-IV-2",
+        "R01-1-IV-1",
+        "H26-2-II-1",
+        "H24-2-I-2",
+        "H19-2-II-2",
+        "R05-1-I-1",
+        "H19-2-I-2",
+        "H23-2-II-1",
+        "H22-1-I-2",
+        "H20-2-I-2",
+        "H22-1-II-1",
+        "R3-1-II-2",
+        "H25-2-II-1",
+        "H29-1-II-2",
+        "H26-2-I-2",
+        "H29-2-II-2",
+        "H18-1-IV-1",
+        "R3-1-IV-1",
+        "H22-2-IV-1",
+        "H28-2-I-2",
+        "H19-1-I-2",
+        "H21-1-I-1",
+        "H25-2-IV-2",
+        "H18-1-II-2",
+        "H24-2-IV-2",
+        "R06-1-IV-1",
+        "H19-1-I-1",
+        "R3-2-IV-1",
+        "H30-1-II-1",
+        "H23-2-IV-1",
+        "H29-2-IV-1",
+        "H28-2-I-1",
+        "H25-2-III-1",
+        "H23-1-IV-2",
+        "H22-2-I-2",
+        "H22-2-I-1",
+        "R02-2-II-1",
+        "H28-2-III-1",
+        "R3-2-II-2",
+        "H23-2-I-2",
+        "H27-2-III-1",
+        "H21-2-I-1",
+        "H20-2-III-1",
+        "H22-1-III-1",
+        "H21-2-IV-1",
+        "H18-1-III-1",
+        "H20-1-I-1",
+        "H25-2-IV-1",
+        "H19-1-IV-1",
+        "H30-2-I-1",
+        "R4-2-II-1",
+        "H18-2-IV-2",
+        "H17-1-I-1",
+        "H20-1-IV-2",
+        "H18-2-II-2",
+        "H21-1-I-2",
+        "H24-1-I-1",
+        "H26-1-IV-1",
+        "H27-1-I-1",
+        "H27-1-II-2",
+        "H23-2-I-1",
+        "H20-2-II-1",
+        "R05-1-II-1",
+        "H17-2-III-1",
+        "R05-2-III-1",
+        "H30-1-II-2",
+        "R3-1-II-1",
+        "H24-1-IV-1",
+        "H18-2-III-1",
+        "H29-1-I-1",
+        "H25-1-I-2",
+        "H18-2-III-2",
+        "H17-2-II-2",
+        "R06-1-III-1",
+        "H24-1-I-2",
+        "H21-2-I-2",
+        "H23-1-III-1",
+        "R05-1-III-1",
+        "H25-1-IV-2",
+        "R3-2-III-1"
+      ],
+      "recommended_difficulty": 3,
+      "time_budget": 24060,
+      "created_at": "2026-01-30T14:27:42.510Z"
     }
   ],
   "mastery": [
@@ -9373,7 +11740,7 @@
       "overtime_rate": 0,
       "consecutive_correct": 0,
       "status": "demote",
-      "updated_at": "2026-01-20T15:05:49.901Z"
+      "updated_at": "2026-01-30T12:36:04.772Z"
     },
     {
       "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
@@ -9391,7 +11758,7 @@
       "overtime_rate": 0,
       "consecutive_correct": 0,
       "status": "demote",
-      "updated_at": "2026-01-21T09:56:52.158Z"
+      "updated_at": "2026-01-30T12:36:10.563Z"
     },
     {
       "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
@@ -9499,7 +11866,7 @@
       "overtime_rate": 0,
       "consecutive_correct": 0,
       "status": "demote",
-      "updated_at": "2026-01-21T09:45:31.033Z"
+      "updated_at": "2026-01-30T12:36:22.144Z"
     },
     {
       "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
@@ -9518,6 +11885,105 @@
       "consecutive_correct": 1,
       "status": "steady",
       "updated_at": "2026-01-27T01:33:30.188Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "VEC_DOT_LENGTH",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:34:17.494Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "ALG_CONSTRAINT_FIND_RANGE",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:34:24.450Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "ALG_TRANSFORM_CONSTRAINT",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:34:28.045Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "CALC_INTEGRAL_ASYMPTOTIC",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:34:33.643Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "CPLX_ROT_SCALE",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:34:38.576Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "SEQ_ARITH_GEOM_ELIMINATION",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:36:15.962Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "CALC_RATE_SOLVE_X",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:36:58.541Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "quad_min_on_interval_param_case",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:37:03.370Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "QF_DIRECT_SOLVE_PARAM",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:37:07.106Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "QF_VERTEX_MAX",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:37:10.573Z"
+    },
+    {
+      "user_id": "f607562d-b8fb-4c66-bc01-e019868f36f7",
+      "pattern_id": "ALG_TRANSFORM_SOLVE_PARAM",
+      "accuracy": 0,
+      "overtime_rate": 0,
+      "consecutive_correct": 0,
+      "status": "demote",
+      "updated_at": "2026-01-30T12:37:14.537Z"
     }
   ]
 }

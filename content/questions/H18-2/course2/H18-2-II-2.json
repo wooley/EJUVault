@@ -73,30 +73,33 @@
   },
   "solution_ref": "data/solutions/H18-2/course2/H18-2-II-2.zh.md",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "FG",
-      "length": 2
-    },
-    {
-      "id": "HI",
-      "length": 2
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "KLM",
-      "length": 3
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "FG",
+        "length": 2,
+        "answer": "28"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "49"
+      },
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "7"
+      },
+      {
+        "id": "KLM",
+        "length": 3,
+        "answer": "212"
+      },
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "47"
+      }
+    ]
+  }
 }

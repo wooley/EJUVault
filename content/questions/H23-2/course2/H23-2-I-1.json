@@ -65,50 +65,43 @@
   ],
   "pattern_id": "ALG_TRANSFORM_SOLVE_X",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "BC",
-      "length": 2
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "E",
-      "length": 1
-    },
-    {
-      "id": "F",
-      "length": 1
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "JK",
-      "length": 2
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "A",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "BC",
+        "length": 2,
+        "answer": "-1"
+      },
+      {
+        "id": "DE",
+        "length": 2,
+        "answer": "34"
+      },
+      {
+        "id": "F",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "HIJKL",
+        "length": 5,
+        "answer": "12154"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }

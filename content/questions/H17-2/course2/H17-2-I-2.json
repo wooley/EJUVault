@@ -21,11 +21,31 @@
       "3": "既非必要也非充分"
     },
     "blanks": [
-      "S",
-      "T",
-      "U",
-      "V",
-      "W"
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "W",
+        "length": 1,
+        "answer": "2"
+      }
     ]
   },
   "answer_ref": {

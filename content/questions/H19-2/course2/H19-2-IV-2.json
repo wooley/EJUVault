@@ -74,42 +74,33 @@
   "solution_ref": "solutions/H19-2/course2/H19-2-IV-2.zh.md",
   "pattern_id": "CALC_EXP_MINMAX_ROOTS",
   "tagging_status": "ok",
-  "blanks": [
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "N",
-      "length": 1
-    },
-    {
-      "id": "O",
-      "length": 1
-    },
-    {
-      "id": "P",
-      "length": 1
-    },
-    {
-      "id": "Q",
-      "length": 1
-    },
-    {
-      "id": "R",
-      "length": 1
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "MNO",
+        "length": 3,
+        "answer": "246"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "QR",
+        "length": 2,
+        "answer": "64"
+      },
+      {
+        "id": "ST",
+        "length": 2,
+        "answer": "33"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "3"
+      }
+    ]
+  }
 }

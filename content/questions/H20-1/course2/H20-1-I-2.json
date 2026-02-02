@@ -33,14 +33,73 @@
     "集合"
   ],
   "spec_version": "1.4",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "BCD",
-      "length": 3
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "J",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "K",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "6"
+      },
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "R",
+        "length": 1,
+        "answer": "-"
+      },
+      {
+        "id": "S",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "T",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "U",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "V",
+        "length": 1,
+        "answer": "1"
+      }
+    ]
+  }
 }

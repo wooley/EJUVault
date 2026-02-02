@@ -23,86 +23,58 @@
   "solution_ref": "solutions/H24-2/course2/H24-2-II.zh.md",
   "tagging_status": "ok",
   "pattern_id": "VEC_RATIO_IN_CIRCLE",
-  "blanks": [
-    {
-      "id": "A",
-      "length": 1
-    },
-    {
-      "id": "B",
-      "length": 1
-    },
-    {
-      "id": "C",
-      "length": 1
-    },
-    {
-      "id": "D",
-      "length": 1
-    },
-    {
-      "id": "EF",
-      "length": 2
-    },
-    {
-      "id": "G",
-      "length": 1
-    },
-    {
-      "id": "H",
-      "length": 1
-    },
-    {
-      "id": "I",
-      "length": 1
-    },
-    {
-      "id": "J",
-      "length": 1
-    },
-    {
-      "id": "K",
-      "length": 1
-    },
-    {
-      "id": "L",
-      "length": 1
-    },
-    {
-      "id": "M",
-      "length": 1
-    },
-    {
-      "id": "NO",
-      "length": 2
-    },
-    {
-      "id": "PQR",
-      "length": 3
-    },
-    {
-      "id": "S",
-      "length": 1
-    },
-    {
-      "id": "T",
-      "length": 1
-    },
-    {
-      "id": "U",
-      "length": 1
-    },
-    {
-      "id": "V",
-      "length": 1
-    },
-    {
-      "id": "W",
-      "length": 1
-    },
-    {
-      "id": "X",
-      "length": 1
-    }
-  ]
+  "structure": {
+    "blanks": [
+      {
+        "id": "ABCD",
+        "length": 4,
+        "answer": "4323"
+      },
+      {
+        "id": "EFG",
+        "length": 3,
+        "answer": "-12"
+      },
+      {
+        "id": "H",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "I",
+        "length": 1,
+        "answer": "3"
+      },
+      {
+        "id": "JK",
+        "length": 2,
+        "answer": "13"
+      },
+      {
+        "id": "LM",
+        "length": 2,
+        "answer": "82"
+      },
+      {
+        "id": "NO",
+        "length": 2,
+        "answer": "36"
+      },
+      {
+        "id": "PQRS",
+        "length": 4,
+        "answer": "-114"
+      },
+      {
+        "id": "TUV",
+        "length": 3,
+        "answer": "362"
+      },
+      {
+        "id": "WX",
+        "length": 2,
+        "answer": "62"
+      }
+    ]
+  }
 }

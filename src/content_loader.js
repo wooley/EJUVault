@@ -318,6 +318,13 @@ function createContentLoader() {
     return question;
   }
 
+  function clearQuestionCache(questionId) {
+    if (!questionId) {
+      return;
+    }
+    questionCache.delete(questionId);
+  }
+
   function getAnswerGroups(question) {
     if (fs.existsSync(DEFAULT_NORMALIZED_ANSWERS_PATH)) {
       const stat = fs.statSync(DEFAULT_NORMALIZED_ANSWERS_PATH);
@@ -468,6 +475,7 @@ function createContentLoader() {
 
   return {
     getQuestion,
+    clearQuestionCache,
     getAnswerGroups,
     getQuestionMetadata,
     getQuestionIndex,

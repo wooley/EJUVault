@@ -12,80 +12,6 @@
   ],
   "pattern_id": "CALC-PARAM-SPEED-ARCLEN-01",
   "prompt_ja": "動点Pの座標(x,y)が時刻tの関数として x=4t-sin4t, y=4-cos4t で与えられる。",
-  "blanks": [
-    {
-      "type": "int",
-      "note": "dx/dtの係数",
-      "id": "A",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "dx/dtの括弧内定数",
-      "id": "B",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "dy/dtの係数",
-      "id": "C",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "速さ^2の係数",
-      "id": "DE",
-      "length": 2
-    },
-    {
-      "type": "int",
-      "note": "sin^2(Ft)",
-      "id": "F",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "最大速さとなる回数",
-      "id": "G",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "t0=H/I π",
-      "id": "H",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "t0=H/I π",
-      "id": "I",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "t1=J/K π",
-      "id": "J",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "t1=J/K π",
-      "id": "K",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "最大の速さ",
-      "id": "L",
-      "length": 1
-    },
-    {
-      "type": "int",
-      "note": "道のり",
-      "id": "MN",
-      "length": 2
-    }
-  ],
   "exam": {
     "exam_id": "H27-2",
     "year": 2015,
@@ -96,5 +22,49 @@
   "type": "fill_in",
   "original_ja": {
     "text": "動点Pの座標(x,y)が時刻tの関数として x=4t-sin4t, y=4-cos4t で与えられる。"
+  },
+  "structure": {
+    "blanks": [
+      {
+        "id": "AB",
+        "length": 2,
+        "answer": "41"
+      },
+      {
+        "id": "C",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "DEF",
+        "length": 3,
+        "answer": "642"
+      },
+      {
+        "id": "G",
+        "length": 1,
+        "answer": "4"
+      },
+      {
+        "id": "HI",
+        "length": 2,
+        "answer": "14"
+      },
+      {
+        "id": "JK",
+        "length": 2,
+        "answer": "74"
+      },
+      {
+        "id": "L",
+        "length": 1,
+        "answer": "8"
+      },
+      {
+        "id": "MN",
+        "length": 2,
+        "answer": "24"
+      }
+    ]
   }
 }

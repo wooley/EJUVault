@@ -1,90 +1,277 @@
 {
-    "exam": {
-      "exam_id": "H17-1",
-      "year": 2005,
-      "era": "平成",
-      "session": 1,
-      "subject": "EJU数学"
+  "exam": {
+    "exam_id": "H17-1",
+    "year": 2005,
+    "era": "平成",
+    "session": 1,
+    "subject": "EJU数学"
+  },
+  "course": 2,
+  "track": "science",
+  "question_id": "H17-1-I-2",
+  "section": "I",
+  "order": 2,
+  "type": "fill_in",
+  "original_ja": {
+    "text": "問2　次の命題の [M] から [Q] について，最も適するものを下の 0〜3 のうちから一つ選べ。ただし，a, b は実数とする。(1) ab=0 は a=b=0 であるための [M]。(2) a^2+b^2=0 は a=b=0 であるための [N]。(3) (a+b)(a-b)=0 は a=b=0 であるための [O]。(4) a^2-ab+b^2=0 は ab=0 であるための [P]。(5) b≠0 のとき，a≥b かつ a≥-b は a≥0 であるための [Q]。0: 必要十分条件 / 1: 必要条件だが十分でない / 2: 十分条件だが必要でない / 3: 必要でも十分でもない",
+    "formulas": [
+      "ab=0",
+      "a^2+b^2=0",
+      "(a+b)(a-b)=0",
+      "a^2-ab+b^2=0",
+      "b\\ne 0,\\ a\\ge b\\ \\text{and}\\ a\\ge -b"
+    ]
+  },
+  "translation_zh": {
+    "text": "题2 对下列命题中 [M]～[Q]，从 0～3 中选择最合适的一项（a,b 为实数）。(1) ab=0 是 a=b=0 的何种条件。[M] (2) a^2+b^2=0 是 a=b=0 的何种条件。[N] (3) (a+b)(a-b)=0 是 a=b=0 的何种条件。[O] (4) a^2-ab+b^2=0 是 ab=0 的何种条件。[P] (5) 在 b≠0 时，a≥b 且 a≥-b 是 a≥0 的何种条件。[Q] 其中：0 必要且充分；1 必要但不充分；2 充分但不必要；3 既非必要也非充分。",
+    "formulas": []
+  },
+  "blank_rules": {
+    "allowed_chars": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "no_whitespace": true,
+    "notes": [
+      "本题为 0〜3 四选一，必须严格保留原题编号 0〜3。"
+    ]
+  },
+  "subquestions": [
+    {
+      "sub_id": "(1)",
+      "prompt_ja": "ab=0 と a=b=0 の関係",
+      "prompt_zh": "判断 ab=0 与 a=b=0 的必要充分关系",
+      "blanks": [
+        {
+          "id": "M",
+          "length": 1,
+          "answer": "1"
+        },
+        {
+          "id": "N",
+          "length": 1,
+          "answer": "0"
+        },
+        {
+          "id": "O",
+          "length": 1,
+          "answer": "1"
+        },
+        {
+          "id": "P",
+          "length": 1,
+          "answer": "2"
+        },
+        {
+          "id": "Q",
+          "length": 1,
+          "answer": "2"
+        }
+      ]
     },
+    {
+      "sub_id": "(2)",
+      "prompt_ja": "a^2+b^2=0 と a=b=0 の関係",
+      "prompt_zh": "判断 a^2+b^2=0 与 a=b=0 的必要充分关系",
+      "blanks": [
+        {
+          "id": "M",
+          "length": 1,
+          "answer": "1"
+        },
+        {
+          "id": "N",
+          "length": 1,
+          "answer": "0"
+        },
+        {
+          "id": "O",
+          "length": 1,
+          "answer": "1"
+        },
+        {
+          "id": "P",
+          "length": 1,
+          "answer": "2"
+        },
+        {
+          "id": "Q",
+          "length": 1,
+          "answer": "2"
+        }
+      ]
+    },
+    {
+      "sub_id": "(3)",
+      "prompt_ja": "(a+b)(a-b)=0 と a=b=0 の関係",
+      "prompt_zh": "判断 (a+b)(a-b)=0 与 a=b=0 的必要充分关系",
+      "blanks": [
+        {
+          "id": "M",
+          "length": 1,
+          "answer": "1"
+        },
+        {
+          "id": "N",
+          "length": 1,
+          "answer": "0"
+        },
+        {
+          "id": "O",
+          "length": 1,
+          "answer": "1"
+        },
+        {
+          "id": "P",
+          "length": 1,
+          "answer": "2"
+        },
+        {
+          "id": "Q",
+          "length": 1,
+          "answer": "2"
+        }
+      ]
+    },
+    {
+      "sub_id": "(4)",
+      "prompt_ja": "a^2-ab+b^2=0 と ab=0 の関係",
+      "prompt_zh": "判断 a^2-ab+b^2=0 与 ab=0 的必要充分关系",
+      "blanks": [
+        {
+          "id": "M",
+          "length": 1,
+          "answer": "1"
+        },
+        {
+          "id": "N",
+          "length": 1,
+          "answer": "0"
+        },
+        {
+          "id": "O",
+          "length": 1,
+          "answer": "1"
+        },
+        {
+          "id": "P",
+          "length": 1,
+          "answer": "2"
+        },
+        {
+          "id": "Q",
+          "length": 1,
+          "answer": "2"
+        }
+      ]
+    },
+    {
+      "sub_id": "(5)",
+      "prompt_ja": "b≠0 のときの不等式条件",
+      "prompt_zh": "在 b≠0 下判断不等式条件与 a≥0 的关系",
+      "blanks": [
+        {
+          "id": "M",
+          "length": 1,
+          "answer": "1"
+        },
+        {
+          "id": "N",
+          "length": 1,
+          "answer": "0"
+        },
+        {
+          "id": "O",
+          "length": 1,
+          "answer": "1"
+        },
+        {
+          "id": "P",
+          "length": 1,
+          "answer": "2"
+        },
+        {
+          "id": "Q",
+          "length": 1,
+          "answer": "2"
+        }
+      ]
+    }
+  ],
+  "tags": {
+    "domain": [
+      "集合と命題"
+    ],
+    "skill": [
+      "命題と条件"
+    ],
+    "course_specific": [
+      "数学2_only"
+    ]
+  },
+  "difficulty": {
+    "level": 2,
+    "method": "heuristic_v1",
+    "rationale": [
+      "主要考查必要条件/充分条件的定义与反例构造",
+      "计算量小但要求逻辑严谨"
+    ],
+    "features": {
+      "steps_min": 3,
+      "concept_count": 1,
+      "has_parameter_elimination": false,
+      "has_case_split": false,
+      "has_integer_constraint": false,
+      "algebraic_complexity": 1
+    }
+  },
+  "solution": {
+    "outline": [
+      "回顾必要/充分/充要的定义",
+      "逐条判断：先看是否由结论推出条件（必要），再看是否由条件推出结论（充分）",
+      "用反例快速否定不成立方向"
+    ],
+    "steps": [],
+    "symbolic_steps": []
+  },
+  "answer_ref": {
     "course": 2,
-    "track": "science",
-    "question_id": "H17-1-I-2",
     "section": "I",
-    "order": 2,
-    "type": "fill_in",
-    "original_ja": {
-      "text": "問2　次の命題の [M] から [Q] について，最も適するものを下の 0〜3 のうちから一つ選べ。ただし，a, b は実数とする。(1) ab=0 は a=b=0 であるための [M]。(2) a^2+b^2=0 は a=b=0 であるための [N]。(3) (a+b)(a-b)=0 は a=b=0 であるための [O]。(4) a^2-ab+b^2=0 は ab=0 であるための [P]。(5) b≠0 のとき，a≥b かつ a≥-b は a≥0 であるための [Q]。0: 必要十分条件 / 1: 必要条件だが十分でない / 2: 十分条件だが必要でない / 3: 必要でも十分でもない",
-      "formulas": [
-        "ab=0",
-        "a^2+b^2=0",
-        "(a+b)(a-b)=0",
-        "a^2-ab+b^2=0",
-        "b\\ne 0,\\ a\\ge b\\ \\text{and}\\ a\\ge -b"
-      ]
-    },
-    "translation_zh": {
-      "text": "题2 对下列命题中 [M]～[Q]，从 0～3 中选择最合适的一项（a,b 为实数）。(1) ab=0 是 a=b=0 的何种条件。[M] (2) a^2+b^2=0 是 a=b=0 的何种条件。[N] (3) (a+b)(a-b)=0 是 a=b=0 的何种条件。[O] (4) a^2-ab+b^2=0 是 ab=0 的何种条件。[P] (5) 在 b≠0 时，a≥b 且 a≥-b 是 a≥0 的何种条件。[Q] 其中：0 必要且充分；1 必要但不充分；2 充分但不必要；3 既非必要也非充分。",
-      "formulas": []
-    },
+    "q": "Q2",
+    "sub": "(1)-(5)",
+    "group": "M/N/O/P/Q"
+  },
+  "solution_ref": "data/solutions/H17-1/course2/H17-1-I-2.zh.md",
+  "tagging_status": "ok",
+  "structure": {
     "blanks": [
-      { "id": "M", "length": 1 },
-      { "id": "N", "length": 1 },
-      { "id": "O", "length": 1 },
-      { "id": "P", "length": 1 },
-      { "id": "Q", "length": 1 }
-    ],
-    "blank_rules": {
-      "allowed_chars": ["0","1","2","3"],
-      "no_whitespace": true,
-      "notes": [
-        "本题为 0〜3 四选一，必须严格保留原题编号 0〜3。"
-      ]
-    },
-    "subquestions": [
-      { "sub_id": "(1)", "prompt_ja": "ab=0 と a=b=0 の関係", "prompt_zh": "判断 ab=0 与 a=b=0 的必要充分关系", "blanks": [{ "id": "M", "length": 1 }] },
-      { "sub_id": "(2)", "prompt_ja": "a^2+b^2=0 と a=b=0 の関係", "prompt_zh": "判断 a^2+b^2=0 与 a=b=0 的必要充分关系", "blanks": [{ "id": "N", "length": 1 }] },
-      { "sub_id": "(3)", "prompt_ja": "(a+b)(a-b)=0 と a=b=0 の関係", "prompt_zh": "判断 (a+b)(a-b)=0 与 a=b=0 的必要充分关系", "blanks": [{ "id": "O", "length": 1 }] },
-      { "sub_id": "(4)", "prompt_ja": "a^2-ab+b^2=0 と ab=0 の関係", "prompt_zh": "判断 a^2-ab+b^2=0 与 ab=0 的必要充分关系", "blanks": [{ "id": "P", "length": 1 }] },
-      { "sub_id": "(5)", "prompt_ja": "b≠0 のときの不等式条件", "prompt_zh": "在 b≠0 下判断不等式条件与 a≥0 的关系", "blanks": [{ "id": "Q", "length": 1 }] }
-    ],
-    "tags": {
-      "domain": ["集合と命題"],
-      "skill": ["命題と条件"],
-      "course_specific": ["数学2_only"]
-    },
-    "difficulty": {
-      "level": 2,
-      "method": "heuristic_v1",
-      "rationale": [
-        "主要考查必要条件/充分条件的定义与反例构造",
-        "计算量小但要求逻辑严谨"
-      ],
-      "features": {
-        "steps_min": 3,
-        "concept_count": 1,
-        "has_parameter_elimination": false,
-        "has_case_split": false,
-        "has_integer_constraint": false,
-        "algebraic_complexity": 1
+      {
+        "id": "M",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "N",
+        "length": 1,
+        "answer": "0"
+      },
+      {
+        "id": "O",
+        "length": 1,
+        "answer": "1"
+      },
+      {
+        "id": "P",
+        "length": 1,
+        "answer": "2"
+      },
+      {
+        "id": "Q",
+        "length": 1,
+        "answer": "2"
       }
-    },
-    "solution": {
-      "outline": [
-        "回顾必要/充分/充要的定义",
-        "逐条判断：先看是否由结论推出条件（必要），再看是否由条件推出结论（充分）",
-        "用反例快速否定不成立方向"
-      ],
-      "steps": [],
-      "symbolic_steps": []
-    },
-    "answer_ref": {
-      "course": 2,
-      "section": "I",
-      "q": "Q2",
-      "sub": "(1)-(5)",
-      "group": "M/N/O/P/Q"
-    },
-    "solution_ref": "data/solutions/H17-1/course2/H17-1-I-2.zh.md",
-    "tagging_status": "ok"
+    ]
   }
-  
+}
