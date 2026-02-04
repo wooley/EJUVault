@@ -4,5 +4,4 @@ node_modules/
 !.env.example
 *.log
 .DS_Store
-content/answers/normalized.json
 data/.cache/
