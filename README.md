@@ -39,6 +39,17 @@ Optional: bind to all interfaces for LAN access:
 HOST=0.0.0.0 JWT_SECRET=devsecret npm run dev
 ```
 
+## Docker
+Build and run with Docker Compose:
+```bash
+JWT_SECRET=devsecret docker compose up --build
+```
+
+Data and content are mounted for persistence:
+- `./data` -> `/app/data`
+- `./content` -> `/app/content`
+The container will generate `content/index/question_index.json` on first start if missing.
+
 ## Auth Flow (Email + Code)
 Request a verification code:
 ```bash

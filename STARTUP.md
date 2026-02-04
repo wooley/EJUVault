@@ -6,12 +6,45 @@ This guide covers running the current Express API and the training/admin pages.
 - Node.js (recommended via `nvm`, e.g. Node 20)
 - The content index must exist (`content/index/question_index.json`)
 
+Optional: run with Docker (no local Node needed).
+
 ## 1) Install dependencies
 ```bash
 nvm use 20
 npm install
 ```
 If you are not using nvm, ensure `node -v` is compatible and run `npm install`.
+
+### Docker quick start
+```bash
+JWT_SECRET=devsecret docker compose up --build
+```
+
+By default, Docker Compose mounts:
+- `./data` -> `/app/data`
+- `./content` -> `/app/content`
+The container generates the content index on first start if missing.
+
+Set extra runtime options (examples):
+```bash
+HOST=0.0.0.0 AUTH_DEBUG_CODE=true JWT_SECRET=devsecret docker compose up
+```
+
+You can also define these in a local `.env` file (see `.env.example`):
+```
+JWT_SECRET=devsecret
+HOST=0.0.0.0
+AUTH_DEBUG_CODE=true
+```
+
+Docker run example:
+```bash
+docker run -p 3000:3000 \
+  -e JWT_SECRET=devsecret \
+  -e HOST=0.0.0.0 \
+  -e AUTH_DEBUG_CODE=true \
+  eju-math-vault
+```
 
 ## 2) Generate content indexes
 ```bash

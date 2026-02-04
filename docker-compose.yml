@@ -1,0 +1,15 @@
+services:
+  eju-math-vault:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      JWT_SECRET: ${JWT_SECRET}
+      HOST: 0.0.0.0
+      PORT: 3000
+      DB_PATH: /app/data/app.json
+      ADMIN_TOKEN: ${ADMIN_TOKEN}
+      AUTH_DEBUG_CODE: ${AUTH_DEBUG_CODE}
+    volumes:
+      - ./data:/app/data
+      - ./content:/app/content
