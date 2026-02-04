@@ -72,6 +72,19 @@ function extractBodyHtml(html) {
   return match ? match[1].trim() : html.trim();
 }
 
+function normalizeQuestionIdForHtml(questionId) {
+  if (!questionId) {
+    return null;
+  }
+  const match = String(questionId).match(/^R(\d+)-(\d+)-(I|II|III|IV)-(\d+)$/);
+  if (!match) {
+    return null;
+  }
+  const padded = match[1].padStart(2, '0');
+  const normalized = `R${padded}-${match[2]}-${match[3]}-${match[4]}`;
+  return normalized === questionId ? null : normalized;
+}
+
 function normalizeSubKey(sub) {
   if (!sub || typeof sub !== 'string') {
     return null;
@@ -414,7 +427,8 @@ function createContentLoader() {
   }
 
   function getExerciseHtml(questionId) {
-    const htmlPath = exerciseHtmlMap.get(questionId);
+    const normalizedId = normalizeQuestionIdForHtml(questionId);
+    const htmlPath = exerciseHtmlMap.get(questionId) || (normalizedId && exerciseHtmlMap.get(normalizedId));
     if (!htmlPath) {
       return null;
     }
@@ -429,6 +443,9 @@ function createContentLoader() {
       const html = readText(resolvedPath);
       const body = extractBodyHtml(html);
       exerciseHtmlCache.set(questionId, body);
+      if (normalizedId) {
+        exerciseHtmlCache.set(normalizedId, body);
+      }
       return body;
     } catch (error) {
       return null;
@@ -436,7 +453,8 @@ function createContentLoader() {
   }
 
   function getExerciseHtmlZh(questionId) {
-    const htmlPath = exerciseHtmlCnMap.get(questionId);
+    const normalizedId = normalizeQuestionIdForHtml(questionId);
+    const htmlPath = exerciseHtmlCnMap.get(questionId) || (normalizedId && exerciseHtmlCnMap.get(normalizedId));
     if (!htmlPath) {
       return null;
     }
@@ -451,6 +469,9 @@ function createContentLoader() {
       const html = readText(resolvedPath);
       const body = extractBodyHtml(html);
       exerciseHtmlCnCache.set(questionId, body);
+      if (normalizedId) {
+        exerciseHtmlCnCache.set(normalizedId, body);
+      }
       return body;
     } catch (error) {
       return null;
