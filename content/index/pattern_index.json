@@ -1,0 +1,1616 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-01-30T08:57:07.415Z",
+  "patterns": {
+    "QF_DIRECT_VERTEX": {
+      "question_count": 10,
+      "difficulty_distribution": {
+        "3": 1,
+        "unknown": 9
+      },
+      "question_ids": [
+        "H17-1-I-1",
+        "H18-2-I-1",
+        "H20-2-I-1",
+        "H23-1-I-1",
+        "H26-1-I-1",
+        "H28-1-I-1",
+        "H30-1-I-1",
+        "R01-1-I-1",
+        "R3-1-I-1",
+        "R4-2-I-1"
+      ]
+    },
+    "ALG_DIRECT_EXPAND": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H17-2-II-1"
+      ]
+    },
+    "ALG_TRANSFORM_SOLVE_PARAM": {
+      "question_count": 4,
+      "difficulty_distribution": {
+        "unknown": 4
+      },
+      "question_ids": [
+        "H17-2-II-2",
+        "H24-1-I-2",
+        "H27-1-II-2",
+        "R06-1-II-2"
+      ]
+    },
+    "CALC_TRANSFORM_MINMAX": {
+      "question_count": 3,
+      "difficulty_distribution": {
+        "unknown": 3
+      },
+      "question_ids": [
+        "H17-2-III-1",
+        "H30-1-III-1",
+        "R06-1-III-1"
+      ]
+    },
+    "VEC_RATIO_INTERNAL": {
+      "question_count": 4,
+      "difficulty_distribution": {
+        "unknown": 4
+      },
+      "question_ids": [
+        "H17-2-III-2",
+        "H18-2-III-1",
+        "H29-1-II-1",
+        "R01-1-II-1"
+      ]
+    },
+    "CALC_DIRECT_MINMAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H17-2-IV-1"
+      ]
+    },
+    "CALC_ELIMINATION_SOLVE_X": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H17-2-IV-2"
+      ]
+    },
+    "QF_TRANSFORM_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-1-I-1"
+      ]
+    },
+    "QF_INTERVAL_COUNT_INT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-1-I-2"
+      ]
+    },
+    "ABS_INTERSECTION_COUNT_PARAM_RANGE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-1-II-1"
+      ]
+    },
+    "SEQ_SUM_RECUR_DERIVE_CLOSED_FORM_LIMIT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-1-II-2"
+      ]
+    },
+    "VEC_DOT_ORTHO_LENGTH": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-1-III-1"
+      ]
+    },
+    "CIRCLE_LINE_SLOPE_RANGE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-1-III-2"
+      ]
+    },
+    "CALC_CHAIN_RULE_LOG_RATIONAL": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-1-IV-1"
+      ]
+    },
+    "INTEGRAL_ABS_PARAM_PIECEWISE_MIN": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-1-IV-2"
+      ]
+    },
+    "ALG_INTERVAL_FIND_RANGE": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "H18-2-I-2",
+        "H25-1-I-2"
+      ]
+    },
+    "ALG_ELIMINATION_SOLVE_X": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-2-II-1"
+      ]
+    },
+    "SEQ_CONSTRAINT_FIND_N": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "H18-2-II-2",
+        "H23-1-II-1"
+      ]
+    },
+    "ALG_TRANSFORM_MINMAX": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "H18-2-III-2",
+        "H29-1-II-2"
+      ]
+    },
+    "CALC_RATE_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-2-IV-1"
+      ]
+    },
+    "CALC_TRANSFORM_SOLVE_X": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "3": 1,
+        "unknown": 1
+      },
+      "question_ids": [
+        "H18-2-IV-2",
+        "H25-1-IV-2"
+      ]
+    },
+    "quad_min_on_interval_param_case": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-1-I-1"
+      ]
+    },
+    "SET-INTERVAL-CONDITION": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-1-I-2"
+      ]
+    },
+    "ineq_square_sum_triangle_condition": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-1-II-1"
+      ]
+    },
+    "sequence_sqrt_sum_linearization": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-1-II-2"
+      ]
+    },
+    "vector_triangle_bisector_perpendicular": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-1-III-1"
+      ]
+    },
+    "log_circle_range_xy": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-1-III-2"
+      ]
+    },
+    "derivative_tangent_slope_match": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-1-IV-1"
+      ]
+    },
+    "integral_quadratic_param_min": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-1-IV-2"
+      ]
+    },
+    "parabola_translation_parameter_solve": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-2-I-1"
+      ]
+    },
+    "ineq_rhs_nonneg_equivalence": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-2-I-2"
+      ]
+    },
+    "INT_CONSTRAINT_COUNT_INT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-2-II-1"
+      ]
+    },
+    "SEQ_ARITH_DIRECT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-2-II-2"
+      ]
+    },
+    "VEC_COORD_DIRECT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-2-III-1"
+      ]
+    },
+    "ALG_TRANSFORM_INEQ": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-2-III-2"
+      ]
+    },
+    "CALC_INTEGRAL_AREA": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-2-IV-1"
+      ]
+    },
+    "CALC_EXP_MINMAX_ROOTS": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H19-2-IV-2"
+      ]
+    },
+    "QUAD_COMPLETE_SQUARE_INTERVAL": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H20-1-I-1"
+      ]
+    },
+    "POLY_IDENTITY_FACTOR_SET": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H20-1-I-2"
+      ]
+    },
+    "SEQ_AP_SOLVE_SUM_GEOM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H20-1-II-1"
+      ]
+    },
+    "VEC_DOT_NORM_CONGRUENCE_COORD": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H20-1-III-1"
+      ]
+    },
+    "CALC_CUBIC_EXTREMUM_TANGENT_AREA_RATIO": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H20-1-IV-1"
+      ]
+    },
+    "CALC_OPTIMIZE_EXP_INTEGRAL_LIMIT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H20-1-IV-2"
+      ]
+    },
+    "ALG_TRANSFORM_FACTOR": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H20-2-I-2"
+      ]
+    },
+    "SEQ_SUM_FORMULA": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "H20-2-II-1",
+        "H24-1-II"
+      ]
+    },
+    "ALG_DISCRIMINANT_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H20-2-III-1"
+      ]
+    },
+    "CALC_RATE_INTERSECTION": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "H20-2-IV-1",
+        "R05-2-III-1"
+      ]
+    },
+    "CALC_AREA_MINMAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H20-2-IV-2"
+      ]
+    },
+    "QF_DIRECT_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H21-1-I-1"
+      ]
+    },
+    "ALG_TRANSFORM_FACTORIZE": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "H21-1-I-2",
+        "H26-1-I-2"
+      ]
+    },
+    "INT_CONSTRAINT_SOLVE_X": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H21-1-II-1"
+      ]
+    },
+    "GEO_ELIMINATION_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H21-1-III-1"
+      ]
+    },
+    "CALC_AREA_AREA": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H21-1-IV-1"
+      ]
+    },
+    "CALC_RATE_MINMAX": {
+      "question_count": 6,
+      "difficulty_distribution": {
+        "unknown": 6
+      },
+      "question_ids": [
+        "H21-1-IV-2",
+        "H22-1-IV-1",
+        "H26-1-IV-1",
+        "H29-1-III-1",
+        "R05-1-III-1",
+        "R05-1-IV-1"
+      ]
+    },
+    "ALG_TRANSFORM_EVAL_EXPR": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H21-2-I-1"
+      ]
+    },
+    "QF_TRANSFORM_SHIFT": {
+      "question_count": 4,
+      "difficulty_distribution": {
+        "unknown": 4
+      },
+      "question_ids": [
+        "H21-2-I-2",
+        "H24-1-I-1",
+        "H29-1-I-1",
+        "R05-2-I-1"
+      ]
+    },
+    "SEQ_ARITH_GEOM_ELIMINATION": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H21-2-II-1"
+      ]
+    },
+    "ALG_INTERVAL_INEQUALITY_REGION": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H21-2-III-1"
+      ]
+    },
+    "CALC_INTEGRAL_PIECEWISE_TANGENT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H21-2-IV-1"
+      ]
+    },
+    "CALC_DIFFEQ_INTEGRAL_EQUATION": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H21-2-IV-2"
+      ]
+    },
+    "ALG_CASE_SOLVE_X": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H22-1-I-1"
+      ]
+    },
+    "ALG_TRANSFORM_CONSTRAINT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H22-1-I-2"
+      ]
+    },
+    "GEO_TRANSFORM_MINMAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H22-1-II-1"
+      ]
+    },
+    "VEC_RATIO_DOT_LENGTH": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H22-1-III-1"
+      ]
+    },
+    "CALC_CONSTRAINT_INTERSECTION": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H22-1-IV-2"
+      ]
+    },
+    "QF_DISCRIMINANT_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H22-2-I-1"
+      ]
+    },
+    "CASE_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H22-2-I-2"
+      ]
+    },
+    "GEO_MINMAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H22-2-II-1"
+      ]
+    },
+    "VEC_DOT_ORTHO": {
+      "question_count": 3,
+      "difficulty_distribution": {
+        "unknown": 3
+      },
+      "question_ids": [
+        "H22-2-III-1",
+        "H25-1-II-1",
+        "R05-1-II-1"
+      ]
+    },
+    "CALC_LOG_DIFF": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H22-2-IV-1"
+      ]
+    },
+    "CALC_VOLUME_REVOLUTION": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H22-2-IV-2"
+      ]
+    },
+    "ALG_TRANSFORM_SOLVE_X": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "H23-1-I-2",
+        "H23-2-I-1"
+      ]
+    },
+    "ALG_TRANSFORM_FIND_RANGE": {
+      "question_count": 3,
+      "difficulty_distribution": {
+        "unknown": 3
+      },
+      "question_ids": [
+        "H23-1-III-1",
+        "H28-1-II-2",
+        "R3-2-III-1"
+      ]
+    },
+    "CALC_RATE_SOLVE_X": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H23-1-IV-1"
+      ]
+    },
+    "CALC_AREA_INTERSECTION": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H23-1-IV-2"
+      ]
+    },
+    "QF_PARAM_DISCRIMINANT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H23-2-I-2"
+      ]
+    },
+    "VEC_MIN_DISTANCE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H23-2-II-1"
+      ]
+    },
+    "GEO_TANGENT_CIRCLES": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H23-2-III-1"
+      ]
+    },
+    "CALC_INTEGRAL_EVAL": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H23-2-IV-1"
+      ]
+    },
+    "CALC_INTEGRAL_ASYMPTOTIC": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H23-2-IV-2"
+      ]
+    },
+    "GEO_TRI_ANGLE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H24-1-III"
+      ]
+    },
+    "CALC_MINMAX": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "H24-1-IV-1",
+        "R01-1-IV-1"
+      ]
+    },
+    "CALC_INTEGRAL_MINMAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H24-1-IV-2"
+      ]
+    },
+    "QF_SYMMETRY_VERTEX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H24-2-I-1"
+      ]
+    },
+    "ABS_CASE_SPLIT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H24-2-I-2"
+      ]
+    },
+    "VEC_RATIO_IN_CIRCLE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H24-2-II"
+      ]
+    },
+    "LOG_CIRCLE_TANGENCY_MAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H24-2-III"
+      ]
+    },
+    "CALC_EXTREMUM_TRIG": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H24-2-IV-1"
+      ]
+    },
+    "CALC_INTEGRAL_RECURSION_LIMIT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H24-2-IV-2"
+      ]
+    },
+    "QF_CONSTRAINT_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H25-1-I-1"
+      ]
+    },
+    "ALG_CONSTRAINT_MINMAX": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "H25-1-III-1",
+        "H30-1-II-2"
+      ]
+    },
+    "CALC_DIRECT_FIND_RANGE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H25-1-IV-1"
+      ]
+    },
+    "QF_VERTEX_MAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H25-2-I-1"
+      ]
+    },
+    "LOGIC_NEC_SUFF": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H25-2-I-2"
+      ]
+    },
+    "SEQ_ARITH_GEOSERIES_OPT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H25-2-II-1"
+      ]
+    },
+    "TRIG_MINMAX_SUBST": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H25-2-III-1"
+      ]
+    },
+    "CALC_MONOTONIC_COMPARE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H25-2-IV-1"
+      ]
+    },
+    "CALC_AREA_MINIMIZE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H25-2-IV-2"
+      ]
+    },
+    "VEC_RATIO_INTERNAL_MINMAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H26-1-II-1"
+      ]
+    },
+    "ALG_ELIMINATION_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H26-1-III-1"
+      ]
+    },
+    "CALC_DIRECT_VOLUME": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H26-1-IV-2"
+      ]
+    },
+    "QF_PARAM_CONDITION_DISCRIMINANT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H26-2-I-1"
+      ]
+    },
+    "SET_NEC_SUFF_COUNTING": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H26-2-I-2"
+      ]
+    },
+    "GEO_VEC_TANGENT_RATIO": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H26-2-II-1"
+      ]
+    },
+    "EXP_SUBSTITUTE_MINIMIZE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H26-2-III-1"
+      ]
+    },
+    "CALC_TANGENT_AREA_RATIO": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H26-2-IV-1"
+      ]
+    },
+    "LIMIT_TRIG_POWER_INTEGRAL": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H26-2-IV-2"
+      ]
+    },
+    "QF_INTERSECTION_SOLVE_PARAM": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "H27-1-I-1",
+        "R02-2-I-1"
+      ]
+    },
+    "PROB_CLASSICAL_COUNT": {
+      "question_count": 8,
+      "difficulty_distribution": {
+        "unknown": 8
+      },
+      "question_ids": [
+        "H27-1-I-2",
+        "H28-1-I-2",
+        "H29-1-I-2",
+        "H30-1-I-2",
+        "R3-1-I-2",
+        "R4-1-I-2",
+        "R05-1-I-2",
+        "R05-2-I-2"
+      ]
+    },
+    "VEC_DOT_ANGLE": {
+      "question_count": 4,
+      "difficulty_distribution": {
+        "unknown": 4
+      },
+      "question_ids": [
+        "H27-1-II-1",
+        "H28-1-II-1",
+        "R3-1-II-1",
+        "R05-2-II-1"
+      ]
+    },
+    "CALC_DERIVATIVE_FIND_RANGE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H27-1-III-1"
+      ]
+    },
+    "CALC_DERIVATIVE_AREA": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H27-1-IV-1"
+      ]
+    },
+    "ALG-QUAD-EXT-INTERVAL-01": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H27-2-I-1"
+      ]
+    },
+    "PROB-DISCRETE-INEX-01": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H27-2-I-2"
+      ]
+    },
+    "VEC-3D-MIN-AREA-01": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H27-2-II-1"
+      ]
+    },
+    "CPLX-ROOTS-DIST-01": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H27-2-II-2"
+      ]
+    },
+    "CALC-TANGENT-MULTI-01": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H27-2-III-1"
+      ]
+    },
+    "CALC-PARAM-SPEED-ARCLEN-01": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H27-2-IV-1"
+      ]
+    },
+    "ALG_CONSTRAINT_FIND_RANGE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H28-1-III-1"
+      ]
+    },
+    "QF_COMPLETE_SQUARE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H28-2-I-1"
+      ]
+    },
+    "PROB_COMBINATION": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H28-2-I-2"
+      ]
+    },
+    "SEQ_LOG_LINEAR_REC": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H28-2-II-1"
+      ]
+    },
+    "CPLX_LOCUS_ARG_LINE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H28-2-III-1"
+      ]
+    },
+    "LOG_QUAD_RANGE_OPT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H28-2-IV-1"
+      ]
+    },
+    "CALC_VOLUME_RATE_OPT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H28-2-IV-2"
+      ]
+    },
+    "CALC_AREA": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H29-1-IV-1"
+      ]
+    },
+    "QF_QUAD_OPT_CONSTRAINT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H29-2-I-1"
+      ]
+    },
+    "PROB_MARKOV_STOP": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H29-2-I-2"
+      ]
+    },
+    "REC_LINEAR_SHIFT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H29-2-II-1"
+      ]
+    },
+    "GEO_INSCIRCLE_COORD": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H29-2-II-2"
+      ]
+    },
+    "LOG_INEQ_GLOBAL": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H29-2-III-1"
+      ]
+    },
+    "CALC_AREA_TRIG": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H29-2-IV-1"
+      ]
+    },
+    "VEC_DOT_LENGTH": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H30-1-II-1"
+      ]
+    },
+    "CALC_INT_RECURR_LIMIT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H30-1-IV-1"
+      ]
+    },
+    "QF_PARAM_EXTREMA_INTERVAL": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H30-2-I-1"
+      ]
+    },
+    "PROB_DICE_QUADRATIC": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H30-2-I-2"
+      ]
+    },
+    "SEQ_RECURRENCE_TELESCOPE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H30-2-II-1"
+      ]
+    },
+    "GEO_CIRCLE_TANGENT_POWER": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H30-2-II-2"
+      ]
+    },
+    "CALC_CUBIC_PARAM_MONO_EXTREMA": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H30-2-III-1"
+      ]
+    },
+    "CALC_LOG_TANGENCY_AREA": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "H30-2-IV-1"
+      ]
+    },
+    "PROB_DIRECT_PROBABILITY": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R01-1-I-2"
+      ]
+    },
+    "GEO_AREA_RATIO": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R01-1-II-2"
+      ]
+    },
+    "GEO_TRI_COSINE_SOLVE_SIDE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R01-1-III-1"
+      ]
+    },
+    "PROB_COUNT_CONSTRAINT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R02-2-I-2"
+      ]
+    },
+    "SEQ_SUM_FORMULA_MINMAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R02-2-II-1"
+      ]
+    },
+    "ALG_COMPLEX_ROOTS_ARGUMENT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R02-2-II-2"
+      ]
+    },
+    "CALC_TANGENT_ANGLE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R02-2-III-1"
+      ]
+    },
+    "CALC_MONOTONICITY_AREA": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R02-2-IV-1"
+      ]
+    },
+    "CPLX_ROT_SCALE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R3-1-II-2"
+      ]
+    },
+    "EXP_SYM_SUBST_MINMAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R3-1-III-1"
+      ]
+    },
+    "TRIG_AREA_PARAM_INVARIANT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R3-1-IV-1"
+      ]
+    },
+    "QF_CASE_MINMAX": {
+      "question_count": 2,
+      "difficulty_distribution": {
+        "unknown": 2
+      },
+      "question_ids": [
+        "R3-2-I-1",
+        "R06-1-I-1"
+      ]
+    },
+    "PROB_COUNT_COUNTINT": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R3-2-I-2"
+      ]
+    },
+    "VEC_DIRECT_LENGTH": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R3-2-II-1"
+      ]
+    },
+    "GEO_DISTANCE_FIND_RANGE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R3-2-II-2"
+      ]
+    },
+    "CALC_TANGENT_AREA": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R3-2-IV-1"
+      ]
+    },
+    "QF_CONSTRAINT_FIND_RANGE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R4-1-I-1"
+      ]
+    },
+    "VEC_ELIMINATION_FIND_RANGE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R4-1-II-1"
+      ]
+    },
+    "GEO_TRANSFORM_LENGTH": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R4-1-II-2"
+      ]
+    },
+    "CALC_DERIVATIVE_MINMAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R4-1-III-1"
+      ]
+    },
+    "CALC_AREA_FIND_RANGE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R4-1-IV-1"
+      ]
+    },
+    "PROB_MARKOV_STOPPING": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R4-2-I-2"
+      ]
+    },
+    "SEQ_MOD_FACTOR_CASE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R4-2-II-1"
+      ]
+    },
+    "CP_VECTOR_GEOM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R4-2-II-2"
+      ]
+    },
+    "LOG_POLY_EXTREMA_MATCH": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R4-2-III-1"
+      ]
+    },
+    "CALC_TANGENT_COUNT_BY_MONOTONE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R4-2-IV-1"
+      ]
+    },
+    "QF_ELIMINATION_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R05-1-I-1"
+      ]
+    },
+    "ALG_TRANSFORM_ANGLE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R05-1-II-2"
+      ]
+    },
+    "GEO_TRANSFORM_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R05-2-II-2"
+      ]
+    },
+    "CALC_CASE_MINMAX": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R05-2-IV-1"
+      ]
+    },
+    "PROB_COUNT_PROBABILITY": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R06-1-I-2"
+      ]
+    },
+    "VEC_DOT_ORTHO_SOLVE_PARAM": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R06-1-II-1"
+      ]
+    },
+    "CALC_INTERSECTION_FIND_RANGE": {
+      "question_count": 1,
+      "difficulty_distribution": {
+        "unknown": 1
+      },
+      "question_ids": [
+        "R06-1-IV-1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2443 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-01-30T08:57:07.415Z",
+  "errors": [
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H17-1-I-1",
+      "file": "content/questions/H17-1/course2/H17-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (missing)",
+      "question_id": "H17-1-I-2",
+      "file": "content/questions/H17-1/course2/H17-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (missing)",
+      "question_id": "H17-1-II-1",
+      "file": "content/questions/H17-1/course2/H17-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (missing)",
+      "question_id": "H17-1-II-2",
+      "file": "content/questions/H17-1/course2/H17-1-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (missing)",
+      "question_id": "H17-1-III-1",
+      "file": "content/questions/H17-1/course2/H17-1-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (missing)",
+      "question_id": "H17-1-III-2",
+      "file": "content/questions/H17-1/course2/H17-1-III-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (missing)",
+      "question_id": "H17-1-IV-1",
+      "file": "content/questions/H17-1/course2/H17-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (missing)",
+      "question_id": "H17-1-IV-2",
+      "file": "content/questions/H17-1/course2/H17-1-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H17-2-I-1",
+      "file": "content/questions/H17-2/course2/H17-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (missing)",
+      "question_id": "H17-2-I-1",
+      "file": "content/questions/H17-2/course2/H17-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H17-2-I-2",
+      "file": "content/questions/H17-2/course2/H17-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (missing)",
+      "question_id": "H17-2-I-2",
+      "file": "content/questions/H17-2/course2/H17-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H17-2-II-1",
+      "file": "content/questions/H17-2/course2/H17-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H17-2-II-1",
+      "file": "content/questions/H17-2/course2/H17-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H17-2-II-2",
+      "file": "content/questions/H17-2/course2/H17-2-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H17-2-III-1",
+      "file": "content/questions/H17-2/course2/H17-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H17-2-III-2",
+      "file": "content/questions/H17-2/course2/H17-2-III-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H17-2-III-2",
+      "file": "content/questions/H17-2/course2/H17-2-III-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H17-2-IV-1",
+      "file": "content/questions/H17-2/course2/H17-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H17-2-IV-2",
+      "file": "content/questions/H17-2/course2/H17-2-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H18-1-I-1",
+      "file": "content/questions/H18-1/course2/H18-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H18-1-I-2",
+      "file": "content/questions/H18-1/course2/H18-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H18-1-II-1",
+      "file": "content/questions/H18-1/course2/H18-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H18-1-II-1",
+      "file": "content/questions/H18-1/course2/H18-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H18-1-II-2",
+      "file": "content/questions/H18-1/course2/H18-1-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H18-1-II-2",
+      "file": "content/questions/H18-1/course2/H18-1-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H18-1-III-1",
+      "file": "content/questions/H18-1/course2/H18-1-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H18-1-III-1",
+      "file": "content/questions/H18-1/course2/H18-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H18-1-III-2",
+      "file": "content/questions/H18-1/course2/H18-1-III-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H18-1-III-2",
+      "file": "content/questions/H18-1/course2/H18-1-III-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H18-1-IV-1",
+      "file": "content/questions/H18-1/course2/H18-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H18-1-IV-1",
+      "file": "content/questions/H18-1/course2/H18-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H18-1-IV-2",
+      "file": "content/questions/H18-1/course2/H18-1-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H18-1-IV-2",
+      "file": "content/questions/H18-1/course2/H18-1-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H18-2-I-1",
+      "file": "content/questions/H18-2/course2/H18-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H18-2-II-2",
+      "file": "content/questions/H18-2/course2/H18-2-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H18-2-III-1",
+      "file": "content/questions/H18-2/course2/H18-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H19-1-I-1",
+      "file": "content/questions/H19-1/course2/H19-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H19-1-I-2",
+      "file": "content/questions/H19-1/course2/H19-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H19-1-II-1",
+      "file": "content/questions/H19-1/course2/H19-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H19-1-II-2",
+      "file": "content/questions/H19-1/course2/H19-1-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H19-1-III-1",
+      "file": "content/questions/H19-1/course2/H19-1-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H19-1-III-2",
+      "file": "content/questions/H19-1/course2/H19-1-III-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H19-1-IV-1",
+      "file": "content/questions/H19-1/course2/H19-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H19-1-IV-2",
+      "file": "content/questions/H19-1/course2/H19-1-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H19-2-I-1",
+      "file": "content/questions/H19-2/course2/H19-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H19-2-I-2",
+      "file": "content/questions/H19-2/course2/H19-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H19-2-II-1",
+      "file": "content/questions/H19-2/course2/H19-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H19-2-II-2",
+      "file": "content/questions/H19-2/course2/H19-2-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H19-2-II-2",
+      "file": "content/questions/H19-2/course2/H19-2-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H19-2-III-1",
+      "file": "content/questions/H19-2/course2/H19-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H19-2-III-1",
+      "file": "content/questions/H19-2/course2/H19-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H19-2-III-2",
+      "file": "content/questions/H19-2/course2/H19-2-III-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H19-2-III-2",
+      "file": "content/questions/H19-2/course2/H19-2-III-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H19-2-IV-1",
+      "file": "content/questions/H19-2/course2/H19-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H19-2-IV-1",
+      "file": "content/questions/H19-2/course2/H19-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H19-2-IV-2",
+      "file": "content/questions/H19-2/course2/H19-2-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H19-2-IV-2",
+      "file": "content/questions/H19-2/course2/H19-2-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H20-1-I-1",
+      "file": "content/questions/H20-1/course2/H20-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H20-1-I-2",
+      "file": "content/questions/H20-1/course2/H20-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H20-1-II-1",
+      "file": "content/questions/H20-1/course2/H20-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H20-1-III-1",
+      "file": "content/questions/H20-1/course2/H20-1-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H20-1-IV-1",
+      "file": "content/questions/H20-1/course2/H20-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H20-1-IV-2",
+      "file": "content/questions/H20-1/course2/H20-1-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H20-2-I-1",
+      "file": "content/questions/H20-2/course2/H20-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H20-2-I-1",
+      "file": "content/questions/H20-2/course2/H20-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H20-2-I-2",
+      "file": "content/questions/H20-2/course2/H20-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H20-2-I-2",
+      "file": "content/questions/H20-2/course2/H20-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H20-2-II-1",
+      "file": "content/questions/H20-2/course2/H20-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H20-2-II-1",
+      "file": "content/questions/H20-2/course2/H20-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H20-2-III-1",
+      "file": "content/questions/H20-2/course2/H20-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H20-2-IV-1",
+      "file": "content/questions/H20-2/course2/H20-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H20-2-IV-2",
+      "file": "content/questions/H20-2/course2/H20-2-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H21-1-I-2",
+      "file": "content/questions/H21-1/course2/H21-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H21-1-IV-1",
+      "file": "content/questions/H21-1/course2/H21-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H21-2-I-1",
+      "file": "content/questions/H21-2/course2/H21-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H21-2-I-2",
+      "file": "content/questions/H21-2/course2/H21-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H21-2-II-1",
+      "file": "content/questions/H21-2/course2/H21-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H21-2-III-1",
+      "file": "content/questions/H21-2/course2/H21-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H21-2-IV-1",
+      "file": "content/questions/H21-2/course2/H21-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H21-2-IV-2",
+      "file": "content/questions/H21-2/course2/H21-2-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H22-1-I-2",
+      "file": "content/questions/H22-1/course2/H22-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H22-1-III-1",
+      "file": "content/questions/H22-1/course2/H22-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H22-2-I-1",
+      "file": "content/questions/H22-2/course2/H22-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H22-2-I-2",
+      "file": "content/questions/H22-2/course2/H22-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H22-2-I-2",
+      "file": "content/questions/H22-2/course2/H22-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H22-2-II-1",
+      "file": "content/questions/H22-2/course2/H22-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H22-2-II-1",
+      "file": "content/questions/H22-2/course2/H22-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H22-2-III-1",
+      "file": "content/questions/H22-2/course2/H22-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H22-2-III-1",
+      "file": "content/questions/H22-2/course2/H22-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H22-2-IV-1",
+      "file": "content/questions/H22-2/course2/H22-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H22-2-IV-1",
+      "file": "content/questions/H22-2/course2/H22-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H22-2-IV-2",
+      "file": "content/questions/H22-2/course2/H22-2-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H22-2-IV-2",
+      "file": "content/questions/H22-2/course2/H22-2-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H23-1-I-1",
+      "file": "content/questions/H23-1/course2/H23-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H23-1-II-1",
+      "file": "content/questions/H23-1/course2/H23-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H23-2-I-2",
+      "file": "content/questions/H23-2/course2/H23-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H23-2-II-1",
+      "file": "content/questions/H23-2/course2/H23-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H23-2-III-1",
+      "file": "content/questions/H23-2/course2/H23-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H23-2-IV-1",
+      "file": "content/questions/H23-2/course2/H23-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H23-2-IV-2",
+      "file": "content/questions/H23-2/course2/H23-2-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-1-I-1",
+      "file": "content/questions/H24-1/course2/H24-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H24-1-I-1",
+      "file": "content/questions/H24-1/course2/H24-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-1-I-2",
+      "file": "content/questions/H24-1/course2/H24-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-1-II",
+      "file": "content/questions/H24-1/course2/H24-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H24-1-II",
+      "file": "content/questions/H24-1/course2/H24-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-1-III",
+      "file": "content/questions/H24-1/course2/H24-1-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H24-1-III",
+      "file": "content/questions/H24-1/course2/H24-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-1-IV-1",
+      "file": "content/questions/H24-1/course2/H24-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H24-1-IV-1",
+      "file": "content/questions/H24-1/course2/H24-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-1-IV-2",
+      "file": "content/questions/H24-1/course2/H24-1-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H24-1-IV-2",
+      "file": "content/questions/H24-1/course2/H24-1-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-2-I-1",
+      "file": "content/questions/H24-2/course2/H24-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H24-2-I-1",
+      "file": "content/questions/H24-2/course2/H24-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-2-I-2",
+      "file": "content/questions/H24-2/course2/H24-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H24-2-I-2",
+      "file": "content/questions/H24-2/course2/H24-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-2-II",
+      "file": "content/questions/H24-2/course2/H24-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H24-2-II",
+      "file": "content/questions/H24-2/course2/H24-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-2-III",
+      "file": "content/questions/H24-2/course2/H24-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H24-2-III",
+      "file": "content/questions/H24-2/course2/H24-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-2-IV-1",
+      "file": "content/questions/H24-2/course2/H24-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H24-2-IV-1",
+      "file": "content/questions/H24-2/course2/H24-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H24-2-IV-2",
+      "file": "content/questions/H24-2/course2/H24-2-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H24-2-IV-2",
+      "file": "content/questions/H24-2/course2/H24-2-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-1-I-1",
+      "file": "content/questions/H25-1/course2/H25-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-1-I-2",
+      "file": "content/questions/H25-1/course2/H25-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-1-II-1",
+      "file": "content/questions/H25-1/course2/H25-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H25-1-II-1",
+      "file": "content/questions/H25-1/course2/H25-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-1-III-1",
+      "file": "content/questions/H25-1/course2/H25-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-1-IV-1",
+      "file": "content/questions/H25-1/course2/H25-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-1-IV-2",
+      "file": "content/questions/H25-1/course2/H25-1-IV-2.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "H25-1-IV-2",
+      "file": "content/questions/H25-1/course2/H25-1-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-2-I-1",
+      "file": "content/questions/H25-2/course2/H25-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H25-2-I-1",
+      "file": "content/questions/H25-2/course2/H25-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-2-I-2",
+      "file": "content/questions/H25-2/course2/H25-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H25-2-I-2",
+      "file": "content/questions/H25-2/course2/H25-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-2-II-1",
+      "file": "content/questions/H25-2/course2/H25-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H25-2-II-1",
+      "file": "content/questions/H25-2/course2/H25-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-2-III-1",
+      "file": "content/questions/H25-2/course2/H25-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H25-2-III-1",
+      "file": "content/questions/H25-2/course2/H25-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-2-IV-1",
+      "file": "content/questions/H25-2/course2/H25-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H25-2-IV-1",
+      "file": "content/questions/H25-2/course2/H25-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H25-2-IV-2",
+      "file": "content/questions/H25-2/course2/H25-2-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H25-2-IV-2",
+      "file": "content/questions/H25-2/course2/H25-2-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-1-I-1",
+      "file": "content/questions/H26-1/course2/H26-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H26-1-I-1",
+      "file": "content/questions/H26-1/course2/H26-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-1-I-2",
+      "file": "content/questions/H26-1/course2/H26-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H26-1-I-2",
+      "file": "content/questions/H26-1/course2/H26-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-1-II-1",
+      "file": "content/questions/H26-1/course2/H26-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H26-1-II-1",
+      "file": "content/questions/H26-1/course2/H26-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-1-III-1",
+      "file": "content/questions/H26-1/course2/H26-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-1-IV-1",
+      "file": "content/questions/H26-1/course2/H26-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-1-IV-2",
+      "file": "content/questions/H26-1/course2/H26-1-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H26-1-IV-2",
+      "file": "content/questions/H26-1/course2/H26-1-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-2-I-1",
+      "file": "content/questions/H26-2/course2/H26-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H26-2-I-1",
+      "file": "content/questions/H26-2/course2/H26-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-2-I-2",
+      "file": "content/questions/H26-2/course2/H26-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H26-2-I-2",
+      "file": "content/questions/H26-2/course2/H26-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-2-II-1",
+      "file": "content/questions/H26-2/course2/H26-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H26-2-II-1",
+      "file": "content/questions/H26-2/course2/H26-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-2-III-1",
+      "file": "content/questions/H26-2/course2/H26-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H26-2-III-1",
+      "file": "content/questions/H26-2/course2/H26-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-2-IV-1",
+      "file": "content/questions/H26-2/course2/H26-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H26-2-IV-1",
+      "file": "content/questions/H26-2/course2/H26-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H26-2-IV-2",
+      "file": "content/questions/H26-2/course2/H26-2-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H26-2-IV-2",
+      "file": "content/questions/H26-2/course2/H26-2-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H27-1-I-1",
+      "file": "content/questions/H27-1/course2/H27-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H27-1-I-1",
+      "file": "content/questions/H27-1/course2/H27-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H27-1-I-2",
+      "file": "content/questions/H27-1/course2/H27-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H27-1-I-2",
+      "file": "content/questions/H27-1/course2/H27-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H27-1-II-1",
+      "file": "content/questions/H27-1/course2/H27-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H27-1-II-1",
+      "file": "content/questions/H27-1/course2/H27-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H27-1-II-2",
+      "file": "content/questions/H27-1/course2/H27-1-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H27-1-III-1",
+      "file": "content/questions/H27-1/course2/H27-1-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H27-1-III-1",
+      "file": "content/questions/H27-1/course2/H27-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H27-1-IV-1",
+      "file": "content/questions/H27-1/course2/H27-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H27-1-IV-1",
+      "file": "content/questions/H27-1/course2/H27-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H27-2-I-1",
+      "file": "content/questions/H27-2/course2/H27-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H27-2-I-2",
+      "file": "content/questions/H27-2/course2/H27-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H27-2-II-1",
+      "file": "content/questions/H27-2/course2/H27-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H27-2-II-2",
+      "file": "content/questions/H27-2/course2/H27-2-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H27-2-III-1",
+      "file": "content/questions/H27-2/course2/H27-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H27-2-IV-1",
+      "file": "content/questions/H27-2/course2/H27-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-1-I-1",
+      "file": "content/questions/H28-1/course2/H28-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H28-1-I-1",
+      "file": "content/questions/H28-1/course2/H28-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-1-I-2",
+      "file": "content/questions/H28-1/course2/H28-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H28-1-I-2",
+      "file": "content/questions/H28-1/course2/H28-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-1-II-1",
+      "file": "content/questions/H28-1/course2/H28-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H28-1-II-1",
+      "file": "content/questions/H28-1/course2/H28-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-1-II-2",
+      "file": "content/questions/H28-1/course2/H28-1-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-1-III-1",
+      "file": "content/questions/H28-1/course2/H28-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-1-IV-1",
+      "file": "content/questions/H28-1/course2/H28-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (missing)",
+      "question_id": "H28-1-IV-1",
+      "file": "content/questions/H28-1/course2/H28-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-2-I-1",
+      "file": "content/questions/H28-2/course2/H28-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H28-2-I-1",
+      "file": "content/questions/H28-2/course2/H28-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-2-I-2",
+      "file": "content/questions/H28-2/course2/H28-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H28-2-I-2",
+      "file": "content/questions/H28-2/course2/H28-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-2-II-1",
+      "file": "content/questions/H28-2/course2/H28-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H28-2-II-1",
+      "file": "content/questions/H28-2/course2/H28-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-2-III-1",
+      "file": "content/questions/H28-2/course2/H28-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H28-2-III-1",
+      "file": "content/questions/H28-2/course2/H28-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-2-IV-1",
+      "file": "content/questions/H28-2/course2/H28-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H28-2-IV-1",
+      "file": "content/questions/H28-2/course2/H28-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H28-2-IV-2",
+      "file": "content/questions/H28-2/course2/H28-2-IV-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H28-2-IV-2",
+      "file": "content/questions/H28-2/course2/H28-2-IV-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-1-I-1",
+      "file": "content/questions/H29-1/course2/H29-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H29-1-I-1",
+      "file": "content/questions/H29-1/course2/H29-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-1-I-2",
+      "file": "content/questions/H29-1/course2/H29-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H29-1-I-2",
+      "file": "content/questions/H29-1/course2/H29-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-1-II-1",
+      "file": "content/questions/H29-1/course2/H29-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H29-1-II-1",
+      "file": "content/questions/H29-1/course2/H29-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-1-II-2",
+      "file": "content/questions/H29-1/course2/H29-1-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-1-III-1",
+      "file": "content/questions/H29-1/course2/H29-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-1-IV-1",
+      "file": "content/questions/H29-1/course2/H29-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "H29-1-IV-1",
+      "file": "content/questions/H29-1/course2/H29-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-2-I-1",
+      "file": "content/questions/H29-2/course2/H29-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H29-2-I-1",
+      "file": "content/questions/H29-2/course2/H29-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-2-I-2",
+      "file": "content/questions/H29-2/course2/H29-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H29-2-I-2",
+      "file": "content/questions/H29-2/course2/H29-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-2-II-1",
+      "file": "content/questions/H29-2/course2/H29-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H29-2-II-1",
+      "file": "content/questions/H29-2/course2/H29-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-2-II-2",
+      "file": "content/questions/H29-2/course2/H29-2-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H29-2-II-2",
+      "file": "content/questions/H29-2/course2/H29-2-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-2-III-1",
+      "file": "content/questions/H29-2/course2/H29-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "H29-2-III-1",
+      "file": "content/questions/H29-2/course2/H29-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H29-2-IV-1",
+      "file": "content/questions/H29-2/course2/H29-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H29-2-IV-1",
+      "file": "content/questions/H29-2/course2/H29-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-1-I-1",
+      "file": "content/questions/H30-1/course2/H30-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "H30-1-I-1",
+      "file": "content/questions/H30-1/course2/H30-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-1-I-2",
+      "file": "content/questions/H30-1/course2/H30-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H30-1-I-2",
+      "file": "content/questions/H30-1/course2/H30-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-1-II-1",
+      "file": "content/questions/H30-1/course2/H30-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H30-1-II-1",
+      "file": "content/questions/H30-1/course2/H30-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-1-II-2",
+      "file": "content/questions/H30-1/course2/H30-1-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-1-III-1",
+      "file": "content/questions/H30-1/course2/H30-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-1-IV-1",
+      "file": "content/questions/H30-1/course2/H30-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H30-1-IV-1",
+      "file": "content/questions/H30-1/course2/H30-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-2-I-1",
+      "file": "content/questions/H30-2/course2/H30-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H30-2-I-1",
+      "file": "content/questions/H30-2/course2/H30-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-2-I-2",
+      "file": "content/questions/H30-2/course2/H30-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H30-2-I-2",
+      "file": "content/questions/H30-2/course2/H30-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-2-II-1",
+      "file": "content/questions/H30-2/course2/H30-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H30-2-II-1",
+      "file": "content/questions/H30-2/course2/H30-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-2-II-2",
+      "file": "content/questions/H30-2/course2/H30-2-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H30-2-II-2",
+      "file": "content/questions/H30-2/course2/H30-2-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-2-III-1",
+      "file": "content/questions/H30-2/course2/H30-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H30-2-III-1",
+      "file": "content/questions/H30-2/course2/H30-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "H30-2-IV-1",
+      "file": "content/questions/H30-2/course2/H30-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "H30-2-IV-1",
+      "file": "content/questions/H30-2/course2/H30-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R01-1-I-1",
+      "file": "content/questions/R01-1/course2/R01-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "R01-1-I-1",
+      "file": "content/questions/R01-1/course2/R01-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R01-1-I-2",
+      "file": "content/questions/R01-1/course2/R01-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R01-1-II-1",
+      "file": "content/questions/R01-1/course2/R01-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R01-1-II-1",
+      "file": "content/questions/R01-1/course2/R01-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R01-1-II-2",
+      "file": "content/questions/R01-1/course2/R01-1-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "R01-1-II-2",
+      "file": "content/questions/R01-1/course2/R01-1-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R01-1-III-1",
+      "file": "content/questions/R01-1/course2/R01-1-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R01-1-III-1",
+      "file": "content/questions/R01-1/course2/R01-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R01-1-IV-1",
+      "file": "content/questions/R01-1/course2/R01-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (format)",
+      "question_id": "R01-1-IV-1",
+      "file": "content/questions/R01-1/course2/R01-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R02-2-I-1",
+      "file": "content/questions/R02-2/course2/R02-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R02-2-I-1",
+      "file": "content/questions/R02-2/course2/R02-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R02-2-I-2",
+      "file": "content/questions/R02-2/course2/R02-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "R02-2-I-2",
+      "file": "content/questions/R02-2/course2/R02-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R02-2-II-1",
+      "file": "content/questions/R02-2/course2/R02-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R02-2-II-1",
+      "file": "content/questions/R02-2/course2/R02-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R02-2-II-2",
+      "file": "content/questions/R02-2/course2/R02-2-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R02-2-II-2",
+      "file": "content/questions/R02-2/course2/R02-2-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R02-2-III-1",
+      "file": "content/questions/R02-2/course2/R02-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R02-2-III-1",
+      "file": "content/questions/R02-2/course2/R02-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R02-2-IV-1",
+      "file": "content/questions/R02-2/course2/R02-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R02-2-IV-1",
+      "file": "content/questions/R02-2/course2/R02-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-1-I-1",
+      "file": "content/questions/R03-1/course2/R03-1-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "R3-1-I-1",
+      "file": "content/questions/R03-1/course2/R03-1-I-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-1-I-1",
+      "file": "content/questions/R03-1/course2/R03-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-1-I-2",
+      "file": "content/questions/R03-1/course2/R03-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R3-1-I-2",
+      "file": "content/questions/R03-1/course2/R03-1-I-2.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-1-I-2",
+      "file": "content/questions/R03-1/course2/R03-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-1-II-1",
+      "file": "content/questions/R03-1/course2/R03-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R3-1-II-1",
+      "file": "content/questions/R03-1/course2/R03-1-II-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-1-II-1",
+      "file": "content/questions/R03-1/course2/R03-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-1-II-2",
+      "file": "content/questions/R03-1/course2/R03-1-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "R3-1-II-2",
+      "file": "content/questions/R03-1/course2/R03-1-II-2.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-1-II-2",
+      "file": "content/questions/R03-1/course2/R03-1-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-1-III-1",
+      "file": "content/questions/R03-1/course2/R03-1-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "R3-1-III-1",
+      "file": "content/questions/R03-1/course2/R03-1-III-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-1-III-1",
+      "file": "content/questions/R03-1/course2/R03-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-1-IV-1",
+      "file": "content/questions/R03-1/course2/R03-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "R3-1-IV-1",
+      "file": "content/questions/R03-1/course2/R03-1-IV-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-1-IV-1",
+      "file": "content/questions/R03-1/course2/R03-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-2-I-1",
+      "file": "content/questions/R03-2/course2/R03-2-I-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-2-I-1",
+      "file": "content/questions/R03-2/course2/R03-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-2-I-2",
+      "file": "content/questions/R03-2/course2/R03-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "R3-2-I-2",
+      "file": "content/questions/R03-2/course2/R03-2-I-2.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-2-I-2",
+      "file": "content/questions/R03-2/course2/R03-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-2-II-1",
+      "file": "content/questions/R03-2/course2/R03-2-II-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-2-II-1",
+      "file": "content/questions/R03-2/course2/R03-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-2-II-2",
+      "file": "content/questions/R03-2/course2/R03-2-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R3-2-II-2",
+      "file": "content/questions/R03-2/course2/R03-2-II-2.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-2-II-2",
+      "file": "content/questions/R03-2/course2/R03-2-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-2-III-1",
+      "file": "content/questions/R03-2/course2/R03-2-III-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-2-III-1",
+      "file": "content/questions/R03-2/course2/R03-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R3-2-IV-1",
+      "file": "content/questions/R03-2/course2/R03-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R3-2-IV-1",
+      "file": "content/questions/R03-2/course2/R03-2-IV-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R3-2-IV-1",
+      "file": "content/questions/R03-2/course2/R03-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-1-I-1",
+      "file": "content/questions/R04-1/course2/R04-1-I-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-1-I-1",
+      "file": "content/questions/R04-1/course2/R04-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-1-I-2",
+      "file": "content/questions/R04-1/course2/R04-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R4-1-I-2",
+      "file": "content/questions/R04-1/course2/R04-1-I-2.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-1-I-2",
+      "file": "content/questions/R04-1/course2/R04-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-1-II-1",
+      "file": "content/questions/R04-1/course2/R04-1-II-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-1-II-1",
+      "file": "content/questions/R04-1/course2/R04-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-1-II-2",
+      "file": "content/questions/R04-1/course2/R04-1-II-2.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-1-II-2",
+      "file": "content/questions/R04-1/course2/R04-1-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-1-III-1",
+      "file": "content/questions/R04-1/course2/R04-1-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R4-1-III-1",
+      "file": "content/questions/R04-1/course2/R04-1-III-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-1-III-1",
+      "file": "content/questions/R04-1/course2/R04-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-1-IV-1",
+      "file": "content/questions/R04-1/course2/R04-1-IV-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-1-IV-1",
+      "file": "content/questions/R04-1/course2/R04-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-2-I-1",
+      "file": "content/questions/R04-2/course2/R04-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "R4-2-I-1",
+      "file": "content/questions/R04-2/course2/R04-2-I-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-2-I-1",
+      "file": "content/questions/R04-2/course2/R04-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-2-I-2",
+      "file": "content/questions/R04-2/course2/R04-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R4-2-I-2",
+      "file": "content/questions/R04-2/course2/R04-2-I-2.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-2-I-2",
+      "file": "content/questions/R04-2/course2/R04-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-2-II-1",
+      "file": "content/questions/R04-2/course2/R04-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R4-2-II-1",
+      "file": "content/questions/R04-2/course2/R04-2-II-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-2-II-1",
+      "file": "content/questions/R04-2/course2/R04-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-2-II-2",
+      "file": "content/questions/R04-2/course2/R04-2-II-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "R4-2-II-2",
+      "file": "content/questions/R04-2/course2/R04-2-II-2.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-2-II-2",
+      "file": "content/questions/R04-2/course2/R04-2-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-2-III-1",
+      "file": "content/questions/R04-2/course2/R04-2-III-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (domain)",
+      "question_id": "R4-2-III-1",
+      "file": "content/questions/R04-2/course2/R04-2-III-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-2-III-1",
+      "file": "content/questions/R04-2/course2/R04-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R4-2-IV-1",
+      "file": "content/questions/R04-2/course2/R04-2-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R4-2-IV-1",
+      "file": "content/questions/R04-2/course2/R04-2-IV-1.json"
+    },
+    {
+      "code": "ANSWER_NOT_FOUND",
+      "message": "Answer group not found for question",
+      "question_id": "R4-2-IV-1",
+      "file": "content/questions/R04-2/course2/R04-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-1-I-1",
+      "file": "content/questions/R05-1/course2/R05-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-1-I-2",
+      "file": "content/questions/R05-1/course2/R05-1-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R05-1-I-2",
+      "file": "content/questions/R05-1/course2/R05-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-1-II-1",
+      "file": "content/questions/R05-1/course2/R05-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R05-1-II-1",
+      "file": "content/questions/R05-1/course2/R05-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-1-II-2",
+      "file": "content/questions/R05-1/course2/R05-1-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-1-III-1",
+      "file": "content/questions/R05-1/course2/R05-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-1-IV-1",
+      "file": "content/questions/R05-1/course2/R05-1-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-2-I-1",
+      "file": "content/questions/R05-2/course2/R05-2-I-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (goal)",
+      "question_id": "R05-2-I-1",
+      "file": "content/questions/R05-2/course2/R05-2-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-2-I-2",
+      "file": "content/questions/R05-2/course2/R05-2-I-2.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R05-2-I-2",
+      "file": "content/questions/R05-2/course2/R05-2-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-2-II-1",
+      "file": "content/questions/R05-2/course2/R05-2-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R05-2-II-1",
+      "file": "content/questions/R05-2/course2/R05-2-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-2-II-2",
+      "file": "content/questions/R05-2/course2/R05-2-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-2-III-1",
+      "file": "content/questions/R05-2/course2/R05-2-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R05-2-IV-1",
+      "file": "content/questions/R05-2/course2/R05-2-IV-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R06-1-I-1",
+      "file": "content/questions/R06-1/course2/R06-1-I-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R06-1-I-2",
+      "file": "content/questions/R06-1/course2/R06-1-I-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R06-1-II-1",
+      "file": "content/questions/R06-1/course2/R06-1-II-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R06-1-II-1",
+      "file": "content/questions/R06-1/course2/R06-1-II-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R06-1-II-2",
+      "file": "content/questions/R06-1/course2/R06-1-II-2.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R06-1-III-1",
+      "file": "content/questions/R06-1/course2/R06-1-III-1.json"
+    },
+    {
+      "code": "TAGS_MISSING",
+      "message": "tags are missing or empty",
+      "question_id": "R06-1-IV-1",
+      "file": "content/questions/R06-1/course2/R06-1-IV-1.json"
+    },
+    {
+      "code": "PATTERN_ID_INVALID",
+      "message": "pattern_id is missing or invalid (mechanism)",
+      "question_id": "R06-1-IV-1",
+      "file": "content/questions/R06-1/course2/R06-1-IV-1.json"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H18-2-IV-2",
+      "file": "content/questions/H18-2/course2/H18-2-IV-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H19-1-I-2",
+      "file": "content/questions/H19-1/course2/H19-1-I-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/H24-1/course2/H24-1-II.zh.md",
+      "question_id": "H24-1-II",
+      "file": "content/questions/H24-1/course2/H24-1-II-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/H24-1/course2/H24-1-III.zh.md",
+      "question_id": "H24-1-III",
+      "file": "content/questions/H24-1/course2/H24-1-III-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/H24-2/course2/H24-2-II.zh.md",
+      "question_id": "H24-2-II",
+      "file": "content/questions/H24-2/course2/H24-2-II-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/H24-2/course2/H24-2-III.zh.md",
+      "question_id": "H24-2-III",
+      "file": "content/questions/H24-2/course2/H24-2-III-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H27-2-I-1",
+      "file": "content/questions/H27-2/course2/H27-2-I-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H27-2-I-2",
+      "file": "content/questions/H27-2/course2/H27-2-I-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H27-2-II-1",
+      "file": "content/questions/H27-2/course2/H27-2-II-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H27-2-II-2",
+      "file": "content/questions/H27-2/course2/H27-2-II-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H27-2-III-1",
+      "file": "content/questions/H27-2/course2/H27-2-III-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H27-2-IV-1",
+      "file": "content/questions/H27-2/course2/H27-2-IV-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H28-1-IV-1",
+      "file": "content/questions/H28-1/course2/H28-1-IV-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H29-2-I-1",
+      "file": "content/questions/H29-2/course2/H29-2-I-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H29-2-I-2",
+      "file": "content/questions/H29-2/course2/H29-2-I-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H29-2-II-1",
+      "file": "content/questions/H29-2/course2/H29-2-II-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H29-2-II-2",
+      "file": "content/questions/H29-2/course2/H29-2-II-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H29-2-III-1",
+      "file": "content/questions/H29-2/course2/H29-2-III-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "H29-2-IV-1",
+      "file": "content/questions/H29-2/course2/H29-2-IV-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "R3-1-I-1",
+      "file": "content/questions/R03-1/course2/R03-1-I-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "R3-1-I-2",
+      "file": "content/questions/R03-1/course2/R03-1-I-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "R3-1-II-1",
+      "file": "content/questions/R03-1/course2/R03-1-II-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "R3-1-II-2",
+      "file": "content/questions/R03-1/course2/R03-1-II-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "R3-1-III-1",
+      "file": "content/questions/R03-1/course2/R03-1-III-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_MISSING",
+      "message": "solution_ref is missing",
+      "question_id": "R3-1-IV-1",
+      "file": "content/questions/R03-1/course2/R03-1-IV-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R3-2/course2/R3-2-I-1.zh.md",
+      "question_id": "R3-2-I-1",
+      "file": "content/questions/R03-2/course2/R03-2-I-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R3-2/course2/R3-2-I-2.zh.md",
+      "question_id": "R3-2-I-2",
+      "file": "content/questions/R03-2/course2/R03-2-I-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R3-2/course2/R3-2-II-1.zh.md",
+      "question_id": "R3-2-II-1",
+      "file": "content/questions/R03-2/course2/R03-2-II-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R3-2/course2/R3-2-II-2.zh.md",
+      "question_id": "R3-2-II-2",
+      "file": "content/questions/R03-2/course2/R03-2-II-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R3-2/course2/R3-2-III-1.zh.md",
+      "question_id": "R3-2-III-1",
+      "file": "content/questions/R03-2/course2/R03-2-III-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R3-2/course2/R3-2-IV-1.zh.md",
+      "question_id": "R3-2-IV-1",
+      "file": "content/questions/R03-2/course2/R03-2-IV-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R4-1/course2/R4-1-I-1.zh.md",
+      "question_id": "R4-1-I-1",
+      "file": "content/questions/R04-1/course2/R04-1-I-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R4-1/course2/R4-1-I-2.zh.md",
+      "question_id": "R4-1-I-2",
+      "file": "content/questions/R04-1/course2/R04-1-I-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R4-1/course2/R4-1-II-1.zh.md",
+      "question_id": "R4-1-II-1",
+      "file": "content/questions/R04-1/course2/R04-1-II-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R4-1/course2/R4-1-II-2.zh.md",
+      "question_id": "R4-1-II-2",
+      "file": "content/questions/R04-1/course2/R04-1-II-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R4-1/course2/R4-1-III-1.zh.md",
+      "question_id": "R4-1-III-1",
+      "file": "content/questions/R04-1/course2/R04-1-III-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: solutions/R4-1/course2/R4-1-IV-1.zh.md",
+      "question_id": "R4-1-IV-1",
+      "file": "content/questions/R04-1/course2/R04-1-IV-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: answers/ai_ans.json#R4-2-I-1",
+      "question_id": "R4-2-I-1",
+      "file": "content/questions/R04-2/course2/R04-2-I-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: answers/ai_ans.json#R4-2-I-2",
+      "question_id": "R4-2-I-2",
+      "file": "content/questions/R04-2/course2/R04-2-I-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: answers/ai_ans.json#R4-2-II-1",
+      "question_id": "R4-2-II-1",
+      "file": "content/questions/R04-2/course2/R04-2-II-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: answers/ai_ans.json#R4-2-II-2",
+      "question_id": "R4-2-II-2",
+      "file": "content/questions/R04-2/course2/R04-2-II-2.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: answers/ai_ans.json#R4-2-III-1",
+      "question_id": "R4-2-III-1",
+      "file": "content/questions/R04-2/course2/R04-2-III-1.json"
+    },
+    {
+      "code": "SOLUTION_REF_NOT_FOUND",
+      "message": "solution_ref file not found: answers/ai_ans.json#R4-2-IV-1",
+      "question_id": "R4-2-IV-1",
+      "file": "content/questions/R04-2/course2/R04-2-IV-1.json"
+    }
+  ],
+  "stats": {
+    "question_count": 234,
+    "error_count": 362,
+    "warning_count": 43
+  }
+}
