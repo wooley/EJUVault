@@ -3,6 +3,30 @@ const examQuestions = document.getElementById('exam-questions');
 const examSummary = document.getElementById('exam-summary');
 let activeExamId = null;
 
+function formatExamIdForDisplay(examId) {
+  if (!examId) {
+    return '';
+  }
+  const match = String(examId).match(/^R(\d+)-(\d+)$/);
+  if (!match) {
+    return examId;
+  }
+  const padded = match[1].padStart(2, '0');
+  return `R${padded}-${match[2]}`;
+}
+
+function formatQuestionIdForDisplay(questionId) {
+  if (!questionId) {
+    return '';
+  }
+  const match = String(questionId).match(/^R(\d+)-(\d+)-(I|II|III|IV)-(\d+)$/);
+  if (!match) {
+    return questionId;
+  }
+  const padded = match[1].padStart(2, '0');
+  return `R${padded}-${match[2]}-${match[3]}-${match[4]}`;
+}
+
 function getHeaders() {
   const headers = { 'Content-Type': 'application/json' };
   const token = localStorage.getItem('eju_admin_token');
@@ -34,7 +58,7 @@ async function loadExams() {
     card.type = 'button';
     card.className = 'exam-card';
     card.dataset.examId = examId;
-    card.textContent = examId;
+    card.textContent = formatExamIdForDisplay(examId);
     card.addEventListener('click', () => {
       setActiveExam(examId);
       loadQuestions(examId);
@@ -82,7 +106,7 @@ async function loadQuestions(examId) {
   const questionIds = sequence.map((entry) => entry.question_id).filter(Boolean);
   sessionStorage.setItem('admin_exam_id', examId);
   sessionStorage.setItem('admin_exam_questions', JSON.stringify(questionIds));
-  examSummary.textContent = `Exam ${examId} · Total questions: ${questions.length}`;
+  examSummary.textContent = `Exam ${formatExamIdForDisplay(examId)} · Total questions: ${questions.length}`;
   const groups = groupBySection(questions);
   examQuestions.innerHTML = '';
   for (const [section, list] of groups.entries()) {
@@ -96,7 +120,7 @@ async function loadQuestions(examId) {
     list.forEach((q) => {
       const row = document.createElement('div');
       row.className = 'result-sub';
-      row.innerHTML = `<a href="/admin/question/${q.question_id}/edit?exam_id=${encodeURIComponent(examId)}">${q.question_id}</a>`;
+      row.innerHTML = `<a href="/admin/question/${q.question_id}/edit?exam_id=${encodeURIComponent(examId)}">${formatQuestionIdForDisplay(q.question_id)}</a>`;
       sectionCard.appendChild(row);
     });
 

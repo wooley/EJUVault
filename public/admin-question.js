@@ -68,8 +68,20 @@ function getQuestionIdFromLocation() {
   return fromQuery ? fromQuery.trim() : null;
 }
 
+function formatQuestionIdForDisplay(questionId) {
+  if (!questionId) {
+    return '';
+  }
+  const match = String(questionId).match(/^R(\d+)-(\d+)-(I|II|III|IV)-(\d+)$/);
+  if (!match) {
+    return questionId;
+  }
+  const padded = match[1].padStart(2, '0');
+  return `R${padded}-${match[2]}-${match[3]}-${match[4]}`;
+}
+
 const questionId = getQuestionIdFromLocation();
-questionIdEl.textContent = questionId || 'Unknown';
+questionIdEl.textContent = questionId ? formatQuestionIdForDisplay(questionId) : 'Unknown';
 pendingStatus = readPendingStatus();
 
 function getHeaders() {
