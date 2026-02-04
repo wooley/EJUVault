@@ -1,0 +1,4908 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-01-30T08:57:07.415Z",
+  "questions": [
+    {
+      "question_id": "H17-1-I-1",
+      "exam_id": "H17-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_VERTEX",
+      "tags": [
+        "domain:いろいろな式",
+        "skill:多項式の除法",
+        "course_specific:数学2_only"
+      ],
+      "difficulty_level": 3,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "(1)",
+        "group": "A/BCDEF; (2) G/H/IJ/KL"
+      },
+      "solution_ref": "data/solutions/H17-1/course2/H17-1-I-1.zh.md",
+      "question_path": "content/questions/H17-1/course2/H17-1-I-1.json"
+    },
+    {
+      "question_id": "H17-1-I-2",
+      "exam_id": "H17-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": null,
+      "tags": [
+        "domain:集合と命題",
+        "skill:命題と条件",
+        "course_specific:数学2_only"
+      ],
+      "difficulty_level": 2,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "(1)-(5)",
+        "group": "M/N/O/P/Q"
+      },
+      "solution_ref": "data/solutions/H17-1/course2/H17-1-I-2.zh.md",
+      "question_path": "content/questions/H17-1/course2/H17-1-I-2.json"
+    },
+    {
+      "question_id": "H17-1-II-1",
+      "exam_id": "H17-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": null,
+      "tags": [
+        "domain:数と式",
+        "skill:根号を含む式の計算"
+      ],
+      "difficulty_level": 3,
+      "answer_ref": {
+        "exam_id": "H17-1",
+        "course": 2,
+        "section": "II",
+        "question_number": 1,
+        "q": "Q1"
+      },
+      "solution_ref": "data/solutions/H17-1/course2/H17-1-II-1.zh.md",
+      "question_path": "content/questions/H17-1/course2/H17-1-II-1.json"
+    },
+    {
+      "question_id": "H17-1-II-2",
+      "exam_id": "H17-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": null,
+      "tags": [
+        "domain:二次関数",
+        "skill:二次関数のグラフ",
+        "skill:二次関数の最大最小"
+      ],
+      "difficulty_level": 4,
+      "answer_ref": {
+        "exam_id": "H17-1",
+        "course": 2,
+        "section": "II",
+        "question_number": 2,
+        "q": "Q2"
+      },
+      "solution_ref": "data/solutions/H17-1/course2/H17-1-II-2.zh.md",
+      "question_path": "content/questions/H17-1/course2/H17-1-II-2.json"
+    },
+    {
+      "question_id": "H17-1-III-1",
+      "exam_id": "H17-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": null,
+      "tags": [
+        "domain:図形と計量",
+        "domain:ベクトル",
+        "skill:正弦定理・余弦定理",
+        "skill:重心ベクトル",
+        "skill:内分点ベクトル",
+        "skill:共線条件"
+      ],
+      "difficulty_level": 3,
+      "answer_ref": {
+        "exam_id": "H17-1",
+        "course": 2,
+        "section": "III",
+        "question_number": 1,
+        "q": "Q1"
+      },
+      "solution_ref": "data/solutions/H17-1/course2/H17-1-III-1.zh.md",
+      "question_path": "content/questions/H17-1/course2/H17-1-III-1.json"
+    },
+    {
+      "question_id": "H17-1-III-2",
+      "exam_id": "H17-1",
+      "course": 2,
+      "section": "III",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": null,
+      "tags": [
+        "domain:三角関数",
+        "domain:微分・最大最小",
+        "skill:三倍角・二倍角",
+        "skill:置換 t=cosx",
+        "skill:最大最小（区間）"
+      ],
+      "difficulty_level": 4,
+      "answer_ref": {
+        "exam_id": "H17-1",
+        "course": 2,
+        "section": "III",
+        "question_number": 2,
+        "q": "Q2"
+      },
+      "solution_ref": "data/solutions/H17-1/course2/H17-1-III-2.zh.md",
+      "question_path": "content/questions/H17-1/course2/H17-1-III-2.json"
+    },
+    {
+      "question_id": "H17-1-IV-1",
+      "exam_id": "H17-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": null,
+      "tags": [
+        "domain:微分方程・積分",
+        "skill:積分方程→微分方程",
+        "skill:指数関数の積分"
+      ],
+      "difficulty_level": 4,
+      "answer_ref": {
+        "exam_id": "H17-1",
+        "course": 2,
+        "section": "IV",
+        "question_number": 1,
+        "q": "Q1"
+      },
+      "solution_ref": "data/solutions/H17-1/course2/H17-1-IV-1.zh.md",
+      "question_path": "content/questions/H17-1/course2/H17-1-IV-1.json"
+    },
+    {
+      "question_id": "H17-1-IV-2",
+      "exam_id": "H17-1",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": null,
+      "tags": [
+        "domain:積分（面積）",
+        "domain:微分・最大最小",
+        "skill:面積計算",
+        "skill:関数の最大最小"
+      ],
+      "difficulty_level": 3,
+      "answer_ref": {
+        "exam_id": "H17-1",
+        "course": 2,
+        "section": "IV",
+        "question_number": 2,
+        "q": "Q2"
+      },
+      "solution_ref": "data/solutions/H17-1/course2/H17-1-IV-2.zh.md",
+      "question_path": "content/questions/H17-1/course2/H17-1-IV-2.json"
+    },
+    {
+      "question_id": "H17-2-I-1",
+      "exam_id": "H17-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in_blank",
+      "pattern_id": null,
+      "tags": [],
+      "difficulty_level": 2,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "",
+        "group": "A-R"
+      },
+      "solution_ref": "data/solutions/H17-2/course2/H17-2-I-1.zh.md",
+      "question_path": "content/questions/H17-2/course2/H17-2-I-1.json"
+    },
+    {
+      "question_id": "H17-2-I-2",
+      "exam_id": "H17-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "multiple_choice",
+      "pattern_id": null,
+      "tags": [],
+      "difficulty_level": 2,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "(1)-(5)",
+        "group": "S/T/U/V/W"
+      },
+      "solution_ref": "data/solutions/H17-2/course2/H17-2-I-2.zh.md",
+      "question_path": "content/questions/H17-2/course2/H17-2-I-2.json"
+    },
+    {
+      "question_id": "H17-2-II-1",
+      "exam_id": "H17-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_DIRECT_EXPAND",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/B/CD/E/F/G/H/I/J/K"
+      },
+      "solution_ref": "solutions/H17-2/course2/H17-2-II-1.zh.md",
+      "question_path": "content/questions/H17-2/course2/H17-2-II-1.json"
+    },
+    {
+      "question_id": "H17-2-II-2",
+      "exam_id": "H17-2",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "(1)(2)",
+        "group": "L/MN/O/PQ/R/S/T/U/V/W/XY"
+      },
+      "solution_ref": "solutions/H17-2/course2/H17-2-II-2.zh.md",
+      "question_path": "content/questions/H17-2/course2/H17-2-II-2.json"
+    },
+    {
+      "question_id": "H17-2-III-1",
+      "exam_id": "H17-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_TRANSFORM_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/CD/E/F/G"
+      },
+      "solution_ref": "solutions/H17-2/course2/H17-2-III-1.zh.md",
+      "question_path": "content/questions/H17-2/course2/H17-2-III-1.json"
+    },
+    {
+      "question_id": "H17-2-III-2",
+      "exam_id": "H17-2",
+      "course": 2,
+      "section": "III",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "VEC_RATIO_INTERNAL",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q2",
+        "sub": "(1)(2)",
+        "group": "H/I/J/K/L/M/NO/PQ"
+      },
+      "solution_ref": "solutions/H17-2/course2/H17-2-III-2.zh.md",
+      "question_path": "content/questions/H17-2/course2/H17-2-III-2.json"
+    },
+    {
+      "question_id": "H17-2-IV-1",
+      "exam_id": "H17-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_DIRECT_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/BC/D/E/F/G/HI/J"
+      },
+      "solution_ref": "solutions/H17-2/course2/H17-2-IV-1.zh.md",
+      "question_path": "content/questions/H17-2/course2/H17-2-IV-1.json"
+    },
+    {
+      "question_id": "H17-2-IV-2",
+      "exam_id": "H17-2",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_ELIMINATION_SOLVE_X",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": null,
+        "group": "KL/M/NO"
+      },
+      "solution_ref": "solutions/H17-2/course2/H17-2-IV-2.zh.md",
+      "question_path": "content/questions/H17-2/course2/H17-2-IV-2.json"
+    },
+    {
+      "question_id": "H18-1-I-1",
+      "exam_id": "H18-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_TRANSFORM_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "(all)",
+        "group": "AB/C,DE/F,GH,I,J/K"
+      },
+      "solution_ref": "data/solutions/H18-1/course2/H18-1-I-1.zh.md",
+      "question_path": "content/questions/H18-1/course2/H18-1-I-1.json"
+    },
+    {
+      "question_id": "H18-1-I-2",
+      "exam_id": "H18-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "QF_INTERVAL_COUNT_INT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "(all)",
+        "group": "L,M,N,OP,Q,R"
+      },
+      "solution_ref": "data/solutions/H18-1/course2/H18-1-I-2.zh.md",
+      "question_path": "content/questions/H18-1/course2/H18-1-I-2.json"
+    },
+    {
+      "question_id": "H18-1-II-1",
+      "exam_id": "H18-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ABS_INTERSECTION_COUNT_PARAM_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "(all)",
+        "group": "A,B,C/D,E/F"
+      },
+      "solution_ref": "data/solutions/H18-1/course2/H18-1-II-1.zh.md",
+      "question_path": "content/questions/H18-1/course2/H18-1-II-1.json"
+    },
+    {
+      "question_id": "H18-1-II-2",
+      "exam_id": "H18-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "SEQ_SUM_RECUR_DERIVE_CLOSED_FORM_LIMIT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "(all)",
+        "group": "G,H,I,J,K,L,M,N/O"
+      },
+      "solution_ref": "data/solutions/H18-1/course2/H18-1-II-2.zh.md",
+      "question_path": "content/questions/H18-1/course2/H18-1-II-2.json"
+    },
+    {
+      "question_id": "H18-1-III-1",
+      "exam_id": "H18-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_ORTHO_LENGTH",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "(all)",
+        "group": "A,B"
+      },
+      "solution_ref": "data/solutions/H18-1/course2/H18-1-III-1.zh.md",
+      "question_path": "content/questions/H18-1/course2/H18-1-III-1.json"
+    },
+    {
+      "question_id": "H18-1-III-2",
+      "exam_id": "H18-1",
+      "course": 2,
+      "section": "III",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CIRCLE_LINE_SLOPE_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q2",
+        "sub": "(all)",
+        "group": "OP/QR/STU/V"
+      },
+      "solution_ref": "data/solutions/H18-1/course2/H18-1-III-2.zh.md",
+      "question_path": "content/questions/H18-1/course2/H18-1-III-2.json"
+    },
+    {
+      "question_id": "H18-1-IV-1",
+      "exam_id": "H18-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_CHAIN_RULE_LOG_RATIONAL",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "(all)",
+        "group": "A/B,C,D,E,F,GH,I,J/K"
+      },
+      "solution_ref": "data/solutions/H18-1/course2/H18-1-IV-1.zh.md",
+      "question_path": "content/questions/H18-1/course2/H18-1-IV-1.json"
+    },
+    {
+      "question_id": "H18-1-IV-2",
+      "exam_id": "H18-1",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "INTEGRAL_ABS_PARAM_PIECEWISE_MIN",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": "(all)",
+        "group": "L,M,NO,P,Q,R,S,T,U,V,W,X"
+      },
+      "solution_ref": "data/solutions/H18-1/course2/H18-1-IV-2.zh.md",
+      "question_path": "content/questions/H18-1/course2/H18-1-IV-2.json"
+    },
+    {
+      "question_id": "H18-2-I-1",
+      "exam_id": "H18-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_VERTEX",
+      "tags": [
+        "二次関数",
+        "平方完成",
+        "最大最小",
+        "区間"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/E/FG"
+      },
+      "solution_ref": "data/solutions/H18-2/course2/H18-2-I-1.zh.md",
+      "question_path": "content/questions/H18-2/course2/H18-2-I-1.json"
+    },
+    {
+      "question_id": "H18-2-I-2",
+      "exam_id": "H18-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_INTERVAL_FIND_RANGE",
+      "tags": [
+        "集合",
+        "数直線",
+        "補集合",
+        "必要十分条件"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": null,
+        "group": "H/I/J/K/L"
+      },
+      "solution_ref": "data/solutions/H18-2/course2/H18-2-I-2.zh.md",
+      "question_path": "content/questions/H18-2/course2/H18-2-I-2.json"
+    },
+    {
+      "question_id": "H18-2-II-1",
+      "exam_id": "H18-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_ELIMINATION_SOLVE_X",
+      "tags": [
+        "連立",
+        "比",
+        "対称式"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": null,
+        "group": "AB/C/DE"
+      },
+      "solution_ref": "data/solutions/H18-2/course2/H18-2-II-1.zh.md",
+      "question_path": "content/questions/H18-2/course2/H18-2-II-1.json"
+    },
+    {
+      "question_id": "H18-2-II-2",
+      "exam_id": "H18-2",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "SEQ_CONSTRAINT_FIND_N",
+      "tags": [
+        "等差数列",
+        "公差",
+        "条件反推",
+        "和"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": null,
+        "group": "FG/HI/J/KLM/N/O"
+      },
+      "solution_ref": "data/solutions/H18-2/course2/H18-2-II-2.zh.md",
+      "question_path": "content/questions/H18-2/course2/H18-2-II-2.json"
+    },
+    {
+      "question_id": "H18-2-III-1",
+      "exam_id": "H18-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_RATIO_INTERNAL",
+      "tags": [
+        "ベクトル",
+        "内分",
+        "交点"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/BC/D/E/F/G"
+      },
+      "solution_ref": "data/solutions/H18-2/course2/H18-2-III-1.zh.md",
+      "question_path": "content/questions/H18-2/course2/H18-2-III-1.json"
+    },
+    {
+      "question_id": "H18-2-III-2",
+      "exam_id": "H18-2",
+      "course": 2,
+      "section": "III",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_MINMAX",
+      "tags": [
+        "三角関数",
+        "最大最小",
+        "対数",
+        "底の変換"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q2",
+        "sub": null,
+        "group": "HI/J/KLM/NOP/QR/S/T"
+      },
+      "solution_ref": "data/solutions/H18-2/course2/H18-2-III-2.zh.md",
+      "question_path": "content/questions/H18-2/course2/H18-2-III-2.json"
+    },
+    {
+      "question_id": "H18-2-IV-1",
+      "exam_id": "H18-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_RATE_SOLVE_PARAM",
+      "tags": [
+        "対数関数",
+        "微分",
+        "極値",
+        "パラメータ"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/E/F/G"
+      },
+      "solution_ref": "data/solutions/H18-2/course2/H18-2-IV-1.zh.md",
+      "question_path": "content/questions/H18-2/course2/H18-2-IV-1.json"
+    },
+    {
+      "question_id": "H18-2-IV-2",
+      "exam_id": "H18-2",
+      "course": "course2",
+      "section": "IV",
+      "order": null,
+      "type": "fill_in",
+      "pattern_id": "CALC_TRANSFORM_SOLVE_X",
+      "tags": [
+        "calculus",
+        "trigonometry",
+        "definite_integral",
+        "absolute_value",
+        "periodic_function",
+        "limit"
+      ],
+      "difficulty_level": 3,
+      "answer_ref": {
+        "destination": "official/course2.json",
+        "keys": [
+          "H",
+          "I",
+          "J",
+          "K"
+        ],
+        "course": "course2",
+        "section": "IV",
+        "q": "Q2"
+      },
+      "solution_ref": null,
+      "question_path": "content/questions/H18-2/course2/H18-2-IV-2.json"
+    },
+    {
+      "question_id": "H19-1-I-1",
+      "exam_id": "H19-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "quad_min_on_interval_param_case",
+      "tags": [
+        "二次函数",
+        "平方完成",
+        "区间最值",
+        "参数讨论"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "",
+        "group": "A-O"
+      },
+      "solution_ref": "solutions/H19-1/course2/H19-1-I-1.zh.md",
+      "question_path": "content/questions/H19-1/course2/H19-1-I-1.json"
+    },
+    {
+      "question_id": "H19-1-I-2",
+      "exam_id": "H19-1",
+      "course": 2,
+      "section": "I",
+      "order": null,
+      "type": "fill_in",
+      "pattern_id": "SET-INTERVAL-CONDITION",
+      "tags": [
+        "集合",
+        "绝对值不等式",
+        "必要条件",
+        "参数范围"
+      ],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H19-1/course2/H19-1-I-2.json"
+    },
+    {
+      "question_id": "H19-1-II-1",
+      "exam_id": "H19-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ineq_square_sum_triangle_condition",
+      "tags": [
+        "不等式",
+        "平方和非负",
+        "三角不等式",
+        "符号判断"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A-J"
+      },
+      "solution_ref": "solutions/H19-1/course2/H19-1-II-1.zh.md",
+      "question_path": "content/questions/H19-1/course2/H19-1-II-1.json"
+    },
+    {
+      "question_id": "H19-1-II-2",
+      "exam_id": "H19-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "sequence_sqrt_sum_linearization",
+      "tags": [
+        "数列",
+        "递推",
+        "配方",
+        "求通项"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "(1)(2)(3)",
+        "group": "K/LMNOP/Q"
+      },
+      "solution_ref": "solutions/H19-1/course2/H19-1-II-2.zh.md",
+      "question_path": "content/questions/H19-1/course2/H19-1-II-2.json"
+    },
+    {
+      "question_id": "H19-1-III-1",
+      "exam_id": "H19-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "vector_triangle_bisector_perpendicular",
+      "tags": [
+        "向量",
+        "重心",
+        "角平分线",
+        "垂线"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "(1)(2)(3)",
+        "group": "A-L"
+      },
+      "solution_ref": "solutions/H19-1/course2/H19-1-III-1.zh.md",
+      "question_path": "content/questions/H19-1/course2/H19-1-III-1.json"
+    },
+    {
+      "question_id": "H19-1-III-2",
+      "exam_id": "H19-1",
+      "course": 2,
+      "section": "III",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "log_circle_range_xy",
+      "tags": [
+        "对数",
+        "平方完成",
+        "圆与直线",
+        "范围最值"
+      ],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": "solutions/H19-1/course2/H19-1-III-2.zh.md",
+      "question_path": "content/questions/H19-1/course2/H19-1-III-2.json"
+    },
+    {
+      "question_id": "H19-1-IV-1",
+      "exam_id": "H19-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "derivative_tangent_slope_match",
+      "tags": [
+        "导数",
+        "切线",
+        "斜率匹配"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A-L"
+      },
+      "solution_ref": "solutions/H19-1/course2/H19-1-IV-1.zh.md",
+      "question_path": "content/questions/H19-1/course2/H19-1-IV-1.json"
+    },
+    {
+      "question_id": "H19-1-IV-2",
+      "exam_id": "H19-1",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "integral_quadratic_param_min",
+      "tags": [
+        "定积分",
+        "参数最值",
+        "二次函数",
+        "配方"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": "(1)",
+        "group": "M-Y"
+      },
+      "solution_ref": "solutions/H19-1/course2/H19-1-IV-2.zh.md",
+      "question_path": "content/questions/H19-1/course2/H19-1-IV-2.json"
+    },
+    {
+      "question_id": "H19-2-I-1",
+      "exam_id": "H19-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "parabola_translation_parameter_solve",
+      "tags": [
+        "放物線",
+        "平行移動",
+        "パラメータ"
+      ],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": "solutions/H19-2/course2/H19-2-I-1.zh.md",
+      "question_path": "content/questions/H19-2/course2/H19-2-I-1.json"
+    },
+    {
+      "question_id": "H19-2-I-2",
+      "exam_id": "H19-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ineq_rhs_nonneg_equivalence",
+      "tags": [
+        "不等式",
+        "必要十分条件",
+        "パラメータ"
+      ],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": "solutions/H19-2/course2/H19-2-I-2.zh.md",
+      "question_path": "content/questions/H19-2/course2/H19-2-I-2.json"
+    },
+    {
+      "question_id": "H19-2-II-1",
+      "exam_id": "H19-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "INT_CONSTRAINT_COUNT_INT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "all",
+        "group": "AB/CDEF/GH/I"
+      },
+      "solution_ref": "solutions/H19-2/course2/H19-2-II-1.zh.md",
+      "question_path": "content/questions/H19-2/course2/H19-2-II-1.json"
+    },
+    {
+      "question_id": "H19-2-II-2",
+      "exam_id": "H19-2",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "SEQ_ARITH_DIRECT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "all",
+        "group": "JKL/MNOPQR/ST/U"
+      },
+      "solution_ref": "solutions/H19-2/course2/H19-2-II-2.zh.md",
+      "question_path": "content/questions/H19-2/course2/H19-2-II-2.json"
+    },
+    {
+      "question_id": "H19-2-III-1",
+      "exam_id": "H19-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_COORD_DIRECT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "all",
+        "group": "ABCD/EF/G/HI/JK/LM"
+      },
+      "solution_ref": "solutions/H19-2/course2/H19-2-III-1.zh.md",
+      "question_path": "content/questions/H19-2/course2/H19-2-III-1.json"
+    },
+    {
+      "question_id": "H19-2-III-2",
+      "exam_id": "H19-2",
+      "course": 2,
+      "section": "III",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_INEQ",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q2",
+        "sub": "all",
+        "group": "NO/PQ/RSTU"
+      },
+      "solution_ref": "solutions/H19-2/course2/H19-2-III-2.zh.md",
+      "question_path": "content/questions/H19-2/course2/H19-2-III-2.json"
+    },
+    {
+      "question_id": "H19-2-IV-1",
+      "exam_id": "H19-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_INTEGRAL_AREA",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "all",
+        "group": "AB/CDEF/GHIJKL"
+      },
+      "solution_ref": "solutions/H19-2/course2/H19-2-IV-1.zh.md",
+      "question_path": "content/questions/H19-2/course2/H19-2-IV-1.json"
+    },
+    {
+      "question_id": "H19-2-IV-2",
+      "exam_id": "H19-2",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_EXP_MINMAX_ROOTS",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": "all",
+        "group": "MNOP/QRST/U"
+      },
+      "solution_ref": "solutions/H19-2/course2/H19-2-IV-2.zh.md",
+      "question_path": "content/questions/H19-2/course2/H19-2-IV-2.json"
+    },
+    {
+      "question_id": "H20-1-I-1",
+      "exam_id": "H20-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QUAD_COMPLETE_SQUARE_INTERVAL",
+      "tags": [
+        "二次関数",
+        "平方完成",
+        "区間最大最小"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "1"
+      },
+      "solution_ref": "solutions/H20-1/course2/H20-1-I-1.zh.md",
+      "question_path": "content/questions/H20-1/course2/H20-1-I-1.json"
+    },
+    {
+      "question_id": "H20-1-I-2",
+      "exam_id": "H20-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "POLY_IDENTITY_FACTOR_SET",
+      "tags": [
+        "整式",
+        "因式分解",
+        "集合"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "2"
+      },
+      "solution_ref": "solutions/H20-1/course2/H20-1-I-2.zh.md",
+      "question_path": "content/questions/H20-1/course2/H20-1-I-2.json"
+    },
+    {
+      "question_id": "H20-1-II-1",
+      "exam_id": "H20-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "SEQ_AP_SOLVE_SUM_GEOM",
+      "tags": [
+        "等差数列",
+        "和の公式",
+        "等比数列"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "1"
+      },
+      "solution_ref": "solutions/H20-1/course2/H20-1-II-1.zh.md",
+      "question_path": "content/questions/H20-1/course2/H20-1-II-1.json"
+    },
+    {
+      "question_id": "H20-1-III-1",
+      "exam_id": "H20-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_NORM_CONGRUENCE_COORD",
+      "tags": [
+        "ベクトル",
+        "内積",
+        "三角形合同",
+        "座標"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "1"
+      },
+      "solution_ref": "solutions/H20-1/course2/H20-1-III-1.zh.md",
+      "question_path": "content/questions/H20-1/course2/H20-1-III-1.json"
+    },
+    {
+      "question_id": "H20-1-IV-1",
+      "exam_id": "H20-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_CUBIC_EXTREMUM_TANGENT_AREA_RATIO",
+      "tags": [
+        "微分",
+        "接線",
+        "面積",
+        "極値"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "1"
+      },
+      "solution_ref": "solutions/H20-1/course2/H20-1-IV-1.zh.md",
+      "question_path": "content/questions/H20-1/course2/H20-1-IV-1.json"
+    },
+    {
+      "question_id": "H20-1-IV-2",
+      "exam_id": "H20-1",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_OPTIMIZE_EXP_INTEGRAL_LIMIT",
+      "tags": [
+        "微分",
+        "最大値",
+        "積分",
+        "極限"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "2"
+      },
+      "solution_ref": "solutions/H20-1/course2/H20-1-IV-2.zh.md",
+      "question_path": "content/questions/H20-1/course2/H20-1-IV-2.json"
+    },
+    {
+      "question_id": "H20-2-I-1",
+      "exam_id": "H20-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_VERTEX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/CD/E/FG/H/I/JK/LM"
+      },
+      "solution_ref": "solutions/H20-2/course2/H20-2-I-1.zh.md",
+      "question_path": "content/questions/H20-2/course2/H20-2-I-1.json"
+    },
+    {
+      "question_id": "H20-2-I-2",
+      "exam_id": "H20-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_FACTOR",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": null,
+        "group": "N/O/P/Q/R/S/T/U/V/WX/YZ"
+      },
+      "solution_ref": "solutions/H20-2/course2/H20-2-I-2.zh.md",
+      "question_path": "content/questions/H20-2/course2/H20-2-I-2.json"
+    },
+    {
+      "question_id": "H20-2-II-1",
+      "exam_id": "H20-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "SEQ_SUM_FORMULA",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/B/CDE/FG/HIJ"
+      },
+      "solution_ref": "solutions/H20-2/course2/H20-2-II-1.zh.md",
+      "question_path": "content/questions/H20-2/course2/H20-2-II-1.json"
+    },
+    {
+      "question_id": "H20-2-III-1",
+      "exam_id": "H20-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_DISCRIMINANT_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/E/F/G/HI/J/K/L/MN/O"
+      },
+      "solution_ref": "solutions/H20-2/course2/H20-2-III-1.zh.md",
+      "question_path": "content/questions/H20-2/course2/H20-2-III-1.json"
+    },
+    {
+      "question_id": "H20-2-IV-1",
+      "exam_id": "H20-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_RATE_INTERSECTION",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/CD/E/FG/H/I/J/K/L/MN/O/PQ"
+      },
+      "solution_ref": "solutions/H20-2/course2/H20-2-IV-1.zh.md",
+      "question_path": "content/questions/H20-2/course2/H20-2-IV-1.json"
+    },
+    {
+      "question_id": "H20-2-IV-2",
+      "exam_id": "H20-2",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_AREA_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": null,
+        "group": "R/S/T/U/V/W/X/Y/Z"
+      },
+      "solution_ref": "solutions/H20-2/course2/H20-2-IV-2.zh.md",
+      "question_path": "content/questions/H20-2/course2/H20-2-IV-2.json"
+    },
+    {
+      "question_id": "H21-1-I-1",
+      "exam_id": "H21-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_SOLVE_PARAM",
+      "tags": [
+        "二次函数",
+        "对称轴",
+        "最小值",
+        "参数"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "((1)(2))",
+        "group": "A/B/CD/E/F/G/H/I/J"
+      },
+      "solution_ref": "solutions/H21-1/course2/H21-1-I-1.zh.md",
+      "question_path": "content/questions/H21-1/course2/H21-1-I-1.json"
+    },
+    {
+      "question_id": "H21-1-I-2",
+      "exam_id": "H21-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_FACTORIZE",
+      "tags": [
+        "因式分解",
+        "代数恒等变形",
+        "代入计算"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "((1)(2)(3))",
+        "group": "K/L/M/NO/PQ/R/S/TU/V/W/X/Y"
+      },
+      "solution_ref": "solutions/H21-1/course2/H21-1-I-2.zh.md",
+      "question_path": "content/questions/H21-1/course2/H21-1-I-2.json"
+    },
+    {
+      "question_id": "H21-1-II-1",
+      "exam_id": "H21-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "INT_CONSTRAINT_SOLVE_X",
+      "tags": [
+        "同余",
+        "等差数列",
+        "求和",
+        "恒等变形"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "((1)(2)(3))",
+        "group": "AB/C/D/E/FG/HI/JK/L/MN/OP"
+      },
+      "solution_ref": "solutions/H21-1/course2/H21-1-II-1.zh.md",
+      "question_path": "content/questions/H21-1/course2/H21-1-II-1.json"
+    },
+    {
+      "question_id": "H21-1-III-1",
+      "exam_id": "H21-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "GEO_ELIMINATION_SOLVE_PARAM",
+      "tags": [
+        "圆的方程",
+        "点积",
+        "圆弧长度",
+        "倍角公式"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "((1)(2)(3))",
+        "group": "A/B/C/DE/F/G/H/I/J/K/L/MN/OP"
+      },
+      "solution_ref": "solutions/H21-1/course2/H21-1-III-1.zh.md",
+      "question_path": "content/questions/H21-1/course2/H21-1-III-1.json"
+    },
+    {
+      "question_id": "H21-1-IV-1",
+      "exam_id": "H21-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_AREA_AREA",
+      "tags": [
+        "导数",
+        "切线",
+        "交点",
+        "定积分面积"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "((1)(2)(3))",
+        "group": "A/B/CD/E/FG/H/I/JK"
+      },
+      "solution_ref": "solutions/H21-1/course2/H21-1-IV-1.zh.md",
+      "question_path": "content/questions/H21-1/course2/H21-1-IV-1.json"
+    },
+    {
+      "question_id": "H21-1-IV-2",
+      "exam_id": "H21-1",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_RATE_MINMAX",
+      "tags": [
+        "对数函数",
+        "极值",
+        "图像交点个数",
+        "参数讨论"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": "((1)(2))",
+        "group": "L/M/N/O/P/Q/R/S"
+      },
+      "solution_ref": "solutions/H21-1/course2/H21-1-IV-2.zh.md",
+      "question_path": "content/questions/H21-1/course2/H21-1-IV-2.json"
+    },
+    {
+      "question_id": "H21-2-I-1",
+      "exam_id": "H21-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_EVAL_EXPR",
+      "tags": [
+        "数と式",
+        "有理化",
+        "恒等式"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "(1)",
+        "group": "A/B/C/DE/FGH"
+      },
+      "solution_ref": "data/solutions/H21-2/course2/H21-2-I-1.zh.md",
+      "question_path": "content/questions/H21-2/course2/H21-2-I-1.json"
+    },
+    {
+      "question_id": "H21-2-I-2",
+      "exam_id": "H21-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "QF_TRANSFORM_SHIFT",
+      "tags": [
+        "二次函数",
+        "平移",
+        "对称",
+        "判别式",
+        "最值"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "(1)(2)",
+        "group": "I/JK/LM/N/O/P/Q/R/S/T/UV/W"
+      },
+      "solution_ref": "data/solutions/H21-2/course2/H21-2-I-2.zh.md",
+      "question_path": "content/questions/H21-2/course2/H21-2-I-2.json"
+    },
+    {
+      "question_id": "H21-2-II-1",
+      "exam_id": "H21-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "SEQ_ARITH_GEOM_ELIMINATION",
+      "tags": [
+        "数列",
+        "等差",
+        "等比",
+        "消元",
+        "求和"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/B/C/D/E/F/GH/I/J/K/L/M"
+      },
+      "solution_ref": "data/solutions/H21-2/course2/H21-2-II-1.zh.md",
+      "question_path": "content/questions/H21-2/course2/H21-2-II-1.json"
+    },
+    {
+      "question_id": "H21-2-III-1",
+      "exam_id": "H21-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_INTERVAL_INEQUALITY_REGION",
+      "tags": [
+        "二元不等式",
+        "平方完成",
+        "圆与距离",
+        "充分必要条件"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "AB/C/DE/FG/HI/JKL"
+      },
+      "solution_ref": "data/solutions/H21-2/course2/H21-2-III-1.zh.md",
+      "question_path": "content/questions/H21-2/course2/H21-2-III-1.json"
+    },
+    {
+      "question_id": "H21-2-IV-1",
+      "exam_id": "H21-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_INTEGRAL_PIECEWISE_TANGENT",
+      "tags": [
+        "定积分",
+        "分段函数",
+        "导数几何意义",
+        "切线"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/B/C/DE/FG/H/I"
+      },
+      "solution_ref": "data/solutions/H21-2/course2/H21-2-IV-1.zh.md",
+      "question_path": "content/questions/H21-2/course2/H21-2-IV-1.json"
+    },
+    {
+      "question_id": "H21-2-IV-2",
+      "exam_id": "H21-2",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_DIFFEQ_INTEGRAL_EQUATION",
+      "tags": [
+        "积分方程",
+        "微分",
+        "常微分方程",
+        "定积分常数"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": "(1)",
+        "group": "J/K/L/M/N/O/P/Q/R"
+      },
+      "solution_ref": "data/solutions/H21-2/course2/H21-2-IV-2.zh.md",
+      "question_path": "content/questions/H21-2/course2/H21-2-IV-2.json"
+    },
+    {
+      "question_id": "H22-1-I-1",
+      "exam_id": "H22-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_CASE_SOLVE_X",
+      "tags": [
+        "絶対値",
+        "方程式",
+        "場合分け",
+        "二次方程式"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "mixed",
+        "group": "A/B/C/DE"
+      },
+      "solution_ref": "solutions/H22-1/course2/H22-1-I-1.zh.md",
+      "question_path": "content/questions/H22-1/course2/H22-1-I-1.json"
+    },
+    {
+      "question_id": "H22-1-I-2",
+      "exam_id": "H22-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_CONSTRAINT",
+      "tags": [
+        "恒等式",
+        "必要条件",
+        "十分条件",
+        "対称式"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "mixed",
+        "group": "F/G/H/IJ/K/L/M"
+      },
+      "solution_ref": "solutions/H22-1/course2/H22-1-I-2.zh.md",
+      "question_path": "content/questions/H22-1/course2/H22-1-I-2.json"
+    },
+    {
+      "question_id": "H22-1-II-1",
+      "exam_id": "H22-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "GEO_TRANSFORM_MINMAX",
+      "tags": [
+        "座標幾何",
+        "垂直条件",
+        "最小值",
+        "不等式"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "mixed",
+        "group": "AB/C/DE/FG/H/IJ/K/L/M"
+      },
+      "solution_ref": "solutions/H22-1/course2/H22-1-II-1.zh.md",
+      "question_path": "content/questions/H22-1/course2/H22-1-II-1.json"
+    },
+    {
+      "question_id": "H22-1-III-1",
+      "exam_id": "H22-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_RATIO_DOT_LENGTH",
+      "tags": [
+        "ベクトル",
+        "内分",
+        "交点",
+        "内積",
+        "長さ",
+        "範囲"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "mixed",
+        "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/PQ/RS/TU/V/W/X"
+      },
+      "solution_ref": "solutions/H22-1/course2/H22-1-III-1.zh.md",
+      "question_path": "content/questions/H22-1/course2/H22-1-III-1.json"
+    },
+    {
+      "question_id": "H22-1-IV-1",
+      "exam_id": "H22-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_RATE_MINMAX",
+      "tags": [
+        "微分",
+        "極値",
+        "対数",
+        "二次導関数"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "mixed",
+        "group": "A/B/C/D/E/F/GH/I/J/K/L/M/N"
+      },
+      "solution_ref": "solutions/H22-1/course2/H22-1-IV-1.zh.md",
+      "question_path": "content/questions/H22-1/course2/H22-1-IV-1.json"
+    },
+    {
+      "question_id": "H22-1-IV-2",
+      "exam_id": "H22-1",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_CONSTRAINT_INTERSECTION",
+      "tags": [
+        "三角関数",
+        "接線",
+        "条件消去",
+        "面積"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": "mixed",
+        "group": "O/P/Q/R/S/T/U/V/W/X/Y/Z"
+      },
+      "solution_ref": "solutions/H22-1/course2/H22-1-IV-2.zh.md",
+      "question_path": "content/questions/H22-1/course2/H22-1-IV-2.json"
+    },
+    {
+      "question_id": "H22-2-I-1",
+      "exam_id": "H22-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DISCRIMINANT_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "source": "official/course2.json",
+        "path": [
+          "H22-2",
+          "I",
+          "Q1"
+        ],
+        "course": 2,
+        "section": "I",
+        "q": "Q1"
+      },
+      "solution_ref": "solutions/H22-2/course2/H22-2-I-1.zh.md",
+      "question_path": "content/questions/H22-2/course2/H22-2-I-1.json"
+    },
+    {
+      "question_id": "H22-2-I-2",
+      "exam_id": "H22-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CASE_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "source": "official/course2.json",
+        "path": [
+          "H22-2",
+          "I",
+          "Q2"
+        ],
+        "course": 2,
+        "section": "I",
+        "q": "Q2"
+      },
+      "solution_ref": "solutions/H22-2/course2/H22-2-I-2.zh.md",
+      "question_path": "content/questions/H22-2/course2/H22-2-I-2.json"
+    },
+    {
+      "question_id": "H22-2-II-1",
+      "exam_id": "H22-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "GEO_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "source": "official/course2.json",
+        "path": [
+          "H22-2",
+          "II",
+          "Q1"
+        ],
+        "course": 2,
+        "section": "II",
+        "q": "Q1"
+      },
+      "solution_ref": "solutions/H22-2/course2/H22-2-II-1.zh.md",
+      "question_path": "content/questions/H22-2/course2/H22-2-II-1.json"
+    },
+    {
+      "question_id": "H22-2-III-1",
+      "exam_id": "H22-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_ORTHO",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "source": "official/course2.json",
+        "path": [
+          "H22-2",
+          "III",
+          "Q1"
+        ],
+        "course": 2,
+        "section": "III",
+        "q": "Q1"
+      },
+      "solution_ref": "solutions/H22-2/course2/H22-2-III-1.zh.md",
+      "question_path": "content/questions/H22-2/course2/H22-2-III-1.json"
+    },
+    {
+      "question_id": "H22-2-IV-1",
+      "exam_id": "H22-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_LOG_DIFF",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "source": "official/course2.json",
+        "path": [
+          "H22-2",
+          "IV",
+          "Q1"
+        ],
+        "course": 2,
+        "section": "IV",
+        "q": "Q1"
+      },
+      "solution_ref": "solutions/H22-2/course2/H22-2-IV-1.zh.md",
+      "question_path": "content/questions/H22-2/course2/H22-2-IV-1.json"
+    },
+    {
+      "question_id": "H22-2-IV-2",
+      "exam_id": "H22-2",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_VOLUME_REVOLUTION",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "source": "official/course2.json",
+        "path": [
+          "H22-2",
+          "IV",
+          "Q2"
+        ],
+        "course": 2,
+        "section": "IV",
+        "q": "Q2"
+      },
+      "solution_ref": "solutions/H22-2/course2/H22-2-IV-2.zh.md",
+      "question_path": "content/questions/H22-2/course2/H22-2-IV-2.json"
+    },
+    {
+      "question_id": "H23-1-I-1",
+      "exam_id": "H23-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_VERTEX",
+      "tags": [
+        "二次関数",
+        "最大最小",
+        "条件付き最適化"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": null,
+        "group": "AB/C/DE/F/G/H/IJ/K/LM"
+      },
+      "solution_ref": "data/solutions/H23-1/course2/H23-1-I-1.zh.md",
+      "question_path": "content/questions/H23-1/course2/H23-1-I-1.json"
+    },
+    {
+      "question_id": "H23-1-I-2",
+      "exam_id": "H23-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_SOLVE_X",
+      "tags": [
+        "平方根",
+        "式の計算",
+        "小数部分"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": null,
+        "group": "N/OP/Q/RS/T/U"
+      },
+      "solution_ref": "data/solutions/H23-1/course2/H23-1-I-2.zh.md",
+      "question_path": "content/questions/H23-1/course2/H23-1-I-2.json"
+    },
+    {
+      "question_id": "H23-1-II-1",
+      "exam_id": "H23-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "SEQ_CONSTRAINT_FIND_N",
+      "tags": [
+        "数列",
+        "漸化式",
+        "対数",
+        "不等式",
+        "個数"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/E/F/GH/IJK/L"
+      },
+      "solution_ref": "data/solutions/H23-1/course2/H23-1-II-1.zh.md",
+      "question_path": "content/questions/H23-1/course2/H23-1-II-1.json"
+    },
+    {
+      "question_id": "H23-1-III-1",
+      "exam_id": "H23-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_FIND_RANGE",
+      "tags": [
+        "対数",
+        "図形化",
+        "円と直線",
+        "範囲"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/E/F/G/HI/J/KL/MN/OP/Q/R/S"
+      },
+      "solution_ref": "data/solutions/H23-1/course2/H23-1-III-1.zh.md",
+      "question_path": "content/questions/H23-1/course2/H23-1-III-1.json"
+    },
+    {
+      "question_id": "H23-1-IV-1",
+      "exam_id": "H23-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_RATE_SOLVE_X",
+      "tags": [
+        "微分",
+        "定積分",
+        "合成関数",
+        "微分積分"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/E/F/G/H/I/J/K/L/M"
+      },
+      "solution_ref": "data/solutions/H23-1/course2/H23-1-IV-1.zh.md",
+      "question_path": "content/questions/H23-1/course2/H23-1-IV-1.json"
+    },
+    {
+      "question_id": "H23-1-IV-2",
+      "exam_id": "H23-1",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_AREA_INTERSECTION",
+      "tags": [
+        "面積",
+        "接線",
+        "積分",
+        "関数"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": null,
+        "group": "N/O/PQ/RS/T/U/V/W/X/Y"
+      },
+      "solution_ref": "data/solutions/H23-1/course2/H23-1-IV-2.zh.md",
+      "question_path": "content/questions/H23-1/course2/H23-1-IV-2.json"
+    },
+    {
+      "question_id": "H23-2-I-1",
+      "exam_id": "H23-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_SOLVE_X",
+      "tags": [
+        "式の計算",
+        "因数分解",
+        "三次方程式"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/BC/D/E/F/G/H/I/JK/L/M"
+      },
+      "solution_ref": "data/solutions/H23-2/course2/H23-2-I-1.zh.md",
+      "question_path": "content/questions/H23-2/course2/H23-2-I-1.json"
+    },
+    {
+      "question_id": "H23-2-I-2",
+      "exam_id": "H23-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "QF_PARAM_DISCRIMINANT",
+      "tags": [
+        "二次関数",
+        "判別式",
+        "最小値最大化"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": null,
+        "group": "N/O/P/Q/R/S/T/U/V/W/X"
+      },
+      "solution_ref": "data/solutions/H23-2/course2/H23-2-I-2.zh.md",
+      "question_path": "content/questions/H23-2/course2/H23-2-I-2.json"
+    },
+    {
+      "question_id": "H23-2-II-1",
+      "exam_id": "H23-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_MIN_DISTANCE",
+      "tags": [
+        "ベクトル",
+        "内分点",
+        "最小値",
+        "二次式"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P"
+      },
+      "solution_ref": "data/solutions/H23-2/course2/H23-2-II-1.zh.md",
+      "question_path": "content/questions/H23-2/course2/H23-2-II-1.json"
+    },
+    {
+      "question_id": "H23-2-III-1",
+      "exam_id": "H23-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "GEO_TANGENT_CIRCLES",
+      "tags": [
+        "図形",
+        "円の接線",
+        "半角公式",
+        "外接"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/E/FG/H/I/J/KL/M/N/OP/Q/R/S"
+      },
+      "solution_ref": "data/solutions/H23-2/course2/H23-2-III-1.zh.md",
+      "question_path": "content/questions/H23-2/course2/H23-2-III-1.json"
+    },
+    {
+      "question_id": "H23-2-IV-1",
+      "exam_id": "H23-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_INTEGRAL_EVAL",
+      "tags": [
+        "三角方程式",
+        "指数関数",
+        "積分"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/EF/G/H/I/J/K/L/M"
+      },
+      "solution_ref": "data/solutions/H23-2/course2/H23-2-IV-1.zh.md",
+      "question_path": "content/questions/H23-2/course2/H23-2-IV-1.json"
+    },
+    {
+      "question_id": "H23-2-IV-2",
+      "exam_id": "H23-2",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_INTEGRAL_ASYMPTOTIC",
+      "tags": [
+        "置換積分",
+        "定積分",
+        "極限",
+        "漸近"
+      ],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": null,
+        "group": "S/T/NO/P/Q/R/U/V/W/X/YZ"
+      },
+      "solution_ref": "data/solutions/H23-2/course2/H23-2-IV-2.zh.md",
+      "question_path": "content/questions/H23-2/course2/H23-2-IV-2.json"
+    },
+    {
+      "question_id": "H24-1-I-1",
+      "exam_id": "H24-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_TRANSFORM_SHIFT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": null,
+        "group": "AB/C/D/E/F/G/H/I/J"
+      },
+      "solution_ref": "solutions/H24-1/course2/H24-1-I-1.zh.md",
+      "question_path": "content/questions/H24-1/course2/H24-1-I-1.json"
+    },
+    {
+      "question_id": "H24-1-I-2",
+      "exam_id": "H24-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": null,
+        "group": "K/LM/N/O/P/Q/R/ST"
+      },
+      "solution_ref": "solutions/H24-1/course2/H24-1-I-2.zh.md",
+      "question_path": "content/questions/H24-1/course2/H24-1-I-2.json"
+    },
+    {
+      "question_id": "H24-1-II",
+      "exam_id": "H24-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "SEQ_SUM_FORMULA",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/DE/F/G/H/I"
+      },
+      "solution_ref": "solutions/H24-1/course2/H24-1-II.zh.md",
+      "question_path": "content/questions/H24-1/course2/H24-1-II-1.json"
+    },
+    {
+      "question_id": "H24-1-III",
+      "exam_id": "H24-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "GEO_TRI_ANGLE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": null,
+        "group": "AB/C/D/E/F/G/H/I/J/K"
+      },
+      "solution_ref": "solutions/H24-1/course2/H24-1-III.zh.md",
+      "question_path": "content/questions/H24-1/course2/H24-1-III-1.json"
+    },
+    {
+      "question_id": "H24-1-IV-1",
+      "exam_id": "H24-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/E/F/G/H/I/J/K"
+      },
+      "solution_ref": "solutions/H24-1/course2/H24-1-IV-1.zh.md",
+      "question_path": "content/questions/H24-1/course2/H24-1-IV-1.json"
+    },
+    {
+      "question_id": "H24-1-IV-2",
+      "exam_id": "H24-1",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_INTEGRAL_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": null,
+        "group": "L/M/N/O/P/Q/R/S/T/U/V/W/X/Y"
+      },
+      "solution_ref": "solutions/H24-1/course2/H24-1-IV-2.zh.md",
+      "question_path": "content/questions/H24-1/course2/H24-1-IV-2.json"
+    },
+    {
+      "question_id": "H24-2-I-1",
+      "exam_id": "H24-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_SYMMETRY_VERTEX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1"
+      },
+      "solution_ref": "solutions/H24-2/course2/H24-2-I-1.zh.md",
+      "question_path": "content/questions/H24-2/course2/H24-2-I-1.json"
+    },
+    {
+      "question_id": "H24-2-I-2",
+      "exam_id": "H24-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ABS_CASE_SPLIT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2"
+      },
+      "solution_ref": "solutions/H24-2/course2/H24-2-I-2.zh.md",
+      "question_path": "content/questions/H24-2/course2/H24-2-I-2.json"
+    },
+    {
+      "question_id": "H24-2-II",
+      "exam_id": "H24-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_RATIO_IN_CIRCLE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1"
+      },
+      "solution_ref": "solutions/H24-2/course2/H24-2-II.zh.md",
+      "question_path": "content/questions/H24-2/course2/H24-2-II-1.json"
+    },
+    {
+      "question_id": "H24-2-III",
+      "exam_id": "H24-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "LOG_CIRCLE_TANGENCY_MAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1"
+      },
+      "solution_ref": "solutions/H24-2/course2/H24-2-III.zh.md",
+      "question_path": "content/questions/H24-2/course2/H24-2-III-1.json"
+    },
+    {
+      "question_id": "H24-2-IV-1",
+      "exam_id": "H24-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_EXTREMUM_TRIG",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1"
+      },
+      "solution_ref": "solutions/H24-2/course2/H24-2-IV-1.zh.md",
+      "question_path": "content/questions/H24-2/course2/H24-2-IV-1.json"
+    },
+    {
+      "question_id": "H24-2-IV-2",
+      "exam_id": "H24-2",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_INTEGRAL_RECURSION_LIMIT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2"
+      },
+      "solution_ref": "solutions/H24-2/course2/H24-2-IV-2.zh.md",
+      "question_path": "content/questions/H24-2/course2/H24-2-IV-2.json"
+    },
+    {
+      "question_id": "H25-1-I-1",
+      "exam_id": "H25-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_CONSTRAINT_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "",
+        "group": "AB/C/DE/F/G/H/I/J/KL/M"
+      },
+      "solution_ref": "solutions/H25-1/course2/H25-1-I-1.zh.md",
+      "question_path": "content/questions/H25-1/course2/H25-1-I-1.json"
+    },
+    {
+      "question_id": "H25-1-I-2",
+      "exam_id": "H25-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_INTERVAL_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "(1)(2)",
+        "group": "NO/P/Q/R/ST/U/V/W"
+      },
+      "solution_ref": "solutions/H25-1/course2/H25-1-I-2.zh.md",
+      "question_path": "content/questions/H25-1/course2/H25-1-I-2.json"
+    },
+    {
+      "question_id": "H25-1-II-1",
+      "exam_id": "H25-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_ORTHO",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q"
+      },
+      "solution_ref": "solutions/H25-1/course2/H25-1-II-1.zh.md",
+      "question_path": "content/questions/H25-1/course2/H25-1-II-1.json"
+    },
+    {
+      "question_id": "H25-1-III-1",
+      "exam_id": "H25-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_CONSTRAINT_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "",
+        "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P"
+      },
+      "solution_ref": "solutions/H25-1/course2/H25-1-III-1.zh.md",
+      "question_path": "content/questions/H25-1/course2/H25-1-III-1.json"
+    },
+    {
+      "question_id": "H25-1-IV-1",
+      "exam_id": "H25-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_DIRECT_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P"
+      },
+      "solution_ref": "solutions/H25-1/course2/H25-1-IV-1.zh.md",
+      "question_path": "content/questions/H25-1/course2/H25-1-IV-1.json"
+    },
+    {
+      "question_id": "H25-1-IV-2",
+      "exam_id": "H25-1",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_TRANSFORM_SOLVE_X",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": "",
+        "group": "Q/R/S/T/U/V/W/X/Y"
+      },
+      "solution_ref": "solutions/H25-1/course2/H25-1-IV-2.zh.md",
+      "question_path": "content/questions/H25-1/course2/H25-1-IV-2.json"
+    },
+    {
+      "question_id": "H25-2-I-1",
+      "exam_id": "H25-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_VERTEX_MAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/BC/DE/F/G"
+      },
+      "solution_ref": "solutions/H25-2/course2/H25-2-I-1.zh.md",
+      "question_path": "content/questions/H25-2/course2/H25-2-I-1.json"
+    },
+    {
+      "question_id": "H25-2-I-2",
+      "exam_id": "H25-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "LOGIC_NEC_SUFF",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "(1)(2)(3)",
+        "group": "H/I/J/K/L/M/N/O/P/Q/R"
+      },
+      "solution_ref": "solutions/H25-2/course2/H25-2-I-2.zh.md",
+      "question_path": "content/questions/H25-2/course2/H25-2-I-2.json"
+    },
+    {
+      "question_id": "H25-2-II-1",
+      "exam_id": "H25-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "SEQ_ARITH_GEOSERIES_OPT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "(1)(2)(3)",
+        "group": "AB/C/D/E/F/G/H/I/J/K/L/M/N/O"
+      },
+      "solution_ref": "solutions/H25-2/course2/H25-2-II-1.zh.md",
+      "question_path": "content/questions/H25-2/course2/H25-2-II-1.json"
+    },
+    {
+      "question_id": "H25-2-III-1",
+      "exam_id": "H25-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "TRIG_MINMAX_SUBST",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/B/C/D/E/F/G/H/I"
+      },
+      "solution_ref": "solutions/H25-2/course2/H25-2-III-1.zh.md",
+      "question_path": "content/questions/H25-2/course2/H25-2-III-1.json"
+    },
+    {
+      "question_id": "H25-2-IV-1",
+      "exam_id": "H25-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_MONOTONIC_COMPARE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/B/C/D/E/F/G/H/I"
+      },
+      "solution_ref": "solutions/H25-2/course2/H25-2-IV-1.zh.md",
+      "question_path": "content/questions/H25-2/course2/H25-2-IV-1.json"
+    },
+    {
+      "question_id": "H25-2-IV-2",
+      "exam_id": "H25-2",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_AREA_MINIMIZE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": "",
+        "group": "J/K/L/M/N/O/P/Q/R/S/T/U"
+      },
+      "solution_ref": "solutions/H25-2/course2/H25-2-IV-2.zh.md",
+      "question_path": "content/questions/H25-2/course2/H25-2-IV-2.json"
+    },
+    {
+      "question_id": "H26-1-I-1",
+      "exam_id": "H26-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_VERTEX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": null,
+        "group": "AB,C,D,E,F,G,HI,J,K"
+      },
+      "solution_ref": "solutions/H26-1/course2/H26-1-I-1.zh.md",
+      "question_path": "content/questions/H26-1/course2/H26-1-I-1.json"
+    },
+    {
+      "question_id": "H26-1-I-2",
+      "exam_id": "H26-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_FACTORIZE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": null,
+        "group": "L,M,N,O,P,Q,R,S,T,U"
+      },
+      "solution_ref": "solutions/H26-1/course2/H26-1-I-2.zh.md",
+      "question_path": "content/questions/H26-1/course2/H26-1-I-2.json"
+    },
+    {
+      "question_id": "H26-1-II-1",
+      "exam_id": "H26-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_RATIO_INTERNAL_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": null,
+        "group": "ABCDE,F,G,HIJK,LM,NO,PQR"
+      },
+      "solution_ref": "solutions/H26-1/course2/H26-1-II-1.zh.md",
+      "question_path": "content/questions/H26-1/course2/H26-1-II-1.json"
+    },
+    {
+      "question_id": "H26-1-III-1",
+      "exam_id": "H26-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_ELIMINATION_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": null,
+        "group": "AB,C,DE,FG,H,I,J,K,LM,N"
+      },
+      "solution_ref": "solutions/H26-1/course2/H26-1-III-1.zh.md",
+      "question_path": "content/questions/H26-1/course2/H26-1-III-1.json"
+    },
+    {
+      "question_id": "H26-1-IV-1",
+      "exam_id": "H26-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_RATE_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": null,
+        "group": "A-J"
+      },
+      "solution_ref": "solutions/H26-1/course2/H26-1-IV-1.zh.md",
+      "question_path": "content/questions/H26-1/course2/H26-1-IV-1.json"
+    },
+    {
+      "question_id": "H26-1-IV-2",
+      "exam_id": "H26-1",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_DIRECT_VOLUME",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": null,
+        "group": "K-Z"
+      },
+      "solution_ref": "solutions/H26-1/course2/H26-1-IV-2.zh.md",
+      "question_path": "content/questions/H26-1/course2/H26-1-IV-2.json"
+    },
+    {
+      "question_id": "H26-2-I-1",
+      "exam_id": "H26-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_PARAM_CONDITION_DISCRIMINANT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": null,
+        "group": "A,B,C,D,E,FG,H,IJ,K"
+      },
+      "solution_ref": "solutions/H26-2/course2/H26-2-I-1.zh.md",
+      "question_path": "content/questions/H26-2/course2/H26-2-I-1.json"
+    },
+    {
+      "question_id": "H26-2-I-2",
+      "exam_id": "H26-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "SET_NEC_SUFF_COUNTING",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": null,
+        "group": "L,M,N,O,PQ,RS"
+      },
+      "solution_ref": "solutions/H26-2/course2/H26-2-I-2.zh.md",
+      "question_path": "content/questions/H26-2/course2/H26-2-I-2.json"
+    },
+    {
+      "question_id": "H26-2-II-1",
+      "exam_id": "H26-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "GEO_VEC_TANGENT_RATIO",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": null,
+        "group": "A,B,C,D,E,F,G,H,I,J,K"
+      },
+      "solution_ref": "solutions/H26-2/course2/H26-2-II-1.zh.md",
+      "question_path": "content/questions/H26-2/course2/H26-2-II-1.json"
+    },
+    {
+      "question_id": "H26-2-III-1",
+      "exam_id": "H26-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "EXP_SUBSTITUTE_MINIMIZE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": null,
+        "group": "A-N"
+      },
+      "solution_ref": "solutions/H26-2/course2/H26-2-III-1.zh.md",
+      "question_path": "content/questions/H26-2/course2/H26-2-III-1.json"
+    },
+    {
+      "question_id": "H26-2-IV-1",
+      "exam_id": "H26-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_TANGENT_AREA_RATIO",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": null,
+        "group": "A,B,C,D,E,FG,H,I,JK,L,M,N"
+      },
+      "solution_ref": "solutions/H26-2/course2/H26-2-IV-1.zh.md",
+      "question_path": "content/questions/H26-2/course2/H26-2-IV-1.json"
+    },
+    {
+      "question_id": "H26-2-IV-2",
+      "exam_id": "H26-2",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "LIMIT_TRIG_POWER_INTEGRAL",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": null,
+        "group": "O,P,Q,R,S,T,U,V,W,X,Y,Z"
+      },
+      "solution_ref": "solutions/H26-2/course2/H26-2-IV-2.zh.md",
+      "question_path": "content/questions/H26-2/course2/H26-2-IV-2.json"
+    },
+    {
+      "question_id": "H27-1-I-1",
+      "exam_id": "H27-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_INTERSECTION_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "all"
+      },
+      "solution_ref": "solutions/H27-1/course2/H27-1-I-1.zh.md",
+      "question_path": "content/questions/H27-1/course2/H27-1-I-1.json"
+    },
+    {
+      "question_id": "H27-1-I-2",
+      "exam_id": "H27-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_CLASSICAL_COUNT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "all",
+        "group": "O/PQ/R/S/T/UV/WX/YZ"
+      },
+      "solution_ref": "solutions/H27-1/course2/H27-1-I-2.zh.md",
+      "question_path": "content/questions/H27-1/course2/H27-1-I-2.json"
+    },
+    {
+      "question_id": "H27-1-II-1",
+      "exam_id": "H27-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_ANGLE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "all",
+        "group": "A/B/C/DE/FG/H/I/J/KL"
+      },
+      "solution_ref": "solutions/H27-1/course2/H27-1-II-1.zh.md",
+      "question_path": "content/questions/H27-1/course2/H27-1-II-1.json"
+    },
+    {
+      "question_id": "H27-1-II-2",
+      "exam_id": "H27-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "all",
+        "group": "M/N/O/P/Q/R/S/T/U/V/W"
+      },
+      "solution_ref": "solutions/H27-1/course2/H27-1-II-2.zh.md",
+      "question_path": "content/questions/H27-1/course2/H27-1-II-2.json"
+    },
+    {
+      "question_id": "H27-1-III-1",
+      "exam_id": "H27-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_DERIVATIVE_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "all",
+        "group": "A/B/C/D/E/F/GH/I/JK"
+      },
+      "solution_ref": "solutions/H27-1/course2/H27-1-III-1.zh.md",
+      "question_path": "content/questions/H27-1/course2/H27-1-III-1.json"
+    },
+    {
+      "question_id": "H27-1-IV-1",
+      "exam_id": "H27-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_DERIVATIVE_AREA",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "all",
+        "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q"
+      },
+      "solution_ref": "solutions/H27-1/course2/H27-1-IV-1.zh.md",
+      "question_path": "content/questions/H27-1/course2/H27-1-IV-1.json"
+    },
+    {
+      "question_id": "H27-2-I-1",
+      "exam_id": "H27-2",
+      "course": 2,
+      "section": "I",
+      "order": null,
+      "type": "fill_in",
+      "pattern_id": "ALG-QUAD-EXT-INTERVAL-01",
+      "tags": [
+        "quadratic",
+        "max_min",
+        "interval"
+      ],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H27-2/course2/H27-2-I-1.json"
+    },
+    {
+      "question_id": "H27-2-I-2",
+      "exam_id": "H27-2",
+      "course": 2,
+      "section": "I",
+      "order": null,
+      "type": "fill_in",
+      "pattern_id": "PROB-DISCRETE-INEX-01",
+      "tags": [
+        "probability",
+        "dice",
+        "inclusion_exclusion"
+      ],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H27-2/course2/H27-2-I-2.json"
+    },
+    {
+      "question_id": "H27-2-II-1",
+      "exam_id": "H27-2",
+      "course": 2,
+      "section": "II",
+      "order": null,
+      "type": "fill_in",
+      "pattern_id": "VEC-3D-MIN-AREA-01",
+      "tags": [
+        "vector",
+        "3d",
+        "minimization",
+        "triangle_area"
+      ],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H27-2/course2/H27-2-II-1.json"
+    },
+    {
+      "question_id": "H27-2-II-2",
+      "exam_id": "H27-2",
+      "course": 2,
+      "section": "II",
+      "order": null,
+      "type": "fill_in",
+      "pattern_id": "CPLX-ROOTS-DIST-01",
+      "tags": [
+        "complex",
+        "roots",
+        "distance"
+      ],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H27-2/course2/H27-2-II-2.json"
+    },
+    {
+      "question_id": "H27-2-III-1",
+      "exam_id": "H27-2",
+      "course": 2,
+      "section": "III",
+      "order": null,
+      "type": "fill_in",
+      "pattern_id": "CALC-TANGENT-MULTI-01",
+      "tags": [
+        "calculus",
+        "tangent",
+        "parameter",
+        "quartic"
+      ],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H27-2/course2/H27-2-III-1.json"
+    },
+    {
+      "question_id": "H27-2-IV-1",
+      "exam_id": "H27-2",
+      "course": 2,
+      "section": "IV",
+      "order": null,
+      "type": "fill_in",
+      "pattern_id": "CALC-PARAM-SPEED-ARCLEN-01",
+      "tags": [
+        "calculus",
+        "parametric",
+        "speed",
+        "arc_length"
+      ],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H27-2/course2/H27-2-IV-1.json"
+    },
+    {
+      "question_id": "H28-1-I-1",
+      "exam_id": "H28-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_VERTEX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "main",
+        "group": "A/B/CD/E/F/G/H/I/J"
+      },
+      "solution_ref": "solutions/H28-1/course2/H28-1-I-1.zh.md",
+      "question_path": "content/questions/H28-1/course2/H28-1-I-1.json"
+    },
+    {
+      "question_id": "H28-1-I-2",
+      "exam_id": "H28-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_CLASSICAL_COUNT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "main",
+        "group": "KLM/N/O/PQ/R/STU/VW"
+      },
+      "solution_ref": "solutions/H28-1/course2/H28-1-I-2.zh.md",
+      "question_path": "content/questions/H28-1/course2/H28-1-I-2.json"
+    },
+    {
+      "question_id": "H28-1-II-1",
+      "exam_id": "H28-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_ANGLE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "main",
+        "group": "AB/C/D/E/F/G/H/IJ/K"
+      },
+      "solution_ref": "solutions/H28-1/course2/H28-1-II-1.zh.md",
+      "question_path": "content/questions/H28-1/course2/H28-1-II-1.json"
+    },
+    {
+      "question_id": "H28-1-II-2",
+      "exam_id": "H28-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "main",
+        "group": "L/M/N/O/PQ/R/ST/U/V/W/X/Y"
+      },
+      "solution_ref": "solutions/H28-1/course2/H28-1-II-2.zh.md",
+      "question_path": "content/questions/H28-1/course2/H28-1-II-2.json"
+    },
+    {
+      "question_id": "H28-1-III-1",
+      "exam_id": "H28-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_CONSTRAINT_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "main",
+        "group": "A/B/C/D/G/E/F/H/I/JK/L/M/NO/P/Q/RS/T/UV/W"
+      },
+      "solution_ref": "solutions/H28-1/course2/H28-1-III-1.zh.md",
+      "question_path": "content/questions/H28-1/course2/H28-1-III-1.json"
+    },
+    {
+      "question_id": "H28-1-IV-1",
+      "exam_id": "H28-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": null,
+      "pattern_id": null,
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H28-1/course2/H28-1-IV-1.json"
+    },
+    {
+      "question_id": "H28-2-I-1",
+      "exam_id": "H28-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_COMPLETE_SQUARE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "main",
+        "group": "A/BC/D/E/FG/H/IJ"
+      },
+      "solution_ref": "solutions/H28-2/course2/H28-2-I-1.zh.md",
+      "question_path": "content/questions/H28-2/course2/H28-2-I-1.json"
+    },
+    {
+      "question_id": "H28-2-I-2",
+      "exam_id": "H28-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_COMBINATION",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "main",
+        "group": "K/LM/NO/PQ/R/S"
+      },
+      "solution_ref": "solutions/H28-2/course2/H28-2-I-2.zh.md",
+      "question_path": "content/questions/H28-2/course2/H28-2-I-2.json"
+    },
+    {
+      "question_id": "H28-2-II-1",
+      "exam_id": "H28-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "SEQ_LOG_LINEAR_REC",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "main",
+        "group": "A/B/C/D/E/F/G/H/I/JKL"
+      },
+      "solution_ref": "solutions/H28-2/course2/H28-2-II-1.zh.md",
+      "question_path": "content/questions/H28-2/course2/H28-2-II-1.json"
+    },
+    {
+      "question_id": "H28-2-III-1",
+      "exam_id": "H28-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CPLX_LOCUS_ARG_LINE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "main",
+        "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q"
+      },
+      "solution_ref": "solutions/H28-2/course2/H28-2-III-1.zh.md",
+      "question_path": "content/questions/H28-2/course2/H28-2-III-1.json"
+    },
+    {
+      "question_id": "H28-2-IV-1",
+      "exam_id": "H28-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "LOG_QUAD_RANGE_OPT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "main",
+        "group": "A/B/CD/E/F/G/H/I/J/KL/M"
+      },
+      "solution_ref": "solutions/H28-2/course2/H28-2-IV-1.zh.md",
+      "question_path": "content/questions/H28-2/course2/H28-2-IV-1.json"
+    },
+    {
+      "question_id": "H28-2-IV-2",
+      "exam_id": "H28-2",
+      "course": 2,
+      "section": "IV",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CALC_VOLUME_RATE_OPT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q2",
+        "sub": "main",
+        "group": "N/O/P/Q/R/S/T/U/V/W/X/Y/Z"
+      },
+      "solution_ref": "solutions/H28-2/course2/H28-2-IV-2.zh.md",
+      "question_path": "content/questions/H28-2/course2/H28-2-IV-2.json"
+    },
+    {
+      "question_id": "H29-1-I-1",
+      "exam_id": "H29-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_TRANSFORM_SHIFT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/BC/DE/F/G/H/I/J/K/L/M"
+      },
+      "solution_ref": "solutions/H29-1/course2/H29-1-I-1.zh.md",
+      "question_path": "content/questions/H29-1/course2/H29-1-I-1.json"
+    },
+    {
+      "question_id": "H29-1-I-2",
+      "exam_id": "H29-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_CLASSICAL_COUNT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "(1)(2)(3)(4)",
+        "group": "NO/PQ/RS/T/UV/WX/YZ"
+      },
+      "solution_ref": "solutions/H29-1/course2/H29-1-I-2.zh.md",
+      "question_path": "content/questions/H29-1/course2/H29-1-I-2.json"
+    },
+    {
+      "question_id": "H29-1-II-1",
+      "exam_id": "H29-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_RATIO_INTERNAL",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "(i)(ii)",
+        "group": "A/B/C/D/E/F/G/H/I/JK/L"
+      },
+      "solution_ref": "solutions/H29-1/course2/H29-1-II-1.zh.md",
+      "question_path": "content/questions/H29-1/course2/H29-1-II-1.json"
+    },
+    {
+      "question_id": "H29-1-II-2",
+      "exam_id": "H29-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "(1)(2)",
+        "group": "M/N/O/P/Q/R/S/T/U"
+      },
+      "solution_ref": "solutions/H29-1/course2/H29-1-II-2.zh.md",
+      "question_path": "content/questions/H29-1/course2/H29-1-II-2.json"
+    },
+    {
+      "question_id": "H29-1-III-1",
+      "exam_id": "H29-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_RATE_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A/B/C/D/E/F/G/H/I/J/K/L/M/NO/P/Q"
+      },
+      "solution_ref": "solutions/H29-1/course2/H29-1-III-1.zh.md",
+      "question_path": "content/questions/H29-1/course2/H29-1-III-1.json"
+    },
+    {
+      "question_id": "H29-1-IV-1",
+      "exam_id": "H29-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_AREA",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "(1)(2)(3)",
+        "group": "A/B/C/D/E/F/G/H/IJ/K/L/M"
+      },
+      "solution_ref": "solutions/H29-1/course2/H29-1-IV-1.zh.md",
+      "question_path": "content/questions/H29-1/course2/H29-1-IV-1.json"
+    },
+    {
+      "question_id": "H29-2-I-1",
+      "exam_id": "H29-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_QUAD_OPT_CONSTRAINT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H29-2/course2/H29-2-I-1.json"
+    },
+    {
+      "question_id": "H29-2-I-2",
+      "exam_id": "H29-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_MARKOV_STOP",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H29-2/course2/H29-2-I-2.json"
+    },
+    {
+      "question_id": "H29-2-II-1",
+      "exam_id": "H29-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "REC_LINEAR_SHIFT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H29-2/course2/H29-2-II-1.json"
+    },
+    {
+      "question_id": "H29-2-II-2",
+      "exam_id": "H29-2",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "GEO_INSCIRCLE_COORD",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H29-2/course2/H29-2-II-2.json"
+    },
+    {
+      "question_id": "H29-2-III-1",
+      "exam_id": "H29-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "LOG_INEQ_GLOBAL",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H29-2/course2/H29-2-III-1.json"
+    },
+    {
+      "question_id": "H29-2-IV-1",
+      "exam_id": "H29-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_AREA_TRIG",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": null,
+      "solution_ref": null,
+      "question_path": "content/questions/H29-2/course2/H29-2-IV-1.json"
+    },
+    {
+      "question_id": "H30-1-I-1",
+      "exam_id": "H30-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_VERTEX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "mix",
+        "group": "A/BCDE/FGH/I/JKLM"
+      },
+      "solution_ref": "solutions/H30-1/course2/H30-1-I-1.zh.md",
+      "question_path": "content/questions/H30-1/course2/H30-1-I-1.json"
+    },
+    {
+      "question_id": "H30-1-I-2",
+      "exam_id": "H30-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_CLASSICAL_COUNT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "mix",
+        "group": "NOP/QR/ST/UVW/XY"
+      },
+      "solution_ref": "solutions/H30-1/course2/H30-1-I-2.zh.md",
+      "question_path": "content/questions/H30-1/course2/H30-1-I-2.json"
+    },
+    {
+      "question_id": "H30-1-II-1",
+      "exam_id": "H30-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_LENGTH",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "mix",
+        "group": "A/BC/D/E/F/G/HI/JK/L"
+      },
+      "solution_ref": "solutions/H30-1/course2/H30-1-II-1.zh.md",
+      "question_path": "content/questions/H30-1/course2/H30-1-II-1.json"
+    },
+    {
+      "question_id": "H30-1-II-2",
+      "exam_id": "H30-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_CONSTRAINT_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "mix",
+        "group": "M~S/TU/VWX"
+      },
+      "solution_ref": "solutions/H30-1/course2/H30-1-II-2.zh.md",
+      "question_path": "content/questions/H30-1/course2/H30-1-II-2.json"
+    },
+    {
+      "question_id": "H30-1-III-1",
+      "exam_id": "H30-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_TRANSFORM_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "mix",
+        "group": "A/BC/E/F/GHIJ/KLMN/OP/QRST/U"
+      },
+      "solution_ref": "solutions/H30-1/course2/H30-1-III-1.zh.md",
+      "question_path": "content/questions/H30-1/course2/H30-1-III-1.json"
+    },
+    {
+      "question_id": "H30-1-IV-1",
+      "exam_id": "H30-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_INT_RECURR_LIMIT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "mix",
+        "group": "A/BC/DE/FG/HI/JK/L/MN/OP/QR/ST/U"
+      },
+      "solution_ref": "solutions/H30-1/course2/H30-1-IV-1.zh.md",
+      "question_path": "content/questions/H30-1/course2/H30-1-IV-1.json"
+    },
+    {
+      "question_id": "H30-2-I-1",
+      "exam_id": "H30-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_PARAM_EXTREMA_INTERVAL",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "mix",
+        "group": "ABC/D/EFGH/IJK/LM"
+      },
+      "solution_ref": "solutions/H30-2/course2/H30-2-I-1.zh.md",
+      "question_path": "content/questions/H30-2/course2/H30-2-I-1.json"
+    },
+    {
+      "question_id": "H30-2-I-2",
+      "exam_id": "H30-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_DICE_QUADRATIC",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "mix",
+        "group": "NOPQ/R/S/TU/VW/XY"
+      },
+      "solution_ref": "solutions/H30-2/course2/H30-2-I-2.zh.md",
+      "question_path": "content/questions/H30-2/course2/H30-2-I-2.json"
+    },
+    {
+      "question_id": "H30-2-II-1",
+      "exam_id": "H30-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "SEQ_RECURRENCE_TELESCOPE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "mix",
+        "group": "ABCDE/FG/HIJ/KLM/NO"
+      },
+      "solution_ref": "solutions/H30-2/course2/H30-2-II-1.zh.md",
+      "question_path": "content/questions/H30-2/course2/H30-2-II-1.json"
+    },
+    {
+      "question_id": "H30-2-II-2",
+      "exam_id": "H30-2",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "GEO_CIRCLE_TANGENT_POWER",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "mix",
+        "group": "PQRSTU/VWXY"
+      },
+      "solution_ref": "solutions/H30-2/course2/H30-2-II-2.zh.md",
+      "question_path": "content/questions/H30-2/course2/H30-2-II-2.json"
+    },
+    {
+      "question_id": "H30-2-III-1",
+      "exam_id": "H30-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_CUBIC_PARAM_MONO_EXTREMA",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "mix",
+        "group": "ABCD/EF/GHIJK/L/MN/OP/QRST/UV/WXY"
+      },
+      "solution_ref": "solutions/H30-2/course2/H30-2-III-1.zh.md",
+      "question_path": "content/questions/H30-2/course2/H30-2-III-1.json"
+    },
+    {
+      "question_id": "H30-2-IV-1",
+      "exam_id": "H30-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_LOG_TANGENCY_AREA",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "mix",
+        "group": "AB/CD/EF/GH/I/JKL"
+      },
+      "solution_ref": "solutions/H30-2/course2/H30-2-IV-1.zh.md",
+      "question_path": "content/questions/H30-2/course2/H30-2-IV-1.json"
+    },
+    {
+      "question_id": "R01-1-I-1",
+      "exam_id": "R01-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_VERTEX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A-K"
+      },
+      "solution_ref": "solutions/R01-1/course2/R01-1-I-1.zh.md",
+      "question_path": "content/questions/R01-1/course2/R01-1-I-1.json"
+    },
+    {
+      "question_id": "R01-1-I-2",
+      "exam_id": "R01-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_DIRECT_PROBABILITY",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "(1)(2)(3)",
+        "group": "L-Y"
+      },
+      "solution_ref": "solutions/R01-1/course2/R01-1-I-2.zh.md",
+      "question_path": "content/questions/R01-1/course2/R01-1-I-2.json"
+    },
+    {
+      "question_id": "R01-1-II-1",
+      "exam_id": "R01-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_RATIO_INTERNAL",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "A-L"
+      },
+      "solution_ref": "solutions/R01-1/course2/R01-1-II-1.zh.md",
+      "question_path": "content/questions/R01-1/course2/R01-1-II-1.json"
+    },
+    {
+      "question_id": "R01-1-II-2",
+      "exam_id": "R01-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "GEO_AREA_RATIO",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "(1)(2)",
+        "group": "M-Y"
+      },
+      "solution_ref": "solutions/R01-1/course2/R01-1-II-2.zh.md",
+      "question_path": "content/questions/R01-1/course2/R01-1-II-2.json"
+    },
+    {
+      "question_id": "R01-1-III-1",
+      "exam_id": "R01-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "GEO_TRI_COSINE_SOLVE_SIDE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "(1)(2)(3)",
+        "group": "A-S"
+      },
+      "solution_ref": "solutions/R01-1/course2/R01-1-III-1.zh.md",
+      "question_path": "content/questions/R01-1/course2/R01-1-III-1.json"
+    },
+    {
+      "question_id": "R01-1-IV-1",
+      "exam_id": "R01-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "(1)(2)(3)",
+        "group": "A-W"
+      },
+      "solution_ref": "solutions/R01-1/course2/R01-1-IV-1.zh.md",
+      "question_path": "content/questions/R01-1/course2/R01-1-IV-1.json"
+    },
+    {
+      "question_id": "R02-2-I-1",
+      "exam_id": "R02-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_INTERSECTION_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "all",
+        "group": "ABCD/EFG/HI/JKLM/NO"
+      },
+      "solution_ref": "solutions/R02-2/course2/R02-2-I-1.zh.md",
+      "question_path": "content/questions/R02-2/course2/R02-2-I-1.json"
+    },
+    {
+      "question_id": "R02-2-I-2",
+      "exam_id": "R02-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_COUNT_CONSTRAINT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "all",
+        "group": "P/QR/ST/U/VW/XY"
+      },
+      "solution_ref": "solutions/R02-2/course2/R02-2-I-2.zh.md",
+      "question_path": "content/questions/R02-2/course2/R02-2-I-2.json"
+    },
+    {
+      "question_id": "R02-2-II-1",
+      "exam_id": "R02-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "SEQ_SUM_FORMULA_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "all",
+        "group": "A/B/C/DEF/GH/I/J/K/L"
+      },
+      "solution_ref": "solutions/R02-2/course2/R02-2-II-1.zh.md",
+      "question_path": "content/questions/R02-2/course2/R02-2-II-1.json"
+    },
+    {
+      "question_id": "R02-2-II-2",
+      "exam_id": "R02-2",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_COMPLEX_ROOTS_ARGUMENT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "all",
+        "group": "MN/OP/Q/R/STUV/W/XY"
+      },
+      "solution_ref": "solutions/R02-2/course2/R02-2-II-2.zh.md",
+      "question_path": "content/questions/R02-2/course2/R02-2-II-2.json"
+    },
+    {
+      "question_id": "R02-2-III-1",
+      "exam_id": "R02-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_TANGENT_ANGLE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "all",
+        "group": "ABC/DE/F/GHI/JKL/M/NOP/QR/ST/U/VW"
+      },
+      "solution_ref": "solutions/R02-2/course2/R02-2-III-1.zh.md",
+      "question_path": "content/questions/R02-2/course2/R02-2-III-1.json"
+    },
+    {
+      "question_id": "R02-2-IV-1",
+      "exam_id": "R02-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_MONOTONICITY_AREA",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "all",
+        "group": "ABCD/E/FG/HI/J/K/LM/N/OP/Q/R/ST/UVW"
+      },
+      "solution_ref": "solutions/R02-2/course2/R02-2-IV-1.zh.md",
+      "question_path": "content/questions/R02-2/course2/R02-2-IV-1.json"
+    },
+    {
+      "question_id": "R3-1-I-1",
+      "exam_id": "R3-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_VERTEX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1"
+      },
+      "solution_ref": null,
+      "question_path": "content/questions/R03-1/course2/R03-1-I-1.json"
+    },
+    {
+      "question_id": "R3-1-I-2",
+      "exam_id": "R3-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_CLASSICAL_COUNT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2"
+      },
+      "solution_ref": null,
+      "question_path": "content/questions/R03-1/course2/R03-1-I-2.json"
+    },
+    {
+      "question_id": "R3-1-II-1",
+      "exam_id": "R3-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_ANGLE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1"
+      },
+      "solution_ref": null,
+      "question_path": "content/questions/R03-1/course2/R03-1-II-1.json"
+    },
+    {
+      "question_id": "R3-1-II-2",
+      "exam_id": "R3-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CPLX_ROT_SCALE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2"
+      },
+      "solution_ref": null,
+      "question_path": "content/questions/R03-1/course2/R03-1-II-2.json"
+    },
+    {
+      "question_id": "R3-1-III-1",
+      "exam_id": "R3-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "EXP_SYM_SUBST_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1"
+      },
+      "solution_ref": null,
+      "question_path": "content/questions/R03-1/course2/R03-1-III-1.json"
+    },
+    {
+      "question_id": "R3-1-IV-1",
+      "exam_id": "R3-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "TRIG_AREA_PARAM_INVARIANT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1"
+      },
+      "solution_ref": null,
+      "question_path": "content/questions/R03-1/course2/R03-1-IV-1.json"
+    },
+    {
+      "question_id": "R3-2-I-1",
+      "exam_id": "R3-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_CASE_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "all",
+        "group": "A/B/C/D/E/F/GH/IJ/KLM"
+      },
+      "solution_ref": "solutions/R3-2/course2/R3-2-I-1.zh.md",
+      "question_path": "content/questions/R03-2/course2/R03-2-I-1.json"
+    },
+    {
+      "question_id": "R3-2-I-2",
+      "exam_id": "R3-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_COUNT_COUNTINT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "all",
+        "group": "NOP/QRS/TU/V/WXY"
+      },
+      "solution_ref": "solutions/R3-2/course2/R3-2-I-2.zh.md",
+      "question_path": "content/questions/R03-2/course2/R03-2-I-2.json"
+    },
+    {
+      "question_id": "R3-2-II-1",
+      "exam_id": "R3-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DIRECT_LENGTH",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "all",
+        "group": "A/B/C/DE/FG/H/I/J/K/LM"
+      },
+      "solution_ref": "solutions/R3-2/course2/R3-2-II-1.zh.md",
+      "question_path": "content/questions/R03-2/course2/R03-2-II-1.json"
+    },
+    {
+      "question_id": "R3-2-II-2",
+      "exam_id": "R3-2",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "GEO_DISTANCE_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "all",
+        "group": "NO/P/QR/STU/V/W/X/YZ"
+      },
+      "solution_ref": "solutions/R3-2/course2/R3-2-II-2.zh.md",
+      "question_path": "content/questions/R03-2/course2/R03-2-II-2.json"
+    },
+    {
+      "question_id": "R3-2-III-1",
+      "exam_id": "R3-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "all",
+        "group": "ABCD/E/F/GH/I/J/K/L/M/N/O/P/QRS/T/U/V/W"
+      },
+      "solution_ref": "solutions/R3-2/course2/R3-2-III-1.zh.md",
+      "question_path": "content/questions/R03-2/course2/R03-2-III-1.json"
+    },
+    {
+      "question_id": "R3-2-IV-1",
+      "exam_id": "R3-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_TANGENT_AREA",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "all",
+        "group": "AB/CDEF/G/HI/J/KLM/NO/PQ/RS/TU"
+      },
+      "solution_ref": "solutions/R3-2/course2/R3-2-IV-1.zh.md",
+      "question_path": "content/questions/R03-2/course2/R03-2-IV-1.json"
+    },
+    {
+      "question_id": "R4-1-I-1",
+      "exam_id": "R4-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_CONSTRAINT_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "(1)",
+        "group": "AB/CD/E/FGH/IJK/LM/NOP"
+      },
+      "solution_ref": "solutions/R4-1/course2/R4-1-I-1.zh.md",
+      "question_path": "content/questions/R04-1/course2/R04-1-I-1.json"
+    },
+    {
+      "question_id": "R4-1-I-2",
+      "exam_id": "R4-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_CLASSICAL_COUNT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "(1)(2)",
+        "group": "QRSTU/VWX/YZ"
+      },
+      "solution_ref": "solutions/R4-1/course2/R4-1-I-2.zh.md",
+      "question_path": "content/questions/R04-1/course2/R04-1-I-2.json"
+    },
+    {
+      "question_id": "R4-1-II-1",
+      "exam_id": "R4-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_ELIMINATION_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "ABC/DEF/GH/I/JK/LM"
+      },
+      "solution_ref": "solutions/R4-1/course2/R4-1-II-1.zh.md",
+      "question_path": "content/questions/R04-1/course2/R04-1-II-1.json"
+    },
+    {
+      "question_id": "R4-1-II-2",
+      "exam_id": "R4-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "GEO_TRANSFORM_LENGTH",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "(1)(2)(3)",
+        "group": "N/O/P/Q/R/S/T/U/V/W/X/Y"
+      },
+      "solution_ref": "solutions/R4-1/course2/R4-1-II-2.zh.md",
+      "question_path": "content/questions/R04-1/course2/R04-1-II-2.json"
+    },
+    {
+      "question_id": "R4-1-III-1",
+      "exam_id": "R4-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_DERIVATIVE_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "(1)",
+        "group": "AB/CDEF/GHIJK/LMN/O/P/QR/ST/UV/WX"
+      },
+      "solution_ref": "solutions/R4-1/course2/R4-1-III-1.zh.md",
+      "question_path": "content/questions/R04-1/course2/R04-1-III-1.json"
+    },
+    {
+      "question_id": "R4-1-IV-1",
+      "exam_id": "R4-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_AREA_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "(1)(2)",
+        "group": "AB/C/DEF/GHI/JKL/M/NOP/QR/STU/VWX"
+      },
+      "solution_ref": "solutions/R4-1/course2/R4-1-IV-1.zh.md",
+      "question_path": "content/questions/R04-1/course2/R04-1-IV-1.json"
+    },
+    {
+      "question_id": "R4-2-I-1",
+      "exam_id": "R4-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_DIRECT_VERTEX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "ref": "official/course2.json#R4-2-I-1"
+      },
+      "solution_ref": "answers/ai_ans.json#R4-2-I-1",
+      "question_path": "content/questions/R04-2/course2/R04-2-I-1.json"
+    },
+    {
+      "question_id": "R4-2-I-2",
+      "exam_id": "R4-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_MARKOV_STOPPING",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "ref": "official/course2.json#R4-2-I-2"
+      },
+      "solution_ref": "answers/ai_ans.json#R4-2-I-2",
+      "question_path": "content/questions/R04-2/course2/R04-2-I-2.json"
+    },
+    {
+      "question_id": "R4-2-II-1",
+      "exam_id": "R4-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "SEQ_MOD_FACTOR_CASE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "ref": "official/course2.json#R4-2-II-1"
+      },
+      "solution_ref": "answers/ai_ans.json#R4-2-II-1",
+      "question_path": "content/questions/R04-2/course2/R04-2-II-1.json"
+    },
+    {
+      "question_id": "R4-2-II-2",
+      "exam_id": "R4-2",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "CP_VECTOR_GEOM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "ref": "official/course2.json#R4-2-II-2"
+      },
+      "solution_ref": "answers/ai_ans.json#R4-2-II-2",
+      "question_path": "content/questions/R04-2/course2/R04-2-II-2.json"
+    },
+    {
+      "question_id": "R4-2-III-1",
+      "exam_id": "R4-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "LOG_POLY_EXTREMA_MATCH",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "ref": "official/course2.json#R4-2-III-1"
+      },
+      "solution_ref": "answers/ai_ans.json#R4-2-III-1",
+      "question_path": "content/questions/R04-2/course2/R04-2-III-1.json"
+    },
+    {
+      "question_id": "R4-2-IV-1",
+      "exam_id": "R4-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_TANGENT_COUNT_BY_MONOTONE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "ref": "official/course2.json#R4-2-IV-1"
+      },
+      "solution_ref": "answers/ai_ans.json#R4-2-IV-1",
+      "question_path": "content/questions/R04-2/course2/R04-2-IV-1.json"
+    },
+    {
+      "question_id": "R05-1-I-1",
+      "exam_id": "R05-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_ELIMINATION_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/BCDE/DF/E/F/G/HI/J/K/L"
+      },
+      "solution_ref": "solutions/R05-1/course2/R05-1-I-1.zh.md",
+      "question_path": "content/questions/R05-1/course2/R05-1-I-1.json"
+    },
+    {
+      "question_id": "R05-1-I-2",
+      "exam_id": "R05-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_CLASSICAL_COUNT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": null,
+        "group": "M/N/OP/Q/R/S"
+      },
+      "solution_ref": "solutions/R05-1/course2/R05-1-I-2.zh.md",
+      "question_path": "content/questions/R05-1/course2/R05-1-I-2.json"
+    },
+    {
+      "question_id": "R05-1-II-1",
+      "exam_id": "R05-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_ORTHO",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/B/C/D/E/F/G/H/I/J/K/L"
+      },
+      "solution_ref": "solutions/R05-1/course2/R05-1-II-1.zh.md",
+      "question_path": "content/questions/R05-1/course2/R05-1-II-1.json"
+    },
+    {
+      "question_id": "R05-1-II-2",
+      "exam_id": "R05-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_ANGLE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": null,
+        "group": "M/N/O/P/Q/RS/TU/V/W/X/Y"
+      },
+      "solution_ref": "solutions/R05-1/course2/R05-1-II-2.zh.md",
+      "question_path": "content/questions/R05-1/course2/R05-1-II-2.json"
+    },
+    {
+      "question_id": "R05-1-III-1",
+      "exam_id": "R05-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_RATE_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/BC/D/E/F/GH/I/J/K/LM/N/OP/QR/ST/UVWX"
+      },
+      "solution_ref": "solutions/R05-1/course2/R05-1-III-1.zh.md",
+      "question_path": "content/questions/R05-1/course2/R05-1-III-1.json"
+    },
+    {
+      "question_id": "R05-1-IV-1",
+      "exam_id": "R05-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_RATE_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": null,
+        "group": "A/BCD/EFG/HI/JKL/MNO/PQ/RST/UVW"
+      },
+      "solution_ref": "solutions/R05-1/course2/R05-1-IV-1.zh.md",
+      "question_path": "content/questions/R05-1/course2/R05-1-IV-1.json"
+    },
+    {
+      "question_id": "R05-2-I-1",
+      "exam_id": "R05-2",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_TRANSFORM_SHIFT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "path": "answers/ai_ans.json",
+        "key": "R05-2-I-1",
+        "course": 2,
+        "section": "I",
+        "q": "Q1"
+      },
+      "solution_ref": {
+        "path": "solutions/R05-2/course2/R05-2-I-1.zh.md"
+      },
+      "question_path": "content/questions/R05-2/course2/R05-2-I-1.json"
+    },
+    {
+      "question_id": "R05-2-I-2",
+      "exam_id": "R05-2",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_CLASSICAL_COUNT",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "path": "answers/ai_ans.json",
+        "key": "R05-2-I-2",
+        "course": 2,
+        "section": "I",
+        "q": "Q2"
+      },
+      "solution_ref": {
+        "path": "solutions/R05-2/course2/R05-2-I-2.zh.md"
+      },
+      "question_path": "content/questions/R05-2/course2/R05-2-I-2.json"
+    },
+    {
+      "question_id": "R05-2-II-1",
+      "exam_id": "R05-2",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_ANGLE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "path": "answers/ai_ans.json",
+        "key": "R05-2-II-1",
+        "course": 2,
+        "section": "II",
+        "q": "Q1"
+      },
+      "solution_ref": {
+        "path": "solutions/R05-2/course2/R05-2-II-1.zh.md"
+      },
+      "question_path": "content/questions/R05-2/course2/R05-2-II-1.json"
+    },
+    {
+      "question_id": "R05-2-II-2",
+      "exam_id": "R05-2",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "GEO_TRANSFORM_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "path": "answers/ai_ans.json",
+        "key": "R05-2-II-2",
+        "course": 2,
+        "section": "II",
+        "q": "Q2"
+      },
+      "solution_ref": {
+        "path": "solutions/R05-2/course2/R05-2-II-2.zh.md"
+      },
+      "question_path": "content/questions/R05-2/course2/R05-2-II-2.json"
+    },
+    {
+      "question_id": "R05-2-III-1",
+      "exam_id": "R05-2",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_RATE_INTERSECTION",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "path": "answers/ai_ans.json",
+        "key": "R05-2-III-1",
+        "course": 2,
+        "section": "III",
+        "q": "Q1"
+      },
+      "solution_ref": {
+        "path": "solutions/R05-2/course2/R05-2-III-1.zh.md"
+      },
+      "question_path": "content/questions/R05-2/course2/R05-2-III-1.json"
+    },
+    {
+      "question_id": "R05-2-IV-1",
+      "exam_id": "R05-2",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_CASE_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "path": "answers/ai_ans.json",
+        "key": "R05-2-IV-1",
+        "course": 2,
+        "section": "IV",
+        "q": "Q1"
+      },
+      "solution_ref": {
+        "path": "solutions/R05-2/course2/R05-2-IV-1.zh.md"
+      },
+      "question_path": "content/questions/R05-2/course2/R05-2-IV-1.json"
+    },
+    {
+      "question_id": "R06-1-I-1",
+      "exam_id": "R06-1",
+      "course": 2,
+      "section": "I",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "QF_CASE_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q1",
+        "sub": "all",
+        "group": "A/BC/DE/FG/HI/JK/LM/N"
+      },
+      "solution_ref": "solutions/R06-1/course2/R06-1-I-1.zh.md",
+      "question_path": "content/questions/R06-1/course2/R06-1-I-1.json"
+    },
+    {
+      "question_id": "R06-1-I-2",
+      "exam_id": "R06-1",
+      "course": 2,
+      "section": "I",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "PROB_COUNT_PROBABILITY",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "I",
+        "q": "Q2",
+        "sub": "all",
+        "group": "OPQ/RS/TUV/WXYZ"
+      },
+      "solution_ref": "solutions/R06-1/course2/R06-1-I-2.zh.md",
+      "question_path": "content/questions/R06-1/course2/R06-1-I-2.json"
+    },
+    {
+      "question_id": "R06-1-II-1",
+      "exam_id": "R06-1",
+      "course": 2,
+      "section": "II",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "VEC_DOT_ORTHO_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q1",
+        "sub": "all",
+        "group": "A/BC/DE/FG/HI/JKL/M"
+      },
+      "solution_ref": "solutions/R06-1/course2/R06-1-II-1.zh.md",
+      "question_path": "content/questions/R06-1/course2/R06-1-II-1.json"
+    },
+    {
+      "question_id": "R06-1-II-2",
+      "exam_id": "R06-1",
+      "course": 2,
+      "section": "II",
+      "order": 2,
+      "type": "fill_in",
+      "pattern_id": "ALG_TRANSFORM_SOLVE_PARAM",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "II",
+        "q": "Q2",
+        "sub": "all",
+        "group": "NO/PQR/S/TU/V/WXY"
+      },
+      "solution_ref": "solutions/R06-1/course2/R06-1-II-2.zh.md",
+      "question_path": "content/questions/R06-1/course2/R06-1-II-2.json"
+    },
+    {
+      "question_id": "R06-1-III-1",
+      "exam_id": "R06-1",
+      "course": 2,
+      "section": "III",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_TRANSFORM_MINMAX",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "III",
+        "q": "Q1",
+        "sub": "all",
+        "group": "ABCDEF/GH/IJ/K/LMN/OPQRS/TUVW/X/Y"
+      },
+      "solution_ref": "solutions/R06-1/course2/R06-1-III-1.zh.md",
+      "question_path": "content/questions/R06-1/course2/R06-1-III-1.json"
+    },
+    {
+      "question_id": "R06-1-IV-1",
+      "exam_id": "R06-1",
+      "course": 2,
+      "section": "IV",
+      "order": 1,
+      "type": "fill_in",
+      "pattern_id": "CALC_INTERSECTION_FIND_RANGE",
+      "tags": [],
+      "difficulty_level": null,
+      "answer_ref": {
+        "course": 2,
+        "section": "IV",
+        "q": "Q1",
+        "sub": "all",
+        "group": "AB/CD/EF/GH/IJK/L/MNOPQR"
+      },
+      "solution_ref": "solutions/R06-1/course2/R06-1-IV-1.zh.md",
+      "question_path": "content/questions/R06-1/course2/R06-1-IV-1.json"
+    }
+  ]
+}

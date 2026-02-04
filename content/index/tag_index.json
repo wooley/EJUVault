@@ -1,0 +1,1152 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-01-30T08:57:07.415Z",
+  "tags": {
+    "domain:いろいろな式": {
+      "QF_DIRECT_VERTEX": [
+        "H17-1-I-1"
+      ]
+    },
+    "skill:多項式の除法": {
+      "QF_DIRECT_VERTEX": [
+        "H17-1-I-1"
+      ]
+    },
+    "course_specific:数学2_only": {
+      "QF_DIRECT_VERTEX": [
+        "H17-1-I-1"
+      ],
+      "__UNSPECIFIED__": [
+        "H17-1-I-2"
+      ]
+    },
+    "domain:集合と命題": {
+      "__UNSPECIFIED__": [
+        "H17-1-I-2"
+      ]
+    },
+    "skill:命題と条件": {
+      "__UNSPECIFIED__": [
+        "H17-1-I-2"
+      ]
+    },
+    "domain:数と式": {
+      "__UNSPECIFIED__": [
+        "H17-1-II-1"
+      ]
+    },
+    "skill:根号を含む式の計算": {
+      "__UNSPECIFIED__": [
+        "H17-1-II-1"
+      ]
+    },
+    "domain:二次関数": {
+      "__UNSPECIFIED__": [
+        "H17-1-II-2"
+      ]
+    },
+    "skill:二次関数のグラフ": {
+      "__UNSPECIFIED__": [
+        "H17-1-II-2"
+      ]
+    },
+    "skill:二次関数の最大最小": {
+      "__UNSPECIFIED__": [
+        "H17-1-II-2"
+      ]
+    },
+    "domain:図形と計量": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-1"
+      ]
+    },
+    "domain:ベクトル": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-1"
+      ]
+    },
+    "skill:正弦定理・余弦定理": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-1"
+      ]
+    },
+    "skill:重心ベクトル": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-1"
+      ]
+    },
+    "skill:内分点ベクトル": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-1"
+      ]
+    },
+    "skill:共線条件": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-1"
+      ]
+    },
+    "domain:三角関数": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-2"
+      ]
+    },
+    "domain:微分・最大最小": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-2",
+        "H17-1-IV-2"
+      ]
+    },
+    "skill:三倍角・二倍角": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-2"
+      ]
+    },
+    "skill:置換 t=cosx": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-2"
+      ]
+    },
+    "skill:最大最小（区間）": {
+      "__UNSPECIFIED__": [
+        "H17-1-III-2"
+      ]
+    },
+    "domain:微分方程・積分": {
+      "__UNSPECIFIED__": [
+        "H17-1-IV-1"
+      ]
+    },
+    "skill:積分方程→微分方程": {
+      "__UNSPECIFIED__": [
+        "H17-1-IV-1"
+      ]
+    },
+    "skill:指数関数の積分": {
+      "__UNSPECIFIED__": [
+        "H17-1-IV-1"
+      ]
+    },
+    "domain:積分（面積）": {
+      "__UNSPECIFIED__": [
+        "H17-1-IV-2"
+      ]
+    },
+    "skill:面積計算": {
+      "__UNSPECIFIED__": [
+        "H17-1-IV-2"
+      ]
+    },
+    "skill:関数の最大最小": {
+      "__UNSPECIFIED__": [
+        "H17-1-IV-2"
+      ]
+    },
+    "二次関数": {
+      "QF_DIRECT_VERTEX": [
+        "H18-2-I-1",
+        "H23-1-I-1"
+      ],
+      "QUAD_COMPLETE_SQUARE_INTERVAL": [
+        "H20-1-I-1"
+      ],
+      "QF_PARAM_DISCRIMINANT": [
+        "H23-2-I-2"
+      ]
+    },
+    "平方完成": {
+      "QF_DIRECT_VERTEX": [
+        "H18-2-I-1"
+      ],
+      "quad_min_on_interval_param_case": [
+        "H19-1-I-1"
+      ],
+      "log_circle_range_xy": [
+        "H19-1-III-2"
+      ],
+      "QUAD_COMPLETE_SQUARE_INTERVAL": [
+        "H20-1-I-1"
+      ],
+      "ALG_INTERVAL_INEQUALITY_REGION": [
+        "H21-2-III-1"
+      ]
+    },
+    "最大最小": {
+      "QF_DIRECT_VERTEX": [
+        "H18-2-I-1",
+        "H23-1-I-1"
+      ],
+      "ALG_TRANSFORM_MINMAX": [
+        "H18-2-III-2"
+      ]
+    },
+    "区間": {
+      "QF_DIRECT_VERTEX": [
+        "H18-2-I-1"
+      ]
+    },
+    "集合": {
+      "ALG_INTERVAL_FIND_RANGE": [
+        "H18-2-I-2"
+      ],
+      "SET-INTERVAL-CONDITION": [
+        "H19-1-I-2"
+      ],
+      "POLY_IDENTITY_FACTOR_SET": [
+        "H20-1-I-2"
+      ]
+    },
+    "数直線": {
+      "ALG_INTERVAL_FIND_RANGE": [
+        "H18-2-I-2"
+      ]
+    },
+    "補集合": {
+      "ALG_INTERVAL_FIND_RANGE": [
+        "H18-2-I-2"
+      ]
+    },
+    "必要十分条件": {
+      "ALG_INTERVAL_FIND_RANGE": [
+        "H18-2-I-2"
+      ],
+      "ineq_rhs_nonneg_equivalence": [
+        "H19-2-I-2"
+      ]
+    },
+    "連立": {
+      "ALG_ELIMINATION_SOLVE_X": [
+        "H18-2-II-1"
+      ]
+    },
+    "比": {
+      "ALG_ELIMINATION_SOLVE_X": [
+        "H18-2-II-1"
+      ]
+    },
+    "対称式": {
+      "ALG_ELIMINATION_SOLVE_X": [
+        "H18-2-II-1"
+      ],
+      "ALG_TRANSFORM_CONSTRAINT": [
+        "H22-1-I-2"
+      ]
+    },
+    "等差数列": {
+      "SEQ_CONSTRAINT_FIND_N": [
+        "H18-2-II-2"
+      ],
+      "SEQ_AP_SOLVE_SUM_GEOM": [
+        "H20-1-II-1"
+      ],
+      "INT_CONSTRAINT_SOLVE_X": [
+        "H21-1-II-1"
+      ]
+    },
+    "公差": {
+      "SEQ_CONSTRAINT_FIND_N": [
+        "H18-2-II-2"
+      ]
+    },
+    "条件反推": {
+      "SEQ_CONSTRAINT_FIND_N": [
+        "H18-2-II-2"
+      ]
+    },
+    "和": {
+      "SEQ_CONSTRAINT_FIND_N": [
+        "H18-2-II-2"
+      ]
+    },
+    "ベクトル": {
+      "VEC_RATIO_INTERNAL": [
+        "H18-2-III-1"
+      ],
+      "VEC_DOT_NORM_CONGRUENCE_COORD": [
+        "H20-1-III-1"
+      ],
+      "VEC_RATIO_DOT_LENGTH": [
+        "H22-1-III-1"
+      ],
+      "VEC_MIN_DISTANCE": [
+        "H23-2-II-1"
+      ]
+    },
+    "内分": {
+      "VEC_RATIO_INTERNAL": [
+        "H18-2-III-1"
+      ],
+      "VEC_RATIO_DOT_LENGTH": [
+        "H22-1-III-1"
+      ]
+    },
+    "交点": {
+      "VEC_RATIO_INTERNAL": [
+        "H18-2-III-1"
+      ],
+      "CALC_AREA_AREA": [
+        "H21-1-IV-1"
+      ],
+      "VEC_RATIO_DOT_LENGTH": [
+        "H22-1-III-1"
+      ]
+    },
+    "三角関数": {
+      "ALG_TRANSFORM_MINMAX": [
+        "H18-2-III-2"
+      ],
+      "CALC_CONSTRAINT_INTERSECTION": [
+        "H22-1-IV-2"
+      ]
+    },
+    "対数": {
+      "ALG_TRANSFORM_MINMAX": [
+        "H18-2-III-2"
+      ],
+      "CALC_RATE_MINMAX": [
+        "H22-1-IV-1"
+      ],
+      "SEQ_CONSTRAINT_FIND_N": [
+        "H23-1-II-1"
+      ],
+      "ALG_TRANSFORM_FIND_RANGE": [
+        "H23-1-III-1"
+      ]
+    },
+    "底の変換": {
+      "ALG_TRANSFORM_MINMAX": [
+        "H18-2-III-2"
+      ]
+    },
+    "対数関数": {
+      "CALC_RATE_SOLVE_PARAM": [
+        "H18-2-IV-1"
+      ]
+    },
+    "微分": {
+      "CALC_RATE_SOLVE_PARAM": [
+        "H18-2-IV-1"
+      ],
+      "CALC_CUBIC_EXTREMUM_TANGENT_AREA_RATIO": [
+        "H20-1-IV-1"
+      ],
+      "CALC_OPTIMIZE_EXP_INTEGRAL_LIMIT": [
+        "H20-1-IV-2"
+      ],
+      "CALC_DIFFEQ_INTEGRAL_EQUATION": [
+        "H21-2-IV-2"
+      ],
+      "CALC_RATE_MINMAX": [
+        "H22-1-IV-1"
+      ],
+      "CALC_RATE_SOLVE_X": [
+        "H23-1-IV-1"
+      ]
+    },
+    "極値": {
+      "CALC_RATE_SOLVE_PARAM": [
+        "H18-2-IV-1"
+      ],
+      "CALC_CUBIC_EXTREMUM_TANGENT_AREA_RATIO": [
+        "H20-1-IV-1"
+      ],
+      "CALC_RATE_MINMAX": [
+        "H22-1-IV-1"
+      ]
+    },
+    "パラメータ": {
+      "CALC_RATE_SOLVE_PARAM": [
+        "H18-2-IV-1"
+      ],
+      "parabola_translation_parameter_solve": [
+        "H19-2-I-1"
+      ],
+      "ineq_rhs_nonneg_equivalence": [
+        "H19-2-I-2"
+      ]
+    },
+    "calculus": {
+      "CALC_TRANSFORM_SOLVE_X": [
+        "H18-2-IV-2"
+      ],
+      "CALC-TANGENT-MULTI-01": [
+        "H27-2-III-1"
+      ],
+      "CALC-PARAM-SPEED-ARCLEN-01": [
+        "H27-2-IV-1"
+      ]
+    },
+    "trigonometry": {
+      "CALC_TRANSFORM_SOLVE_X": [
+        "H18-2-IV-2"
+      ]
+    },
+    "definite_integral": {
+      "CALC_TRANSFORM_SOLVE_X": [
+        "H18-2-IV-2"
+      ]
+    },
+    "absolute_value": {
+      "CALC_TRANSFORM_SOLVE_X": [
+        "H18-2-IV-2"
+      ]
+    },
+    "periodic_function": {
+      "CALC_TRANSFORM_SOLVE_X": [
+        "H18-2-IV-2"
+      ]
+    },
+    "limit": {
+      "CALC_TRANSFORM_SOLVE_X": [
+        "H18-2-IV-2"
+      ]
+    },
+    "二次函数": {
+      "quad_min_on_interval_param_case": [
+        "H19-1-I-1"
+      ],
+      "integral_quadratic_param_min": [
+        "H19-1-IV-2"
+      ],
+      "QF_DIRECT_SOLVE_PARAM": [
+        "H21-1-I-1"
+      ],
+      "QF_TRANSFORM_SHIFT": [
+        "H21-2-I-2"
+      ]
+    },
+    "区间最值": {
+      "quad_min_on_interval_param_case": [
+        "H19-1-I-1"
+      ]
+    },
+    "参数讨论": {
+      "quad_min_on_interval_param_case": [
+        "H19-1-I-1"
+      ],
+      "CALC_RATE_MINMAX": [
+        "H21-1-IV-2"
+      ]
+    },
+    "绝对值不等式": {
+      "SET-INTERVAL-CONDITION": [
+        "H19-1-I-2"
+      ]
+    },
+    "必要条件": {
+      "SET-INTERVAL-CONDITION": [
+        "H19-1-I-2"
+      ],
+      "ALG_TRANSFORM_CONSTRAINT": [
+        "H22-1-I-2"
+      ]
+    },
+    "参数范围": {
+      "SET-INTERVAL-CONDITION": [
+        "H19-1-I-2"
+      ]
+    },
+    "不等式": {
+      "ineq_square_sum_triangle_condition": [
+        "H19-1-II-1"
+      ],
+      "ineq_rhs_nonneg_equivalence": [
+        "H19-2-I-2"
+      ],
+      "GEO_TRANSFORM_MINMAX": [
+        "H22-1-II-1"
+      ],
+      "SEQ_CONSTRAINT_FIND_N": [
+        "H23-1-II-1"
+      ]
+    },
+    "平方和非负": {
+      "ineq_square_sum_triangle_condition": [
+        "H19-1-II-1"
+      ]
+    },
+    "三角不等式": {
+      "ineq_square_sum_triangle_condition": [
+        "H19-1-II-1"
+      ]
+    },
+    "符号判断": {
+      "ineq_square_sum_triangle_condition": [
+        "H19-1-II-1"
+      ]
+    },
+    "数列": {
+      "sequence_sqrt_sum_linearization": [
+        "H19-1-II-2"
+      ],
+      "SEQ_ARITH_GEOM_ELIMINATION": [
+        "H21-2-II-1"
+      ],
+      "SEQ_CONSTRAINT_FIND_N": [
+        "H23-1-II-1"
+      ]
+    },
+    "递推": {
+      "sequence_sqrt_sum_linearization": [
+        "H19-1-II-2"
+      ]
+    },
+    "配方": {
+      "sequence_sqrt_sum_linearization": [
+        "H19-1-II-2"
+      ],
+      "integral_quadratic_param_min": [
+        "H19-1-IV-2"
+      ]
+    },
+    "求通项": {
+      "sequence_sqrt_sum_linearization": [
+        "H19-1-II-2"
+      ]
+    },
+    "向量": {
+      "vector_triangle_bisector_perpendicular": [
+        "H19-1-III-1"
+      ]
+    },
+    "重心": {
+      "vector_triangle_bisector_perpendicular": [
+        "H19-1-III-1"
+      ]
+    },
+    "角平分线": {
+      "vector_triangle_bisector_perpendicular": [
+        "H19-1-III-1"
+      ]
+    },
+    "垂线": {
+      "vector_triangle_bisector_perpendicular": [
+        "H19-1-III-1"
+      ]
+    },
+    "对数": {
+      "log_circle_range_xy": [
+        "H19-1-III-2"
+      ]
+    },
+    "圆与直线": {
+      "log_circle_range_xy": [
+        "H19-1-III-2"
+      ]
+    },
+    "范围最值": {
+      "log_circle_range_xy": [
+        "H19-1-III-2"
+      ]
+    },
+    "导数": {
+      "derivative_tangent_slope_match": [
+        "H19-1-IV-1"
+      ],
+      "CALC_AREA_AREA": [
+        "H21-1-IV-1"
+      ]
+    },
+    "切线": {
+      "derivative_tangent_slope_match": [
+        "H19-1-IV-1"
+      ],
+      "CALC_AREA_AREA": [
+        "H21-1-IV-1"
+      ],
+      "CALC_INTEGRAL_PIECEWISE_TANGENT": [
+        "H21-2-IV-1"
+      ]
+    },
+    "斜率匹配": {
+      "derivative_tangent_slope_match": [
+        "H19-1-IV-1"
+      ]
+    },
+    "定积分": {
+      "integral_quadratic_param_min": [
+        "H19-1-IV-2"
+      ],
+      "CALC_INTEGRAL_PIECEWISE_TANGENT": [
+        "H21-2-IV-1"
+      ]
+    },
+    "参数最值": {
+      "integral_quadratic_param_min": [
+        "H19-1-IV-2"
+      ]
+    },
+    "放物線": {
+      "parabola_translation_parameter_solve": [
+        "H19-2-I-1"
+      ]
+    },
+    "平行移動": {
+      "parabola_translation_parameter_solve": [
+        "H19-2-I-1"
+      ]
+    },
+    "区間最大最小": {
+      "QUAD_COMPLETE_SQUARE_INTERVAL": [
+        "H20-1-I-1"
+      ]
+    },
+    "整式": {
+      "POLY_IDENTITY_FACTOR_SET": [
+        "H20-1-I-2"
+      ]
+    },
+    "因式分解": {
+      "POLY_IDENTITY_FACTOR_SET": [
+        "H20-1-I-2"
+      ],
+      "ALG_TRANSFORM_FACTORIZE": [
+        "H21-1-I-2"
+      ]
+    },
+    "和の公式": {
+      "SEQ_AP_SOLVE_SUM_GEOM": [
+        "H20-1-II-1"
+      ]
+    },
+    "等比数列": {
+      "SEQ_AP_SOLVE_SUM_GEOM": [
+        "H20-1-II-1"
+      ]
+    },
+    "内積": {
+      "VEC_DOT_NORM_CONGRUENCE_COORD": [
+        "H20-1-III-1"
+      ],
+      "VEC_RATIO_DOT_LENGTH": [
+        "H22-1-III-1"
+      ]
+    },
+    "三角形合同": {
+      "VEC_DOT_NORM_CONGRUENCE_COORD": [
+        "H20-1-III-1"
+      ]
+    },
+    "座標": {
+      "VEC_DOT_NORM_CONGRUENCE_COORD": [
+        "H20-1-III-1"
+      ]
+    },
+    "接線": {
+      "CALC_CUBIC_EXTREMUM_TANGENT_AREA_RATIO": [
+        "H20-1-IV-1"
+      ],
+      "CALC_CONSTRAINT_INTERSECTION": [
+        "H22-1-IV-2"
+      ],
+      "CALC_AREA_INTERSECTION": [
+        "H23-1-IV-2"
+      ]
+    },
+    "面積": {
+      "CALC_CUBIC_EXTREMUM_TANGENT_AREA_RATIO": [
+        "H20-1-IV-1"
+      ],
+      "CALC_CONSTRAINT_INTERSECTION": [
+        "H22-1-IV-2"
+      ],
+      "CALC_AREA_INTERSECTION": [
+        "H23-1-IV-2"
+      ]
+    },
+    "最大値": {
+      "CALC_OPTIMIZE_EXP_INTEGRAL_LIMIT": [
+        "H20-1-IV-2"
+      ]
+    },
+    "積分": {
+      "CALC_OPTIMIZE_EXP_INTEGRAL_LIMIT": [
+        "H20-1-IV-2"
+      ],
+      "CALC_AREA_INTERSECTION": [
+        "H23-1-IV-2"
+      ],
+      "CALC_INTEGRAL_EVAL": [
+        "H23-2-IV-1"
+      ]
+    },
+    "極限": {
+      "CALC_OPTIMIZE_EXP_INTEGRAL_LIMIT": [
+        "H20-1-IV-2"
+      ],
+      "CALC_INTEGRAL_ASYMPTOTIC": [
+        "H23-2-IV-2"
+      ]
+    },
+    "对称轴": {
+      "QF_DIRECT_SOLVE_PARAM": [
+        "H21-1-I-1"
+      ]
+    },
+    "最小值": {
+      "QF_DIRECT_SOLVE_PARAM": [
+        "H21-1-I-1"
+      ],
+      "GEO_TRANSFORM_MINMAX": [
+        "H22-1-II-1"
+      ]
+    },
+    "参数": {
+      "QF_DIRECT_SOLVE_PARAM": [
+        "H21-1-I-1"
+      ]
+    },
+    "代数恒等变形": {
+      "ALG_TRANSFORM_FACTORIZE": [
+        "H21-1-I-2"
+      ]
+    },
+    "代入计算": {
+      "ALG_TRANSFORM_FACTORIZE": [
+        "H21-1-I-2"
+      ]
+    },
+    "同余": {
+      "INT_CONSTRAINT_SOLVE_X": [
+        "H21-1-II-1"
+      ]
+    },
+    "求和": {
+      "INT_CONSTRAINT_SOLVE_X": [
+        "H21-1-II-1"
+      ],
+      "SEQ_ARITH_GEOM_ELIMINATION": [
+        "H21-2-II-1"
+      ]
+    },
+    "恒等变形": {
+      "INT_CONSTRAINT_SOLVE_X": [
+        "H21-1-II-1"
+      ]
+    },
+    "圆的方程": {
+      "GEO_ELIMINATION_SOLVE_PARAM": [
+        "H21-1-III-1"
+      ]
+    },
+    "点积": {
+      "GEO_ELIMINATION_SOLVE_PARAM": [
+        "H21-1-III-1"
+      ]
+    },
+    "圆弧长度": {
+      "GEO_ELIMINATION_SOLVE_PARAM": [
+        "H21-1-III-1"
+      ]
+    },
+    "倍角公式": {
+      "GEO_ELIMINATION_SOLVE_PARAM": [
+        "H21-1-III-1"
+      ]
+    },
+    "定积分面积": {
+      "CALC_AREA_AREA": [
+        "H21-1-IV-1"
+      ]
+    },
+    "对数函数": {
+      "CALC_RATE_MINMAX": [
+        "H21-1-IV-2"
+      ]
+    },
+    "极值": {
+      "CALC_RATE_MINMAX": [
+        "H21-1-IV-2"
+      ]
+    },
+    "图像交点个数": {
+      "CALC_RATE_MINMAX": [
+        "H21-1-IV-2"
+      ]
+    },
+    "数と式": {
+      "ALG_TRANSFORM_EVAL_EXPR": [
+        "H21-2-I-1"
+      ]
+    },
+    "有理化": {
+      "ALG_TRANSFORM_EVAL_EXPR": [
+        "H21-2-I-1"
+      ]
+    },
+    "恒等式": {
+      "ALG_TRANSFORM_EVAL_EXPR": [
+        "H21-2-I-1"
+      ],
+      "ALG_TRANSFORM_CONSTRAINT": [
+        "H22-1-I-2"
+      ]
+    },
+    "平移": {
+      "QF_TRANSFORM_SHIFT": [
+        "H21-2-I-2"
+      ]
+    },
+    "对称": {
+      "QF_TRANSFORM_SHIFT": [
+        "H21-2-I-2"
+      ]
+    },
+    "判别式": {
+      "QF_TRANSFORM_SHIFT": [
+        "H21-2-I-2"
+      ]
+    },
+    "最值": {
+      "QF_TRANSFORM_SHIFT": [
+        "H21-2-I-2"
+      ]
+    },
+    "等差": {
+      "SEQ_ARITH_GEOM_ELIMINATION": [
+        "H21-2-II-1"
+      ]
+    },
+    "等比": {
+      "SEQ_ARITH_GEOM_ELIMINATION": [
+        "H21-2-II-1"
+      ]
+    },
+    "消元": {
+      "SEQ_ARITH_GEOM_ELIMINATION": [
+        "H21-2-II-1"
+      ]
+    },
+    "二元不等式": {
+      "ALG_INTERVAL_INEQUALITY_REGION": [
+        "H21-2-III-1"
+      ]
+    },
+    "圆与距离": {
+      "ALG_INTERVAL_INEQUALITY_REGION": [
+        "H21-2-III-1"
+      ]
+    },
+    "充分必要条件": {
+      "ALG_INTERVAL_INEQUALITY_REGION": [
+        "H21-2-III-1"
+      ]
+    },
+    "分段函数": {
+      "CALC_INTEGRAL_PIECEWISE_TANGENT": [
+        "H21-2-IV-1"
+      ]
+    },
+    "导数几何意义": {
+      "CALC_INTEGRAL_PIECEWISE_TANGENT": [
+        "H21-2-IV-1"
+      ]
+    },
+    "积分方程": {
+      "CALC_DIFFEQ_INTEGRAL_EQUATION": [
+        "H21-2-IV-2"
+      ]
+    },
+    "常微分方程": {
+      "CALC_DIFFEQ_INTEGRAL_EQUATION": [
+        "H21-2-IV-2"
+      ]
+    },
+    "定积分常数": {
+      "CALC_DIFFEQ_INTEGRAL_EQUATION": [
+        "H21-2-IV-2"
+      ]
+    },
+    "絶対値": {
+      "ALG_CASE_SOLVE_X": [
+        "H22-1-I-1"
+      ]
+    },
+    "方程式": {
+      "ALG_CASE_SOLVE_X": [
+        "H22-1-I-1"
+      ]
+    },
+    "場合分け": {
+      "ALG_CASE_SOLVE_X": [
+        "H22-1-I-1"
+      ]
+    },
+    "二次方程式": {
+      "ALG_CASE_SOLVE_X": [
+        "H22-1-I-1"
+      ]
+    },
+    "十分条件": {
+      "ALG_TRANSFORM_CONSTRAINT": [
+        "H22-1-I-2"
+      ]
+    },
+    "座標幾何": {
+      "GEO_TRANSFORM_MINMAX": [
+        "H22-1-II-1"
+      ]
+    },
+    "垂直条件": {
+      "GEO_TRANSFORM_MINMAX": [
+        "H22-1-II-1"
+      ]
+    },
+    "長さ": {
+      "VEC_RATIO_DOT_LENGTH": [
+        "H22-1-III-1"
+      ]
+    },
+    "範囲": {
+      "VEC_RATIO_DOT_LENGTH": [
+        "H22-1-III-1"
+      ],
+      "ALG_TRANSFORM_FIND_RANGE": [
+        "H23-1-III-1"
+      ]
+    },
+    "二次導関数": {
+      "CALC_RATE_MINMAX": [
+        "H22-1-IV-1"
+      ]
+    },
+    "条件消去": {
+      "CALC_CONSTRAINT_INTERSECTION": [
+        "H22-1-IV-2"
+      ]
+    },
+    "条件付き最適化": {
+      "QF_DIRECT_VERTEX": [
+        "H23-1-I-1"
+      ]
+    },
+    "平方根": {
+      "ALG_TRANSFORM_SOLVE_X": [
+        "H23-1-I-2"
+      ]
+    },
+    "式の計算": {
+      "ALG_TRANSFORM_SOLVE_X": [
+        "H23-1-I-2",
+        "H23-2-I-1"
+      ]
+    },
+    "小数部分": {
+      "ALG_TRANSFORM_SOLVE_X": [
+        "H23-1-I-2"
+      ]
+    },
+    "漸化式": {
+      "SEQ_CONSTRAINT_FIND_N": [
+        "H23-1-II-1"
+      ]
+    },
+    "個数": {
+      "SEQ_CONSTRAINT_FIND_N": [
+        "H23-1-II-1"
+      ]
+    },
+    "図形化": {
+      "ALG_TRANSFORM_FIND_RANGE": [
+        "H23-1-III-1"
+      ]
+    },
+    "円と直線": {
+      "ALG_TRANSFORM_FIND_RANGE": [
+        "H23-1-III-1"
+      ]
+    },
+    "定積分": {
+      "CALC_RATE_SOLVE_X": [
+        "H23-1-IV-1"
+      ],
+      "CALC_INTEGRAL_ASYMPTOTIC": [
+        "H23-2-IV-2"
+      ]
+    },
+    "合成関数": {
+      "CALC_RATE_SOLVE_X": [
+        "H23-1-IV-1"
+      ]
+    },
+    "微分積分": {
+      "CALC_RATE_SOLVE_X": [
+        "H23-1-IV-1"
+      ]
+    },
+    "関数": {
+      "CALC_AREA_INTERSECTION": [
+        "H23-1-IV-2"
+      ]
+    },
+    "因数分解": {
+      "ALG_TRANSFORM_SOLVE_X": [
+        "H23-2-I-1"
+      ]
+    },
+    "三次方程式": {
+      "ALG_TRANSFORM_SOLVE_X": [
+        "H23-2-I-1"
+      ]
+    },
+    "判別式": {
+      "QF_PARAM_DISCRIMINANT": [
+        "H23-2-I-2"
+      ]
+    },
+    "最小値最大化": {
+      "QF_PARAM_DISCRIMINANT": [
+        "H23-2-I-2"
+      ]
+    },
+    "内分点": {
+      "VEC_MIN_DISTANCE": [
+        "H23-2-II-1"
+      ]
+    },
+    "最小値": {
+      "VEC_MIN_DISTANCE": [
+        "H23-2-II-1"
+      ]
+    },
+    "二次式": {
+      "VEC_MIN_DISTANCE": [
+        "H23-2-II-1"
+      ]
+    },
+    "図形": {
+      "GEO_TANGENT_CIRCLES": [
+        "H23-2-III-1"
+      ]
+    },
+    "円の接線": {
+      "GEO_TANGENT_CIRCLES": [
+        "H23-2-III-1"
+      ]
+    },
+    "半角公式": {
+      "GEO_TANGENT_CIRCLES": [
+        "H23-2-III-1"
+      ]
+    },
+    "外接": {
+      "GEO_TANGENT_CIRCLES": [
+        "H23-2-III-1"
+      ]
+    },
+    "三角方程式": {
+      "CALC_INTEGRAL_EVAL": [
+        "H23-2-IV-1"
+      ]
+    },
+    "指数関数": {
+      "CALC_INTEGRAL_EVAL": [
+        "H23-2-IV-1"
+      ]
+    },
+    "置換積分": {
+      "CALC_INTEGRAL_ASYMPTOTIC": [
+        "H23-2-IV-2"
+      ]
+    },
+    "漸近": {
+      "CALC_INTEGRAL_ASYMPTOTIC": [
+        "H23-2-IV-2"
+      ]
+    },
+    "quadratic": {
+      "ALG-QUAD-EXT-INTERVAL-01": [
+        "H27-2-I-1"
+      ]
+    },
+    "max_min": {
+      "ALG-QUAD-EXT-INTERVAL-01": [
+        "H27-2-I-1"
+      ]
+    },
+    "interval": {
+      "ALG-QUAD-EXT-INTERVAL-01": [
+        "H27-2-I-1"
+      ]
+    },
+    "probability": {
+      "PROB-DISCRETE-INEX-01": [
+        "H27-2-I-2"
+      ]
+    },
+    "dice": {
+      "PROB-DISCRETE-INEX-01": [
+        "H27-2-I-2"
+      ]
+    },
+    "inclusion_exclusion": {
+      "PROB-DISCRETE-INEX-01": [
+        "H27-2-I-2"
+      ]
+    },
+    "vector": {
+      "VEC-3D-MIN-AREA-01": [
+        "H27-2-II-1"
+      ]
+    },
+    "3d": {
+      "VEC-3D-MIN-AREA-01": [
+        "H27-2-II-1"
+      ]
+    },
+    "minimization": {
+      "VEC-3D-MIN-AREA-01": [
+        "H27-2-II-1"
+      ]
+    },
+    "triangle_area": {
+      "VEC-3D-MIN-AREA-01": [
+        "H27-2-II-1"
+      ]
+    },
+    "complex": {
+      "CPLX-ROOTS-DIST-01": [
+        "H27-2-II-2"
+      ]
+    },
+    "roots": {
+      "CPLX-ROOTS-DIST-01": [
+        "H27-2-II-2"
+      ]
+    },
+    "distance": {
+      "CPLX-ROOTS-DIST-01": [
+        "H27-2-II-2"
+      ]
+    },
+    "tangent": {
+      "CALC-TANGENT-MULTI-01": [
+        "H27-2-III-1"
+      ]
+    },
+    "parameter": {
+      "CALC-TANGENT-MULTI-01": [
+        "H27-2-III-1"
+      ]
+    },
+    "quartic": {
+      "CALC-TANGENT-MULTI-01": [
+        "H27-2-III-1"
+      ]
+    },
+    "parametric": {
+      "CALC-PARAM-SPEED-ARCLEN-01": [
+        "H27-2-IV-1"
+      ]
+    },
+    "speed": {
+      "CALC-PARAM-SPEED-ARCLEN-01": [
+        "H27-2-IV-1"
+      ]
+    },
+    "arc_length": {
+      "CALC-PARAM-SPEED-ARCLEN-01": [
+        "H27-2-IV-1"
+      ]
+    }
+  }
+}
