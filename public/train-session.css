@@ -358,6 +358,36 @@ body {
   padding-left: 18px;
 }
 
+.solution p,
+.summary-solution p {
+  margin: 0 0 12px;
+}
+
+.solution blockquote,
+.summary-solution blockquote {
+  margin: 12px 0;
+  padding: 0 12px;
+  color: var(--ink-soft);
+  background: #fffdf8;
+  border-left: 4px solid var(--line);
+}
+
+.solution table,
+.summary-solution table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 16px;
+  font-size: 13px;
+}
+
+.solution table th,
+.solution table td,
+.summary-solution table th,
+.summary-solution table td {
+  border: 1px solid var(--line);
+  padding: 6px 10px;
+}
+
 .solution pre,
 .summary-solution pre {
   background: #fffdf8;
@@ -373,6 +403,53 @@ body {
   background: #fff3e6;
   padding: 2px 6px;
   border-radius: 6px;
+}
+
+.solution pre code,
+.summary-solution pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.solution code[class*="language-"],
+.solution pre[class*="language-"],
+.summary-solution code[class*="language-"],
+.summary-solution pre[class*="language-"] {
+  color: #333;
+  font-family: "Menlo", "Consolas", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+  background: #f5f5f5;
+}
+
+.solution pre[class*="language-"],
+.summary-solution pre[class*="language-"] {
+  border-radius: 8px;
+  padding: 0.8em;
+}
+
+.solution .token.comment,
+.summary-solution .token.comment {
+  color: #969896;
+}
+
+.solution .token.string,
+.summary-solution .token.string {
+  color: #183691;
+}
+
+.solution .token.keyword,
+.summary-solution .token.keyword {
+  color: #a71d5d;
+}
+
+.solution .token.function,
+.summary-solution .token.function {
+  color: #795da3;
 }
 
 .solution .katex,
